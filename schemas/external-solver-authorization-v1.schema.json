@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mathcase:schema:external-solver-authorization-v1",
+  "title": "MathCase external solver owner authorization",
+  "description": "An owner-supplied, locally hash-pinned grant for one provider route, exact model IDs, theorem names, endpoint, expiry, allowed input class, and hard per-call ceiling. It grants no training.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "authorization_id",
+    "provider_id",
+    "protocol_id",
+    "model_ids",
+    "endpoint_url",
+    "expires_at_utc",
+    "per_call_cost_ceiling_micros",
+    "authorized_content",
+    "items",
+    "prohibited_content",
+    "training_authorized"
+  ],
+  "properties": {
+    "schema": {
+      "const": "mathcase-external-solver-authorization-v1"
+    },
+    "authorization_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$"
+    },
+    "provider_id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$"
+    },
+    "protocol_id": {
+      "enum": [
+        "openai-chat-completions-v1",
+        "anthropic-messages-v1",
+        "google-gemini-generate-content-v1"
+      ]
+    },
+    "model_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 256,
+        "pattern": "^[^\\s\\u0000-\\u001f\\u007f]+$"
+      }
+    },
+    "endpoint_url": {
+      "type": "string",
+      "format": "uri",
+      "pattern": "^https://[^/?#@]+/(?:(?![^/]*\\.\\.)[A-Za-z0-9._~-]+/)*(?:chat/completions|messages|models/[A-Za-z0-9._~-]+:generateContent)$"
+    },
+    "expires_at_utc": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "per_call_cost_ceiling_micros": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "authorized_content": {
+      "const": "theorem statements and proof attempts only"
+    },
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 512,
+        "pattern": "^\\S(?:[^\\r\\n]*\\S)?$"
+      }
+    },
+    "prohibited_content": {
+      "type": "array",
+      "uniqueItems": true,
+      "allOf": [
+        {
+          "contains": {
+            "const": "mined Zulip or Erdős content"
+          }
+        },
+        {
+          "contains": {
+            "const": "corpus material"
+          }
+        },
+        {
+          "contains": {
+            "const": "locked cases"
+          }
+        },
+        {
+          "contains": {
+            "const": "training data"
+          }
+        }
+      ],
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "training_authorized": {
+      "const": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "protocol_id": {"const": "openai-chat-completions-v1"}
+        },
+        "required": ["protocol_id"]
+      },
+      "then": {
+        "properties": {
+          "endpoint_url": {"pattern": "/chat/completions$"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "protocol_id": {"const": "anthropic-messages-v1"}
+        },
+        "required": ["protocol_id"]
+      },
+      "then": {
+        "properties": {
+          "endpoint_url": {"pattern": "/messages$"}
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "protocol_id": {"const": "google-gemini-generate-content-v1"}
+        },
+        "required": ["protocol_id"]
+      },
+      "then": {
+        "properties": {
+          "endpoint_url": {"pattern": "/models/[A-Za-z0-9._~-]+:generateContent$"}
+        }
+      }
+    }
+  ]
+}

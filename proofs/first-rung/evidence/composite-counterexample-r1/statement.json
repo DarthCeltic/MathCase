@@ -1,0 +1,10 @@
+{
+  "schema_version": "mathcase-counterexample-statement-v1",
+  "case_id": "hero-composite-counterexample-r1",
+  "origin": "LOCAL_TASK_AUTHORED_DEMONSTRATION",
+  "lean_statement": "∀ n : Nat, 4 ∣ n ^ 2 → 4 ∣ n",
+  "informal_statement": "For every natural number n, if 4 divides n squared, then 4 divides n.",
+  "revised_case_id": "hero-prime-divisibility-r1",
+  "historical_model_input": false,
+  "human_reviewer_claimed": false
+}

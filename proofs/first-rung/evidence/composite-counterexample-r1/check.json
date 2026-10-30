@@ -1,0 +1,29 @@
+{
+  "schema_version": "mathcase-exact-arithmetic-counterexample-v1",
+  "case_id": "hero-composite-counterexample-r1",
+  "run_id": "hero-composite-counterexample-r1-exact-arithmetic",
+  "recorded_at_utc": "2026-10-29T04:42:47.946251+00:00",
+  "status": "COUNTEREXAMPLE_CHECKED",
+  "checker": "PYTHON_INTEGER_DIVMOD",
+  "checker_source_path": "scripts/hero_counterexample.py",
+  "checker_source_sha256": "cdf31bb38681d5195cb49093c734c5ad605a2e2576ccf0bbd270baa9810e68c7",
+  "statement_path": "proofs/first-rung/evidence/composite-counterexample-r1/statement.json",
+  "statement_sha256": "01cdfe07a8d8104ad13bee9bdd23e8dcec1208d8d62628debe7f5f43985ea972",
+  "calculation": {
+    "domain": "Nat",
+    "divisor": 4,
+    "witness": 2,
+    "square": 4,
+    "square_quotient": 1,
+    "square_remainder": 0,
+    "base_remainder": 2,
+    "premise_holds": true,
+    "conclusion_holds": false
+  },
+  "provider_calls": 0,
+  "cost_micros": 0,
+  "lean_kernel_check": "NOT_PERFORMED",
+  "historical_model_input": false,
+  "meaning_review": "PENDING",
+  "gate_effect": "NONE"
+}

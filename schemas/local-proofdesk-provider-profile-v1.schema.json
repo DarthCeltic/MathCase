@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:mathcase:schema:local-proofdesk-provider-profile-v1",
+  "title": "Local Proof Desk provider profile",
+  "description": "Non-secret local settings for one provider route. Dispatch still requires the exact owner grant, item clearance, budget, and pinned Lean checker.",
+  "type": "object",
+  "additionalProperties": false,
+  "dependentRequired": {
+    "provider_context_snapshot_path": ["provider_context_snapshot_sha256"],
+    "provider_context_snapshot_sha256": ["provider_context_snapshot_path"]
+  },
+  "required": [
+    "schema_version", "profile_id", "display_name", "provider_id", "protocol_id", "model_id",
+    "base_url", "api_key_env", "input_price_micros_per_million_tokens",
+    "output_price_micros_per_million_tokens", "per_call_ceiling_micros", "run_ceiling_micros",
+    "max_output_tokens", "additional_fields", "owner_authorization_path", "lean_snapshot_manifest",
+    "lean_snapshot_manifest_sha256", "lean_sandbox_image", "toolchain", "imports", "items",
+    "pricing_source_url", "pricing_checked_at_utc"
+  ],
+  "properties": {
+    "schema_version": {"const": "mathcase-local-proofdesk-provider-profile-v1"},
+    "profile_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$"},
+    "display_name": {"type": "string", "minLength": 1, "maxLength": 100},
+    "provider_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$"},
+    "protocol_id": {"enum": ["openai-chat-completions-v1", "anthropic-messages-v1", "google-gemini-generate-content-v1"]},
+    "model_id": {"type": "string", "minLength": 1, "maxLength": 256, "pattern": "^[^\\s\\u0000-\\u001f\\u007f]+$"},
+    "base_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "api_key_env": {"type": "string", "pattern": "^[A-Z][A-Z0-9_]{1,127}$"},
+    "input_price_micros_per_million_tokens": {"type": "integer", "minimum": 0},
+    "output_price_micros_per_million_tokens": {"type": "integer", "minimum": 0},
+    "per_call_ceiling_micros": {"type": "integer", "minimum": 1, "maximum": 10000},
+    "run_ceiling_micros": {"type": "integer", "minimum": 1, "maximum": 20000},
+    "max_output_tokens": {"type": "integer", "minimum": 1, "maximum": 512},
+    "max_provider_calls": {"type": "integer", "minimum": 1, "maximum": 2},
+    "provider_context_snapshot_path": {"type": "string", "minLength": 1, "description": "Optional local immutable prepared-context snapshot for one exact item; dispatch still verifies its digest, statement, Lean environment, rights scope, owner grant, and item clearance."},
+    "provider_context_snapshot_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "additional_fields": {"type": "object"},
+    "owner_authorization_path": {"type": "string", "minLength": 1},
+    "lean_snapshot_manifest": {"type": "string", "minLength": 1},
+    "lean_snapshot_manifest_sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "lean_sandbox_image": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "toolchain": {"type": "string", "minLength": 1},
+    "imports": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"type": "string", "pattern": "^[A-Za-z0-9_.]+$"}},
+    "items": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["problem_id", "title", "description", "clearance_path"],
+        "properties": {
+          "problem_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$"},
+          "case_problem_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{0,127}$", "description": "Optional exact Case Desk problem identity for a provider theorem ID crosswalk."},
+          "title": {"type": "string", "minLength": 1, "maxLength": 200},
+          "description": {"type": "string", "minLength": 1, "maxLength": 500},
+          "clearance_path": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "pricing_source_url": {"type": "string", "format": "uri", "pattern": "^https://"},
+    "pricing_checked_at_utc": {"type": "string", "format": "date-time"}
+  }
+}

@@ -1,0 +1,4 @@
+'MathCaseInfiniteDescent.no_positive_integer_pair' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathCaseInfiniteDescent.no_natural_square_root_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathCaseInfiniteDescent.no_rational_square_root_two' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathCaseInfiniteDescent.sqrt_two_irrational' depends on axioms: [propext, Classical.choice, Quot.sound]

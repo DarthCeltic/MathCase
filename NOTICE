@@ -1,0 +1,15 @@
+MathCase static Case Desk subset
+
+This bundle includes the Case Desk reader, MathCase-authored mathematical artifacts, and selected saved receipts. It does not include the ARGUS-derived MCP connector or the Lean/Mathlib runtime. The original repository notice follows for attribution and source provenance; references to other repository components do not describe this subset.
+
+--- Original repository notice (preserved) ---
+
+MathCase project notice
+
+Copyright 2026 DarthCeltic (Ryan).
+
+MathCase original source code, documentation, and authored proof source in this repository are licensed under the Apache License, Version 2.0, as provided in LICENSE, except where a file-specific notice or third-party source/use term applies.
+
+Problem statements, datasets, model outputs, papers, and dependencies may carry separate terms. The MathCase license does not replace or broaden third-party terms. Preserve accompanying Lean, Mathlib, and other dependency license texts when shipping their material.
+
+The read-only MCP connector in mathcase/connect/ adapts the connector and projection patterns from ARGUS, Copyright 2026 DarthCeltic, licensed under the Apache License, Version 2.0. Source: commit d93a68e1f19e19344b129d450e3a5e6fdc7f3f24, argus/connect/mcp_server.py and argus/connect/projection.py.

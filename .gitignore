@@ -1,0 +1,11 @@
+/lake-manifest.json
+/.lake/
+/.venv/
+/venv/
+/bin/
+.env
+.env.*
+!.env.example
+__pycache__/
+*.py[cod]
+**/.lake/

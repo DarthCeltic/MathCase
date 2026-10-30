@@ -1,0 +1,6 @@
+# Copyright 2026 DarthCeltic (Ryan). Licensed under Apache-2.0.
+[public_edition]
+provider_dispatch_default = false
+static_demo_mode = "saved_read_only"
+local_proof_project = "proofs/r0b"
+lean_toolchain = "leanprover/lean4:v4.33.1"

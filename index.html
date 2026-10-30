@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="theme-color" content="#0b1a27">
+  <title>MathCase · Saved proof journey</title>
+  <link rel="icon" href="/assets/mathcase-branding-kit/favicon.ico" sizes="any">
+  <link rel="stylesheet" href="/app.css">
+  <script defer src="/saved-demo/data.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <a class="brand" href="/#case/hero-composite-counterexample-r1" aria-label="MathCase saved demo home">
+        <img src="/assets/mathcase-branding-kit/mathcase-icon-128.png" alt="" width="46" height="46">
+        <span>Math<span class="brand-accent">Case</span><small>Saved proof journey</small></span>
+      </a>
+      <span class="mode"><span class="mode-dot"></span> Saved execution · read only</span>
+    </header>
+
+    <section class="intro" aria-labelledby="intro-title">
+      <div>
+        <p class="eyebrow">One result, three inspectable cases</p>
+        <h1 id="intro-title">Where a proof <em>earns</em> its next step.</h1>
+        <p class="intro-copy">Start with a counterexample. Add the missing prime condition. Follow the checked lemma into a saved √2 compilation. Every result shown here is preserved evidence; opening the demo makes no model, Lean, or Tavily call.</p>
+      </div>
+      <img class="lockup" src="/assets/mathcase-branding-kit/mathcase-lockup-960.png" alt="MathCase" width="960" height="640">
+    </section>
+
+    <nav class="case-nav" id="case-nav" aria-label="Saved cases"></nav>
+
+    <main class="case-stage" id="case-stage" aria-live="polite"></main>
+
+    <details class="tavily" id="tavily-panel">
+      <summary><span>Separate saved Tavily runtime</span><span class="disclosure-mark" aria-hidden="true">+</span></summary>
+      <div class="tavily-body" id="tavily-body"></div>
+    </details>
+
+    <footer>
+      <span>MathCase · Saved Case Desk reader</span>
+      <span>Known theorem checking, local counterexample, and saved parent reuse. No broad solver claim.</span>
+    </footer>
+  </div>
+</body>
+</html>

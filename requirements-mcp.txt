@@ -1,0 +1,2 @@
+# Version used by the source ARGUS connector pattern that MathCase adapts.
+mcp==2.2.0

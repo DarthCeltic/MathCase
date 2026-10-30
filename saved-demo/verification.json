@@ -1,0 +1,43 @@
+{
+  "schema_version": "mathcase-static-demo-verification-r7",
+  "derived_projection": true,
+  "source_head": "2f218b8cc94e00c627b43fa0b3a6e0d50e464290",
+  "counterexample": {
+    "status": "COUNTEREXAMPLE_CHECKED",
+    "witness": 2,
+    "check_sha256": "a699f0e7933142b5a13e3c6dd4c0ea91b3465ef77918be8ca9500ecd9d58a42e",
+    "lean_kernel_check": "NOT_RUN_FOR_THIS_ARITHMETIC_CASE"
+  },
+  "prime_lemma": {
+    "run_id": "proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b",
+    "attempts": [
+      "REJECTED",
+      "PASS"
+    ],
+    "formal_statement": "∀ (p n : Nat), p.Prime → p ∣ n ^ 2 → p ∣ n",
+    "proof_sha256": "03602b73efcddecf3f025c5bf6e5b8cfaac5abedc065a9b8c3e0626e4a3e26ca",
+    "original_lean_receipt_sha256": "9cb1c1076acced9d2a9a61e4f1beb3d46368ed562c10c08cd6857571f0102cc4",
+    "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "kernel_passed": true,
+    "axioms_passed": true,
+    "observed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "sqrt2_child": {
+    "run_id": "prime-sqrt2-direct-parent-child-20261028-r2",
+    "status": "COMPILED_REUSE_PASS",
+    "parent_proof_sha256": "03602b73efcddecf3f025c5bf6e5b8cfaac5abedc065a9b8c3e0626e4a3e26ca",
+    "child_source_sha256": "7e21fcfc7fe30109ceb79a75dc6d40d6de2860fdaa74588351ab6d08b43a01bd",
+    "compiled_module_sha256": "d023a6b776e74e308d5aa1dc21fc1fb965ad791e9aba28253da03c7ce6986a8e",
+    "compile_elapsed_ms": 13545,
+    "standard_m4_child_receipt": "NOT_LINKED"
+  },
+  "tavily": {
+    "case_id": "nat-add-assoc",
+    "result_count": 6,
+    "source_content_included": false
+  }
+}

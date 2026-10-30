@@ -1,0 +1,6 @@
+name = "mathcase_r0b"
+version = "0.1.0"
+defaultTargets = ["MathCaseR0b"]
+
+[[lean_lib]]
+name = "MathCaseR0b"

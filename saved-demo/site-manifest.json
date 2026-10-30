@@ -1,0 +1,116 @@
+{
+  "schema_version": "mathcase-static-site-r7",
+  "source_head": "2f218b8cc94e00c627b43fa0b3a6e0d50e464290",
+  "mode": "SAVED_EXECUTION_READ_ONLY",
+  "provider_calls_on_open": 0,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "source_sha256": null
+    },
+    {
+      "path": "app.css",
+      "bytes": 7762,
+      "sha256": "a15d668e7e72e7a3973f423ee32c59edad32165e2e1cade5662beb755268652e",
+      "source_sha256": null
+    },
+    {
+      "path": "app.js",
+      "bytes": 5426,
+      "sha256": "3bdcc59aae689f4179f1cc09a2d97270ec16fa5ccc6af87374041cbdf55888b8",
+      "source_sha256": null
+    },
+    {
+      "path": "assets/mathcase-branding-kit/favicon.ico",
+      "bytes": 7795,
+      "sha256": "ef72188e44cc92b27000f1c56c5a82e14dd6d1067a6858ea43833cf436669510",
+      "source_sha256": "ef72188e44cc92b27000f1c56c5a82e14dd6d1067a6858ea43833cf436669510"
+    },
+    {
+      "path": "assets/mathcase-branding-kit/mathcase-icon-128.png",
+      "bytes": 30898,
+      "sha256": "e6fe6079b04584c563a429633056ada838aeb454964cb6cf50569c9433e7d715",
+      "source_sha256": "e6fe6079b04584c563a429633056ada838aeb454964cb6cf50569c9433e7d715"
+    },
+    {
+      "path": "assets/mathcase-branding-kit/mathcase-icon-256.png",
+      "bytes": 115606,
+      "sha256": "70c288fd9f8cfeaf2b04584c7e4640532f97f8790f86e737c897633286e4f963",
+      "source_sha256": "70c288fd9f8cfeaf2b04584c7e4640532f97f8790f86e737c897633286e4f963"
+    },
+    {
+      "path": "assets/mathcase-branding-kit/mathcase-lockup-960.png",
+      "bytes": 846035,
+      "sha256": "c430babfed2aec700e9da6e8665d444602f123fe88ac7998a91989f1992636e4",
+      "source_sha256": "c430babfed2aec700e9da6e8665d444602f123fe88ac7998a91989f1992636e4"
+    },
+    {
+      "path": "index.html",
+      "bytes": 2447,
+      "sha256": "b6ea33de689577b16d029834bee89811eac28e5f2510a681d603817c7b532d44",
+      "source_sha256": "a3b7942ff929b59a3969e3499b886b9d067f6d31ce6ea7bae13d376000a15b19"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11349,
+      "sha256": "41a5da747522527b19b93715729d630b956410957b32f853b8c7d0a2b68267c3",
+      "source_sha256": "41a5da747522527b19b93715729d630b956410957b32f853b8c7d0a2b68267c3"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 1299,
+      "sha256": "af65accd71dd17d137132cc13d471ae67a706fc5e9ed61b0afcb085929c0b36e",
+      "source_sha256": "af65accd71dd17d137132cc13d471ae67a706fc5e9ed61b0afcb085929c0b36e"
+    },
+    {
+      "path": "proofs/first-rung/evidence/composite-counterexample-r1/check.json",
+      "bytes": 1090,
+      "sha256": "a699f0e7933142b5a13e3c6dd4c0ea91b3465ef77918be8ca9500ecd9d58a42e",
+      "source_sha256": "a699f0e7933142b5a13e3c6dd4c0ea91b3465ef77918be8ca9500ecd9d58a42e"
+    },
+    {
+      "path": "proofs/first-rung/evidence/composite-counterexample-r1/statement.json",
+      "bytes": 439,
+      "sha256": "01cdfe07a8d8104ad13bee9bdd23e8dcec1208d8d62628debe7f5f43985ea972",
+      "source_sha256": "01cdfe07a8d8104ad13bee9bdd23e8dcec1208d8d62628debe7f5f43985ea972"
+    },
+    {
+      "path": "proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/MathCaseCandidate.lean",
+      "bytes": 215,
+      "sha256": "34b5edc1d9b5bbd5b750e23184edcfaa481de195ed504a28f379b059497caaa9",
+      "source_sha256": "34b5edc1d9b5bbd5b750e23184edcfaa481de195ed504a28f379b059497caaa9"
+    },
+    {
+      "path": "proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/sqrt2-child-compile.stdout.txt",
+      "bytes": 444,
+      "sha256": "92cfbf662b95e8ecaca861b3316455d935a92bf1c06ccf038d02c688226239d5",
+      "source_sha256": "92cfbf662b95e8ecaca861b3316455d935a92bf1c06ccf038d02c688226239d5"
+    },
+    {
+      "path": "proofs/first-rung/MathCaseSqrtTwoInfiniteDescent.lean",
+      "bytes": 4431,
+      "sha256": "7e21fcfc7fe30109ceb79a75dc6d40d6de2860fdaa74588351ab6d08b43a01bd",
+      "source_sha256": "7e21fcfc7fe30109ceb79a75dc6d40d6de2860fdaa74588351ab6d08b43a01bd"
+    },
+    {
+      "path": "saved-demo/data.js",
+      "bytes": 4482,
+      "sha256": "0b44b9bb860078bdefe9f32e22ce01cb789231997eed33b4e97d1e08f85992da",
+      "source_sha256": null
+    },
+    {
+      "path": "saved-demo/tavily-runtime.json",
+      "bytes": 689,
+      "sha256": "efc38c1e84b56be0c25aee89c382f233b839c7ceedb7046e9aebd0234bd5e6d2",
+      "source_sha256": "efc38c1e84b56be0c25aee89c382f233b839c7ceedb7046e9aebd0234bd5e6d2"
+    },
+    {
+      "path": "saved-demo/verification.json",
+      "bytes": 1702,
+      "sha256": "8eb43e7f4554b5205e21eb3a0e4c46c705b66630b5aebeb7a176b7f2086e21b2",
+      "source_sha256": null
+    }
+  ]
+}

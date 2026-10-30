@@ -1,0 +1,40 @@
+{
+  "schema_version": "mathcase-r0b-verification-v2",
+  "recorded_at_utc": "2026-10-20T03:04:43.004060+00:00",
+  "problem": "Nat.add_assoc",
+  "theorem": "mathcaseNatAddAssoc",
+  "statement": "forall (n m k : Nat), (n + m) + k = n + (m + k)",
+  "statement_sha256": "d45f9f31ac213fa8abf6598463867c4557479cb47003f208a101af98164e5261",
+  "proof_sha256": "8685769463bbde843f4646e08b0b78938cb795dade0403a7a46aeaaf11bd5131",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "gates": {
+    "V1_kernel_build": "PASSED",
+    "V2_axiom_audit": "PASSED"
+  },
+  "axiom_output": "'mathcaseNatAddAssoc' does not depend on any axioms",
+  "build_exit_code": 0,
+  "axiom_command_exit_code": 0,
+  "git_head": "49261457c747b7a0745e58ba5d097b29d026849a",
+  "primary_worktree_unchanged": true,
+  "clean_git_checkout_with_tracked_proof": false,
+  "clean_source_snapshot_rebuild": true,
+  "axiom_audit_passed": true,
+  "clean_source_snapshot_sha256": "8df3644b9cdce92a4dfecc3f098395b801c0ea2032198824629ca3a55e115636",
+  "clean_snapshot_proof_matches_worktree": true,
+  "same_proof_pantograph_leandojo_comparison_required": false,
+  "same_proof_pantograph_leandojo_comparison_status": "REMOVED_AS_MOOT",
+  "gate_amendment": {
+    "amended_at_date": "2026-10-19",
+    "authorized_by": "Ryan",
+    "removed_check": "same-proof Pantograph/LeanDojo comparison",
+    "reason": "The original LeanDojo is deprecated, and LeanDojo-v2 uses Pantograph internally, so this is not an independent comparison.",
+    "required_checks": [
+      "clean_source_snapshot_rebuild",
+      "axiom_audit_passed"
+    ]
+  },
+  "full_r0b_closed": true,
+  "r0b_gate_status": "PASSED",
+  "remaining_r0b_work": []
+}
