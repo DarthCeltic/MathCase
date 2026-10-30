@@ -14,7 +14,7 @@
 
 - **Nebius:** historical candidate generator for the prime-divisibility example. Its saved answer is not the proof verdict.
 - **Lean:** checks the exact formal statement and proof under the recorded toolchain. The included static demo preserves the limited historical result; the local setup independently rebuilds the separate R0b core-only example.
-- **Tavily:** the site shows a bounded, source-free summary of a separate historical search. The standalone public adapter can perform new, operator-initiated searches; it does not recreate that saved record or feed proof verification. Returned snippets are untrusted source leads, not proof or novelty evidence.
+- **Tavily:** the site shows a bounded summary and six title-and-URL source locators from a separate historical search, without excerpts. The standalone public adapter can perform new, operator-initiated searches; it does not recreate that saved record or feed proof verification. Returned snippets are untrusted source leads, not proof or novelty evidence.
 
 ## Excluded functionality and data
 

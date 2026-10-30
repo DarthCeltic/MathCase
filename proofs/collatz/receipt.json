@@ -1,0 +1,23 @@
+{
+  "schema_version": "mathcase-public-collatz-local-compile-v1",
+  "record_kind": "derived_metadata_from_self_recorded_local_compile",
+  "standard_m4_receipt": false,
+  "proof_origin": "Codex-agent-authored formalization",
+  "source": {
+    "path": "proofs/collatz/CollatzDescent.lean",
+    "sha256": "f31a3368fcca1b413106dac110300b2adfd10c846f495b83fcd9bfeb5a7add5d"
+  },
+  "final_compile": {
+    "exit_code": 0,
+    "exit_code_path": "proofs/collatz/CollatzDescent.exit-code.txt",
+    "exit_code_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "stdout_path": "proofs/collatz/CollatzDescent.stdout.txt",
+    "stdout_sha256": "7b33bdc73b138b5be8d38184d3606915934c1d26d7ddcb1dae61f89884c195d7",
+    "reported_axioms": ["propext", "Quot.sound"],
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "compiler_image_sha256": "ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7"
+  },
+  "scope": "Restricted descent for 13 of 16 residue classes modulo 16 for starts n >= 2; no full Collatz convergence claim.",
+  "fresh_public_checkout_compile_performed": false
+}

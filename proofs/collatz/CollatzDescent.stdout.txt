@@ -1,0 +1,4 @@
+'collatz_three_step_family_natRec' depends on axioms: [propext, Quot.sound]
+'collatz_six_step_family_natRec' depends on axioms: [propext, Quot.sound]
+'collatz_restricted_descent' depends on axioms: [propext, Quot.sound]
+'collatz_residue_coverage' depends on axioms: [propext, Quot.sound]

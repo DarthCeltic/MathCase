@@ -16,3 +16,6 @@ proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/** -text -eol -diff
 proofs/first-rung/evidence/composite-counterexample-r1/** -text -eol -diff
 proofs/first-rung/MathCasePrimeInfiniteDescent.lean -text -eol -diff
 proofs/first-rung/MathCaseSqrtTwoInfiniteDescent.lean -text -eol -diff
+proofs/collatz/CollatzDescent.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/CollatzDescent.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/CollatzDescent.exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
