@@ -18,8 +18,8 @@
     },
     {
       "path": "app.js",
-      "bytes": 5426,
-      "sha256": "3bdcc59aae689f4179f1cc09a2d97270ec16fa5ccc6af87374041cbdf55888b8",
+      "bytes": 6211,
+      "sha256": "fef7322ec8d97ed792b3e109e5e45ec94f50bce4ab88f30d93126dcbd2a7fe35",
       "source_sha256": null
     },
     {
@@ -96,8 +96,14 @@
     },
     {
       "path": "saved-demo/data.js",
-      "bytes": 4482,
-      "sha256": "0b44b9bb860078bdefe9f32e22ce01cb789231997eed33b4e97d1e08f85992da",
+      "bytes": 4970,
+      "sha256": "3f183dad2c1a2f0c6096df29635fe69727fce08ba6498c1532ff9bc1e5377e9b",
+      "source_sha256": null
+    },
+    {
+      "path": "saved-demo/s0-failure.json",
+      "bytes": 1575,
+      "sha256": "c5dbc12a00b4ea0da2566a26106af2420679cc56da69b1b5080ca8eaf6be4fb6",
       "source_sha256": null
     },
     {

@@ -57,6 +57,19 @@
     paper.append(make("span", "paper-label", "Saved case · " + item.status), make("div", "math", item.math), make("p", "statement", item.statement));
     const stepArea = make("div", "step");
     stepArea.append(make("span", "step-kicker", `Step ${step + 1} / ${item.steps.length}`), make("h3", "", item.steps[step].title), make("p", "", item.steps[step].body));
+    if (item.rejected_attempt) {
+      const failure = item.rejected_attempt;
+      const detail = make("details", "details");
+      detail.open = step === 1;
+      const summary = make("summary", "", "S0 rejected proposal and Lean error");
+      summary.style.color = "#775326";
+      const note = make("p", "", "First NVIDIA Nemotron proposal through Nebius. Lean rejected this attempt; it is not a proof. The linked derived record carries the original source hashes.");
+      note.style.color = "#334958";
+      const errorLabel = make("p", "", "Saved Lean error excerpt");
+      errorLabel.style.color = "#334958";
+      detail.append(summary, note, make("pre", "", failure.candidate), errorLabel, make("pre", "", failure.lean_error_excerpt));
+      stepArea.append(detail);
+    }
     const controls = make("div", "step-controls");
     const previous = make("button", "", "← Previous step"); previous.type = "button"; previous.disabled = step === 0;
     previous.addEventListener("click", () => { position.set(id, step - 1); renderCase(); });

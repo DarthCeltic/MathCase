@@ -1,0 +1,23 @@
+{
+  "schema_version": "mathcase-static-demo-s0-failure-v1",
+  "derived_projection": true,
+  "case_id": "hero-prime-divisibility-r1",
+  "source_head": "2f218b8cc94e00c627b43fa0b3a6e0d50e464290",
+  "source_run_id": "proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b",
+  "stage": "S0",
+  "outcome": "REJECTED",
+  "provider_id": "nebius-token-factory",
+  "model_id": "nvidia/Nemotron-3_5-Lightning",
+  "candidate": "by intro p n hp h; exact Nat.Prime.dvd_of_dvd_pow h",
+  "candidate_sha256": "b3c56e964ce75036f59f88ba054fe21f803413788d604a08869fd7a74bf9ed72",
+  "lean_status": "KERNEL_REJECTED",
+  "lean_summary": "Lean rejected the candidate proof during compilation.",
+  "lean_error_excerpt": "/mathcase/input/MathCaseCandidate.lean:4:49: error: Application type mismatch: The argument\n  h\nhas type\n  p ∣ n ^ 2\nbut is expected to have type\n  Nat.Prime ?m.33\nin the application\n  Nat.Prime.dvd_of_dvd_pow h\n'mathcase_candidate' depends on axioms: [propext, sorryAx]\n",
+  "lean_error_excerpt_sha256": "382ea56fb391e77bd1ac7a540fb00d22395904c17a0b71b7424a0beafc0a9352",
+  "source_artifact_sha256": {
+    "provider_solve": "48c6167ec5eb080fa623f0992e0f50c665d5851368eab80420ee52482259aa55",
+    "provider_response": "997dbcf0a6a19a75cb1f413cb24a677b34fd83b91170032476d13863d7cf8583",
+    "lean_receipt": "35c6b2e0544a83984a7e6baa2a5d72c629d3bb161530b6593ffefacc83244c49"
+  },
+  "boundary": "Rejected model proposal and saved Lean error; this candidate is not a proof. This is a derived excerpt, not the original complete provider or Lean receipt."
+}
