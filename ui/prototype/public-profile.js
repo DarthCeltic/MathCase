@@ -16,6 +16,14 @@ document.documentElement.dataset.publicCaseDesk = "true";
     const banner = document.createElement("aside");
     banner.className = "public-case-desk-banner";
     banner.innerHTML = '<strong>Saved Case Desk</strong><span>Original proof records · no key required · no model or proof checker runs</span><nav aria-label="Saved cases"><a href="#library">Cases</a><a href="#case/hero-composite-counterexample-r1/understand">Counterexample</a><a href="#case/hero-prime-divisibility-r1/understand">Prime lemma</a><a href="#case/hero-sqrt2-parent-reuse-r2/understand">Build on it: √2</a></nav>';
+    const tavily = document.createElement("button");
+    tavily.type = "button";
+    tavily.className = "link";
+    tavily.textContent = "Tavily search";
+    tavily.dataset.evidenceHref = "/saved-demo/tavily-runtime.json";
+    tavily.dataset.evidenceTitle = "Separate saved Tavily search · addition case, not prime-proof input";
+    tavily.dataset.evidenceSha256 = "efc38c1e84b56be0c25aee89c382f233b839c7ceedb7046e9aebd0234bd5e6d2";
+    banner.querySelector("nav").appendChild(tavily);
     if (window.MathCaseStaticTransport) {
       const fallback = document.createElement("a");
       fallback.href = window.MathCaseStaticTransport.readerUrl;
