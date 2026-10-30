@@ -38,7 +38,7 @@ This command does not check your plan or remaining balance before dispatch. A ba
 
 The site presents three saved cases: a checked arithmetic counterexample, a known prime-divisibility theorem checked in Lean, and a √2 child compilation reusing the saved parent theorem. Opening the site makes no model, Lean, or Tavily call. The displayed Tavily record is a separate source-free summary; it was not used to generate or verify the proof. Nebius supplied historical proof candidates in the saved prime example; Lean's kernel and axiom audit determined the saved check result.
 
-The saved examples demonstrate these specific records. They do not establish novel mathematics, broad problem-solving ability, measured model performance, independent exposition review, or corpus clearance. Read `SOURCE_NOTICE.md` for source attribution; the site `NOTICE` and `saved-demo/site-manifest.json` cover the saved demo and its file hashes.
+The saved examples demonstrate these specific records. They do not establish novel mathematics, broad problem-solving ability, measured model performance, independent exposition review, or corpus clearance. The root `NOTICE` covers the static Case Desk subset; `SOURCE_NOTICE.md` covers the additional source-edition files, including the connector. `saved-demo/site-manifest.json` records the saved demo file hashes.
 
 ## Public-edition scope
 
