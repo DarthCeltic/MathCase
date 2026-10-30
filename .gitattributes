@@ -7,3 +7,5 @@
 *.pdf binary
 *.png binary
 *.zip binary
+proofs/first-rung/evidence/composite-counterexample-r1/check.json -text -eol -diff
+proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/sqrt2-child-compile.stdout.txt -text -eol -diff
