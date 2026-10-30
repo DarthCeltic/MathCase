@@ -109,8 +109,9 @@ def library(root: Path, engine: dict, dispatcher: object) -> dict:
         })
     return {"schema_version": "mathcase-case-library-v1", "records": records,
             "generated_at_utc": engine["PREVIEW_STARTED_AT_UTC"],
-            "scope": {"mode": "SAVED_EXAMPLES_NOT_TRAINING_OR_EVALUATION", "record_count": 3},
-            "pair_bank": {"baseline_unique_pairs": 0, "accepted_delta_events": 0,
+            "scope": {"mode": "SAVED_EXAMPLES_NOT_TRAINING_OR_EVALUATION", "record_count": 3,
+                      "note": "Three saved examples; no training or evaluation corpus is included."},
+            "pair_bank": {"status": "NOT_INCLUDED_IN_FRESH_CLONE", "baseline_unique_pairs": 0, "accepted_delta_events": 0,
                           "individually_indexed_baseline_items": 0},
             "case_warnings": [], "detail_warnings": [],
             "domain_note": "Three saved examples. These are not a training or evaluation dataset."}

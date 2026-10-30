@@ -1,4 +1,4 @@
-/* Public profile for the ordinary Case Desk; the backend enforces read-only access. */
+/* Public Case Desk profile; its server or static transport enforces read-only access. */
 window.MathCasePublicReadOnly = true;
 document.documentElement.dataset.publicCaseDesk = "true";
 (() => {
@@ -16,6 +16,12 @@ document.documentElement.dataset.publicCaseDesk = "true";
     const banner = document.createElement("aside");
     banner.className = "public-case-desk-banner";
     banner.innerHTML = '<strong>Saved Case Desk</strong><span>Original proof records · no key required · no model or proof checker runs</span><nav aria-label="Saved cases"><a href="#library">Cases</a><a href="#case/hero-composite-counterexample-r1/understand">Counterexample</a><a href="#case/hero-prime-divisibility-r1/understand">Prime lemma</a><a href="#case/hero-sqrt2-parent-reuse-r2/understand">Build on it: √2</a></nav>';
+    if (window.MathCaseStaticTransport) {
+      const fallback = document.createElement("a");
+      fallback.href = window.MathCaseStaticTransport.readerUrl;
+      fallback.textContent = "Simple reader";
+      banner.querySelector("nav").appendChild(fallback);
+    }
     document.querySelector("main")?.prepend(banner);
     document.querySelectorAll('a[href="#intake"], a[href="#live"], [data-view="intake"], [data-view="live"], [data-room]').forEach(node => node.hidden = true);
     document.querySelectorAll('form:not(.reading-example form)').forEach(form => {

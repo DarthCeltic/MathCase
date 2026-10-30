@@ -27,7 +27,7 @@ Try this short path:
 
 These are saved executions. The public Case Desk rejects writes and new model/search requests. Independent meaning and exposition review remain pending. Reading position, ink and board style are browser preferences; proof records remain unchanged. See [the Case Desk guide](docs/public-case-desk.md) for evidence checks and fork development.
 
-The [hosted saved-case demo](https://darthceltic.github.io/) is a separate lightweight reader. To serve that static reader locally, run `python -m http.server 8000` and open `http://127.0.0.1:8000/`.
+The [hosted saved Case Desk](https://darthceltic.github.io/) uses this same frontend with immutable saved records. It opens directly on the counterexample and keeps a **Simple reader** fallback. To export it for your own static host, follow [the static Case Desk guide](docs/static-case-desk.md). The source checkout also retains the lightweight reader at its root: run `python -m http.server 8000` and open `http://127.0.0.1:8000/`.
 
 ## Optional CLI and Lean setup
 
