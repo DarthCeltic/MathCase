@@ -1,0 +1,44 @@
+{
+  "schema_version": "mathcase-tavily-source-locators-v1",
+  "origin": "DERIVED_FROM_SAVED_RUNTIME_EVENT",
+  "case_id": "nat-add-assoc",
+  "completed_at_utc": "2026-10-26T04:18:36.805941Z",
+  "result_count": 6,
+  "original_redacted_receipt_sha256": "20903a9efd69bd3c02a527be254f2a2a27d11fbe176a9287ca0fe903e0ae6bb9",
+  "saved_event_line_sha256": "31cdbb79cfd32216e3402242b6f5628038689c48357fcdd264876b7225c73600",
+  "source_content_included": false,
+  "proof_input": false,
+  "note": "Saved related-work locators from a separate natural-number addition search. These references are not evidence that the prime-divisibility proof used Tavily.",
+  "sources": [
+    {
+      "rank": 1,
+      "title": "TOPICS IN NUMBER THEORY",
+      "url": "https://wmc.ms.wits.ac.za/wp-content/uploads/2021/02/2-Number-Theory.pdf"
+    },
+    {
+      "rank": 2,
+      "title": "1.1 The Natural Numbers",
+      "url": "https://www.math.utah.edu/~bertram/courses/4030/Nats.pdf"
+    },
+    {
+      "rank": 3,
+      "title": "The Natural Numbers and the Principle of Induction",
+      "url": "https://math-garden.com/wp-content/uploads/2020/10/nst_0_natural_numbers.pdf"
+    },
+    {
+      "rank": 4,
+      "title": "Natural number - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Natural_number"
+    },
+    {
+      "rank": 5,
+      "title": "If $m<n$, then $k^m<k^n",
+      "url": "https://math.stackexchange.com/questions/26875/if-mn-then-kmkn"
+    },
+    {
+      "rank": 6,
+      "title": "Write a function that, given natural numbers n, m ...",
+      "url": "https://stackoverflow.com/questions/74482502/write-a-function-that-given-natural-numbers-n-m-determines-the-smallest-natur"
+    }
+  ]
+}

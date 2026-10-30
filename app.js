@@ -1,4 +1,4 @@
-/* A static reader over deliberately whitelisted saved evidence. No network execution. */
+/* A static reader over whitelisted saved evidence; only a pinned same-origin metadata read. */
 (() => {
   "use strict";
   const data = window.MathCaseStaticDemo;
@@ -148,7 +148,7 @@
     evaluate(); return panel;
   }
 
-  function renderTavily() {
+  async function renderTavily() {
     const host = byId("tavily-body");
     const t = data.tavily;
     host.append(make("p", "", `${t.note} The saved receipt records ${t.result_count} results on ${t.completed_at_utc}.`));
@@ -156,9 +156,39 @@
     const link = make("a", "", "Open the source-free receipt summary ↗");
     link.href = "/" + t.path; link.target = "_blank"; link.rel = "noopener";
     host.append(link);
+    const status = make("p", "", "Reading six saved source locators…");
+    host.append(status);
+    try {
+      const response = await fetch("/saved-demo/tavily-sources.json", { credentials: "omit", cache: "no-store" });
+      if (!response.ok) throw new Error("Saved source locators unavailable");
+      const bytes = await response.arrayBuffer();
+      const digest = Array.from(new Uint8Array(await crypto.subtle.digest("SHA-256", bytes)), value => value.toString(16).padStart(2, "0")).join("");
+      if (digest !== "0149da99e1d6f7c7e09019f731d582173d47e52fef5bc5fbf71225846df8ff81") throw new Error("Saved source locator digest mismatch");
+      const record = JSON.parse(new TextDecoder().decode(bytes));
+      if (record.schema_version !== "mathcase-tavily-source-locators-v1" || record.case_id !== t.case_id ||
+          record.completed_at_utc !== t.completed_at_utc || record.result_count !== 6 ||
+          record.original_redacted_receipt_sha256 !== "20903a9efd69bd3c02a527be254f2a2a27d11fbe176a9287ca0fe903e0ae6bb9" ||
+          record.source_content_included !== false || record.proof_input !== false ||
+          !Array.isArray(record.sources) || record.sources.length !== 6) throw new Error("Saved source locator binding mismatch");
+      const cards = make("div", "tavily-sources");
+      record.sources.forEach((source, index) => {
+        const url = new URL(source.url);
+        if (source.rank !== index + 1 || typeof source.title !== "string" || !source.title ||
+            url.protocol !== "https:" || url.username || url.password) throw new Error("Invalid saved source locator");
+        const card = make("article", "tavily-source");
+        const anchor = make("a", "", source.title);
+        anchor.href = url.href; anchor.target = "_blank"; anchor.rel = "noopener noreferrer";
+        card.append(make("span", "", `Saved result ${index + 1} · ${url.hostname}`), anchor);
+        cards.append(card);
+      });
+      status.textContent = "Six saved result titles and URLs from the separate addition search. No excerpts or page text are included; these were not proof inputs.";
+      host.append(cards);
+    } catch {
+      status.textContent = "Saved source links could not be verified. The source-free receipt summary remains available.";
+    }
   }
 
-  renderTavily();
+  void renderTavily();
   renderCase();
   addEventListener("hashchange", renderCase);
 })();

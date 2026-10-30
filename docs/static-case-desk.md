@@ -9,7 +9,7 @@ python scripts/export_public_case_desk.py --output /path/to/static-site
 node scripts/test_static_case_desk.cjs /path/to/static-site
 ```
 
-The exporter reads only the 70-file `public-case-desk.json` profile. Each source hash is checked before export. It copies the selected public assets and evidence, including sixteen byte-identical historical path aliases so direct downloads work. It adds the fixture transport before the existing public profile and records every generated file hash in `ui/prototype/static-case-manifest.json`. A separate clean temporary profile supplies the derived views, so unrelated files in a developer checkout cannot enter them.
+The exporter reads only the explicit `public-case-desk.json` file profile. Each source hash is checked before export. It copies the selected public assets and evidence, including sixteen byte-identical historical path aliases so direct downloads work. It adds the fixture transport before the existing public profile and records every generated file hash in `ui/prototype/static-case-manifest.json`. A separate clean temporary profile supplies the derived views, so unrelated files in a developer checkout cannot enter them.
 
 Serve the directory with an ordinary static server and open `/ui/prototype/index.html`. The initial case is the exact arithmetic counterexample. Saved history, proof receipts, parent-child links, reading steps, and visual styles remain interactive. New drafts, provider requests, proof reruns, research, and writes are unavailable. The transport refuses unknown routes, external requests, and writes, and verifies fetched evidence bytes against the manifest.
 

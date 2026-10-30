@@ -1,6 +1,6 @@
 {
   "schema_version": "mathcase-static-site-r7",
-  "source_head": "2f218b8cc94e00c627b43fa0b3a6e0d50e464290",
+  "source_head": "6cc8f0d43da2d24f0c1922a56235e123e07d4f7e",
   "mode": "SAVED_EXECUTION_READ_ONLY",
   "provider_calls_on_open": 0,
   "files": [
@@ -12,14 +12,14 @@
     },
     {
       "path": "app.css",
-      "bytes": 9219,
-      "sha256": "aa6ff3295d76f808f052d5714d81bae78a807bbeb95034096fe19aa462b43246",
+      "bytes": 9667,
+      "sha256": "859b59851807ade3274ca6bf117a3a3e82abd03e807f4ee23884de5009486630",
       "source_sha256": null
     },
     {
       "path": "app.js",
-      "bytes": 8872,
-      "sha256": "5b9a24a817c1772f1f0f9165b2f45afc47ba7a2adae8a7fd109005d6df60ff38",
+      "bytes": 11166,
+      "sha256": "295abbbfccc272b0eb4be196399890899a697e20876f73e1cbca2d33322a7c2d",
       "source_sha256": null
     },
     {
@@ -49,7 +49,7 @@
     {
       "path": "index.html",
       "bytes": 2447,
-      "sha256": "b6ea33de689577b16d029834bee89811eac28e5f2510a681d603817c7b532d44",
+      "sha256": "7cdc7f1d3397b7580f391997f39bdc1df5e5bdfc864f9145986cdf877a5a17be",
       "source_sha256": "a3b7942ff929b59a3969e3499b886b9d067f6d31ce6ea7bae13d376000a15b19"
     },
     {
@@ -111,6 +111,12 @@
       "bytes": 689,
       "sha256": "efc38c1e84b56be0c25aee89c382f233b839c7ceedb7046e9aebd0234bd5e6d2",
       "source_sha256": "efc38c1e84b56be0c25aee89c382f233b839c7ceedb7046e9aebd0234bd5e6d2"
+    },
+    {
+      "path": "saved-demo/tavily-sources.json",
+      "bytes": 1685,
+      "sha256": "0149da99e1d6f7c7e09019f731d582173d47e52fef5bc5fbf71225846df8ff81",
+      "source_sha256": null
     },
     {
       "path": "saved-demo/verification.json",

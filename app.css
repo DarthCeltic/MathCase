@@ -16,3 +16,8 @@
 .arithmetic-equations,.arithmetic-verdict{margin:0;color:#334958;font-size:13px;line-height:1.55;overflow-wrap:anywhere}
 .arithmetic-verdict{margin-top:4px;font-weight:800}
 @media(max-width:560px){.arithmetic-check{padding:16px}.arithmetic-form{grid-template-columns:1fr 1fr}.arithmetic-button{grid-column:1/-1}}
+.tavily-sources{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:14px}
+.tavily-source{min-width:0;padding:12px 13px;border:1px solid #d4ad7855;border-radius:9px;background:#ffffff09}
+.tavily-source span{display:block;margin-bottom:5px;color:#aebdc2;font-size:10px}
+.tavily-source a{display:block;overflow-wrap:anywhere;font-size:13px;font-weight:700}
+@media(max-width:660px){.tavily-sources{grid-template-columns:1fr}}
