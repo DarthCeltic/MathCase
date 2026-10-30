@@ -1,6 +1,10 @@
-# MathCase public edition
+# MathCase
 
-MathCase is a provenance-first mathematics workbench. This public edition contains the forkable Go CLI, a read-only Python MCP connector, selected authored Lean examples, and a static three-case saved-proof demo at the site root.
+**Question an AI proof. Check it in Lean. Build on what holds.**
+
+MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [no-key saved-case demo](https://darthceltic.github.io/), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2`, inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem, then follow the checked parent lemma into a √2 infinite-descent child. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
+
+This repository contains the forkable Go CLI/provider core, a bounded BYOK Tavily search command, a read-only Python MCP connector, selected Lean examples, and the static three-case demo. The demo opens without an API key or paid call. For a technical tour, read [the public-edition scope](docs/public-edition.md) after the quick setup below.
 
 ## Quick setup
 
