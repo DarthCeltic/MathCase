@@ -3,3 +3,16 @@
 @media(max-width:900px){.intro{grid-template-columns:1fr 120px}.reader{grid-template-columns:1fr}.side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.side-card:last-child{grid-column:1/-1}}
 @media(max-width:660px){.page{width:min(100% - 24px,1320px)}.topbar{padding:16px 0;align-items:flex-start}.mode{font-size:0;padding:10px}.mode-dot{width:8px;height:8px}.intro{grid-template-columns:1fr;margin-top:12px;padding:22px}.lockup{display:none}.case-nav{grid-template-columns:1fr;gap:6px}.case-tab{padding:9px 11px}.case-tab small{display:none}.case-stage{padding:14px}.stage-head{display:block}.result{display:inline-block;margin-top:13px}.paper{padding:24px 20px;min-height:320px}.math{margin:24px 0}.side{display:flex}footer{display:block}footer span{display:block;margin:5px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.case-tab{transition:none}}
+.arithmetic-check{margin:0 auto 25px;padding:19px 20px;border:1px solid #b8ad9a;border-radius:11px;background:#fffaf0;color:var(--paper-ink);max-width:760px}
+.arithmetic-check h3{margin:0 0 6px;font:500 20px Georgia,serif}
+.arithmetic-note{margin:0 0 15px;color:#455a66;font-size:12px;line-height:1.55}
+.arithmetic-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr)) auto;align-items:end;gap:12px}
+.arithmetic-field{display:grid;gap:6px;color:#455a66;font-size:11px;font-weight:800}
+.arithmetic-input{width:100%;min-width:0;padding:10px 11px;border:1px solid #9d988e;border-radius:7px;background:#fff;color:#203241;font:16px ui-monospace,SFMono-Regular,Consolas,monospace}
+.arithmetic-button{min-height:40px;padding:9px 13px;border:1px solid #80613e;border-radius:7px;background:#ecdcbf;color:#3b352d;font-size:12px;font-weight:800;white-space:nowrap}
+.arithmetic-button:hover{background:#f6e5c7}
+.arithmetic-output{margin-top:13px;padding:11px 12px;border-left:3px solid #839d89;border-radius:5px;background:#eaf1e9}
+.arithmetic-output.error,.arithmetic-output.counterexample{border-color:#a34b3d;background:#f9e9e5;color:#742f27}
+.arithmetic-equations,.arithmetic-verdict{margin:0;color:#334958;font-size:13px;line-height:1.55;overflow-wrap:anywhere}
+.arithmetic-verdict{margin-top:4px;font-weight:800}
+@media(max-width:560px){.arithmetic-check{padding:16px}.arithmetic-form{grid-template-columns:1fr 1fr}.arithmetic-button{grid-column:1/-1}}

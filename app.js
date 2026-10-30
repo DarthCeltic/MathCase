@@ -55,6 +55,7 @@
     const paper = make("section", "paper");
     paper.setAttribute("aria-label", "Saved mathematical reading surface");
     paper.append(make("span", "paper-label", "Saved case · " + item.status), make("div", "math", item.math), make("p", "statement", item.statement));
+    if (item.id === "hero-composite-counterexample-r1") paper.append(renderArithmeticCheck());
     const stepArea = make("div", "step");
     stepArea.append(make("span", "step-kicker", `Step ${step + 1} / ${item.steps.length}`), make("h3", "", item.steps[step].title), make("p", "", item.steps[step].body));
     if (item.rejected_attempt) {
@@ -111,6 +112,40 @@
       evidence.append(detail);
     }
     side.append(evidence); reader.append(side); host.append(reader);
+  }
+
+
+  function renderArithmeticCheck() {
+    const panel=make("section","arithmetic-check");
+    panel.setAttribute("aria-labelledby","arithmetic-title");
+    const title=make("h3","","Try an exact integer example"); title.id="arithmetic-title";
+    panel.append(title,make("p","arithmetic-note","Test d ∣ n² ⇒ d ∣ n with an exact local calculation. Passing examples do not prove the general rule; saved records stay unchanged."));
+    const form=make("form","arithmetic-form"); form.noValidate=true;
+    const dLabel=make("label","arithmetic-field","Divisor d"), dInput=make("input","arithmetic-input");
+    dInput.type="text"; dInput.inputMode="numeric"; dInput.autocomplete="off"; dInput.maxLength=30; dInput.value="4"; dLabel.append(dInput);
+    const nLabel=make("label","arithmetic-field","Number n"), nInput=make("input","arithmetic-input");
+    nInput.type="text"; nInput.inputMode="numeric"; nInput.autocomplete="off"; nInput.maxLength=30; nInput.value="2"; nLabel.append(nInput);
+    const check=make("button","arithmetic-button","Check example"); check.type="submit";
+    form.append(dLabel,nLabel,check);
+    const output=make("div","arithmetic-output"); output.setAttribute("aria-live","polite"); output.setAttribute("role","status");
+    panel.append(form,output);
+    function evaluate() {
+      output.replaceChildren();
+      const ds=dInput.value.trim(), ns=nInput.value.trim(), valid=x=>x.length>0 && x.length<=30 && /^[0-9]+$/.test(x);
+      if(!valid(ds)||!valid(ns)){output.className="arithmetic-output error";output.textContent="Enter whole numbers using digits only (up to 30 digits).";return;}
+      const d=BigInt(ds), n=BigInt(ns);
+      if(d===0n){output.className="arithmetic-output error";output.textContent="Divisor d must be positive.";return;}
+      const square=n*n, sr=square%d, nr=n%d;
+      output.className="arithmetic-output";
+      const equation=make("p","arithmetic-equations","n² = "+square+"; n² mod d = "+sr+"; n mod d = "+nr);
+      const verdict=make("p","arithmetic-verdict");
+      if(sr===0n && nr!==0n){verdict.textContent="Counterexample: "+d+" divides "+n+"², but "+d+" does not divide "+n+".";output.classList.add("counterexample");}
+      else if(sr===0n) verdict.textContent="This example fits the claim; one example does not prove it.";
+      else verdict.textContent="The premise is false for this example, so it is not a counterexample.";
+      output.append(equation,verdict);
+    }
+    form.addEventListener("submit",event=>{event.preventDefault();evaluate();});
+    evaluate(); return panel;
   }
 
   function renderTavily() {
