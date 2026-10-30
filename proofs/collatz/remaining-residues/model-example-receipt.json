@@ -1,0 +1,41 @@
+{
+  "schema_version": "mathcase-public-provider-proof-summary-v1",
+  "record_kind": "derived_summary_of_private_standard_lean_receipt",
+  "provider": "nebius-token-factory",
+  "model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "recorded_at_utc": "2026-10-30T16:45:02.8020186Z",
+  "target": "For all natural k, thirteen ordinary Collatz steps send 256k+39 to 243k+38, which is smaller than 256k+39.",
+  "context_contained_prior_worked_example": true,
+  "worked_example_source_sha256": "74ce5e658521c51609cd521737641b5f1560b089a36df5d9829c8055b176e9f2",
+  "worked_example_classification": "MODEL_PROPOSED_AGENT_REPAIRED",
+  "response_configuration": {
+    "thinking_mode": "chat",
+    "reasoning_effort": "none"
+  },
+  "response_body_edited_by_agent": false,
+  "proof_body_sha256": "38f15acbf2ce590776a634fa55cd43bd3b8ec8f4d4e78f80b7f5d803d649a24c",
+  "source_path": "proofs/collatz/remaining-residues/ModelExample13.lean",
+  "source_sha256": "df6f70f112d4f9808fa228801d23f4388645c25abaca34a590f366fbe6be7d9a",
+  "stdout_path": "proofs/collatz/remaining-residues/ModelExample13.stdout.txt",
+  "stdout_sha256": "a0c7a484f295ec50414f614a3354403eb2417f1e568efcbf47f334a3f2887b67",
+  "original_receipt_sha256": "821a220eed26e24ef8a6cd7cd136e14b27d3012c65f8a952b6f083b21c78eb4a",
+  "original_receipt_id": "lean-6513732270b9a182cdddd53bd50cadba",
+  "status": "PASSED",
+  "kernel_passed": true,
+  "axioms_passed": true,
+  "observed_axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "exit_code": 0,
+  "provider_request_sha256": "1161c61e26e4ce9d221455169a2a0c17dfc1c99c122332260e6adf418ca361e4",
+  "provider_response_sha256": "8d2810b965585dce8070f0b8b7bf52367f9001db793217d5320244e8d3331eb3",
+  "cost_micros": 12418,
+  "prompt_tokens": 3167,
+  "completion_tokens": 2080,
+  "original_standard_receipt_included": false,
+  "fresh_public_checkout_compile_performed": false,
+  "novelty_claim": false,
+  "comparison_note": "Response mode and worked-example context both changed; this observation does not isolate either effect or establish a model ranking."
+}

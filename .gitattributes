@@ -27,3 +27,11 @@ proofs/collatz/model-pro-repair/agent-repaired-candidate.lean -text -eol whitesp
 proofs/collatz/model-pro-repair/original-to-agent-repaired.diff -text -eol whitespace=-trailing-space,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/model-pro-repair/lean-repair-r5-stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/model-pro-repair/lean-repair-r5-exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/BoundedDescent8192.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/BoundedDescent8192.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/BoundedDescent8192.exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/ModelExample13.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/ModelExample13.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/LongPath27.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/LongPath27.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/remaining-residues/LongPath27.exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

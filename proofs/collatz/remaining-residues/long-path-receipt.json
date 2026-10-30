@@ -1,0 +1,39 @@
+{
+  "final_compile": {
+    "compiler_image_sha256": "ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7",
+    "exit_code": 0,
+    "exit_code_path": "proofs/collatz/remaining-residues/LongPath27.exit-code.txt",
+    "exit_code_sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "reported_axioms": [
+      "propext",
+      "Quot.sound"
+    ],
+    "stdout_path": "proofs/collatz/remaining-residues/LongPath27.stdout.txt",
+    "stdout_sha256": "b8194ab59edbff3f0989b1cb4111dc9ffc52dcea5cb584829c6f4af78bbb5f6a"
+  },
+  "formal_statement": "For every k : Nat, 96 ordinary Collatz steps send (2^59)*k+27 to (3^37)*k+23, which is strictly below (2^59)*k+27.",
+  "fresh_public_checkout_compile_performed": false,
+  "model_generated_proof": false,
+  "proof_origin": "Codex-agent-authored formalization",
+  "record_kind": "derived_metadata_from_self_recorded_local_compile",
+  "schema_version": "mathcase-public-collatz-long-path-local-compile-v1",
+  "scope": {
+    "additive_to_8192_residue_count": false,
+    "closes_entire_mod128_class": false,
+    "full_collatz_convergence_claim": false,
+    "included_in_bounded_residue_counts": false,
+    "minimum_k": 0,
+    "modulus": "2^59",
+    "novelty_claim": false,
+    "one_residue_class_only": true,
+    "residue": 27,
+    "steps": 96
+  },
+  "source": {
+    "path": "proofs/collatz/remaining-residues/LongPath27.lean",
+    "sha256": "edc333afd0ead68f8fb049ea1a9f6bd0d1f6548fa22c24bd1b54832c6de446c9"
+  },
+  "standard_m4_receipt": false
+}

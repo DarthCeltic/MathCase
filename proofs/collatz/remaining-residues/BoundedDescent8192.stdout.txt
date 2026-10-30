@@ -1,0 +1,9 @@
+'ResidueLane115.bounded_residue_descent' depends on axioms: [propext, Quot.sound]
+'ResidueLane115.eligibleResidue_count' does not depend on any axioms
+'ResidueLane115.descent_mod256_39' depends on axioms: [propext, Quot.sound]
+'ResidueLane115.bounded_residue_descent_plus_seven' depends on axioms: [propext, Quot.sound]
+'ResidueLane115.eligibleResidue256_count' does not depend on any axioms
+'ResidueLane115.bounded_residue_descent_plus_m12_prefix' depends on axioms: [propext, Quot.sound]
+'ResidueLane115.eligibleResidue4096_count' does not depend on any axioms
+'ResidueLane115.bounded_residue_descent_plus_m13_prefix' depends on axioms: [propext, Quot.sound]
+'ResidueLane115.eligibleResidue8192_count' does not depend on any axioms

@@ -1,5 +1,33 @@
 # Restricted Collatz descent (optional research appendix)
 
+## Latest checked extension
+
+The final [agent-authored Lean source](../proofs/collatz/remaining-residues/BoundedDescent8192.lean) proves that every qualifying natural number `n ≥ 2` in **7,825 of 8,192 residue classes** reaches a smaller value within **1 to 21 ordinary Collatz steps**. The source also proves the finite class count. Its saved check exited `0`; the descent theorem uses `[propext, Quot.sound]`, and the count theorem has no axioms. The exact [check output](../proofs/collatz/remaining-residues/BoundedDescent8192.stdout.txt) and [derived receipt](../proofs/collatz/remaining-residues/bounded-descent-receipt.json) bind the source bytes and toolchain.
+
+| Accepted tier | Covered residue classes | Maximum steps |
+| --- | ---: | ---: |
+| Initial combined result | 115 / 128 | 11 |
+| Seven additional subfamilies | 237 / 256 | 13 |
+| Further subdivisions | 3,870 / 4,096 | 19 |
+| Final checked extension | 7,825 / 8,192 | 21 |
+
+Each tier covers infinite families, but none proves eventual convergence. Refining the original thirteen uncovered classes found additional provable subfamilies in every one of them; **none of those thirteen whole classes is closed**. The [coverage record](../proofs/collatz/remaining-residues/coverage.json) lists the 367 residues outside this final theorem and the split within each original class. This is a bounded descent count, not a percentage of Collatz solved.
+
+A separate [agent-authored long-path proof](../proofs/collatz/remaining-residues/LongPath27.lean) checks, for every natural `k`, that 96 steps send `2^59*k + 27` to `3^37*k + 23`, which is strictly smaller. Its [saved compile record](../proofs/collatz/remaining-residues/long-path-receipt.json) reports exit `0` and `[propext, Quot.sound]`. This is one class modulo `2^59`; it is not added to the 8,192-class count. Neither theorem is presented as novel mathematics.
+
+### Reusing a checked example in a new model proposal
+
+A fresh **DeepSeek V4 Pro on Nebius Token Factory** call received the previously checked eleven-step proof as a disclosed worked example. For the different target `256k+39`, it returned a thirteen-step proof reaching `243k+38`, strictly below its start. MathCase's standard Lean check accepted the exact returned proof body with kernel and axiom-policy checks passed, using `[propext, Quot.sound]`. No agent edited the returned proof. Inspect the [exact generated source](../proofs/collatz/remaining-residues/ModelExample13.lean), [checker output](../proofs/collatz/remaining-residues/ModelExample13.stdout.txt), and [derived receipt summary](../proofs/collatz/remaining-residues/model-example-receipt.json). The original full receipt remains in the private evidence archive.
+
+| Further call | Recorded outcome | Provider cost |
+| --- | --- | ---: |
+| DeepSeek V4 Pro, thinking mode | No final proof body after the reasoning budget; no Lean candidate. | $0.131207 |
+| Nemotron Ultra, nineteen-step target | Returned an incomplete theorem with proof holes; no accepted candidate. | $0.029431 |
+| DeepSeek V4 Pro, chat mode with worked example | Exact returned proof passed MathCase's Lean checks; 3,167 input and 2,080 output tokens. | $0.012418 |
+
+These three calls cost **$0.173056**, bringing the research session to **15 calls and $0.473748**. The response mode and worked-example context both changed in the successful call; this does not isolate either effect or establish a model ranking. The source search below used a separate Tavily credit. These research runs use the configured provider/Lean route and are separate from the hosted saved Case Desk demonstration.
+
+
 The [Lean source](../proofs/collatz/CollatzDescent.lean) defines one Collatz step on natural numbers: halve an even number, or take `3n+1` for an odd number. It proves these elementary, partial results:
 
 - For `k > 0`, `4k+1 → 12k+4 → 6k+2 → 3k+1`, and `3k+1 < 4k+1`.
@@ -49,7 +77,7 @@ The later bounded window made four more paid calls on the `128k+7` eleven-step f
 | `deepseek-ai/DeepSeek-V4-Pro-0813`, repair call | $0.091514 | Lean rejected the candidate. |
 | `nvidia/Nemotron-3-Ultra-550b-a55b`, repair call | $0.069189 | Lean rejected the candidate. |
 
-Across both windows, **12 paid calls cost $0.300692**. The contexts and configurations differ, so these records are not a model ranking. No original model candidate passed Lean.
+Across both windows, **12 paid calls cost $0.300692**. The contexts and configurations differ, so these records are not a model ranking. No original model candidate in these first twelve calls passed Lean.
 
 ### Model-proposed candidate, then agent repair
 

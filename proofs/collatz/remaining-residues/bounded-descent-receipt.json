@@ -1,0 +1,32 @@
+{
+  "schema_version": "mathcase-public-bounded-descent-v1",
+  "classification": "AGENT_AUTHORED",
+  "record_kind": "derived_metadata_from_saved_local_lean_compile",
+  "source_path": "proofs/collatz/remaining-residues/BoundedDescent8192.lean",
+  "source_sha256": "1fe14cc164104eb35e87462eac77186d1c602abd8cdf400d9ac9b4625a49d3a6",
+  "stdout_path": "proofs/collatz/remaining-residues/BoundedDescent8192.stdout.txt",
+  "stdout_sha256": "cc4188e6ffa709c99ac245727278acfb5f9ed9e01b99ea8d92538af9348098a2",
+  "exit_code_path": "proofs/collatz/remaining-residues/BoundedDescent8192.exit-code.txt",
+  "exit_code_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+  "exit_code": 0,
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "compiler_image_sha256": "ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7",
+  "descent_theorem": "ResidueLane115.bounded_residue_descent_plus_m13_prefix",
+  "descent_axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "count_theorem": "ResidueLane115.eligibleResidue8192_count",
+  "count_axioms": [],
+  "minimum_start": 2,
+  "maximum_steps": 21,
+  "covered_residue_classes": 7825,
+  "modulus": 8192,
+  "outside_this_theorem": 367,
+  "whole_previously_uncovered_mod128_classes_closed": 0,
+  "standard_m4_receipt": false,
+  "fresh_public_checkout_compile_performed": false,
+  "novelty_claim": false,
+  "full_convergence_claim": false
+}
