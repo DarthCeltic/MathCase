@@ -1,6 +1,6 @@
 # Public snapshot scope
 
-This is a scoped source snapshot, not the complete private MathCase checkout. The included product is the Go CLI and its internal packages, the read-only Python MCP connector/router, public provider authorization schemas, a Lean-core R0b proof, and a static saved-case site. The static site has its own hashed file inventory at `saved-demo/site-manifest.json`.
+This is a scoped source snapshot, not the complete private MathCase checkout. The included product is the Go CLI and its internal packages, the read-only Python MCP connector/router, a standalone BYOK Tavily search command, public provider authorization schemas, a Lean-core R0b proof, and a static saved-case site. The static site has its own hashed file inventory at `saved-demo/site-manifest.json`.
 
 The following tracked private/uncleared payloads are excluded:
 
