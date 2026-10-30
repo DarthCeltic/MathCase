@@ -9,3 +9,10 @@
 *.zip binary
 proofs/first-rung/evidence/composite-counterexample-r1/check.json -text -eol -diff
 proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/sqrt2-child-compile.stdout.txt -text -eol -diff
+
+# Preserve original saved proof evidence and receipts byte-for-byte.
+docs/portable-hero/evidence/** -text -eol -diff
+proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/** -text -eol -diff
+proofs/first-rung/evidence/composite-counterexample-r1/** -text -eol -diff
+proofs/first-rung/MathCasePrimeInfiniteDescent.lean -text -eol -diff
+proofs/first-rung/MathCaseSqrtTwoInfiniteDescent.lean -text -eol -diff

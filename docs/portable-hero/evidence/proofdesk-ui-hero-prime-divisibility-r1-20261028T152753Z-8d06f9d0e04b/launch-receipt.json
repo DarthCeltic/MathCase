@@ -1,0 +1,61 @@
+{
+  "schema_version": "mathcase-proofdesk-dispatch-launch-v1",
+  "status": "STARTED",
+  "recorded_at_utc": "2026-10-28T15:27:53.615514Z",
+  "run_id": "proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b",
+  "request_id": "9423030c9112434aa41141779b260ebe",
+  "request_schema_version": "mathcase-proofdesk-dispatch-request-v2",
+  "problem_id": "hero-prime-divisibility-r1",
+  "problem_statement_sha256": "c9894f6cece30755ee2b67d5735be41c0b0a7e6a987fe9d454492cf146e71f50",
+  "provider_id": "nebius-token-factory",
+  "protocol_id": "openai-chat-completions-v1",
+  "model_id": "nvidia/Nemotron-3_5-Lightning",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+  "provider_profile_id": "nebius-nemotron-lightning-post30-prime-20261028-r4",
+  "provider_profile_path": "data/local/config/proofdesk-providers/nebius-nemotron-lightning-post30-prime-20261028-r4.json",
+  "provider_profile_sha256": "b7f47bf77877735ab58db5f49e2dc424f70bc97b56a435cf6e02c2a8d4266714",
+  "owner_authorization_path": "data/local/verification/hero-prime-context-20261028-r1/owner-authorization-r4.json",
+  "owner_authorization_sha256": "198990b0457ee662d8e090bee76ad1dc1355e84d0a6a963e252c86f76d29bfe2",
+  "item_clearance_path": "data/local/verification/hero-prime-context-20261028-r1/clearance-r4.json",
+  "item_clearance_id": "mathcase-nebius-post30-prime-20261028-r4",
+  "item_clearance_sha256": "3ce501553b7647b8166812afd272cf7cdf8facd862ee9802e9ef2b0204c198f4",
+  "snapshot_manifest_path": "C:\\Dev\\MathCase\\data\\local\\verification\\hero-prime-context-20261028-r1\\snapshot-store\\manifests\\mathcase-lean-snapshot-20261028T115132.541195800Z.json",
+  "snapshot_manifest_sha256": "184ae692059a54cc7b464566301770b7f8f3a0f401d8b348d8bf58d4842b6686",
+  "sandbox_image": "sha256:ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "imports": [
+    "Mathlib.Data.Nat.Prime.Basic"
+  ],
+  "api_key_env_name": "NEBIUS_API_KEY",
+  "per_call_ceiling_micros": 5000,
+  "run_ceiling_micros": 10000,
+  "cumulative_ui_cost_ceiling_micros": 100000,
+  "campaign_budget_status": {
+    "schema_version": "mathcase-aggregate-campaign-budget-status-v1",
+    "state": "READY",
+    "account_reconciliation": "OWNER_ATTESTED_EVIDENCE_CURRENT",
+    "available_headroom_micros": 9989588,
+    "provider_available_headroom_micros": {
+      "nebius": 9989588
+    },
+    "reconciliation_path": "data/local/config/campaign-budget-reconciliation.json",
+    "reconciliation_sha256": "5459ca542ac8b2d6621d2f535b0e89019479e46d71a57025703de1b0132f0ce1",
+    "evidence_receipt_sha256s": [
+      "064788c9642cafcb9f1bd98f27b2bdd759a23ca7df865075b5d6fbe56e6d8c7a"
+    ],
+    "reconciled_at_utc": "2026-10-27T16:40:21.896278Z"
+  },
+  "training": "NOT_AUTHORIZED",
+  "corpus_or_locked_eval_input": "NONE",
+  "executable_sha256": "289687468a0353d0b7cf6dd8a2663a0ecdeb6a4e19fd6a98e7fbab216e07e756",
+  "preview_server_sha256": "d3f9d26d74eff2155e240b90270bd0ba292398ff947f3497acef4fd012ddfa19",
+  "dispatch_controller_path": "scripts/proofdesk_dispatch.py",
+  "dispatch_controller_sha256": "8a46d5de2e61705a2d89c6fad5862b0057ce2f050e8d679ba84902fe5af19509",
+  "ui_entry_sha256": "bd40c1a525c60f5d0e81c34ed360695a7ebd16f0cf04e0eeb0f9b1936d96111a",
+  "ui_dispatcher_sha256": "176b4a7611959556164b2444e4f0b7794bad70a6d84bc83a4e1efd726dfadd19",
+  "source_head": "6ee3dc77fb705dadd236b7568eaab345085d4107",
+  "problem_json_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/problem.json",
+  "problem_json_sha256": "f90a6265229277e4adf392ddc62a484190ebf04e85a2d4a60e6060461b00f65f",
+  "provider_context_sha256": "34ea70f9aa9f92aa3ac0343252ec3647ae7ba44f757f0492ff8b28ac797f2a75",
+  "dispatch_basis": "User-selected action from the local Proof Desk; exact theorem bytes read from the pinned item clearance."
+}

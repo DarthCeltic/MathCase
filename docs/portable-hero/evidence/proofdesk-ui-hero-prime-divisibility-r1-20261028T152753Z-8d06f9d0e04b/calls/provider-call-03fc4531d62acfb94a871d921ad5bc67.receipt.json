@@ -1,0 +1,22 @@
+{
+  "schema_version": "mathcase-chat-completions-call-receipt-v1",
+  "evidence_id": "provider-call-03fc4531d62acfb94a871d921ad5bc67",
+  "provider_id": "nebius-token-factory",
+  "model_requested": "nvidia/Nemotron-3_5-Lightning",
+  "model_returned": "nvidia/Nemotron-3_5-Lightning",
+  "model_identity_kind": "exact-requested-model",
+  "endpoint": "https://api.tokenfactory.nebius.com/v1/chat/completions",
+  "provider_call_id": "chatcmpl-c27f5626",
+  "started_at_utc": "2026-10-28T15:31:00.6870265Z",
+  "finished_at_utc": "2026-10-28T15:31:02.0318372Z",
+  "http_status": 200,
+  "response_truncated": false,
+  "request_path": "C:\\Dev\\MathCase\\data\\local\\verification\\proofdesk-ui-dispatch-r1\\proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b\\calls\\provider-call-03fc4531d62acfb94a871d921ad5bc67.request.json",
+  "request_sha256": "ff6b63995f3483c901615f8c3ce5b6f7f98d596e58ca676ea426155b2bdced2e",
+  "response_path": "C:\\Dev\\MathCase\\data\\local\\verification\\proofdesk-ui-dispatch-r1\\proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b\\calls\\provider-call-03fc4531d62acfb94a871d921ad5bc67.response.json",
+  "response_sha256": "997dbcf0a6a19a75cb1f413cb24a677b34fd83b91170032476d13863d7cf8583",
+  "prompt_tokens": 5183,
+  "completion_tokens": 20,
+  "total_tokens": 5203,
+  "outcome": "PROOF_PROPOSED"
+}

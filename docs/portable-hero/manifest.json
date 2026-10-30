@@ -1,0 +1,128 @@
+{
+  "schema": "mathcase-portable-hero-evidence-v1",
+  "purpose": "Public saved Case Desk evidence. Original proof and receipt bytes; third-party research excerpts excluded. This index is not a meaning review.",
+  "artifacts": [
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/problem.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/problem.json",
+      "bytes": 12162,
+      "sha256": "f90a6265229277e4adf392ddc62a484190ebf04e85a2d4a60e6060461b00f65f"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/provider-solve.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/provider-solve.json",
+      "bytes": 5643,
+      "sha256": "48c6167ec5eb080fa623f0992e0f50c665d5851368eab80420ee52482259aa55"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-03fc4531d62acfb94a871d921ad5bc67.response.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-03fc4531d62acfb94a871d921ad5bc67.response.json",
+      "bytes": 901,
+      "sha256": "997dbcf0a6a19a75cb1f413cb24a677b34fd83b91170032476d13863d7cf8583"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/lean-receipts/lean-ddfc54f448b3f8237561ccad22c4496d.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/lean-receipts/lean-ddfc54f448b3f8237561ccad22c4496d.json",
+      "bytes": 10614,
+      "sha256": "35c6b2e0544a83984a7e6baa2a5d72c629d3bb161530b6593ffefacc83244c49"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-165cbb886bd767baa84793dd35f1094c.request.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-165cbb886bd767baa84793dd35f1094c.request.json",
+      "bytes": 15967,
+      "sha256": "a930f0fa82b9173a747a4ded327beb7aad770c3f2861acb06b8d249fc16d368d"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-165cbb886bd767baa84793dd35f1094c.response.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-165cbb886bd767baa84793dd35f1094c.response.json",
+      "bytes": 945,
+      "sha256": "a90118e43014c3afe786164d2f1f45dac1f71b43de45eb5a13b963d2a8a90e61"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/lean-receipts/lean-48a7b6c489cdefa1e7783ffdefbd6f24.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/lean-receipts/lean-48a7b6c489cdefa1e7783ffdefbd6f24.json",
+      "bytes": 20656,
+      "sha256": "9cb1c1076acced9d2a9a61e4f1beb3d46368ed562c10c08cd6857571f0102cc4"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/completion-receipt.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/completion-receipt.json",
+      "bytes": 5450,
+      "sha256": "92120383beea9a2085f6efcf40b7cfcb86b52ba1982b2b7018314e16cf3b3fa3"
+    },
+    {
+      "path": "evidence/statement-revision-note.json",
+      "source_checkout_path": "docs/portable-hero/evidence/statement-revision-note.json",
+      "bytes": 1714,
+      "sha256": "34f36412007151aa3ddbcdb2628c0be3c123ba17f876925e2a00de6c90c9cbc7"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/launch-receipt.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/launch-receipt.json",
+      "bytes": 3912,
+      "sha256": "94983a1076c16b0bd669cbdd57b372dcd95173fa4e405276c4949a081e31e9c6"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/stdout.txt",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/stdout.txt",
+      "bytes": 20,
+      "sha256": "875a512fc67556fa4b121cb5a299be7ebc01fb436bf6f130981b90a23c242bee",
+      "derivation": {
+        "kind": "PORTABLE_PATH_REDACTION",
+        "description": "Replaces the absolute local checkout path in original stdout with provider-solve.json. The original stdout remains privately preserved; this is a portable derivative, not byte-identical original output.",
+        "original_sha256": "4bd3916a25fa2f29e06c8e2dc9b35db80b236942a3a03f6d0c2c7c819d0d644c"
+      }
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/stderr.txt",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-03fc4531d62acfb94a871d921ad5bc67.receipt.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-03fc4531d62acfb94a871d921ad5bc67.receipt.json",
+      "bytes": 1354,
+      "sha256": "8367276038aba10773d9cbdc5a2a94c57a0d54f9726254a27c1f2c38eeb82bd6"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-03fc4531d62acfb94a871d921ad5bc67.request.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-03fc4531d62acfb94a871d921ad5bc67.request.json",
+      "bytes": 14361,
+      "sha256": "ff6b63995f3483c901615f8c3ce5b6f7f98d596e58ca676ea426155b2bdced2e"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-165cbb886bd767baa84793dd35f1094c.receipt.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/calls/provider-call-165cbb886bd767baa84793dd35f1094c.receipt.json",
+      "bytes": 1354,
+      "sha256": "8f6dbae6f8924fec02b5026f80d4fe3c77eadda7dbd0e6e3f37359f07530f99c"
+    },
+    {
+      "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/lean-receipts/lean-bd896ed31a768edc2eced91df6ac52f2.json",
+      "source_checkout_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/lean-receipts/lean-bd896ed31a768edc2eced91df6ac52f2.json",
+      "bytes": 9003,
+      "sha256": "bd1c1dfd8305bdb0167d98d69db237b453467dbf4eaafcd50e8067c8fad3bc31"
+    },
+    {
+      "path": "evidence/source-binding.json",
+      "source_checkout_path": "data/local/staging/problem-queue/experimental-campaign/post30-prime-divisibility-r1/source-binding.json",
+      "bytes": 1732,
+      "sha256": "5e6108ef1d0aca4597866d8f53d613b4f261cc70441bc7d75e4e8fac7b3368ee"
+    }
+  ],
+  "run_cost_entries": {
+    "path": "evidence/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/run-cost-entries.jsonl",
+    "source_journal_path": "data/local/verification/proofdesk-ui-dispatch-r1/cost-ledger.jsonl",
+    "selection": "Original byte-exact JSONL rows for this run only; unrelated account history excluded.",
+    "row_count": 4,
+    "bytes": 2809,
+    "sha256": "d6acd1428366381d821d8892795786700c13e0cc98f8983f488a263185e00c59"
+  },
+  "normal_case_entry": {
+    "case_id": "hero-prime-divisibility-r1",
+    "run_id": "proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b",
+    "mode": "SAVED_READ_ONLY",
+    "provider_calls_on_open": 0,
+    "live_authorization": "NOT_GRANTED_BY_PACKAGE"
+  }
+}

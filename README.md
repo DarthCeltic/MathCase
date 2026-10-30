@@ -4,17 +4,38 @@
 
 MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [no-key saved-case demo](https://darthceltic.github.io/), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2`, inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem, then follow the checked parent lemma into a √2 infinite-descent child. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
 
-This repository contains the forkable Go CLI/provider core, a bounded BYOK Tavily search command, a read-only Python MCP connector, selected Lean examples, and the static three-case demo. The demo opens without an API key or paid call. For a technical tour, read [the public-edition scope](docs/public-edition.md) after the quick setup below.
+This repository includes the actual Case Desk frontend and Python backend used to read the saved proof story, plus the forkable Go CLI/provider core, a bounded BYOK Tavily command, a read-only MCP connector, and selected Lean examples. The Case Desk opens without an API key or paid call. Its public profile exposes three saved cases; new provider work is a separate explicit CLI action.
 
-## Quick setup
+## Open the Case Desk — Python only
 
-Requirements: Go 1.27 or later, Lean 4.33.1 via `elan`/`lake`, and PowerShell 7 on Windows. From the repository root:
+Install Python 3.11 or later, clone this repository, and run from its root:
+
+```sh
+python -B scripts/start_public_case_desk.py
+```
+
+Open [the local Case Desk](http://127.0.0.1:55135/ui/prototype/index.html). No package install, API key, Go, Lean, model request, or compilation is needed to read these saved cases. The launcher removes inherited provider keys from the server environment. Use `--port 8000` if the default port is occupied.
+
+Try this short path:
+
+1. Open **Counterexample** and test `d = 4, n = 2`.
+2. Open **Prime lemma**, choose **Chalkboard**, and follow the mathematical steps.
+3. Open **History**: inspect the actual S0 Lean rejection and S1 corrected proof, then expand the exact proof and receipts.
+4. Choose **Build on it: √2**, inspect the compiled child, and follow its link back to the exact checked parent.
+
+These are saved executions. The public Case Desk rejects writes and new model/search requests. Independent meaning and exposition review remain pending. Reading position, ink and board style are browser preferences; proof records remain unchanged. See [the Case Desk guide](docs/public-case-desk.md) for evidence checks and fork development.
+
+The [hosted saved-case demo](https://darthceltic.github.io/) is a separate lightweight reader. To serve that static reader locally, run `python -m http.server 8000` and open `http://127.0.0.1:8000/`.
+
+## Optional CLI and Lean setup
+
+Requirements: Go 1.27 or later, Lean 4.33.1 via `elan`/`lake`, and PowerShell 7 on Windows:
 
 ```powershell
 .\scripts\setup-public.ps1
 ```
 
-This builds `bin/mathcase.exe` and runs the local R0b Lean proof with its axiom audit. It does not contact a model provider, Tavily, or any paid service. To open the read-only demo, run `python -m http.server 8000` from the repository root and open `http://127.0.0.1:8000/`.
+This builds `bin/mathcase.exe` and runs the separate local R0b Lean proof with its axiom audit. It does not contact a model provider, Tavily, or any paid service.
 
 The CLI is also available directly with `go run ./cmd/mathcase`. Use `go run ./cmd/mathcase solve-provider -h` to inspect the BYOK command. Provider dispatch is a separate explicit action and requires user-supplied authorization, item-level input clearance, price ceilings, a pinned Lean verification environment, and an API key in an environment variable. No key, grant, provider profile, corpus, or private run archive is included here. A route can use an OpenAI-compatible endpoint such as Nebius when the user supplies its exact endpoint, model, key variable, authorization, and clearance. Dispatch was not used for this release check.
 
@@ -42,7 +63,7 @@ The saved examples demonstrate these specific records. They do not establish nov
 
 ## Public-edition scope
 
-This repository is a scoped, forkable app foundation. It includes MathCase's explicit Go solver and provider orchestration code, Python routing primitives, a standalone BYOK Tavily search command, the read-only MCP connector, provider and authorization schemas, and a Lean-core local proof. The monolithic local Case Desk preview backend and its campaign UI are not included. Experimental campaign records, private local corpora, source catalogs, machine-local receipts, and uncleared explanation/dossier JSON are excluded. There is no bundled training or evaluation dataset.
+This repository includes the real Case Desk frontend and backend with a bounded public read-only profile, MathCase's Go solver and provider orchestration code, Python routing primitives, the standalone BYOK Tavily command, the read-only MCP connector, provider and authorization schemas, and a Lean-core local proof. The public profile selects three saved cases through an explicit file/route manifest. Campaign data and endpoints, private corpora and source catalogs, unrelated machine-local receipts, and uncleared explanation/dossier JSON remain excluded. There is no bundled training or evaluation dataset.
 
 The provider integration supports explicit OpenAI Chat Completions, Anthropic Messages, and Google Gemini request protocols. Compatible endpoints may be configured by the user. The public edition has no automatic provider selection or fallback. The Python model router is an injected-adapter foundation; the Tavily command is a separate research route. See `docs/public-edition.md` for the support and evidence boundaries.
 

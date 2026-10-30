@@ -1,0 +1,32 @@
+{
+  "schema_version": "mathcase-experimental-source-binding-v1",
+  "item_id": "hero-prime-divisibility-r1",
+  "problem_id": "hero-prime-divisibility-r1",
+  "title": "MathCase prime-divisibility lemma (signature only)",
+  "source_revision": "6ee3dc77fb705dadd236b7568eaab345085d4107 plus hash-pinned uncommitted source file",
+  "source_path": "proofs/first-rung/MathCasePrimeInfiniteDescent.lean",
+  "source_sha256": "f601080d3480afcb3a78c8a5a743cbbb8d8c0e31d63b07d1adfe132854bd272e",
+  "source_license_path": "LICENSE",
+  "source_license_sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+  "source_license": "Apache-2.0",
+  "source_line": 19,
+  "source_declaration": "MathCasePrimeInfiniteDescent.prime_dvd_square_implies_prime_dvd",
+  "source_excerpt": "theorem prime_dvd_square_implies_prime_dvd (p n : Nat) (hp : p.Prime) (h : p ∣ n ^ 2) : p ∣ n",
+  "source_relation": "The exact known-result proposition is bound to the repository declaration. The analyzer sends its signature only; its proof body is not sent.",
+  "exact_campaign_question": "∀ (p n : Nat), p.Prime → p ∣ n ^ 2 → p ∣ n",
+  "exact_lean_statement": "∀ (p n : Nat), p.Prime → p ∣ n ^ 2 → p ∣ n",
+  "allowed_uses": [
+    "LOCAL_PROOF_ATTEMPT",
+    "LOCAL_STORAGE",
+    "REFERENCE",
+    "INDEX",
+    "PROVIDER_INPUT_ONE_EXACT_CONTEXT"
+  ],
+  "rights_status": "PINNED_APACHE_2_0_SOURCE; PROVIDER_INPUT_ONLY_UNDER_SEPARATE_EXACT_CLEARANCE; NO_TRAINING_OR_PUBLIC_EXPORT",
+  "known_proof_available": true,
+  "saved_proof_supplied_to_search": false,
+  "theorem_body_supplied_to_solver": false,
+  "proof_body_supplied_to_solver": false,
+  "statement_fidelity": "PENDING_INDEPENDENT_REVIEW",
+  "novelty": "KNOWN_RESULT"
+}

@@ -1,0 +1,22 @@
+html[data-public-case-desk] #view-intake,
+html[data-public-case-desk] #view-live,
+html[data-public-case-desk] #view-room,
+html[data-public-case-desk] #view-evidence,
+html[data-public-case-desk] .legacy-report,
+html[data-public-case-desk] .foot,
+html[data-public-case-desk] #lean-runtime-status,
+html[data-public-case-desk] #preview-backend-status,
+html[data-public-case-desk] #run-settings-drawer,
+html[data-public-case-desk] #workbench-intake-cta,
+html[data-public-case-desk] #preview-compatibility,
+html[data-public-case-desk] .portable-hero-tour,
+html[data-public-case-desk] [data-view="intake"],
+html[data-public-case-desk] [data-view="live"],
+html[data-public-case-desk] [data-view="evidence"],
+html[data-public-case-desk] [data-room],
+html[data-public-case-desk] [aria-controls="run-settings-drawer"] { display: none !important; }
+.public-case-desk-banner { display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:10px 0 16px;color:#d8d8ce;font:13px/1.5 system-ui; }
+.public-case-desk-banner strong { color:#f0d6aa; }
+.public-case-desk-banner nav { display:flex;gap:12px;flex-wrap:wrap; }
+.public-case-desk-banner a { color:#eac28e;text-underline-offset:3px; }
+html[data-public-case-desk] .reading-save-label { color:inherit; }

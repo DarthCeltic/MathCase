@@ -1,0 +1,72 @@
+{
+  "schema_version": "mathcase-prime-sqrt2-direct-model-reuse-v1",
+  "run_id": "prime-sqrt2-direct-parent-child-20261028-r2",
+  "recorded_at_utc": "2026-10-28T15:56:55.8589569Z",
+  "status": "COMPILED_REUSE_PASS",
+  "population": "SUPPLEMENTAL_INTEGRATION_NOT_CAMPAIGN_ATTEMPT",
+  "provider_calls_this_step": 0,
+  "provider_cost_this_step_micros": 0,
+  "provider_parent": {
+    "run_id": "proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b",
+    "problem_id": "hero-prime-divisibility-r1",
+    "model_id": "nvidia/Nemotron-3_5-Lightning",
+    "provider_calls": 2,
+    "provider_cost_micros": 660,
+    "case_context_sha256": "34ea70f9aa9f92aa3ac0343252ec3647ae7ba44f757f0492ff8b28ac797f2a75",
+    "request_sha256": [
+      "ff6b63995f3483c901615f8c3ce5b6f7f98d596e58ca676ea426155b2bdced2e",
+      "a930f0fa82b9173a747a4ded327beb7aad770c3f2861acb06b8d249fc16d368d"
+    ],
+    "proof": "by intro p n hp h; exact Nat.Prime.dvd_of_dvd_pow hp h",
+    "proof_sha256": "03602b73efcddecf3f025c5bf6e5b8cfaac5abedc065a9b8c3e0626e4a3e26ca",
+    "generated_source_path": "proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/MathCaseCandidate.lean",
+    "generated_source_sha256": "34b5edc1d9b5bbd5b750e23184edcfaa481de195ed504a28f379b059497caaa9",
+    "standard_lean_receipt_id": "lean-48a7b6c489cdefa1e7783ffdefbd6f24",
+    "standard_lean_receipt_path": "data/local/verification/proofdesk-ui-dispatch-r1/proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/lean-receipts/lean-48a7b6c489cdefa1e7783ffdefbd6f24.json",
+    "standard_lean_receipt_sha256": "9cb1c1076acced9d2a9a61e4f1beb3d46368ed562c10c08cd6857571f0102cc4",
+    "kernel_passed": true,
+    "axioms_passed": true,
+    "compiled_module_name": "MathCaseCandidate",
+    "compiled_module_path": "compiled-lib/lean/MathCaseCandidate.olean",
+    "compiled_module_sha256": "4d48d06e1ffcfdd74d704e7f7aef0a3532b69e3c20da2772879d57c9ab6ff09f",
+    "compiled_module_bytes": 7688
+  },
+  "source_binding": {
+    "path": "data/local/staging/problem-queue/experimental-campaign/post30-prime-divisibility-r1/source-binding.json",
+    "sha256": "5e6108ef1d0aca4597866d8f53d613b4f261cc70441bc7d75e4e8fac7b3368ee",
+    "declaration": "MathCasePrimeInfiniteDescent.prime_dvd_square_implies_prime_dvd",
+    "source_sha256": "f601080d3480afcb3a78c8a5a743cbbb8d8c0e31d63b07d1adfe132854bd272e",
+    "statement": "∀ (p n : Nat), p.Prime → p ∣ n ^ 2 → p ∣ n",
+    "source_file_restored_to_bound_digest": true
+  },
+  "child_module": {
+    "source_path": "proofs/first-rung/MathCaseSqrtTwoInfiniteDescent.lean",
+    "source_sha256": "7e21fcfc7fe30109ceb79a75dc6d40d6de2860fdaa74588351ab6d08b43a01bd",
+    "imports": [
+      "MathCaseCandidate"
+    ],
+    "uses_exact_parent_declaration": "mathcase_candidate",
+    "application": "mathcase_candidate 2 n (by decide) h",
+    "compiled_theorem": "MathCaseInfiniteDescent.sqrt_two_irrational",
+    "compiled_module_name": "MathCaseSqrtTwoInfiniteDescent",
+    "compiled_module_path": "compiled-lib/lean/MathCaseSqrtTwoInfiniteDescent.olean",
+    "compiled_module_sha256": "d023a6b776e74e308d5aa1dc21fc1fb965ad791e9aba28253da03c7ce6986a8e",
+    "compiled_module_bytes": 98848,
+    "compile_command": "lake env lean -o .lake/build/lib/lean/MathCaseSqrtTwoInfiniteDescent.olean MathCaseSqrtTwoInfiniteDescent.lean",
+    "compile_exit_code": 0,
+    "compile_elapsed_ms": 13545,
+    "compile_stdout_path": "proofs/first-rung/evidence/prime-sqrt2-model-reuse-r2/sqrt2-child-compile.stdout.txt",
+    "compile_stdout_sha256": "92cfbf662b95e8ecaca861b3316455d935a92bf1c06ccf038d02c688226239d5"
+  },
+  "environment": {
+    "toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "snapshot_manifest_sha256": "184ae692059a54cc7b464566301770b7f8f3a0f401d8b348d8bf58d4842b6686"
+  },
+  "attempt_count_delta": 0,
+  "qualification": "A real child module imports the exact captured standard-verified model .olean and applies its declaration at p=2; no separate M4 child receipt was created.",
+  "limits": [
+    "The classical sqrt(2) result remains a known-result proof; no novelty claim.",
+    "Independent meaning review, certification promotion, training, signing, and public release remain pending."
+  ]
+}

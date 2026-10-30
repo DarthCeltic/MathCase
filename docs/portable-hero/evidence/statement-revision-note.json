@@ -1,0 +1,29 @@
+{
+  "schema_version": "mathcase-portable-hero-statement-path-v1",
+  "purpose": "A local explanatory bridge between a composite-factor counterexample, saved Tavily research, and the separate saved prime-divisibility proof run.",
+  "historical_records_modified": false,
+  "status": "ILLUSTRATIVE_BRIDGE_NOT_A_RECORDED_USER_OR_MODEL_TURN",
+  "initial_overstrong_claim": "For every natural number n, if 4 divides n squared, then 4 divides n.",
+  "counterexample": {
+    "value": "n = 2",
+    "calculation": "4 divides 2 squared = 4, while 4 does not divide 2.",
+    "status": "DIRECT_ARITHMETIC_EXAMPLE_NOT_A_PROVIDER_ATTEMPT"
+  },
+  "saved_research": {
+    "path": "tavily-search.json",
+    "sha256": "782746e248df8ef14882adb88168d3465329f49f80397c3654282b4352c32cd0",
+    "query": "prime divides a square Euclid lemma p divides n squared implies p divides n",
+    "role": "UNTRUSTED_REFERENCE_CONTEXT_NOT_PROOF_OR_REVIEW"
+  },
+  "precise_statement_used_by_saved_run": {
+    "natural_language": "For natural numbers p and n, if p is prime and p divides n squared, then p divides n.",
+    "lean": "∀ (p n : Nat), p.Prime → p ∣ n ^ 2 → p ∣ n",
+    "saved_problem_path": "proofdesk-ui-hero-prime-divisibility-r1-20261028T152753Z-8d06f9d0e04b/problem.json"
+  },
+  "relationship_to_saved_run": "The counterexample and search make the mathematical qualification understandable. The saved prime-divisibility provider and Lean records are separate historical evidence; this note does not claim the example or search was an input to those calls.",
+  "meaning_review": "PENDING",
+  "certification": "NOT_CLAIMED",
+  "novelty": "NOT_CLAIMED",
+  "training_use": "NOT_AUTHORIZED",
+  "public_release": "NOT_AUTHORIZED"
+}

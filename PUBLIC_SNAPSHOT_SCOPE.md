@@ -1,6 +1,6 @@
 # Public snapshot scope
 
-This is a scoped source snapshot, not the complete private MathCase checkout. The included product is the Go CLI and its internal packages, the read-only Python MCP connector/router, a standalone BYOK Tavily search command, public provider authorization schemas, a Lean-core R0b proof, and a static saved-case site. The static site has its own hashed file inventory at `saved-demo/site-manifest.json`.
+This is a scoped source snapshot, not the complete private MathCase checkout. The included product is the actual Case Desk frontend and Python backend with a three-case read-only public profile, the Go CLI and its internal packages, the read-only Python MCP connector/router, a standalone BYOK Tavily command, public provider authorization schemas, a Lean-core R0b proof, and a static saved-case site. The static site has its own hashed file inventory at `saved-demo/site-manifest.json`.
 
 The following tracked private/uncleared payloads are excluded:
 
@@ -14,6 +14,6 @@ The following tracked private/uncleared payloads are excluded:
 - `ui/prototype/sqrt2-math-case-dossier-r2.json`
 - `ui/prototype/sqrt2-math-case-dossier.json`
 
-The snapshot also omits the full monolithic local Case Desk UI and preview backend, local campaign evidence routes, ignored/local run archives, raw corpus and source catalogs, prize catalog, and ProofWiki search excerpts. The three-case static site is a separately derived read-only view; it contains a source-free Tavily summary and selected proof records. This scope does not assert clearance for the omitted material.
+The snapshot includes the actual Case Desk source with explicit public-profile branches. It omits local campaign evidence routes, unrelated ignored/local run archives, raw corpus and source catalogs, prize catalog, and ProofWiki search excerpts. `public-case-desk.json` lists the exact app/evidence files and permitted routes. The portable hero manifest is a separately identified public package with original proof/receipt bytes and no Tavily excerpts. The three-case static site is a separately derived read-only view; it contains a source-free Tavily summary and selected proof records. This scope does not assert clearance for the omitted material.
 
 This snapshot begins with a new Git root commit. It does not carry the private repository's prior commit history.
