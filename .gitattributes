@@ -19,3 +19,11 @@ proofs/first-rung/MathCaseSqrtTwoInfiniteDescent.lean -text -eol -diff
 proofs/collatz/CollatzDescent.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/CollatzDescent.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/CollatzDescent.exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/BoundedResidueDescent.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/BoundedResidueDescent.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/BoundedResidueDescent.exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/model-pro-repair/original-generated-source.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/model-pro-repair/agent-repaired-candidate.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/model-pro-repair/original-to-agent-repaired.diff -text -eol whitespace=-trailing-space,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/model-pro-repair/lean-repair-r5-stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+proofs/collatz/model-pro-repair/lean-repair-r5-exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

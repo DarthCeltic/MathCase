@@ -8,6 +8,6 @@ The read-only MCP connector in `mathcase/connect/` adapts the connector and proj
 
 The actual Case Desk source and selected saved evidence are inventoried by `public-case-desk.json`; its original proof/receipt bytes are preserved. Historical workflow fields remain byte-preserved in the saved evidence. The static site at the repository root has its own `NOTICE` and hashed file list in `saved-demo/site-manifest.json`. Its Tavily panel contains a saved summary and six title-and-URL source locators, without search excerpts. No raw search excerpts, model weights, API credentials, provider account records, or external corpus are included in this source edition.
 
-The optional `proofs/collatz/CollatzDescent.lean` file is MathCase-authored agent formalization of elementary, restricted Collatz descent. It is separate from the saved Case Desk cases and carries no full-convergence or novelty claim.
+The optional `proofs/collatz/` files include separately agent-authored formalizations of elementary, restricted Collatz descent. They also include an exact rejected model-proposed Lean source for lineage and a later agent-repaired version that passed a saved Lean check; the original model result remains rejected. This appendix is separate from the saved Case Desk cases and carries no full-convergence or novelty claim.
 
 Dependencies are not vendored. Their licenses and notices remain applicable when installed or redistributed.

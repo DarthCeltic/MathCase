@@ -1,0 +1,37 @@
+{
+  "schema_version": "mathcase-public-collatz-agent-repair-v1",
+  "classification": "MODEL_PROPOSED_AGENT_REPAIRED",
+  "standard_m4_receipt": false,
+  "provider_model": "deepseek-ai/DeepSeek-V4-Pro-0813",
+  "original_provider_verdict": "REJECTED",
+  "original_provider_response_sha256": "2dee82b1abeab993ad91401e0760084ccae5dacbecccae58c91bd30886bf124e",
+  "original_model_proof_body_sha256": "99a0b1520908645e7ed3c4d24c4c9f590e897c713d850c58414982506a0b9808",
+  "original_generated_source": {
+    "path": "proofs/collatz/model-pro-repair/original-generated-source.lean",
+    "sha256": "83098ba443694b9799b26b3990998a65fbbe5e7ae675000be147e2ec12068a4c"
+  },
+  "original_lean_receipt_sha256": "b8a433306e8d553fa36e30d796d4a06c464b7da025b35c037aaa4e8c901b6a3e",
+  "agent_repair": "The agent preserved the model's h1-h11 arithmetic and parity lemmas and replaced the failed Nat.rec composition with an explicit definitional equality and simp only.",
+  "unified_diff": {
+    "path": "proofs/collatz/model-pro-repair/original-to-agent-repaired.diff",
+    "sha256": "303e1ce1765065bdc469e5ab374d56f57564466c2368a1c6780078360319ba47"
+  },
+  "repaired_source": {
+    "path": "proofs/collatz/model-pro-repair/agent-repaired-candidate.lean",
+    "sha256": "74ce5e658521c51609cd521737641b5f1560b089a36df5d9829c8055b176e9f2"
+  },
+  "recorded_repair_compile": {
+    "exit_code": 0,
+    "exit_code_path": "proofs/collatz/model-pro-repair/lean-repair-r5-exit-code.txt",
+    "exit_code_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "stdout_path": "proofs/collatz/model-pro-repair/lean-repair-r5-stdout.txt",
+    "stdout_sha256": "b5fb0846ceeb455683ca5744b715335dca0742dfe4d3efbad893e7016141f0c0",
+    "reported_axioms": ["propext", "Quot.sound"],
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "compiler_image_sha256": "ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7"
+  },
+  "provider_generated_pass": false,
+  "fresh_public_checkout_compile_performed": false,
+  "novelty_claim": false
+}

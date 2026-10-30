@@ -1,0 +1,50 @@
+/mathcase/input/agent-repaired-candidate.lean:16:10: warning: This simp argument is unused:
+  Nat.mul_div_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mathcase/input/agent-repaired-candidate.lean:28:10: warning: This simp argument is unused:
+  Nat.mul_div_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mathcase/input/agent-repaired-candidate.lean:40:10: warning: This simp argument is unused:
+  Nat.mul_div_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mathcase/input/agent-repaired-candidate.lean:46:10: warning: This simp argument is unused:
+  Nat.mul_div_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mathcase/input/agent-repaired-candidate.lean:58:10: warning: This simp argument is unused:
+  Nat.mul_div_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mathcase/input/agent-repaired-candidate.lean:64:10: warning: This simp argument is unused:
+  Nat.mul_div_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mathcase/input/agent-repaired-candidate.lean:70:10: warning: This simp argument is unused:
+  Nat.mul_div_right
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'mathcase_candidate' depends on axioms: [propext, Quot.sound]

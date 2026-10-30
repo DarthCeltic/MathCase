@@ -1,0 +1,18 @@
+--- original-generated-source.lean
++++ agent-repaired-candidate.lean
+@@ -68,10 +68,12 @@
+     rw [if_pos h11mod]
+     rw [show 162*k+10 = 2*(81*k+5) by omega]
+     simp [Nat.mul_div_right]
++  have hIter : Nat.rec (128*k+7) (fun _ previous => (fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) previous) 11 =
++      (fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((fun n : Nat => if n % 2 = 0 then n / 2 else 3 * n + 1) ((128*k+7)))))))))))) := by
++    rfl
+   constructor
+-  · repeat rw [Nat.rec_succ]
+-    rw [Nat.rec_zero]
+-    simp [h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11]
++  · rw [hIter]
++    simp only [h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, h11]
+   · omega
+ 
+ #print axioms mathcase_candidate

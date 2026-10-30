@@ -1,0 +1,24 @@
+{
+  "schema_version": "mathcase-public-collatz-local-compile-v1",
+  "record_kind": "derived_metadata_from_self_recorded_local_compile",
+  "standard_m4_receipt": false,
+  "proof_origin": "Codex-agent-authored formalization",
+  "source": {
+    "path": "proofs/collatz/BoundedResidueDescent.lean",
+    "sha256": "b7060b2b5c6589495f4cb75cf32fff6df2ad8f6687f9643e9c010066775284c5"
+  },
+  "final_compile": {
+    "exit_code": 0,
+    "exit_code_path": "proofs/collatz/BoundedResidueDescent.exit-code.txt",
+    "exit_code_sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354",
+    "stdout_path": "proofs/collatz/BoundedResidueDescent.stdout.txt",
+    "stdout_sha256": "a9bf473f66a22db5aa8824432d42e5a7b8e1b697b91768b48d92da772a111509",
+    "descent_theorem_reported_axioms": ["propext", "Quot.sound"],
+    "count_theorem_reported_axioms": [],
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "compiler_image_sha256": "ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7"
+  },
+  "scope": "For n >= 2 in 115 of 128 specified residue classes modulo 128, a lower iterate exists within 11 steps; no full Collatz convergence claim.",
+  "fresh_public_checkout_compile_performed": false
+}

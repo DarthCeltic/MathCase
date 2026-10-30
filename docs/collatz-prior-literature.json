@@ -1,0 +1,26 @@
+{
+  "schema_version": "mathcase-public-collatz-prior-literature-locators-v1",
+  "record_kind": "derived_metadata_from_operator_initiated_tavily_search",
+  "original_result_sha256": "dfb89f21dabcad42a6da25afef184162033580da57744f8a85a9073b4711d7f6",
+  "retrieved_at_utc": "2026-10-30T16:18:45.200378Z",
+  "query_sha256": "1d94cd3c8f674d2d6284d7f230761df48569b199d17440518711bb82d14d7f52",
+  "provider_request_id": "9ace879e-8058-46e9-98b8-ad38b884e099",
+  "provider_credits_used": 1,
+  "result_count": 2,
+  "results": [
+    {
+      "rank": 1,
+      "title": "Almost all Collatz orbits attain almost bounded values | What's new",
+      "url": "https://terrytao.wordpress.com/2019/09/10/almost-all-collatz-orbits-attain-almost-bounded-values/comment-page-1"
+    },
+    {
+      "rank": 2,
+      "title": "Mathematician Proves Huge Result on ‘Dangerous’ Problem | Quanta Magazine",
+      "url": "https://www.quantamagazine.org/mathematician-proves-huge-result-on-dangerous-problem-20191211"
+    }
+  ],
+  "query_text_included": false,
+  "snippets_included": false,
+  "proof_input": false,
+  "novelty_certification": false
+}
