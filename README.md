@@ -2,13 +2,15 @@
 
 **Question an AI proof. Check it in Lean. Build on what holds.**
 
+[Open the no-key demo](https://darthceltic.github.io/) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip)
+
 MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [no-key saved-case demo](https://darthceltic.github.io/), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2`, inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem, then follow the checked parent lemma into a √2 infinite-descent child. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
 
 This repository includes the actual Case Desk frontend and Python backend used to read the saved proof story, plus the forkable Go CLI/provider core, a bounded BYOK Tavily command, a read-only MCP connector, and selected Lean examples. The Case Desk opens without an API key or paid call. Its public profile exposes three saved cases; new provider work is a separate explicit CLI action.
 
 ## Open the Case Desk — Python only
 
-Install Python 3.11 or later, clone this repository, and run from its root:
+Install Python 3.11 or later. Clone this repository, or download the source ZIP above and extract it. Open a terminal in the extracted `MathCase-main` folder (or your clone), then run:
 
 ```sh
 python -B scripts/start_public_case_desk.py
