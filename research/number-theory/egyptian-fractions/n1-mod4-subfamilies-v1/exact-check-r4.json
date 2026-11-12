@@ -1,0 +1,254 @@
+{
+  "all_denominator_triples_distinct": true,
+  "all_denominator_triples_strictly_increasing": true,
+  "all_denominators_positive": true,
+  "all_equalities_passed": true,
+  "boundary_examples": {
+    "n_eq_1_mod_12_conditioned": [
+      {
+        "D": 52,
+        "denominators": [
+          4,
+          18,
+          468
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "factor_v": 1352,
+        "family": "n_eq_1_mod_12_with_factor_2_mod_3",
+        "index": 1,
+        "n": 13,
+        "prime_factor_p": 2,
+        "q": 4
+      },
+      {
+        "D": 91228916701,
+        "denominators": [
+          151021,
+          30409638934,
+          27467707101162103334
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "factor_v": 82403121212257393301,
+        "family": "n_eq_1_mod_12_with_factor_2_mod_3",
+        "index": 50340,
+        "n": 604081,
+        "prime_factor_p": 101,
+        "q": 151021
+      },
+      {
+        "D": 360001500001,
+        "denominators": [
+          300001,
+          120000500004,
+          3927305454755455136364
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "factor_v": 11781916363906363909091,
+        "family": "n_eq_1_mod_12_with_factor_2_mod_3",
+        "index": 100000,
+        "n": 1200001,
+        "prime_factor_p": 11,
+        "q": 300001
+      }
+    ],
+    "n_eq_5_mod_12": [
+      {
+        "D": 10,
+        "denominators": [
+          2,
+          5,
+          10
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "factor_v": 20,
+        "family": "n_eq_5_mod_12",
+        "index": 0,
+        "n": 5,
+        "prime_factor_p": 5,
+        "q": 2
+      },
+      {
+        "D": 90001950010,
+        "denominators": [
+          150002,
+          30000650005,
+          540023400403503250010
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "factor_v": 1620070201120507800020,
+        "family": "n_eq_5_mod_12",
+        "index": 50000,
+        "n": 600005,
+        "prime_factor_p": 5,
+        "q": 150002
+      },
+      {
+        "D": 359996700007,
+        "denominators": [
+          299999,
+          119999300000,
+          35999670000700000
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "factor_v": 107998650005399993,
+        "family": "n_eq_5_mod_12",
+        "index": 99999,
+        "n": 1199993,
+        "prime_factor_p": 1199993,
+        "q": 299999
+      }
+    ],
+    "n_eq_5_mod_8": [
+      {
+        "denominators": [
+          2,
+          5,
+          10
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_5_mod_8",
+        "index": 0,
+        "n": 5
+      },
+      {
+        "denominators": [
+          100002,
+          20000650005,
+          40001300010
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_5_mod_8",
+        "index": 50000,
+        "n": 400005
+      },
+      {
+        "denominators": [
+          200000,
+          79999700000,
+          159999400000
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_5_mod_8",
+        "index": 99999,
+        "n": 799997
+      }
+    ],
+    "n_eq_9_mod_12": [
+      {
+        "denominators": [
+          3,
+          10,
+          90
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_9_mod_12",
+        "index": 0,
+        "n": 9
+      },
+      {
+        "denominators": [
+          150003,
+          30001050010,
+          900063001672519950090
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_9_mod_12",
+        "index": 50000,
+        "n": 600009
+      },
+      {
+        "denominators": [
+          300000,
+          119999700001,
+          14399928000209999700000
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_9_mod_12",
+        "index": 99999,
+        "n": 1199997
+      }
+    ]
+  },
+  "cases_per_unconditional_family": 100000,
+  "claims_checked": [
+    "For n=8a+5 (a>=0), 4/n=1/q+1/D+1/(D/2), q=(n+3)/4, D=nq.",
+    "For n=12b+9 (b>=0), 4/n=1/q+1/(t+1)+1/(t(t+1)), q=(n+3)/4, t=nq/3.",
+    "For n=12c+5 (c>=0), choose prime p|n with p=2 mod 3; 4/n=1/q+1/x+1/y, q=(n+3)/4, D=nq, x=(D+p)/3, y=(D+D^2/p)/3.",
+    "For n=12d+1 (d>=1), if n or q has a prime factor p=2 mod 3, choose it; 4/n=1/q+1/x+1/y, q=(n+3)/4, D=nq, x=(D+p)/3, y=(D+D^2/p)/3."
+  ],
+  "completed_at_utc": "2026-11-01T19:30:59.172128+00:00",
+  "conditioned_family_candidate_count": 100000,
+  "conditioned_family_eligible_count": 88844,
+  "conditioned_family_outside_identity_count": 11156,
+  "conditioned_identity_excluded_examples": [
+    49,
+    566041,
+    1199929
+  ],
+  "full_erdos_straus_conjecture_solved": false,
+  "method": "Python Fraction exact rational equality and exact positivity/distinctness/order checks.",
+  "model_calls": 0,
+  "n_ranges": {
+    "n_eq_1_mod_12_conditioned": [
+      13,
+      1200001
+    ],
+    "n_eq_5_mod_12": [
+      5,
+      1199993
+    ],
+    "n_eq_5_mod_8": [
+      5,
+      799997
+    ],
+    "n_eq_9_mod_12": [
+      9,
+      1199997
+    ]
+  },
+  "network_calls": 0,
+  "novelty_claim": false,
+  "proof_note_sha256": "7112006b70012d4e2106e58884cf4fc814a735570edd07c56a667bead65e2d1d",
+  "provider_calls": 0,
+  "runner_sha256": "7ca7b9ee082d246221570d8436416276ddc04e11b67c9fed5a8e7e2471d0aa77",
+  "schema": "mathcase-egyptian-fraction-n1mod4-subfamilies-exact-check-v1",
+  "started_at_utc": "2026-11-01T19:30:51.234888+00:00",
+  "status": "PASS_EXACT_RATIONAL_RANGE_CHECK",
+  "total_family_cases_checked": 388844
+}

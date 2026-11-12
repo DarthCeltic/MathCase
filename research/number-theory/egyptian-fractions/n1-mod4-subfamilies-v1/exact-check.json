@@ -1,0 +1,123 @@
+{
+  "all_denominator_triples_distinct": true,
+  "all_denominator_triples_strictly_increasing": true,
+  "all_denominators_positive": true,
+  "all_equalities_passed": true,
+  "boundary_examples": {
+    "n_eq_5_mod_8": [
+      {
+        "denominators": [
+          2,
+          5,
+          10
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_5_mod_8",
+        "index": 0,
+        "n": 5
+      },
+      {
+        "denominators": [
+          100002,
+          20000650005,
+          40001300010
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_5_mod_8",
+        "index": 50000,
+        "n": 400005
+      },
+      {
+        "denominators": [
+          200000,
+          79999700000,
+          159999400000
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_5_mod_8",
+        "index": 99999,
+        "n": 799997
+      }
+    ],
+    "n_eq_9_mod_12": [
+      {
+        "denominators": [
+          3,
+          10,
+          90
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_9_mod_12",
+        "index": 0,
+        "n": 9
+      },
+      {
+        "denominators": [
+          150003,
+          30001050010,
+          900063001672519950090
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_9_mod_12",
+        "index": 50000,
+        "n": 600009
+      },
+      {
+        "denominators": [
+          300000,
+          119999700001,
+          14399928000209999700000
+        ],
+        "denominators_distinct": true,
+        "denominators_positive": true,
+        "denominators_strictly_increasing": true,
+        "exact_identity": true,
+        "family": "n_eq_9_mod_12",
+        "index": 99999,
+        "n": 1199997
+      }
+    ]
+  },
+  "cases_per_family": 100000,
+  "claims_checked": [
+    "For n=8a+5 (a>=0), 4/n=1/q+1/D+1/(D/2), q=(n+3)/4, D=nq.",
+    "For n=12b+9 (b>=0), 4/n=1/q+1/(t+1)+1/(t(t+1)), q=(n+3)/4, t=nq/3."
+  ],
+  "full_erdos_straus_conjecture_solved": false,
+  "method": "Python Fraction exact rational equality and exact positivity/distinctness/order checks.",
+  "model_calls": 0,
+  "n_ranges": {
+    "n_eq_5_mod_8": [
+      5,
+      799997
+    ],
+    "n_eq_9_mod_12": [
+      9,
+      1199997
+    ]
+  },
+  "network_calls": 0,
+  "novelty_claim": false,
+  "proof_note_sha256": "b0fc43e76f013c48024df2ab7c7c65d7565a924f7d3e5ee0c4702e83cd27c223",
+  "provider_calls": 0,
+  "runner_sha256": "e1a203945c62da5dda31576ecc6b40000010eecbbcfc5433c4c2b783b0c5b1cb",
+  "schema": "mathcase-egyptian-fraction-n1mod4-subfamilies-exact-check-v1",
+  "started_at_utc": "2026-11-01T19:17:32.948422+00:00",
+  "status": "PASS_EXACT_RATIONAL_RANGE_CHECK",
+  "total_family_cases_checked": 200000
+}

@@ -1,0 +1,27 @@
+{
+  "audit_code_sha256": "06f4805379accd0f732299142b0e68dd13b58949ec77b30a2b75b56e9231c415",
+  "axiom_checked": false,
+  "created_utc": "2026-11-01T22:32:16+00:00",
+  "family_odd_count": 1900470,
+  "family_row_count": 1900470,
+  "global_collatz_proof": false,
+  "gpu_used": false,
+  "lean_compiled": false,
+  "m30_baseline_binding": {
+    "m30_covered_arithmetic_only": 1060970550,
+    "m30_package_sha256": "72e27d839c8dd17f3b012ef03522a084dd967d9460a9a5fb93abaddd9e48c019",
+    "m30_scan_sha256": "3473cc97beae317309eedcb0dc0a1087be0f0b5ffbd0b949be46d44be2d2518b",
+    "m30_validation_sha256": "b1ca36c4051182c775cba0ad2aca6e3582ec509ad90020835bb181583d239bbd"
+  },
+  "m30_coverage_mask_sha256": "e54b4438a73d90d44eddde61f074439aafafc368b8649ab02c0dab702a4a118a",
+  "m31_package_manifest_sha256": "1515cc783aef878b0f415b93631f91870b335bc27fb4d7bd294aa595ced15a76",
+  "m31_scan_sha256": "07bb83639beb5298725a3e965844b0b3a6fbac282b22efdeb1dace290b8b4619",
+  "m31_validation_sha256": "6ce4e0cfc7a97b28f6822e8d94c0330f5f014aaf6fcbe32d40322099f6cdb6f4",
+  "network_calls": 0,
+  "protocol_path": "research/collatz/structure-sample/m31-residual-initial-valuation-v1/protocol.md",
+  "protocol_sha256": "7a2c8624f317682066cf0614bbfff11e021cc4bd7db2348e3a8e0bddf8a94bb6",
+  "provider_calls": 0,
+  "schema": "mathcase-collatz-m31-residual-initial-valuation-manifest-v1",
+  "status": "PASS_EXACT_FINITE_RESIDUAL_CLASS_AUDIT",
+  "summary_sha256": "0aec5a99db46951071e03fa030f2b6ddacb31944cb98ee2be6369d16ea150896"
+}

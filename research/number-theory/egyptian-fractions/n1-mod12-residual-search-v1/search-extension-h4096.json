@@ -1,0 +1,220 @@
+{
+  "base_first_denominator_offset": 256,
+  "base_h256_exact_representations": 10850,
+  "base_h256_not_found_within_bound": 306,
+  "base_h256_residual_candidates": 11156,
+  "base_missed_n_values_sha256": "41a29e7b3b6fc22dfcb53112c214899ad78e755fb15e2cb1860e986d907e63a0",
+  "canonical_extension_rows_sha256": "e5d686469f4085bfdf0e6a1784cf9b92e394b50ca25d3c078c1d60f4808e6a85",
+  "case_count": 100000,
+  "classification": "FINITE_GREEDY_SEARCH_EXTENSION_ONLY_NOT_A_CONJECTURE_PROOF",
+  "exact_integer_arithmetic": true,
+  "extension_exact_representations_found": 305,
+  "extension_offset_interval": [
+    257,
+    4096
+  ],
+  "extension_solution_examples": [
+    {
+      "denominators": [
+        980,
+        1204,
+        45532270
+      ],
+      "extension_first_denominator_offset": 439,
+      "n": 2161
+    },
+    {
+      "denominators": [
+        2210,
+        13065,
+        671734362
+      ],
+      "extension_first_denominator_offset": 319,
+      "n": 7561
+    },
+    {
+      "denominators": [
+        4048,
+        32549,
+        172495638832
+      ],
+      "extension_first_denominator_offset": 447,
+      "n": 14401
+    },
+    {
+      "denominators": [
+        4172,
+        45594,
+        9759213324
+      ],
+      "extension_first_denominator_offset": 349,
+      "n": 15289
+    },
+    {
+      "denominators": [
+        5560,
+        104945,
+        17732346760
+      ],
+      "extension_first_denominator_offset": 279,
+      "n": 21121
+    },
+    {
+      "denominators": [
+        9030,
+        247590,
+        185507674065
+      ],
+      "extension_first_denominator_offset": 317,
+      "n": 34849
+    },
+    {
+      "denominators": [
+        9650,
+        266065,
+        99106551850
+      ],
+      "extension_first_denominator_offset": 337,
+      "n": 37249
+    },
+    {
+      "denominators": [
+        10894,
+        65000,
+        1016437435000
+      ],
+      "extension_first_denominator_offset": 1563,
+      "n": 37321
+    },
+    {
+      "denominators": [
+        10252,
+        288550,
+        294342352700
+      ],
+      "extension_first_denominator_offset": 351,
+      "n": 39601
+    },
+    {
+      "denominators": [
+        12324,
+        257088,
+        955400452032
+      ],
+      "extension_first_denominator_offset": 563,
+      "n": 47041
+    },
+    {
+      "denominators": [
+        12744,
+        508217,
+        1444307990904
+      ],
+      "extension_first_denominator_offset": 311,
+      "n": 49729
+    },
+    {
+      "denominators": [
+        15759,
+        717366,
+        13672586344014
+      ],
+      "extension_first_denominator_offset": 338,
+      "n": 61681
+    },
+    {
+      "denominators": [
+        16280,
+        373626,
+        466292720520
+      ],
+      "extension_first_denominator_offset": 679,
+      "n": 62401
+    },
+    {
+      "denominators": [
+        16324,
+        612521,
+        1714105717324
+      ],
+      "extension_first_denominator_offset": 423,
+      "n": 63601
+    },
+    {
+      "denominators": [
+        18290,
+        441379,
+        9611994345010
+      ],
+      "extension_first_denominator_offset": 727,
+      "n": 70249
+    },
+    {
+      "denominators": [
+        18292,
+        831479,
+        4047909171196
+      ],
+      "extension_first_denominator_offset": 393,
+      "n": 71593
+    },
+    {
+      "denominators": [
+        18700,
+        713252,
+        3574190470675
+      ],
+      "extension_first_denominator_offset": 477,
+      "n": 72889
+    },
+    {
+      "denominators": [
+        18680,
+        1072618,
+        2714946324520
+      ],
+      "extension_first_denominator_offset": 319,
+      "n": 73441
+    },
+    {
+      "denominators": [
+        19822,
+        1326919,
+        186795751036598
+      ],
+      "extension_first_denominator_offset": 291,
+      "n": 78121
+    },
+    {
+      "denominators": [
+        21390,
+        1674744,
+        16270665504360
+      ],
+      "extension_first_denominator_offset": 269,
+      "n": 84481
+    }
+  ],
+  "finished_at_utc": "2026-11-01T20:52:25.224470Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "max_total_offset": 4096,
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-erdos-straus-n1mod12-bounded-greedy-extension-v1",
+  "source_bindings": {
+    "base_receipt_sha256": "ec3b7f189ef8ce53ee3fc071e80523148061309714eb841a8e52e88158b4073b",
+    "base_search_script_sha256": "8dc13e42a0d724c30dd7bf56c971d31ecd09f792413ac8ff62674c6173fee67d",
+    "existing_factor_classifier_sha256": "7ca7b9ee082d246221570d8436416276ddc04e11b67c9fed5a8e7e2471d0aa77",
+    "existing_family_note_sha256": "7112006b70012d4e2106e58884cf4fc814a735570edd07c56a667bead65e2d1d",
+    "extension_script_sha256": "d49de032aa6cddbbc3e45173e89ca62f4d25fb6fa01eb874c058aa1a2b6f2d4e"
+  },
+  "started_at_utc": "2026-11-01T20:52:20.989896Z",
+  "status": "PASS_BOUNDED_EXACT_EXTENSION",
+  "still_not_found_examples": [
+    193
+  ],
+  "still_not_found_within_extension_bound": 1,
+  "wall_seconds": 4.235
+}

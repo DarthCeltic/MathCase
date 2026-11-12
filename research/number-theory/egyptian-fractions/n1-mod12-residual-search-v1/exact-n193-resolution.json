@@ -1,0 +1,72 @@
+{
+  "base_h256_receipt_sha256": "ec3b7f189ef8ce53ee3fc071e80523148061309714eb841a8e52e88158b4073b",
+  "base_residual_candidates": 11156,
+  "classification": "ONE_RESIDUAL_INPUT_RESOLVED_BY_EXACT_BOUNDED_ENUMERATION",
+  "exact_integer_arithmetic": true,
+  "exact_search": {
+    "completeness_argument": "For sorted x<y<z and 4/n=1/x+1/y+1/z, positivity gives x>n/4; the three terms are each <1/x, so 4/n<3/x and x<3n/4. After choosing x, write the positive remainder as a/D with a=4x-n and D=nx. Positivity of the second remainder gives y>D/a, and y<z gives a/D<2/y, hence y<2D/a. The enumerated integer bounds cover all such x,y.",
+    "exact_solution_count": 6,
+    "n": 193,
+    "solutions": [
+      [
+        50,
+        1380,
+        1331700
+      ],
+      [
+        50,
+        1450,
+        27985
+      ],
+      [
+        50,
+        1930,
+        4825
+      ],
+      [
+        52,
+        676,
+        65234
+      ],
+      [
+        52,
+        772,
+        5018
+      ],
+      [
+        58,
+        290,
+        27985
+      ]
+    ],
+    "sorted_denominator_pairs_checked": 15907,
+    "witness": [
+      50,
+      1380,
+      1331700
+    ],
+    "x_inclusive_range": [
+      49,
+      144
+    ]
+  },
+  "extension_h4096_receipt_sha256": "1cc80f5b77bda6508adc69fbad2b3dee4a2654d43d32285e4d82f276a94857cb",
+  "finished_at_utc": "2026-11-01T20:55:23.227864Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "greedy_representations_through_offset_4096": 11155,
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "remaining_input_before_exhaustive_search": 193,
+  "schema": "mathcase-erdos-straus-n193-exhaustive-three-term-v1",
+  "source_bindings": {
+    "base_receipt_sha256": "ec3b7f189ef8ce53ee3fc071e80523148061309714eb841a8e52e88158b4073b",
+    "exact_search_script_sha256": "189b666136cc9bcb9ccb8eb2cd63001bf3dcb8d415a9de5ca9e8f46d411888ef",
+    "extension_receipt_sha256": "1cc80f5b77bda6508adc69fbad2b3dee4a2654d43d32285e4d82f276a94857cb",
+    "extension_script_sha256": "d49de032aa6cddbbc3e45173e89ca62f4d25fb6fa01eb874c058aa1a2b6f2d4e"
+  },
+  "started_at_utc": "2026-11-01T20:55:17.934599Z",
+  "status": "PASS_FINITE_EXHAUSTIVE_REPRESENTATION_FOUND",
+  "wall_seconds": 5.293
+}

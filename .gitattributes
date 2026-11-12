@@ -35,3 +35,7 @@ proofs/collatz/remaining-residues/ModelExample13.stdout.txt -text -eol whitespac
 proofs/collatz/remaining-residues/LongPath27.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/remaining-residues/LongPath27.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/remaining-residues/LongPath27.exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+
+# Preserve exact byte hashes for copied research inputs.
+research/collatz/m15/m13/m13-prefix-summary-r2.json -text -eol whitespace=cr-at-eol
+research/collatz/m15/scan/m15-prefix-scan.json -text -eol whitespace=cr-at-eol

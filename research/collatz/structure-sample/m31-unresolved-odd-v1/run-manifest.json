@@ -1,0 +1,25 @@
+{
+  "classification": "EXPLORATORY_FINITE_STRUCTURE_SAMPLE",
+  "created_utc": "2026-11-01T22:26:06+00:00",
+  "formal_proof_status": "NOT_PRODUCED",
+  "gpu_used": false,
+  "m30_baseline_binding": {
+    "m30_covered_arithmetic_only": 1060970550,
+    "m30_package_sha256": "72e27d839c8dd17f3b012ef03522a084dd967d9460a9a5fb93abaddd9e48c019",
+    "m30_scan_sha256": "3473cc97beae317309eedcb0dc0a1087be0f0b5ffbd0b949be46d44be2d2518b",
+    "m30_validation_sha256": "b1ca36c4051182c775cba0ad2aca6e3582ec509ad90020835bb181583d239bbd"
+  },
+  "m30_coverage_mask_sha256": "e54b4438a73d90d44eddde61f074439aafafc368b8649ab02c0dab702a4a118a",
+  "m31_package_manifest_sha256": "1515cc783aef878b0f415b93631f91870b335bc27fb4d7bd294aa595ced15a76",
+  "m31_scan_sha256": "07bb83639beb5298725a3e965844b0b3a6fbac282b22efdeb1dace290b8b4619",
+  "m31_validation_sha256": "6ce4e0cfc7a97b28f6822e8d94c0330f5f014aaf6fcbe32d40322099f6cdb6f4",
+  "network_calls": 0,
+  "protocol_path": "research/collatz/structure-sample/m31-unresolved-odd-v1/protocol.md",
+  "protocol_sha256": "f789f43eaadcd963bacb09764a48fa3b97575026f8a91044637d4bbb84db7b55",
+  "provider_calls": 0,
+  "sample_count": 4096,
+  "sample_sha256": "74d282bfca564cb795a0d30a318940e9664b3fd195b5fd0e24c51f16b0e26f0e",
+  "sampler_code_sha256": "3e6838c1b87e73dd1c5481440af773d828d09c49a3bdb8299c76944b77914ec8",
+  "schema": "mathcase-collatz-m31-unresolved-odd-structure-manifest-v1",
+  "summary_sha256": "c6df92d06e89904d2a0b7e76b921f72f755ba752176a444ade6b720d8b6d6ae0"
+}

@@ -1,0 +1,84 @@
+{
+  "base_bundle": {
+    "d_interval_inclusive": [
+      800001,
+      900000
+    ],
+    "miss_count": 4,
+    "results_sha256": "3882d03d30265e9e8749236f3d0fd15ac4f0d9034bca9f95e991b5588a9b2a0f",
+    "run_manifest_sha256": "e1cc37ad428236d5ab164587aa66b6ef0fb3101eab28279fb2621af21229c562",
+    "schema": "mathcase-egyptian-fraction-witness-stream-v3"
+  },
+  "classification": "FINITE_EXTENSION_OF_EXPLICIT_BASE_STREAM_MISSES_ONLY",
+  "counts": {
+    "candidates": 4,
+    "still_not_found_within_extension_cap": 0,
+    "witnesses_found": 4
+  },
+  "extension_offset_range": [
+    4097,
+    65536
+  ],
+  "finished_at_utc": "2026-11-01T23:29:44.928329Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "items": [
+    {
+      "denominators": [
+        2516186,
+        1139113348,
+        4541527267432078516
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5545,
+      "n": 10042561,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        2599336,
+        557470928,
+        582700941127243792
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 12063,
+      "n": 10349089,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        2593695,
+        1467924640,
+        606626699980245191520
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4574,
+      "n": 10356481,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        2658760,
+        1618765574,
+        4468725814089673240
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4359,
+      "n": 10617601,
+      "status": "WITNESS_FOUND"
+    }
+  ],
+  "items_sha256": "51de7a24fd58d72c9b9eeaf58168b4315acb11ced78258f19a819bbd44468f28",
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-v2",
+  "source_bindings": {
+    "base_checker_sha256": "e2c58a87c39043f01649a8577a9585f4b02d2a34ca4e393321ad683f4ed7b5b8",
+    "extension_script_sha256": "4ad836c401231daae0cee1c39ce5c4832c1aae10c237a6d8e235ad45e0cf723e"
+  },
+  "started_at_utc": "2026-11-01T23:29:44.924562Z",
+  "status": "PASS_BOUNDED_EXTENSION",
+  "wall_seconds": 0.004
+}

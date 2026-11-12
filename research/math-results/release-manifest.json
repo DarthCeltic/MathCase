@@ -1,0 +1,2145 @@
+{
+  "schema": "mathcase-public-math-results-release-v1",
+  "generated_at_utc": "2026-11-12T23:52:34+00:00",
+  "public_base_commit": "4ff7ed9b523f400ace5d19529a1b9c4d33f6ed0e",
+  "internal_source_commit": "619116a2478a71303cbf4ae260369c536e6f7fe5",
+  "private_archive_commit": "af0290469473c6711663e37b183e94fccbc28b66",
+  "integrity_scope": "Listed public file bytes only. Hash agreement is not proof verification or a fresh Lean replay.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size": 3403,
+      "sha256": "f71e24b331990bb48ceb87afcb33053c77f3b16a9feeceb7a1885c9da3054d56"
+    },
+    {
+      "path": "README.md",
+      "size": 8471,
+      "sha256": "8b3f822d65901030dee040d69f48ec40fb7caa5be7f82ba22c86b4d060973bca"
+    },
+    {
+      "path": "docs/MATHCASE_RESEARCH_ROADMAP.md",
+      "size": 5315,
+      "sha256": "60ce981737de3355652cf9fc93cfc67cbd5368790073bed2b6ea420db8154af9"
+    },
+    {
+      "path": "docs/MATH_RESULTS.md",
+      "size": 8502,
+      "sha256": "936ab9e59fb4a6faeac902f4609599d3cbd0c4bd2256730cbd17cd931f7a0d12"
+    },
+    {
+      "path": "docs/collatz-descent.md",
+      "size": 12257,
+      "sha256": "027927857fe6c479f6a4804f368308793dd572656a038ef2bd74801368f1267c"
+    },
+    {
+      "path": "proofs/collatz/remaining-residues/BoundedDescent8192.exit-code.txt",
+      "size": 3,
+      "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+    },
+    {
+      "path": "proofs/collatz/remaining-residues/BoundedDescent8192.lean",
+      "size": 472065,
+      "sha256": "1fe14cc164104eb35e87462eac77186d1c602abd8cdf400d9ac9b4625a49d3a6"
+    },
+    {
+      "path": "proofs/collatz/remaining-residues/BoundedDescent8192.stdout.txt",
+      "size": 743,
+      "sha256": "cc4188e6ffa709c99ac245727278acfb5f9ed9e01b99ea8d92538af9348098a2"
+    },
+    {
+      "path": "proofs/collatz/remaining-residues/bounded-descent-receipt.json",
+      "size": 1459,
+      "sha256": "81933b2de6e04fad6fa118a4dad966ec2240b53e54bf91a9d28578fbc0c76629"
+    },
+    {
+      "path": "proofs/collatz/remaining-residues/coverage.json",
+      "size": 5297,
+      "sha256": "90d053be6e59ec7f24c55e7f493c2900727cf8c67c1a21a23fba689c5a019659"
+    },
+    {
+      "path": "research/collatz/affine-trace/CollatzAffineTrace.lean",
+      "size": 1960,
+      "sha256": "8a53e1cee2436efc347c6ebb07da0203d9c613670ad52bafdd0d0d19258d408c"
+    },
+    {
+      "path": "research/collatz/affine-trace/CollatzDescentImpliesTermination.lean",
+      "size": 1889,
+      "sha256": "216e5b93f4df8a19ea0b5506c0edf37f2cc3d7327f1edb989760ad1c4268fd6f"
+    },
+    {
+      "path": "research/collatz/affine-trace/M29M31TransferredDescent.lean",
+      "size": 3261,
+      "sha256": "4f9e3805b30494b9bbe3291484471963f4624f81efce625643340309c4eb0a73"
+    },
+    {
+      "path": "research/collatz/affine-trace/M29Residue167.lean",
+      "size": 18168,
+      "sha256": "b2eb08240b8ca2252c6537f9fe5d8e83a3160b6638b3f9ee51dd7b2ef57f5f4d"
+    },
+    {
+      "path": "research/collatz/affine-trace/M31Residue111.lean",
+      "size": 19589,
+      "sha256": "c75c33d7bc0d2cdc900a48c0ba062a657e5b8d7cd443e7166f09a25fbeb81004"
+    },
+    {
+      "path": "research/collatz/affine-trace/M31Residue223.lean",
+      "size": 19620,
+      "sha256": "a58a57ded7be3934f2cf96f1fe310dccb2eeea435b764d17a76fa4d8a9f73bd2"
+    },
+    {
+      "path": "research/collatz/m15/lean/BoundedDescentPlusM13.lean",
+      "size": 472065,
+      "sha256": "1fe14cc164104eb35e87462eac77186d1c602abd8cdf400d9ac9b4625a49d3a6"
+    },
+    {
+      "path": "research/collatz/m15/lean/M15AllFamilies.lean",
+      "size": 33187,
+      "sha256": "06505be3a5bd0ed830e282e26b91d9aa275bf68c87323199315dffff118dad92"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/Descent127.lean",
+      "size": 3955,
+      "sha256": "30641929f75968d8c9928dc18be2cb358a72cd299b62c6f2705d142773bca887"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardA.lean",
+      "size": 30449,
+      "sha256": "48033e8ba66875b8a4379c7cff171ece27418241d8b03ecd2c4680b4c040912d"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardB.lean",
+      "size": 30721,
+      "sha256": "8a9d38db14589047831adfcaf0eca8a094419ef183e973b4e1ac3deb6e1b61e2"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardC.lean",
+      "size": 30796,
+      "sha256": "5c8a0a0076ae50754503bcd1b42c000530516e62afe4894c73322ac5cee86228"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardD.lean",
+      "size": 31015,
+      "sha256": "9593c97e98316da8635b99256b74637e21d33f0470b34ba3926ad5adad045649"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardE.lean",
+      "size": 31021,
+      "sha256": "fa7759c5e17348c93b1a5cb0b9e172edfafe7daf75121af3430b0f32060d06bd"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardF.lean",
+      "size": 31021,
+      "sha256": "cf5eb3de89644fb1e7294fdea1335983ff43d3c004dd03fbc18ecede69e762de"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardG.lean",
+      "size": 31100,
+      "sha256": "c5c64b778ca4431a7b1cb739863bfc88c92a62fd89d4e4ea22e0695ee0ddcaaf"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardH.lean",
+      "size": 31196,
+      "sha256": "422bc12b9b7f6ffa3d780b7092664d60a9bfedb869eaf381d0de75435ec909be"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardI.lean",
+      "size": 31199,
+      "sha256": "7988e07e88e76625f321cc389a6365a58029224b68dc138a2822d9c7ff822a53"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardJ.lean",
+      "size": 31250,
+      "sha256": "5b84908e6e6827fa7769b30811d2820ea284695f9fd3bbf08f73b1852aee6499"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardK.lean",
+      "size": 31289,
+      "sha256": "3343015dab86b67ae288258213c5b5688750f8aacc12c193605ca38fe84ee8c6"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardL.lean",
+      "size": 31244,
+      "sha256": "3a6fb487fcec45bb6522f96bbcb2b553bb2a1617f572871ad127ff86b26449b4"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardM.lean",
+      "size": 31289,
+      "sha256": "b17b29d4266f8e90fbb4ed86da510b0dddde4ec04ea53d29fb617fb885afbe46"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardN.lean",
+      "size": 31307,
+      "sha256": "db06860017f2046c033cd9a8d1badc4953a7dad16061d6276309d9e6b0ae2630"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardO.lean",
+      "size": 31379,
+      "sha256": "e0f73cd6d70473b880da8618d6fdf9781e19fe908be564ce40257e6498548059"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardP.lean",
+      "size": 31412,
+      "sha256": "a834643912a203fcc4a3e2adcb268f0265798dacff13994cafd3a7717d8ee804"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardQ.lean",
+      "size": 31397,
+      "sha256": "f0826a422fa07c5f8e57dd9a2351408f262ac76642c2d39f48d343b9dda692f1"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardR.lean",
+      "size": 31394,
+      "sha256": "9023adc92cc75350b9669f589a20860f9a99158adcb1ec388f51f0b3b9bf857f"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardS.lean",
+      "size": 31388,
+      "sha256": "cf35ae02b237c4c02d11242eaa29876e70430e213d6e89d300159830efcaa922"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardT.lean",
+      "size": 31445,
+      "sha256": "0acd3b3c77b7b971f9cc4c156e7f8340763a45d8e17e48ddbc838edb262afdda"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardU.lean",
+      "size": 31397,
+      "sha256": "5cfc37c0fd0285b0d0f854cbde5e713900389ea20ef53f964e47ba3aab947a9f"
+    },
+    {
+      "path": "research/collatz/m15/lean/modules/M15ShardV.lean",
+      "size": 15813,
+      "sha256": "ba849a32c69f1436f3f0ca6d5e6c5592c41ad50524e187aa292766e9e7895f20"
+    },
+    {
+      "path": "research/collatz/m15/m13/m13-prefix-summary-r2.json",
+      "size": 30287,
+      "sha256": "7a1420d4c1337ec36a134b92e70b1382adbf378799732548e32560cf5c464edf"
+    },
+    {
+      "path": "research/collatz/m15/scan/m15-prefix-scan.json",
+      "size": 42684,
+      "sha256": "41bb2d8ea1780325cdbe02fceefd8a26ede2046b2b013229fdf9a532362df5ac"
+    },
+    {
+      "path": "research/collatz/m16/lean/M16AllFamilies.lean",
+      "size": 86846,
+      "sha256": "608d59c8a13a8c2b7feb486ce6207c1a42c83e4b68162c2b1906addced59b172"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardA.lean",
+      "size": 82163,
+      "sha256": "d26620e8988049ce62b3201bc4d72a6afc1b981e75b1ac38384b941729180797"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardB.lean",
+      "size": 82895,
+      "sha256": "f5db5e45a36b4f81aaafd8476397b3dbecb107eed1f45698fc3d427d635acbd9"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardC.lean",
+      "size": 83216,
+      "sha256": "74537177c14b1df6537ddb721e0a5ebdb8d145971736dfc99b34e040fe137a53"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardD.lean",
+      "size": 83441,
+      "sha256": "0aba9fb3ef273e45b273a9f4fce42926951ce68fa14098d524081a2b739bdd08"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardE.lean",
+      "size": 83770,
+      "sha256": "fa78eb2eea71a0536d65a8de76b0d8c83be52fab055e6240d51f515ed0037de8"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardF.lean",
+      "size": 83938,
+      "sha256": "70027723e6afb7a5ea6462f4c9a40b23090e5f0bcceed0b0a4d0f7c10443e309"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardG.lean",
+      "size": 83926,
+      "sha256": "d185771b1193b7d8b38ff0de5f051848b45a7e6ba38ec223d96cae67aa48fd73"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardH.lean",
+      "size": 84013,
+      "sha256": "f8bc83991808682574df379c826d6709c839acd609e8090d152d9d45d5d9217b"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardI.lean",
+      "size": 84193,
+      "sha256": "1d101932549ec73d2a841918ad8e8343a8a8e073a28fe1e4cd3734a7a410bad2"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardJ.lean",
+      "size": 84160,
+      "sha256": "9649d6b94490ff1a526efaaa7dcf0d12f49739a3b8b2e600d77cf6bf60cf803e"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardK.lean",
+      "size": 84466,
+      "sha256": "d337192219ec5e7efc9233a93e93e06b97ca9bc1cdf46e3bab2e937b2c91cdc2"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardL.lean",
+      "size": 84457,
+      "sha256": "ccac61f7ffb1eef1340fe20b74fe84b27e5c1e92ef88561ecdd945061754856a"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardM.lean",
+      "size": 84382,
+      "sha256": "2af6a39e18a8077cb8978e22fcc84bfbcf0504e15e6ad37cfd19c42b5b7b7c5f"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardN.lean",
+      "size": 84565,
+      "sha256": "1cf1eebfee61e13ae01f769dfa0217e45816f8901e537e14d69192a13d16e6ae"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardO.lean",
+      "size": 84532,
+      "sha256": "c2e7fe71e79f9793ef91ecdf48c6dfbb23a27160d59584cea688026e16393add"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardP.lean",
+      "size": 84586,
+      "sha256": "e83e4f66160a0f33d23678ef134d799fd7dbff801bf704acf76c03514a60601c"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardQ.lean",
+      "size": 84574,
+      "sha256": "8348f4c52af8afb639440aa22c4dc1403c826e88ec754d8c2965b1ddbaa8829f"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardR.lean",
+      "size": 84706,
+      "sha256": "13ff859836f9bdc0dabd2778d93fb1ef26b25d7ce0e76c298466d66890f6595f"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardS.lean",
+      "size": 84688,
+      "sha256": "43c870c55ae46eb6d588f5082c86a60fcd50a7258adf68ead1c070e295074f5f"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardT.lean",
+      "size": 84757,
+      "sha256": "9653a4a655fa33bb81656f7837bdce280329fab902686e9941aef7211b37e3c0"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardU.lean",
+      "size": 84733,
+      "sha256": "32aca7f46ad265acf04518918044049b8d96d38208d9e0d6d5f5e0cd346c58c3"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardV.lean",
+      "size": 84844,
+      "sha256": "79de5bd49934aac2909e26c49d409800fe2df87993366812ec1c36c17da8ab71"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardW.lean",
+      "size": 84826,
+      "sha256": "04051224b42aa726e2535e0e9b64d7b3124d13bb4b13bc3a91c1a1de77a11a08"
+    },
+    {
+      "path": "research/collatz/m16/lean/modules/M16ShardX.lean",
+      "size": 67898,
+      "sha256": "c38dc202bb35ce8e61c38d171e07469c8637ab79fb9f3d927b91532dbf80a7a1"
+    },
+    {
+      "path": "research/collatz/m16/lean/source-manifest.json",
+      "size": 30245,
+      "sha256": "7292ae5d65f79df254b361ac90a043e452029d5880999b23f1574797fa99881f"
+    },
+    {
+      "path": "research/collatz/m16/scan/m16-residual-affine-screen.json",
+      "size": 122991,
+      "sha256": "f0b2b73ce1f87b1a7be18bcbf3bcb875f6ae106c9c84b0e889579ad3ee23c9ca"
+    },
+    {
+      "path": "research/collatz/m18/lean/M18AllFamilies.lean",
+      "size": 187020,
+      "sha256": "f8da15428233697202367735216a70b0be55396a66db130258bcbd1f8383eec3"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard001.lean",
+      "size": 92744,
+      "sha256": "4508a242201e6961be20171d6d7bcdba10114a58315ce6d0d306db0b022c4c4b"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard002.lean",
+      "size": 93348,
+      "sha256": "e2b01f3d316b88191da56e8b1299c86fa2df8cdf3837ad7b8ad47c7e0c666e3f"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard003.lean",
+      "size": 93914,
+      "sha256": "4339d2cafef6134a38f49197043310c6e29d543a992c1c60bddcb75ef0912440"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard004.lean",
+      "size": 94097,
+      "sha256": "8d2ebeb616c5d459462d1f9709d02ae64d74cd7359b4a8ad86a1be13995f0489"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard005.lean",
+      "size": 94529,
+      "sha256": "61e13a119c04d0d40d2cbe74427be5990e5ebe4ceac63c34649affaf5226b1aa"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard006.lean",
+      "size": 94775,
+      "sha256": "2325d8cea4d470ec052b76e818c429b585cdcc54a288132bdafff67c4a254026"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard007.lean",
+      "size": 94943,
+      "sha256": "0329090c0ce9608123ee5bbdd2afe5e894ed3d23750027792fc79b7f67404d19"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard008.lean",
+      "size": 95006,
+      "sha256": "1a5d80c883971595d8710a0722bb55c109e5497735626c3e3cb4376edd95a10b"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard009.lean",
+      "size": 95081,
+      "sha256": "914f344749cd45a82606d4b0dae8af574ed057c12850920b576df694dd287d5e"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard010.lean",
+      "size": 95201,
+      "sha256": "46274bbcf8802cfb853f7b71daab76109a22af1d44a48d7a65a8757da792a1ea"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard011.lean",
+      "size": 95207,
+      "sha256": "c3aeaa827d22a1a6730678baa8ad11896025431285595566b1a70d0277807297"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard012.lean",
+      "size": 95081,
+      "sha256": "1f37b8832ad72cde23147b5b16acdceafd8e38838b5772d5e17ee4a078df29f4"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard013.lean",
+      "size": 95312,
+      "sha256": "3dad4012417e842e97f18d8d4110eae47e6658b078e1c250d63fed215648c0dd"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard014.lean",
+      "size": 95231,
+      "sha256": "cef0017dacd908893104fed47a29985d6467a25e24127f5457de91079668912c"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard015.lean",
+      "size": 95345,
+      "sha256": "132ceee88d9533d4f9c50a1c19f99431e65cca2c5608000567b7cbb88474f029"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard016.lean",
+      "size": 95429,
+      "sha256": "e772becd33f498957d712140d1d744388c8a20ba782f2a68bb9620b43fe0d315"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard017.lean",
+      "size": 95543,
+      "sha256": "a9aecb9ffcb3c4177333e6d7e4277997c84631aaeb4e89f9a395ddd964cf4398"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard018.lean",
+      "size": 95492,
+      "sha256": "6dfbaa64dc9b3af9614445a78ec9d169e2bc49422be35f0267f9aa68498b4a03"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard019.lean",
+      "size": 95627,
+      "sha256": "c56fc53c2645a7cea51ec37ed96b68b66a30e951b53c86a10c27c8d59532fd37"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard020.lean",
+      "size": 95791,
+      "sha256": "7d9530bc617cf841fb96ffe224ebac972c9f2c24b5a6684898197d9481fac930"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard021.lean",
+      "size": 95884,
+      "sha256": "0f1fa6fff122260c7c8bb76e38ec4356a5bac704708527472729b514567cfecb"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard022.lean",
+      "size": 95683,
+      "sha256": "db71e2b65f4bde60a0c996f71b80d53a64f97abaf23fe5100360ad8481873256"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard023.lean",
+      "size": 95512,
+      "sha256": "5448728247dbf8e8ae22ec2aaa7e84cd8381923a1e13af432c33098ff966e311"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard024.lean",
+      "size": 95806,
+      "sha256": "cb17e7cb7ba947a9e8e78951d561e6781325e575282b428377892217b0597227"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard025.lean",
+      "size": 95644,
+      "sha256": "11a7d1ca2c25d39acb1710c8b43f867443c52d4ecfa1e3775fd4161f9037393e"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard026.lean",
+      "size": 95977,
+      "sha256": "15d37f407e98960376040de9e3cb3d67cb35f97a801c0bcf0457ae1b9da7798f"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard027.lean",
+      "size": 95908,
+      "sha256": "0145b10e803c8b5731eabd2fc1c335415186854998eace61c55c46466c92b94a"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard028.lean",
+      "size": 95932,
+      "sha256": "7c2be2aa6a1956ffd1a36b20dee1832dad2174c935c7a4b796c2fff57dee7e2a"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard029.lean",
+      "size": 96067,
+      "sha256": "1b60d33ea7228cad683c5ef2eb9cd54363108fb1517f52171f5c62c846ec7b10"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard030.lean",
+      "size": 95938,
+      "sha256": "e93e0e02f144ca0a23668844942980ecb2959c39d64061bb5c1e75fe6e561d7c"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard031.lean",
+      "size": 95920,
+      "sha256": "1016b26959e7fb0bd6d905d1d245bcd07e51ea8ce071ed958abd418501fd1fa4"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard032.lean",
+      "size": 95860,
+      "sha256": "795074c35b4ade83812bf26f64cb7cecbd60eb78053e9874fc2081850dbbce1b"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard033.lean",
+      "size": 95932,
+      "sha256": "32930205d7556e04b48bb2e98697fed1188b4fee0eca1fc8f743da91bdecbf32"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard034.lean",
+      "size": 96145,
+      "sha256": "d20582f78fb32542e14ce2479e8087aeeffee58e160ac3db1def96109905b933"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard035.lean",
+      "size": 96154,
+      "sha256": "a38ba58b5dc310afdec7a6d67284bd1fce26404475136ab4a63a662a4fdcbf39"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard036.lean",
+      "size": 96217,
+      "sha256": "7c7e00a7fb92b2b1ce1b2d586b93415d88bd188dffe4809acd67029a278d88d7"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard037.lean",
+      "size": 96250,
+      "sha256": "4a92bb597bc055263d14fa89dc06ecd24890f51cc07076bf59540f61404d16ba"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard038.lean",
+      "size": 96145,
+      "sha256": "19e2d3e65ba0a4138eceef02e7acd4f0bb0a83c6cd63828d14192e33a88583c4"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard039.lean",
+      "size": 96358,
+      "sha256": "6913b63b81ce59278a160c21d12caf17905571588d9e36743c55d1ba1fcaaf88"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard040.lean",
+      "size": 96193,
+      "sha256": "704cf5f09f32c3864960edcba193be87f2e5acf44c9ea1b93ee0e247dc78ed36"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard041.lean",
+      "size": 96133,
+      "sha256": "7c95f5ea0a72373c15078b6bfeacc4d895c15de2a374d5416276023484a571c6"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard042.lean",
+      "size": 96124,
+      "sha256": "100773f12a496d7b609ab7ed87e115bf2b5a3dffc792360bc4c52f2fbfe269c6"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard043.lean",
+      "size": 96235,
+      "sha256": "f64a754ee056b54da6b3dc3c41837372d5b380ac550f74d6c5e8cbbf91a1c2e2"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard044.lean",
+      "size": 96412,
+      "sha256": "95621c9b58a7823611d343af4dd1c95cda8d3a658193d03f6dd5986388ba1df7"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard045.lean",
+      "size": 96580,
+      "sha256": "9c99601649d6aa072190ee542954e55fcf5a280bdc24800aeae1f3141121707e"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard046.lean",
+      "size": 96427,
+      "sha256": "ffa1c8b518e15386a0c68a5d67c21bef1b6ed5aeb16af39b52111869e3e0c643"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard047.lean",
+      "size": 96562,
+      "sha256": "4cc16375c26fa354db89d3e6feaad778b7c662fdbe94f87e126d4652e5ddff3d"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard048.lean",
+      "size": 96373,
+      "sha256": "a05ed39bf3439c9eb8f3aed88915d1286ae0b450d5314531b6d31510acb28ed2"
+    },
+    {
+      "path": "research/collatz/m18/lean/modules/M18Shard049.lean",
+      "size": 5059,
+      "sha256": "e71bd989365e391dc6c9940e3ee11f2764adabeba2c090327bfe73b5d6640111"
+    },
+    {
+      "path": "research/collatz/m18/lean/source-manifest.json",
+      "size": 63492,
+      "sha256": "05e7e387ca090a6f39a5cc062ce9c8ba94999d8bc3a05346ae1c2dff9559a245"
+    },
+    {
+      "path": "research/collatz/m18/scan/m18-residual-affine-screen.json",
+      "size": 255526,
+      "sha256": "066f60e94a1468cb86bac7051d57f47f00be85adc2e70389545f33acf3967710"
+    },
+    {
+      "path": "research/collatz/m20/lean/M20AllFamilies.lean",
+      "size": 528641,
+      "sha256": "4b480752687cc2fea5554f20e4198d990e4c30ebe50a01b5813eb517dde469bf"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup001.lean",
+      "size": 11750,
+      "sha256": "67dfcc53bc243ee1b946f9353badfdd5457b4ab32d707362732cc53c1f4c22bc"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup002.lean",
+      "size": 11904,
+      "sha256": "6e7b37a76c76c0f1a3a4513e419f26e0d57125b1f86b6c9f3484294bd5933e82"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup003.lean",
+      "size": 11991,
+      "sha256": "9a96531be5bcf10abd4b20b5700bd6bbb3bd212bfad0b66be175768584978a5a"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup004.lean",
+      "size": 11991,
+      "sha256": "3be72c349c1ecb7212a09179f2549077324d2d48efba9a916f0ece420ac846db"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup005.lean",
+      "size": 11991,
+      "sha256": "0e412d4dfdd3b5cb20938c93aade1da999960dfd784a25f352216486282b9cdf"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup006.lean",
+      "size": 11991,
+      "sha256": "e700df88ef4cb1834879f17c70a78f296e908b2e9cb026de463a7b840e4b39bc"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup007.lean",
+      "size": 11991,
+      "sha256": "217da4d337379eb78cb6bf6c31f37bfa6c705dec547b8e4ce081dc0d0b3c1eaf"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup008.lean",
+      "size": 11991,
+      "sha256": "5b3bfcf7a12948ad71b7877299ba4feee18f72c65f8699bca3a642f778500ef1"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup009.lean",
+      "size": 11991,
+      "sha256": "bd21490a9e5c2944949caf5b8d3d9d0c9a49c2a891efe6e68a331eba00face3a"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup010.lean",
+      "size": 11991,
+      "sha256": "be77caa73fbf5c27a78cb0537c7362e8bb2f73c95fd8941b6718fbabda49c04b"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup011.lean",
+      "size": 11991,
+      "sha256": "0e7ff22940eaaf52ec024a97a49732987c67f431943b10e59184f5443bd3c83f"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup012.lean",
+      "size": 11991,
+      "sha256": "bd30059ab1f17e603564db9f15a3447f6acb6b8cf96c1bc0a6cd432279fffedc"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup013.lean",
+      "size": 12061,
+      "sha256": "55c84454d9784d1719472da34198290c8dce38c07e63320fb58c1ed595008604"
+    },
+    {
+      "path": "research/collatz/m20/lean/axiom-checks/AxiomGroup014.lean",
+      "size": 3178,
+      "sha256": "0d19137cf77f0eb3fc5bc032466c9aacb5fab3c1d27ac2cbf3a7be1afca94f17"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard001.lean",
+      "size": 102669,
+      "sha256": "61a9c1081673a240dae313ed0bf5d675cc857110ff0a2db38d08aad482575c53"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard002.lean",
+      "size": 104096,
+      "sha256": "e897b7965879cf27476f856770c5467e3416ce6504fd654d90994dcc8941758c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard003.lean",
+      "size": 104612,
+      "sha256": "5d7bbb59ff8574a4d68ed7a9fb2ee643f2b3bb90b35cfecd5446326316fb27a4"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard004.lean",
+      "size": 104894,
+      "sha256": "0ea08a1d2302e354a7a517e322c5e14043e3e18c7f1e2e4e9254e01d4a754499"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard005.lean",
+      "size": 105212,
+      "sha256": "78e7fd1e9b0e16f5e915580df1e665425fdd79f7dfff5f86b8ff05fc21e9d6e0"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard006.lean",
+      "size": 105632,
+      "sha256": "4643c72120c26a43142cf879cbc123eaf4c52908654823a31dcd11c54980a8c2"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard007.lean",
+      "size": 105599,
+      "sha256": "2bc1131879c2e89501b1d62e92934c88492400119e8c7eec72696fe621c71c20"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard008.lean",
+      "size": 105761,
+      "sha256": "7091b7fbf201429226edd917594eae8d03c5764b18ab56ad7f62ecbd2cde2590"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard009.lean",
+      "size": 105644,
+      "sha256": "5e885e0e92b1a65d9cb395350dc5fb6369d47318b388c1ed8a18dac75c8ad3d1"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard010.lean",
+      "size": 105926,
+      "sha256": "eacdcd619d5041c6b8eadd9bf1ed2ead2ff8378489c561ee9bb3e67ff67c4236"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard011.lean",
+      "size": 106304,
+      "sha256": "f5761360cb328a832c75fba67bdc7d3ed787e1c73bd7b6603ce47c493c4b62b6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard012.lean",
+      "size": 105968,
+      "sha256": "81445658f1313eff383abe54e015f38c38a70fe3c2e49debf716dad7a857fb86"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard013.lean",
+      "size": 106061,
+      "sha256": "bedb5f715fe85511ca9eb5345ec2eea7c860a2707f852fc34616ca18c1bf3a9a"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard014.lean",
+      "size": 106220,
+      "sha256": "8f32e1b9756f18746ead81dfcc98e5f22ed53e313407f8e30e0aacc7fdc88ff8"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard015.lean",
+      "size": 106518,
+      "sha256": "9f58ac6f1148320ed3231140f722cb587c263c1e0d694d2ab28678bd7e28e2ab"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard016.lean",
+      "size": 106528,
+      "sha256": "6c39a930ae41a88930d9e5dbd6973b6d064e784967cbc17748e8e7cdbdf4dae4"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard017.lean",
+      "size": 106465,
+      "sha256": "c5add6f0a9126b4c112d930510c99a5fbe3bc450768cbed2057b57d052090803"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard018.lean",
+      "size": 106369,
+      "sha256": "7d13e40ee48aa342af1f3d92c5774546c482e46b09c2a07b6627f2c617a6779e"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard019.lean",
+      "size": 106525,
+      "sha256": "e7f00240aa8efd5fc0112fbac55b69c08151f3932d12f07032636933909401f8"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard020.lean",
+      "size": 106663,
+      "sha256": "597b2314c74c043a9ee9639c78dd0b8ea2c75ceb1e0eb1be1c47dc9ba06087ac"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard021.lean",
+      "size": 106630,
+      "sha256": "71c455ed309325c6bc7d0b6eb6e79131907ca9904ac25b08c167de355bf0ece7"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard022.lean",
+      "size": 106759,
+      "sha256": "c123e273d3476ac765bae4c52d66bbbc9e1fd8ac81de08f121ae204835bb0581"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard023.lean",
+      "size": 106894,
+      "sha256": "1b7cab76b06807f294573be3000b7eebebee00c95e9a16611462a65abfb5feb1"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard024.lean",
+      "size": 106711,
+      "sha256": "82ff088110e831d05cd8be9dc02d73c6ef53c69c7974dc6806c4000348513b4a"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard025.lean",
+      "size": 106909,
+      "sha256": "760ddf58f3e51af8a2e6ea4b509b8f92a652ff144b59387ffd6df90ed72911f6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard026.lean",
+      "size": 106687,
+      "sha256": "c54665485b516bf7f8529c71fa5ea926c6bf471b41d5b0c417f22e09ef2b388b"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard027.lean",
+      "size": 106963,
+      "sha256": "41f37b74b4457784b1a82627e1562ecb796e3334e3b3705be4ac506ab134cb05"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard028.lean",
+      "size": 106807,
+      "sha256": "b1679cf39686fb699729f8c31feedc50a0639a724ac58243a535ca73a5366b1d"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard029.lean",
+      "size": 106906,
+      "sha256": "e5a9aaf92835dc5347c420ea94c5335fb418486edc0f8b8a4818fd7fa7f512e6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard030.lean",
+      "size": 107149,
+      "sha256": "3f701abeca1512d872d8f82740d9f7065a05e88473e157ffe7a01ffdd1dad751"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard031.lean",
+      "size": 107098,
+      "sha256": "2c1fade7769f482e4c947de77711432092ad931af9bad8a81170ea295febd06c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard032.lean",
+      "size": 107074,
+      "sha256": "72a6d3f66d8bc217787f22c0205b36dfae7b0a8eed81b74aade8a2c752a8a2a3"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard033.lean",
+      "size": 107083,
+      "sha256": "fe7907040df8e8fb3f745826d57ff998121b5a4aa441af87521debf4b6d7487f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard034.lean",
+      "size": 106999,
+      "sha256": "268d59ef5c8bc168523df1b63a30ac65b02429fcc3ccfc6156d2d9053eb75b79"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard035.lean",
+      "size": 107020,
+      "sha256": "667a241daa689d24650a009e321569311c846e4a050d97ff542a42f184934c54"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard036.lean",
+      "size": 107086,
+      "sha256": "a6448842329842ebdbb33f4b5875ff8954c24bb8c930230c6fb48cd2b387240f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard037.lean",
+      "size": 107377,
+      "sha256": "207f085f780bba7a939ba17261f6a39d356a873b46635b997e062d7156cda6ae"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard038.lean",
+      "size": 107323,
+      "sha256": "2a4b1c273c50717785b0b59662736e6ca431eea76ede6cd313fd6ea7ccf2edd7"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard039.lean",
+      "size": 107275,
+      "sha256": "fa5f168866c50c205d9b6a89eb2b9aff927cddad267ac6e0d76f159927859c8b"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard040.lean",
+      "size": 107503,
+      "sha256": "c7d539e250a9055de708873b99c2b3ca6f69aa6e992e3e08e3b627e3a44c57f9"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard041.lean",
+      "size": 107377,
+      "sha256": "e2d0a1f221a7db71e879c5fbec614669d9c2ff60ab956907e79f87dd394ccf6f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard042.lean",
+      "size": 107314,
+      "sha256": "37601179d5cf48d476fe8559b1cd68a7ea83d4c26bacf108bcf140c48027a748"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard043.lean",
+      "size": 107254,
+      "sha256": "48d2723d1b55cfbbd90818a6b9844ffbeb5dae2126ec77884288730b1cfab62f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard044.lean",
+      "size": 107497,
+      "sha256": "b74d881e45f18663253ec6902d29fbd5a1194196867896ecc7be3a55a701d048"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard045.lean",
+      "size": 107473,
+      "sha256": "c57f0eec507592c6482912f15e64109502e7cb45f7ea6a030d03b0e1bad4f3ab"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard046.lean",
+      "size": 107314,
+      "sha256": "513bb7f4c1326d91c04ecb402b4e08c1bb2dfe17b39b1729af79c50d302bb375"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard047.lean",
+      "size": 107488,
+      "sha256": "bc617527622817264666edb55743628985eaf647f6397734a106953402094b55"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard048.lean",
+      "size": 107674,
+      "sha256": "e6c6ac0e505fb2471bf5a774fb6fdafd2678df9406ac0baeabacbe90798ce9a6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard049.lean",
+      "size": 107608,
+      "sha256": "1fbc933f2cbbfe45779263664aa577cfc4f217aefd2ebfc3abe50d560db19d32"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard050.lean",
+      "size": 107557,
+      "sha256": "809340d0c1563965ba892458b47890807f745707e585d050ecf8f47dd8b8e4b9"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard051.lean",
+      "size": 107488,
+      "sha256": "74bd63f5a527046d18cd84a1d3d12c3ebbbe77aaa1cc4d622f627338bd1b096f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard052.lean",
+      "size": 107608,
+      "sha256": "cb79f3bcfeb819f695b55cea996e6661dd566236868753d0aa52b3e2fcb50ca5"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard053.lean",
+      "size": 107548,
+      "sha256": "b4e803c81a29f922562fcc6496f91ea5fdce9703dc535da19ea93c1c5974b81b"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard054.lean",
+      "size": 107620,
+      "sha256": "7a5b85e806eeac07c0b1835486cd4d9271513c0acf2da914ed075646cae5e3fa"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard055.lean",
+      "size": 107719,
+      "sha256": "c9eee3031a773bca39ae989d8d48546bd4d588cff5da783b8acf4b0ab6077aa6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard056.lean",
+      "size": 107671,
+      "sha256": "0923185b0c7217bc19e475def9e47fb3d97a4544341e8f45c141bb25f1a7140a"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard057.lean",
+      "size": 107707,
+      "sha256": "d011b6b5c28d87ca5cd12488afb3dde1592c7abf21164d827f788c325706241c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard058.lean",
+      "size": 107659,
+      "sha256": "7814033e7ff076691e9085eed5c5c3c27b94c46489b33cb4d1c4ca005430f39c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard059.lean",
+      "size": 107713,
+      "sha256": "335c669f838f1bc961c636387ab2e96de92c7d3ce4532b7852b43e8883d28966"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard060.lean",
+      "size": 107608,
+      "sha256": "96f0eb61b36ab84fbf1b6afc27ffe5fb099cddab4722e84918765132908b7c7f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard061.lean",
+      "size": 107728,
+      "sha256": "e7346f2730c183161fc8dada0d1e8ce75fa6da5f7338b27f5b90775e3d5ffc74"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard062.lean",
+      "size": 107908,
+      "sha256": "51ce4dbd407387da13d8afbe5e8e3889501a28817572fdd7f22bcd346e69fe97"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard063.lean",
+      "size": 107911,
+      "sha256": "8cd93eb95daa43d7483b3f37b4174663d849af36dc454ad842c15ee1b9e77f06"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard064.lean",
+      "size": 107911,
+      "sha256": "17754af4cb54324c3467622b3de1199cbbb930849760cdb2a8baffa35fa0d6ce"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard065.lean",
+      "size": 107788,
+      "sha256": "e4a7981d56a0d28032fcab25baf7ca3123893d91c3604c5421070c1c57284dd0"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard066.lean",
+      "size": 107869,
+      "sha256": "96690c0c35993cb79061503da1b638fe27b8d03417c77676b53cfd01d9ebdb43"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard067.lean",
+      "size": 107908,
+      "sha256": "84ffb2c42d0986d9e90a4b57bf6d8776fa01cfce2f30854f596b00ad494f6312"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard068.lean",
+      "size": 107833,
+      "sha256": "44f43c522bb3068f759a9e0b45f34f551b7a85100f88ae86e057eddf4c632c9c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard069.lean",
+      "size": 107806,
+      "sha256": "591cebb4ce0374e7d5fe52b40727541779f4909df8866d243af5e6cc467bbdc2"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard070.lean",
+      "size": 107698,
+      "sha256": "70cd18612970923a78aa20e17755e085d935e7b2d0ad1253b672944e16a86064"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard071.lean",
+      "size": 107833,
+      "sha256": "3b3f2951bf6502f780f33f6d805e8d204f796a6fd41e7bd29d5cb6ac7fd2860f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard072.lean",
+      "size": 107875,
+      "sha256": "0c8178dffc215b1e204ec7c3a3d811a668a26cba96acd96a115e04fb6f57a5c6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard073.lean",
+      "size": 107656,
+      "sha256": "63915868ce6f408e15441b7e03086eae7e0db103964c5d4b7bd02bc5017d425b"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard074.lean",
+      "size": 107785,
+      "sha256": "3f4a5a55fbb3d2a9f091cedbffaeeed41bfabfdb74c7c07c8bcdcc61c26985c5"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard075.lean",
+      "size": 107812,
+      "sha256": "2ff5ac369dd88aac346d49a7f742833e4385a31e8773a0add3fbeb2315248f92"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard076.lean",
+      "size": 108034,
+      "sha256": "67b2d281ee96f0abd1eca593845f8eb1c79883fc0de2259c0a2dc08cf1640622"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard077.lean",
+      "size": 107818,
+      "sha256": "66ff979f9e0aab2803a5389800ffbf0fc47a387c3364bf87bd284956fe09e3db"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard078.lean",
+      "size": 107830,
+      "sha256": "378a647316f65153da05b6579dd10982bd619c7449fded7684166b1d5a1fc07c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard079.lean",
+      "size": 107719,
+      "sha256": "2bfc41e92c8adb47c797cd83c6b1512f585ab445f0b2207da6986c855b227508"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard080.lean",
+      "size": 107737,
+      "sha256": "e2286dd45d1e0aeb046a51c10b4a5c5aff2dec38330d0deb2ab5212004174d19"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard081.lean",
+      "size": 107764,
+      "sha256": "a02a992a7830be4679b61342e35a8dd880635b505f83827cd053e81ac3f9afc0"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard082.lean",
+      "size": 108034,
+      "sha256": "495f738d8840a959fa5410666550c8dd5b9508ea6cb4e0d621e319021bb1403b"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard083.lean",
+      "size": 107926,
+      "sha256": "3d749f6f710a6561544d88948ddde7f85a2fd3eca61d2d8ddaff3045e50ae630"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard084.lean",
+      "size": 107800,
+      "sha256": "1dfa8c250d198b060d43aef1f86484a69ad4f3b9e277b812573621b507706c44"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard085.lean",
+      "size": 107764,
+      "sha256": "16950cdcc20873967a68a411b3cfb22ebd897e9287d37013a1fffee7255bfa9d"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard086.lean",
+      "size": 107959,
+      "sha256": "6ef0d18f25413229a8b7a3ebc6865dbe8cc1debe1acea7e8eb748f975308c78d"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard087.lean",
+      "size": 108016,
+      "sha256": "259cc920a4aa50a005efa3ea068d663db814ad8686705867cf750b509008efa3"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard088.lean",
+      "size": 107932,
+      "sha256": "c5a0993cbdcb5410a44660a8b49b2de86a0d2ce0d1c0ad064b856eb53978168a"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard089.lean",
+      "size": 107887,
+      "sha256": "2356b309425b48ee125ba79e1c2c48ad61ba2c738cfd577e6d0f68c797f69648"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard090.lean",
+      "size": 108310,
+      "sha256": "159afc56d0526ece8a57732a5801d87f8a0a4f388f3bd0a43a68bdceb491c8fe"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard091.lean",
+      "size": 108199,
+      "sha256": "5cee516a6f3d3894bbb6e0a76fc3f84d1a3d5b6527c8ba53596c7e640ee6db43"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard092.lean",
+      "size": 108187,
+      "sha256": "707c83494e628ba27c99261150e04600786866d161455e96cb5f2c7a4ea61e29"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard093.lean",
+      "size": 108136,
+      "sha256": "94580e6c304c931aaacdb3ae28411ae6ec98b301c95cc6e0443ddb16a63854a1"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard094.lean",
+      "size": 108229,
+      "sha256": "45694db3e63824e0902ca6cc3a3906a269f6fea6117d1bf98bacfdbca0891adc"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard095.lean",
+      "size": 108109,
+      "sha256": "2cc36bb8af366d6cd99dbf06849ee132f8d3818b616134b678326e324166d8b2"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard096.lean",
+      "size": 107968,
+      "sha256": "983d27893df4a0850f2bb2dd27586e7e15a541de548c117d6a411088c31e73ad"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard097.lean",
+      "size": 108019,
+      "sha256": "8c548969787764f3b5516fe97f8b3ca2b95c69d79ebbe2e300b4df691cf13bb4"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard098.lean",
+      "size": 108334,
+      "sha256": "e712d249fac92acd46b3666647544278d01529713ac9a0ca26fd7845b9568a22"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard099.lean",
+      "size": 108235,
+      "sha256": "7e0acbf31058e8190740a853f263d7b3e9d94c2960cfc0426cbdbc0e43feca09"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard100.lean",
+      "size": 108169,
+      "sha256": "31bc79f952045f754dafde1bdda2cca29c5f15adc6ce5faf4eb283c0091819fe"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard101.lean",
+      "size": 108223,
+      "sha256": "274a8ff356b8b3763170aaa4ec66765925aeb4caacb1fe6681549938775c3664"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard102.lean",
+      "size": 108232,
+      "sha256": "e8251071fd97956a7fabd62165e3218093438eec146a32b8701954831a448307"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard103.lean",
+      "size": 108115,
+      "sha256": "b2baf88a9d32aa3a569df8d44f7f5fbb5305b97a80e2c81e064000c5e45d4e98"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard104.lean",
+      "size": 108115,
+      "sha256": "6ca16e1d66962f4e47ab5a7349c3a2ce616d04bc16b333ae0bb3c1bea64fcc70"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard105.lean",
+      "size": 108160,
+      "sha256": "2630369a3863a328b3044dac275dd6b70797a12f8d365191dc1809d353a4627c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard106.lean",
+      "size": 108079,
+      "sha256": "aa68bce3fb44037f1113ea8486d39c62059b58560a58c61730a4dc3c1cba4b6a"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard107.lean",
+      "size": 108169,
+      "sha256": "0559298341663ac285f81cc09c746bcde8986fa61f015dc51deffef91aab04ca"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard108.lean",
+      "size": 108133,
+      "sha256": "3b7a2bb5bd83246601dcbe057cfb29b4911c40e65d7b13d0e8169b3f4f5f9d79"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard109.lean",
+      "size": 108208,
+      "sha256": "e2489f774428bdfe15fe1a22a12d196ef25458cea6574283cbeba66acf86bfbc"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard110.lean",
+      "size": 108160,
+      "sha256": "3ac1c2db9bd78ffcc4b848d974c39225e3a70d012d5f64906ea632aaf920100c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard111.lean",
+      "size": 108145,
+      "sha256": "1556a47a619a69d2c2fc1c84ae9235f308f2352585723785ac93b2bb1026ba9a"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard112.lean",
+      "size": 108142,
+      "sha256": "b435896d9d4e99dd047b4cf0e798f01285b42b20fb2dad367fdeb4b5b162e4f4"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard113.lean",
+      "size": 108055,
+      "sha256": "b295ca871d3707c558ed6685ba1b68a8aae3a32200bde5a7570ad3fd28f7ba07"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard114.lean",
+      "size": 108235,
+      "sha256": "5e0c901642213d970f5a882e7d11d8016ce79a331f0ed103cbe0301814cd79e6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard115.lean",
+      "size": 108226,
+      "sha256": "07c396116126f63fef70da6de75c5910990d5888ca572830d6fb221c77589f25"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard116.lean",
+      "size": 108343,
+      "sha256": "576b16f4f20cf0c0c1f861709497c7697e05853337320d208f2780b7ffaf1b45"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard117.lean",
+      "size": 108232,
+      "sha256": "ce7f48fe9e9628b4a9c36ede4e93e12e0a75f0f220c4adc33a0c4c19aaefc2cc"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard118.lean",
+      "size": 108157,
+      "sha256": "c63b5ba4179d9b433548424400aabd81f425a3f2e21e360b064f20e434915aa6"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard119.lean",
+      "size": 108370,
+      "sha256": "a459ee171f27d202e14b6f3a7885c6ee7f90694dae5f3510048c9b8fc0795dfa"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard120.lean",
+      "size": 108196,
+      "sha256": "a505eb0de3c9ab147791c16b33af6619a6c18a19cc6f7f1d3ed92fbacbbf79da"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard121.lean",
+      "size": 108304,
+      "sha256": "c81c80c4d69532e33122de6a1df7289c5de0164e778f7abb913895fba001de62"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard122.lean",
+      "size": 108202,
+      "sha256": "a9b1e1cc7a164b830906e042c522f68ad92b1f8165480795c42d91e795225c50"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard123.lean",
+      "size": 108193,
+      "sha256": "53d224e98c7025ebdb374adc4be4f99be4746fb79f1c47f40d45264eb981f537"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard124.lean",
+      "size": 108316,
+      "sha256": "8d2105b7d254853f80c8ab1cc54a881f7e406e1a64bee48ac7a3a403724c959f"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard125.lean",
+      "size": 108193,
+      "sha256": "7ac0078999af19e18d062a53a484d49aa46af922729467fc10647f720e682f7d"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard126.lean",
+      "size": 108301,
+      "sha256": "55838fc8ad3c100ba73fafc1001b4f3226f0c865c9c38c31d6598d92da0b4e51"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard127.lean",
+      "size": 108416,
+      "sha256": "9a12f0f28e2ba74bf43877c5ea10b9938693a1c88eb006f296a31ae96030d32e"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard128.lean",
+      "size": 108822,
+      "sha256": "66b208b2eaf54698326a82cd895d5522968bd43db6c896334e5ea877bf327d95"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard129.lean",
+      "size": 108597,
+      "sha256": "a971ad3dc8a796c0cfe7ba7ab451f372ef5ae5ae570678a9be18f5afebaf0a09"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard130.lean",
+      "size": 108510,
+      "sha256": "144b4b14106a548cc036c232cd80dc13ca251e72c05b185fd88ef98f1c35351c"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard131.lean",
+      "size": 108333,
+      "sha256": "5612c640c891f9711597d8e2e654eeaf24f2ad9cc0e7904393d6d10d4d6aa7b8"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard132.lean",
+      "size": 108345,
+      "sha256": "07825a8514987e88a1a4ab055a29dc55679bfff39670b713020d084562e33c8b"
+    },
+    {
+      "path": "research/collatz/m20/lean/modules/M20Shard133.lean",
+      "size": 65446,
+      "sha256": "c84471c9d941855d7eef32500da99440946d508a9b008101939d2b1a3b727c97"
+    },
+    {
+      "path": "research/collatz/m20/lean/source-manifest.json",
+      "size": 178430,
+      "sha256": "a384125521ae7549482a6c42f9a0998af2c434471c6f20edbc4eff8a8435954c"
+    },
+    {
+      "path": "research/collatz/m20/scan/m20-residual-affine-screen.json",
+      "size": 721158,
+      "sha256": "b927fe1c72eff6604788ec44d563596c43f86eb22b7b2b274c6f8c7305f366df"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-residual-initial-valuation-v1/protocol.md",
+      "size": 1070,
+      "sha256": "7a2c8624f317682066cf0614bbfff11e021cc4bd7db2348e3a8e0bddf8a94bb6"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-residual-initial-valuation-v1/run-manifest.json",
+      "size": 1505,
+      "sha256": "a97e19d2bb8b43620e551ef713fd364cba04dc760971db4023392740c1ffb75b"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-residual-initial-valuation-v1/summary.json",
+      "size": 1251,
+      "sha256": "0aec5a99db46951071e03fa030f2b6ddacb31944cb98ee2be6369d16ea150896"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-unresolved-odd-v1/interpretation.md",
+      "size": 1369,
+      "sha256": "a61b4c69d9ce3fac98ce9be6355f4435de15a0fabe3996167a6b84bff3b3af75"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-unresolved-odd-v1/protocol.md",
+      "size": 2160,
+      "sha256": "f789f43eaadcd963bacb09764a48fa3b97575026f8a91044637d4bbb84db7b55"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-unresolved-odd-v1/run-manifest.json",
+      "size": 1503,
+      "sha256": "4bff70846aa430c7561780efb8d77b27bc9ea90d4c2b3270a5083e82442a2f97"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-unresolved-odd-v1/samples.jsonl",
+      "size": 848905,
+      "sha256": "74d282bfca564cb795a0d30a318940e9664b3fd195b5fd0e24c51f16b0e26f0e"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-unresolved-odd-v1/summary.json",
+      "size": 2248,
+      "sha256": "c6df92d06e89904d2a0b7e76b921f72f755ba752176a444ade6b720d8b6d6ae0"
+    },
+    {
+      "path": "research/collatz/structure-sample/m31-unresolved-odd-v1/verification-receipt.json",
+      "size": 1705,
+      "sha256": "ff4558a36a1edd6c9ea3998a42c5b7e0d1c75bdaf5ce02deb11fd2f3a71975d2"
+    },
+    {
+      "path": "research/math-results/README.md",
+      "size": 936,
+      "sha256": "588b923598832ebc8b9748ec49a17335887a9f6c17cc680d9168d31ad9c233cf"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/README.md",
+      "size": 8329,
+      "sha256": "7f117dc3c153532e4ddf6ed3adbc5dd5a5aca27e8aad0fa2105838c8fb00523c"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n0-mod4-v1/README.md",
+      "size": 908,
+      "sha256": "e1410df7a16687f121a83a7bc9ce8571989e9608aa290f90e09edc356ec23c25"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n0-mod4-v1/exact-check-r2.json",
+      "size": 1488,
+      "sha256": "d65670f596bfe1871ccce6c63ef1f3d87b0b61b455708b69f3a20e092616dd4e"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n0-mod4-v1/exact-check-r3.json",
+      "size": 1488,
+      "sha256": "9d139bb93acc7703f1c6601dc0c842318eac06a49737f1bf815f603f31982964"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n0-mod4-v1/exact-check.json",
+      "size": 1488,
+      "sha256": "0815107e1e83d57a8d919157a198183651fc3788b54115e3b89593ba07a6c440"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-1-100000-v1/README.md",
+      "size": 764,
+      "sha256": "09b17f329b5cbae3c38c43b7234d2c581c5b85a56bec7d26613cf9f3e96795f4"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-1-100000-v1/witness-stream-r1.md",
+      "size": 1514,
+      "sha256": "4ea32b79d52e1bdd91c9ca7f3fd4132596d6a3858ffc76d2f3554a00fe72a683"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-1-100000-v1/witness-stream-r1/candidate-n.jsonl",
+      "size": 78537,
+      "sha256": "c7306f531b22e5da147fe3a449ac54c1b8e088f81abb6dca2a7f28c741c0bf9f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-1-100000-v1/witness-stream-r1/results.jsonl",
+      "size": 1352871,
+      "sha256": "f9a595031aa9a14d4697a589e7f3f5464f71ddebc3de143ef816434a8e1ca985"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-1-100000-v1/witness-stream-r1/run-manifest.json",
+      "size": 2254,
+      "sha256": "65b685eab97d75afa34ce5f2b0ec6158099daf0de2dc2ef1186b651a226d32a2"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-1-100000-v1/witness-stream-r1/verification-receipt.json",
+      "size": 1119,
+      "sha256": "66ce8a5e0d45bdc4927a4208a79bb59d4bd5f7a20c7a4f1a518318d8178b8484"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-1-100000-v1/witness-stream-r1/witnesses.jsonl",
+      "size": 688662,
+      "sha256": "c2175ddc3b00b18a256ec2315248a11b66267913706973aa1e905519b6b20c1f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/README.md",
+      "size": 2708,
+      "sha256": "20701bba1a05329f6f7ba976b2f75a4ec5cb2a2f49369d551a93050175572e19"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/range-receipt-h4096.json",
+      "size": 4384,
+      "sha256": "ca91d87e0e721e14afdc0b9d00b232593eae6655e63318e1fb451b336a5bbf2a"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/residual-1609969-offset-65536.json",
+      "size": 1210,
+      "sha256": "962fe144cd9cc747e5c6ba248cbfff52d6e31d2afc185db665ef3211f7c77b86"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/witness-stream-r1.md",
+      "size": 1601,
+      "sha256": "604e47a3757c1ce8ebaa5e3a9addf4469450e7a743faeeb422ce585b9fd6f5fe"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/witness-stream-r1/candidate-n.jsonl",
+      "size": 80544,
+      "sha256": "1b7b34b4ae26235ea45a405e9d985cf986fa9aef0c41375be73f2da03bbad4f4"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/witness-stream-r1/results.jsonl",
+      "size": 1273421,
+      "sha256": "1143cf8462af831dae88de810fefec944f68fd0af047eb76f78a0185b48ad9d4"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/witness-stream-r1/run-manifest.json",
+      "size": 2258,
+      "sha256": "559d4c1d2e78ca374007bf39c2f6e9be7ecfa4156d488912fa81f1500e09de7d"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/witness-stream-r1/verification-receipt.json",
+      "size": 1124,
+      "sha256": "84c5127e5aef7c4a4ca49c901972f2c5b428022b2dfdaaa8417cee9114017291"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-100001-200000-v1/witness-stream-r1/witnesses.jsonl",
+      "size": 673997,
+      "sha256": "0b05e8279a5e659fc07e2aae20e8b50cdacc3ae0ee98e330d9f317784b08fcf6"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/README.md",
+      "size": 1707,
+      "sha256": "d6516bb3f8a73239eee8836111b08328388bd295e47aa909810ec002d4486d21"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/range-receipt-h4096.json",
+      "size": 4393,
+      "sha256": "dce5d4d9cb1e1564e5a87650906c0688e530f79b76737042f3cf5c60277426c8"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/witness-stream-r1.md",
+      "size": 1789,
+      "sha256": "9f181d7baa573bf87be909a604517329486a2c1208b7f48a590760f0feb1d68f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/witness-stream-r1/candidate-n.jsonl",
+      "size": 77896,
+      "sha256": "a0489bc3b984dd08d399920fca884ee2224ec4012139f04f816ac8b0e42a4b22"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/witness-stream-r1/results.jsonl",
+      "size": 1244822,
+      "sha256": "4c724b6be6fb453042bd20d2e75bc87837dfc33a5359e8f6fce68f181ecd8e1b"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/witness-stream-r1/run-manifest.json",
+      "size": 2253,
+      "sha256": "d5641425df980aaf1a0e5367a6a152ed8e5847f2825aeb1968022d58daa5f121"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/witness-stream-r1/verification-receipt.json",
+      "size": 1122,
+      "sha256": "56164407ffa71ea71a97a65cda4a3a02dc7886a26d9d4e896e5942e1aac22e27"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-200001-300000-v1/witness-stream-r1/witnesses.jsonl",
+      "size": 665115,
+      "sha256": "7dc848fa3a5d9421055d7be4f9e0e5dbb0a74f172b8a33b536f6609694d318e8"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-300001-400000-v2/README.md",
+      "size": 1916,
+      "sha256": "3a6a3f88830443adf9a7e67bc31365fccd8e0fc1287579fe2ab49489fcd8a091"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-300001-400000-v2/extension-offset-65536.json",
+      "size": 2475,
+      "sha256": "723f649a5f51e99839cdff2c53ac90ecb26822c64752193c03a3a19d9f5b5d98"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-300001-400000-v2/witness-stream-v2/candidate-n.jsonl",
+      "size": 76328,
+      "sha256": "f46eb1d1c717a7ec3485f89ec4fa1e0bf90a9190a1aeee26fc10d487188bdcc6"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-300001-400000-v2/witness-stream-v2/results.jsonl",
+      "size": 1234457,
+      "sha256": "77c8dab1bc8bf4a31ec208eb4a5c5f86f52b2c40c07db730491c4a5f882906ab"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-300001-400000-v2/witness-stream-v2/run-manifest.json",
+      "size": 2256,
+      "sha256": "11a24fa694858cf1becc25052b4ae4fca4a198859798ff299babaf296eed4c8f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-300001-400000-v2/witness-stream-v2/verification-receipt.json",
+      "size": 1122,
+      "sha256": "26d1a95676eba9c760ee20582b226bf6f65436ce936e5190e58996e31bf3e448"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-300001-400000-v2/witness-stream-v2/witnesses.jsonl",
+      "size": 666240,
+      "sha256": "158b3f072aa20154d9b86dbc86f2d57f3bbb954206561e656f59c1752160db45"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/README.md",
+      "size": 2137,
+      "sha256": "129cbe6d6e5776e66f394f915fca390b0b5ea22e45392a638a4a497b54873941"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/extension-offset-65536-v2.json",
+      "size": 2479,
+      "sha256": "e88d450caeb5e7a1c9a740ef7d97d7cba3c8e9773cb7b6679f3d091d7688d4f3"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/extension-verification-v1.json",
+      "size": 717,
+      "sha256": "83bb5badc659c9787341e4d58e019c03960f92c6398f2ffbb58f37b4ecaa8b45"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/witness-stream-v3/candidate-n.jsonl",
+      "size": 74808,
+      "sha256": "ff48cb31d87e20b1b6d18cf408bbdc3713e4730e565126f1866af49090881373"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/witness-stream-v3/results.jsonl",
+      "size": 1219195,
+      "sha256": "9d9565d15de08a06945b5975b36932ecc85e490fa7167f2cd56393c6fc75a588"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/witness-stream-v3/run-manifest.json",
+      "size": 2256,
+      "sha256": "1b7c94fc7c43932e1b255774745ec50114fe2ab9b31dce3827e3c959b7d7410a"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/witness-stream-v3/verification-receipt-v3.json",
+      "size": 1122,
+      "sha256": "8b399c65beac11cfb43a90d078e147f34e9fef08094f7c5995515c9117146502"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-400001-500000-v3/witness-stream-v3/witnesses.jsonl",
+      "size": 662321,
+      "sha256": "4f06324279f26fcf486ecada4bb26ad1da094b5dc348f226d6bd90c5c3e0c2fd"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/README.md",
+      "size": 2063,
+      "sha256": "2adc5e57de415acafc311f747415d063d4d6b3288407b61e146c54fa4b9af2db"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/extension-offset-65536-v2.json",
+      "size": 2015,
+      "sha256": "2b043732a91b62ebea17e594be40b05575dfce73a6cefdedc6ec522d4bf31fac"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/extension-verification-v1.json",
+      "size": 717,
+      "sha256": "80750f0541a181e81143464ec32eb72575e5f22836c3f89f7a4107dc039e025e"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/witness-stream-v3/candidate-n.jsonl",
+      "size": 73880,
+      "sha256": "9540f8f0573bed85e0ec5929be7af1d0bbf9ca61d72650a665ebbd90aa4a76fc"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/witness-stream-v3/results.jsonl",
+      "size": 1208982,
+      "sha256": "5056733860dc5133a29ea21b980d20da268096378b51ac2449e184c27e265073"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/witness-stream-v3/run-manifest.json",
+      "size": 2256,
+      "sha256": "75b6b0f5928b89652739b799a674dbd2ce93a1d4702ec9a372aac7357733d426"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/witness-stream-v3/verification-receipt-v3.json",
+      "size": 1122,
+      "sha256": "8ab1ddca705919877cfd5c3407dd4a4621abfb8a794c9a758797b719dd5c87e5"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-500001-600000-v3/witness-stream-v3/witnesses.jsonl",
+      "size": 658988,
+      "sha256": "337255967e51cf231ff5c75de19dba9f0488efc5042a5ac6ab6fa7a721a6702e"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/README.md",
+      "size": 1724,
+      "sha256": "d588961bc9e256013f330c07dbb3585342df1933277d43f71ffd2bc2eb2f100e"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/extension-offset-65536-v2.json",
+      "size": 1319,
+      "sha256": "a76c7772d147d8e9109bc945cde48507f784f34ffb7175311d68b3d79140d408"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/extension-verification-v1.json",
+      "size": 717,
+      "sha256": "a6bc4bf13cd42a94e194aead6e27566ea519eb9220d627e97668a9dc5ec2419d"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/witness-stream-v3/candidate-n.jsonl",
+      "size": 73344,
+      "sha256": "4fb1325391ff92b89614ab950e48c891ce80da375f5f4b92bb3d111f7d62f48b"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/witness-stream-v3/results.jsonl",
+      "size": 1204237,
+      "sha256": "1ab52197fd20a96864bb8757913e98e9e226923af96873a6308f69e5b67cb9be"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/witness-stream-v3/run-manifest.json",
+      "size": 2256,
+      "sha256": "a0ecc797dbb5e32249fc35af6c3af33189cfc0eb19f83dff5911942b04793332"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/witness-stream-v3/verification-receipt-v3.json",
+      "size": 1122,
+      "sha256": "b3c5f0018069690e9c2b0a386f1a63bca151f482b596177916aa2be271883aa6"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-600001-700000-v3/witness-stream-v3/witnesses.jsonl",
+      "size": 658465,
+      "sha256": "7add0a29103c17acf95ce9a560d6e1caeda19bfcfe6a6a24de02a5f32725ae26"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/README.md",
+      "size": 1926,
+      "sha256": "2c07d3395272c4f3c91129bbf9528a54e8ef935e63358822433c93b4e1d3cd94"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/extension-offset-65536-v2.json",
+      "size": 2250,
+      "sha256": "c60ed7b93630be6aac8602bfa4c3d575aecec9ff1ac9993b965732723ad1bd0f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/extension-verification-v1.json",
+      "size": 717,
+      "sha256": "51f4a9d9a844a425fbed13f3e80b5855e34cab927b7fdbd20de74881c481413f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/witness-stream-v3/candidate-n.jsonl",
+      "size": 72440,
+      "sha256": "ae3db10f9ed0f776b6b33220163bc02742fab1e512bf03f6ca3836e3151fc56d"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/witness-stream-v3/results.jsonl",
+      "size": 1192389,
+      "sha256": "94eb1f7d24238c2a4782e39bb2bb30253404c9cb6ba47c1a368bdfda53eec1ae"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/witness-stream-v3/run-manifest.json",
+      "size": 2256,
+      "sha256": "7fdf223d9f03503698e0dbc0daf382d3c8ba1e159b8045f2b9fbed5a6ef0da0b"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/witness-stream-v3/verification-receipt-v3.json",
+      "size": 1122,
+      "sha256": "94c67fabfab0c32b7a7f3059498f83fe8f737a5124c037fbab17706d8a4670d1"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-700001-800000-v3/witness-stream-v3/witnesses.jsonl",
+      "size": 653083,
+      "sha256": "cca3d71ae890ef13299bffcbd05dda810616bf9a61e364e661fe219171acfcb9"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/README.md",
+      "size": 1932,
+      "sha256": "8ccd42e612cd49ca3affdb64aa63ae33397967fe6b62990e4e830187fa71339c"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/extension-offset-65536-v2.json",
+      "size": 2258,
+      "sha256": "a91cb22a32c35ee98763e82f13d932391f6063e24a5ac0e31b66a0cefb4d942d"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/extension-verification-v1.json",
+      "size": 717,
+      "sha256": "3fd4af17a4a9d0038a97cc7b71884b0a2789c06d968f32106864a57fa6814e76"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/witness-stream-v3/candidate-n.jsonl",
+      "size": 77828,
+      "sha256": "f028c2ed04db5e39fbc511a766250dc36499f80fcc08d2d72de0acc0ecbca081"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/witness-stream-v3/results.jsonl",
+      "size": 1191045,
+      "sha256": "3882d03d30265e9e8749236f3d0fd15ac4f0d9034bca9f95e991b5588a9b2a0f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/witness-stream-v3/run-manifest.json",
+      "size": 2257,
+      "sha256": "e1cc37ad428236d5ab164587aa66b6ef0fb3101eab28279fb2621af21229c562"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/witness-stream-v3/verification-receipt-v3.json",
+      "size": 1122,
+      "sha256": "95f182eb4c27ce5cd01bf410aa0a6af6993baccd7a747ab2fa299cfcb2f1ebf9"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-800001-900000-v3/witness-stream-v3/witnesses.jsonl",
+      "size": 656420,
+      "sha256": "9586db57fd105ec20b2539db664ab14e9c7f5cef9e95a14c018727305594df43"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/README.md",
+      "size": 1873,
+      "sha256": "5b437ced820ec719d92a67922eca79b97ecd24e072661b08ccdd485bee56a05f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/extension-offset-65536-v2.json",
+      "size": 1556,
+      "sha256": "5aa3f618d85034517fb0a97ce145a3402d65df97df26a62470418445f9470cd9"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/extension-verification-v1.json",
+      "size": 717,
+      "sha256": "44250b8ee90ff6b0af1949037b3c8ca98584bed06c5b57ed1e05fae7478d2a51"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/witness-stream-v3/candidate-n.jsonl",
+      "size": 81396,
+      "sha256": "95d92a0169a08cf9b88e09e04056a0c99f9d8dabd77244766c96e9b9c93e2b42"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/witness-stream-v3/results.jsonl",
+      "size": 1205873,
+      "sha256": "21d46eeeb783be48325b08c806286d3b6b6af54f5e4f27286fac3139a1905e4e"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/witness-stream-v3/run-manifest.json",
+      "size": 2258,
+      "sha256": "87584374390150a55cc1876021b194bf77f1669c2b1f83a02cfedeb28ae3afa7"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/witness-stream-v3/verification-receipt-v3.json",
+      "size": 1123,
+      "sha256": "66debb37b8f332b6b4fba5d0e6f2637a4f4c5929417d34a4fab2ad19907b1f4f"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-range-900001-1000000-v3/witness-stream-v3/witnesses.jsonl",
+      "size": 667375,
+      "sha256": "90620d666a97b28d776efb1b4f8b814df2580b336252ff0fd991f64cc72098f9"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-residual-search-v1/README.md",
+      "size": 3519,
+      "sha256": "bd4ce09f6129236770fe9272630ba5f11462448cd2963f2fa8511aab7db1a87d"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-residual-search-v1/exact-n193-resolution.json",
+      "size": 2233,
+      "sha256": "451f207fd5d7fdc13873b2297ae78bb14b2360958606c2a41ff6985d3cec6ed4"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-residual-search-v1/search-extension-h4096.json",
+      "size": 4972,
+      "sha256": "1cc80f5b77bda6508adc69fbad2b3dee4a2654d43d32285e4d82f276a94857cb"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod12-residual-search-v1/search-receipt-h256.json",
+      "size": 3805,
+      "sha256": "ec3b7f189ef8ce53ee3fc071e80523148061309714eb841a8e52e88158b4073b"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod4-subfamilies-v1/README.md",
+      "size": 3946,
+      "sha256": "7112006b70012d4e2106e58884cf4fc814a735570edd07c56a667bead65e2d1d"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod4-subfamilies-v1/exact-check-r2.json",
+      "size": 3366,
+      "sha256": "7007817dd29b67836e2e7a96d84646248217fad846ce39da3226a1ddf639a237"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod4-subfamilies-v1/exact-check-r3.json",
+      "size": 4950,
+      "sha256": "06736f9d62ffab93854f23d16d539f9dfcc519601d55496af4615af482eab35d"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod4-subfamilies-v1/exact-check-r4.json",
+      "size": 6892,
+      "sha256": "1b7db808398a898c2ade64b92cc6e9a24c11b613eace2c6ec0b9cfa8ebab9aa6"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n1-mod4-subfamilies-v1/exact-check.json",
+      "size": 3308,
+      "sha256": "da5ffd68a71c4760651fbbfd2bbb659c6c9b2dd4ab7f75bcca6e39159c686ca6"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n2-mod4-v1/README.md",
+      "size": 1043,
+      "sha256": "b251641d3d4759fce41b629d1135dc2cc4315f5483fb1632318c41fcac46a84e"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n2-mod4-v1/exact-check-r2.json",
+      "size": 1599,
+      "sha256": "3b362ccb95e5f2dffe874ead36210ef1ec1d79dcbc14ecdebd691f3ca12608ab"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n2-mod4-v1/exact-check-r3.json",
+      "size": 1599,
+      "sha256": "fcaf70e60b2bb3fe7a70a5f5df580ca958bd2d19f0e913c138ecbec2ae2eb9e2"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n2-mod4-v1/exact-check.json",
+      "size": 1599,
+      "sha256": "80847533ddfd4b343435814d31637810f026205b236dbbb362dfe17f93f69d7a"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n3-mod4-v1/exact-check-r2.json",
+      "size": 1544,
+      "sha256": "5eb4758aab20d1cca95c252a355cba3f9a29b682cf93e6a33d9c501fe3f65a25"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n3-mod4-v1/exact-check-r3.json",
+      "size": 1544,
+      "sha256": "03bf6313de9bddefd101af63d0fa3a1914a8c571d7d50ead3c9282c5b1889d94"
+    },
+    {
+      "path": "research/number-theory/egyptian-fractions/n3-mod4-v1/exact-check.json",
+      "size": 1544,
+      "sha256": "6e363914dc0223d44386481c65d8b933bb8ed7905d91c903b81a1d0d5040431e"
+    },
+    {
+      "path": "scripts/audit_collatz_m31_residual_initial_valuation.py",
+      "size": 10160,
+      "sha256": "06f4805379accd0f732299142b0e68dd13b58949ec77b30a2b75b56e9231c415"
+    },
+    {
+      "path": "scripts/build_math_results_manifest.py",
+      "size": 2862,
+      "sha256": "35385463f415a946c77188513843541a84c4b9689ec6b4602e28a4da325c8b81"
+    },
+    {
+      "path": "scripts/export_egyptian_fraction_witness_stream.py",
+      "size": 8916,
+      "sha256": "21482f9137b3e82d91dae76aead290de527bdebe6077467fad56fda361f3acac"
+    },
+    {
+      "path": "scripts/export_egyptian_fraction_witness_stream_v2.py",
+      "size": 8919,
+      "sha256": "071d47cc71e77232aeaefd2a58b93a6c13abc8c850101a4dd19f12ff1600bb96"
+    },
+    {
+      "path": "scripts/export_egyptian_fraction_witness_stream_v3.py",
+      "size": 8921,
+      "sha256": "829da1c9cf424dac938e9588a9b3a2da27e6cec6176cfdfcb7f9f625b429a2ad"
+    },
+    {
+      "path": "scripts/extend_egyptian_fraction_n1mod12_residual_search.py",
+      "size": 8962,
+      "sha256": "d49de032aa6cddbbc3e45173e89ca62f4d25fb6fa01eb874c058aa1a2b6f2d4e"
+    },
+    {
+      "path": "scripts/extend_egyptian_fraction_single_residual.py",
+      "size": 7600,
+      "sha256": "93009ed4cdc4e1c7f9df1d14cdf682b309c798dccd33fbb1af81f7b541261e69"
+    },
+    {
+      "path": "scripts/extend_egyptian_fraction_witness_stream.py",
+      "size": 8637,
+      "sha256": "4fa6178bb4ddf2c4250fae8a5be2af7544180d8d75d249576f9d1dca6b297809"
+    },
+    {
+      "path": "scripts/extend_egyptian_fraction_witness_stream_v2.py",
+      "size": 8637,
+      "sha256": "4ad836c401231daae0cee1c39ce5c4832c1aae10c237a6d8e235ad45e0cf723e"
+    },
+    {
+      "path": "scripts/resolve_egyptian_fraction_n193_exhaustively.py",
+      "size": 7565,
+      "sha256": "189b666136cc9bcb9ccb8eb2cd63001bf3dcb8d415a9de5ca9e8f46d411888ef"
+    },
+    {
+      "path": "scripts/run_egyptian_fraction_n0mod4_check.py",
+      "size": 4241,
+      "sha256": "8bea6c74fcd41b27a5657ef3f4dec1042c3a7459f2ed53e1770825419c167ed7"
+    },
+    {
+      "path": "scripts/run_egyptian_fraction_n1mod4_subfamilies_check.py",
+      "size": 10444,
+      "sha256": "7ca7b9ee082d246221570d8436416276ddc04e11b67c9fed5a8e7e2471d0aa77"
+    },
+    {
+      "path": "scripts/run_egyptian_fraction_n2mod4_check.py",
+      "size": 4335,
+      "sha256": "1177b12a79bcea94d918d74674df98a53f693977a68db38117f88c87f17b3e0a"
+    },
+    {
+      "path": "scripts/run_egyptian_fraction_n3mod4_check.py",
+      "size": 4294,
+      "sha256": "a696668c566e781bed7869069e95532948370b608119540e3211ab97b9de5ae4"
+    },
+    {
+      "path": "scripts/sample_collatz_m31_unresolved_structure.py",
+      "size": 20678,
+      "sha256": "3e6838c1b87e73dd1c5481440af773d828d09c49a3bdb8299c76944b77914ec8"
+    },
+    {
+      "path": "scripts/search_egyptian_fraction_n1mod12_range.py",
+      "size": 9415,
+      "sha256": "076053865e54cd2ba624b9804884a473aab4aa351e8aa2ccea901bdb947d8add"
+    },
+    {
+      "path": "scripts/search_egyptian_fraction_n1mod12_range_v2.py",
+      "size": 9415,
+      "sha256": "86c822cd227d4e18f182bcf0090932beaa2e578cce6d7c5210eed67194af4d42"
+    },
+    {
+      "path": "scripts/search_egyptian_fraction_n1mod12_range_v3.py",
+      "size": 9415,
+      "sha256": "e40a0097fc9a3b7c5cec735bbe257252ae9aa59f88cf473ca281771c4c5dcddf"
+    },
+    {
+      "path": "scripts/search_egyptian_fraction_n1mod12_range_v4.py",
+      "size": 9417,
+      "sha256": "cad3ab3bfe4d24865bda4af2b728a425cef3b6856718cf0d6178de88c6872338"
+    },
+    {
+      "path": "scripts/search_egyptian_fraction_n1mod12_residuals.py",
+      "size": 8119,
+      "sha256": "8dc13e42a0d724c30dd7bf56c971d31ecd09f792413ac8ff62674c6173fee67d"
+    },
+    {
+      "path": "scripts/test_audit_collatz_m31_residual_initial_valuation.py",
+      "size": 1091,
+      "sha256": "bf706d6dfaa080c068035fec543184091148fd3eb7d5f39c17ed537315e34d43"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n0mod4_check.py",
+      "size": 1139,
+      "sha256": "83f50993f3912c21a06062cd4704c418cd190bb1185f16cfb792033d3852a501"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n193_exhaustively.py",
+      "size": 2096,
+      "sha256": "2a57d6e9e09843e42bc8467e76329bf2da8fc7614ed2630295e3312a4b62b293"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n1mod12_range.py",
+      "size": 1877,
+      "sha256": "7ed3b5f48155f9dfabc49b89e3524d66eab5d4945b57be7c90d199d8d7a38ff2"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n1mod12_range_v2.py",
+      "size": 2396,
+      "sha256": "783cc4dc0b4468dad890f76636a1e371c8a98d973749df982d91cae91ae22319"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n1mod12_range_v3.py",
+      "size": 2739,
+      "sha256": "006169837b34219f23f81059176838da7f9d9ef3b9ac93678b3c4b66ce10dcc6"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n1mod12_range_v4.py",
+      "size": 2750,
+      "sha256": "3e70dd60d907a71f70c6a39090ff4b9fe2c5ca29ce6361125234018d1f0522fe"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n1mod12_residual_extension.py",
+      "size": 2793,
+      "sha256": "b5137739ac7250e52ceebfc043b31aed618e188ef3aad6adf683cbcb7cb3ffce"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n1mod12_residuals.py",
+      "size": 3424,
+      "sha256": "292efec7a1f1beebff5ad200219b24f5f12ff77e39b0fa722b4e4008b70e35c6"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n1mod4_subfamilies_check.py",
+      "size": 4538,
+      "sha256": "96b32f214ed989e76ae8080e5487c9859f141c44b5d2baad74fbc9203d27bce9"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n2mod4_check.py",
+      "size": 1145,
+      "sha256": "bc614808f50171f96cf34ff28e66571a12f4006b4a51ad8358b92b10799e4013"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_n3mod4_check.py",
+      "size": 1146,
+      "sha256": "1b60cf519e2581a8aa34652a565d9f6c8c5b9f350520474bdffd0affe5e3919c"
+    },
+    {
+      "path": "scripts/test_egyptian_fraction_single_residual_extension.py",
+      "size": 1680,
+      "sha256": "ea79cf53fa08f602a1d45806111b047fef97ef4b8acabbd35aaac9c29d8d83f6"
+    },
+    {
+      "path": "scripts/test_extend_egyptian_fraction_witness_stream.py",
+      "size": 1663,
+      "sha256": "f17d615e163748c9ada41a30eacd69ec77a785439e990dabafcd8003138ea9b9"
+    },
+    {
+      "path": "scripts/test_extend_egyptian_fraction_witness_stream_v2.py",
+      "size": 1654,
+      "sha256": "2704aedda5c9dfe959a31b5e0ea26f45e237d8064684ad86443a712cbb37d9b3"
+    },
+    {
+      "path": "scripts/test_sample_collatz_m31_unresolved_structure.py",
+      "size": 1693,
+      "sha256": "73570670c646ae140c6d5a5822cdfabbf937883ed6e4e7311c19027f0677079d"
+    },
+    {
+      "path": "scripts/test_verify_collatz_m31_unresolved_structure.py",
+      "size": 760,
+      "sha256": "fc1f3f078ebbfbc11ef031ff71af9a714e11572a9350c5ce8c058154bbfd88d6"
+    },
+    {
+      "path": "scripts/test_verify_egyptian_fraction_witness_stream.py",
+      "size": 4660,
+      "sha256": "26d43f4497b349b0683838a9fb6ff599d386caeae6a37c98c2bb8655bd5da403"
+    },
+    {
+      "path": "scripts/test_verify_egyptian_fraction_witness_stream_v2.py",
+      "size": 5031,
+      "sha256": "6c125b41083fcf54dfce94b38e4523027912b8522578ec7e63ce175ba2d2c1b7"
+    },
+    {
+      "path": "scripts/test_verify_egyptian_fraction_witness_stream_v3.py",
+      "size": 5036,
+      "sha256": "5a4a8929f264c4b13b07b2d11ac9d5d916ca30ed3ce66241ef7fa168020a7758"
+    },
+    {
+      "path": "scripts/verify_collatz_m31_unresolved_structure.py",
+      "size": 13605,
+      "sha256": "d127708275a1e24f85192a06652e1e35ac9b07602eff4169eab3bd88c347c516"
+    },
+    {
+      "path": "scripts/verify_egyptian_fraction_witness_stream.py",
+      "size": 12309,
+      "sha256": "ea74e596f23f9125f33dde725c76249da48fd1f7e60e84cd32ad773172534186"
+    },
+    {
+      "path": "scripts/verify_egyptian_fraction_witness_stream_v2.py",
+      "size": 12312,
+      "sha256": "457dce64ed07b3a28295d2449c6bd7fba039c482841d2146ee7147fce7eacf12"
+    },
+    {
+      "path": "scripts/verify_egyptian_fraction_witness_stream_v3.py",
+      "size": 12314,
+      "sha256": "e2c58a87c39043f01649a8577a9585f4b02d2a34ca4e393321ad683f4ed7b5b8"
+    },
+    {
+      "path": "scripts/verify_math_results_release.py",
+      "size": 3293,
+      "sha256": "b95f24acfada15f920f7391e84de6d3c058fe7f4f007d9e087d75baed0a62c37"
+    }
+  ]
+}

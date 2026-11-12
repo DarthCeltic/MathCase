@@ -1,0 +1,166 @@
+{
+  "candidate_definition": "n=12*d+1 where neither n nor q=(n+3)/4 has a prime factor p=2 mod 3",
+  "candidate_n_values_sha256": "1b7b34b4ae26235ea45a405e9d985cf986fa9aef0c41375be73f2da03bbad4f4",
+  "canonical_result_rows_sha256": "f78b5fe0bc8adb7ef9b011c8da16970cfd24d841122f53eaa7cfba0b1cecc2b4",
+  "classification": "FINITE_RANGE_GREEDY_SEARCH_ONLY_NOT_A_CONJECTURE_PROOF",
+  "d_inclusive_range": [
+    100001,
+    200000
+  ],
+  "d_values_scanned": 100000,
+  "exact_integer_and_rational_arithmetic": true,
+  "exact_representations_found": 10067,
+  "extension_exact_representations": 290,
+  "finished_at_utc": "2026-11-01T21:10:40.275710Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "h256_exact_representations": 9777,
+  "max_total_first_denominator_offset": 4096,
+  "model_calls": 0,
+  "n_inclusive_range": [
+    1200013,
+    2400001
+  ],
+  "network_calls": 0,
+  "not_found_examples": [
+    1609969
+  ],
+  "not_found_within_search_bound": 1,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "residual_candidates": 10068,
+  "schema": "mathcase-erdos-straus-n1mod12-bounded-greedy-range-v1",
+  "search_method": "Reopen h=256 greedy baseline per candidate; search only offsets 257..max_total_offset for its misses; verify every found triple by exact Fraction equality and strict denominator order.",
+  "solution_examples": [
+    {
+      "denominators": [
+        300048,
+        15656882962,
+        402726688125244227696
+      ],
+      "first_denominator_offset": 5,
+      "n": 1200169,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300111,
+        2323999562,
+        27004869818556959658
+      ],
+      "first_denominator_offset": 38,
+      "n": 1200289,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300111,
+        10293027012,
+        176577341772643053228
+      ],
+      "first_denominator_offset": 8,
+      "n": 1200409,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300157,
+        13346992384,
+        437258141246740107008
+      ],
+      "first_denominator_offset": 6,
+      "n": 1200601,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300204,
+        3794328917,
+        44119630105442036388
+      ],
+      "first_denominator_offset": 23,
+      "n": 1200721,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300216,
+        3794632275,
+        65139392364529614600
+      ],
+      "first_denominator_offset": 23,
+      "n": 1200769,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300232,
+        24036834122,
+        619038637056545498968
+      ],
+      "first_denominator_offset": 3,
+      "n": 1200913,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300256,
+        24040677221,
+        788119310763652435744
+      ],
+      "first_denominator_offset": 3,
+      "n": 1201009,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        301176,
+        103275168,
+        33122480765497056
+      ],
+      "first_denominator_offset": 875,
+      "n": 1201201,
+      "stage": "h4096"
+    },
+    {
+      "denominators": [
+        300352,
+        9252143126,
+        128403228626731434688
+      ],
+      "first_denominator_offset": 9,
+      "n": 1201369,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300385,
+        13367277130,
+        964894128485826322130
+      ],
+      "first_denominator_offset": 6,
+      "n": 1201513,
+      "stage": "h256"
+    },
+    {
+      "denominators": [
+        300448,
+        1562799132,
+        3440126829732135264
+      ],
+      "first_denominator_offset": 57,
+      "n": 1201561,
+      "stage": "h256"
+    }
+  ],
+  "source_bindings": {
+    "factor_classifier_sha256": "7ca7b9ee082d246221570d8436416276ddc04e11b67c9fed5a8e7e2471d0aa77",
+    "family_note_sha256": "7112006b70012d4e2106e58884cf4fc814a735570edd07c56a667bead65e2d1d",
+    "h256_search_script_sha256": "8dc13e42a0d724c30dd7bf56c971d31ecd09f792413ac8ff62674c6173fee67d",
+    "h4096_extension_script_sha256": "d49de032aa6cddbbc3e45173e89ca62f4d25fb6fa01eb874c058aa1a2b6f2d4e",
+    "range_search_script_sha256": "076053865e54cd2ba624b9804884a473aab4aa351e8aa2ccea901bdb947d8add"
+  },
+  "started_at_utc": "2026-11-01T21:10:36.339495Z",
+  "status": "PASS_BOUNDED_EXACT_SEARCH",
+  "target": "Erdos-Straus three-unit-fraction representations for a bounded n=1 mod 12 residual set",
+  "wall_seconds": 3.936
+}

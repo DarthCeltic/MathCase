@@ -1,0 +1,52 @@
+{
+  "all_denominator_triples_strictly_increasing": true,
+  "all_denominators_positive": true,
+  "all_equalities_passed": true,
+  "boundary_examples": [
+    {
+      "d": 2,
+      "denominators_positive": true,
+      "denominators_strictly_increasing": true,
+      "exact_identity": true,
+      "k": 1,
+      "n": 4
+    },
+    {
+      "d": 2500150002,
+      "denominators_positive": true,
+      "denominators_strictly_increasing": true,
+      "exact_identity": true,
+      "k": 50001,
+      "n": 200004
+    },
+    {
+      "d": 10000100000,
+      "denominators_positive": true,
+      "denominators_strictly_increasing": true,
+      "exact_identity": true,
+      "k": 100000,
+      "n": 400000
+    }
+  ],
+  "cases_checked": 100000,
+  "claim_checked": "For tested k>=1, 4/(4k)=1/k=1/(k+1)+1/(d+1)+1/(d(d+1)), d=k(k+1).",
+  "full_erdos_straus_conjecture_solved": false,
+  "k_inclusive_range": [
+    1,
+    100000
+  ],
+  "method": "Python Fraction exact rational equality and exact denominator-order checks.",
+  "model_calls": 0,
+  "n_inclusive_range": [
+    4,
+    400000
+  ],
+  "network_calls": 0,
+  "novelty_claim": false,
+  "proof_note_sha256": "e1410df7a16687f121a83a7bc9ce8571989e9608aa290f90e09edc356ec23c25",
+  "provider_calls": 0,
+  "runner_sha256": "8bea6c74fcd41b27a5657ef3f4dec1042c3a7459f2ed53e1770825419c167ed7",
+  "schema": "mathcase-egyptian-fraction-n0mod4-exact-check-v1",
+  "started_at_utc": "2026-11-01T19:07:57.207899+00:00",
+  "status": "PASS_EXACT_RATIONAL_RANGE_CHECK"
+}

@@ -1,0 +1,56 @@
+import M20Shard131
+import M20Shard132
+import M20Shard133
+
+#print axioms CollatzM20Shard131.descent_mod1048576_1029583
+#print axioms CollatzM20Shard131.descent_mod1048576_1029631
+#print axioms CollatzM20Shard131.descent_mod1048576_1029735
+#print axioms CollatzM20Shard131.descent_mod1048576_1030311
+#print axioms CollatzM20Shard131.descent_mod1048576_1030759
+#print axioms CollatzM20Shard131.descent_mod1048576_1031163
+#print axioms CollatzM20Shard131.descent_mod1048576_1031323
+#print axioms CollatzM20Shard131.descent_mod1048576_1031839
+#print axioms CollatzM20Shard131.descent_mod1048576_1032127
+#print axioms CollatzM20Shard131.descent_mod1048576_1032187
+#print axioms CollatzM20Shard131.descent_mod1048576_1032239
+#print axioms CollatzM20Shard131.descent_mod1048576_1032347
+#print axioms CollatzM20Shard131.descent_mod1048576_1033679
+#print axioms CollatzM20Shard131.descent_mod1048576_1035003
+#print axioms CollatzM20Shard131.descent_mod1048576_1035035
+#print axioms CollatzM20Shard131.descent_mod1048576_1035519
+#print axioms CollatzM20Shard131.descent_mod1048576_1036059
+#print axioms CollatzM20Shard131.descent_mod1048576_1036527
+#print axioms CollatzM20Shard131.descent_mod1048576_1036615
+#print axioms CollatzM20Shard131.descent_mod1048576_1036775
+#print axioms CollatzM20Shard132.descent_mod1048576_1037503
+#print axioms CollatzM20Shard132.descent_mod1048576_1037823
+#print axioms CollatzM20Shard132.descent_mod1048576_1038271
+#print axioms CollatzM20Shard132.descent_mod1048576_1038383
+#print axioms CollatzM20Shard132.descent_mod1048576_1038543
+#print axioms CollatzM20Shard132.descent_mod1048576_1038591
+#print axioms CollatzM20Shard132.descent_mod1048576_1038951
+#print axioms CollatzM20Shard132.descent_mod1048576_1039599
+#print axioms CollatzM20Shard132.descent_mod1048576_1040379
+#print axioms CollatzM20Shard132.descent_mod1048576_1040539
+#print axioms CollatzM20Shard132.descent_mod1048576_1040871
+#print axioms CollatzM20Shard132.descent_mod1048576_1041147
+#print axioms CollatzM20Shard132.descent_mod1048576_1041179
+#print axioms CollatzM20Shard132.descent_mod1048576_1041663
+#print axioms CollatzM20Shard132.descent_mod1048576_1041871
+#print axioms CollatzM20Shard132.descent_mod1048576_1042639
+#print axioms CollatzM20Shard132.descent_mod1048576_1042895
+#print axioms CollatzM20Shard132.descent_mod1048576_1043231
+#print axioms CollatzM20Shard132.descent_mod1048576_1043263
+#print axioms CollatzM20Shard132.descent_mod1048576_1043559
+#print axioms CollatzM20Shard133.descent_mod1048576_1043583
+#print axioms CollatzM20Shard133.descent_mod1048576_1043711
+#print axioms CollatzM20Shard133.descent_mod1048576_1044127
+#print axioms CollatzM20Shard133.descent_mod1048576_1045607
+#print axioms CollatzM20Shard133.descent_mod1048576_1045735
+#print axioms CollatzM20Shard133.descent_mod1048576_1045919
+#print axioms CollatzM20Shard133.descent_mod1048576_1046463
+#print axioms CollatzM20Shard133.descent_mod1048576_1046619
+#print axioms CollatzM20Shard133.descent_mod1048576_1046783
+#print axioms CollatzM20Shard133.descent_mod1048576_1047359
+#print axioms CollatzM20Shard133.descent_mod1048576_1047679
+#print axioms CollatzM20Shard133.descent_mod1048576_1047967

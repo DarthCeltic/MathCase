@@ -1,0 +1,56 @@
+{
+  "candidate_draws_to_fill_sample": 188813,
+  "classification": "EXPLORATORY_FINITE_STRUCTURE_SAMPLE",
+  "discovery": {
+    "concrete_descent_within_64_count": 2002,
+    "concrete_descent_within_64_rate": 0.9775390625,
+    "initial_v2_counts": {
+      "1": 2048,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6+": 0
+    },
+    "initial_v2_max_abs_deviation_from_geometric": 0.5,
+    "new_affine_certificates_steps_129_to_192_count": 0,
+    "new_affine_certificates_steps_129_to_192_rate": 0.0,
+    "sample_count": 2048
+  },
+  "discovery_count": 2048,
+  "draw_method": "SHA-256 counter stream reduced modulo 2^30; rejection against M30 mask and sorted M31 family residues; deduplicated without replacement",
+  "holdout": {
+    "concrete_descent_within_64_count": 2007,
+    "concrete_descent_within_64_rate": 0.97998046875,
+    "initial_v2_counts": {
+      "1": 2048,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6+": 0
+    },
+    "initial_v2_max_abs_deviation_from_geometric": 0.5,
+    "new_affine_certificates_steps_129_to_192_count": 0,
+    "new_affine_certificates_steps_129_to_192_rate": 0.0,
+    "sample_count": 2048
+  },
+  "holdout_count": 2048,
+  "hypothesis_results": {
+    "H1_pass": false,
+    "H2_pass": true,
+    "H3_pass": false
+  },
+  "m30_uncovered_odd_base_classes": 12771274,
+  "m31_screen_odd_family_count": 1900470,
+  "registered_hypotheses": {
+    "H1": "Initial v2(3n+1) maximum absolute deviation from the geometric probabilities 1/2^k for k=1..5 and 6+ is at most 0.06 in each split.",
+    "H2": "At least 50% of each split's fixed representatives reach an odd-to-odd iterate strictly below the representative within 64 steps.",
+    "H3": "At least 1% of each split's residue classes gain a strict affine certificate at steps 129..192 under the M31 parity-affine recurrence."
+  },
+  "sample_count": 4096,
+  "schema": "mathcase-collatz-m31-unresolved-odd-structure-summary-v1",
+  "scope": "Finite sample of odd residue classes left unresolved by the saved M31 128-step affine screen. This does not prove or refute the Collatz conjecture and does not count as Lean/M4 evidence.",
+  "seed": "mathcase-collatz-m31-unresolved-odd-v1:2026-11-01",
+  "unresolved_odd_class_population": 23642078
+}

@@ -1,0 +1,31 @@
+{
+  "all_unresolved_residuals_have_v2_one_for_fixed_representative": true,
+  "classification": "EXACT_FINITE_RESIDUAL_CLASS_AUDIT",
+  "result": {
+    "base_modulus": 1073741824,
+    "m30_uncovered_base_classes": 12771274,
+    "m30_uncovered_even_base_classes": 0,
+    "m30_uncovered_odd_base_classes": 12771274,
+    "m31_modulus": 2147483648,
+    "m31_residual_classes_examined": 25542548,
+    "m31_saved_family_rows_matched": 1900470,
+    "m31_unresolved_classes": 23642078,
+    "m31_unresolved_even_classes": 0,
+    "m31_unresolved_odd_classes": 23642078,
+    "nonunit_v2_examples": [],
+    "representative_v2_3n_plus_1_histogram": {
+      "1": 23642078
+    }
+  },
+  "saved_m31_search_counts": {
+    "covered_lifted_arithmetic_only": 2121941100,
+    "max_steps": 128,
+    "modulus": 2147483648,
+    "new_affine_descent_families": 1900470,
+    "residual_after_search": 23642078,
+    "residual_classes_examined": 25542548,
+    "transitions": 1335751560
+  },
+  "schema": "mathcase-collatz-m31-residual-initial-valuation-summary-v1",
+  "scope": "Exact finite audit of every class left outside the saved M31 128-step strict-affine screen, using representative r + 2^31. Not a Collatz conjecture proof, Lean/M4 result, or universal trajectory theorem."
+}

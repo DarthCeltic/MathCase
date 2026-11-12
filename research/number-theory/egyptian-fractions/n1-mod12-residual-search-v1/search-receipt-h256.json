@@ -1,0 +1,176 @@
+{
+  "candidate_definition": "n=12*d+1, 1<=d<=case_count, with no prime factor p=2 mod 3 in n or q=(n+3)/4",
+  "candidate_n_values_sha256": "c7306f531b22e5da147fe3a449ac54c1b8e088f81abb6dca2a7f28c741c0bf9f",
+  "canonical_result_rows_sha256": "f4cebe985ea517af94e748035d2fe5972d7583d46a7e394e91668835d9f7e44f",
+  "case_count": 100000,
+  "classification": "FINITE_GREEDY_SEARCH_ONLY_NOT_A_CONJECTURE_PROOF",
+  "d_inclusive_range": [
+    1,
+    100000
+  ],
+  "exact_integer_arithmetic": true,
+  "exact_representations_found": 10850,
+  "finished_at_utc": "2026-11-01T20:47:06.232131Z",
+  "first_denominator_offset_counts": {
+    "0-32": 8753,
+    "129-256": 379,
+    "33-64": 1047,
+    "65-128": 671,
+    "no_representation_found_within_bound": 306
+  },
+  "full_erdos_straus_conjecture_solved": false,
+  "max_first_denominator_offset": 256,
+  "model_calls": 0,
+  "n_inclusive_range": [
+    13,
+    1200001
+  ],
+  "network_calls": 0,
+  "not_found_examples": [
+    193,
+    2161,
+    7561,
+    14401,
+    15289,
+    21121,
+    34849,
+    37249,
+    37321,
+    39601,
+    47041,
+    49729,
+    61681,
+    62401,
+    63601,
+    70249,
+    71593,
+    72889,
+    73441,
+    78121
+  ],
+  "not_found_within_search_bound": 306,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "residual_candidates": 11156,
+  "schema": "mathcase-erdos-straus-n1mod12-bounded-greedy-search-v1",
+  "search_method": "Try x=q+h for h=0..cap; set a=4*x-n and D=n*x; choose y=ceil(D/a); accept z=D*y/(a*y-D) only when integral, x<y<z, and exact cross-multiplication passes.",
+  "solution_examples": [
+    {
+      "denominators": [
+        21,
+        30,
+        1470
+      ],
+      "first_denominator_offset": 8,
+      "n": 49
+    },
+    {
+      "denominators": [
+        21,
+        140,
+        30660
+      ],
+      "first_denominator_offset": 2,
+      "n": 73
+    },
+    {
+      "denominators": [
+        50,
+        273,
+        177450
+      ],
+      "first_denominator_offset": 7,
+      "n": 169
+    },
+    {
+      "denominators": [
+        99,
+        154,
+        334026
+      ],
+      "first_denominator_offset": 38,
+      "n": 241
+    },
+    {
+      "denominators": [
+        85,
+        986,
+        1543090
+      ],
+      "first_denominator_offset": 6,
+      "n": 313
+    },
+    {
+      "denominators": [
+        106,
+        608,
+        612256
+      ],
+      "first_denominator_offset": 15,
+      "n": 361
+    },
+    {
+      "denominators": [
+        110,
+        1452,
+        2969340
+      ],
+      "first_denominator_offset": 7,
+      "n": 409
+    },
+    {
+      "denominators": [
+        110,
+        6805,
+        64824430
+      ],
+      "first_denominator_offset": 1,
+      "n": 433
+    },
+    {
+      "denominators": [
+        142,
+        5236,
+        29368724
+      ],
+      "first_denominator_offset": 3,
+      "n": 553
+    },
+    {
+      "denominators": [
+        154,
+        6171,
+        51922794
+      ],
+      "first_denominator_offset": 3,
+      "n": 601
+    },
+    {
+      "denominators": [
+        170,
+        16345,
+        374006290
+      ],
+      "first_denominator_offset": 1,
+      "n": 673
+    },
+    {
+      "denominators": [
+        186,
+        5831,
+        111710298
+      ],
+      "first_denominator_offset": 5,
+      "n": 721
+    }
+  ],
+  "source_bindings": {
+    "existing_factor_classifier_sha256": "7ca7b9ee082d246221570d8436416276ddc04e11b67c9fed5a8e7e2471d0aa77",
+    "existing_family_note_sha256": "7112006b70012d4e2106e58884cf4fc814a735570edd07c56a667bead65e2d1d",
+    "search_script_sha256": "8dc13e42a0d724c30dd7bf56c971d31ecd09f792413ac8ff62674c6173fee67d"
+  },
+  "started_at_utc": "2026-11-01T20:47:04.207353Z",
+  "status": "PASS_BOUNDED_EXACT_SEARCH",
+  "target": "Erdos-Straus three-unit-fraction representations for a bounded n=1 mod 12 residual set",
+  "wall_seconds": 2.024
+}

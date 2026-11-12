@@ -1,0 +1,38 @@
+{
+  "base_candidate_count": 10068,
+  "base_d_range": [
+    100001,
+    200000
+  ],
+  "base_h4096_exact_representations": 10067,
+  "base_h4096_not_found": 1,
+  "base_range_receipt_sha256": "ca91d87e0e721e14afdc0b9d00b232593eae6655e63318e1fb451b336a5bbf2a",
+  "classification": "ONE_INPUT_BOUNDED_GREEDY_EXTENSION_NOT_A_COUNTEREXAMPLE_OR_CONJECTURE_PROOF",
+  "denominators": [
+    406945,
+    36784506,
+    14509369013376930
+  ],
+  "exact_identity": true,
+  "extension_first_denominator_offset_range": [
+    4097,
+    65536
+  ],
+  "finished_at_utc": "2026-11-01T21:11:18.654926Z",
+  "first_denominator_offset": 4452,
+  "full_erdos_straus_conjecture_solved": false,
+  "model_calls": 0,
+  "n": 1609969,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "representation_found": true,
+  "schema": "mathcase-erdos-straus-single-residual-extension-v1",
+  "source_bindings": {
+    "extension_script_sha256": "93009ed4cdc4e1c7f9df1d14cdf682b309c798dccd33fbb1af81f7b541261e69",
+    "range_script_sha256": "076053865e54cd2ba624b9804884a473aab4aa351e8aa2ccea901bdb947d8add"
+  },
+  "started_at_utc": "2026-11-01T21:11:14.921294Z",
+  "status": "PASS_BOUNDED_EXACT_EXTENSION",
+  "wall_seconds": 3.733
+}

@@ -1,0 +1,53 @@
+{
+  "candidate_draws": 188813,
+  "created_utc": "2026-11-01T22:29:36+00:00",
+  "discovery": {
+    "concrete_descent_within_64_count": 2002,
+    "concrete_descent_within_64_rate": 0.9775390625,
+    "initial_v2_counts": {
+      "1": 2048,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6+": 0
+    },
+    "initial_v2_max_abs_deviation_from_geometric": 0.5,
+    "new_affine_certificates_steps_129_to_192_count": 0,
+    "new_affine_certificates_steps_129_to_192_rate": 0.0,
+    "sample_count": 2048
+  },
+  "eligible_population": 23642078,
+  "formal_proof_status": "NOT_PRODUCED",
+  "gpu_used": false,
+  "holdout": {
+    "concrete_descent_within_64_count": 2007,
+    "concrete_descent_within_64_rate": 0.97998046875,
+    "initial_v2_counts": {
+      "1": 2048,
+      "2": 0,
+      "3": 0,
+      "4": 0,
+      "5": 0,
+      "6+": 0
+    },
+    "initial_v2_max_abs_deviation_from_geometric": 0.5,
+    "new_affine_certificates_steps_129_to_192_count": 0,
+    "new_affine_certificates_steps_129_to_192_rate": 0.0,
+    "sample_count": 2048
+  },
+  "hypothesis_results": {
+    "H1_pass": false,
+    "H2_pass": true,
+    "H3_pass": false
+  },
+  "network_calls": 0,
+  "provider_calls": 0,
+  "run_manifest_sha256": "4bff70846aa430c7561780efb8d77b27bc9ea90d4c2b3270a5083e82442a2f97",
+  "sample_count": 4096,
+  "sample_sha256": "74d282bfca564cb795a0d30a318940e9664b3fd195b5fd0e24c51f16b0e26f0e",
+  "schema": "mathcase-collatz-m31-unresolved-odd-structure-verification-v1",
+  "status": "PASS_SAMPLE_AND_DERIVED_ARITHMETIC",
+  "summary_sha256": "c6df92d06e89904d2a0b7e76b921f72f755ba752176a444ade6b720d8b6d6ae0",
+  "verifier_source_sha256": "d127708275a1e24f85192a06652e1e35ac9b07602eff4169eab3bd88c347c516"
+}
