@@ -39,6 +39,8 @@ Requirements: Go 1.27 or later, Lean 4.33.1 via `elan`/`lake`, and PowerShell 7 
 
 This builds `bin/mathcase.exe` and runs the separate local R0b Lean proof with its axiom audit. It does not contact a model provider, Tavily, or any paid service.
 
+For an operator supplied Lean `by` proof term from an external exercise, use the bounded [standalone proof import](docs/standalone-lean-proof-import.md). It checks one exact statement locally and records a candidate; it does not grant source rights or advance dossier gates.
+
 An [optional Collatz descent appendix](docs/collatz-descent.md) includes agent-authored Lean proofs covering 7,825 of 8,192 residue classes within 21 steps, a separate 96-step family, and a fresh DeepSeek proof that passed unchanged after receiving a checked worked example. It records all fifteen provider-call outcomes and $0.473748 in provider cost. These are partial descent results, not full Collatz convergence or a novelty claim, and are separate from the saved Case Desk story.
 
 The CLI is also available directly with `go run ./cmd/mathcase`. Use `go run ./cmd/mathcase solve-provider -h` to inspect the BYOK command. Provider dispatch is a separate explicit action and requires user-supplied authorization, item-level input clearance, price ceilings, a pinned Lean verification environment, and an API key in an environment variable. No key, grant, provider profile, corpus, or private run archive is included here. A route can use an OpenAI-compatible endpoint such as Nebius when the user supplies its exact endpoint, model, key variable, authorization, and clearance. Dispatch was not used for this release check.

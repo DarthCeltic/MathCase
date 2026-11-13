@@ -74,7 +74,7 @@ func main() {
 
 func run(args []string, stdout, stderr io.Writer) int {
 	if len(args) == 0 {
-		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|solve-local-validate|solve-provider|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
+		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|verify-imported-proof|solve-local-validate|solve-provider|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-imported-proof|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
 		return 2
 	}
 	switch args[0] {
@@ -104,6 +104,8 @@ func run(args []string, stdout, stderr io.Writer) int {
 		return runProofDependencies(args[1:], stdout, stderr)
 	case "solve-local":
 		return runSolveLocal(args[1:], stdout, stderr)
+	case "verify-imported-proof":
+		return runVerifyImportedProof(args[1:], stdout, stderr)
 	case "solve-local-validate":
 		return runSolveLocalValidate(args[1:], stdout, stderr)
 	case "solve-provider":
@@ -124,6 +126,8 @@ func run(args []string, stdout, stderr io.Writer) int {
 		return runDossierReviseM4(args[1:], stdout, stderr)
 	case "dossier-attach-queue-m4":
 		return runDossierAttachQueueM4(args[1:], stdout, stderr)
+	case "dossier-attach-imported-proof":
+		return runDossierAttachImportedProof(args[1:], stdout, stderr)
 	case "dossier-attach-m6":
 		return runDossierAttachM6(args[1:], stdout, stderr)
 	case "dossier-read-m6":
@@ -139,7 +143,7 @@ func run(args []string, stdout, stderr io.Writer) int {
 	case "dossier-verify":
 		return runDossierVerify(args[1:], stdout, stderr)
 	default:
-		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|solve-local-validate|solve-provider|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
+		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|verify-imported-proof|solve-local-validate|solve-provider|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-imported-proof|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
 		return 2
 	}
 }

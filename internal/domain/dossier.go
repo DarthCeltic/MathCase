@@ -254,6 +254,33 @@ type CandidateExpositionReference struct {
 const CandidateExpositionReferenceSchemaVersion = "mathcase-candidate-exposition-ref-v1"
 const CandidateExpositionCandidateOnlyStatus = "CANDIDATE_ONLY_NOT_ACCEPTED_M7"
 
+// ImportedProofCandidateReference links one operator-supplied proof import to
+// its exact packet and Lean receipt. It remains separate from M4 and grants no
+// source-use rights or statement-fidelity judgment.
+type ImportedProofCandidateReference struct {
+	SchemaVersion           string `json:"schema_version"`
+	Status                  string `json:"status"`
+	PacketRelativePath      string `json:"packet_relative_path"`
+	PacketSHA256            string `json:"packet_sha256"`
+	ReceiptRelativePath     string `json:"receipt_relative_path"`
+	ReceiptSHA256           string `json:"receipt_sha256"`
+	CaseID                  string `json:"case_id"`
+	ProblemID               string `json:"problem_id"`
+	ProblemStatementSHA256  string `json:"problem_statement_sha256"`
+	M0CatalogSnapshotSHA256 string `json:"m0_catalog_snapshot_sha256"`
+	ProofSHA256             string `json:"proof_sha256"`
+	ReceiptEvidenceID       string `json:"receipt_evidence_id"`
+	ParentDossierSHA256     string `json:"parent_dossier_sha256"`
+	SourceUseDisposition    string `json:"source_use_disposition"`
+	RightsStatus            string `json:"rights_status"`
+}
+
+const ImportedProofCandidateReferenceSchemaVersion = "mathcase-imported-proof-candidate-ref-v1"
+const ImportedProofCandidateOnlyStatus = "CANDIDATE_ONLY_NOT_ATTACHED_M4"
+const ImportedProofSingleCheckDisposition = "SINGLE_LOCAL_VERIFICATION_ONLY"
+const ImportedProofRightsUnassessed = "UNASSESSED"
+const ImportedProofRightsClearedByCatalog = "CLEARED_BY_PINNED_M0_CATALOG"
+
 // SourceRightsAudit binds one source's allowed uses to the evidence reviewed
 // for the exact provenance artifact assessed by V6.
 type SourceRightsAudit struct {
@@ -341,6 +368,7 @@ type Dossier struct {
 	M4Receipt                    *M4ReceiptReference                 `json:"m4_receipt,omitempty"`
 	M6StructuralMetrics          *M6StructuralMetricsReference       `json:"m6_structural_metrics,omitempty"`
 	CandidateExposition          *CandidateExpositionReference       `json:"candidate_exposition,omitempty"`
+	ImportedProofCandidates      []ImportedProofCandidateReference   `json:"imported_proof_candidates,omitempty"`
 	LocalComputationArtifacts    []LocalComputationArtifactReference `json:"local_computation_artifacts,omitempty"`
 	Expositions                  []Exposition                        `json:"expositions"`
 	ExpositionEvaluations        []ExpositionEvaluation              `json:"exposition_evaluations,omitempty"`
@@ -933,6 +961,9 @@ func (d Dossier) Validate() error {
 	if err := d.validateCandidateExpositionReference(statementDigest); err != nil {
 		return err
 	}
+	if err := d.validateImportedProofCandidateReferences(statementDigest); err != nil {
+		return err
+	}
 	if err := d.validateLocalComputationArtifactReferences(statementDigest); err != nil {
 		return err
 	}
@@ -941,7 +972,7 @@ func (d Dossier) Validate() error {
 			return errors.New("dossier: local arithmetic tasks require their exact M0 snapshot path and digest")
 		}
 		if len(d.Claims) > 0 || len(d.Evidence) > 0 || len(d.Attempts) > 0 || len(d.Expositions) > 0 || len(d.ExpositionEvaluations) > 0 ||
-			d.M4Receipt != nil || d.M6StructuralMetrics != nil || d.CandidateExposition != nil || d.AuthorCallAccounting != nil || d.AuthorAgentRunReceipt != nil ||
+			d.M4Receipt != nil || d.M6StructuralMetrics != nil || d.CandidateExposition != nil || len(d.ImportedProofCandidates) > 0 || d.AuthorCallAccounting != nil || d.AuthorAgentRunReceipt != nil ||
 			d.Argument.ClaimID != "" || d.Argument.CoreInsight != "" || d.Argument.Text != "" || d.Verdict.Status != VerdictUnresolved {
 			return errors.New("dossier: local arithmetic tasks cannot claim Lean proof, exposition, M7, or resolved verdict evidence")
 		}
@@ -1093,6 +1124,45 @@ func (d Dossier) validateCandidateExpositionReference(statementDigest string) er
 		strings.HasPrefix(pathValue, "/") || pathValue == "." || pathValue == ".." ||
 		strings.HasPrefix(pathValue, "../") || path.Clean(pathValue) != pathValue {
 		return errors.New("dossier: candidate exposition artifact path is incomplete or unsafe")
+	}
+	return nil
+}
+
+func (d Dossier) validateImportedProofCandidateReferences(statementDigest string) error {
+	seen := make(map[string]struct{}, len(d.ImportedProofCandidates))
+	for _, ref := range d.ImportedProofCandidates {
+		if ref.SchemaVersion != ImportedProofCandidateReferenceSchemaVersion {
+			return fmt.Errorf("dossier: unsupported imported proof candidate reference schema %q", ref.SchemaVersion)
+		}
+		if ref.Status != ImportedProofCandidateOnlyStatus || ref.SourceUseDisposition != ImportedProofSingleCheckDisposition || ref.RightsStatus != ImportedProofRightsClearedByCatalog {
+			return errors.New("dossier: imported proof candidate must remain a single-check candidate authorized by its pinned M0 catalog and outside M4")
+		}
+		if ref.CaseID != d.Case.ID || ref.ProblemID != d.Problem.ID || ref.ProblemStatementSHA256 != statementDigest ||
+			!validSHA256(ref.M0CatalogSnapshotSHA256) || ref.M0CatalogSnapshotSHA256 != d.CatalogSnapshotSHA256 {
+			return errors.New("dossier: imported proof candidate belongs to a different case, problem, or statement")
+		}
+		for label, digest := range map[string]string{
+			"packet": ref.PacketSHA256, "receipt": ref.ReceiptSHA256,
+			"problem statement": ref.ProblemStatementSHA256, "proof": ref.ProofSHA256,
+			"parent dossier": ref.ParentDossierSHA256,
+		} {
+			if !validSHA256(digest) {
+				return fmt.Errorf("dossier: imported proof candidate has an invalid %s SHA-256", label)
+			}
+		}
+		if err := state.ValidateIdentifier("imported proof receipt evidence ID", ref.ReceiptEvidenceID); err != nil {
+			return err
+		}
+		prefix := "cases/" + d.Case.ID + "/imported-proof-candidates/"
+		if !safeRelativeArtifactPath(ref.PacketRelativePath) || !strings.HasPrefix(ref.PacketRelativePath, prefix) || !strings.HasSuffix(ref.PacketRelativePath, ".json") ||
+			!safeRelativeArtifactPath(ref.ReceiptRelativePath) || !strings.HasPrefix(ref.ReceiptRelativePath, prefix) || !strings.HasSuffix(ref.ReceiptRelativePath, ".json") ||
+			ref.PacketRelativePath == ref.ReceiptRelativePath {
+			return errors.New("dossier: imported proof candidate artifact paths are incomplete or unsafe")
+		}
+		if _, exists := seen[ref.ReceiptEvidenceID]; exists {
+			return errors.New("dossier: duplicate imported proof receipt reference")
+		}
+		seen[ref.ReceiptEvidenceID] = struct{}{}
 	}
 	return nil
 }
