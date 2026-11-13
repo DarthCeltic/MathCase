@@ -22,6 +22,7 @@ EXPLICIT = (
     "README.md",
     "docs/MATH_RESULTS.md",
     "docs/MATHCASE_RESEARCH_ROADMAP.md",
+    "docs/INDEPENDENT_MATH_REVIEW.md",
     "docs/collatz-descent.md",
     "proofs/collatz/remaining-residues/BoundedDescent8192.lean",
     "proofs/collatz/remaining-residues/BoundedDescent8192.stdout.txt",

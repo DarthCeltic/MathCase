@@ -2,7 +2,7 @@
 
 **Question an AI proof. Check it in Lean. Build on what holds.**
 
-[Open the no-key demo](https://darthceltic.github.io/) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip) · [Math results and evidence atlas](docs/MATH_RESULTS.md)
+[Open the no-key demo](https://darthceltic.github.io/) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip) · [Math results and evidence atlas](docs/MATH_RESULTS.md) · [Independent review guide](docs/INDEPENDENT_MATH_REVIEW.md)
 
 MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [no-key saved-case demo](https://darthceltic.github.io/), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2`, inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem, then follow the checked parent lemma into a √2 infinite-descent child. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
 
