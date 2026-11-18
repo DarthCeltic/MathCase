@@ -1,0 +1,94 @@
+{
+  "base_miss_count": 2,
+  "d_interval_inclusive": [
+    9000001,
+    9100000
+  ],
+  "extension_receipt_sha256": "4c551447880d13dbfe5ea82356754e753a70a6e3fbf66320129e1c03a1b8b480",
+  "miss_counts_by_n_mod_24": {
+    "1": 2
+  },
+  "misses": [
+    {
+      "d": 9011600,
+      "denominators": [
+        27058198,
+        31264244556,
+        4398538444426926122556
+      ],
+      "first_denominator_offset": 23397,
+      "n": 108139201,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          10399,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 25,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 27034801,
+      "q_factorization": [
+        [
+          27034801,
+          1
+        ]
+      ],
+      "q_mod_24": 1,
+      "q_prime_factor_count_with_multiplicity": 1,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 9063670,
+      "denominators": [
+        27197830,
+        108440408272,
+        15379353189369769273520
+      ],
+      "first_denominator_offset": 6819,
+      "n": 108764041,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          10429,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 49,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 27191011,
+      "q_factorization": [
+        [
+          1789,
+          1
+        ],
+        [
+          15199,
+          1
+        ]
+      ],
+      "q_mod_24": 19,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    }
+  ],
+  "model_calls": 0,
+  "n_factor_count_with_multiplicity": {
+    "2": 2
+  },
+  "n_factor_shapes": {
+    "prime_power": 2
+  },
+  "provider_calls": 0,
+  "q_factor_count_with_multiplicity": {
+    "1": 1,
+    "2": 1
+  },
+  "resolved_by_extension": 2,
+  "schema": "mathcase-erdos-straus-v9-range-miss-analysis-v1",
+  "search_api_calls": 0,
+  "status": "PASS",
+  "unresolved_at_fixed_cap": 0
+}

@@ -1,0 +1,45 @@
+LEAN_VERSION=Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+COLLATZ_TRACE_HELPER_BEGIN
+COLLATZ_TRACE_HELPER_PASS
+LONGRISE_LEAN_BEGIN
+/mathcase/input/structure/LongRiseControl.lean:47:5: error: unknown tactic
+/mathcase/input/structure/LongRiseControl.lean:45:29: error: unsolved goals
+k j : Nat
+hjk : j < k
+q : Nat := k - (j + 1)
+a : Nat := 3 ^ j * 2 ^ (k - j)
+b : Nat := 3 ^ (j + 1) * 2 ^ q
+hExp : k - j = q + 1
+hPowTwo : 2 ^ (k - j) = 2 ^ q * 2
+hPowThree : 3 ^ (j + 1) = 3 ^ j * 3
+hRelation : 3 * a = 2 * b
+⊢ 0 < 3 ^ j * 2 ^ (k - j)
+/mathcase/input/structure/LongRiseControl.lean:30:45: error: unsolved goals
+k j : Nat
+hjk : j < k
+q : Nat := k - (j + 1)
+a : Nat := 3 ^ j * 2 ^ (k - j)
+b : Nat := 3 ^ (j + 1) * 2 ^ q
+hExp : k - j = q + 1
+hPowTwo : 2 ^ (k - j) = 2 ^ q * 2
+hPowThree : 3 ^ (j + 1) = 3 ^ j * 3
+hRelation : 3 * a = 2 * b
+haPositive : 0 < a
+⊢ collatzStep (collatzStep (3 ^ j * 2 ^ (k - j) - 1)) = 3 ^ (j + 1) * 2 ^ (k - (j + 1)) - 1
+/mathcase/input/structure/LongRiseControl.lean:69:12: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+case zero
+k : Nat
+hk : 1 ≤ k
+hj : 0 ≤ k
+⊢ iterate (2 ^ k - 1) (2 * 0) = 3 ^ 0 * 2 ^ (k - 0) - 1
+/mathcase/input/structure/LongRiseControl.lean:72:12: error: Tactic `introN` failed: There are no additional binders or `let` bindings in the goal to introduce
+
+case succ
+j : Nat
+ih : ∀ (k : Nat), 1 ≤ k → j ≤ k → iterate (2 ^ k - 1) (2 * j) = 3 ^ j * 2 ^ (k - j) - 1
+k : Nat
+hk : 1 ≤ k
+hj : j + 1 ≤ k
+⊢ iterate (2 ^ k - 1) (2 * (j + 1)) = 3 ^ (j + 1) * 2 ^ (k - (j + 1)) - 1
+'MathCase.CollatzStructureSample.longRise_pair_endpoint' depends on axioms: [sorryAx]

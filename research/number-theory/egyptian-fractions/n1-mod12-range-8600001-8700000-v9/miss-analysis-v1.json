@@ -1,0 +1,110 @@
+{
+  "base_miss_count": 2,
+  "d_interval_inclusive": [
+    8600001,
+    8700000
+  ],
+  "extension_receipt_sha256": "7ba53885ad1fc09788166c4f872e9234f52afb0bdfbd454c8a0753b181f9bd54",
+  "miss_counts_by_n_mod_24": {
+    "1": 2
+  },
+  "misses": [
+    {
+      "d": 8600440,
+      "denominators": [
+        25824178,
+        29149758256,
+        3823687828695430968656
+      ],
+      "first_denominator_offset": 22857,
+      "n": 103205281,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          10159,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 49,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 25801321,
+      "q_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          97,
+          1
+        ]
+      ],
+      "q_mod_24": 1,
+      "q_prime_factor_count_with_multiplicity": 5,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 8630944,
+      "denominators": [
+        25898770,
+        112937140684,
+        14883521728409174843180
+      ],
+      "first_denominator_offset": 5937,
+      "n": 103571329,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          10177,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 49,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 25892833,
+      "q_factorization": [
+        [
+          3919,
+          1
+        ],
+        [
+          6607,
+          1
+        ]
+      ],
+      "q_mod_24": 1,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    }
+  ],
+  "model_calls": 0,
+  "n_factor_count_with_multiplicity": {
+    "2": 2
+  },
+  "n_factor_shapes": {
+    "prime_power": 2
+  },
+  "provider_calls": 0,
+  "q_factor_count_with_multiplicity": {
+    "2": 1,
+    "5": 1
+  },
+  "resolved_by_extension": 2,
+  "schema": "mathcase-erdos-straus-v9-range-miss-analysis-v1",
+  "search_api_calls": 0,
+  "status": "PASS",
+  "unresolved_at_fixed_cap": 0
+}

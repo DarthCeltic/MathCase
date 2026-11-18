@@ -1,0 +1,10 @@
+/mathcase/input/M20CompositionR1.lean:2812:4: error: Application type mismatch: The argument
+  CollatzM20Shard001.descent_mod1048576_5223
+has type
+  ∀ (k : ℕ),
+    CollatzM20Shard001.iterate (1048576 * k + 5223) 32 = 531441 * k + 2648 ∧ 531441 * k + 2648 < 1048576 * k + 5223
+of sort `Prop` but is expected to have type
+  ?m.140614
+of sort `Type ?u.119379` in the application
+  (?m.140615, CollatzM20Shard001.descent_mod1048576_5223)
+'CollatzM20AllFamilies.all_scanned_m20_families_descend' depends on axioms: [sorryAx]

@@ -1,0 +1,5424 @@
+{
+  "aggregate": {
+    "base_misses": 427,
+    "candidates": 831860,
+    "cap_headroom": 30038,
+    "cap_to_max_ratio": 1.8462,
+    "exact_witnesses": 831860,
+    "grouped_maxima": [
+      {
+        "d_interval_inclusive": [
+          1,
+          500000
+        ],
+        "mean_range_max": 7606.6,
+        "median_range_max": 4452,
+        "peak_n": 5309329,
+        "peak_range_max": 17277,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          500001,
+          1000000
+        ],
+        "mean_range_max": 7763.8,
+        "median_range_max": 7467,
+        "peak_n": 10349089,
+        "peak_range_max": 12063,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          1000001,
+          1500000
+        ],
+        "mean_range_max": 13748.4,
+        "median_range_max": 8871,
+        "peak_n": 16459249,
+        "peak_range_max": 35498,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          1500001,
+          2000000
+        ],
+        "mean_range_max": 9749.2,
+        "median_range_max": 8637,
+        "peak_n": 21687649,
+        "peak_range_max": 17463,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          2000001,
+          2500000
+        ],
+        "mean_range_max": 6525.0,
+        "median_range_max": 5417,
+        "peak_n": 26204161,
+        "peak_range_max": 11517,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          2500001,
+          3000000
+        ],
+        "mean_range_max": 10491.8,
+        "median_range_max": 7238,
+        "peak_n": 34586161,
+        "peak_range_max": 22053,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          3000001,
+          3500000
+        ],
+        "mean_range_max": 9023.4,
+        "median_range_max": 7431,
+        "peak_n": 38651089,
+        "peak_range_max": 17096,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          3500001,
+          4000000
+        ],
+        "mean_range_max": 12190.6,
+        "median_range_max": 11677,
+        "peak_n": 43256929,
+        "peak_range_max": 18086,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          4000001,
+          4500000
+        ],
+        "mean_range_max": 6274.4,
+        "median_range_max": 5499,
+        "peak_n": 48539089,
+        "peak_range_max": 8708,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          4500001,
+          5000000
+        ],
+        "mean_range_max": 10139.2,
+        "median_range_max": 5805,
+        "peak_n": 55011889,
+        "peak_range_max": 24111,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          5000001,
+          5500000
+        ],
+        "mean_range_max": 16119.0,
+        "median_range_max": 13777,
+        "peak_n": 64272289,
+        "peak_range_max": 30063,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          5500001,
+          6000000
+        ],
+        "mean_range_max": 8632.2,
+        "median_range_max": 9292,
+        "peak_n": 69072721,
+        "peak_range_max": 10388,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          6000001,
+          6500000
+        ],
+        "mean_range_max": 14189.2,
+        "median_range_max": 10808,
+        "peak_n": 72607441,
+        "peak_range_max": 25805,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          6500001,
+          7000000
+        ],
+        "mean_range_max": 11910.6,
+        "median_range_max": 11258,
+        "peak_n": 78127921,
+        "peak_range_max": 19887,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          7000001,
+          7500000
+        ],
+        "mean_range_max": 10798.0,
+        "median_range_max": 11019,
+        "peak_n": 89548369,
+        "peak_range_max": 16563,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          7500001,
+          8000000
+        ],
+        "mean_range_max": 14423.8,
+        "median_range_max": 10883,
+        "peak_n": 95433361,
+        "peak_range_max": 28553,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          8000001,
+          8500000
+        ],
+        "mean_range_max": 11288.4,
+        "median_range_max": 7575,
+        "peak_n": 100781521,
+        "peak_range_max": 22587,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          8500001,
+          9000000
+        ],
+        "mean_range_max": 13365.6,
+        "median_range_max": 12638,
+        "peak_n": 103205281,
+        "peak_range_max": 22857,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          9000001,
+          9500000
+        ],
+        "mean_range_max": 14200.0,
+        "median_range_max": 13208,
+        "peak_n": 108139201,
+        "peak_range_max": 23397,
+        "ranges": 5
+      },
+      {
+        "d_interval_inclusive": [
+          9500001,
+          10000000
+        ],
+        "mean_range_max": 14598.2,
+        "median_range_max": 14081,
+        "peak_n": 114242881,
+        "peak_range_max": 19518,
+        "ranges": 5
+      }
+    ],
+    "identity_rows_checked": 831860,
+    "last_v9_range_max_offset": 10359,
+    "max_offset": 35498,
+    "max_offset_d_range": [
+      1300001,
+      1400000
+    ],
+    "max_offset_n": 16459249,
+    "offset_histogram": {
+      "0-8": 391433,
+      "1025-2048": 2043,
+      "129-256": 28476,
+      "16385-32768": 22,
+      "17-32": 120148,
+      "2049-4096": 754,
+      "257-512": 13731,
+      "32769-65536": 1,
+      "33-64": 76813,
+      "4097-8192": 337,
+      "513-1024": 5703,
+      "65-128": 49854,
+      "8193-16384": 66,
+      "9-16": 142479
+    },
+    "offset_stage_counts": {
+      "offset_0_256": 809203,
+      "offset_257_4096": 22231,
+      "offset_4097_65536": 426
+    },
+    "range_maxima_trend": {
+      "baseline": {
+        "offset_slope_per_1m_d": 113.797,
+        "pearson_r": 0.02685,
+        "r_squared": 0.00072
+      },
+      "combined": {
+        "offset_slope_per_1m_d": 589.637,
+        "pearson_r": 0.26744,
+        "r_squared": 0.07153
+      },
+      "v9": {
+        "offset_slope_per_1m_d": 281.476,
+        "pearson_r": 0.06668,
+        "r_squared": 0.00445
+      }
+    },
+    "ranges": 100,
+    "resolved_misses": 427,
+    "unresolved": 0,
+    "v9_max_offset": 30063,
+    "v9_max_offset_n": 64272289
+  },
+  "audit_script_sha256": "260e7441e7009d10cdea1b8c8caea683d57268c5f7250d7ff65da1a706dc3ab5",
+  "audited_at_utc": "2026-11-13T15:14:52Z",
+  "baseline": {
+    "base_misses": 193,
+    "candidates": 432533,
+    "exact_witnesses": 432533,
+    "extension_witnesses": 193,
+    "range_audits": [
+      {
+        "base_miss_count": 1,
+        "base_witness_count": 11155,
+        "candidate_count": 11156,
+        "d_interval_inclusive": [
+          1,
+          100000
+        ],
+        "exact_witness_count": 11156,
+        "identity_rows_checked": 11156,
+        "maximum_first_denominator_offset": 3285,
+        "maximum_offset_n": 1018081,
+        "misses": [
+          193
+        ],
+        "offset_histogram": {
+          "0-8": 5259,
+          "1025-2048": 20,
+          "129-256": 379,
+          "17-32": 1537,
+          "2049-4096": 7,
+          "257-512": 187,
+          "33-64": 1047,
+          "513-1024": 91,
+          "65-128": 671,
+          "9-16": 1958
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 10851,
+          "offset_257_4096": 305,
+          "offset_4097_65536": 0
+        },
+        "package": "n1-mod12-range-1-100000-v1",
+        "run_manifest_sha256": "65b685eab97d75afa34ce5f2b0ec6158099daf0de2dc2ef1186b651a226d32a2",
+        "stream_hashes": {
+          "candidates": "c7306f531b22e5da147fe3a449ac54c1b8e088f81abb6dca2a7f28c741c0bf9f",
+          "results": "f9a595031aa9a14d4697a589e7f3f5464f71ddebc3de143ef816434a8e1ca985",
+          "witnesses": "c2175ddc3b00b18a256ec2315248a11b66267913706973aa1e905519b6b20c1f"
+        },
+        "verification_receipt_sha256": "66ce8a5e0d45bdc4927a4208a79bb59d4bd5f7a20c7a4f1a518318d8178b8484"
+      },
+      {
+        "base_miss_count": 1,
+        "base_witness_count": 10067,
+        "candidate_count": 10068,
+        "d_interval_inclusive": [
+          100001,
+          200000
+        ],
+        "exact_witness_count": 10068,
+        "identity_rows_checked": 10068,
+        "maximum_first_denominator_offset": 4452,
+        "maximum_offset_n": 1609969,
+        "misses": [
+          1609969
+        ],
+        "offset_histogram": {
+          "0-8": 4793,
+          "1025-2048": 41,
+          "129-256": 324,
+          "17-32": 1424,
+          "2049-4096": 11,
+          "257-512": 172,
+          "33-64": 955,
+          "4097-8192": 1,
+          "513-1024": 66,
+          "65-128": 575,
+          "9-16": 1706
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 9777,
+          "offset_257_4096": 290,
+          "offset_4097_65536": 1
+        },
+        "package": "n1-mod12-range-100001-200000-v1",
+        "run_manifest_sha256": "559d4c1d2e78ca374007bf39c2f6e9be7ecfa4156d488912fa81f1500e09de7d",
+        "stream_hashes": {
+          "candidates": "1b7b34b4ae26235ea45a405e9d985cf986fa9aef0c41375be73f2da03bbad4f4",
+          "results": "1143cf8462af831dae88de810fefec944f68fd0af047eb76f78a0185b48ad9d4",
+          "witnesses": "0b05e8279a5e659fc07e2aae20e8b50cdacc3ae0ee98e330d9f317784b08fcf6"
+        },
+        "verification_receipt_sha256": "84c5127e5aef7c4a4ca49c901972f2c5b428022b2dfdaaa8417cee9114017291"
+      },
+      {
+        "base_miss_count": 0,
+        "base_witness_count": 9737,
+        "candidate_count": 9737,
+        "d_interval_inclusive": [
+          200001,
+          300000
+        ],
+        "exact_witness_count": 9737,
+        "identity_rows_checked": 9737,
+        "maximum_first_denominator_offset": 3957,
+        "maximum_offset_n": 3094081,
+        "misses": [],
+        "offset_histogram": {
+          "0-8": 4602,
+          "1025-2048": 33,
+          "129-256": 325,
+          "17-32": 1400,
+          "2049-4096": 8,
+          "257-512": 142,
+          "33-64": 915,
+          "513-1024": 73,
+          "65-128": 581,
+          "9-16": 1658
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 9481,
+          "offset_257_4096": 256,
+          "offset_4097_65536": 0
+        },
+        "package": "n1-mod12-range-200001-300000-v1",
+        "run_manifest_sha256": "d5641425df980aaf1a0e5367a6a152ed8e5847f2825aeb1968022d58daa5f121",
+        "stream_hashes": {
+          "candidates": "a0489bc3b984dd08d399920fca884ee2224ec4012139f04f816ac8b0e42a4b22",
+          "results": "4c724b6be6fb453042bd20d2e75bc87837dfc33a5359e8f6fce68f181ecd8e1b",
+          "witnesses": "7dc848fa3a5d9421055d7be4f9e0e5dbb0a74f172b8a33b536f6609694d318e8"
+        },
+        "verification_receipt_sha256": "56164407ffa71ea71a97a65cda4a3a02dc7886a26d9d4e896e5942e1aac22e27"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 9536,
+        "candidate_count": 9541,
+        "d_interval_inclusive": [
+          300001,
+          400000
+        ],
+        "exact_witness_count": 9541,
+        "identity_rows_checked": 9541,
+        "maximum_first_denominator_offset": 9062,
+        "maximum_offset_n": 4597609,
+        "misses": [
+          3846769,
+          4068289,
+          4403569,
+          4592449,
+          4597609
+        ],
+        "offset_histogram": {
+          "0-8": 4504,
+          "1025-2048": 33,
+          "129-256": 313,
+          "17-32": 1346,
+          "2049-4096": 11,
+          "257-512": 129,
+          "33-64": 904,
+          "4097-8192": 4,
+          "513-1024": 69,
+          "65-128": 577,
+          "8193-16384": 1,
+          "9-16": 1650
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 9294,
+          "offset_257_4096": 242,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-300001-400000-v2",
+        "run_manifest_sha256": "11a24fa694858cf1becc25052b4ae4fca4a198859798ff299babaf296eed4c8f",
+        "stream_hashes": {
+          "candidates": "f46eb1d1c717a7ec3485f89ec4fa1e0bf90a9190a1aeee26fc10d487188bdcc6",
+          "results": "77c8dab1bc8bf4a31ec208eb4a5c5f86f52b2c40c07db730491c4a5f882906ab",
+          "witnesses": "158b3f072aa20154d9b86dbc86f2d57f3bbb954206561e656f59c1752160db45"
+        },
+        "verification_receipt_sha256": "26d1a95676eba9c760ee20582b226bf6f65436ce936e5190e58996e31bf3e448"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 9346,
+        "candidate_count": 9351,
+        "d_interval_inclusive": [
+          400001,
+          500000
+        ],
+        "exact_witness_count": 9351,
+        "identity_rows_checked": 9351,
+        "maximum_first_denominator_offset": 17277,
+        "maximum_offset_n": 5309329,
+        "misses": [
+          5260369,
+          5309329,
+          5468929,
+          5650129,
+          5678689
+        ],
+        "offset_histogram": {
+          "0-8": 4425,
+          "1025-2048": 36,
+          "129-256": 305,
+          "16385-32768": 1,
+          "17-32": 1394,
+          "2049-4096": 5,
+          "257-512": 131,
+          "33-64": 838,
+          "4097-8192": 4,
+          "513-1024": 58,
+          "65-128": 571,
+          "9-16": 1583
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 9116,
+          "offset_257_4096": 230,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-400001-500000-v3",
+        "run_manifest_sha256": "1b7c94fc7c43932e1b255774745ec50114fe2ab9b31dce3827e3c959b7d7410a",
+        "stream_hashes": {
+          "candidates": "ff48cb31d87e20b1b6d18cf408bbdc3713e4730e565126f1866af49090881373",
+          "results": "9d9565d15de08a06945b5975b36932ecc85e490fa7167f2cd56393c6fc75a588",
+          "witnesses": "4f06324279f26fcf486ecada4bb26ad1da094b5dc348f226d6bd90c5c3e0c2fd"
+        },
+        "verification_receipt_sha256": "8b399c65beac11cfb43a90d078e147f34e9fef08094f7c5995515c9117146502"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 9232,
+        "candidate_count": 9235,
+        "d_interval_inclusive": [
+          500001,
+          600000
+        ],
+        "exact_witness_count": 9235,
+        "identity_rows_checked": 9235,
+        "maximum_first_denominator_offset": 6932,
+        "maximum_offset_n": 6355441,
+        "misses": [
+          6115729,
+          6355441,
+          6854761
+        ],
+        "offset_histogram": {
+          "0-8": 4307,
+          "1025-2048": 25,
+          "129-256": 306,
+          "17-32": 1412,
+          "2049-4096": 9,
+          "257-512": 148,
+          "33-64": 824,
+          "4097-8192": 3,
+          "513-1024": 67,
+          "65-128": 543,
+          "9-16": 1591
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8983,
+          "offset_257_4096": 249,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-500001-600000-v3",
+        "run_manifest_sha256": "75b6b0f5928b89652739b799a674dbd2ce93a1d4702ec9a372aac7357733d426",
+        "stream_hashes": {
+          "candidates": "9540f8f0573bed85e0ec5929be7af1d0bbf9ca61d72650a665ebbd90aa4a76fc",
+          "results": "5056733860dc5133a29ea21b980d20da268096378b51ac2449e184c27e265073",
+          "witnesses": "337255967e51cf231ff5c75de19dba9f0488efc5042a5ac6ab6fa7a721a6702e"
+        },
+        "verification_receipt_sha256": "8ab1ddca705919877cfd5c3407dd4a4621abfb8a794c9a758797b719dd5c87e5"
+      },
+      {
+        "base_miss_count": 0,
+        "base_witness_count": 9168,
+        "candidate_count": 9168,
+        "d_interval_inclusive": [
+          600001,
+          700000
+        ],
+        "exact_witness_count": 9168,
+        "identity_rows_checked": 9168,
+        "maximum_first_denominator_offset": 3608,
+        "maximum_offset_n": 8334769,
+        "misses": [],
+        "offset_histogram": {
+          "0-8": 4365,
+          "1025-2048": 16,
+          "129-256": 326,
+          "17-32": 1317,
+          "2049-4096": 9,
+          "257-512": 154,
+          "33-64": 857,
+          "513-1024": 61,
+          "65-128": 518,
+          "9-16": 1545
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8928,
+          "offset_257_4096": 240,
+          "offset_4097_65536": 0
+        },
+        "package": "n1-mod12-range-600001-700000-v3",
+        "run_manifest_sha256": "a0ecc797dbb5e32249fc35af6c3af33189cfc0eb19f83dff5911942b04793332",
+        "stream_hashes": {
+          "candidates": "4fb1325391ff92b89614ab950e48c891ce80da375f5f4b92bb3d111f7d62f48b",
+          "results": "1ab52197fd20a96864bb8757913e98e9e226923af96873a6308f69e5b67cb9be",
+          "witnesses": "7add0a29103c17acf95ce9a560d6e1caeda19bfcfe6a6a24de02a5f32725ae26"
+        },
+        "verification_receipt_sha256": "b3c5f0018069690e9c2b0a386f1a63bca151f482b596177916aa2be271883aa6"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 9051,
+        "candidate_count": 9055,
+        "d_interval_inclusive": [
+          700001,
+          800000
+        ],
+        "exact_witness_count": 9055,
+        "identity_rows_checked": 9055,
+        "maximum_first_denominator_offset": 8749,
+        "maximum_offset_n": 9083281,
+        "misses": [
+          8933929,
+          9083281,
+          9104209,
+          9296401
+        ],
+        "offset_histogram": {
+          "0-8": 4219,
+          "1025-2048": 29,
+          "129-256": 300,
+          "17-32": 1316,
+          "2049-4096": 6,
+          "257-512": 144,
+          "33-64": 849,
+          "4097-8192": 2,
+          "513-1024": 63,
+          "65-128": 579,
+          "8193-16384": 2,
+          "9-16": 1546
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8809,
+          "offset_257_4096": 242,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-700001-800000-v3",
+        "run_manifest_sha256": "7fdf223d9f03503698e0dbc0daf382d3c8ba1e159b8045f2b9fbed5a6ef0da0b",
+        "stream_hashes": {
+          "candidates": "ae3db10f9ed0f776b6b33220163bc02742fab1e512bf03f6ca3836e3151fc56d",
+          "results": "94eb1f7d24238c2a4782e39bb2bb30253404c9cb6ba47c1a368bdfda53eec1ae",
+          "witnesses": "cca3d71ae890ef13299bffcbd05dda810616bf9a61e364e661fe219171acfcb9"
+        },
+        "verification_receipt_sha256": "94c67fabfab0c32b7a7f3059498f83fe8f737a5124c037fbab17706d8a4670d1"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8972,
+        "candidate_count": 8976,
+        "d_interval_inclusive": [
+          800001,
+          900000
+        ],
+        "exact_witness_count": 8976,
+        "identity_rows_checked": 8976,
+        "maximum_first_denominator_offset": 12063,
+        "maximum_offset_n": 10349089,
+        "misses": [
+          10042561,
+          10349089,
+          10356481,
+          10617601
+        ],
+        "offset_histogram": {
+          "0-8": 4206,
+          "1025-2048": 19,
+          "129-256": 330,
+          "17-32": 1254,
+          "2049-4096": 9,
+          "257-512": 151,
+          "33-64": 854,
+          "4097-8192": 3,
+          "513-1024": 67,
+          "65-128": 542,
+          "8193-16384": 1,
+          "9-16": 1540
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8726,
+          "offset_257_4096": 246,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-800001-900000-v3",
+        "run_manifest_sha256": "e1cc37ad428236d5ab164587aa66b6ef0fb3101eab28279fb2621af21229c562",
+        "stream_hashes": {
+          "candidates": "f028c2ed04db5e39fbc511a766250dc36499f80fcc08d2d72de0acc0ecbca081",
+          "results": "3882d03d30265e9e8749236f3d0fd15ac4f0d9034bca9f95e991b5588a9b2a0f",
+          "witnesses": "9586db57fd105ec20b2539db664ab14e9c7f5cef9e95a14c018727305594df43"
+        },
+        "verification_receipt_sha256": "95f182eb4c27ce5cd01bf410aa0a6af6993baccd7a747ab2fa299cfcb2f1ebf9"
+      },
+      {
+        "base_miss_count": 1,
+        "base_witness_count": 9043,
+        "candidate_count": 9044,
+        "d_interval_inclusive": [
+          900001,
+          1000000
+        ],
+        "exact_witness_count": 9044,
+        "identity_rows_checked": 9044,
+        "maximum_first_denominator_offset": 7467,
+        "maximum_offset_n": 11015761,
+        "misses": [
+          11015761
+        ],
+        "offset_histogram": {
+          "0-8": 4275,
+          "1025-2048": 18,
+          "129-256": 317,
+          "17-32": 1281,
+          "2049-4096": 14,
+          "257-512": 158,
+          "33-64": 819,
+          "4097-8192": 1,
+          "513-1024": 56,
+          "65-128": 549,
+          "9-16": 1556
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8797,
+          "offset_257_4096": 246,
+          "offset_4097_65536": 1
+        },
+        "package": "n1-mod12-range-900001-1000000-v3",
+        "run_manifest_sha256": "87584374390150a55cc1876021b194bf77f1669c2b1f83a02cfedeb28ae3afa7",
+        "stream_hashes": {
+          "candidates": "95d92a0169a08cf9b88e09e04056a0c99f9d8dabd77244766c96e9b9c93e2b42",
+          "results": "21d46eeeb783be48325b08c806286d3b6b6af54f5e4f27286fac3139a1905e4e",
+          "witnesses": "90620d666a97b28d776efb1b4f8b814df2580b336252ff0fd991f64cc72098f9"
+        },
+        "verification_receipt_sha256": "66debb37b8f332b6b4fba5d0e6f2637a4f4c5929417d34a4fab2ad19907b1f4f"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8868,
+        "candidate_count": 8871,
+        "d_interval_inclusive": [
+          1000001,
+          1100000
+        ],
+        "exact_witness_count": 8871,
+        "identity_rows_checked": 8871,
+        "maximum_first_denominator_offset": 6159,
+        "maximum_offset_n": 12741481,
+        "misses": [
+          12453841,
+          12741481,
+          12916369
+        ],
+        "offset_histogram": {
+          "0-8": 4157,
+          "1025-2048": 21,
+          "129-256": 311,
+          "17-32": 1297,
+          "2049-4096": 14,
+          "257-512": 142,
+          "33-64": 826,
+          "4097-8192": 3,
+          "513-1024": 51,
+          "65-128": 544,
+          "9-16": 1505
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8640,
+          "offset_257_4096": 228,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-1000001-1100000-v4",
+        "run_manifest_sha256": "d784e16d01b02fed70796870bd57fbf393fc98d1d05fa06c17ce65b798be3827",
+        "stream_hashes": {
+          "candidates": "7c9755b774f44b2fa8a0d0c69c3861aac07a2686e541be09659ee8dbed56ade3",
+          "results": "36feab9c18aa92e69a36e3f9d96822e5e6bb5a603e4308b7b81ed422f7776097",
+          "witnesses": "02633511157e509ac298f22fdf90c332e22de5c25ad47d848dc76492d390f9a7"
+        },
+        "verification_receipt_sha256": "8632c16830055848c4fbfd2955e4f5b675a58b4bc418cb8741429bb683977d1d"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 8894,
+        "candidate_count": 8896,
+        "d_interval_inclusive": [
+          1100001,
+          1200000
+        ],
+        "exact_witness_count": 8896,
+        "identity_rows_checked": 8896,
+        "maximum_first_denominator_offset": 12657,
+        "maximum_offset_n": 13667809,
+        "misses": [
+          13490929,
+          13667809
+        ],
+        "offset_histogram": {
+          "0-8": 4191,
+          "1025-2048": 23,
+          "129-256": 308,
+          "17-32": 1274,
+          "2049-4096": 10,
+          "257-512": 149,
+          "33-64": 836,
+          "4097-8192": 1,
+          "513-1024": 71,
+          "65-128": 533,
+          "8193-16384": 1,
+          "9-16": 1499
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8641,
+          "offset_257_4096": 253,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-1100001-1200000-v4",
+        "run_manifest_sha256": "6af8778595e8519a2aba8ad64d9b3ad26e2fded5e2ea18de54d4d77df0ae3c6d",
+        "stream_hashes": {
+          "candidates": "a95b8d307d66798761b87e2f0886cdb20d411754cd538410a462ac1ffa5f4a54",
+          "results": "8806d14617f28097cef2634aa09b670ec3a48cfb9705354a3297b48350df527a",
+          "witnesses": "c2fc4b12eeb1c3f9c9215b99cf3b87465843ff5df96d8a99e27c388ffd93610d"
+        },
+        "verification_receipt_sha256": "2a938ff9b21633b7200160d585c4bcab2b3e02c6d5e72aaeefa0041dab7183b8"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8806,
+        "candidate_count": 8810,
+        "d_interval_inclusive": [
+          1200001,
+          1300000
+        ],
+        "exact_witness_count": 8810,
+        "identity_rows_checked": 8810,
+        "maximum_first_denominator_offset": 8871,
+        "maximum_offset_n": 15547249,
+        "misses": [
+          14615329,
+          14799409,
+          15358561,
+          15547249
+        ],
+        "offset_histogram": {
+          "0-8": 4131,
+          "1025-2048": 19,
+          "129-256": 287,
+          "17-32": 1291,
+          "2049-4096": 10,
+          "257-512": 121,
+          "33-64": 870,
+          "4097-8192": 2,
+          "513-1024": 59,
+          "65-128": 521,
+          "8193-16384": 2,
+          "9-16": 1497
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8597,
+          "offset_257_4096": 209,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-1200001-1300000-v4",
+        "run_manifest_sha256": "b1bccd4c9966f48c1454d41430104051c1d4a67d4889054c0a3a3b93697e1c58",
+        "stream_hashes": {
+          "candidates": "1925b440cb422467f4fcd3c70b87ed780e004c437abf11e3125c70665c238d94",
+          "results": "a07c595e8335b70377693e59a528b1c931fcc9efa6d69dd7d353c58fbc9a4cf0",
+          "witnesses": "60359d3617300f5c4a0cb027bf79f3662e1f3b9e14bf985b0d690524b3493bcd"
+        },
+        "verification_receipt_sha256": "1b88060e5b8fc6beafef0e4fdb8187500ec897c03fc8c7b36092a7bbdc42e93b"
+      },
+      {
+        "base_miss_count": 1,
+        "base_witness_count": 8785,
+        "candidate_count": 8786,
+        "d_interval_inclusive": [
+          1300001,
+          1400000
+        ],
+        "exact_witness_count": 8786,
+        "identity_rows_checked": 8786,
+        "maximum_first_denominator_offset": 35498,
+        "maximum_offset_n": 16459249,
+        "misses": [
+          16459249
+        ],
+        "offset_histogram": {
+          "0-8": 4074,
+          "1025-2048": 24,
+          "129-256": 291,
+          "17-32": 1248,
+          "2049-4096": 10,
+          "257-512": 147,
+          "32769-65536": 1,
+          "33-64": 873,
+          "513-1024": 58,
+          "65-128": 554,
+          "9-16": 1506
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8546,
+          "offset_257_4096": 239,
+          "offset_4097_65536": 1
+        },
+        "package": "n1-mod12-range-1300001-1400000-v4",
+        "run_manifest_sha256": "f3969e0009873eb033d1601c44e4c2f66bb3c8db4fdc6312ac61647f5876c65a",
+        "stream_hashes": {
+          "candidates": "dff218d7d5771ed972bc019dd44cf789c8b8cf8eb923ca38f1c860554c625ea0",
+          "results": "12fc7f39ad67e9821c54b0cc0bfe9fd0d5776cc87a3b86e7ca602700221a3080",
+          "witnesses": "2cb7d5dcf9dfa07a26010edacfd567eeeb16163e948c4cd8c7991ee44a74da0b"
+        },
+        "verification_receipt_sha256": "8ba6a79865b2a9c1accd9c50a28c04d29539793a198b178e33ec390b1305cef5"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8714,
+        "candidate_count": 8719,
+        "d_interval_inclusive": [
+          1400001,
+          1500000
+        ],
+        "exact_witness_count": 8719,
+        "identity_rows_checked": 8719,
+        "maximum_first_denominator_offset": 5557,
+        "maximum_offset_n": 16947529,
+        "misses": [
+          16900321,
+          16947529,
+          17247409,
+          17901361,
+          17954689
+        ],
+        "offset_histogram": {
+          "0-8": 4155,
+          "1025-2048": 16,
+          "129-256": 275,
+          "17-32": 1269,
+          "2049-4096": 10,
+          "257-512": 138,
+          "33-64": 780,
+          "4097-8192": 5,
+          "513-1024": 64,
+          "65-128": 506,
+          "9-16": 1501
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8486,
+          "offset_257_4096": 228,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-1400001-1500000-v4",
+        "run_manifest_sha256": "f385004ec27a0343fd6640becd8827b6a378cbbe32a00841639f122a6cd65da8",
+        "stream_hashes": {
+          "candidates": "03cdf36effa949736fbe8ab8aa21deea9e0039602c2200e5f7b582ecbe34764e",
+          "results": "8e635b8954a0165efb232c8ab9a2e1726c504a0b64f869a81120d0a29ca8c9f0",
+          "witnesses": "89350fc3f21c1d57f1599f5d21ad12ebb85bdaddc086b9090b1297e1b77f0a0c"
+        },
+        "verification_receipt_sha256": "36b5a5587acc7b1f4444ebcba660c6e1ea7d6cc4f347ab5fd864f153c0e218ca"
+      },
+      {
+        "base_miss_count": 0,
+        "base_witness_count": 8704,
+        "candidate_count": 8704,
+        "d_interval_inclusive": [
+          1500001,
+          1600000
+        ],
+        "exact_witness_count": 8704,
+        "identity_rows_checked": 8704,
+        "maximum_first_denominator_offset": 3273,
+        "maximum_offset_n": 19035769,
+        "misses": [],
+        "offset_histogram": {
+          "0-8": 4084,
+          "1025-2048": 22,
+          "129-256": 330,
+          "17-32": 1249,
+          "2049-4096": 9,
+          "257-512": 153,
+          "33-64": 777,
+          "513-1024": 65,
+          "65-128": 493,
+          "9-16": 1522
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8455,
+          "offset_257_4096": 249,
+          "offset_4097_65536": 0
+        },
+        "package": "n1-mod12-range-1500001-1600000-v4",
+        "run_manifest_sha256": "24d49497bb7783760eefc62de9e8e7d287e0afb040e99a33344e9b3ab1f4b32f",
+        "stream_hashes": {
+          "candidates": "9aef479741adcf27f687897941632fb6689a80dfd41c19de406eaa9cc7223e37",
+          "results": "c33f20a34e0268846d20768b8d931ff9235443cfc107368c1b8dbc1d4103ae14",
+          "witnesses": "b5db664e331ce7dae67d72a9221ca8e1e1cf6da4379ff81713915c6adcc94fb5"
+        },
+        "verification_receipt_sha256": "267f2d749b9e91f4719ac7908d4236b44c9791ff4da6c87fe65c5b809ba14da4"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8684,
+        "candidate_count": 8687,
+        "d_interval_inclusive": [
+          1600001,
+          1700000
+        ],
+        "exact_witness_count": 8687,
+        "identity_rows_checked": 8687,
+        "maximum_first_denominator_offset": 5558,
+        "maximum_offset_n": 19775809,
+        "misses": [
+          19775809,
+          19893169,
+          20251081
+        ],
+        "offset_histogram": {
+          "0-8": 4106,
+          "1025-2048": 22,
+          "129-256": 304,
+          "17-32": 1216,
+          "2049-4096": 8,
+          "257-512": 141,
+          "33-64": 833,
+          "4097-8192": 3,
+          "513-1024": 53,
+          "65-128": 538,
+          "9-16": 1463
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8460,
+          "offset_257_4096": 224,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-1600001-1700000-v4",
+        "run_manifest_sha256": "4b14138e2a29fb75729c16bc54bbafafb5c4eeb4999cae018229c8f332227f90",
+        "stream_hashes": {
+          "candidates": "420e744558e5f4b44f40783b6048bee21b4fd2dc285d1baffd21ee3ca489b78b",
+          "results": "fb9dbc0c0d328bf0e3c4541b0c4599045dc031b2f1419e651e478349f31f4e5e",
+          "witnesses": "7b24c78376e8de60f423d945ba3675c7655852f5bdcc1394209c7b7de1697997"
+        },
+        "verification_receipt_sha256": "a86475a95ba4431ddea9638798976cdecadd446cc72471a1b1d6fbe73e5f6e7f"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8613,
+        "candidate_count": 8617,
+        "d_interval_inclusive": [
+          1700001,
+          1800000
+        ],
+        "exact_witness_count": 8617,
+        "identity_rows_checked": 8617,
+        "maximum_first_denominator_offset": 13815,
+        "maximum_offset_n": 20802721,
+        "misses": [
+          20421361,
+          20802721,
+          20857489,
+          21299041
+        ],
+        "offset_histogram": {
+          "0-8": 4072,
+          "1025-2048": 24,
+          "129-256": 325,
+          "17-32": 1295,
+          "2049-4096": 12,
+          "257-512": 127,
+          "33-64": 789,
+          "4097-8192": 3,
+          "513-1024": 53,
+          "65-128": 497,
+          "8193-16384": 1,
+          "9-16": 1419
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8397,
+          "offset_257_4096": 216,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-1700001-1800000-v4",
+        "run_manifest_sha256": "1e4d488cab5474db4910ef5362be16ee1439896ddea717ffb7843425692ceeb9",
+        "stream_hashes": {
+          "candidates": "7beeee3e64d4f7d16805ad58f3d09a309aeb58cfff120b6807d4e03ce6d4bdef",
+          "results": "8ae5ab64f593d9f861d19a75c4d0770c182fdd597b76f9fa69d54cfae4270c6a",
+          "witnesses": "d632adfba80b8831e99b728f1498f9883360dad71be58d38c25e4391ffcde968"
+        },
+        "verification_receipt_sha256": "29c11997abc9cfda34d91c2e67a20af5cc3528d01ccd837d0bb76369d9bf97c3"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8631,
+        "candidate_count": 8634,
+        "d_interval_inclusive": [
+          1800001,
+          1900000
+        ],
+        "exact_witness_count": 8634,
+        "identity_rows_checked": 8634,
+        "maximum_first_denominator_offset": 17463,
+        "maximum_offset_n": 21687649,
+        "misses": [
+          21687649,
+          22363441,
+          22648081
+        ],
+        "offset_histogram": {
+          "0-8": 4101,
+          "1025-2048": 29,
+          "129-256": 280,
+          "16385-32768": 1,
+          "17-32": 1238,
+          "2049-4096": 8,
+          "257-512": 154,
+          "33-64": 781,
+          "4097-8192": 1,
+          "513-1024": 56,
+          "65-128": 512,
+          "8193-16384": 1,
+          "9-16": 1472
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8384,
+          "offset_257_4096": 247,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-1800001-1900000-v4",
+        "run_manifest_sha256": "24bb890e42bf0806568d4478ddc43b561be3994ab83b08476fcb656918199922",
+        "stream_hashes": {
+          "candidates": "1bb72257f6a1f129c55357e563eff1de630f18c5b01cf87a58a7f114a455e765",
+          "results": "c43ac8d332b8eec15d0ccdea5eb405b823b630c79ddcfba014747628cc0824a4",
+          "witnesses": "248db1cf3554eb41cfd3f7aa7f6f7b387cd7ea958aa2e4e07907d22a7d26f0c1"
+        },
+        "verification_receipt_sha256": "8e0ee6d95bf7867ce276ca7610a58b7d9eddfb8b461fff3cff2ff0477fb7d79f"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8559,
+        "candidate_count": 8562,
+        "d_interval_inclusive": [
+          1900001,
+          2000000
+        ],
+        "exact_witness_count": 8562,
+        "identity_rows_checked": 8562,
+        "maximum_first_denominator_offset": 8637,
+        "maximum_offset_n": 22877089,
+        "misses": [
+          22877089,
+          23626201,
+          23672329
+        ],
+        "offset_histogram": {
+          "0-8": 3983,
+          "1025-2048": 14,
+          "129-256": 308,
+          "17-32": 1250,
+          "2049-4096": 7,
+          "257-512": 132,
+          "33-64": 800,
+          "4097-8192": 2,
+          "513-1024": 50,
+          "65-128": 521,
+          "8193-16384": 1,
+          "9-16": 1494
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8356,
+          "offset_257_4096": 203,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-1900001-2000000-v4",
+        "run_manifest_sha256": "af1a8673b8af9d17a27d76422f7bb1c361c41934c613885ec7c565b9de742b0e",
+        "stream_hashes": {
+          "candidates": "87baa7848c14b4f29131d7f8e9a40147769afe35b88f3d160e9c21de3e1cea7e",
+          "results": "e0c077b77be8098d91a9b5abade4d7dc65a0195579e56357d8a9c3145a355118",
+          "witnesses": "f08b0706ab1ccd15f5b46a07b8d1712d231c6edf37a3ec150f586c9e85668c53"
+        },
+        "verification_receipt_sha256": "8f54b4be12d7d0586942c367a047be8a4555372300c9ff7e04fad7c9c3c6f6b3"
+      },
+      {
+        "base_miss_count": 1,
+        "base_witness_count": 8554,
+        "candidate_count": 8555,
+        "d_interval_inclusive": [
+          2000001,
+          2100000
+        ],
+        "exact_witness_count": 8555,
+        "identity_rows_checked": 8555,
+        "maximum_first_denominator_offset": 5417,
+        "maximum_offset_n": 24990001,
+        "misses": [
+          24990001
+        ],
+        "offset_histogram": {
+          "0-8": 4001,
+          "1025-2048": 13,
+          "129-256": 291,
+          "17-32": 1278,
+          "2049-4096": 19,
+          "257-512": 152,
+          "33-64": 764,
+          "4097-8192": 1,
+          "513-1024": 57,
+          "65-128": 507,
+          "9-16": 1472
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8313,
+          "offset_257_4096": 241,
+          "offset_4097_65536": 1
+        },
+        "package": "n1-mod12-range-2000001-2100000-v5",
+        "run_manifest_sha256": "147640bb0be92760d2e0dc59e329c970ac4eb61f2dc246ff8f25be42fb2bb3b8",
+        "stream_hashes": {
+          "candidates": "ee69f35beb92a423f0f308d8f553396b1c548744c2bc70da6ff4b5593c5301ae",
+          "results": "876a6fe9b255a0b40f73c9a1a83be1b4c7a8cb4c24c6192fae9a08f795ecf192",
+          "witnesses": "4b65baa09632c74e84668bf726e3f43b01846984774c77ab5f593e1460c0b650"
+        },
+        "verification_receipt_sha256": "d3e922a02ac4d6d661ac5125d375bc9f85fa739698d82212a3a1d4abfc297610"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8542,
+        "candidate_count": 8546,
+        "d_interval_inclusive": [
+          2100001,
+          2200000
+        ],
+        "exact_witness_count": 8546,
+        "identity_rows_checked": 8546,
+        "maximum_first_denominator_offset": 11517,
+        "maximum_offset_n": 26204161,
+        "misses": [
+          25230529,
+          26001889,
+          26044489,
+          26204161
+        ],
+        "offset_histogram": {
+          "0-8": 3987,
+          "1025-2048": 20,
+          "129-256": 312,
+          "17-32": 1254,
+          "2049-4096": 13,
+          "257-512": 120,
+          "33-64": 774,
+          "4097-8192": 2,
+          "513-1024": 68,
+          "65-128": 519,
+          "8193-16384": 2,
+          "9-16": 1475
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8321,
+          "offset_257_4096": 221,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-2100001-2200000-v6",
+        "run_manifest_sha256": "016695c5a05335b388644a74e2fdf2b8f142da5534db2111c558940cb87ab289",
+        "stream_hashes": {
+          "candidates": "84d7dec01b85488afa5b655c497499ce81179e30f3c99cb6b48512d6edcae1d2",
+          "results": "85c6797de31198ad143f3eb13460f3b96d6bc074ef9d15aea15f29781d4be227",
+          "witnesses": "c7846392da634d868495a5545a1cff1ac737dd1b1d5ea581b3baf1f064bce526"
+        },
+        "verification_receipt_sha256": "8c444c41390008f4a1aeae0fa6a9ab59ef8433d60cef4002a8d3dfbd05f55182"
+      },
+      {
+        "base_miss_count": 7,
+        "base_witness_count": 8527,
+        "candidate_count": 8534,
+        "d_interval_inclusive": [
+          2200001,
+          2300000
+        ],
+        "exact_witness_count": 8534,
+        "identity_rows_checked": 8534,
+        "maximum_first_denominator_offset": 5091,
+        "maximum_offset_n": 26697889,
+        "misses": [
+          26564521,
+          26697889,
+          26704129,
+          27122449,
+          27133681,
+          27384289,
+          27474001
+        ],
+        "offset_histogram": {
+          "0-8": 4010,
+          "1025-2048": 28,
+          "129-256": 325,
+          "17-32": 1195,
+          "2049-4096": 10,
+          "257-512": 146,
+          "33-64": 792,
+          "4097-8192": 7,
+          "513-1024": 48,
+          "65-128": 495,
+          "9-16": 1478
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8295,
+          "offset_257_4096": 232,
+          "offset_4097_65536": 7
+        },
+        "package": "n1-mod12-range-2200001-2300000-v7",
+        "run_manifest_sha256": "743adab2e1e634b66556577f0a1928b14f6c1cbe7e643777faf4234ece4498e2",
+        "stream_hashes": {
+          "candidates": "fc9e0c342ff07325e2fae2837023a6d89820823b442f3de4c4788ba3b78080af",
+          "results": "0e94dd61c1cbee03bb330cd5a0d9556272a1b09dc764c70f6a251c75f3e41081",
+          "witnesses": "9dfcee2e2a35195d5beb19325797ebf79743daa83d8c936740a84ac7fb0b7477"
+        },
+        "verification_receipt_sha256": "abb6ce6004d0d687e15ed4728dc7b8749cf860daeed5d8c2dbb0912d53fd618d"
+      },
+      {
+        "base_miss_count": 0,
+        "base_witness_count": 8441,
+        "candidate_count": 8441,
+        "d_interval_inclusive": [
+          2300001,
+          2400000
+        ],
+        "exact_witness_count": 8441,
+        "identity_rows_checked": 8441,
+        "maximum_first_denominator_offset": 3812,
+        "maximum_offset_n": 27627889,
+        "misses": [],
+        "offset_histogram": {
+          "0-8": 3974,
+          "1025-2048": 19,
+          "129-256": 282,
+          "17-32": 1226,
+          "2049-4096": 8,
+          "257-512": 147,
+          "33-64": 814,
+          "513-1024": 63,
+          "65-128": 488,
+          "9-16": 1420
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8204,
+          "offset_257_4096": 237,
+          "offset_4097_65536": 0
+        },
+        "package": "n1-mod12-range-2300001-2400000-v7",
+        "run_manifest_sha256": "973e9449884c427666592ebb9a4358a2a09a29a8ddb9c7f9c224e30945066521",
+        "stream_hashes": {
+          "candidates": "1cc2a28c254b1ce0fe0cf1ffa7b925b6e6016600535c0961a3f955d87cb2b99a",
+          "results": "9335bcfe3e78642b5c0662f9d23b93e784e6862f3e937abb6575be0cdf9516d4",
+          "witnesses": "df9e051437825fa28c32a2e99dab47f647185c30a452b623854e207d90e8ce15"
+        },
+        "verification_receipt_sha256": "977935247869ecae85a79804a0ee4e265ab91b13e667ce51b95dfb879b5370bc"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 8518,
+        "candidate_count": 8520,
+        "d_interval_inclusive": [
+          2400001,
+          2500000
+        ],
+        "exact_witness_count": 8520,
+        "identity_rows_checked": 8520,
+        "maximum_first_denominator_offset": 6788,
+        "maximum_offset_n": 29495761,
+        "misses": [
+          29220409,
+          29495761
+        ],
+        "offset_histogram": {
+          "0-8": 4050,
+          "1025-2048": 21,
+          "129-256": 298,
+          "17-32": 1213,
+          "2049-4096": 13,
+          "257-512": 137,
+          "33-64": 757,
+          "4097-8192": 2,
+          "513-1024": 67,
+          "65-128": 495,
+          "9-16": 1467
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8280,
+          "offset_257_4096": 238,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-2400001-2500000-v7",
+        "run_manifest_sha256": "6b538e27a943e9290aa85f7c91dcb63e01342efd7731418fe3d77790bd63cc18",
+        "stream_hashes": {
+          "candidates": "b91dd0be0446677806fba514baf21182179a052bcbe3b8ea5b80ce146288782d",
+          "results": "7bb4d5c793ae88e30706eee5ff70f6899c1a9b8ee27d9b63edc830eec0ea7d0a",
+          "witnesses": "312b6fec995772e9bc3c0ddd96fb07d17b5899ba192bcfbbe510190e42a6b3ed"
+        },
+        "verification_receipt_sha256": "2502afc0f773f00424446cdf04ad264769401f5261efb34ae546ed50d6adef8c"
+      },
+      {
+        "base_miss_count": 9,
+        "base_witness_count": 8423,
+        "candidate_count": 8432,
+        "d_interval_inclusive": [
+          2500001,
+          2600000
+        ],
+        "exact_witness_count": 8432,
+        "identity_rows_checked": 8432,
+        "maximum_first_denominator_offset": 12327,
+        "maximum_offset_n": 30019441,
+        "misses": [
+          30019441,
+          30087121,
+          30283009,
+          30481441,
+          30547729,
+          30569449,
+          30946969,
+          31013761,
+          31147561
+        ],
+        "offset_histogram": {
+          "0-8": 3957,
+          "1025-2048": 16,
+          "129-256": 291,
+          "17-32": 1195,
+          "2049-4096": 7,
+          "257-512": 145,
+          "33-64": 799,
+          "4097-8192": 6,
+          "513-1024": 51,
+          "65-128": 511,
+          "8193-16384": 3,
+          "9-16": 1451
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8204,
+          "offset_257_4096": 219,
+          "offset_4097_65536": 9
+        },
+        "package": "n1-mod12-range-2500001-2600000-v7",
+        "run_manifest_sha256": "40f14001e0dad402b50a40051d48227c4569154547e2cb245057ad16e7a19347",
+        "stream_hashes": {
+          "candidates": "24ea91018b5957c5acdb0b770ae2c1a5d32760dc08b1bff01d0974ae08376af8",
+          "results": "ab7f40e4d897da5585d5b4f29d37accb376b1b4d79eb37855866e564a44f04fa",
+          "witnesses": "33e628203ae01a4227c6f829b322eec65c463a9d59df2da62b96e6815dee087b"
+        },
+        "verification_receipt_sha256": "65b175cc3bc44ab701632151a29d0f4318f2fbc7e5054eea54855c655a0e3a1d"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 8450,
+        "candidate_count": 8452,
+        "d_interval_inclusive": [
+          2600001,
+          2700000
+        ],
+        "exact_witness_count": 8452,
+        "identity_rows_checked": 8452,
+        "maximum_first_denominator_offset": 4533,
+        "maximum_offset_n": 31618129,
+        "misses": [
+          31618129,
+          32364721
+        ],
+        "offset_histogram": {
+          "0-8": 4015,
+          "1025-2048": 17,
+          "129-256": 288,
+          "17-32": 1256,
+          "2049-4096": 16,
+          "257-512": 149,
+          "33-64": 801,
+          "4097-8192": 2,
+          "513-1024": 52,
+          "65-128": 476,
+          "9-16": 1380
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8216,
+          "offset_257_4096": 234,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-2600001-2700000-v7",
+        "run_manifest_sha256": "bcc7f85bee23904d583dbc0f07dd4f20d22a3f4b5c8da068b86ce950cd42cc45",
+        "stream_hashes": {
+          "candidates": "4a360b1aecdcc2cc47d392d51688f2a43044e3eea87beb0d7de57be12735ebf0",
+          "results": "90abbf569615393c525db64923c7e8ce2de9f18170ad6eeaf542ba7b01b663ff",
+          "witnesses": "8086972383408384e2f6ba77a6319553b4f3243bcdf900ea69777cc2c73dba5e"
+        },
+        "verification_receipt_sha256": "fc77dba7558c6bed169cf6c7aa8df82d037eb9d086f0ef1c6ac5ed68650c22fd"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8459,
+        "candidate_count": 8462,
+        "d_interval_inclusive": [
+          2700001,
+          2800000
+        ],
+        "exact_witness_count": 8462,
+        "identity_rows_checked": 8462,
+        "maximum_first_denominator_offset": 7238,
+        "maximum_offset_n": 33535681,
+        "misses": [
+          32982049,
+          33396841,
+          33535681
+        ],
+        "offset_histogram": {
+          "0-8": 3971,
+          "1025-2048": 19,
+          "129-256": 300,
+          "17-32": 1228,
+          "2049-4096": 13,
+          "257-512": 143,
+          "33-64": 786,
+          "4097-8192": 3,
+          "513-1024": 69,
+          "65-128": 464,
+          "9-16": 1466
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8215,
+          "offset_257_4096": 244,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-2700001-2800000-v7",
+        "run_manifest_sha256": "c9ea93dd98d71aacfdccc552a82075745fed2e97d0f1ef4d66729e61b31be61c",
+        "stream_hashes": {
+          "candidates": "12f9772a0256f832f6adb01a8e0eabc9293f9fd94e991c64d970ebee99ee09d4",
+          "results": "e1022d8c087cbd74ad524a2c4fbb8a52930938fb78eb043d78bda8f4a8e59b22",
+          "witnesses": "ade7a5c5bb9a5a4717b23464f97832b792dd5167bc697584df1c204355bc1196"
+        },
+        "verification_receipt_sha256": "ab708bad5fd3eaee53d048d64a63459e22e916fde6290498fb0faee4fafc20cc"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8366,
+        "candidate_count": 8371,
+        "d_interval_inclusive": [
+          2800001,
+          2900000
+        ],
+        "exact_witness_count": 8371,
+        "identity_rows_checked": 8371,
+        "maximum_first_denominator_offset": 22053,
+        "maximum_offset_n": 34586161,
+        "misses": [
+          33884041,
+          34098241,
+          34234201,
+          34555369,
+          34586161
+        ],
+        "offset_histogram": {
+          "0-8": 3954,
+          "1025-2048": 20,
+          "129-256": 300,
+          "16385-32768": 1,
+          "17-32": 1201,
+          "2049-4096": 10,
+          "257-512": 156,
+          "33-64": 775,
+          "4097-8192": 4,
+          "513-1024": 53,
+          "65-128": 500,
+          "9-16": 1397
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8127,
+          "offset_257_4096": 239,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-2800001-2900000-v7",
+        "run_manifest_sha256": "00c96b87b78cf739f89b795dc5f68dc7639657e7d76d28e548a12be43295ab33",
+        "stream_hashes": {
+          "candidates": "b62d00fab57b9ed1682d6b74e5a746ba149f4913151506c377c3a57ab2d87f1f",
+          "results": "a85a9dcba5c537050e92a213a29da3a03369d15981f377098eefa52cf1f1d452",
+          "witnesses": "48796f90c75e1ca8007776bdb7370a226abe2dbda2848bf63469f76258016f07"
+        },
+        "verification_receipt_sha256": "cf17a3e5e3346883d65d5fc959d1ebfd38b6a312419b950847b94b86a9ed9272"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8370,
+        "candidate_count": 8373,
+        "d_interval_inclusive": [
+          2900001,
+          3000000
+        ],
+        "exact_witness_count": 8373,
+        "identity_rows_checked": 8373,
+        "maximum_first_denominator_offset": 6308,
+        "maximum_offset_n": 35962369,
+        "misses": [
+          34973569,
+          35081929,
+          35962369
+        ],
+        "offset_histogram": {
+          "0-8": 3919,
+          "1025-2048": 18,
+          "129-256": 273,
+          "17-32": 1213,
+          "2049-4096": 3,
+          "257-512": 134,
+          "33-64": 770,
+          "4097-8192": 3,
+          "513-1024": 50,
+          "65-128": 513,
+          "9-16": 1477
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8165,
+          "offset_257_4096": 205,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-2900001-3000000-v7",
+        "run_manifest_sha256": "270c16bca9823109f5c4ee3fc38c1de81cfbbf1e02434b3948c111f40e3533dc",
+        "stream_hashes": {
+          "candidates": "494b7146b418f1a2b4e8b07856a9340226f6b8101a90b7bba2f0ca060f449b39",
+          "results": "40aae8ec49bcaff9f86efefe0a0bef399eebf586f47fcb094a6503cc01e96f59",
+          "witnesses": "9fe442016e3dbd0b9315d2af82e8c3d2d5524fc91f650277318a0eedb5420479"
+        },
+        "verification_receipt_sha256": "731e25857c23ed65516b5ff2d5622da21292d535626e9165a48e739a128a6951"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8438,
+        "candidate_count": 8443,
+        "d_interval_inclusive": [
+          3000001,
+          3100000
+        ],
+        "exact_witness_count": 8443,
+        "identity_rows_checked": 8443,
+        "maximum_first_denominator_offset": 7431,
+        "maximum_offset_n": 36881329,
+        "misses": [
+          36084049,
+          36101641,
+          36517849,
+          36881329,
+          36954241
+        ],
+        "offset_histogram": {
+          "0-8": 3986,
+          "1025-2048": 21,
+          "129-256": 286,
+          "17-32": 1208,
+          "2049-4096": 9,
+          "257-512": 159,
+          "33-64": 780,
+          "4097-8192": 5,
+          "513-1024": 55,
+          "65-128": 491,
+          "9-16": 1443
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8194,
+          "offset_257_4096": 244,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-3000001-3100000-v8",
+        "run_manifest_sha256": "cc8c9a57ca3f60ef866b5e7db8457f67658e9d7fe80127aec483cc853116a0dc",
+        "stream_hashes": {
+          "candidates": "7eb73b1b6b767b4e42ad16d41003e19a68dece008296c087c63d203b3337d5ca",
+          "results": "384930c1b4bbb2217f353e0b71a32b23656d51da5d7f5680d705c836f25a7e11",
+          "witnesses": "40182cab513bbb7d60514a1f0c30afa8677cc128f117f192cea9232ef4c10019"
+        },
+        "verification_receipt_sha256": "0f9de97a554fdd806618e2e988c6ac39eec8a1eada6e61489aed4e62c2130772"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 8324,
+        "candidate_count": 8326,
+        "d_interval_inclusive": [
+          3100001,
+          3200000
+        ],
+        "exact_witness_count": 8326,
+        "identity_rows_checked": 8326,
+        "maximum_first_denominator_offset": 4623,
+        "maximum_offset_n": 37982569,
+        "misses": [
+          37613689,
+          37982569
+        ],
+        "offset_histogram": {
+          "0-8": 3873,
+          "1025-2048": 18,
+          "129-256": 304,
+          "17-32": 1195,
+          "2049-4096": 10,
+          "257-512": 149,
+          "33-64": 798,
+          "4097-8192": 2,
+          "513-1024": 44,
+          "65-128": 514,
+          "9-16": 1419
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8103,
+          "offset_257_4096": 221,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-3100001-3200000-v8",
+        "run_manifest_sha256": "50b93b68cb3515e84322fb47628e2548e77d1f390bf338977039b279ec16d2eb",
+        "stream_hashes": {
+          "candidates": "7a3a878ac43b13f8860df6cb404a9e911bd0984042b03ea2e7a966efdf7598b1",
+          "results": "b716f964e2ca189911f540de2a2230a3ccefb33be979cf5bd6a96be37e52ec07",
+          "witnesses": "9436f884bc6025dd6f23605759d642b2015772d1c112e2f14740a887af8ba16b"
+        },
+        "verification_receipt_sha256": "d3bb0c09b88474be83a1b209d3c9a881da3c6ffda1fdadde9120c52db9c8f0cf"
+      },
+      {
+        "base_miss_count": 9,
+        "base_witness_count": 8291,
+        "candidate_count": 8300,
+        "d_interval_inclusive": [
+          3200001,
+          3300000
+        ],
+        "exact_witness_count": 8300,
+        "identity_rows_checked": 8300,
+        "maximum_first_denominator_offset": 17096,
+        "maximum_offset_n": 38651089,
+        "misses": [
+          38427601,
+          38576521,
+          38623729,
+          38651089,
+          38800441,
+          38991649,
+          38995009,
+          39025009,
+          39400729
+        ],
+        "offset_histogram": {
+          "0-8": 3975,
+          "1025-2048": 19,
+          "129-256": 281,
+          "16385-32768": 1,
+          "17-32": 1174,
+          "2049-4096": 4,
+          "257-512": 148,
+          "33-64": 737,
+          "4097-8192": 7,
+          "513-1024": 61,
+          "65-128": 493,
+          "8193-16384": 1,
+          "9-16": 1399
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8059,
+          "offset_257_4096": 232,
+          "offset_4097_65536": 9
+        },
+        "package": "n1-mod12-range-3200001-3300000-v8",
+        "run_manifest_sha256": "ec38c5fbf42ee590591053cbfbbec43e4ba2d9f3cf048e3fb0c407c101957558",
+        "stream_hashes": {
+          "candidates": "ce0efc971750338548d8eabf0d92222d8ce6a0a91f547c0ddfaf97b5bb216fd1",
+          "results": "9779804bcf8f106b0839b5eec249e09d4bd2cba7a1257f96557721d06d4c299b",
+          "witnesses": "aade8ff2a2797ca1278f842b04ba61350a4ba52c0bbfba9881273c171b8a75c9"
+        },
+        "verification_receipt_sha256": "633b6d982b0ac0a1b4823c9f328bececdaefdf6d3a3a24d52276f44967b79040"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8360,
+        "candidate_count": 8366,
+        "d_interval_inclusive": [
+          3300001,
+          3400000
+        ],
+        "exact_witness_count": 8366,
+        "identity_rows_checked": 8366,
+        "maximum_first_denominator_offset": 6076,
+        "maximum_offset_n": 40157569,
+        "misses": [
+          39702601,
+          40157569,
+          40233649,
+          40462321,
+          40615129,
+          40691641
+        ],
+        "offset_histogram": {
+          "0-8": 3916,
+          "1025-2048": 23,
+          "129-256": 302,
+          "17-32": 1176,
+          "2049-4096": 5,
+          "257-512": 137,
+          "33-64": 783,
+          "4097-8192": 6,
+          "513-1024": 67,
+          "65-128": 516,
+          "9-16": 1435
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8128,
+          "offset_257_4096": 232,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-3300001-3400000-v8",
+        "run_manifest_sha256": "12043c9c7a634cd4c63ce9e1ad367192e45524c66bcdab42186cb84e355a7139",
+        "stream_hashes": {
+          "candidates": "7324650b216fcaf44ad58b3a928d15d7f9959323eaeca42516c25869247e6d07",
+          "results": "3d95bf1a6be50eb9b23d464765a9df2ce855c8524cf19c0e56e97f9f4e38ef24",
+          "witnesses": "59d4a55b4f05d20183377ccc36844e87e270cb8085287dd4ab1656d6c536a2da"
+        },
+        "verification_receipt_sha256": "7e4a297ddbcaced550fe2669d397d30754942076f58d03d3a1f382bef56d2477"
+      },
+      {
+        "base_miss_count": 9,
+        "base_witness_count": 8320,
+        "candidate_count": 8329,
+        "d_interval_inclusive": [
+          3400001,
+          3500000
+        ],
+        "exact_witness_count": 8329,
+        "identity_rows_checked": 8329,
+        "maximum_first_denominator_offset": 9891,
+        "maximum_offset_n": 41257129,
+        "misses": [
+          40921609,
+          41229241,
+          41257129,
+          41306329,
+          41384401,
+          41615401,
+          41681641,
+          41847961,
+          41987401
+        ],
+        "offset_histogram": {
+          "0-8": 3910,
+          "1025-2048": 24,
+          "129-256": 295,
+          "17-32": 1242,
+          "2049-4096": 6,
+          "257-512": 139,
+          "33-64": 758,
+          "4097-8192": 8,
+          "513-1024": 57,
+          "65-128": 475,
+          "8193-16384": 1,
+          "9-16": 1414
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8094,
+          "offset_257_4096": 226,
+          "offset_4097_65536": 9
+        },
+        "package": "n1-mod12-range-3400001-3500000-v8",
+        "run_manifest_sha256": "5f3c2b7b2dc1512bdbaba3b597f882c14e26e68ed81d3a6a641be9af2799a4ab",
+        "stream_hashes": {
+          "candidates": "914e78ab40bf285857bd2d2a215ff633f6c00cc083336631dfa122eeb1fa925a",
+          "results": "7796c779444eccf0c699afd8a684f385503ac74a9730dc8acef693a7eb848918",
+          "witnesses": "9c8146b99e9751c5614427b90c08620766c9000289e18005c5ac8ed3f4d6ba82"
+        },
+        "verification_receipt_sha256": "9017e27b9381f383abf469ddf78f7efc33c6314a430c5b77cd621811a05835cd"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8296,
+        "candidate_count": 8301,
+        "d_interval_inclusive": [
+          3500001,
+          3600000
+        ],
+        "exact_witness_count": 8301,
+        "identity_rows_checked": 8301,
+        "maximum_first_denominator_offset": 11467,
+        "maximum_offset_n": 42941809,
+        "misses": [
+          42244129,
+          42250849,
+          42627841,
+          42941809,
+          43178041
+        ],
+        "offset_histogram": {
+          "0-8": 3878,
+          "1025-2048": 24,
+          "129-256": 286,
+          "17-32": 1186,
+          "2049-4096": 8,
+          "257-512": 138,
+          "33-64": 786,
+          "4097-8192": 3,
+          "513-1024": 41,
+          "65-128": 531,
+          "8193-16384": 2,
+          "9-16": 1418
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8085,
+          "offset_257_4096": 211,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-3500001-3600000-v8",
+        "run_manifest_sha256": "ee94e46d742971b4ea7c0d0fa7fa3c0457385ff977998db75de71a917ee9b8e5",
+        "stream_hashes": {
+          "candidates": "e50f5d867bef0621275498748bfbc19d80a24894546e23368c18c4d543f5cc69",
+          "results": "05f053a661eef4c50cd4239bdbc28162a7254ae505b2a18fd4214a4a5cfd7b8e",
+          "witnesses": "d7d098f017191f53524548b629ed027fc5fcb586b084b8f8e9ad035b5990ca35"
+        },
+        "verification_receipt_sha256": "c6854661c50e43a9d68e7804a7c729854801468a47edb3b247be3337f1e42907"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8295,
+        "candidate_count": 8300,
+        "d_interval_inclusive": [
+          3600001,
+          3700000
+        ],
+        "exact_witness_count": 8300,
+        "identity_rows_checked": 8300,
+        "maximum_first_denominator_offset": 18086,
+        "maximum_offset_n": 43256929,
+        "misses": [
+          43256929,
+          43652449,
+          43811161,
+          44049769,
+          44368921
+        ],
+        "offset_histogram": {
+          "0-8": 3883,
+          "1025-2048": 16,
+          "129-256": 293,
+          "16385-32768": 1,
+          "17-32": 1223,
+          "2049-4096": 4,
+          "257-512": 140,
+          "33-64": 768,
+          "4097-8192": 4,
+          "513-1024": 47,
+          "65-128": 475,
+          "9-16": 1446
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8088,
+          "offset_257_4096": 207,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-3600001-3700000-v8",
+        "run_manifest_sha256": "65cf3ac9734af83f80feaa7702f843cf65ddaf183dbfe9c3812f3ab9e7ed70a7",
+        "stream_hashes": {
+          "candidates": "c2ac679ec00f153e007c9113d2252187aa35609f719d6991ee38118a0722c595",
+          "results": "ee8bd6d0e1aac9ec2f97df2d32097877712f2488b26454b202f16d181f122736",
+          "witnesses": "72b7fdd39cb1abe89922616a7123da291ea28f95250d775460c68dc1c7831878"
+        },
+        "verification_receipt_sha256": "c1950beeb29e591301f9aa995f54b3b24ce353fea5cb30a7e2f56bb9c60590ca"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8311,
+        "candidate_count": 8316,
+        "d_interval_inclusive": [
+          3700001,
+          3800000
+        ],
+        "exact_witness_count": 8316,
+        "identity_rows_checked": 8316,
+        "maximum_first_denominator_offset": 11677,
+        "maximum_offset_n": 44528929,
+        "misses": [
+          44528929,
+          44609041,
+          44930209,
+          45010681,
+          45333289
+        ],
+        "offset_histogram": {
+          "0-8": 3894,
+          "1025-2048": 25,
+          "129-256": 326,
+          "17-32": 1200,
+          "2049-4096": 10,
+          "257-512": 136,
+          "33-64": 740,
+          "4097-8192": 4,
+          "513-1024": 46,
+          "65-128": 470,
+          "8193-16384": 1,
+          "9-16": 1464
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8094,
+          "offset_257_4096": 217,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-3700001-3800000-v8",
+        "run_manifest_sha256": "19a1b8f30adb931c58b86458a991804a8894191ce2c20c7d99a61205d47879fa",
+        "stream_hashes": {
+          "candidates": "ae4c348f605776aee8136c79ed53769ee39758c6c32712ca89d1fbb251e9e8f1",
+          "results": "2ba93210c0dd7eb956ce153a07ef6354740661a5af2aeb763489fee2913f5fa8",
+          "witnesses": "ad82c51a484db4e398099612213d4d1a583deb77bd35138e6d3a1823f1d4db4e"
+        },
+        "verification_receipt_sha256": "ffa3b1cbfb0a8787d54aa3d29d0cfbdfa0f5930e46f2036a73ebcba62cee4a49"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8265,
+        "candidate_count": 8270,
+        "d_interval_inclusive": [
+          3800001,
+          3900000
+        ],
+        "exact_witness_count": 8270,
+        "identity_rows_checked": 8270,
+        "maximum_first_denominator_offset": 13775,
+        "maximum_offset_n": 46553329,
+        "misses": [
+          45738169,
+          46374241,
+          46553329,
+          46635241,
+          46799281
+        ],
+        "offset_histogram": {
+          "0-8": 3899,
+          "1025-2048": 22,
+          "129-256": 298,
+          "17-32": 1196,
+          "2049-4096": 9,
+          "257-512": 133,
+          "33-64": 773,
+          "4097-8192": 4,
+          "513-1024": 52,
+          "65-128": 512,
+          "8193-16384": 1,
+          "9-16": 1371
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8049,
+          "offset_257_4096": 216,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-3800001-3900000-v8",
+        "run_manifest_sha256": "542d8331dd57d99339dc346b67905c009b127e65fd8d23134b74acde6a80bb6a",
+        "stream_hashes": {
+          "candidates": "4fa1eac87cdf3fa3ed3308d9403787d772e4372f644154d92bb82e684df687aa",
+          "results": "5cbdd6140174f66778e86d9c7fb52ee26e3244d505cb1932c54a9c24689884a7",
+          "witnesses": "44b88f650fe824c465e9a7ade98b06ba1e41ae2b3e02187983ee3f5dfaaf94ba"
+        },
+        "verification_receipt_sha256": "6c8d364bc12f7b796338e3bbe811a4afb4d96e38d93905f356abbb30f0affd93"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8299,
+        "candidate_count": 8302,
+        "d_interval_inclusive": [
+          3900001,
+          4000000
+        ],
+        "exact_witness_count": 8302,
+        "identity_rows_checked": 8302,
+        "maximum_first_denominator_offset": 5948,
+        "maximum_offset_n": 47210641,
+        "misses": [
+          47210641,
+          47497081,
+          47706649
+        ],
+        "offset_histogram": {
+          "0-8": 3911,
+          "1025-2048": 17,
+          "129-256": 254,
+          "17-32": 1205,
+          "2049-4096": 9,
+          "257-512": 149,
+          "33-64": 737,
+          "4097-8192": 3,
+          "513-1024": 55,
+          "65-128": 504,
+          "9-16": 1458
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8069,
+          "offset_257_4096": 230,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-3900001-4000000-v8",
+        "run_manifest_sha256": "c9a43242e767e92d057c0116e03d600c67dafa9c0d9a0188e23651ee83bca1be",
+        "stream_hashes": {
+          "candidates": "0ab96019aa02f18176a4ce17a57b4a75a9547cb4d2883b3fa689845cbb2f77d3",
+          "results": "2929dcdca552109dfd56b93fe31cc469873d68742ca7eb62b4279e37df4c9f01",
+          "witnesses": "40b5cbbeb95cb8a121ffe7e333cec81bd5513af2f4822eb0b73ffebc70ddcc4b"
+        },
+        "verification_receipt_sha256": "bc9de9fdbef1b552105b79c7673c4195660f8222cd27de8582a58e93024a7f27"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8219,
+        "candidate_count": 8225,
+        "d_interval_inclusive": [
+          4000001,
+          4100000
+        ],
+        "exact_witness_count": 8225,
+        "identity_rows_checked": 8225,
+        "maximum_first_denominator_offset": 8708,
+        "maximum_offset_n": 48539089,
+        "misses": [
+          48194449,
+          48288601,
+          48539089,
+          48874081,
+          48958009,
+          48989329
+        ],
+        "offset_histogram": {
+          "0-8": 3823,
+          "1025-2048": 18,
+          "129-256": 280,
+          "17-32": 1214,
+          "2049-4096": 10,
+          "257-512": 137,
+          "33-64": 767,
+          "4097-8192": 5,
+          "513-1024": 55,
+          "65-128": 500,
+          "8193-16384": 1,
+          "9-16": 1415
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7999,
+          "offset_257_4096": 220,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-4000001-4100000-v8",
+        "run_manifest_sha256": "cc70f080b40f6ccb4e2ec28c8e0c34ffd994af28bf9e978018a13fea44168fcc",
+        "stream_hashes": {
+          "candidates": "4202d70b69c768cc3962f4419ba215dd39383bf88df65fe4b4baa09f06a91fd8",
+          "results": "d19e716c77ce76f9450270f304cbc890ba4393fea7bdff5bb63ac269197b171f",
+          "witnesses": "04f3f99784124ea394aef47e8ad1a3c0c7a6c8bd8a491a75ed36a4ff7ed9a0b9"
+        },
+        "verification_receipt_sha256": "db860100cdbcc3a63b6bbcaa14db0b67b17c151a9b7288f13ebfbdea41ae5b23"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8275,
+        "candidate_count": 8279,
+        "d_interval_inclusive": [
+          4100001,
+          4200000
+        ],
+        "exact_witness_count": 8279,
+        "identity_rows_checked": 8279,
+        "maximum_first_denominator_offset": 5301,
+        "maximum_offset_n": 49970761,
+        "misses": [
+          49547521,
+          49632529,
+          49801249,
+          49970761
+        ],
+        "offset_histogram": {
+          "0-8": 3915,
+          "1025-2048": 30,
+          "129-256": 276,
+          "17-32": 1220,
+          "2049-4096": 3,
+          "257-512": 141,
+          "33-64": 735,
+          "4097-8192": 4,
+          "513-1024": 60,
+          "65-128": 489,
+          "9-16": 1406
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8041,
+          "offset_257_4096": 234,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-4100001-4200000-v8",
+        "run_manifest_sha256": "5c72a9cb0dc0c8fda84febe1596b631641c22ca4117f5384d64a462326db4118",
+        "stream_hashes": {
+          "candidates": "cdb92d55e29948f4373bb28710db81adfc675ab17139e46c3829e4398021cca0",
+          "results": "8ebf5dcfd2944a721d5a6584d0dfc7651f3ba901325ad0c76421c65157b4cfac",
+          "witnesses": "f61ca7dc40615a324a3dc3a99019b5ab595e8678c7dc4301387043baddf3d8bf"
+        },
+        "verification_receipt_sha256": "44a5c30c6b39c34099d44d85107dfc078115b829c5875f38f6224195078da21c"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8237,
+        "candidate_count": 8243,
+        "d_interval_inclusive": [
+          4200001,
+          4300000
+        ],
+        "exact_witness_count": 8243,
+        "identity_rows_checked": 8243,
+        "maximum_first_denominator_offset": 6431,
+        "maximum_offset_n": 51509329,
+        "misses": [
+          50822641,
+          50838841,
+          50916121,
+          50943649,
+          51251281,
+          51509329
+        ],
+        "offset_histogram": {
+          "0-8": 3914,
+          "1025-2048": 19,
+          "129-256": 267,
+          "17-32": 1168,
+          "2049-4096": 6,
+          "257-512": 158,
+          "33-64": 797,
+          "4097-8192": 6,
+          "513-1024": 55,
+          "65-128": 485,
+          "9-16": 1368
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7999,
+          "offset_257_4096": 238,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-4200001-4300000-v8",
+        "run_manifest_sha256": "4a85fe9584de8f38656a53a35d963e113e464679b1105cc1b63b45cbb8412d61",
+        "stream_hashes": {
+          "candidates": "a75f3deed3c16edc4f899f80d694423f5e4a1ab083e0b8b30fc31791ff066446",
+          "results": "7301612afe3a8a15c17f9b368a499fbf65ac8285683f528561f8074b076628fd",
+          "witnesses": "2db392fdedc26949a09d6dfd92f01bea42482d1470fec7a9b8be9d4725bf29bd"
+        },
+        "verification_receipt_sha256": "ce4013a288dfc5902c9254235da12e45b66fb444ecc979a8809f91615209fe1f"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8203,
+        "candidate_count": 8206,
+        "d_interval_inclusive": [
+          4300001,
+          4400000
+        ],
+        "exact_witness_count": 8206,
+        "identity_rows_checked": 8206,
+        "maximum_first_denominator_offset": 5433,
+        "maximum_offset_n": 52461049,
+        "misses": [
+          51940849,
+          52113961,
+          52461049
+        ],
+        "offset_histogram": {
+          "0-8": 3859,
+          "1025-2048": 28,
+          "129-256": 276,
+          "17-32": 1211,
+          "2049-4096": 6,
+          "257-512": 120,
+          "33-64": 730,
+          "4097-8192": 3,
+          "513-1024": 70,
+          "65-128": 473,
+          "9-16": 1430
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7979,
+          "offset_257_4096": 224,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-4300001-4400000-v8",
+        "run_manifest_sha256": "c773ee32635060359abe64f405d28c9b335ece25d199e0af86b78dbee911510d",
+        "stream_hashes": {
+          "candidates": "ffb6ce4201cb7f73c2e20e2acc28699791f016843b5e1ff9eea49e7e8788bfe4",
+          "results": "5df968e537e06182e98c5f183f42e959686c64c706219ee58f7a73dfa7e491d2",
+          "witnesses": "0c9d09287095ee32c0e91a793247c92ed430d8e3cbcca260d55d78c07c1ab9b1"
+        },
+        "verification_receipt_sha256": "91b582def9dad349aed123b34737b38b60ce7dc80d352aa080e6f785d8406915"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8167,
+        "candidate_count": 8171,
+        "d_interval_inclusive": [
+          4400001,
+          4500000
+        ],
+        "exact_witness_count": 8171,
+        "identity_rows_checked": 8171,
+        "maximum_first_denominator_offset": 5499,
+        "maximum_offset_n": 53772889,
+        "misses": [
+          53246209,
+          53421481,
+          53597041,
+          53772889
+        ],
+        "offset_histogram": {
+          "0-8": 3874,
+          "1025-2048": 13,
+          "129-256": 283,
+          "17-32": 1125,
+          "2049-4096": 10,
+          "257-512": 131,
+          "33-64": 726,
+          "4097-8192": 4,
+          "513-1024": 74,
+          "65-128": 538,
+          "9-16": 1393
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7939,
+          "offset_257_4096": 228,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-4400001-4500000-v8",
+        "run_manifest_sha256": "15202167099a7bb358213c64cb3cd5be088524a74f363e3bb2f1ab8ea5411f54",
+        "stream_hashes": {
+          "candidates": "2f9ff5c5d5d90f88a4c5da7b30eef1fe82911d3c0ca33c91a69ead06f5a3e8c1",
+          "results": "d1d4450e80162bd06a9c3bc4baf2b8d971b0d66163b40b0b9924636717d321ad",
+          "witnesses": "dca3a8fa03215c533a5cf19ebab85f51803e7e0bb069178f3dedf51152497080"
+        },
+        "verification_receipt_sha256": "5ab4df2761728f3d8e8a64fdbcdbae2255ff936e5d3a9ba5bac05a898ffb7ad6"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8229,
+        "candidate_count": 8235,
+        "d_interval_inclusive": [
+          4500001,
+          4600000
+        ],
+        "exact_witness_count": 8235,
+        "identity_rows_checked": 8235,
+        "maximum_first_denominator_offset": 24111,
+        "maximum_offset_n": 55011889,
+        "misses": [
+          54037201,
+          54300481,
+          54302161,
+          54656449,
+          54922921,
+          55011889
+        ],
+        "offset_histogram": {
+          "0-8": 3943,
+          "1025-2048": 19,
+          "129-256": 272,
+          "16385-32768": 1,
+          "17-32": 1161,
+          "2049-4096": 3,
+          "257-512": 139,
+          "33-64": 776,
+          "4097-8192": 3,
+          "513-1024": 58,
+          "65-128": 489,
+          "8193-16384": 2,
+          "9-16": 1369
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 8010,
+          "offset_257_4096": 219,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-4500001-4600000-v8",
+        "run_manifest_sha256": "d4a017c7fe4c5812f28dfeeea5f4a9bd3eef6715d6d6a81c541fb8c1ac34647f",
+        "stream_hashes": {
+          "candidates": "a67ba6eb01a546acdcf0f59bb5f4df648dc30718157f4638042749b0ded112c6",
+          "results": "f77b02f185fd267ad637783daf9c4b74a7e5f40b119bef9bab71ca74659e1839",
+          "witnesses": "1d1032a196aaf4d89cdacc78bf53f819ba46b8620ababf889f8c3ed1dbb707c7"
+        },
+        "verification_receipt_sha256": "6337274a2ff8e561a303e612856d6597bbcff3289e2b8eb7e0440c313405b080"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8197,
+        "candidate_count": 8201,
+        "d_interval_inclusive": [
+          4600001,
+          4700000
+        ],
+        "exact_witness_count": 8201,
+        "identity_rows_checked": 8201,
+        "maximum_first_denominator_offset": 5631,
+        "maximum_offset_n": 56355049,
+        "misses": [
+          55292329,
+          55636681,
+          55905529,
+          56355049
+        ],
+        "offset_histogram": {
+          "0-8": 3870,
+          "1025-2048": 21,
+          "129-256": 297,
+          "17-32": 1178,
+          "2049-4096": 7,
+          "257-512": 133,
+          "33-64": 732,
+          "4097-8192": 4,
+          "513-1024": 67,
+          "65-128": 493,
+          "9-16": 1399
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7969,
+          "offset_257_4096": 228,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-4600001-4700000-v8",
+        "run_manifest_sha256": "4c9a80dd2089ff383c77615acd8be02c7a1cac7d7b5facabd99c2d2220509c3e",
+        "stream_hashes": {
+          "candidates": "be64d2340e11db254901017a3701b844499894199e8c0a954028078689e6fe58",
+          "results": "19eb5d01b3c684262cb613b5dd175a017c7581a80ba523137a997db6559da348",
+          "witnesses": "9aeb732db42bc0c88da357184d04a3860bacf1cb773cd6cc1fb82fc84b7576b0"
+        },
+        "verification_receipt_sha256": "6564d454ed0c473a5733d3ac08aff164eaa1a666e8dd69e204f62f479d98b4b2"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8179,
+        "candidate_count": 8182,
+        "d_interval_inclusive": [
+          4700001,
+          4800000
+        ],
+        "exact_witness_count": 8182,
+        "identity_rows_checked": 8182,
+        "maximum_first_denominator_offset": 5661,
+        "maximum_offset_n": 56987401,
+        "misses": [
+          56987401,
+          57350329,
+          57574729
+        ],
+        "offset_histogram": {
+          "0-8": 3853,
+          "1025-2048": 17,
+          "129-256": 306,
+          "17-32": 1138,
+          "2049-4096": 6,
+          "257-512": 141,
+          "33-64": 740,
+          "4097-8192": 3,
+          "513-1024": 56,
+          "65-128": 502,
+          "9-16": 1420
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7959,
+          "offset_257_4096": 220,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-4700001-4800000-v8",
+        "run_manifest_sha256": "2f4c0646c4d757488fb1912b62d71aad4b837ea60f9603ed9c6044ec3d191a26",
+        "stream_hashes": {
+          "candidates": "29c88f4bf3f49b1fc6ce0a6ce026e704e278e463edc26e1e54ccc2eb809d84a6",
+          "results": "c8c11a86100fc83243d4ecfb253b738e6e16bea3a8ca8ea7f5cd8800f549f577",
+          "witnesses": "77659c2a3d196028c89bb31c8b9dd2a31f7df1fa9b56e182ba6ebc9cfe35ae91"
+        },
+        "verification_receipt_sha256": "bf2c861ea66d0c197cd4c9a9d0d88b11a3cd7c551d153aa7773b2927e8c533d7"
+      },
+      {
+        "base_miss_count": 8,
+        "base_witness_count": 8140,
+        "candidate_count": 8148,
+        "d_interval_inclusive": [
+          4800001,
+          4900000
+        ],
+        "exact_witness_count": 8148,
+        "identity_rows_checked": 8148,
+        "maximum_first_denominator_offset": 9488,
+        "maximum_offset_n": 57623281,
+        "misses": [
+          57623281,
+          57805609,
+          57847969,
+          58079641,
+          58275361,
+          58354321,
+          58521241,
+          58778329
+        ],
+        "offset_histogram": {
+          "0-8": 3825,
+          "1025-2048": 11,
+          "129-256": 272,
+          "17-32": 1166,
+          "2049-4096": 5,
+          "257-512": 132,
+          "33-64": 789,
+          "4097-8192": 5,
+          "513-1024": 54,
+          "65-128": 510,
+          "8193-16384": 3,
+          "9-16": 1376
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7938,
+          "offset_257_4096": 202,
+          "offset_4097_65536": 8
+        },
+        "package": "n1-mod12-range-4800001-4900000-v8",
+        "run_manifest_sha256": "58d5cf777dfdb390fe0ac2c50b05f38bee546c914abe56b8497fce214fb3c9ff",
+        "stream_hashes": {
+          "candidates": "fc08cfb992fe7e1c32e29c06801c0765208eee91435f65a1494c137c1d4bbb57",
+          "results": "4b932541b5f41c538d5fefaaba83c3f6b958632f25a02a83c5d655c235054fac",
+          "witnesses": "26000466ab06e75b1093cf1f6fa6e797a2bb38259e76c4ada705c33bc6a395c9"
+        },
+        "verification_receipt_sha256": "9137a5042c9e5b4506028ba12b63b0022be8941efb3d98a4d93b1c349c3dcdd3"
+      },
+      {
+        "base_miss_count": 7,
+        "base_witness_count": 8080,
+        "candidate_count": 8087,
+        "d_interval_inclusive": [
+          4900001,
+          5000000
+        ],
+        "exact_witness_count": 8087,
+        "identity_rows_checked": 8087,
+        "maximum_first_denominator_offset": 5805,
+        "maximum_offset_n": 59923081,
+        "misses": [
+          58813561,
+          58997761,
+          59089969,
+          59274601,
+          59552089,
+          59644729,
+          59923081
+        ],
+        "offset_histogram": {
+          "0-8": 3798,
+          "1025-2048": 23,
+          "129-256": 271,
+          "17-32": 1162,
+          "2049-4096": 5,
+          "257-512": 121,
+          "33-64": 680,
+          "4097-8192": 7,
+          "513-1024": 57,
+          "65-128": 517,
+          "9-16": 1446
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7874,
+          "offset_257_4096": 206,
+          "offset_4097_65536": 7
+        },
+        "package": "n1-mod12-range-4900001-5000000-v8",
+        "run_manifest_sha256": "a45bac0593364b78089a058358d2ded2f34b2c59fbf1e0630f569c2afb4b575a",
+        "stream_hashes": {
+          "candidates": "60a24982b05b90323774c84f60543b9f3bd34df7e40a145d55e22cca9d8711c2",
+          "results": "77c9b594c6e4b081beb06b794e92b0229429bb48e362c614ea2e511ddf822cd2",
+          "witnesses": "665dcc90f4e52360b25218a1b3aba1287cb90378cb9b7b378369927f6b5183ee"
+        },
+        "verification_receipt_sha256": "5d7f822dfb3c759943f66e5ec99e4abf4fa16594e2279ddc237adc2f1ff1ba01"
+      }
+    ],
+    "ranges": 50
+  },
+  "classification": "FINITE_FACTOR_CONDITIONED_WITNESS_DATA_ONLY",
+  "full_erdos_straus_conjecture_solved": false,
+  "miss_analysis": {
+    "baseline": {
+      "count": 193,
+      "n_factor_shape": {
+        "composite": 1,
+        "prime": 60,
+        "prime_power": 132
+      },
+      "n_max": 59923081,
+      "n_median": 38576521,
+      "n_min": 193,
+      "n_mod24": {
+        "1": 193
+      },
+      "n_mod72": {
+        "1": 66,
+        "25": 58,
+        "49": 69
+      },
+      "offset_max": 35498,
+      "offset_median": 5370,
+      "offset_min": 1,
+      "q_factor_count_with_multiplicity": {
+        "1": 41,
+        "2": 82,
+        "3": 52,
+        "4": 15,
+        "5": 3
+      },
+      "q_mod24": {
+        "1": 55,
+        "13": 65,
+        "19": 39,
+        "7": 34
+      }
+    },
+    "combined": {
+      "count": 427,
+      "n_factor_shape": {
+        "composite": 4,
+        "prime": 131,
+        "prime_power": 292
+      },
+      "n_max": 119678329,
+      "n_median": 64236649,
+      "n_min": 193,
+      "n_mod24": {
+        "1": 427
+      },
+      "n_mod72": {
+        "1": 150,
+        "25": 137,
+        "49": 140
+      },
+      "offset_max": 35498,
+      "offset_median": 6045,
+      "offset_min": 1,
+      "q_factor_count_with_multiplicity": {
+        "1": 90,
+        "2": 168,
+        "3": 129,
+        "4": 33,
+        "5": 6,
+        "6": 1
+      },
+      "q_mod24": {
+        "1": 115,
+        "13": 122,
+        "19": 94,
+        "7": 96
+      }
+    },
+    "v9": {
+      "count": 234,
+      "n_factor_shape": {
+        "composite": 3,
+        "prime": 71,
+        "prime_power": 160
+      },
+      "n_max": 119678329,
+      "n_median": 87235609,
+      "n_min": 60026761,
+      "n_mod24": {
+        "1": 234
+      },
+      "n_mod72": {
+        "1": 84,
+        "25": 79,
+        "49": 71
+      },
+      "offset_max": 30063,
+      "offset_median": 6600,
+      "offset_min": 4130,
+      "q_factor_count_with_multiplicity": {
+        "1": 49,
+        "2": 86,
+        "3": 77,
+        "4": 18,
+        "5": 3,
+        "6": 1
+      },
+      "q_mod24": {
+        "1": 60,
+        "13": 57,
+        "19": 55,
+        "7": 62
+      }
+    }
+  },
+  "novelty_claim": false,
+  "progress_sha256": "bca32e409d5cc00588a3e8cba1f5e2ebec8a8bddf7326189567b33560163a2c3",
+  "schema": "mathcase-erdos-straus-campaign-v9-aggregate-audit-v1",
+  "scope": {
+    "baseline_d": [
+      1,
+      5000000
+    ],
+    "extension_offset_cap": 65536,
+    "gpu_used": false,
+    "model_calls": 0,
+    "provider_calls": 0,
+    "ranges": 100,
+    "search_api_calls": 0,
+    "v9_d": [
+      5000001,
+      10000000
+    ],
+    "width": 100000
+  },
+  "status": "PASS_AGGREGATE_HASH_BINDING_ROW_AND_IDENTITY_AUDIT",
+  "v9": {
+    "base_misses": 234,
+    "base_witnesses": 399093,
+    "candidates": 399327,
+    "exact_witnesses": 399327,
+    "extension_receipts": [
+      {
+        "extension_items_sha256": "a6ca5bd0d77e2b4b5cca7a042f8af18df5801a9192d0f61426b1097e43dc9336",
+        "extension_receipt_sha256": "a7e3d8005a5cd488a408e9bb321c4f0fb918497cb121b456cbb0cbcfee7e6536",
+        "extension_replay_sha256": "fdf42f588d95ea48770d9a2928ab0e953ad43f911d4a3bd581b89fe7967c4ae7",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-5000001-5100000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "41620cbc07afe9b84aa436bee8812cf8a15724ed089df74f136b06e815b61496",
+        "extension_receipt_sha256": "568646985091afdd70f89d6303157ee57cf176593a4689b89cfc3871613aacb9",
+        "extension_replay_sha256": "8ceb00f8f1c271d7a63ca60f57f3e3d498b554f222be0af027f447a8b801d0b9",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-5100001-5200000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "4c02936afdbc4b02e30fb48a36ee2b5a65cc86a3d40f6173e683f76b31ad6e34",
+        "extension_receipt_sha256": "b9502ce97e0aa51aad3a48c8247334abd798ca985a069f1ed610b8daf0c5f915",
+        "extension_replay_sha256": "7f366cc9ecbf6975d549c76fc0c5b9e69d6a7e2d8559c21c20007ea528c051d9",
+        "extension_witnesses": 8,
+        "package": "n1-mod12-range-5200001-5300000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "6d79feef44aacdef1239894dea811469ceef74c560e5f74a955f76282651508d",
+        "extension_receipt_sha256": "c097adf2ebd960e607e32555b02e3d97d9764b8146a04b39172d3fac5d2e35e2",
+        "extension_replay_sha256": "3b66b5c6f4b7f6282c5ef22e9b8b4affce91fb6dc35c49c8a0645a68d3848421",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-5300001-5400000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "a0c1ade229e51c5b5989e8d9e73c1ed7ff2b90fc1bd8af031dc27479cf9562f8",
+        "extension_receipt_sha256": "4ec74c28a27ca770efda1400073c4f817f8dea5b1f5eb12bfe62a933545ceb61",
+        "extension_replay_sha256": "a6a5885bcadaaa67e91b1834fba43c9833e5b87652fadbd5d8988a19729a69da",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-5400001-5500000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "26e4438608155f934d1460f10697311d18dec811da8d3f852b37edaac230dd42",
+        "extension_receipt_sha256": "7f9171ac2345df753b09c5e3711ce74e21fc6a90be8a67d937fe3869dffc3979",
+        "extension_replay_sha256": "1b38dffb3f739711426a8bd52c105b01be6476d5f6e885c9af7e7e11b87938e1",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-5500001-5600000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "c57831a9ad7cab6b6c20b75395de83142f87b7e6139040e6ad644c76dc2133db",
+        "extension_receipt_sha256": "9a05acd367c0bbdd6d9807506a4043e5ff08698daf96bd5af509ceddc9d9c44a",
+        "extension_replay_sha256": "3b5f873f7b14cb2de94abe4c35bba3285cd109960fb677ccd73676f688cade70",
+        "extension_witnesses": 7,
+        "package": "n1-mod12-range-5600001-5700000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "5f20dad3475e8d1367c8231822c22dae78626884c31f7ed70a00bb008ac48b8e",
+        "extension_receipt_sha256": "1d191e29f12c83ae6fd09fda1eaa7d5aae9a2dbcd9442a9949dfac34e4bc758e",
+        "extension_replay_sha256": "d505011a4b9c90ceedac9ebcdf71f9e5e4b87ccf82c0ba5348114cce8aa53b66",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-5700001-5800000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "73a092bb1c57b7a4a60a18a877eb7d519d5cf86feeaea55a0273ccc1bbf76f1b",
+        "extension_receipt_sha256": "ccb3efe09e0acee7b3c7ee461d48384d51e87f4471d2410042764f077bff9c32",
+        "extension_replay_sha256": "2cbab924a7e84bbf6927d9220e3bc2d00937cc6c100ebc5d95d70d571ae0ea66",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-5800001-5900000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "6670c888604309dc65c29123b782f7e48c4438eaa880af0395a696480d239220",
+        "extension_receipt_sha256": "055b431ef9b5011c3af8ce09e46e20375e3e22bb3bb159816caee4f0698df532",
+        "extension_replay_sha256": "d0e0a71944a44104c344b5ce9196af473572c8f094ff304ac3113d303f3f790a",
+        "extension_witnesses": 7,
+        "package": "n1-mod12-range-5900001-6000000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "767da2683979febdf36dfae37da531e296e789269f73e79e4405dcab55f6e6cc",
+        "extension_receipt_sha256": "46a30ea7a07cc64a2de366213d5448ccbd297d928d5e5113e19d2803a6391a4b",
+        "extension_replay_sha256": "506f80f201ee1357881eb0beb88579254d6a85ded9034dc307545b928cbf6a89",
+        "extension_witnesses": 2,
+        "package": "n1-mod12-range-6000001-6100000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "71f8f5fd13d7d830cd453d24050bba064d05daf0d0e42461e041f667a465b269",
+        "extension_receipt_sha256": "6be509015dab4bfecbb98ee0c204fe30c497b29a4306ed07e1af5933fa15bca1",
+        "extension_replay_sha256": "f7f5bec9451b3c4c550034db34888acd832ac17a1421580bf5e473cded52e2c7",
+        "extension_witnesses": 3,
+        "package": "n1-mod12-range-6100001-6200000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "92df31cf7ef8e153feed7aef8df0804822068234e12f7c9deb587c09b706878c",
+        "extension_receipt_sha256": "eb7c97a5b73b27a656ff3a80da0b7ba18a26c45a8dcf4f3a5852897da8394123",
+        "extension_replay_sha256": "466ae36c7666d0c91222905350bf4ba44a9f2b71e40efff05c62e608a774222f",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-6200001-6300000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "4092c904fb20c78999744964f799d3515c1d1ef146d98a8d30356627584c9c03",
+        "extension_receipt_sha256": "cf6accc141ef21986351391ce05f26c0e2874ff53f30e34132b9a3f98e128c17",
+        "extension_replay_sha256": "e75ad905f96ad372feaf9a6ca4a6a66ef40b6869b967e74fd105c05dd0c3de1d",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-6300001-6400000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "1bc080f6c20aa0eec7720cbd000d7a3092f61921acd1296f529666cec51389da",
+        "extension_receipt_sha256": "23d797617758aac112aea554dc779ff6025663b0a2b8f95bcd1ed6abdcfdd21b",
+        "extension_replay_sha256": "e3dadf24c0e874b7b56d870871afbee607e0cde289d58c37af4253faa8db7642",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-6400001-6500000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "2adb99079c7f38d49963b835051d00b1805c1358f0c6fe006560bd481d09baa3",
+        "extension_receipt_sha256": "e50547e764c58eb5dad2766ad7049b4db6820134ff9c4e9b07449ba73a21f5c5",
+        "extension_replay_sha256": "237808a5c59f9d65f07afb216a5747d07f5b866c021ee363e760d9a3aa5a906e",
+        "extension_witnesses": 8,
+        "package": "n1-mod12-range-6500001-6600000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "7aad9c3966ea7844518d6101b7a2271c111090e4e34dcaa6dee1753a743574d0",
+        "extension_receipt_sha256": "1166c2c2f1867673a96fd0851198571608efa3a86e3f2b264bfa2ff4b71d8428",
+        "extension_replay_sha256": "ecc0d5d7226fef5d386caaeb02466626d7784df821f40a625579d5b09e9ee1df",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-6600001-6700000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "e390a773b729c1b8ebdd286bd44ea02e18d7e77bc5a36404a94cf969465856bb",
+        "extension_receipt_sha256": "085c9cf29804f3f6d3633c07790c02d4608aa5e0130dde27aaa7b0b11c3b00a7",
+        "extension_replay_sha256": "8abbc002016560490701f3e51812ebaed232543ce77203ce1871219246eccdc6",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-6700001-6800000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "9fca4892c5da52225cce9622eed5e8380e5ecedcad8d4fb0132aa893b41c3e73",
+        "extension_receipt_sha256": "ea7d3235321c9dca31a69fd5a6ea3506cf7ebe1c2ddd3556c4d7f639dba6c58e",
+        "extension_replay_sha256": "0b8ba832ce1b51bfb2e5e715a87cdd3ac6e264a27148252bae4f60e03a3a43a0",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-6800001-6900000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "dba4de0983e50dc19474e9927ea9b38a0b9e131606de57a1b37e9dc77335e265",
+        "extension_receipt_sha256": "979f0a351397ceddc756c495485c8d7253917ba3e82e73b88f61f4bb67f3cb13",
+        "extension_replay_sha256": "db346e6617911db2306337865d889253b0a5d1259828e01b85812b4ef27aa922",
+        "extension_witnesses": 8,
+        "package": "n1-mod12-range-6900001-7000000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "6a06f8f8a80fab0397e2c96c82b2bbf1d1187ea3d84badf4b5147d6d61e54570",
+        "extension_receipt_sha256": "8d2ab41328f6777aa2c8ad8558d5ffc6ccdbe0233770bcf9db4e87865d3d2a8a",
+        "extension_replay_sha256": "85d27409973f22434b7e0ef03fb8874b74489694673022017545660116dc41a2",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-7000001-7100000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "c8d921acb19051eb5cdcae15d6c962796c2add69d655bcac259629cbad96954d",
+        "extension_receipt_sha256": "f0a580b1bab37dccbbbe1970a480a8d6564138f534889b2c92c14cab80dedbc9",
+        "extension_replay_sha256": "cb65fc1f39e731a54f3b146eb0fdb44c82433098132a1cd8702bf811f93fe2e5",
+        "extension_witnesses": 2,
+        "package": "n1-mod12-range-7100001-7200000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "4b6ea419c31b7ca447a3424e8d914c92bdf49dd493599e03a1616c2cb239be2b",
+        "extension_receipt_sha256": "92f5dedd1b6771c929dd08fd563e5dd5800ac2ef5e99b398385a4b51e51febf2",
+        "extension_replay_sha256": "072ef2ac6c81a5bc09efe78c45dea807d5dc7f92e5604c882e02ad9881599ec0",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-7200001-7300000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "49de66d2111e1aae947d10ff9d0a1df0cf7e23b14c1324492b57f3e70422728e",
+        "extension_receipt_sha256": "58dffc25e95312d592baf04298f26ea2d76b07669c37a4b5246fcf1d2ae0b593",
+        "extension_replay_sha256": "f5273c52e28ebc1af1ee9486d70f403b0774d8c7f91e0f447511704a96ada9ea",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-7300001-7400000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "58e7dd15032b5aaf20224f1342612776d0e7ddc217c72a5f9697d50b64e6e411",
+        "extension_receipt_sha256": "066ac784ae5f93a438cc01bfccb7add05257d5ba6fb7e3076dc22b4f6da099e8",
+        "extension_replay_sha256": "b9c4be796203ae8416eb02bbc051f3a0236a4de50bd92d01775f9751a625dd4d",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-7400001-7500000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "bbeb35de3a73527784dac9fa856b0291adf5a1fc02d2a04d42f044a245e9bb78",
+        "extension_receipt_sha256": "9e62318b3ef542e37778c9a8e1f6703b0cf7009a73976c94bb0ec48afd4d347e",
+        "extension_replay_sha256": "d6f39b12ac456e4c376ceda55a1c0db3e59a9d49f58e7818f82289eb8c0d755c",
+        "extension_witnesses": 3,
+        "package": "n1-mod12-range-7500001-7600000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "bd8c269b70abab3323a0a804c59a2adaa81fd532d36ac993963544de54ace905",
+        "extension_receipt_sha256": "b8576c8491665fbee43925d997bef1af5e6c8c3b0909913d293e8752d2eec961",
+        "extension_replay_sha256": "b61a4eadcea97344b6b18cc129c87e8514ad9b79a5682bec37751188a769dac4",
+        "extension_witnesses": 2,
+        "package": "n1-mod12-range-7600001-7700000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "a492db3121bceeb143b3bdd3af2900b956a62532d2b6f3ded1631df6d3dea686",
+        "extension_receipt_sha256": "982317ddbce795dac448b80c14b541de280e58f9dd7c1550cedc290cda7fa88c",
+        "extension_replay_sha256": "35097adb4853ae6f8d9edbb753967290b1124d6096d31bfef84dbbf59a663b95",
+        "extension_witnesses": 7,
+        "package": "n1-mod12-range-7700001-7800000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "995afaec5d0a6bf8dbdb9582eb858ae62ab598b7d301528f0f509f9c89c649c3",
+        "extension_receipt_sha256": "6958a814db726cfe68584a11045fecf89affa826914e29b07d7ff4ca3ff47762",
+        "extension_replay_sha256": "7ca8410cec0ca2f82d116dd6c3fafdffd76f86373f13d97893f070d58776fabf",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-7800001-7900000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "0cf233a2fc7f7c1a240d15096a1db40fc2b3d0b7907888ef5a0ceaeb0fc03b5a",
+        "extension_receipt_sha256": "d3306f84ec0b310b5d0bd4f2a5e344a7cf1a2192b33aa171fed4891b22bbe421",
+        "extension_replay_sha256": "f661cca919054bf075119a12a40f679488a398fcee77fde1d04d0661220a4bbe",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-7900001-8000000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "4749a5b0d6bf5e8781b9de485b49bbaadb884465e9ec3e625f77df174a5f57d7",
+        "extension_receipt_sha256": "0eb19fa35a1c2e0b3b6f8cb4f9fc942d02df6cf7e7cb27ca49d22d2491072a42",
+        "extension_replay_sha256": "99464edb2189c89e89a2d35089ab02dca93b879b166f0d54a5907953f57b5724",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-8000001-8100000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "34ce70e8761cb3ff63edf3eb5306245b0fbd6a0ad9b6432650d21308ff234168",
+        "extension_receipt_sha256": "314bb5f3794501939eff52af89ae102a97447d45a871a0ca020b90e531f8b2c0",
+        "extension_replay_sha256": "81c21a06b353809ecb5b8c2969f5ad88b6865f2d055a881c4c68addcadde8558",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-8100001-8200000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "e5d94ac2ec341d60642a3e8c5277e8c750c610896e501f43537fb12e1b867394",
+        "extension_receipt_sha256": "a56ed615e01a4f4ec70fe9b4544efd9d6017875e6b85b66b18e7a2858661a7c8",
+        "extension_replay_sha256": "9dbbef3854654ee775b0e1e9dbfe2ab5cfb51d766b69dd1c7bebace437282ed1",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-8200001-8300000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "a454e10bd142d7740a5d1a320dd1f62a4c472b07dbe9f25898a438291b15f65b",
+        "extension_receipt_sha256": "92ca67d5725ac3bad9e6ce68edbfb8e7f24cab1611fef6f2b65ebe39d9962b4b",
+        "extension_replay_sha256": "abb2077266d7531e05c0764a6fd6c8430c566a95966b115cbf8ca67a17bcc018",
+        "extension_witnesses": 3,
+        "package": "n1-mod12-range-8300001-8400000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "0c63b0b335436457681dacb65d6842daf5f284533d0598ab7924a4418c05c665",
+        "extension_receipt_sha256": "2b92052eb3cb5286f350333351a0540f2f976f23523f7396125c4f86acc93ef7",
+        "extension_replay_sha256": "704985da8a4231e9b68f8b6c517786ff2f9ac37f7f2849cf1927791210813aea",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-8400001-8500000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "8dedcdcf8703d08e82af5d9175fff59866db173daaee476e077b8a117242cea1",
+        "extension_receipt_sha256": "4d50c2da46c45ecf57a87ec857e05b0c064fcb52e5f968bb29c0e5855959a1ff",
+        "extension_replay_sha256": "875fd30dc4800010b2fe29185a78dade9f3a19708b239d83a38bbb7d00f9c9b3",
+        "extension_witnesses": 3,
+        "package": "n1-mod12-range-8500001-8600000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "13a21e5d304c05a01da1029db9d727887e9d7fbc69b3c52203a9f5bb4f114268",
+        "extension_receipt_sha256": "7ba53885ad1fc09788166c4f872e9234f52afb0bdfbd454c8a0753b181f9bd54",
+        "extension_replay_sha256": "8ed6cd1acd648bf5ec82eb9bddc3dbf298d0a5b7b56a3201a9cbe21be2869c1c",
+        "extension_witnesses": 2,
+        "package": "n1-mod12-range-8600001-8700000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "01ffe330436a708582a3643d0bfd2fc5eaf77e7c33fa0b4ab967c12a86b95f99",
+        "extension_receipt_sha256": "00b6f9864f8959d60969d8c325eb030903074b776c491d60e1a87ddf6c69e811",
+        "extension_replay_sha256": "8e5a1c437940fb46671daaa8e5489aa4f88ae1118ec9bb0093fd50df2353c3d1",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-8700001-8800000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "9be5b49924a9cbdd8f70b5628dc80b81a69cd17c0356b6af49780dad53d0f8bf",
+        "extension_receipt_sha256": "e00345ff5525201a801ace93ce919f713c234d355ae8da761dfc15e3e97b0be6",
+        "extension_replay_sha256": "4250d07a2c26e42b463c16e189d38f83767d5e58e6784d3eef789ae82a28a99e",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-8800001-8900000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "9858ded13a37ba08a369014fc859931abd688fffd20ae893ff28ad98ae4eab7b",
+        "extension_receipt_sha256": "095a47decf2970383d745ee9614c6fd0a13cd493b7136aef83f06fed495d6468",
+        "extension_replay_sha256": "177552cd45de67ef843425bc48a2729b46f38a9bc1af5c2fc2ae1eec1c353330",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-8900001-9000000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "a114a8a73d32f85ddfaa06054453adaedb0dd4c5e7f9d21c7ae9472fe22e9f02",
+        "extension_receipt_sha256": "4c551447880d13dbfe5ea82356754e753a70a6e3fbf66320129e1c03a1b8b480",
+        "extension_replay_sha256": "db3255757b59b2e531e55820e7b22480e8a47867d4b80cd408d44ad93b32adb1",
+        "extension_witnesses": 2,
+        "package": "n1-mod12-range-9000001-9100000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "b57928783e3e1af1b8beed1df1bd4ce666e68e2c33ec7ea3d68476b9e1c46ffc",
+        "extension_receipt_sha256": "63b69046d80d729993cfb91c7cc5d3f3f5bc0a0e9cfc2eb8f48de1cee866b0ea",
+        "extension_replay_sha256": "e4f5ed1edafb974dc6c2ccb676f0ec095c94a1c734e4df297feaa0da20060067",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-9100001-9200000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "a61f27b1e58763f7a19beef7853c4f71af0ba3e4f08ac5431d4f29467ac55944",
+        "extension_receipt_sha256": "3f09059d97cce5770f32466db83fddeccd3bb1a528b7de5d3187b26e89e4d673",
+        "extension_replay_sha256": "6f098b3915501c8efac22f9260b496e850c2df2ae4ba92bb563260f177e11e59",
+        "extension_witnesses": 3,
+        "package": "n1-mod12-range-9200001-9300000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "da9880e370d5a032c9fd6733c8ae6d8360630f61e1b90c503bc6422d2a84a4d1",
+        "extension_receipt_sha256": "ad9a99b9b3bd2ce3ad0b03ae1cd851a803b3bcc1e8efbde2d389903352244b77",
+        "extension_replay_sha256": "409baedb2c795bb7838ff3f049c90a3bef945592d728ba2ff5b1a4cf2406c01e",
+        "extension_witnesses": 2,
+        "package": "n1-mod12-range-9300001-9400000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "440767679520f609edf9fd108a299ce0dd69264037b355ef53c5cedac8870cb7",
+        "extension_receipt_sha256": "68191b1b4239b3b33d7b9658f446ceec67f749227f008824b302c4dbccf8187e",
+        "extension_replay_sha256": "0dee9fb3cf315bc716c1beb94fd8f2b6c13918a1774cf6e381306c80da534128",
+        "extension_witnesses": 6,
+        "package": "n1-mod12-range-9400001-9500000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "49c4535023413792b5f1f17e5368f640b97f1105c514989a1ecc06a8d78bb117",
+        "extension_receipt_sha256": "73b4ab928fa32e6c476f628bc5eb0ae9cebe63f6dbab26fb0ae9cfd7c5dec7e3",
+        "extension_replay_sha256": "8a504d213115328c8664a33003cfaa5343d5ced6278f26382f888989c7d3b1d2",
+        "extension_witnesses": 9,
+        "package": "n1-mod12-range-9500001-9600000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "ad773b70e7951369917f730be7059445d5b084bd8b1498ca93518e502931f772",
+        "extension_receipt_sha256": "7a619537f9e28382f2a93e367d91de0f7539b692de25f72fcd3462b232c12ef3",
+        "extension_replay_sha256": "ee7a728689b77bbc115607e9973d4fb3d3792ee6312ee076c4d528467892fb24",
+        "extension_witnesses": 3,
+        "package": "n1-mod12-range-9600001-9700000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "903517b5d15f5169e5060f1af02b4b662bfdd51e14acfd5bc5bdcf1e7cd85cb1",
+        "extension_receipt_sha256": "9a9ff7b082fd8ffa8ebcf493afba754b26dd45aca59e4518dc25a3222473fe53",
+        "extension_replay_sha256": "84078e58c136bdee14b4ff111d24acf8c1b25dfb2205f35f6c97263f22b96b17",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-9700001-9800000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "187205c301f23bb9b19081f5e12b7cd03d0e9a5fff013b051dfd9571a2032188",
+        "extension_receipt_sha256": "bfd1465d60d0024effefc13d8bf351c37134f2c63fdb238de83371f4dd5557ba",
+        "extension_replay_sha256": "533a47dae01f6cfca00888f3c3c2eab9621a5ecd8021dab0534a7b17044884e2",
+        "extension_witnesses": 4,
+        "package": "n1-mod12-range-9800001-9900000-v9",
+        "unresolved": 0
+      },
+      {
+        "extension_items_sha256": "3f424f81f060eb479ea8b8761e87dd5d79281f71f7c2a3ae1f620c4c02b3c8f4",
+        "extension_receipt_sha256": "02630bd068687c6e30579a6dbe67b78f9e6502dcd1c81955f12e4a57bc39b944",
+        "extension_replay_sha256": "b3923fa5d47f1b3e35b5ba7dc7b683a358ca6b3b75b85633b6d8a44941b21276",
+        "extension_witnesses": 5,
+        "package": "n1-mod12-range-9900001-10000000-v9",
+        "unresolved": 0
+      }
+    ],
+    "extension_witnesses": 234,
+    "identity_rows_checked": 399327,
+    "range_audits": [
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8178,
+        "candidate_count": 8182,
+        "d_interval_inclusive": [
+          5000001,
+          5100000
+        ],
+        "exact_witness_count": 8182,
+        "identity_rows_checked": 8182,
+        "maximum_first_denominator_offset": 18653,
+        "maximum_offset_n": 60026761,
+        "misses": [
+          60026761,
+          60109009,
+          60202081,
+          60668521
+        ],
+        "offset_histogram": {
+          "0-8": 3842,
+          "1025-2048": 17,
+          "129-256": 262,
+          "16385-32768": 1,
+          "17-32": 1183,
+          "2049-4096": 7,
+          "257-512": 137,
+          "33-64": 764,
+          "4097-8192": 2,
+          "513-1024": 59,
+          "65-128": 514,
+          "8193-16384": 1,
+          "9-16": 1393
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7958,
+          "offset_257_4096": 220,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-5000001-5100000-v9",
+        "run_manifest_sha256": "732e2ab8628b3278c5b37568b7d50a5172ea9a9afbd216d51a25af7ba6eab669",
+        "stream_hashes": {
+          "candidates": "744b8f188863cacc2cc5c794c33f7b87eba926900602f53f70817c034a5a34c8",
+          "results": "9d95c6b09c4bfd81b571e5877118437f9646a374e641caff4d76768154f71422",
+          "witnesses": "05397e5343460702df2badedf753ebc6673d747b9771cacdde8992c8f41d0296"
+        },
+        "verification_receipt_sha256": "32bda92e6e9caa59998fcaae1b72640f870bf6c6e921a306b8c1842377767b72"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8188,
+        "candidate_count": 8193,
+        "d_interval_inclusive": [
+          5100001,
+          5200000
+        ],
+        "exact_witness_count": 8193,
+        "identity_rows_checked": 8193,
+        "maximum_first_denominator_offset": 13777,
+        "maximum_offset_n": 61984129,
+        "misses": [
+          61627129,
+          61797121,
+          61889689,
+          61984129,
+          62078641
+        ],
+        "offset_histogram": {
+          "0-8": 3845,
+          "1025-2048": 15,
+          "129-256": 275,
+          "17-32": 1217,
+          "2049-4096": 1,
+          "257-512": 137,
+          "33-64": 769,
+          "4097-8192": 3,
+          "513-1024": 66,
+          "65-128": 468,
+          "8193-16384": 2,
+          "9-16": 1395
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7969,
+          "offset_257_4096": 219,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-5100001-5200000-v9",
+        "run_manifest_sha256": "b4e7541519de7114c51e58ca0d300b4ddcc5bf06b1abc1ee1019c15a310bc727",
+        "stream_hashes": {
+          "candidates": "702d187b54691404f049f1af7b7a3f44999b39b2bc83a2a5d2bcc38d26bc42d3",
+          "results": "1b29a47b9dd74550be15951579bc7f6c212dcc8e215edcd95ce9e6ca546348e1",
+          "witnesses": "48ae8ffbbd03a4f19914e18d8e1c485d2a991ed5a255c78da2519c1acd49a740"
+        },
+        "verification_receipt_sha256": "d41d58c60e450979c7ad97efc9fd4162d2d0f043632b68a77ac5eff755de38e9"
+      },
+      {
+        "base_miss_count": 8,
+        "base_witness_count": 8116,
+        "candidate_count": 8124,
+        "d_interval_inclusive": [
+          5200001,
+          5300000
+        ],
+        "exact_witness_count": 8124,
+        "identity_rows_checked": 8124,
+        "maximum_first_denominator_offset": 9908,
+        "maximum_offset_n": 62837329,
+        "misses": [
+          62593129,
+          62837329,
+          62893009,
+          62932489,
+          63218401,
+          63238081,
+          63409369,
+          63416929
+        ],
+        "offset_histogram": {
+          "0-8": 3823,
+          "1025-2048": 19,
+          "129-256": 256,
+          "17-32": 1211,
+          "2049-4096": 6,
+          "257-512": 131,
+          "33-64": 730,
+          "4097-8192": 6,
+          "513-1024": 51,
+          "65-128": 484,
+          "8193-16384": 2,
+          "9-16": 1405
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7909,
+          "offset_257_4096": 207,
+          "offset_4097_65536": 8
+        },
+        "package": "n1-mod12-range-5200001-5300000-v9",
+        "run_manifest_sha256": "63bd916edd0eb7b94308d7d78852728a7d79c67ec0770a8184668c590bb2b953",
+        "stream_hashes": {
+          "candidates": "b11167a11131d4dc18017a3d393702d1daffcf06a22400576369da7011e87d70",
+          "results": "6373e1025890172a51dcc751fe9ae467ea798f8799e63869c910386b4b0fcd3b",
+          "witnesses": "9248f772fc62cf8670cb0e134c939b6201b0fb0cfa63b1b1411e5ccbad7f76bd"
+        },
+        "verification_receipt_sha256": "101a491f3b21e491e884ebffdba445747dc8dacf5197b3d9fa910747ebf20890"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8058,
+        "candidate_count": 8063,
+        "d_interval_inclusive": [
+          5300001,
+          5400000
+        ],
+        "exact_witness_count": 8063,
+        "identity_rows_checked": 8063,
+        "maximum_first_denominator_offset": 30063,
+        "maximum_offset_n": 64272289,
+        "misses": [
+          63888049,
+          63989641,
+          64032049,
+          64236649,
+          64272289
+        ],
+        "offset_histogram": {
+          "0-8": 3813,
+          "1025-2048": 20,
+          "129-256": 258,
+          "16385-32768": 1,
+          "17-32": 1183,
+          "2049-4096": 6,
+          "257-512": 136,
+          "33-64": 755,
+          "4097-8192": 4,
+          "513-1024": 57,
+          "65-128": 465,
+          "9-16": 1365
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7839,
+          "offset_257_4096": 219,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-5300001-5400000-v9",
+        "run_manifest_sha256": "590e60df928c7c0539ffa7a18a67831e6042be25d8c333fd58b3ebf52fdc62eb",
+        "stream_hashes": {
+          "candidates": "0d1fd3d8c11f0ade8c2cf6b2f5b71cc815d77d0f259cc6a21d6ddb89217f21bf",
+          "results": "da26ed07421122b1c3ab58caa3ef526cd9a729e720f49bca6b85152cb856b561",
+          "witnesses": "ce1b94e7282c30ed91fa480c9511153ced97254e03af114ca568dbe0eff2a9a8"
+        },
+        "verification_receipt_sha256": "b18f8ddacd0d1177a4d562605e880b68660c735dcfd1b02070dde0e2e625452b"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8116,
+        "candidate_count": 8122,
+        "d_interval_inclusive": [
+          5400001,
+          5500000
+        ],
+        "exact_witness_count": 8122,
+        "identity_rows_checked": 8122,
+        "maximum_first_denominator_offset": 8194,
+        "maximum_offset_n": 65431921,
+        "misses": [
+          64818961,
+          64850809,
+          64947481,
+          65431921,
+          65535121,
+          65626201
+        ],
+        "offset_histogram": {
+          "0-8": 3811,
+          "1025-2048": 21,
+          "129-256": 279,
+          "17-32": 1184,
+          "2049-4096": 7,
+          "257-512": 130,
+          "33-64": 737,
+          "4097-8192": 5,
+          "513-1024": 57,
+          "65-128": 511,
+          "8193-16384": 1,
+          "9-16": 1379
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7901,
+          "offset_257_4096": 215,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-5400001-5500000-v9",
+        "run_manifest_sha256": "8b8b5363911f77abba5138f0276bea3bfa9111d01f84ccbdeb7ae21eea73e615",
+        "stream_hashes": {
+          "candidates": "1fe568d914099f03db0d18606edcfce238280e126c876c3765c9df60e3fb0fa9",
+          "results": "878102fd463953541386f8cdf3b6ed1ed923d16e578879428ee929c93dcf7d7c",
+          "witnesses": "40d9f707e99f0df69375231c3ffea88c8e3f68997ded40554e05a92dd4374817"
+        },
+        "verification_receipt_sha256": "817e188eafe7dbff7f7861fadece6a1be0f9359c6e49701cb89d905ea057f48b"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8115,
+        "candidate_count": 8119,
+        "d_interval_inclusive": [
+          5500001,
+          5600000
+        ],
+        "exact_witness_count": 8119,
+        "identity_rows_checked": 8119,
+        "maximum_first_denominator_offset": 6135,
+        "maximum_offset_n": 66896041,
+        "misses": [
+          66463849,
+          66601921,
+          66699889,
+          66896041
+        ],
+        "offset_histogram": {
+          "0-8": 3828,
+          "1025-2048": 14,
+          "129-256": 270,
+          "17-32": 1128,
+          "2049-4096": 4,
+          "257-512": 138,
+          "33-64": 739,
+          "4097-8192": 4,
+          "513-1024": 66,
+          "65-128": 499,
+          "9-16": 1429
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7893,
+          "offset_257_4096": 222,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-5500001-5600000-v9",
+        "run_manifest_sha256": "9f58f403925da7fd6ff2dd6bc8a5c2b354fd8a687d5a14d7333f9a1aaaa06d6d",
+        "stream_hashes": {
+          "candidates": "4a4d6f8356ef82cdc298417c99c434ee5005585569673e2245a02c14869d7107",
+          "results": "2a81e8c393eac3bf12287d6bcf55037cf5ee42c009011ccf3132602ff85e3055",
+          "witnesses": "ddcc04fc0268cea0d9adf0f88b968e92b4abafe56cbe76b893494fa801584aa6"
+        },
+        "verification_receipt_sha256": "7114ab777b71d11a9a855d99125312f3bbcbe7f5811cbee83c8097f5afebb524"
+      },
+      {
+        "base_miss_count": 7,
+        "base_witness_count": 8052,
+        "candidate_count": 8059,
+        "d_interval_inclusive": [
+          5600001,
+          5700000
+        ],
+        "exact_witness_count": 8059,
+        "identity_rows_checked": 8059,
+        "maximum_first_denominator_offset": 9292,
+        "maximum_offset_n": 67611769,
+        "misses": [
+          67310329,
+          67387681,
+          67611769,
+          67782289,
+          68152681,
+          68277169,
+          68376361
+        ],
+        "offset_histogram": {
+          "0-8": 3759,
+          "1025-2048": 20,
+          "129-256": 257,
+          "17-32": 1184,
+          "2049-4096": 12,
+          "257-512": 145,
+          "33-64": 765,
+          "4097-8192": 5,
+          "513-1024": 62,
+          "65-128": 459,
+          "8193-16384": 2,
+          "9-16": 1389
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7813,
+          "offset_257_4096": 239,
+          "offset_4097_65536": 7
+        },
+        "package": "n1-mod12-range-5600001-5700000-v9",
+        "run_manifest_sha256": "e65e32bc13e826a8a46965d93edd0e44c32704bf1fe003eabcf279ec00ea7133",
+        "stream_hashes": {
+          "candidates": "c4c606045d09126d0f237fb20216204cd7888263d76e89b57b14a35b3b4155d4",
+          "results": "2008abe21c5032002f9c06a2182ef0ae8d0e73dee53bd5cc9464766e1d194993",
+          "witnesses": "b5d6e86c972cb2ad793f5df155e00153fe4c9529b9f10f70568d2901c5b2bb37"
+        },
+        "verification_receipt_sha256": "1a316ffea60f33e22725c54ae64deac09112a525455541cf3b165cae96799204"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8114,
+        "candidate_count": 8119,
+        "d_interval_inclusive": [
+          5700001,
+          5800000
+        ],
+        "exact_witness_count": 8119,
+        "identity_rows_checked": 8119,
+        "maximum_first_denominator_offset": 10388,
+        "maximum_offset_n": 69072721,
+        "misses": [
+          68674369,
+          68773849,
+          69072721,
+          69172489,
+          69372241
+        ],
+        "offset_histogram": {
+          "0-8": 3851,
+          "1025-2048": 20,
+          "129-256": 272,
+          "17-32": 1178,
+          "2049-4096": 9,
+          "257-512": 116,
+          "33-64": 779,
+          "4097-8192": 4,
+          "513-1024": 54,
+          "65-128": 493,
+          "8193-16384": 1,
+          "9-16": 1342
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7915,
+          "offset_257_4096": 199,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-5700001-5800000-v9",
+        "run_manifest_sha256": "18ce1b4e473da9251cb95ee5c3fcf48b91b384eca2adc33bd4a9ddfc2e534c13",
+        "stream_hashes": {
+          "candidates": "fd140cef5ae54d75c174e46bb7d6014e9eac6e313571a16cbe18562929cca489",
+          "results": "c2502c4f328fc5a98fdbc2599bfb8470851d475d2e9d2575f0e8dd062fcdaced",
+          "witnesses": "42a1e10c9b553202edc8d41e373453f39ad292c4aff24bbc19f0be5896c3fe79"
+        },
+        "verification_receipt_sha256": "98f875437b63758227463b0f61c21acb330d776a3e28d38f3a4e5807a5b1cf9c"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8025,
+        "candidate_count": 8031,
+        "d_interval_inclusive": [
+          5800001,
+          5900000
+        ],
+        "exact_witness_count": 8031,
+        "identity_rows_checked": 8031,
+        "maximum_first_denominator_offset": 10369,
+        "maximum_offset_n": 69772609,
+        "misses": [
+          69772609,
+          69993361,
+          70038049,
+          70174129,
+          70245361,
+          70375321
+        ],
+        "offset_histogram": {
+          "0-8": 3756,
+          "1025-2048": 11,
+          "129-256": 283,
+          "17-32": 1164,
+          "2049-4096": 5,
+          "257-512": 134,
+          "33-64": 767,
+          "4097-8192": 5,
+          "513-1024": 56,
+          "65-128": 455,
+          "8193-16384": 1,
+          "9-16": 1394
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7819,
+          "offset_257_4096": 206,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-5800001-5900000-v9",
+        "run_manifest_sha256": "fc699b468ad55733bb1f46aa1965a753511f6b0b41a6d0ee3fe373e3e857b535",
+        "stream_hashes": {
+          "candidates": "d3dd7d2b035553f2a68bbf22ead921dadf2bc17d3d1442342ad4c3d933f5aba3",
+          "results": "10dd09404397360acd5a633e39683210fe04bff9c87a0f3597055567d4d92cdc",
+          "witnesses": "f0f85a893cafbe57863421096fe43a3b982067486cc3e3d40bfcb810055b623d"
+        },
+        "verification_receipt_sha256": "06c3532c8faa11d6f19b62a43341852bbc2d6e9cfd052034b79b5ccf350e11f3"
+      },
+      {
+        "base_miss_count": 7,
+        "base_witness_count": 8067,
+        "candidate_count": 8074,
+        "d_interval_inclusive": [
+          5900001,
+          6000000
+        ],
+        "exact_witness_count": 8074,
+        "identity_rows_checked": 8074,
+        "maximum_first_denominator_offset": 6977,
+        "maximum_offset_n": 70889641,
+        "misses": [
+          70879561,
+          70889641,
+          71081761,
+          71284249,
+          71588521,
+          71690089,
+          71842489
+        ],
+        "offset_histogram": {
+          "0-8": 3781,
+          "1025-2048": 27,
+          "129-256": 260,
+          "17-32": 1195,
+          "2049-4096": 4,
+          "257-512": 126,
+          "33-64": 747,
+          "4097-8192": 7,
+          "513-1024": 66,
+          "65-128": 476,
+          "9-16": 1385
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7844,
+          "offset_257_4096": 223,
+          "offset_4097_65536": 7
+        },
+        "package": "n1-mod12-range-5900001-6000000-v9",
+        "run_manifest_sha256": "d4ef2f957df624fcf4f48e286c3d42676283a9bc72b3f4367aeb8b9b125630e0",
+        "stream_hashes": {
+          "candidates": "a8366e6999c3293be2aad4d78b5a207d600b208e38693ef523c849d272c73e55",
+          "results": "c9d46cab31ba58e2c4e620a47b6bb75a72b2994467f727356b79e911a27087cc",
+          "witnesses": "36bb7637432955121eb51b9cbb530eec00a4360ae0a18a0e0b6d17307a3447f2"
+        },
+        "verification_receipt_sha256": "d39ff6a0e0f824918bce6411c730a2d0433a23591880250c3aa9d2844592a517"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 8055,
+        "candidate_count": 8057,
+        "d_interval_inclusive": [
+          6000001,
+          6100000
+        ],
+        "exact_witness_count": 8057,
+        "identity_rows_checked": 8057,
+        "maximum_first_denominator_offset": 25805,
+        "maximum_offset_n": 72607441,
+        "misses": [
+          72607441,
+          72914521
+        ],
+        "offset_histogram": {
+          "0-8": 3786,
+          "1025-2048": 21,
+          "129-256": 289,
+          "16385-32768": 1,
+          "17-32": 1194,
+          "2049-4096": 5,
+          "257-512": 140,
+          "33-64": 762,
+          "4097-8192": 1,
+          "513-1024": 51,
+          "65-128": 476,
+          "9-16": 1331
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7838,
+          "offset_257_4096": 217,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-6000001-6100000-v9",
+        "run_manifest_sha256": "9afe74376a7d251b5f7d38ac8b8b7ea4550258737930e2f641bfc9d50ff6644f",
+        "stream_hashes": {
+          "candidates": "d3adc770cfcd2a0d164efb8699ea2a99b89e881962a494f19bd30cc662a08a6b",
+          "results": "e65ed647f40ed029ba8b19574e0f96549f8942b10fc6b18bef3d2eb8ddf980d3",
+          "witnesses": "cc8b18b41d5aadb8577b61f56478e61387941bae4f340d0cdaa2d806f6ed3ed1"
+        },
+        "verification_receipt_sha256": "5e8b4b5c112a3d5be7e2d5dfaf075ad352311902f7ab2147784e12b45505a828"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8068,
+        "candidate_count": 8071,
+        "d_interval_inclusive": [
+          6100001,
+          6200000
+        ],
+        "exact_witness_count": 8071,
+        "identity_rows_checked": 8071,
+        "maximum_first_denominator_offset": 7865,
+        "maximum_offset_n": 74137849,
+        "misses": [
+          73324969,
+          73633561,
+          74137849
+        ],
+        "offset_histogram": {
+          "0-8": 3819,
+          "1025-2048": 14,
+          "129-256": 304,
+          "17-32": 1102,
+          "2049-4096": 11,
+          "257-512": 125,
+          "33-64": 721,
+          "4097-8192": 3,
+          "513-1024": 68,
+          "65-128": 502,
+          "9-16": 1402
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7850,
+          "offset_257_4096": 218,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-6100001-6200000-v9",
+        "run_manifest_sha256": "2f7a210423b310b72b615f2f35aebc9c3ff9e6c2723cc6b6b2533f5db0ce8c1c",
+        "stream_hashes": {
+          "candidates": "b04f1b079c17e46a1233d5715ad6a3ab9bda8275161e6af6174b9c13a91065d9",
+          "results": "5e3f506d327c49c981005f0ce836ce8edfeaf2b6c3ce373c675c7a99bf292192",
+          "witnesses": "88db142be97bd8a2ede84560c3053498e2f0caa78f2ae996d4995270f82ac87e"
+        },
+        "verification_receipt_sha256": "fdd2e9bf3c8bc75a2cd0b1a5a6b68e8f8a8818906b310916607f25aabe4b1d12"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8060,
+        "candidate_count": 8065,
+        "d_interval_inclusive": [
+          6200001,
+          6300000
+        ],
+        "exact_witness_count": 8065,
+        "identity_rows_checked": 8065,
+        "maximum_first_denominator_offset": 10808,
+        "maximum_offset_n": 74770609,
+        "misses": [
+          74459641,
+          74666881,
+          74770609,
+          74815129,
+          75290329
+        ],
+        "offset_histogram": {
+          "0-8": 3805,
+          "1025-2048": 9,
+          "129-256": 258,
+          "17-32": 1135,
+          "2049-4096": 5,
+          "257-512": 152,
+          "33-64": 782,
+          "4097-8192": 4,
+          "513-1024": 54,
+          "65-128": 479,
+          "8193-16384": 1,
+          "9-16": 1381
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7840,
+          "offset_257_4096": 220,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-6200001-6300000-v9",
+        "run_manifest_sha256": "5ddc4a868bd9de02f18dd0643ed03b26c51b961870c522b5fe66601c659896ec",
+        "stream_hashes": {
+          "candidates": "1c45ade5ae52cfc3f5d168c7bba3db06f380057d2f361ce501ebc941e98fa5fb",
+          "results": "1376e886f6432b4952a2ce6bef5366b4f2fd04cde90d52d1c06995deb08b9d3c",
+          "witnesses": "b5925e153de827a5e50d72b25daf7abb4c3b4731d063873d500f7f1e802fbbc8"
+        },
+        "verification_receipt_sha256": "68a97628b2c49146f675f1b714b146a6dcaefc379830a6fb13842659eb64d3ed"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8096,
+        "candidate_count": 8102,
+        "d_interval_inclusive": [
+          6300001,
+          6400000
+        ],
+        "exact_witness_count": 8102,
+        "identity_rows_checked": 8102,
+        "maximum_first_denominator_offset": 19617,
+        "maximum_offset_n": 76020961,
+        "misses": [
+          75811849,
+          75916369,
+          76020961,
+          76230361,
+          76335169,
+          76755121
+        ],
+        "offset_histogram": {
+          "0-8": 3799,
+          "1025-2048": 22,
+          "129-256": 280,
+          "16385-32768": 2,
+          "17-32": 1203,
+          "2049-4096": 7,
+          "257-512": 140,
+          "33-64": 778,
+          "4097-8192": 3,
+          "513-1024": 60,
+          "65-128": 446,
+          "8193-16384": 1,
+          "9-16": 1361
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7867,
+          "offset_257_4096": 229,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-6300001-6400000-v9",
+        "run_manifest_sha256": "77bd15e4b532262bdb72221724b46ad7b0fc939449b41e268bf0581c7c2ceeb1",
+        "stream_hashes": {
+          "candidates": "6b71a3dd41873257f628a69a8a5ffa4ed685b665623b921ad7e7b204ee2a9d63",
+          "results": "fad9ebf53674a4bc0c685bc1d7f999a91bb71ad4496257f587ca67d4eaf44947",
+          "witnesses": "f466a389160ac8976a6f57f839369a304f9ce9ba88784f5516ead5db4752fc55"
+        },
+        "verification_receipt_sha256": "75727f63ec6601325008f35799c3d8885156e5fb612738eea2a21796b7e3d537"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 8052,
+        "candidate_count": 8057,
+        "d_interval_inclusive": [
+          6400001,
+          6500000
+        ],
+        "exact_witness_count": 8057,
+        "identity_rows_checked": 8057,
+        "maximum_first_denominator_offset": 6851,
+        "maximum_offset_n": 77708401,
+        "misses": [
+          76932601,
+          77070841,
+          77492809,
+          77708401,
+          77810041
+        ],
+        "offset_histogram": {
+          "0-8": 3791,
+          "1025-2048": 14,
+          "129-256": 277,
+          "17-32": 1152,
+          "2049-4096": 3,
+          "257-512": 128,
+          "33-64": 745,
+          "4097-8192": 5,
+          "513-1024": 60,
+          "65-128": 485,
+          "9-16": 1397
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7847,
+          "offset_257_4096": 205,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-6400001-6500000-v9",
+        "run_manifest_sha256": "3097f65ba7e121343967cb457fdf3866ae76577c282664c0c43edf52f3dcf149",
+        "stream_hashes": {
+          "candidates": "fc4c7ce535f182ba8adabf385df38610d76ee272636063ef4dcb23d28d15ee22",
+          "results": "2c46d9936c42ec26f6a2f691259273e7335053ff99b877ed3bd076197c138db5",
+          "witnesses": "6a1e2bcdc02749326dfdd3e19a8d9779ebac219cb70f4c6f0d2009e7907703cf"
+        },
+        "verification_receipt_sha256": "94d9a19630e8825d46a321caa05644f7acb14d65ce5027ec95eeaa594ae6a247"
+      },
+      {
+        "base_miss_count": 8,
+        "base_witness_count": 7980,
+        "candidate_count": 7988,
+        "d_interval_inclusive": [
+          6500001,
+          6600000
+        ],
+        "exact_witness_count": 7988,
+        "identity_rows_checked": 7988,
+        "maximum_first_denominator_offset": 19887,
+        "maximum_offset_n": 78127921,
+        "misses": [
+          78127921,
+          78552769,
+          78573889,
+          78888241,
+          78978769,
+          79020841,
+          79053241,
+          79085449
+        ],
+        "offset_histogram": {
+          "0-8": 3735,
+          "1025-2048": 24,
+          "129-256": 274,
+          "16385-32768": 1,
+          "17-32": 1164,
+          "2049-4096": 2,
+          "257-512": 128,
+          "33-64": 697,
+          "4097-8192": 5,
+          "513-1024": 57,
+          "65-128": 488,
+          "8193-16384": 2,
+          "9-16": 1411
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7769,
+          "offset_257_4096": 211,
+          "offset_4097_65536": 8
+        },
+        "package": "n1-mod12-range-6500001-6600000-v9",
+        "run_manifest_sha256": "54a6ddd7656026ec1f4a3224936201f55b96fc94a1e0776812941ae15029e7eb",
+        "stream_hashes": {
+          "candidates": "ac27acf0d2a1128680add811104a487d2fe6b170751bcaf23965cf6fb06ab006",
+          "results": "b473814e7bc5144261f032b9eed464805d32fbbabe43adca66ca9ac1bd807452",
+          "witnesses": "cd0e300edb1377d72c563636ae2790dd7187f25ff208da24629c04cf95cb1a5f"
+        },
+        "verification_receipt_sha256": "f7fd4aed51611abcfa3df01c825a632b0bc65399ba68558ae9a02af878ce60b3"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8004,
+        "candidate_count": 8008,
+        "d_interval_inclusive": [
+          6600001,
+          6700000
+        ],
+        "exact_witness_count": 8008,
+        "identity_rows_checked": 8008,
+        "maximum_first_denominator_offset": 9407,
+        "maximum_offset_n": 79727041,
+        "misses": [
+          79619929,
+          79727041,
+          79941481,
+          80156521
+        ],
+        "offset_histogram": {
+          "0-8": 3782,
+          "1025-2048": 27,
+          "129-256": 274,
+          "17-32": 1112,
+          "2049-4096": 4,
+          "257-512": 135,
+          "33-64": 725,
+          "4097-8192": 3,
+          "513-1024": 61,
+          "65-128": 465,
+          "8193-16384": 1,
+          "9-16": 1419
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7777,
+          "offset_257_4096": 227,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-6600001-6700000-v9",
+        "run_manifest_sha256": "d4d07acb4eff1d681b5c166bce4cbfc426b37753cf3916abcb4245c193ca8510",
+        "stream_hashes": {
+          "candidates": "4cd1c72f2e69bbd894eeb36e7d1ab5ea5a5cfb4b9335586535f34b665fe3f84b",
+          "results": "48537b00d1e9241e303bd6888bd5987b478e423ba7343e7f5575cdee508f646e",
+          "witnesses": "79d147f6a584aa6883cb83fca86a0ce6be54aba6dd19d12d7761bbd5262209bb"
+        },
+        "verification_receipt_sha256": "e1ea38128807ff6c9efadce2059dd519397095c4267088e41e8da5b9935524e0"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 7968,
+        "candidate_count": 7973,
+        "d_interval_inclusive": [
+          6700001,
+          6800000
+        ],
+        "exact_witness_count": 7973,
+        "identity_rows_checked": 7973,
+        "maximum_first_denominator_offset": 11258,
+        "maximum_offset_n": 81126049,
+        "misses": [
+          80478841,
+          80516881,
+          81018001,
+          81126049,
+          81234169
+        ],
+        "offset_histogram": {
+          "0-8": 3757,
+          "1025-2048": 22,
+          "129-256": 258,
+          "17-32": 1166,
+          "2049-4096": 6,
+          "257-512": 121,
+          "33-64": 746,
+          "4097-8192": 4,
+          "513-1024": 49,
+          "65-128": 485,
+          "8193-16384": 1,
+          "9-16": 1358
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7770,
+          "offset_257_4096": 198,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-6700001-6800000-v9",
+        "run_manifest_sha256": "dd9d1f8d879b5e4b8093f8608e39ffca104c14852d2a15939c4ba238db743ee4",
+        "stream_hashes": {
+          "candidates": "83ca53eb7dc71d787a8a7fbb968dd9850aa85540dec044711f4dd61a8035f038",
+          "results": "6c18e075c05523baf99c884771d2e89bf1eb285c791088063cc4abbd8cb13556",
+          "witnesses": "ca227f93f0b60ce9f4c25f7649d9c10836dd6e6a9c4b9352f947ecb3aa9a7868"
+        },
+        "verification_receipt_sha256": "7e430922fdf9be3f18cc10dbef1338365ffa06e77a88dfff2177b5ea347220ff"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8013,
+        "candidate_count": 8017,
+        "d_interval_inclusive": [
+          6800001,
+          6900000
+        ],
+        "exact_witness_count": 8017,
+        "identity_rows_checked": 8017,
+        "maximum_first_denominator_offset": 7563,
+        "maximum_offset_n": 82271809,
+        "misses": [
+          81775849,
+          81884401,
+          82271809,
+          82646281
+        ],
+        "offset_histogram": {
+          "0-8": 3819,
+          "1025-2048": 25,
+          "129-256": 263,
+          "17-32": 1173,
+          "2049-4096": 12,
+          "257-512": 129,
+          "33-64": 716,
+          "4097-8192": 4,
+          "513-1024": 53,
+          "65-128": 485,
+          "9-16": 1338
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7794,
+          "offset_257_4096": 219,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-6800001-6900000-v9",
+        "run_manifest_sha256": "f24f184048f17fb322ae2ec118c7fb6f4c14b5f8f61da8e7eea9a0c971c5c3e2",
+        "stream_hashes": {
+          "candidates": "7a8bee4e91829871457f83e1bd2e797847ba596f274ed5b5b502e881f492504d",
+          "results": "c2591fe89e0a8442300a2bfdf7306bf7f6f07215f70245643477323e21ca5c8c",
+          "witnesses": "a684390e7e58e56cfef227d52c2f6d39d27c45c632a0e9cce0f64224592f7bee"
+        },
+        "verification_receipt_sha256": "6a8c159ab4b24db77de54da309df106748d788357f2b437a28b0e2a392a9b724"
+      },
+      {
+        "base_miss_count": 8,
+        "base_witness_count": 8068,
+        "candidate_count": 8076,
+        "d_interval_inclusive": [
+          6900001,
+          7000000
+        ],
+        "exact_witness_count": 8076,
+        "identity_rows_checked": 8076,
+        "maximum_first_denominator_offset": 11438,
+        "maximum_offset_n": 83740801,
+        "misses": [
+          82864609,
+          82931809,
+          82973881,
+          83197321,
+          83302129,
+          83411689,
+          83740801,
+          83850649
+        ],
+        "offset_histogram": {
+          "0-8": 3798,
+          "1025-2048": 17,
+          "129-256": 279,
+          "17-32": 1116,
+          "2049-4096": 5,
+          "257-512": 129,
+          "33-64": 752,
+          "4097-8192": 5,
+          "513-1024": 48,
+          "65-128": 497,
+          "8193-16384": 3,
+          "9-16": 1427
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7869,
+          "offset_257_4096": 199,
+          "offset_4097_65536": 8
+        },
+        "package": "n1-mod12-range-6900001-7000000-v9",
+        "run_manifest_sha256": "267b12dcaeb5453e2f0c1da25a3f8bced6d5be3dccb0d946c57cf1d55a05337f",
+        "stream_hashes": {
+          "candidates": "cc75190182b9ec81f65208a8a1aa824db4348a63a579dd36f034bfd8af4f0479",
+          "results": "8f7fafded342513e851391016a8dfac94226e1133ffc2d3e08dbb1a6394da692",
+          "witnesses": "b54c114103be804d3828e1f685a935133451df79f6828b23e2e4f032a43abe44"
+        },
+        "verification_receipt_sha256": "53865e3bb4fee60069c594bb8572f142e6428f1eac1f21f4e1c973388e12c86c"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 8029,
+        "candidate_count": 8035,
+        "d_interval_inclusive": [
+          7000001,
+          7100000
+        ],
+        "exact_witness_count": 8035,
+        "identity_rows_checked": 8035,
+        "maximum_first_denominator_offset": 11019,
+        "maximum_offset_n": 84189121,
+        "misses": [
+          84189121,
+          84290761,
+          84400969,
+          84621601,
+          85005649,
+          85068169
+        ],
+        "offset_histogram": {
+          "0-8": 3766,
+          "1025-2048": 27,
+          "129-256": 283,
+          "17-32": 1165,
+          "2049-4096": 7,
+          "257-512": 123,
+          "33-64": 716,
+          "4097-8192": 4,
+          "513-1024": 44,
+          "65-128": 490,
+          "8193-16384": 2,
+          "9-16": 1408
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7828,
+          "offset_257_4096": 201,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-7000001-7100000-v9",
+        "run_manifest_sha256": "3a62b92d44992389f2fd3e37f41637ef8d8030672cfbc4c883ff2e8f5b1a5cad",
+        "stream_hashes": {
+          "candidates": "618e0ec7abe3c80ed5ccd03b1c061dc66021aee5293ec8cdc812880c28ffaac0",
+          "results": "b3a6ff4e7853147b9117533b0ad87968ef179dff6d5c307a7592d3633e6401f2",
+          "witnesses": "353dddbecc8d63fe821a06699275c4e2ff7e7c9d658506dc146d9bca8d2a7cbe"
+        },
+        "verification_receipt_sha256": "df625935a8778a62d2592c1342571b724ed3bb48a5bc807dd4b799c3980c9766"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 7986,
+        "candidate_count": 7988,
+        "d_interval_inclusive": [
+          7100001,
+          7200000
+        ],
+        "exact_witness_count": 7988,
+        "identity_rows_checked": 7988,
+        "maximum_first_denominator_offset": 6963,
+        "maximum_offset_n": 86174089,
+        "misses": [
+          86062729,
+          86174089
+        ],
+        "offset_histogram": {
+          "0-8": 3713,
+          "1025-2048": 21,
+          "129-256": 281,
+          "17-32": 1206,
+          "2049-4096": 12,
+          "257-512": 107,
+          "33-64": 763,
+          "4097-8192": 2,
+          "513-1024": 50,
+          "65-128": 481,
+          "9-16": 1352
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7796,
+          "offset_257_4096": 190,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-7100001-7200000-v9",
+        "run_manifest_sha256": "8a8762d61dd0439a7b7aba069f84c9c4a84d59faf6d3761e10303819c930272b",
+        "stream_hashes": {
+          "candidates": "9655013cc04fcb5d1d02f4b45eb5981c775e58ee119784405baa8834691b22d9",
+          "results": "b78635ddb23679b0e3a83771b34ca1dde7466ae61cbca9f2af572b086626fd76",
+          "witnesses": "7896bdb4f0b618a3bcaad5e022cd65bf9031642f8a6797e5807d1793c5ef5924"
+        },
+        "verification_receipt_sha256": "136240e157527a64f1b0e8c1e1d24c05d939ca9541e482cfa286f5944caa9c4a"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 8008,
+        "candidate_count": 8012,
+        "d_interval_inclusive": [
+          7200001,
+          7300000
+        ],
+        "exact_witness_count": 8012,
+        "identity_rows_checked": 8012,
+        "maximum_first_denominator_offset": 7707,
+        "maximum_offset_n": 86843761,
+        "misses": [
+          86843761,
+          87179569,
+          87291649,
+          87403801
+        ],
+        "offset_histogram": {
+          "0-8": 3808,
+          "1025-2048": 21,
+          "129-256": 257,
+          "17-32": 1150,
+          "2049-4096": 8,
+          "257-512": 137,
+          "33-64": 699,
+          "4097-8192": 4,
+          "513-1024": 50,
+          "65-128": 511,
+          "9-16": 1367
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7792,
+          "offset_257_4096": 216,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-7200001-7300000-v9",
+        "run_manifest_sha256": "50ce7f84c47ceec2937da36f230cb70fb0d3753539f1da38ee5d548bd0f4191a",
+        "stream_hashes": {
+          "candidates": "d55dd73f1317434da2d4c7f2101d3ab1f75909f96cf373f79c88c80b6de16da1",
+          "results": "53a1c79d4715a0f1189039d446bbdbdc07f4280bd333a41da04f6596bca7d2ef",
+          "witnesses": "6cd502dfe30d8468fe6c65cbb89cc755ced1c5137df4262578030e9774f7431b"
+        },
+        "verification_receipt_sha256": "dd936da3eab6332e5c07c454cd4f8f807f346171711dbe376882599f7c0d8ac9"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 7930,
+        "candidate_count": 7936,
+        "d_interval_inclusive": [
+          7300001,
+          7400000
+        ],
+        "exact_witness_count": 7936,
+        "identity_rows_checked": 7936,
+        "maximum_first_denominator_offset": 11738,
+        "maximum_offset_n": 88190881,
+        "misses": [
+          88004401,
+          88190881,
+          88303609,
+          88416409,
+          88473289,
+          88755241
+        ],
+        "offset_histogram": {
+          "0-8": 3768,
+          "1025-2048": 19,
+          "129-256": 248,
+          "17-32": 1140,
+          "2049-4096": 5,
+          "257-512": 145,
+          "33-64": 726,
+          "4097-8192": 5,
+          "513-1024": 45,
+          "65-128": 457,
+          "8193-16384": 1,
+          "9-16": 1377
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7716,
+          "offset_257_4096": 214,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-7300001-7400000-v9",
+        "run_manifest_sha256": "eaa7be3433c0926aa2ff77f187946302e6e46d92efcf1483f9a4cd5d7cd8130b",
+        "stream_hashes": {
+          "candidates": "2f9feb1b7fc683cba5788e43502e2c7550bf8f881acb1587bf048cecff8b2b0d",
+          "results": "33cf3aca42a5c336e7f6d817950fabed3962e13cda8c3d1a0996c49dc4fb6dbf",
+          "witnesses": "30dbb10d4ac56d9940b497af4d29a1abb6cc2c9e904b585ec9298a1b094fbb0a"
+        },
+        "verification_receipt_sha256": "b82fe065262014a92c6b2f3c66d4dc0b40b829ef643b144ed324b454aac3d9e6"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7994,
+        "candidate_count": 7998,
+        "d_interval_inclusive": [
+          7400001,
+          7500000
+        ],
+        "exact_witness_count": 7998,
+        "identity_rows_checked": 7998,
+        "maximum_first_denominator_offset": 16563,
+        "maximum_offset_n": 89548369,
+        "misses": [
+          89002369,
+          89094721,
+          89123329,
+          89548369
+        ],
+        "offset_histogram": {
+          "0-8": 3746,
+          "1025-2048": 16,
+          "129-256": 258,
+          "16385-32768": 2,
+          "17-32": 1184,
+          "2049-4096": 6,
+          "257-512": 125,
+          "33-64": 733,
+          "4097-8192": 2,
+          "513-1024": 57,
+          "65-128": 496,
+          "9-16": 1373
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7790,
+          "offset_257_4096": 204,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-7400001-7500000-v9",
+        "run_manifest_sha256": "4acfc583cbcb0676b0cb247ccc9d53b84e5bcea38eb0218f56228c40f6663be7",
+        "stream_hashes": {
+          "candidates": "a96afd110bd8481120599db00e7b7899b9f5bf0113d78f7952cc2147471ef892",
+          "results": "da28dc331141ac98709d54e341c1b526cd086b5a46ccc740897a2953971073d7",
+          "witnesses": "3a25879f960bbd1fcd6f5f480787d8150c839956bbe0dd3f70cce905647da4d1"
+        },
+        "verification_receipt_sha256": "6a68ec4dfcba4946868436656b283c3698991d6f3ded7b339b635643720bc07a"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 8009,
+        "candidate_count": 8012,
+        "d_interval_inclusive": [
+          7500001,
+          7600000
+        ],
+        "exact_witness_count": 8012,
+        "identity_rows_checked": 8012,
+        "maximum_first_denominator_offset": 7161,
+        "maximum_offset_n": 91145209,
+        "misses": [
+          90459121,
+          91138441,
+          91145209
+        ],
+        "offset_histogram": {
+          "0-8": 3725,
+          "1025-2048": 22,
+          "129-256": 258,
+          "17-32": 1176,
+          "2049-4096": 4,
+          "257-512": 134,
+          "33-64": 778,
+          "4097-8192": 3,
+          "513-1024": 36,
+          "65-128": 473,
+          "9-16": 1403
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7813,
+          "offset_257_4096": 196,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-7500001-7600000-v9",
+        "run_manifest_sha256": "b4eaefc8e37cdb625e7bff96f8b8100faca24cfc2a95d8df38f67636f43d5323",
+        "stream_hashes": {
+          "candidates": "d6e929916c1427082be943fecc6815c1c920799ba72ce772762b33fffad1458c",
+          "results": "c32bed722a41ec76336639fc623a822fcb546f35f9812f48dd90b80129f30258",
+          "witnesses": "e41658c51cb7deccd883efec06aef37df57e96f18eab8f4fd6574b3316385c35"
+        },
+        "verification_receipt_sha256": "361633f751dc8c368bd69d03f8ab4e6175cfdbf437baf7eb10521356df0e8236"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 7961,
+        "candidate_count": 7963,
+        "d_interval_inclusive": [
+          7600001,
+          7700000
+        ],
+        "exact_witness_count": 7963,
+        "identity_rows_checked": 7963,
+        "maximum_first_denominator_offset": 8511,
+        "maximum_offset_n": 92179201,
+        "misses": [
+          92121121,
+          92179201
+        ],
+        "offset_histogram": {
+          "0-8": 3773,
+          "1025-2048": 20,
+          "129-256": 289,
+          "17-32": 1101,
+          "2049-4096": 7,
+          "257-512": 138,
+          "33-64": 738,
+          "4097-8192": 1,
+          "513-1024": 60,
+          "65-128": 503,
+          "8193-16384": 1,
+          "9-16": 1332
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7736,
+          "offset_257_4096": 225,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-7600001-7700000-v9",
+        "run_manifest_sha256": "75e7dd2377221f7160f55f1dbeacc4ce8cc6141b7557865c56fa2546497a5102",
+        "stream_hashes": {
+          "candidates": "4391d883165038e2239a98b68ce8a20f1e8b0929f73d062e0ccf318f3bbf8ce2",
+          "results": "1948c03a8312491cff76c2306649146e228023e06afa2a30e80998086736d853",
+          "witnesses": "d78c36272a1ba574b196497a2374b9915ede84fc4afa4415be3fe14cb5546b85"
+        },
+        "verification_receipt_sha256": "b5ee1aa6d3b34a364796d21b0506e853ca5776d55e7f80740fb90506edebb026"
+      },
+      {
+        "base_miss_count": 7,
+        "base_witness_count": 8022,
+        "candidate_count": 8029,
+        "d_interval_inclusive": [
+          7700001,
+          7800000
+        ],
+        "exact_witness_count": 8029,
+        "identity_rows_checked": 8029,
+        "maximum_first_denominator_offset": 10883,
+        "maximum_offset_n": 92756161,
+        "misses": [
+          92409769,
+          92525161,
+          92756161,
+          92817169,
+          92987449,
+          93103201,
+          93334921
+        ],
+        "offset_histogram": {
+          "0-8": 3749,
+          "1025-2048": 19,
+          "129-256": 274,
+          "17-32": 1164,
+          "2049-4096": 9,
+          "257-512": 124,
+          "33-64": 745,
+          "4097-8192": 6,
+          "513-1024": 63,
+          "65-128": 461,
+          "8193-16384": 1,
+          "9-16": 1414
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7807,
+          "offset_257_4096": 215,
+          "offset_4097_65536": 7
+        },
+        "package": "n1-mod12-range-7700001-7800000-v9",
+        "run_manifest_sha256": "9b2d85d23d4f3b46363996fcf7b53e9aa40fd1e069737e6f215a951ca0fc92ed",
+        "stream_hashes": {
+          "candidates": "4aed8d20df846f69eafb13e5ab2d3350ce675b6e5f928d2226f60f869da25845",
+          "results": "5ad98b2913180700d06c0cd632a29516e741a9015882bfa018af923da92c3170",
+          "witnesses": "21224db42f7ab4c721d0ad17331d07112d65387d40a18dd3c71fd0a04b999679"
+        },
+        "verification_receipt_sha256": "8ba89be4be1d52a531b567e718c1a65391973c4c848c9068595b39d3bff7f0c0"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 7960,
+        "candidate_count": 7966,
+        "d_interval_inclusive": [
+          7800001,
+          7900000
+        ],
+        "exact_witness_count": 7966,
+        "identity_rows_checked": 7966,
+        "maximum_first_denominator_offset": 17011,
+        "maximum_offset_n": 94497841,
+        "misses": [
+          93683041,
+          94031809,
+          94258609,
+          94497841,
+          94731289,
+          94739761
+        ],
+        "offset_histogram": {
+          "0-8": 3754,
+          "1025-2048": 17,
+          "129-256": 273,
+          "16385-32768": 1,
+          "17-32": 1148,
+          "2049-4096": 4,
+          "257-512": 138,
+          "33-64": 730,
+          "4097-8192": 4,
+          "513-1024": 59,
+          "65-128": 479,
+          "8193-16384": 1,
+          "9-16": 1358
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7742,
+          "offset_257_4096": 218,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-7800001-7900000-v9",
+        "run_manifest_sha256": "696467ba5b269df4b36ae23a808cf6c82263e19d5bd163c09a83f1344a4040cc",
+        "stream_hashes": {
+          "candidates": "21f874ba1dd1db4e7184b9f7e3dc883b0285e7f0c248aae6fe9bb146934ca8a6",
+          "results": "906f5f7d4e0e7482dbf8a86b4807e242e4787d78c5238c6924a6847884656909",
+          "witnesses": "9cbc84635d6480a0279968e73d731871a61ce9b4ff86f7f41c17f54bef666ac8"
+        },
+        "verification_receipt_sha256": "24ff96673198be2e3e6388f703760be8d887cca3ae8ca944464e51b9fa13ec87"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7977,
+        "candidate_count": 7981,
+        "d_interval_inclusive": [
+          7900001,
+          8000000
+        ],
+        "exact_witness_count": 7981,
+        "identity_rows_checked": 7981,
+        "maximum_first_denominator_offset": 28553,
+        "maximum_offset_n": 95433361,
+        "misses": [
+          94848121,
+          95433361,
+          95667961,
+          95785369
+        ],
+        "offset_histogram": {
+          "0-8": 3721,
+          "1025-2048": 20,
+          "129-256": 273,
+          "16385-32768": 1,
+          "17-32": 1180,
+          "2049-4096": 4,
+          "257-512": 131,
+          "33-64": 762,
+          "4097-8192": 3,
+          "513-1024": 42,
+          "65-128": 485,
+          "9-16": 1359
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7780,
+          "offset_257_4096": 197,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-7900001-8000000-v9",
+        "run_manifest_sha256": "9f6cc815fba78678213f8322ef71fb76575481d437ea7d477398f4f2a640ccb7",
+        "stream_hashes": {
+          "candidates": "08190468b72d1e4d4607428a2bdebf3c6a59665e25787b6c9b8b5ff493cdfa15",
+          "results": "ed91f02d51014b2e35564b90e7859438060218bcf11f0a1e0e77eca8cd17dbaa",
+          "witnesses": "1ff0f422adce077bc9f450ac3f3ccb5cfd28529880c625dcd99ee6dfa8d8a7a1"
+        },
+        "verification_receipt_sha256": "f62d6dac263bd20096aed6de64bf1114ec4227a3a6795cce55bc446dbb0b7a16"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7940,
+        "candidate_count": 7944,
+        "d_interval_inclusive": [
+          8000001,
+          8100000
+        ],
+        "exact_witness_count": 7944,
+        "identity_rows_checked": 7944,
+        "maximum_first_denominator_offset": 6391,
+        "maximum_offset_n": 97199881,
+        "misses": [
+          96373489,
+          96609241,
+          96792049,
+          97199881
+        ],
+        "offset_histogram": {
+          "0-8": 3727,
+          "1025-2048": 23,
+          "129-256": 264,
+          "17-32": 1183,
+          "2049-4096": 6,
+          "257-512": 143,
+          "33-64": 721,
+          "4097-8192": 4,
+          "513-1024": 59,
+          "65-128": 474,
+          "9-16": 1340
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7709,
+          "offset_257_4096": 231,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-8000001-8100000-v9",
+        "run_manifest_sha256": "9f0d38f72430fb88a083a3cacc06b84c66351f85a9df18e756860e5735055044",
+        "stream_hashes": {
+          "candidates": "d9a5f7ee9877a07c761b7ac5b5acf01898a1302372a976465e9210718547ad53",
+          "results": "431d933d579aa14d64442b2d91d8b876ffd89bd2678a5e7e6ca058e598cc44ff",
+          "witnesses": "d80f125e0134517f88c644129efec237aba9a8f287d4da9f1a6286e08f99d7a5"
+        },
+        "verification_receipt_sha256": "cddd0a04756c0110ef9a96937cdabf36f79691cd3194f88ec5b5a929ad696813"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 7925,
+        "candidate_count": 7930,
+        "d_interval_inclusive": [
+          8100001,
+          8200000
+        ],
+        "exact_witness_count": 7930,
+        "identity_rows_checked": 7930,
+        "maximum_first_denominator_offset": 7431,
+        "maximum_offset_n": 98148649,
+        "misses": [
+          97436641,
+          97673689,
+          97920001,
+          98029801,
+          98148649
+        ],
+        "offset_histogram": {
+          "0-8": 3718,
+          "1025-2048": 13,
+          "129-256": 255,
+          "17-32": 1139,
+          "2049-4096": 9,
+          "257-512": 134,
+          "33-64": 739,
+          "4097-8192": 5,
+          "513-1024": 57,
+          "65-128": 492,
+          "9-16": 1369
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7712,
+          "offset_257_4096": 213,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-8100001-8200000-v9",
+        "run_manifest_sha256": "40946c2d4bfcf52b6c44393555486cc7e6d2c83eac2a67edd76596da12f7977f",
+        "stream_hashes": {
+          "candidates": "81716f50dae7c07f72e01ee8418a88132dd60f9ed676b8f742910001e16334fb",
+          "results": "250f53c4924a6b3bbd8379559be13a31575a7456f451335d3a5da40f9711594a",
+          "witnesses": "36d478dab938dbe5fc788b87e4458ae92c836f8dc6c073674be8997f275630dd"
+        },
+        "verification_receipt_sha256": "b12bea6963ae75b3d9cd09a442d8fc928c7f0536aecdbec98806f8bf67e036f0"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7950,
+        "candidate_count": 7954,
+        "d_interval_inclusive": [
+          8200001,
+          8300000
+        ],
+        "exact_witness_count": 7954,
+        "identity_rows_checked": 7954,
+        "maximum_first_denominator_offset": 12458,
+        "maximum_offset_n": 99341089,
+        "misses": [
+          98624761,
+          98982601,
+          99341089,
+          99460729
+        ],
+        "offset_histogram": {
+          "0-8": 3708,
+          "1025-2048": 21,
+          "129-256": 292,
+          "17-32": 1208,
+          "2049-4096": 6,
+          "257-512": 135,
+          "33-64": 676,
+          "4097-8192": 3,
+          "513-1024": 44,
+          "65-128": 515,
+          "8193-16384": 1,
+          "9-16": 1345
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7744,
+          "offset_257_4096": 206,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-8200001-8300000-v9",
+        "run_manifest_sha256": "4749f8b316598913f81d6768cb5f975a9971b628d61b3f79bc374867144b3dc3",
+        "stream_hashes": {
+          "candidates": "a03bf85c48e1b044dade594dec7abdbdab81e063ad9ebfb38fabe8008fb63ca4",
+          "results": "a490b8cc4f26da6b45f3e9e887207b091715a396a6707b4afcb4fd6e724da0fe",
+          "witnesses": "51ac5195742cc87d9c7e20b580c220d48a800d127a390f27c29ae42434db6a33"
+        },
+        "verification_receipt_sha256": "aba9944add55f05ad894a3de5a908da21c4fd9185a9c03beb96d1779adff4f9a"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 7891,
+        "candidate_count": 7894,
+        "d_interval_inclusive": [
+          8300001,
+          8400000
+        ],
+        "exact_witness_count": 7894,
+        "identity_rows_checked": 7894,
+        "maximum_first_denominator_offset": 22587,
+        "maximum_offset_n": 100781521,
+        "misses": [
+          100038481,
+          100180081,
+          100781521
+        ],
+        "offset_histogram": {
+          "0-8": 3765,
+          "1025-2048": 19,
+          "129-256": 269,
+          "16385-32768": 1,
+          "17-32": 1147,
+          "2049-4096": 10,
+          "257-512": 127,
+          "33-64": 693,
+          "4097-8192": 1,
+          "513-1024": 48,
+          "65-128": 451,
+          "8193-16384": 1,
+          "9-16": 1362
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7687,
+          "offset_257_4096": 204,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-8300001-8400000-v9",
+        "run_manifest_sha256": "f3165976b170b3732d83c9e7e763f90593f207e245ff855a103f94fd68e73e54",
+        "stream_hashes": {
+          "candidates": "586da41a1303cb0e6d773d14481cffb1ef012cedc5a088f7daaa3397bec122d4",
+          "results": "5e2b274bb1e810043c9bc4b0dd98f6cb5d98d04a4509e59eb27692e91a7cc7ff",
+          "witnesses": "1b67e126a1aa125d6ed55b64d711dd30a8d7d287721c1517ba2d7505668dca3b"
+        },
+        "verification_receipt_sha256": "6a2b6c855072780311c0fd58491ae38984aa1d4c417a60e8040a9c0990506d44"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7954,
+        "candidate_count": 7958,
+        "d_interval_inclusive": [
+          8400001,
+          8500000
+        ],
+        "exact_witness_count": 7958,
+        "identity_rows_checked": 7958,
+        "maximum_first_denominator_offset": 7575,
+        "maximum_offset_n": 101989801,
+        "misses": [
+          100963801,
+          101384761,
+          101868649,
+          101989801
+        ],
+        "offset_histogram": {
+          "0-8": 3716,
+          "1025-2048": 13,
+          "129-256": 287,
+          "17-32": 1083,
+          "2049-4096": 10,
+          "257-512": 143,
+          "33-64": 782,
+          "4097-8192": 4,
+          "513-1024": 54,
+          "65-128": 475,
+          "9-16": 1391
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7734,
+          "offset_257_4096": 220,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-8400001-8500000-v9",
+        "run_manifest_sha256": "af32ce78dfa85ce16fe3981c67eda9b593460f00af138f7d7d0fefc4fe5b9f0f",
+        "stream_hashes": {
+          "candidates": "d32b3e7accdb80f2f8f7a32610a066d4b2e6d634c107c11dddacd7b2e7588463",
+          "results": "1446eaa352d5ff417a2c9d53d9ddb4b834e638aa8f8efca9bc688aac749c5cbd",
+          "witnesses": "b7b5aa90cff140e1ea9acca0a0592eba2e703cfc248387753138853a1e6aa572"
+        },
+        "verification_receipt_sha256": "59d51113082eb8f4cace1e3f7a79ed30f9c45785387a0e57ccfe73ca52791fe4"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 7931,
+        "candidate_count": 7934,
+        "d_interval_inclusive": [
+          8500001,
+          8600000
+        ],
+        "exact_witness_count": 7934,
+        "identity_rows_checked": 7934,
+        "maximum_first_denominator_offset": 12638,
+        "maximum_offset_n": 102232321,
+        "misses": [
+          102232321,
+          102596209,
+          102839881
+        ],
+        "offset_histogram": {
+          "0-8": 3741,
+          "1025-2048": 15,
+          "129-256": 274,
+          "17-32": 1126,
+          "2049-4096": 8,
+          "257-512": 159,
+          "33-64": 724,
+          "4097-8192": 2,
+          "513-1024": 65,
+          "65-128": 466,
+          "8193-16384": 1,
+          "9-16": 1353
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7684,
+          "offset_257_4096": 247,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-8500001-8600000-v9",
+        "run_manifest_sha256": "caf42768a12939533cc6af6ab9f63b13a13daffe5196ade054db60157772da89",
+        "stream_hashes": {
+          "candidates": "75e2892996e768cb3b7936c615710cb3db2657b54c4291ab870a240c19b1e0f0",
+          "results": "4361bf83fd2b32f1a1f687b009636533307e02b0d906ce25fd7c26b9debd7e61",
+          "witnesses": "7bf9d0ddcf918baf73b883b632b1fdece0326117bdb5b9c18b0a786f6c842095"
+        },
+        "verification_receipt_sha256": "95db477366ed6919dd5138515423f4ee46c400247e98d1009f5b069205036e74"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 7940,
+        "candidate_count": 7942,
+        "d_interval_inclusive": [
+          8600001,
+          8700000
+        ],
+        "exact_witness_count": 7942,
+        "identity_rows_checked": 7942,
+        "maximum_first_denominator_offset": 22857,
+        "maximum_offset_n": 103205281,
+        "misses": [
+          103205281,
+          103571329
+        ],
+        "offset_histogram": {
+          "0-8": 3706,
+          "1025-2048": 14,
+          "129-256": 295,
+          "16385-32768": 1,
+          "17-32": 1128,
+          "2049-4096": 8,
+          "257-512": 121,
+          "33-64": 751,
+          "4097-8192": 1,
+          "513-1024": 47,
+          "65-128": 461,
+          "9-16": 1409
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7750,
+          "offset_257_4096": 190,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-8600001-8700000-v9",
+        "run_manifest_sha256": "1fad266caae4d033c764001a3a33e1cc0e528eb4ebd5a369058c8615a73c1438",
+        "stream_hashes": {
+          "candidates": "9397572a068b2e090a09ab9d01af2ac8e5983694bb186210c7ff87f6de603757",
+          "results": "33e5da97edbfae614163ddfa5410920a00edac07a9c272b45a13c012d44cc004",
+          "witnesses": "5a622431f24830ded53fac084fa61249c3c3f7f2db93832cf9ce6dcfcb00c3ea"
+        },
+        "verification_receipt_sha256": "d19c40eb89b6de7cc333c0180db6a2f0aa27bf509ef0ce203090df82bbac515d"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7886,
+        "candidate_count": 7890,
+        "d_interval_inclusive": [
+          8700001,
+          8800000
+        ],
+        "exact_witness_count": 7890,
+        "identity_rows_checked": 7890,
+        "maximum_first_denominator_offset": 9555,
+        "maximum_offset_n": 105534529,
+        "misses": [
+          104495449,
+          104820769,
+          105411289,
+          105534529
+        ],
+        "offset_histogram": {
+          "0-8": 3721,
+          "1025-2048": 15,
+          "129-256": 260,
+          "17-32": 1133,
+          "2049-4096": 9,
+          "257-512": 126,
+          "33-64": 747,
+          "4097-8192": 3,
+          "513-1024": 51,
+          "65-128": 472,
+          "8193-16384": 1,
+          "9-16": 1352
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7685,
+          "offset_257_4096": 201,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-8700001-8800000-v9",
+        "run_manifest_sha256": "c1210cced6ad88b9aee70c1fbb8962a8952e36cd1d1533bc21b632e86fe953bc",
+        "stream_hashes": {
+          "candidates": "5e8d1174812a3e465a89368cc0f1773e67c80af2c5912f59c0f925383fd805fe",
+          "results": "a4e0db0b55ea30c11bb83ca1f32ea1f2522600e930c73f546bee0173ea9c436b",
+          "witnesses": "5342ccfd8c7b116dd61441f13d99b5f31bac8347d7bc49ad263fb24b35b35f16"
+        },
+        "verification_receipt_sha256": "261ab0373ed6d55e6a2ed5cb862e7ca7fcff70f70e94f57faea5c17fab5466c0"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7857,
+        "candidate_count": 7861,
+        "d_interval_inclusive": [
+          8800001,
+          8900000
+        ],
+        "exact_witness_count": 7861,
+        "identity_rows_checked": 7861,
+        "maximum_first_denominator_offset": 5723,
+        "maximum_offset_n": 106770889,
+        "misses": [
+          105784561,
+          106151809,
+          106523041,
+          106770889
+        ],
+        "offset_histogram": {
+          "0-8": 3721,
+          "1025-2048": 19,
+          "129-256": 267,
+          "17-32": 1116,
+          "2049-4096": 5,
+          "257-512": 140,
+          "33-64": 769,
+          "4097-8192": 4,
+          "513-1024": 74,
+          "65-128": 417,
+          "9-16": 1329
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7619,
+          "offset_257_4096": 238,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-8800001-8900000-v9",
+        "run_manifest_sha256": "98d3745db526ae47b0ab31c1030191d46b665100b82159526b35179784f6a819",
+        "stream_hashes": {
+          "candidates": "075449d7e45ea3dde8076d0c98c0ff3ad93d22935c8435787f0a3f20938e473e",
+          "results": "b07358dec1dc07f6c11bea9d3670834ef3c4f723661e7fac8817a175135bea5d",
+          "witnesses": "9eac2110a7a2f0cf26f949443edd01c722df0fda6a153b0281a700d2499de3b4"
+        },
+        "verification_receipt_sha256": "69f043465c5c27f498f5365aa19a31514fea47c7f4f152d69bf99b8bf4169b5f"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 7868,
+        "candidate_count": 7873,
+        "d_interval_inclusive": [
+          8900001,
+          9000000
+        ],
+        "exact_witness_count": 7873,
+        "identity_rows_checked": 7873,
+        "maximum_first_denominator_offset": 16055,
+        "maximum_offset_n": 107730529,
+        "misses": [
+          106872529,
+          107267449,
+          107516161,
+          107730529,
+          107926009
+        ],
+        "offset_histogram": {
+          "0-8": 3743,
+          "1025-2048": 29,
+          "129-256": 223,
+          "17-32": 1148,
+          "2049-4096": 4,
+          "257-512": 126,
+          "33-64": 731,
+          "4097-8192": 4,
+          "513-1024": 50,
+          "65-128": 496,
+          "8193-16384": 1,
+          "9-16": 1318
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7659,
+          "offset_257_4096": 209,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-8900001-9000000-v9",
+        "run_manifest_sha256": "9dc447edf41148e6ec8e6672e335781da30cc8208edb83d39bfadfbb09ae6a7c",
+        "stream_hashes": {
+          "candidates": "18fda227b23a6846f81db11339aff64d6bb968c158b46d2629b68df93e149713",
+          "results": "b584573bd4691cb75b6ead3ddc3da7b3e0c95322e595a33df373bd77d3864cfd",
+          "witnesses": "1175a9a5ecc4ba88895fa37eb0ae674a7ff2f43ca9bb6d8bb97bb14be587f7cb"
+        },
+        "verification_receipt_sha256": "378c2d16e7736e1d9b13c3fea9d78993ec50738563462f296fc4bcd4774a693a"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 7865,
+        "candidate_count": 7867,
+        "d_interval_inclusive": [
+          9000001,
+          9100000
+        ],
+        "exact_witness_count": 7867,
+        "identity_rows_checked": 7867,
+        "maximum_first_denominator_offset": 23397,
+        "maximum_offset_n": 108139201,
+        "misses": [
+          108139201,
+          108764041
+        ],
+        "offset_histogram": {
+          "0-8": 3668,
+          "1025-2048": 24,
+          "129-256": 265,
+          "16385-32768": 1,
+          "17-32": 1193,
+          "2049-4096": 4,
+          "257-512": 131,
+          "33-64": 694,
+          "4097-8192": 1,
+          "513-1024": 53,
+          "65-128": 482,
+          "9-16": 1351
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7653,
+          "offset_257_4096": 212,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-9000001-9100000-v9",
+        "run_manifest_sha256": "0f607123ae084e0a1681cad0ef16281adcf1d064e526972603068fcb0d5ee2e9",
+        "stream_hashes": {
+          "candidates": "6b46a96f3bac7c9aa63e31bc171b3a5e0f53b6ce441ff35c35f30c9cfa5f1451",
+          "results": "9aa0537765e35729fa8df32201660ab049519859dcc0462acf48d49434fc8ee9",
+          "witnesses": "714f56020baa61c90086ec3deb82fe6d6f7352b9d1307a80438b20924bda00cc"
+        },
+        "verification_receipt_sha256": "d9af7f2f1e57eb7179b4d0a24ac039887add319d1b9c18cbe963012e65d6a98d"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 7856,
+        "candidate_count": 7862,
+        "d_interval_inclusive": [
+          9100001,
+          9200000
+        ],
+        "exact_witness_count": 7862,
+        "identity_rows_checked": 7862,
+        "maximum_first_denominator_offset": 7875,
+        "maximum_offset_n": 110271001,
+        "misses": [
+          109265209,
+          109372561,
+          109390681,
+          109767529,
+          110096809,
+          110271001
+        ],
+        "offset_histogram": {
+          "0-8": 3736,
+          "1025-2048": 20,
+          "129-256": 281,
+          "17-32": 1134,
+          "2049-4096": 3,
+          "257-512": 118,
+          "33-64": 719,
+          "4097-8192": 6,
+          "513-1024": 52,
+          "65-128": 454,
+          "9-16": 1339
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7663,
+          "offset_257_4096": 193,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-9100001-9200000-v9",
+        "run_manifest_sha256": "66162003ab8564e84b42b71f02888ff3580443a5a2f49eec066312406fd33fb1",
+        "stream_hashes": {
+          "candidates": "07e8300bc746a04f5c37a200f1b293da382dd34cbcfb13bd03dba80115c89da6",
+          "results": "78282c5fb4270938d1976055b88d3964da55550011c89d89b82f34cbf69697a0",
+          "witnesses": "6d045c8d4f5f896d15b7319ccfd74be8594f79d87161c6facbf60c23edfa86f0"
+        },
+        "verification_receipt_sha256": "6847b1606b1c5793f5a977335ef57e787a9d18118559ccfa7e8b8bcf78156676"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 7861,
+        "candidate_count": 7864,
+        "d_interval_inclusive": [
+          9200001,
+          9300000
+        ],
+        "exact_witness_count": 7864,
+        "identity_rows_checked": 7864,
+        "maximum_first_denominator_offset": 7899,
+        "maximum_offset_n": 110901961,
+        "misses": [
+          110523169,
+          110901961,
+          110977441
+        ],
+        "offset_histogram": {
+          "0-8": 3692,
+          "1025-2048": 15,
+          "129-256": 277,
+          "17-32": 1173,
+          "2049-4096": 8,
+          "257-512": 120,
+          "33-64": 716,
+          "4097-8192": 3,
+          "513-1024": 53,
+          "65-128": 483,
+          "9-16": 1324
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7665,
+          "offset_257_4096": 196,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-9200001-9300000-v9",
+        "run_manifest_sha256": "fa02bc74ea984e772fbcc57aff6199d39a2cd54fc58588b9089f14824de299d7",
+        "stream_hashes": {
+          "candidates": "23ed1f99df259c53f507efeb0bf4d3b07ad23e742161d14b1da5846d1acda902",
+          "results": "798a8e5b7caf975ef002bb8cf556314566c3be7e3fd1d482e1a3c28946fbf4c4",
+          "witnesses": "8ac60e4bb9c2dfd1c2a3b59d1d615e2f584ed22cecd84200e60bb31b55ad65cf"
+        },
+        "verification_receipt_sha256": "e9750294013b713c93f55275fc40250355ee8b1084caff3dbf8303efb35de0a1"
+      },
+      {
+        "base_miss_count": 2,
+        "base_witness_count": 7873,
+        "candidate_count": 7875,
+        "d_interval_inclusive": [
+          9300001,
+          9400000
+        ],
+        "exact_witness_count": 7875,
+        "identity_rows_checked": 7875,
+        "maximum_first_denominator_offset": 13208,
+        "maximum_offset_n": 111661489,
+        "misses": [
+          111661489,
+          112296409
+        ],
+        "offset_histogram": {
+          "0-8": 3665,
+          "1025-2048": 14,
+          "129-256": 258,
+          "17-32": 1143,
+          "2049-4096": 11,
+          "257-512": 118,
+          "33-64": 728,
+          "4097-8192": 1,
+          "513-1024": 51,
+          "65-128": 497,
+          "8193-16384": 1,
+          "9-16": 1388
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7679,
+          "offset_257_4096": 194,
+          "offset_4097_65536": 2
+        },
+        "package": "n1-mod12-range-9300001-9400000-v9",
+        "run_manifest_sha256": "dd470848636e7825f43b8b3ea3101d7636669d218510105ed0d57c5f97b1c4bc",
+        "stream_hashes": {
+          "candidates": "ce819c7188ebb37fed0aa140cd5563809e9cddaaef8e4f5e0d67973fcda60ed0",
+          "results": "b49419bbbc505f4044570d580c16fbf0005d3fb76c5e4ee47e1e0a41073eaef3",
+          "witnesses": "198550301211a66b07f07dd7ec0cd23be49778a9ad2dfb3083c64af441315513"
+        },
+        "verification_receipt_sha256": "c4d9fc8f392c4e5f53bfe5adb5546d8e5eade2045cb09b83a18f16f8ba7b1175"
+      },
+      {
+        "base_miss_count": 6,
+        "base_witness_count": 7932,
+        "candidate_count": 7938,
+        "d_interval_inclusive": [
+          9400001,
+          9500000
+        ],
+        "exact_witness_count": 7938,
+        "identity_rows_checked": 7938,
+        "maximum_first_denominator_offset": 18621,
+        "maximum_offset_n": 113188321,
+        "misses": [
+          112933129,
+          113188321,
+          113443801,
+          113571649,
+          113699161,
+          113699569
+        ],
+        "offset_histogram": {
+          "0-8": 3750,
+          "1025-2048": 20,
+          "129-256": 283,
+          "16385-32768": 1,
+          "17-32": 1117,
+          "2049-4096": 3,
+          "257-512": 134,
+          "33-64": 716,
+          "4097-8192": 4,
+          "513-1024": 58,
+          "65-128": 472,
+          "8193-16384": 1,
+          "9-16": 1379
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7717,
+          "offset_257_4096": 215,
+          "offset_4097_65536": 6
+        },
+        "package": "n1-mod12-range-9400001-9500000-v9",
+        "run_manifest_sha256": "dfbe7bdea7802cdf4cc24ac367650501710a978bf48179acfa96e758ea477b2f",
+        "stream_hashes": {
+          "candidates": "20de91ccd3f6f763cdc73c7e1f0a42e051c2af485c3075cbd95e79a6446bd8cb",
+          "results": "98669948cece5f81bebf96ed30f308b501f61ee95a71c9eed89521639997954d",
+          "witnesses": "ace6c4f0a813eb5068428334b95b1c71a77efe233a1bd91807abd69b8d95eb3f"
+        },
+        "verification_receipt_sha256": "8f5143f96eacaac0d52b0a6484790861d51a71a1717a65b63a295eab1730a378"
+      },
+      {
+        "base_miss_count": 9,
+        "base_witness_count": 7846,
+        "candidate_count": 7855,
+        "d_interval_inclusive": [
+          9500001,
+          9600000
+        ],
+        "exact_witness_count": 7855,
+        "identity_rows_checked": 7855,
+        "maximum_first_denominator_offset": 19518,
+        "maximum_offset_n": 114242881,
+        "misses": [
+          114103441,
+          114117721,
+          114211969,
+          114242881,
+          114427009,
+          114595009,
+          114725521,
+          114982729,
+          115111441
+        ],
+        "offset_histogram": {
+          "0-8": 3688,
+          "1025-2048": 19,
+          "129-256": 280,
+          "16385-32768": 2,
+          "17-32": 1119,
+          "2049-4096": 4,
+          "257-512": 119,
+          "33-64": 703,
+          "4097-8192": 5,
+          "513-1024": 56,
+          "65-128": 483,
+          "8193-16384": 2,
+          "9-16": 1375
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7648,
+          "offset_257_4096": 198,
+          "offset_4097_65536": 9
+        },
+        "package": "n1-mod12-range-9500001-9600000-v9",
+        "run_manifest_sha256": "2f7795aaa116ed9cfa3c9301026b5de470b5e673894244f30d4014ae723f3102",
+        "stream_hashes": {
+          "candidates": "abb39f0b42a124e5f2f2783e601f105b7b4f2080189fcc49c9be06749679389d",
+          "results": "1bb790a638aad0e801c58626785b2d3b3eb38d89e465e8bef9e96c11c93573f4",
+          "witnesses": "ed367a56ac2b3b79130f542c38eae3092a65972ede851bd05ca5a124cff96588"
+        },
+        "verification_receipt_sha256": "68d38f39a581e1d781e4d7b41f6993e458396c9db1512329567795a6b8ea1f08"
+      },
+      {
+        "base_miss_count": 3,
+        "base_witness_count": 7814,
+        "candidate_count": 7817,
+        "d_interval_inclusive": [
+          9600001,
+          9700000
+        ],
+        "exact_witness_count": 7817,
+        "identity_rows_checked": 7817,
+        "maximum_first_denominator_offset": 14081,
+        "maximum_offset_n": 116101561,
+        "misses": [
+          115544521,
+          116014441,
+          116101561
+        ],
+        "offset_histogram": {
+          "0-8": 3714,
+          "1025-2048": 28,
+          "129-256": 259,
+          "17-32": 1116,
+          "2049-4096": 5,
+          "257-512": 123,
+          "33-64": 701,
+          "4097-8192": 2,
+          "513-1024": 47,
+          "65-128": 491,
+          "8193-16384": 1,
+          "9-16": 1330
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7611,
+          "offset_257_4096": 203,
+          "offset_4097_65536": 3
+        },
+        "package": "n1-mod12-range-9600001-9700000-v9",
+        "run_manifest_sha256": "aa60e4edb70599008cab39d3a90019f25e4140ba856a889fe8dc023487889847",
+        "stream_hashes": {
+          "candidates": "fcbcd738d77771d65494146ff8f12f4d0a6b4c44043eaece3d522d7ec59d4df8",
+          "results": "f05db3b4570c004b661ffca7996b754a8a47318b48edd80b7b562779683f1ff5",
+          "witnesses": "4f13e804212ead1e9522fefbf8ae00ecba4a1775483af5b330aa5ae2368d7191"
+        },
+        "verification_receipt_sha256": "78bd2d3efc7d3bba8f2b504472888dbe488c753e28f98fd2b44b0ba200848e4c"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 7885,
+        "candidate_count": 7890,
+        "d_interval_inclusive": [
+          9700001,
+          9800000
+        ],
+        "exact_witness_count": 7890,
+        "identity_rows_checked": 7890,
+        "maximum_first_denominator_offset": 13538,
+        "maximum_offset_n": 117310561,
+        "misses": [
+          116402521,
+          116794129,
+          117310561,
+          117440569,
+          117594481
+        ],
+        "offset_histogram": {
+          "0-8": 3701,
+          "1025-2048": 16,
+          "129-256": 278,
+          "17-32": 1125,
+          "2049-4096": 6,
+          "257-512": 127,
+          "33-64": 768,
+          "4097-8192": 4,
+          "513-1024": 48,
+          "65-128": 494,
+          "8193-16384": 1,
+          "9-16": 1322
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7688,
+          "offset_257_4096": 197,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-9700001-9800000-v9",
+        "run_manifest_sha256": "5065fb473afe6ade0aa1162791fb0c1497f764007a52c1879c2625a725828d81",
+        "stream_hashes": {
+          "candidates": "92d9d9f9d516dba108d1c9de9b468b244be302844fcc971fdcdc1ffc1af06944",
+          "results": "b15b1f61e3b5a6712af67ab623900f476eafe190f5f601019d9db205c2ec9665",
+          "witnesses": "3316a2d2165dd15f3fd4bedcc39438ec538a0fa43647b3395283cc85e2a9f149"
+        },
+        "verification_receipt_sha256": "5ccfa4cb749f9a8340222bf0ef94520e529c12d23bb42fcb846e71f11c0dc934"
+      },
+      {
+        "base_miss_count": 4,
+        "base_witness_count": 7828,
+        "candidate_count": 7832,
+        "d_interval_inclusive": [
+          9800001,
+          9900000
+        ],
+        "exact_witness_count": 7832,
+        "identity_rows_checked": 7832,
+        "maximum_first_denominator_offset": 15495,
+        "maximum_offset_n": 117677569,
+        "misses": [
+          117677569,
+          117773881,
+          118091689,
+          118613881
+        ],
+        "offset_histogram": {
+          "0-8": 3706,
+          "1025-2048": 19,
+          "129-256": 279,
+          "17-32": 1150,
+          "2049-4096": 9,
+          "257-512": 133,
+          "33-64": 715,
+          "4097-8192": 3,
+          "513-1024": 51,
+          "65-128": 453,
+          "8193-16384": 1,
+          "9-16": 1313
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7616,
+          "offset_257_4096": 212,
+          "offset_4097_65536": 4
+        },
+        "package": "n1-mod12-range-9800001-9900000-v9",
+        "run_manifest_sha256": "672f372da4e3f17c4bc3577386cdb8e0387f260e30dc8c8d680dc76e008f7a91",
+        "stream_hashes": {
+          "candidates": "8a562eadfd707c4e80b021f0319f11a98d9516aea92108d1f7774d11b7575537",
+          "results": "83802d4c35ff03ac9129eedd0a0fd04af74587cde45688f6959f3f4088ea6563",
+          "witnesses": "44695d8191f124296a17d59f61003187e4e5fdbb26ae674b87a561944c15e02b"
+        },
+        "verification_receipt_sha256": "4e8dced998ddba1a84651ededdb5c4375e18c6ceac3f27a16754f1dd1f51c180"
+      },
+      {
+        "base_miss_count": 5,
+        "base_witness_count": 7922,
+        "candidate_count": 7927,
+        "d_interval_inclusive": [
+          9900001,
+          10000000
+        ],
+        "exact_witness_count": 7927,
+        "identity_rows_checked": 7927,
+        "maximum_first_denominator_offset": 10359,
+        "maximum_offset_n": 118875409,
+        "misses": [
+          118875409,
+          118915801,
+          119006281,
+          119661721,
+          119678329
+        ],
+        "offset_histogram": {
+          "0-8": 3678,
+          "1025-2048": 23,
+          "129-256": 279,
+          "17-32": 1194,
+          "2049-4096": 5,
+          "257-512": 165,
+          "33-64": 663,
+          "4097-8192": 3,
+          "513-1024": 64,
+          "65-128": 488,
+          "8193-16384": 2,
+          "9-16": 1363
+        },
+        "offset_stage_counts": {
+          "offset_0_256": 7665,
+          "offset_257_4096": 257,
+          "offset_4097_65536": 5
+        },
+        "package": "n1-mod12-range-9900001-10000000-v9",
+        "run_manifest_sha256": "10ce5b0c760ea852a5e0b4ee867ade72b261ab98c9c3c2f113bad78275e4a9bd",
+        "stream_hashes": {
+          "candidates": "997dd864a2c4af60b684bb5de1376fa495fbdc01387efe83f686e48229cc133f",
+          "results": "63fb360ca5e2009a1d73d4dee4b90b1de345f042a71cf09d4e95b32c628ddc39",
+          "witnesses": "545780548c4544867624fe3f097d102b2b1314f112d9ecb293851bd6fb8d3b7c"
+        },
+        "verification_receipt_sha256": "66354d9a3d674507fb9c61d90267bf960e97591e097132c45130fb473596038d"
+      }
+    ],
+    "ranges": 50,
+    "unresolved_after_cap": 0
+  }
+}

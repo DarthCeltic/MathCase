@@ -35,3 +35,18 @@ proofs/collatz/remaining-residues/ModelExample13.stdout.txt -text -eol whitespac
 proofs/collatz/remaining-residues/LongPath27.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/remaining-residues/LongPath27.stdout.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 proofs/collatz/remaining-residues/LongPath27.exit-code.txt -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+# Keep the published reproduction evidence byte-for-byte, including captured CRLF receipts.
+reproduction/m15-m20-r2/** -text -eol -diff
+reproduction/m20-source-replay-2026-11-18/** -text -eol -diff
+
+
+
+# Preserve hash-bound Egyptian-fraction evidence and source bytes.
+research/number-theory/egyptian-fractions/** -text -eol -diff
+research/number-theory/egyptian-fractions/README.md -text -eol diff
+research/number-theory/egyptian-fractions/PUBLIC_DATA_NOTES.md -text -eol diff
+research/number-theory/egyptian-fractions/campaign-v9-10m-audit-v1/*.md -text -eol diff
+scripts/*egyptian_fraction*.py -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+reproduction/egyptian-fractions-v9/** -text -eol -diff
+reproduction/egyptian-fractions-v9/README.md text eol=lf
+reproduction/egyptian-fractions-v9/inventory.json text eol=lf

@@ -1,0 +1,11 @@
+{
+  "created_at_utc": "2026-11-13T10:28:52Z",
+  "error": "unexpected run-manifest schema or status",
+  "error_type": "ValueError",
+  "gpu_used": false,
+  "model_calls": 0,
+  "network_calls": 0,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-v2",
+  "status": "FAILED_OR_REFUSED"
+}

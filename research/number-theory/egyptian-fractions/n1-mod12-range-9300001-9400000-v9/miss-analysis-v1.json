@@ -1,0 +1,94 @@
+{
+  "base_miss_count": 2,
+  "d_interval_inclusive": [
+    9300001,
+    9400000
+  ],
+  "extension_receipt_sha256": "ad9a99b9b3bd2ce3ad0b03ae1cd851a803b3bcc1e8efbde2d389903352244b77",
+  "miss_counts_by_n_mod_24": {
+    "1": 2
+  },
+  "misses": [
+    {
+      "d": 9305124,
+      "denominators": [
+        27928581,
+        59024263086,
+        5806439388016546142574
+      ],
+      "first_denominator_offset": 13208,
+      "n": 111661489,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          10567,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 1,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 27915373,
+      "q_factorization": [
+        [
+          27915373,
+          1
+        ]
+      ],
+      "q_mod_24": 13,
+      "q_prime_factor_count_with_multiplicity": 1,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 9358034,
+      "denominators": [
+        28082050,
+        99195161284,
+        14759520033138963631700
+      ],
+      "first_denominator_offset": 7947,
+      "n": 112296409,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          10597,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 25,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 28074103,
+      "q_factorization": [
+        [
+          4507,
+          1
+        ],
+        [
+          6229,
+          1
+        ]
+      ],
+      "q_mod_24": 7,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    }
+  ],
+  "model_calls": 0,
+  "n_factor_count_with_multiplicity": {
+    "2": 2
+  },
+  "n_factor_shapes": {
+    "prime_power": 2
+  },
+  "provider_calls": 0,
+  "q_factor_count_with_multiplicity": {
+    "1": 1,
+    "2": 1
+  },
+  "resolved_by_extension": 2,
+  "schema": "mathcase-erdos-straus-v9-range-miss-analysis-v1",
+  "search_api_calls": 0,
+  "status": "PASS",
+  "unresolved_at_fixed_cap": 0
+}

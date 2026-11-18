@@ -1,0 +1,6 @@
+/mathcase/input/M20CompositionR3.lean:5444:7: error: (deterministic) timeout at `isDefEq`, maximum number of heartbeats (200000) has been reached
+
+Note: Use `set_option maxHeartbeats <num>` to set the limit.
+
+Hint: Additional diagnostic information may be available using the `set_option diagnostics true` command.
+'CollatzM20AllFamilies.all_scanned_m20_families_descend' depends on axioms: [propext, sorryAx, Quot.sound]

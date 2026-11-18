@@ -1,0 +1,13 @@
+status=RUNNING
+started_utc=2026-11-18T08:24:13Z
+image=sha256:ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7
+network=none
+cpus=1
+memory_bytes=2147483648
+memory_swap_bytes=2147483648
+pids_limit=64
+status=COMPLETED
+replay_modules=229
+composition_modules=134
+axiom_groups=23
+finished_utc=2026-11-18T12:07:13Z

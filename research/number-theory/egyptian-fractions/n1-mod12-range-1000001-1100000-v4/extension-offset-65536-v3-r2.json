@@ -1,0 +1,73 @@
+{
+  "base_bundle": {
+    "d_interval_inclusive": [
+      1000001,
+      1100000
+    ],
+    "miss_count": 3,
+    "results_sha256": "36feab9c18aa92e69a36e3f9d96822e5e6bb5a603e4308b7b81ed422f7776097",
+    "run_manifest_sha256": "d784e16d01b02fed70796870bd57fbf393fc98d1d05fa06c17ce65b798be3827",
+    "schema": "mathcase-egyptian-fraction-witness-stream-v4"
+  },
+  "classification": "FINITE_EXTENSION_OF_EXPLICIT_BASE_STREAM_MISSES_ONLY",
+  "counts": {
+    "candidates": 3,
+    "still_not_found_within_extension_cap": 0,
+    "witnesses_found": 3
+  },
+  "extension_offset_range": [
+    4097,
+    65536
+  ],
+  "finished_at_utc": "2026-11-13T10:35:33.465129Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "items": [
+    {
+      "denominators": [
+        3119175,
+        1699361718,
+        6235280214871603950
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5714,
+      "n": 12453841,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        3191530,
+        1650424890,
+        7643989656852869715
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 6159,
+      "n": 12741481,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        3234012,
+        2122653201,
+        1738565028663568280628
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4919,
+      "n": 12916369,
+      "status": "WITNESS_FOUND"
+    }
+  ],
+  "items_sha256": "0f7e2e6090a5229a9485176369853fc21932998a97b1b02e3bb1547dc7abf5e7",
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-v3",
+  "source_bindings": {
+    "base_checker_sha256": "a199520eb0bb0ce6ab851067860d97581b778e79e34d47c020466062a3334dee",
+    "extension_script_sha256": "a0e9a22a52ad4b5fec84a45b1c05cdcc2af1e2a71fdbbacea8c023f21f8243d8"
+  },
+  "started_at_utc": "2026-11-13T10:35:33.463691Z",
+  "status": "PASS_BOUNDED_EXTENSION",
+  "wall_seconds": 0.002
+}

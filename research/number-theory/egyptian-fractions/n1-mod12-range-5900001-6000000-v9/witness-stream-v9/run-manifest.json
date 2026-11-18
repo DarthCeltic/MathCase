@@ -1,0 +1,57 @@
+{
+  "candidate_definition": "n=12*d+1; neither n nor q=(n+3)//4 has a prime factor congruent to 2 modulo 3",
+  "classification": "FINITE_RESIDUAL_SET_AND_EXPORTED_WITNESSES_ONLY",
+  "counts": {
+    "base_offset": 7844,
+    "candidates": 8074,
+    "extension_offset": 223,
+    "not_found_within_bound": 7,
+    "witnesses": 8067
+  },
+  "d_interval_inclusive": [
+    5900001,
+    6000000
+  ],
+  "d_values_scanned": 100000,
+  "finished_at_utc": "2026-11-13T14:09:25.597021Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-v9",
+  "search": {
+    "base_offset": 256,
+    "max_total_offset": 4096,
+    "method": "exact greedy first-denominator offsets 0..256, then 257..max_total_offset"
+  },
+  "source_bindings": {
+    "scripts/export_egyptian_fraction_witness_stream_v9.py": "5805d88a0c3382467cb3d5157c2f0214414dc5cc567d0cb130199b4ec0986432",
+    "scripts/extend_egyptian_fraction_n1mod12_residual_search.py": "d49de032aa6cddbbc3e45173e89ca62f4d25fb6fa01eb874c058aa1a2b6f2d4e",
+    "scripts/run_egyptian_fraction_n1mod4_subfamilies_check.py": "7ca7b9ee082d246221570d8436416276ddc04e11b67c9fed5a8e7e2471d0aa77",
+    "scripts/search_egyptian_fraction_n1mod12_range_v10.py": "451ec28f6acdddaf73bc67ed35e981135527fb70d3321456e2154cae8534bf02",
+    "scripts/search_egyptian_fraction_n1mod12_residuals.py": "8dc13e42a0d724c30dd7bf56c971d31ecd09f792413ac8ff62674c6173fee67d"
+  },
+  "started_at_utc": "2026-11-13T14:09:10.529674Z",
+  "status": "PASS_BOUNDED_WITNESS_EXPORT",
+  "streams": {
+    "candidates": {
+      "path": "candidate-n.jsonl",
+      "records": 8074,
+      "sha256": "a8366e6999c3293be2aad4d78b5a207d600b208e38693ef523c849d272c73e55"
+    },
+    "results": {
+      "path": "results.jsonl",
+      "records": 8074,
+      "sha256": "c9d46cab31ba58e2c4e620a47b6bb75a72b2994467f727356b79e911a27087cc"
+    },
+    "witnesses": {
+      "path": "witnesses.jsonl",
+      "records": 8067,
+      "sha256": "36bb7637432955121eb51b9cbb530eec00a4360ae0a18a0e0b6d17307a3447f2"
+    }
+  },
+  "target": "Erdos-Straus representations for factor-conditioned n=1 mod 12 candidates",
+  "wall_seconds": 15.067
+}

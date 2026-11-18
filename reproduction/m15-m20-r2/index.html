@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MathCase · pinned Collatz replay</title>
+  <meta name="description" content="Read-only, hash-checked finite Collatz replay evidence.">
+  <link rel="stylesheet" href="/ui/replay.css">
+</head>
+<body><main>
+  <h1>MathCase replay evidence</h1>
+  <p>A finite Lean replay record with hash-checked, read-only access. It does not run a proof or change a dossier gate.</p>
+  <article class="panel" id="collatz-pinned-replay" data-state="loading" style="margin:14px 0" aria-live="polite"><div class="panel-head"><div><span class="eyebrow">Collatz · bounded residue replay · read-only</span><h3>M15–M20 pinned shard replay</h3><p>Fresh-checkout replay receipts from the pinned local Lean image. This panel reads evidence only; it does not run Lean or change dossier gates.</p></div><span class="tag proposed" id="collatz-replay-status">Loading evidence</span></div><p id="collatz-replay-summary" class="callout">Opening the exact replay manifest and file inventory…</p><p id="collatz-replay-scope" class="library-note">The saved scope statement will appear after the manifest digest is checked.</p><div class="evidence" id="collatz-replay-files"><p>Waiting for the verified file list.</p></div><details><summary>Manifest binding and open items</summary><p id="collatz-replay-manifest">Manifest digest and M20 aggregate state will appear after verification.</p></details><button class="link" id="collatz-replay-refresh" type="button">Refresh replay record</button></article>
+  <section class="panel" id="knowledge-graph" aria-labelledby="graph-title" data-state="loading">
+    <span class="eyebrow">MathCase knowledge graph · exact match</span>
+    <h2 id="graph-title">Explore checked theorem statements</h2>
+    <p>This partial index contains 4,262 M15–M20 shard statements. Search by theorem name or statement text, then inspect the recorded source, dependency notes, axiom report, and receipt binding.</p>
+    <p class="callout">Each shard statement remains individually M0 unreviewed and M4 unpromoted. The separate M20 aggregate review does not change an individual shard’s status. This exact-text filter does not perform semantic search.</p>
+    <label for="graph-search">Find a theorem</label>
+    <input id="graph-search" type="search" autocomplete="off" placeholder="Try a theorem name or part of a statement">
+    <p id="graph-status" role="status" aria-live="polite">Checking the graph files…</p>
+    <div id="graph-results" class="graph-results" role="list"></div>
+    <article id="graph-detail" class="graph-detail" hidden aria-live="polite"></article>
+    <p><a href="/api/knowledge-graph-doc">Read the graph scope and limits</a></p>
+  </section>
+</main><script src="/ui/collatz-pinned-replay.js" defer></script><script src="/ui/knowledge-graph.js" defer></script></body></html>

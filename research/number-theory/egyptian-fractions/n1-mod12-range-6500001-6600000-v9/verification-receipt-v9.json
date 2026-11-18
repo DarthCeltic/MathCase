@@ -1,0 +1,26 @@
+{
+  "candidate_count": 7988,
+  "checked_at_utc": "2026-11-13T14:15:33.208432Z",
+  "checker_method": "independent Eratosthenes prime sieve for candidate coverage; integer identity check for every exported triple",
+  "checker_sha256": "1d506b8c7f6ae0ceaf5f74e6c1ea276fd09fe06f2f371c1df2020a8d2babb469",
+  "classification": "FINITE_BOUNDED_WITNESS_VERIFICATION_ONLY",
+  "d_interval_inclusive": [
+    6500001,
+    6600000
+  ],
+  "full_erdos_straus_conjecture_solved": false,
+  "model_calls": 0,
+  "network_calls": 0,
+  "not_found_within_bound": 8,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "run_manifest_sha256": "54a6ddd7656026ec1f4a3224936201f55b96fc94a1e0776812941ae15029e7eb",
+  "schema": "mathcase-egyptian-fraction-witness-verification-v9",
+  "status": "PASS_ALL_EXPORTED_WITNESSES_AND_CANDIDATE_COVERAGE",
+  "streams_sha256": {
+    "candidates": "ac27acf0d2a1128680add811104a487d2fe6b170751bcaf23965cf6fb06ab006",
+    "results": "b473814e7bc5144261f032b9eed464805d32fbbabe43adca66ca9ac1bd807452",
+    "witnesses": "cd0e300edb1377d72c563636ae2790dd7187f25ff208da24629c04cf95cb1a5f"
+  },
+  "witness_count": 7980
+}

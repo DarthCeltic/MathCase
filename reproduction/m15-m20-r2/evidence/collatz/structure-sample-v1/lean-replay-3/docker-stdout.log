@@ -1,0 +1,20 @@
+LEAN_VERSION=Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+COLLATZ_TRACE_HELPER_BEGIN
+COLLATZ_TRACE_HELPER_PASS
+LONGRISE_LEAN_BEGIN
+/mathcase/input/structure/LongRiseControl.lean:54:43: warning: This simp argument is unused:
+  Nat.mul_left_comm
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Nat.mul_assoc, Nat.mul_comm]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+/mathcase/input/structure/LongRiseControl.lean:72:27: error: Application type mismatch: The argument
+  hk
+has type
+  1 ≤ k
+of sort `Prop` but is expected to have type
+  Nat
+of sort `Type` in the application
+  ih hk
+'MathCase.CollatzStructureSample.longRise_pair_endpoint' depends on axioms: [propext, sorryAx, Quot.sound]

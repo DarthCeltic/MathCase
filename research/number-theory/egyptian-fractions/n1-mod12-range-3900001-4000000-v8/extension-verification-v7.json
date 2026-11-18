@@ -1,0 +1,20 @@
+{
+  "base_checker_sha256": "5706edd959535cc41246cf57f2eb15dc108a69250fc20e902b02b3056ae2b5d3",
+  "base_run_manifest_sha256": "c9a43242e767e92d057c0116e03d600c67dafa9c0d9a0188e23651ee83bca1be",
+  "base_verification_receipt_sha256": "bc9de9fdbef1b552105b79c7673c4195660f8222cd27de8582a58e93024a7f27",
+  "checked_at_utc": "2026-11-13T13:22:34Z",
+  "extension_candidates": 3,
+  "extension_receipt_sha256": "71871bc013f3f9ffb8000f863627166edef4e7ac9804b15c6252e0e251835048",
+  "extension_script_sha256": "ccc3f71b7321f24b3dfbb372b60c5b3e5d06ee18b29945c20f18eebd72d3cb92",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-verification-v7",
+  "status": "PASS_EXTENSION_RECEIPT_REOPENS",
+  "still_not_found_within_extension_cap": 0,
+  "verification_method": "replayed bounded extension from the independently verified base stream and compared every receipt field",
+  "witnesses_found": 3
+}

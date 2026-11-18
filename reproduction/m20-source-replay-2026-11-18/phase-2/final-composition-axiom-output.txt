@@ -1,0 +1,1 @@
+'CollatzM20CompositionV1.all_scanned_m20_families_descend_composed_v1' depends on axioms: [propext, Quot.sound]

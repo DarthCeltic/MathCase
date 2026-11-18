@@ -1,0 +1,24 @@
+{
+  "schema": "mathcase-docker-run-receipt-v1",
+  "name": "mathcase-m20-composition-v1-run1",
+  "id": "afd148dbd79fe0256dc995a5bc206619f8efda6ec96cd1f62e2f655a46e44ed6",
+  "image_id": "sha256:ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7",
+  "requested_image": "sha256:ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7",
+  "status": "exited",
+  "exit_code": 0,
+  "oom_killed": false,
+  "started_at_utc": "2026-11-14T01:44:24.755706916Z",
+  "finished_at_utc": "2026-11-14T01:58:20.022333627Z",
+  "network_mode": "none",
+  "cpu_nanos": 1000000000,
+  "memory_limit_bytes": 2147483648,
+  "memory_swap_limit_bytes": 2147483648,
+  "pids_limit": 64,
+  "read_only_rootfs": true,
+  "cap_drop": [
+    "ALL"
+  ],
+  "security_options": [
+    "no-new-privileges:true"
+  ]
+}

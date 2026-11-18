@@ -1,0 +1,6 @@
+# Preserve captured evidence bytes; do not rewrite receipt line endings.
+evidence/collatz/m15-m20-pinned-replay/docker-driver-output.txt -text !eol whitespace=cr-at-eol
+evidence/collatz/structure-sample-v1/lean-replay-*/run-receipt.json -text !eol whitespace=cr-at-eol
+evidence/collatz/m15-m20-pinned-replay/setup-attempts/** -text !eol whitespace=cr-at-eol
+evidence/collatz/m15-m20-pinned-replay/m20-composition-v1/history/attempt-*/attempt-result.json -text !eol whitespace=cr-at-eol
+evidence/collatz/m15-m20-pinned-replay/m20-composition-v1/history/attempt-*/docker.stderr.txt -text !eol whitespace=cr-at-eol

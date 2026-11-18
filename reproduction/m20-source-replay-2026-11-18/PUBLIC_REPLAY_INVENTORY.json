@@ -1,0 +1,117 @@
+[
+  {
+    "path": "README.md",
+    "bytes": 3340,
+    "sha256": "c47000149209837faaff4922d7ac0c429128e70b29610a592fc89a29b757f5ca"
+  },
+  {
+    "path": "axiom-cross-check.tsv",
+    "bytes": 6676,
+    "sha256": "b2da27c7aea3eb65b8e34f26344da077f8f3019d2e8fbcdfab2fd5c0505ef2b0"
+  },
+  {
+    "path": "candidate-source-check.json",
+    "bytes": 864,
+    "sha256": "686e09c3a99011632d82d3c68c90e1b6293e6852382910163d8c7bc8da8c0ca9"
+  },
+  {
+    "path": "cross-replay-check.tsv",
+    "bytes": 223825,
+    "sha256": "eee60e542095f00f1030fcbfbf6e9172ca1281c9eb142f07de8e4b1dd7cb5e6d"
+  },
+  {
+    "path": "phase-1/axiom-lines.txt",
+    "bytes": 370090,
+    "sha256": "d34f68a239f8ad528c8716898d3670063e464fe4899f2e7b117d8e6c9c6c0508"
+  },
+  {
+    "path": "phase-1/axiom-records.tsv",
+    "bytes": 9361,
+    "sha256": "19506f2fb39b3537ef7baa788e62bb6c388d5f03a16f98b4b66c66120c697b84"
+  },
+  {
+    "path": "phase-1/compile-records.tsv",
+    "bytes": 225754,
+    "sha256": "b314efc0c1f1719b880f22bc61576c21e8051835ca96e5d0dee6c98a17f1a164"
+  },
+  {
+    "path": "phase-1/distinct-axiom-sets.txt",
+    "bytes": 22,
+    "sha256": "5ce88105d9d0c4c4432b0e38f9d75b3cf5f1930ca6d7b60165a8ede56709493e"
+  },
+  {
+    "path": "phase-1/docker-exit-code.txt",
+    "bytes": 5,
+    "sha256": "4a30efff1e51f55cb5d9158fd1307180f3d0795821c35a79ab9c523e41a6241f"
+  },
+  {
+    "path": "phase-1/final-composition-axiom-output.txt",
+    "bytes": 112,
+    "sha256": "f994f79628c292788d0bd64e95192c60257f3fc8d13cf9e53a32df0575b04fbc"
+  },
+  {
+    "path": "phase-1/output-manifest.tsv",
+    "bytes": 168045,
+    "sha256": "7baa0fc698f848b125cfe1aef59d2c6793ffe9ace29290a916edb037fe3d37f4"
+  },
+  {
+    "path": "phase-1/run-status.txt",
+    "bytes": 323,
+    "sha256": "2ee746e94ba6d05295fc0d3087320fa677e5f5cdf01321300735f84f32ec42b7"
+  },
+  {
+    "path": "phase-1/sorryAx-line-count.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "phase-2/axiom-lines.txt",
+    "bytes": 370090,
+    "sha256": "d34f68a239f8ad528c8716898d3670063e464fe4899f2e7b117d8e6c9c6c0508"
+  },
+  {
+    "path": "phase-2/axiom-records.tsv",
+    "bytes": 9361,
+    "sha256": "f64f25c8bb87daf75679188515f10fa541c540d458bcb51a0bbcd3fb12b341aa"
+  },
+  {
+    "path": "phase-2/compile-records.tsv",
+    "bytes": 225754,
+    "sha256": "f18fcf6fa13df3308a31b13dcc067556a6c77a1de27cd1fffe5bdad298687036"
+  },
+  {
+    "path": "phase-2/distinct-axiom-sets.txt",
+    "bytes": 22,
+    "sha256": "5ce88105d9d0c4c4432b0e38f9d75b3cf5f1930ca6d7b60165a8ede56709493e"
+  },
+  {
+    "path": "phase-2/docker-exit-code.txt",
+    "bytes": 3,
+    "sha256": "13bf7b3039c63bf5a50491fa3cfd8eb4e699d1ba1436315aef9cbe5711530354"
+  },
+  {
+    "path": "phase-2/final-composition-axiom-output.txt",
+    "bytes": 112,
+    "sha256": "f994f79628c292788d0bd64e95192c60257f3fc8d13cf9e53a32df0575b04fbc"
+  },
+  {
+    "path": "phase-2/output-manifest.tsv",
+    "bytes": 166512,
+    "sha256": "b0e8eba33252d1f7eb253d55e05e0249fb599f58ebe75bc0db74c71fcbf967c9"
+  },
+  {
+    "path": "phase-2/run-status.txt",
+    "bytes": 323,
+    "sha256": "0226af594bfe68d1f5e52e9b4cb93ad70068618ffc24ab3b5353ec6ee2b41f40"
+  },
+  {
+    "path": "phase-2/sorryAx-line-count.txt",
+    "bytes": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  {
+    "path": "phase-summary.tsv",
+    "bytes": 1648,
+    "sha256": "98c38f2f773108fbea146fa4e2903647215d84e6667a2b1d4981e42696af0eb3"
+  }
+]

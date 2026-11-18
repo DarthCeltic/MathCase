@@ -1,0 +1,13 @@
+{
+  "schema": "mathcase-anonymous-docker-manifest-check-v1",
+  "checked_at_local": "2026-11-14T16:10:26-05:00",
+  "command": "docker manifest inspect mathcase/lean-snapshot:8f587bf452930d3f-20261028T115132.541195800Z",
+  "registry": "Docker Hub default registry resolution",
+  "authentication": "anonymous; isolated empty auth config; no credentials used",
+  "exit_code": 1,
+  "combined_cli_output": "errors:\ndenied: requested access to the resource is denied\nunauthorized: authentication required\n",
+  "combined_cli_output_sha256": "2f6fc114bcaaef2626f31aef748031ff78dde9f48ccf0956f5c573ea7dcaf6e7",
+  "interpretation": "The tag was not anonymously accessible at this check. This does not distinguish a private repository from a missing tag; public pullability is unavailable through this lookup.",
+  "pull_attempted": false,
+  "image_build_attempted": false
+}

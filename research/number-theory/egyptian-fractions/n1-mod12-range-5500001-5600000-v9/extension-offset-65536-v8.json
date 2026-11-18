@@ -1,0 +1,84 @@
+{
+  "base_bundle": {
+    "d_interval_inclusive": [
+      5500001,
+      5600000
+    ],
+    "miss_count": 4,
+    "results_sha256": "2a81e8c393eac3bf12287d6bcf55037cf5ee42c009011ccf3132602ff85e3055",
+    "run_manifest_sha256": "9f58f403925da7fd6ff2dd6bc8a5c2b354fd8a687d5a14d7333f9a1aaaa06d6d",
+    "schema": "mathcase-egyptian-fraction-witness-stream-v9"
+  },
+  "classification": "FINITE_EXTENSION_OF_EXPLICIT_BASE_STREAM_MISSES_ONLY",
+  "counts": {
+    "candidates": 4,
+    "still_not_found_within_extension_cap": 0,
+    "witnesses_found": 4
+  },
+  "extension_offset_range": [
+    4097,
+    65536
+  ],
+  "finished_at_utc": "2026-11-13T14:05:40.437218Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "items": [
+    {
+      "denominators": [
+        16620188,
+        65351811252,
+        8071370039167611342621
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4225,
+      "n": 66463849,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        16655242,
+        58238626132,
+        3957996910068002483492
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4761,
+      "n": 66601921,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        16680658,
+        48920460672,
+        3332240021739947565696
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5685,
+      "n": 66699889,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        16730146,
+        45600804008,
+        3119912710819925324536
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 6135,
+      "n": 66896041,
+      "status": "WITNESS_FOUND"
+    }
+  ],
+  "items_sha256": "26e4438608155f934d1460f10697311d18dec811da8d3f852b37edaac230dd42",
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-v8",
+  "source_bindings": {
+    "base_checker_sha256": "1d506b8c7f6ae0ceaf5f74e6c1ea276fd09fe06f2f371c1df2020a8d2babb469",
+    "extension_script_sha256": "8a341758a6c8b55bf1606a3bf73ea1c5b4ac41cb4a2bf7c8ba65bb75a1adb0d5"
+  },
+  "started_at_utc": "2026-11-13T14:05:40.435765Z",
+  "status": "PASS_BOUNDED_EXTENSION",
+  "wall_seconds": 0.002
+}

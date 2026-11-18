@@ -1,0 +1,96 @@
+{
+  "base_miss_count": 2,
+  "d_interval_inclusive": [
+    7600001,
+    7700000
+  ],
+  "extension_receipt_sha256": "b8576c8491665fbee43925d997bef1af5e6c8c3b0909913d293e8752d2eec961",
+  "miss_counts_by_n_mod_24": {
+    "1": 2
+  },
+  "misses": [
+    {
+      "d": 7676760,
+      "denominators": [
+        23034528,
+        124887678246,
+        22273279091394702170976
+      ],
+      "first_denominator_offset": 4247,
+      "n": 92121121,
+      "n_factor_shape": "prime",
+      "n_factorization": [
+        [
+          92121121,
+          1
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 1,
+      "n_prime_factor_count_with_multiplicity": 1,
+      "q": 23030281,
+      "q_factorization": [
+        [
+          23030281,
+          1
+        ]
+      ],
+      "q_mod_24": 1,
+      "q_prime_factor_count_with_multiplicity": 1,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 7681600,
+      "denominators": [
+        23053312,
+        62414776062,
+        6907282502296586959872
+      ],
+      "first_denominator_offset": 8511,
+      "n": 92179201,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          9601,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 49,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 23044801,
+      "q_factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          1772677,
+          1
+        ]
+      ],
+      "q_mod_24": 1,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    }
+  ],
+  "model_calls": 0,
+  "n_factor_count_with_multiplicity": {
+    "1": 1,
+    "2": 1
+  },
+  "n_factor_shapes": {
+    "prime": 1,
+    "prime_power": 1
+  },
+  "provider_calls": 0,
+  "q_factor_count_with_multiplicity": {
+    "1": 1,
+    "2": 1
+  },
+  "resolved_by_extension": 2,
+  "schema": "mathcase-erdos-straus-v9-range-miss-analysis-v1",
+  "search_api_calls": 0,
+  "status": "PASS",
+  "unresolved_at_fixed_cap": 0
+}

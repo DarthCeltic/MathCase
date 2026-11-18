@@ -1,0 +1,17 @@
+{
+  "schema_version": "mathcase-public-knowledge-graph-v1",
+  "status": "PUBLIC_SAFE_PARTIAL_SLICE",
+  "record_count": 4262,
+  "cohort_counts": {
+    "collatz-m15-m20-pinned-shards": 4262
+  },
+  "index_path": "index.jsonl",
+  "index_sha256": "b0b618ab0466f82642fe3f8939ee0757ba42e471d3894d9d87c0dd22b66db45b",
+  "m4_promotions": 0,
+  "external_calls": 0,
+  "external_spend_usd": 0,
+  "excluded_owner_only_records": 29,
+  "exclusion_note": "Only shard theorem records with exact source bytes and matching per-shard receipt rows in this package are included. Twenty-nine owner-local or out-of-package records and three historical aggregate rows are excluded. All included M0 and M4 statuses remain explicit per record.",
+  "excluded_source_graph_records": 0,
+  "excluded_historical_aggregate_records": 3
+}

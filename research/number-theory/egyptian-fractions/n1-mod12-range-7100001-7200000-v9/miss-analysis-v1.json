@@ -1,0 +1,97 @@
+{
+  "base_miss_count": 2,
+  "d_interval_inclusive": [
+    7100001,
+    7200000
+  ],
+  "extension_receipt_sha256": "f0a580b1bab37dccbbbe1970a480a8d6564138f534889b2c92c14cab80dedbc9",
+  "miss_counts_by_n_mod_24": {
+    "1": 2
+  },
+  "misses": [
+    {
+      "d": 7171894,
+      "denominators": [
+        21522640,
+        66555177094,
+        6644387396953998250160
+      ],
+      "first_denominator_offset": 6957,
+      "n": 86062729,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          9277,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 49,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 21515683,
+      "q_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          3073669,
+          1
+        ]
+      ],
+      "q_mod_24": 19,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 7181174,
+      "denominators": [
+        21550486,
+        66670023284,
+        6668774468888136625396
+      ],
+      "first_denominator_offset": 6963,
+      "n": 86174089,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          9283,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 25,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 21543523,
+      "q_factorization": [
+        [
+          109,
+          1
+        ],
+        [
+          197647,
+          1
+        ]
+      ],
+      "q_mod_24": 19,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    }
+  ],
+  "model_calls": 0,
+  "n_factor_count_with_multiplicity": {
+    "2": 2
+  },
+  "n_factor_shapes": {
+    "prime_power": 2
+  },
+  "provider_calls": 0,
+  "q_factor_count_with_multiplicity": {
+    "2": 2
+  },
+  "resolved_by_extension": 2,
+  "schema": "mathcase-erdos-straus-v9-range-miss-analysis-v1",
+  "search_api_calls": 0,
+  "status": "PASS",
+  "unresolved_at_fixed_cap": 0
+}

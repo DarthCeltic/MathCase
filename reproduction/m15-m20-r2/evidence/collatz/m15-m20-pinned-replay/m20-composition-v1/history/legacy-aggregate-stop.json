@@ -1,0 +1,34 @@
+{
+  "aggregate_source": "lean/M20AllFamilies.lean",
+  "aggregate_source_sha256": "4b480752687cc2fea5554f20e4198d990e4c30ebe50a01b5813eb517dde469bf",
+  "aggregate_started_at_utc": "2026-11-01T10:59:07Z",
+  "batch_initial_memory_events_max": 13701,
+  "batch_output_path": "evidence/m20/failed-attempts/aggregate-memory-cap/docker-output-remaining.txt",
+  "batch_output_sha256": "3893ae5b91db47ee6ba8444940a473d04a1931fdc7da6929269bc388cf8ba6de",
+  "batch_receipt_path": "evidence/m20/failed-attempts/aggregate-memory-cap/docker-batch-receipt.json",
+  "batch_receipt_sha256": "7579f852bf9d419bca723e156f4c611a6c17cb730ed33902111389052d483d79",
+  "cause": "Aggregate import/compilation reached the configured 2 GiB cgroup memory limit; execution was stopped by the operator before OOM.",
+  "container_finished_at_utc": "2026-11-01T11:00:18.903045401Z",
+  "exit_code": 137,
+  "memory_limit_bytes": 2147483648,
+  "memory_peak_bytes": 2147483648,
+  "oom_killed": false,
+  "operator_stopped": true,
+  "raw_receipt_exit_code": 137,
+  "raw_receipt_oom_killed": false,
+  "runner_finished_at_utc": "2026-11-01T11:00:20.003Z",
+  "sampled_memory_current_bytes": [
+    2145009664,
+    2147377152
+  ],
+  "sampled_memory_events_max": [
+    14576,
+    15220
+  ],
+  "sampled_memory_events_oom": [
+    0,
+    0
+  ],
+  "schema": "mathcase-m20-aggregate-resource-stop-v1",
+  "shards_compiled_before_aggregate": 132
+}

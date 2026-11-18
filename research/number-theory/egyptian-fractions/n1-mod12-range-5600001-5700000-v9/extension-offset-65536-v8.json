@@ -1,0 +1,117 @@
+{
+  "base_bundle": {
+    "d_interval_inclusive": [
+      5600001,
+      5700000
+    ],
+    "miss_count": 7,
+    "results_sha256": "2008abe21c5032002f9c06a2182ef0ae8d0e73dee53bd5cc9464766e1d194993",
+    "run_manifest_sha256": "e65e32bc13e826a8a46965d93edd0e44c32704bf1fe003eabcf279ec00ea7133",
+    "schema": "mathcase-egyptian-fraction-witness-stream-v9"
+  },
+  "classification": "FINITE_EXTENSION_OF_EXPLICIT_BASE_STREAM_MISSES_ONLY",
+  "counts": {
+    "candidates": 7,
+    "still_not_found_within_extension_cap": 0,
+    "witnesses_found": 7
+  },
+  "extension_offset_range": [
+    4097,
+    65536
+  ],
+  "finished_at_utc": "2026-11-13T14:06:38.183599Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "items": [
+    {
+      "denominators": [
+        16831928,
+        65176471920,
+        70460406323759049042480
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4345,
+      "n": 67310329,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        16854286,
+        38549069968,
+        2666763632852435749616
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 7365,
+      "n": 67387681,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        16912235,
+        30762318100,
+        25397594734635069487900
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 9292,
+      "n": 67611769,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        16954434,
+        32420524875,
+        1508482229393649053250
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 8861,
+      "n": 67782289,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        17043877,
+        50886490218,
+        2680803218183581256034
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5706,
+      "n": 68152681,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        17074096,
+        60669838050,
+        4279749123731486293200
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4803,
+      "n": 68277169,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        17100292,
+        47134104850,
+        3332435759969056178900
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 6201,
+      "n": 68376361,
+      "status": "WITNESS_FOUND"
+    }
+  ],
+  "items_sha256": "c57831a9ad7cab6b6c20b75395de83142f87b7e6139040e6ad644c76dc2133db",
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-v8",
+  "source_bindings": {
+    "base_checker_sha256": "1d506b8c7f6ae0ceaf5f74e6c1ea276fd09fe06f2f371c1df2020a8d2babb469",
+    "extension_script_sha256": "8a341758a6c8b55bf1606a3bf73ea1c5b4ac41cb4a2bf7c8ba65bb75a1adb0d5"
+  },
+  "started_at_utc": "2026-11-13T14:06:38.178403Z",
+  "status": "PASS_BOUNDED_EXTENSION",
+  "wall_seconds": 0.006
+}

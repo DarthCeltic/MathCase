@@ -1,0 +1,83 @@
+import Descent127
+import M15ShardA
+import M15ShardB
+import M15ShardC
+import M15ShardD
+import M15ShardE
+import M15ShardF
+import M15ShardG
+import M15ShardH
+import M15ShardI
+#print axioms CollatzR127.descent_mod32768_127
+#print axioms CollatzM15ShardA.descent_mod32768_411
+#print axioms CollatzM15ShardA.descent_mod32768_415
+#print axioms CollatzM15ShardA.descent_mod32768_831
+#print axioms CollatzM15ShardA.descent_mod32768_839
+#print axioms CollatzM15ShardA.descent_mod32768_1095
+#print axioms CollatzM15ShardA.descent_mod32768_1151
+#print axioms CollatzM15ShardA.descent_mod32768_1275
+#print axioms CollatzM15ShardA.descent_mod32768_1775
+#print axioms CollatzM15ShardB.descent_mod32768_1903
+#print axioms CollatzM15ShardB.descent_mod32768_2119
+#print axioms CollatzM15ShardB.descent_mod32768_2279
+#print axioms CollatzM15ShardB.descent_mod32768_2299
+#print axioms CollatzM15ShardB.descent_mod32768_2303
+#print axioms CollatzM15ShardB.descent_mod32768_2719
+#print axioms CollatzM15ShardB.descent_mod32768_2727
+#print axioms CollatzM15ShardB.descent_mod32768_2767
+#print axioms CollatzM15ShardC.descent_mod32768_2799
+#print axioms CollatzM15ShardC.descent_mod32768_2847
+#print axioms CollatzM15ShardC.descent_mod32768_2983
+#print axioms CollatzM15ShardC.descent_mod32768_3163
+#print axioms CollatzM15ShardC.descent_mod32768_3303
+#print axioms CollatzM15ShardC.descent_mod32768_3611
+#print axioms CollatzM15ShardC.descent_mod32768_3743
+#print axioms CollatzM15ShardC.descent_mod32768_4007
+#print axioms CollatzM15ShardD.descent_mod32768_4031
+#print axioms CollatzM15ShardD.descent_mod32768_4187
+#print axioms CollatzM15ShardD.descent_mod32768_4287
+#print axioms CollatzM15ShardD.descent_mod32768_4655
+#print axioms CollatzM15ShardD.descent_mod32768_5231
+#print axioms CollatzM15ShardD.descent_mod32768_5311
+#print axioms CollatzM15ShardD.descent_mod32768_5599
+#print axioms CollatzM15ShardD.descent_mod32768_5631
+#print axioms CollatzM15ShardE.descent_mod32768_6175
+#print axioms CollatzM15ShardE.descent_mod32768_6255
+#print axioms CollatzM15ShardE.descent_mod32768_6503
+#print axioms CollatzM15ShardE.descent_mod32768_6759
+#print axioms CollatzM15ShardE.descent_mod32768_6783
+#print axioms CollatzM15ShardE.descent_mod32768_6907
+#print axioms CollatzM15ShardE.descent_mod32768_7163
+#print axioms CollatzM15ShardE.descent_mod32768_7199
+#print axioms CollatzM15ShardF.descent_mod32768_7487
+#print axioms CollatzM15ShardF.descent_mod32768_7783
+#print axioms CollatzM15ShardF.descent_mod32768_8063
+#print axioms CollatzM15ShardF.descent_mod32768_8187
+#print axioms CollatzM15ShardF.descent_mod32768_8347
+#print axioms CollatzM15ShardF.descent_mod32768_8431
+#print axioms CollatzM15ShardF.descent_mod32768_8795
+#print axioms CollatzM15ShardF.descent_mod32768_9051
+#print axioms CollatzM15ShardG.descent_mod32768_9087
+#print axioms CollatzM15ShardG.descent_mod32768_9371
+#print axioms CollatzM15ShardG.descent_mod32768_9375
+#print axioms CollatzM15ShardG.descent_mod32768_9679
+#print axioms CollatzM15ShardG.descent_mod32768_9711
+#print axioms CollatzM15ShardG.descent_mod32768_9959
+#print axioms CollatzM15ShardG.descent_mod32768_10055
+#print axioms CollatzM15ShardG.descent_mod32768_10075
+#print axioms CollatzM15ShardH.descent_mod32768_10655
+#print axioms CollatzM15ShardH.descent_mod32768_10735
+#print axioms CollatzM15ShardH.descent_mod32768_10863
+#print axioms CollatzM15ShardH.descent_mod32768_11079
+#print axioms CollatzM15ShardH.descent_mod32768_11119
+#print axioms CollatzM15ShardH.descent_mod32768_11567
+#print axioms CollatzM15ShardH.descent_mod32768_11679
+#print axioms CollatzM15ShardH.descent_mod32768_11807
+#print axioms CollatzM15ShardI.descent_mod32768_11943
+#print axioms CollatzM15ShardI.descent_mod32768_11967
+#print axioms CollatzM15ShardI.descent_mod32768_12063
+#print axioms CollatzM15ShardI.descent_mod32768_12143
+#print axioms CollatzM15ShardI.descent_mod32768_12511
+#print axioms CollatzM15ShardI.descent_mod32768_12543
+#print axioms CollatzM15ShardI.descent_mod32768_12571
+#print axioms CollatzM15ShardI.descent_mod32768_12827

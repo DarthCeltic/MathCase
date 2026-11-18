@@ -1,0 +1,84 @@
+{
+  "base_bundle": {
+    "d_interval_inclusive": [
+      4100001,
+      4200000
+    ],
+    "miss_count": 4,
+    "results_sha256": "8ebf5dcfd2944a721d5a6584d0dfc7651f3ba901325ad0c76421c65157b4cfac",
+    "run_manifest_sha256": "5c72a9cb0dc0c8fda84febe1596b631641c22ca4117f5384d64a462326db4118",
+    "schema": "mathcase-egyptian-fraction-witness-stream-v8"
+  },
+  "classification": "FINITE_EXTENSION_OF_EXPLICIT_BASE_STREAM_MISSES_ONLY",
+  "counts": {
+    "candidates": 4,
+    "still_not_found_within_extension_cap": 0,
+    "witnesses_found": 4
+  },
+  "extension_offset_range": [
+    4097,
+    65536
+  ],
+  "finished_at_utc": "2026-11-13T13:24:05.944990Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "items": [
+    {
+      "denominators": [
+        12391970,
+        30158229472,
+        1315307099605457166880
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5089,
+      "n": 49547521,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        12413374,
+        29384611296,
+        46901733092674411853856
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5241,
+      "n": 49632529,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        12454840,
+        34248058534,
+        1505096104277136689960
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4527,
+      "n": 49801249,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        12497992,
+        29449435150,
+        1300903845951633848600
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5301,
+      "n": 49970761,
+      "status": "WITNESS_FOUND"
+    }
+  ],
+  "items_sha256": "c83f1c04e3e6bb92e46cf920d90d8d60d1fd535a9c0a8adab1512fc1663e1427",
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-v7",
+  "source_bindings": {
+    "base_checker_sha256": "5706edd959535cc41246cf57f2eb15dc108a69250fc20e902b02b3056ae2b5d3",
+    "extension_script_sha256": "ccc3f71b7321f24b3dfbb372b60c5b3e5d06ee18b29945c20f18eebd72d3cb92"
+  },
+  "started_at_utc": "2026-11-13T13:24:05.943685Z",
+  "status": "PASS_BOUNDED_EXTENSION",
+  "wall_seconds": 0.002
+}

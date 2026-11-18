@@ -1,0 +1,140 @@
+{
+  "classification": "Derived public history; private workstation paths are excluded.",
+  "composition_attempts": [
+    {
+      "attempt_id": "m20-aggregate-composition-r1-20261113",
+      "attempt_result_sha256": "1458cd3c4b2cc277a406b25c420f941b486ee4288b89d0d8c2183b46589ed912",
+      "attempt_source_sha256": "031cf01e2e650bae13b87e195f00c03a2978683d4afe1beffd3e16e6b536c9f2",
+      "attempt_start_record_sha256": "0c4b4cd4e48db9cdf8b23832ebbded718dc10bf185749207a29822b50f4f9c4c",
+      "exit_code": 1,
+      "exported_files": {
+        "attempt-result.json": {
+          "bytes": 522,
+          "sha256": "1458cd3c4b2cc277a406b25c420f941b486ee4288b89d0d8c2183b46589ed912"
+        },
+        "docker.stderr.txt": {
+          "bytes": 101,
+          "sha256": "ff1558f863290cb7ebb86c35bb24def942ca2b8b156e87dbd6725feebcc28c08"
+        },
+        "docker.stdout.txt": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outputs/exit-code.txt": {
+          "bytes": 2,
+          "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        "outputs/stderr.txt": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outputs/stdout.txt": {
+          "bytes": 526,
+          "sha256": "ebab6e0b66bd169ece52628a298c506e37e0f790c74fe708ff040aabc3f59651"
+        },
+        "sources/M20CompositionR1.lean": {
+          "bytes": 654528,
+          "sha256": "031cf01e2e650bae13b87e195f00c03a2978683d4afe1beffd3e16e6b536c9f2"
+        }
+      },
+      "failure_summary": "Lean rejected the product-pair construction: a proof has sort Prop, while the attempted pair constructor expected Type.",
+      "note": "Original start/preflight bytes remain owner-local because they contain workstation mount paths; their hashes are retained.",
+      "outcome": "failed; no proof accepted",
+      "preflight_record_sha256": "9ba470a17abf025eab851fe7c0d4874e3ad1708c2d976be30b91cc0ec0627822"
+    },
+    {
+      "attempt_id": "m20-aggregate-composition-r2-20261113",
+      "attempt_result_sha256": "d8fee8bbab29f4f7de2aca2d7124984aa3ab73517bc86c5fd3573c1bc26aba98",
+      "attempt_source_sha256": "950c6a2eac4d08657025596ee9de59aae890bd3f2cdffbe7f7acaae5bf930e98",
+      "attempt_start_record_sha256": "1bad14d3f1e039dfa994ac306f363f78d27e0a49746932c09c73468f3baa3eb6",
+      "exit_code": 1,
+      "exported_files": {
+        "attempt-result.json": {
+          "bytes": 522,
+          "sha256": "d8fee8bbab29f4f7de2aca2d7124984aa3ab73517bc86c5fd3573c1bc26aba98"
+        },
+        "docker.stderr.txt": {
+          "bytes": 101,
+          "sha256": "ff1558f863290cb7ebb86c35bb24def942ca2b8b156e87dbd6725feebcc28c08"
+        },
+        "docker.stdout.txt": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outputs/exit-code.txt": {
+          "bytes": 2,
+          "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        "outputs/stderr.txt": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outputs/stdout.txt": {
+          "bytes": 769259,
+          "sha256": "4bbbec3b58afb66d56ac05fea7652d272b902286f16c5f949d9971ebf23798bf"
+        },
+        "sources/M20CompositionR2.lean": {
+          "bytes": 778972,
+          "sha256": "950c6a2eac4d08657025596ee9de59aae890bd3f2cdffbe7f7acaae5bf930e98"
+        }
+      },
+      "failure_summary": "The final exact tactic was nested under the last let binding; Lean reported function-expected and unsolved-goal errors.",
+      "note": "Original start/preflight bytes remain owner-local because they contain workstation mount paths; their hashes are retained.",
+      "outcome": "failed; no proof accepted",
+      "preflight_record_sha256": "0462398d8a24dc2214c7a057ccf773dceac841d153ba2482a98f6b849aa334d3"
+    },
+    {
+      "attempt_id": "m20-aggregate-composition-r3-20261113",
+      "attempt_result_sha256": "ad2366e6dd6fec9c02a76a520c00dd1570801a8cf83f57b4939ab6961646ff1e",
+      "attempt_source_sha256": "a65f766b73d4e6341d5831b6f93ca434bc376c316c7f8f3bea36fcac89f2de7a",
+      "attempt_start_record_sha256": "7203027f9fe7502d200768bba5afa0810cebf715756a7e8e8278200ae97ff00d",
+      "exit_code": 1,
+      "exported_files": {
+        "attempt-result.json": {
+          "bytes": 1692,
+          "sha256": "ad2366e6dd6fec9c02a76a520c00dd1570801a8cf83f57b4939ab6961646ff1e"
+        },
+        "docker.stderr.txt": {
+          "bytes": 101,
+          "sha256": "ff1558f863290cb7ebb86c35bb24def942ca2b8b156e87dbd6725feebcc28c08"
+        },
+        "docker.stdout.txt": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outputs/exit-code.txt": {
+          "bytes": 2,
+          "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+        },
+        "outputs/stderr.txt": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "outputs/stdout.txt": {
+          "bytes": 422,
+          "sha256": "da31fe5c074e62f3a658c9aa528397635b0a78b5dff66427bf0fae8a694a0feb"
+        },
+        "sources/M20CompositionR3.lean": {
+          "bytes": 778970,
+          "sha256": "a65f766b73d4e6341d5831b6f93ca434bc376c316c7f8f3bea36fcac89f2de7a"
+        }
+      },
+      "failure_summary": "Lean reached the fixed 200000-heartbeat limit during definitional equality; no theorem was accepted.",
+      "note": "Original start/preflight bytes remain owner-local because they contain workstation mount paths; their hashes are retained.",
+      "outcome": "failed; no proof accepted",
+      "preflight_record_sha256": "558f2b7708437c798964b621ebfb3a1048f8dda12427815109d163ddb064ebfe"
+    }
+  ],
+  "legacy_resource_stop": {
+    "batch_output_sha256": "3893ae5b91db47ee6ba8444940a473d04a1931fdc7da6929269bc388cf8ba6de",
+    "batch_receipt_sha256": "7579f852bf9d419bca723e156f4c611a6c17cb730ed33902111389052d483d79",
+    "exit_code": 137,
+    "memory_limit_bytes": 2147483648,
+    "oom_killed": false,
+    "operator_stopped": true,
+    "receipt_path": "history/legacy-aggregate-stop.json",
+    "receipt_sha256": "a60f0979381509e9fdd76ec4410bfd1b9ee6655a0e1b7842a1f0fe06ceb4553e",
+    "shards_compiled_before_stop": 132
+  },
+  "schema": "mathcase-m20-composition-attempt-history-public-v1"
+}

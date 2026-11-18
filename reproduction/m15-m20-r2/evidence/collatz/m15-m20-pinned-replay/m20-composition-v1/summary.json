@@ -1,0 +1,40 @@
+{
+  "all_compile_exit_codes_zero": true,
+  "cached_m20_shards_replayed": 0,
+  "cached_source_and_olean_hashes_match": true,
+  "claim_limit": "Only the exact 2,652 listed affine descent statements; no global Collatz convergence, complete residue coverage, or novelty claim.",
+  "compiled_outputs": 134,
+  "composition_source_sha256": "8e8fb280df93829c988a360b01276def73e7e5cbd8c9ce8eca70987d5733d3e5",
+  "cpu_limit": 1,
+  "families_composed": 2652,
+  "final_axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "final_olean_sha256": "0f7e39e10f452f85ecfff8c7314efaf3d0bb64d7af498e3829eafc31198dee40",
+  "finished_at_eastern": "2026-11-13 20:58:19 Eastern Standard Time",
+  "fresh_public_checkout_replay": "NOT PERFORMED",
+  "gate_effect": "No M4 or downstream gate promotion.",
+  "image_public_pullability": "not demonstrated; local inspection found no registry digest",
+  "intermediate_modules_compiled": 133,
+  "m0_review": {
+    "decision": "YES",
+    "packet_sha256": "06c8da8e9da0605d4dbeb8b554337c5b530ebdf47dc9dadd6af9e6c74268cf1a",
+    "scope": "statement fidelity only"
+  },
+  "memory_limit_bytes": 2147483648,
+  "network_mode": "none",
+  "oom_killed": false,
+  "pinned_image": "sha256:ec3377f34aaf0b83502e6755d5403ca36382adb99e4c7ab1470d42a1ac5abdc7",
+  "private_raw_run_manifest_sha256": "a11a1aaa113234527eeba65721a50e333cb68c17c826f6cbf56cd484aae434c6",
+  "schema": "mathcase-m20-composition-public-summary-v1",
+  "sorryAx_reported": false,
+  "source_commit": "c82c9685fe8294b47db8ba90c9a65d6e189553de",
+  "source_repository": "DarthCeltic/MathCase-internal",
+  "started_at_eastern": "2026-11-13 20:44:26 Eastern Standard Time",
+  "status": "PASS_COMPOSED_AGGREGATE_CANDIDATE",
+  "target_source_path": "research/collatz/m20/lean/M20AllFamilies.lean",
+  "target_source_sha256": "4b480752687cc2fea5554f20e4198d990e4c30ebe50a01b5813eb517dde469bf",
+  "target_theorem": "CollatzM20CompositionV1.all_scanned_m20_families_descend_composed_v1",
+  "target_type_sha256": "d2292e71742f24e692c1336693e8323898a693b8c4a8f1972adb2223b2d8b27e"
+}

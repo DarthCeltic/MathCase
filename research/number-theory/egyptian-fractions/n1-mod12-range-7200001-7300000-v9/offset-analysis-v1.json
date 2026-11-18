@@ -1,0 +1,57 @@
+{
+  "base_miss_count": 4,
+  "base_witness_count": 8008,
+  "candidate_count": 8012,
+  "candidate_counts_mod_24": {
+    "1": 8012
+  },
+  "candidate_counts_mod_72": {
+    "1": 2665,
+    "25": 2711,
+    "49": 2636
+  },
+  "d_interval_inclusive": [
+    7200001,
+    7300000
+  ],
+  "extension_witnesses": 4,
+  "full_erdos_straus_conjecture_solved": false,
+  "maximum_offset": 7707,
+  "maximum_offset_d": 7236980,
+  "maximum_offset_n": 86843761,
+  "novelty_claim": false,
+  "offset_histogram": {
+    "0-8": 3808,
+    "1025-2048": 21,
+    "129-256": 257,
+    "17-32": 1150,
+    "2049-4096": 8,
+    "257-512": 137,
+    "33-64": 699,
+    "4097-8192": 4,
+    "513-1024": 50,
+    "65-128": 511,
+    "9-16": 1367
+  },
+  "offset_quantiles": {
+    "median": 9,
+    "p90": 81,
+    "p95": 149,
+    "p99": 527
+  },
+  "offset_stage_counts": {
+    "offset_0_256": 7792,
+    "offset_257_4096": 216,
+    "offset_4097_65536": 4
+  },
+  "resolved_witness_count": 8012,
+  "schema": "mathcase-erdos-straus-v9-range-offset-analysis-v1",
+  "source_bindings": {
+    "base_verification_receipt_sha256": "dd936da3eab6332e5c07c454cd4f8f807f346171711dbe376882599f7c0d8ac9",
+    "extension_receipt_sha256": "92f5dedd1b6771c929dd08fd563e5dd5800ac2ef5e99b398385a4b51e51febf2",
+    "extension_verification_receipt_sha256": "072ef2ac6c81a5bc09efe78c45dea807d5dc7f92e5604c882e02ad9881599ec0",
+    "run_manifest_sha256": "50ce7f84c47ceec2937da36f230cb70fb0d3753539f1da38ee5d548bd0f4191a"
+  },
+  "status": "PASS",
+  "unresolved_after_extension_cap": 0
+}

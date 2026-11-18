@@ -1,0 +1,11 @@
+{
+  "schema_version": "mathcase-m20-composition-attempt-result-v1",
+  "attempt_id": "m20-aggregate-composition-r1-20261113",
+  "finished_at_utc": "2026-11-13T23:31:03.1517550Z",
+  "docker_exit_code": 1,
+  "container_name": "mathcase-m20-composition-r1",
+  "docker_stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "docker_stderr_sha256": "ff1558f863290cb7ebb86c35bb24def942ca2b8b156e87dbd6725feebcc28c08",
+  "lean_exit_code_file": true,
+  "composition_olean_exists": false
+}

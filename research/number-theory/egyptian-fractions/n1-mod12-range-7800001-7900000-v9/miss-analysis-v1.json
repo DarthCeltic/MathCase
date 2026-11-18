@@ -1,0 +1,252 @@
+{
+  "base_miss_count": 6,
+  "d_interval_inclusive": [
+    7800001,
+    7900000
+  ],
+  "extension_receipt_sha256": "6958a814db726cfe68584a11045fecf89affa826914e29b07d7ff4ca3ff47762",
+  "miss_counts_by_n_mod_24": {
+    "1": 6
+  },
+  "misses": [
+    {
+      "d": 7806920,
+      "denominators": [
+        23428336,
+        72429718578,
+        8212185216945583433616
+      ],
+      "first_denominator_offset": 7575,
+      "n": 93683041,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          9679,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 25,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 23420761,
+      "q_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          257371,
+          1
+        ]
+      ],
+      "q_mod_24": 1,
+      "q_prime_factor_count_with_multiplicity": 3,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 7835984,
+      "denominators": [
+        23521130,
+        41959636578,
+        2392584608206912944645
+      ],
+      "first_denominator_offset": 13177,
+      "n": 94031809,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          9697,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 25,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 23507953,
+      "q_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          829,
+          1
+        ],
+        [
+          4051,
+          1
+        ]
+      ],
+      "q_mod_24": 1,
+      "q_prime_factor_count_with_multiplicity": 3,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 7854884,
+      "denominators": [
+        23572498,
+        70799823858,
+        473828007154678090202283
+      ],
+      "first_denominator_offset": 7845,
+      "n": 94258609,
+      "n_factor_shape": "prime",
+      "n_factorization": [
+        [
+          94258609,
+          1
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 25,
+      "n_prime_factor_count_with_multiplicity": 1,
+      "q": 23564653,
+      "q_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          757,
+          1
+        ],
+        [
+          4447,
+          1
+        ]
+      ],
+      "q_mod_24": 13,
+      "q_prime_factor_count_with_multiplicity": 3,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 7874820,
+      "denominators": [
+        23641472,
+        32831249902,
+        3772618395413681283712
+      ],
+      "first_denominator_offset": 17011,
+      "n": 94497841,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          9721,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 1,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 23624461,
+      "q_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          3374923,
+          1
+        ]
+      ],
+      "q_mod_24": 13,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 7894274,
+      "denominators": [
+        23687322,
+        124669734209,
+        28742445777820562434434
+      ],
+      "first_denominator_offset": 4499,
+      "n": 94731289,
+      "n_factor_shape": "prime_power",
+      "n_factorization": [
+        [
+          9733,
+          2
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 25,
+      "n_prime_factor_count_with_multiplicity": 2,
+      "q": 23682823,
+      "q_factorization": [
+        [
+          61,
+          1
+        ],
+        [
+          223,
+          1
+        ],
+        [
+          1741,
+          1
+        ]
+      ],
+      "q_mod_24": 7,
+      "q_prime_factor_count_with_multiplicity": 3,
+      "resolution_method": "bounded-greedy-extension"
+    },
+    {
+      "d": 7894980,
+      "denominators": [
+        23692335,
+        75885126456,
+        16882963816916282959240
+      ],
+      "first_denominator_offset": 7394,
+      "n": 94739761,
+      "n_factor_shape": "prime",
+      "n_factorization": [
+        [
+          94739761,
+          1
+        ]
+      ],
+      "n_mod_24": 1,
+      "n_mod_72": 1,
+      "n_prime_factor_count_with_multiplicity": 1,
+      "q": 23684941,
+      "q_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          3383563,
+          1
+        ]
+      ],
+      "q_mod_24": 13,
+      "q_prime_factor_count_with_multiplicity": 2,
+      "resolution_method": "bounded-greedy-extension"
+    }
+  ],
+  "model_calls": 0,
+  "n_factor_count_with_multiplicity": {
+    "1": 2,
+    "2": 4
+  },
+  "n_factor_shapes": {
+    "prime": 2,
+    "prime_power": 4
+  },
+  "provider_calls": 0,
+  "q_factor_count_with_multiplicity": {
+    "2": 2,
+    "3": 4
+  },
+  "resolved_by_extension": 6,
+  "schema": "mathcase-erdos-straus-v9-range-miss-analysis-v1",
+  "search_api_calls": 0,
+  "status": "PASS",
+  "unresolved_at_fixed_cap": 0
+}

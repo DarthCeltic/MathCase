@@ -1,0 +1,12 @@
+{
+  "schema": "mathcase-m20-phase2-source-provenance-addendum-v1",
+  "recorded_et": "2026-11-18T09:58:00-05:00",
+  "phase2_receipt_sha256": "6e48d17cf40f4f6b61a7a46793ae1b33f87ead146723ec3762b1f3af69ea45b6",
+  "phase2_recorded_binding": "Candidate A staging path",
+  "phase2_source_sha256": "8e8fb280df93829c988a360b01276def73e7e5cbd8c9ce8eca70987d5733d3e5",
+  "candidate_a_sha256": "8e8fb280df93829c988a360b01276def73e7e5cbd8c9ce8eca70987d5733d3e5",
+  "candidate_b_sha256": "8e8fb280df93829c988a360b01276def73e7e5cbd8c9ce8eca70987d5733d3e5",
+  "copies_byte_identical": true,
+  "candidate_b_consumed_by_phase2_binding": false,
+  "interpretation": "Candidate B was rehashed independently and matches Candidate A. This does not change Phase 2 source attribution: the receipt binds Candidate A, and the run is not claimed to have consumed Candidate B."
+}

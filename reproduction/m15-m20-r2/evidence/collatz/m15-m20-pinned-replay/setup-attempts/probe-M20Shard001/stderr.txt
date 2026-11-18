@@ -1,0 +1,1 @@
+input file '/mathcase/source/research/collatz/m20/lean/modules/M20Shard001.lean' must be contained in root directory (/mathcase/project/)

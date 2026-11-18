@@ -1,0 +1,5 @@
+warning: proofwidgets: repository '/mathcase/project/.lake/packages/proofwidgets' has local changes
+LEAN_PATH=/mathcase/project/.lake/packages/Cli/.lake/build/lib/lean:/mathcase/project/.lake/packages/batteries/.lake/build/lib/lean:/mathcase/project/.lake/packages/Qq/.lake/build/lib/lean:/mathcase/project/.lake/packages/aesop/.lake/build/lib/lean:/mathcase/project/.lake/packages/proofwidgets/.lake/build/lib/lean:/mathcase/project/.lake/packages/importGraph/.lake/build/lib/lean:/mathcase/project/.lake/packages/LeanSearchClient/.lake/build/lib/lean:/mathcase/project/.lake/packages/plausible/.lake/build/lib/lean:/mathcase/project/.lake/packages/mathlib/.lake/build/lib/lean:/mathcase/project/.lake/build/lib/lean:/opt/lean/lib/lean
+LEAN_SYSROOT=/opt/lean
+Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)
+0df444a360eaa60ab8c11dca51a86af692955474

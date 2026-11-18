@@ -1,0 +1,818 @@
+{
+  "file_count": 135,
+  "files": [
+    {
+      "bytes": 528641,
+      "path": "sources/M20AllFamilies.lean",
+      "role": "original aggregate target",
+      "sha256": "4b480752687cc2fea5554f20e4198d990e4c30ebe50a01b5813eb517dde469bf"
+    },
+    {
+      "bytes": 386490,
+      "path": "sources/M20CompositionAllFamiliesV1.lean",
+      "role": "composition module",
+      "sha256": "8e8fb280df93829c988a360b01276def73e7e5cbd8c9ce8eca70987d5733d3e5"
+    },
+    {
+      "bytes": 3825,
+      "path": "sources/M20CompositionShard001.lean",
+      "role": "composition module",
+      "sha256": "c9e14de5c9f4cd7e5e437ed2ad1cc7593e5d92ba9093e58edfbf8ff74a20b37f"
+    },
+    {
+      "bytes": 3854,
+      "path": "sources/M20CompositionShard002.lean",
+      "role": "composition module",
+      "sha256": "3213e1da2f48cc0b7352868f4073d6217a9b956296509b5403a9edba2f9e5c2c"
+    },
+    {
+      "bytes": 3908,
+      "path": "sources/M20CompositionShard003.lean",
+      "role": "composition module",
+      "sha256": "95b88968bcbb0eb1eedf350935d5466b95476ebf40b5777ae80c6c77548481e5"
+    },
+    {
+      "bytes": 3928,
+      "path": "sources/M20CompositionShard004.lean",
+      "role": "composition module",
+      "sha256": "3ce6f0adfeed5d9f9005ce43957e0fd2d793d20a420d3a99be2172138007aed8"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard005.lean",
+      "role": "composition module",
+      "sha256": "f43932a339c500b174e2e26ced3a8204a5c2907e83049dc0150f90349532c3f5"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard006.lean",
+      "role": "composition module",
+      "sha256": "5fbac11a7cd026725162409f873836d50d4b882ece028eea6f1cfb92452ee64c"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard007.lean",
+      "role": "composition module",
+      "sha256": "5142e3f1aef4531ec9dabff559b16f2f7b0b6c6caffde8f8f535279b7a753c18"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard008.lean",
+      "role": "composition module",
+      "sha256": "9b4c08625b62e24e0c2dbc746f9360403fe4d6c6d96d3022b8352ab2414df404"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard009.lean",
+      "role": "composition module",
+      "sha256": "3cd0381c0a5af64aa7e49f8e2cdc14619a830072e5631f03013e193880981c7a"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard010.lean",
+      "role": "composition module",
+      "sha256": "afdd0c9068e47d33eb305418380682832c35263ae5ceacb3fd5c512c4f95a069"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard011.lean",
+      "role": "composition module",
+      "sha256": "2afe160dbe0e028afd326fbf11667d61457ee559f87d825246d61d46b9134810"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard012.lean",
+      "role": "composition module",
+      "sha256": "ed633c928734acce29b99a7508f75b5033440950805dd77d30029bc6b449c32e"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard013.lean",
+      "role": "composition module",
+      "sha256": "2c211939c1188cf3a5533cf661ada64a2bab8b6f50828ddc3896a387dafde4ac"
+    },
+    {
+      "bytes": 3948,
+      "path": "sources/M20CompositionShard014.lean",
+      "role": "composition module",
+      "sha256": "78fdff579a3b741dfbdb6b26248e34e61a9f94feb8b64964a6f439c48d1828c6"
+    },
+    {
+      "bytes": 3987,
+      "path": "sources/M20CompositionShard015.lean",
+      "role": "composition module",
+      "sha256": "85787c42c57cf073c5874b1dd32b44006ae085af67b934a87c317ca20eebbb0b"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard016.lean",
+      "role": "composition module",
+      "sha256": "6a1dddb9ea01b466466cff55962579a214b2d35e9d5309cf80150a7d8513d655"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard017.lean",
+      "role": "composition module",
+      "sha256": "e2c171061bc08a2d0ffed571211baa3b32bd8dce40edea0bd5d61d39e9d4833c"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard018.lean",
+      "role": "composition module",
+      "sha256": "5cbfdf3ee528647f30c7146ab23d57ecd25f3bdda48d17a0e4f8fa44a595c68e"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard019.lean",
+      "role": "composition module",
+      "sha256": "6d5e07c5bdc70f467ae41afcab0081fa20a051012f82b8a94aefedb409979ec6"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard020.lean",
+      "role": "composition module",
+      "sha256": "b6bba2fcb06396abd5a9a5cc16ed8c87d30d9f52407d4a5de73694256f5e7c43"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard021.lean",
+      "role": "composition module",
+      "sha256": "28f08e9a8186b656990af2eda1bb67ec385471692046b9e2a8f7b56185fac0f7"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard022.lean",
+      "role": "composition module",
+      "sha256": "88813a27e18d3ba5d261693cb7cc83502795eaf261a377d2ca616b97b35a53e6"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard023.lean",
+      "role": "composition module",
+      "sha256": "8efa50bd9d26e14eb09d1cc3714fc2aa8f1f67f4ae2fd35689e6982dfd59442a"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard024.lean",
+      "role": "composition module",
+      "sha256": "8b2fc0bba84ebeccdc0d8c381a64b66e9951735ad9fda22e7203f2191b717320"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard025.lean",
+      "role": "composition module",
+      "sha256": "3d2c3856fa75d2b744945d072cabfaa083672c9af3b615223954fc3814fa81c0"
+    },
+    {
+      "bytes": 4008,
+      "path": "sources/M20CompositionShard026.lean",
+      "role": "composition module",
+      "sha256": "33057affea12706efbdf7a93a7ed60e74129f7bf9987e546d4d0fd42173d3524"
+    },
+    {
+      "bytes": 4024,
+      "path": "sources/M20CompositionShard027.lean",
+      "role": "composition module",
+      "sha256": "470a6bf9ef80bbef960e015676784db143b57e8aa3e799eccc8836ad76a85f9b"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard028.lean",
+      "role": "composition module",
+      "sha256": "aced1d59aa824ae6bda3992b92831fe738acc4a120324f845c7faf4804a1cdc9"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard029.lean",
+      "role": "composition module",
+      "sha256": "d5b32f9a8e7319987217b5633599bea9b8a48fcd4a9569c9b19059e5c2a92d38"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard030.lean",
+      "role": "composition module",
+      "sha256": "7dabf266d0ffa4e25a405776cde36b45bf59df7e85c74318714505ca690ff3ce"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard031.lean",
+      "role": "composition module",
+      "sha256": "97fc5a2d88a4d4830b128f737cc84aa8c98b7b07df358d35ba4b31fc5e5804eb"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard032.lean",
+      "role": "composition module",
+      "sha256": "3886f4b111fdb128fc6c20f7bb1642f90bd8cfb768b0236e57f40056823323cc"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard033.lean",
+      "role": "composition module",
+      "sha256": "5c661060c0b27b79dbe6d35e2bc784fa58bcbf8094afc2267b871a173ab15b0e"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard034.lean",
+      "role": "composition module",
+      "sha256": "63573db4013de223df43a6be55201a754d8f8d6ba7d140fd861f94b004be9360"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard035.lean",
+      "role": "composition module",
+      "sha256": "260fbca0b1e1fca48579393414bfe345a4e37092134da0a4ff384af99c4408b4"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard036.lean",
+      "role": "composition module",
+      "sha256": "b71537205d4fc1eeb9bcf20b02351fc5513f5aa6822ffdadef5170f8f93e2de0"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard037.lean",
+      "role": "composition module",
+      "sha256": "cdda13418011c75e348c7b84265dd630435d800165962dd09877f206acd2ab83"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard038.lean",
+      "role": "composition module",
+      "sha256": "0e4e35fa28fc8226e062bef3b636bbcb4f9154fe94e724fb6e4d880964cfbb2d"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard039.lean",
+      "role": "composition module",
+      "sha256": "a94b519dede024b1d85d0c31eaa27b1c7a84e8b71616d70bba005d0db500848d"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard040.lean",
+      "role": "composition module",
+      "sha256": "b958b0fe6c996257284ec292dcdd19c1b3a709c3b5ef5c293a21a8b8336e4b1d"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard041.lean",
+      "role": "composition module",
+      "sha256": "9ee0030c5c41e090dd433cbac4cfaff347d0541e64a80fdbd906eaa556dfc0c8"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard042.lean",
+      "role": "composition module",
+      "sha256": "e68fb15a205b52ad0ec6c9dd2e24d24f719998fb7bae6a51dc8608211400fc08"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard043.lean",
+      "role": "composition module",
+      "sha256": "be8bde6bb89c1cbcfd43663db1940d6ee9cb3f541b10fd99362b2bb44c68945f"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard044.lean",
+      "role": "composition module",
+      "sha256": "a7ff8d907c5897f7ba6c617e38ba524750f9adf795fad56555f100d2c4e98016"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard045.lean",
+      "role": "composition module",
+      "sha256": "c98c772876482a393b2da0addbf215cd499506bb57c4bc37c51a01422ae3dcf3"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard046.lean",
+      "role": "composition module",
+      "sha256": "dff8dce22dc31184f0bf05a16b2120d9cf571197620806188c35a27c2b286d51"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard047.lean",
+      "role": "composition module",
+      "sha256": "5f783db075814a018aed35141768bb84ad28d680e26d21765b94089a4d5e0f9b"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard048.lean",
+      "role": "composition module",
+      "sha256": "2037ae9e8ecd2ace2390fe86df4aac431a8cc5a155f9b246061b698df23d605f"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard049.lean",
+      "role": "composition module",
+      "sha256": "a2d5b153ceb423db8c0f3c9a8b16fb03239db9068b7ed68bfa3e6dd564698969"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard050.lean",
+      "role": "composition module",
+      "sha256": "a79f8fadd530f1047d680cb59f72885e304d59c38dd08a284c59ee3bb6beccba"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard051.lean",
+      "role": "composition module",
+      "sha256": "3e3eb6d64c1448c8ea1966bef5a259e2d47e505bbb69f28abb50ff41f498b471"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard052.lean",
+      "role": "composition module",
+      "sha256": "750d4bee5a1109eb369774f9dec70709bd93501eda052ca1edd85ba75c53e839"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard053.lean",
+      "role": "composition module",
+      "sha256": "2a9caa4f3ade336a7750ea91162dffab6673a48f2f348113f24b01fb333c78f2"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard054.lean",
+      "role": "composition module",
+      "sha256": "6dba20b942d4161e3670932b999ff58c6d6fa0fb02d8844c353239b163a69fc5"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard055.lean",
+      "role": "composition module",
+      "sha256": "6d9b05000fb8b4380a9d379eca4f36a0f43d5acb4e65d1e22d5830ba55e4028b"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard056.lean",
+      "role": "composition module",
+      "sha256": "fe8bbc1bd04dc4584d396b68958bf3317528382b0705c8695c8a16121f66992b"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard057.lean",
+      "role": "composition module",
+      "sha256": "56d1cc4319bd353e98711af6b41863e4abb66fa7c5450c20882b67cb556ccff6"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard058.lean",
+      "role": "composition module",
+      "sha256": "ccf70276c5590058b00f97b3e7ab79c9adbce0918afd30316746a3c2feeb1e1a"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard059.lean",
+      "role": "composition module",
+      "sha256": "36872babd383b2e55c089ed15da9b6385e74de30dd98141c3c67713e629d4842"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard060.lean",
+      "role": "composition module",
+      "sha256": "266cdc1801af098527e5e53415984751049582d69220f5259326285f669a4c45"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard061.lean",
+      "role": "composition module",
+      "sha256": "625dbc87ed1785609cb14dd92a9024b90616f00cda990af336a507142bd82332"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard062.lean",
+      "role": "composition module",
+      "sha256": "947758d3b06358a2079c472670d3cfd0a95d75f3d3da2cf4aa62cc515b2cd02f"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard063.lean",
+      "role": "composition module",
+      "sha256": "fe5ceab1b7a172381622b12970d0da0f1ea4fc5e627d3ff18ed03c5aeaa45620"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard064.lean",
+      "role": "composition module",
+      "sha256": "46b93b053070d3c456eeb641df851cf1c951e7ff8348b41c516a2bc98e0a2bee"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard065.lean",
+      "role": "composition module",
+      "sha256": "fbead2c385e5e2e02c64e61aa284daf2c9688d67aed273ab83381faf76ea1778"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard066.lean",
+      "role": "composition module",
+      "sha256": "7fb0c61969261a06e9b0f1b00942aea6106952ea707a95d99428355dfa7885ae"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard067.lean",
+      "role": "composition module",
+      "sha256": "56eae031017f13b79fbdac08e4f0790b06dc7d2b0a9b806d9e5ed863a4543e7c"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard068.lean",
+      "role": "composition module",
+      "sha256": "930718eb2f7a9bab7b8b4d1efd6f647e66f09ba28477951e171de6788262b778"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard069.lean",
+      "role": "composition module",
+      "sha256": "0e9d33214a3e2ffbd54357629118483c2c35375722cec2cc3c4e7c41eac1ce2d"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard070.lean",
+      "role": "composition module",
+      "sha256": "7e6c85eafe84cbaa9e6ba804e32e8822694b11edefce3fe263e9f35d1f530942"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard071.lean",
+      "role": "composition module",
+      "sha256": "70072522a458a8ed8888fe8d5c68dbd55341c225b15c76e37e77f8294fe715ba"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard072.lean",
+      "role": "composition module",
+      "sha256": "f09a432f620418bcb4f0d6a8ce88477b9c2b0b9da7e2df513e24728a9de3d88d"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard073.lean",
+      "role": "composition module",
+      "sha256": "c0288075bd9c3b3d62afa57b6c5b15f4da912ffdd33cb1dcfbe92ee57b93f3e7"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard074.lean",
+      "role": "composition module",
+      "sha256": "28777e221712d3d0703c8c3fc3a9a95dd646b377a5980f2b54d247fe31182223"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard075.lean",
+      "role": "composition module",
+      "sha256": "b731f1c54a89cd11425f229689297e53615bbb5790d457216b94499473095ec1"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard076.lean",
+      "role": "composition module",
+      "sha256": "05052f095616a55f3dfbf78d8d478cf704422338f3126ece199405f30914ae45"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard077.lean",
+      "role": "composition module",
+      "sha256": "c7f57de9984400ef12ead03dd4584c9648d2aba0eafc286a3a8bd4836e37c5be"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard078.lean",
+      "role": "composition module",
+      "sha256": "6fcb7b1a4711bc48a992ce4bdb3460a8f2020ac553004570d85a719d2e99f53f"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard079.lean",
+      "role": "composition module",
+      "sha256": "c7ee87936418b4396400e08b4b3476e3fb70683c3ea84b844628dd5ba1e45c76"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard080.lean",
+      "role": "composition module",
+      "sha256": "e8c39a595775da6d49e8bdb96f786d3a2191819777e9f72c07ec89322394388b"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard081.lean",
+      "role": "composition module",
+      "sha256": "f2681197c6abb81d3dc7a43fa42f53a1241e9115b9631dcc7ec412d2a665abf3"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard082.lean",
+      "role": "composition module",
+      "sha256": "3c6951f04d50167f1dcd28e56d52feeffb778fcf066191181c3e1793fba39c02"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard083.lean",
+      "role": "composition module",
+      "sha256": "9209be95f986cbc0ddfdf02a9bbb51627b15293305e2325fcb0528d1d6c52333"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard084.lean",
+      "role": "composition module",
+      "sha256": "7702ea45ebe6539720a6b0c0253fd8c6619993c2007e9bd4501b10f24e6a60b9"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard085.lean",
+      "role": "composition module",
+      "sha256": "043c5147235214724ad05aa6b8d168ffce411c83edadb4a83fde6b8e2014e1f5"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard086.lean",
+      "role": "composition module",
+      "sha256": "01f8a55265337dec05f4988bab57a1c0c82ee469583a1a9b33dd9beabe3dd39f"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard087.lean",
+      "role": "composition module",
+      "sha256": "38a6ec9db262419c69780d1938f73b4bcc7e7bc9dd71cdcc6411695fbcaa6447"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard088.lean",
+      "role": "composition module",
+      "sha256": "a655943e55059dadeaa0faca78179433fb7d5b8592aa1b4deaa1ee4c607aa514"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard089.lean",
+      "role": "composition module",
+      "sha256": "cfd7abb17baa33b11320af8c36bd3f3c56e1e8ad2a42c25d40812367271ebc22"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard090.lean",
+      "role": "composition module",
+      "sha256": "c1ae7686bb4f512fc107ede3cdc451d5b49574b05636e691bc643f1af1155924"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard091.lean",
+      "role": "composition module",
+      "sha256": "afd77dda54e5b2a97688e1d03bac1b8861bd899c61e60813a237238182f0aee4"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard092.lean",
+      "role": "composition module",
+      "sha256": "a3745d4ae8bd987ea98d5d34b5e4cc98d4636603da22034d8968e85dc94d00b0"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard093.lean",
+      "role": "composition module",
+      "sha256": "33007cd2da2e163ed9c24fda4a7027628bb052fecba75dde1694e2398e8e2adc"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard094.lean",
+      "role": "composition module",
+      "sha256": "8c15ad0c50f165318f8a5eb03d26adbb37a3ea939ee31b028781767a63e2113e"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard095.lean",
+      "role": "composition module",
+      "sha256": "de78f6eafc22b69f75d42b3ef91d6e22e819b28743c0af23e2cb50469437058f"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard096.lean",
+      "role": "composition module",
+      "sha256": "6c465c9c6d868be6a5ff5e24dcd521f6a63d56ba74e472b7b3c70d7887785f99"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard097.lean",
+      "role": "composition module",
+      "sha256": "44eea936feb9946f665c8f2e3723b1e601b73f3a9b57e538425b38e8b5702cc9"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard098.lean",
+      "role": "composition module",
+      "sha256": "50b28482adaadc4c7dfa0f8c9c9895e8a23d6d98ece738eb731a544f83ed653e"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard099.lean",
+      "role": "composition module",
+      "sha256": "770757d71e6b809f7025131fc656c41897c1c9b5984f14ef77d80f2f93c0e9f4"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard100.lean",
+      "role": "composition module",
+      "sha256": "dc23f2b57da4d80bce5131a7f8cc5bc31b8f3d784e4e7ac7fa77b93b23599dc6"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard101.lean",
+      "role": "composition module",
+      "sha256": "a961d9b0e071b5e918d0b15095110ab15d09979cfc353752ec8fc8a0ecb50207"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard102.lean",
+      "role": "composition module",
+      "sha256": "50831a0ba0d71d94960ccc0e2d48485fd2c692a97d0dadf791dabe3355fab4ee"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard103.lean",
+      "role": "composition module",
+      "sha256": "b38b3a3c87a0e9586859c0101677a087b67a22360a1d62c883d860190fcdf31d"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard104.lean",
+      "role": "composition module",
+      "sha256": "8d513df516696f34014d7805432e5212dc68754157e63f7d4030b698698bac0a"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard105.lean",
+      "role": "composition module",
+      "sha256": "1ac61527cc888bf1fca29321a9ba8bc9a8f62b0eccc9625ae51d4e30f4a3e236"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard106.lean",
+      "role": "composition module",
+      "sha256": "75ecacc15fde669a6e6cd470b3fb4cb6c6423284f5d235f46ca8d1634ba20460"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard107.lean",
+      "role": "composition module",
+      "sha256": "2423bbe583c999999dc15252046e887937197cd535f549b27501dce3bfa16633"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard108.lean",
+      "role": "composition module",
+      "sha256": "f17f7407923d8de03f5bc7072488e4a24e47edc579f1afb997747830253ed329"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard109.lean",
+      "role": "composition module",
+      "sha256": "ade4cc27759f73f24bac7fcbf738b6bc799ede5d3edbef62b280349f35b649f9"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard110.lean",
+      "role": "composition module",
+      "sha256": "7e898892608313f4894e2c9f7d65d3ad584e79cee3750c57e1da0de712d4c19f"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard111.lean",
+      "role": "composition module",
+      "sha256": "cf25e21cea369d023608bd2f5dcbeeb0fe26d52f57546401fda1a5a2ec108f0e"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard112.lean",
+      "role": "composition module",
+      "sha256": "38b3b9adbf8eb0758c413805c4539fdc87c1dfd53800b62411b348aeb0cdfd66"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard113.lean",
+      "role": "composition module",
+      "sha256": "4ad4eb8af8f78c681e7edcdd842db1c1f5ca0368f423a7f8d230191538182a72"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard114.lean",
+      "role": "composition module",
+      "sha256": "d218a4f0af939a39f17e929915bc202edf4ce9ef13a5d65b836a65927e4221db"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard115.lean",
+      "role": "composition module",
+      "sha256": "879bd2ce8ba7c1f230dd655679b1c14355988ef7e69a32af98f9f658cf7aa667"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard116.lean",
+      "role": "composition module",
+      "sha256": "2ee01991095edc4e110011cae5be1c1d778760cc75396f7e67f6c13f911fc690"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard117.lean",
+      "role": "composition module",
+      "sha256": "816e247052e2b3b02915e3048bcea9dd36ad0e015ec018bf85dcb2e8e62d69fb"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard118.lean",
+      "role": "composition module",
+      "sha256": "1fa6e2b6ea6a3fb6258e284378e312af08bb33efd031767854bbbf779cddc3b0"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard119.lean",
+      "role": "composition module",
+      "sha256": "5fc473e73902acdf0327e329d8286c3371f4254c9db8aa36092461f7a8516c42"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard120.lean",
+      "role": "composition module",
+      "sha256": "37b6124f47b9fcd316b48cd76c9582ddc2b034276938d927262c1df0b9b5ed2a"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard121.lean",
+      "role": "composition module",
+      "sha256": "67e2a7dcf87b1040d68fce90b199aa743530677853aef9b8ab7c8f1517d52315"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard122.lean",
+      "role": "composition module",
+      "sha256": "ed336dd4feaa6d3e5719bd58d1c8de7ddf01e0bd999a582c0b705e3cd194f9ba"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard123.lean",
+      "role": "composition module",
+      "sha256": "a8908a0c9700bdd5c175c1cc8ee8296e7f04acaee33af281b9110d35364d71c1"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard124.lean",
+      "role": "composition module",
+      "sha256": "e48210e013f323c04ba6d3547edefc83ad48925f0417aaae502c7f63b24ac1a9"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard125.lean",
+      "role": "composition module",
+      "sha256": "dd18e12ab3616ab776e0ecb8c397c08402a9806360d326720f12a8c4dba7c054"
+    },
+    {
+      "bytes": 4048,
+      "path": "sources/M20CompositionShard126.lean",
+      "role": "composition module",
+      "sha256": "7b27f548b4ca5fde779c99b96f5db55f4352b0e062f3c0a6d5b492569b44a86f"
+    },
+    {
+      "bytes": 4078,
+      "path": "sources/M20CompositionShard127.lean",
+      "role": "composition module",
+      "sha256": "a15bd2623e23b936892752d7a5b18df7d472b5eae5ea9617c1ac25086c7bceb2"
+    },
+    {
+      "bytes": 4108,
+      "path": "sources/M20CompositionShard128.lean",
+      "role": "composition module",
+      "sha256": "f420057bbfa36456bf808cd755264b27c1f8269e22adb9fdc4195c975d777579"
+    },
+    {
+      "bytes": 4108,
+      "path": "sources/M20CompositionShard129.lean",
+      "role": "composition module",
+      "sha256": "b87bf6507bef50b6041d5a8281683c1d6ab3134d95186bd49fc506a7e9b5c964"
+    },
+    {
+      "bytes": 4108,
+      "path": "sources/M20CompositionShard130.lean",
+      "role": "composition module",
+      "sha256": "633818cf78f78f71338d32d7ce9d72b9d21fd8090c9527d5973425f22c63d425"
+    },
+    {
+      "bytes": 4108,
+      "path": "sources/M20CompositionShard131.lean",
+      "role": "composition module",
+      "sha256": "78c9b79583681ff94a12778b0cb8532066acd807b049b0beb1cc45ae767692e9"
+    },
+    {
+      "bytes": 4108,
+      "path": "sources/M20CompositionShard132.lean",
+      "role": "composition module",
+      "sha256": "84720ad09bdecdd1c7a7e5f8431c4abc7aff68b15bfc5d47006e9dbfd854b9ec"
+    },
+    {
+      "bytes": 2483,
+      "path": "sources/M20CompositionShard133.lean",
+      "role": "composition module",
+      "sha256": "d7821dab2279bbc4179d607a3e1764c85d5846bb315a348f80de0cb3d53ef04e"
+    }
+  ],
+  "schema": "mathcase-m20-composition-source-index-v1",
+  "source_commit": "c82c9685fe8294b47db8ba90c9a65d6e189553de",
+  "status": "derived source index; Lean source bytes are preserved"
+}

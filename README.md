@@ -29,6 +29,13 @@ These are saved executions. The public Case Desk rejects writes and new model/se
 
 The [hosted saved Case Desk](https://darthceltic.github.io/) uses this same frontend with immutable saved records. It opens directly on the counterexample and keeps a **Simple reader** fallback. To export it for your own static host, follow [the static Case Desk guide](docs/static-case-desk.md). The source checkout also retains the lightweight reader at its root: run `python -m http.server 8000` and open `http://127.0.0.1:8000/`.
 
+## Public math results and reproduction
+
+The main results are summarized in [MathCase results and limits](docs/MATH_RESULTS.md), with the current [research roadmap](docs/MATHCASE_RESEARCH_ROADMAP.md). The public M20 packet includes the source, 2,652 exact affine-family statements, the source-to-kernel replay hashes, and the preserved watchdog exit. A plain-language entry point is [the reproduction index](reproduction/README.md).
+
+The bounded statement is specific: for 2,652 listed progressions, after 32 Collatz steps the exact affine value is smaller than the start. This is not a proof of Collatz convergence. The [M15–M20 showcase branch](https://github.com/DarthCeltic/MathCase/tree/codex/math-results-showcase-20261112) exposes additional source files; its older status notes are superseded where the Nov 18 replay package gives newer evidence.
+
+
 ## Optional CLI and Lean setup
 
 Requirements: Go 1.27 or later, Lean 4.33.1 via `elan`/`lake`, and PowerShell 7 on Windows:

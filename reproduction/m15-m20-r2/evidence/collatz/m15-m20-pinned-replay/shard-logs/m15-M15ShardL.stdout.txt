@@ -1,0 +1,8 @@
+'CollatzM15ShardL.descent_mod32768_16123' depends on axioms: [propext, Quot.sound]
+'CollatzM15ShardL.descent_mod32768_16287' depends on axioms: [propext, Quot.sound]
+'CollatzM15ShardL.descent_mod32768_16743' depends on axioms: [propext, Quot.sound]
+'CollatzM15ShardL.descent_mod32768_16863' depends on axioms: [propext, Quot.sound]
+'CollatzM15ShardL.descent_mod32768_16871' depends on axioms: [propext, Quot.sound]
+'CollatzM15ShardL.descent_mod32768_17147' depends on axioms: [propext, Quot.sound]
+'CollatzM15ShardL.descent_mod32768_17727' depends on axioms: [propext, Quot.sound]
+'CollatzM15ShardL.descent_mod32768_17735' depends on axioms: [propext, Quot.sound]

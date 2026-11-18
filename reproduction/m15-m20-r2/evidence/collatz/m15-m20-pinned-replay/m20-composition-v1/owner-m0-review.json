@@ -1,0 +1,14 @@
+{
+  "case_id": "mathcase:collatz:m20:all-scanned-families-descend",
+  "decision": "YES",
+  "decision_basis": "Ryan explicitly reported in this conversation that he reviewed the M20 aggregate M0 packet and answered YES.",
+  "gate_effect": "M0 statement review only; no M4 or downstream status change.",
+  "packet_path": "research/collatz/pinned-replay/2026-11-13-m15-m20/m20-aggregate-m0-packet.md",
+  "packet_sha256": "06c8da8e9da0605d4dbeb8b554337c5b530ebdf47dc9dadd6af9e6c74268cf1a",
+  "recorded_at_et": "2026-11-13 21:02:04 Eastern Standard Time",
+  "review_scope": "statement fidelity only",
+  "reviewer": "Ryan",
+  "schema": "mathcase-owner-m0-review-record-v1",
+  "target_source_path": "research/collatz/m20/lean/M20AllFamilies.lean",
+  "target_source_sha256": "4b480752687cc2fea5554f20e4198d990e4c30ebe50a01b5813eb517dde469bf"
+}

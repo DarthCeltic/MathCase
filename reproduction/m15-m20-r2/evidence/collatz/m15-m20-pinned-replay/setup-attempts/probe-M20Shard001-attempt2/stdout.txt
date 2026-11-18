@@ -1,0 +1,4 @@
+/mathcase/project/replay-source/research/collatz/m20/lean/modules/M20Shard001.lean:1:0: error: unknown module prefix 'Mathlib'
+
+No directory 'Mathlib' or file 'Mathlib.olean' in the search path entries:
+/opt/lean/lib/lean

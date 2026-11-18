@@ -1,0 +1,73 @@
+{
+  "base_bundle": {
+    "d_interval_inclusive": [
+      2700001,
+      2800000
+    ],
+    "miss_count": 3,
+    "results_sha256": "e1022d8c087cbd74ad524a2c4fbb8a52930938fb78eb043d78bda8f4a8e59b22",
+    "run_manifest_sha256": "c9ea93dd98d71aacfdccc552a82075745fed2e97d0f1ef4d66729e61b31be61c",
+    "schema": "mathcase-egyptian-fraction-witness-stream-v7"
+  },
+  "classification": "FINITE_EXTENSION_OF_EXPLICIT_BASE_STREAM_MISSES_ONLY",
+  "counts": {
+    "candidates": 3,
+    "still_not_found_within_extension_cap": 0,
+    "witnesses_found": 3
+  },
+  "extension_offset_range": [
+    4097,
+    65536
+  ],
+  "finished_at_utc": "2026-11-13T12:57:55.137068Z",
+  "full_erdos_straus_conjecture_solved": false,
+  "gpu_used": false,
+  "items": [
+    {
+      "denominators": [
+        8250970,
+        12465480136,
+        295340387024247208280
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 5457,
+      "n": 32982049,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        8353546,
+        16086147008,
+        388280518208424118336
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 4335,
+      "n": 33396841,
+      "status": "WITNESS_FOUND"
+    },
+    {
+      "denominators": [
+        8391159,
+        9718640354,
+        472259851642267586226
+      ],
+      "exact_identity": true,
+      "first_denominator_offset": 7238,
+      "n": 33535681,
+      "status": "WITNESS_FOUND"
+    }
+  ],
+  "items_sha256": "525cfcbbe93234809690865a92c06b266dcb5376f926fa13609146bbe4f0c60f",
+  "model_calls": 0,
+  "network_calls": 0,
+  "novelty_claim": false,
+  "provider_calls": 0,
+  "schema": "mathcase-egyptian-fraction-witness-stream-extension-v6",
+  "source_bindings": {
+    "base_checker_sha256": "e0ba25fd69c34fedc2224ccdd45f7aec309c2d3b0b98b648e16382b8b67ff493",
+    "extension_script_sha256": "0b2e78ba584f76843c7388e88ed67ad6986a0a591f1d47048b8f98f765e00486"
+  },
+  "started_at_utc": "2026-11-13T12:57:55.135533Z",
+  "status": "PASS_BOUNDED_EXTENSION",
+  "wall_seconds": 0.002
+}

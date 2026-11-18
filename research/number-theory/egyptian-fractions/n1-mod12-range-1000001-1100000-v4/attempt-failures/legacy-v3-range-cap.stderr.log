@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "[local source path omitted]ripts\export_egyptian_fraction_witness_stream_v3.py", line 210, in <module>
+    raise SystemExit(main())
+                     ~~~~^^
+  File "[local source path omitted]ripts\export_egyptian_fraction_witness_stream_v3.py", line 204, in main
+    result = export_bundle(args.start_d, args.end_d, args.max_total_offset, args.output_dir)
+  File "[local source path omitted]ripts\export_egyptian_fraction_witness_stream_v3.py", line 69, in export_bundle
+    raise ValueError(f"d interval must satisfy 1 <= start <= end <= {MAX_D}")
+ValueError: d interval must satisfy 1 <= start <= end <= 1000000
