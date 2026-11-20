@@ -6,6 +6,7 @@ import (
 	"encoding/hex"
 	"encoding/json"
 	"errors"
+	"net/url"
 	"os"
 	"path/filepath"
 	"strings"
@@ -592,6 +593,13 @@ func TestValidateExternalEndpointRequiresCanonicalPublicHTTPSEndpoint(t *testing
 			t.Errorf("validateExternalEndpoint(%q) = %v, want a safe provider-specific path prefix", endpoint, err)
 		}
 	}
+	// Build userinfo structurally to preserve the rejection case without embedding a credential-shaped URI in source.
+	userinfoEndpoint := (&url.URL{
+		Scheme: "https",
+		User:   url.UserPassword("fixture-user", "fixture-pass"),
+		Host:   "api.example.com",
+		Path:   "/v1/chat/completions",
+	}).String()
 	for _, endpoint := range []string{
 		"http://api.example.com/v1/chat/completions",
 		"https://127.0.0.1/v1/chat/completions",
@@ -599,7 +607,7 @@ func TestValidateExternalEndpointRequiresCanonicalPublicHTTPSEndpoint(t *testing
 		"https://api.example.local/v1/chat/completions",
 		"https://api.example.internal/v1/chat/completions",
 		"https://api.example.com:8443/v1/chat/completions",
-		"https://user:pass@api.example.com/v1/chat/completions",
+		userinfoEndpoint,
 		"https://api.example.com/v1/chat/completions?key=redacted",
 		"https://api.example.com/v1/chat/completions/",
 		"https://api.example.com/v1//chat/completions",

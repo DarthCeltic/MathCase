@@ -6,6 +6,7 @@ import (
 	"io"
 	"net/http"
 	"net/http/httptest"
+	"net/url"
 	"path/filepath"
 	"reflect"
 	"strings"
@@ -232,6 +233,8 @@ func TestNebiusTransportFailurePreservesReceiptAndChargesFullCeiling(t *testing.
 }
 
 func TestNebiusGeneratorConfigurationFailsClosed(t *testing.T) {
+	// Build userinfo structurally to preserve the rejection case without embedding a credential-shaped URI in source.
+	userinfoEndpoint := (&url.URL{Scheme: "https", User: url.UserPassword("fixture-user", "fixture-pass"), Host: "example.com", Path: "/v1"}).String()
 	tests := []struct {
 		name   string
 		mutate func(*NebiusCandidateGeneratorConfig)
@@ -239,7 +242,7 @@ func TestNebiusGeneratorConfigurationFailsClosed(t *testing.T) {
 		{name: "missing model price", mutate: func(c *NebiusCandidateGeneratorConfig) { c.Price.Known = false }},
 		{name: "missing ledger", mutate: func(c *NebiusCandidateGeneratorConfig) { c.CostJournal = nil }},
 		{name: "non-HTTPS endpoint", mutate: func(c *NebiusCandidateGeneratorConfig) { c.BaseURL = "http://example.com/v1" }},
-		{name: "redirect userinfo", mutate: func(c *NebiusCandidateGeneratorConfig) { c.BaseURL = "https://user:pass@example.com/v1" }},
+		{name: "redirect userinfo", mutate: func(c *NebiusCandidateGeneratorConfig) { c.BaseURL = userinfoEndpoint }},
 		{name: "unrelated HTTPS host", mutate: func(c *NebiusCandidateGeneratorConfig) {
 			c.BaseURL = "https://api.tokenfactory.nebius.com.attacker.example/v1"
 		}},
