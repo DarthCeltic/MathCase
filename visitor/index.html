@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#122b36">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src https://live.lean-lang.org; base-uri 'none'; form-action 'none'">
+  <title>My cases · MathCase</title>
+  <link rel="icon" href="../assets/mathcase-branding-kit/favicon.ico">
+  <link rel="stylesheet" href="workbench.css">
+  <script defer src="workbench.js"></script>
+</head>
+<body>
+  <a class="skip" href="#case-title">Skip to case</a>
+  <header class="mast">
+    <div class="mast-inner">
+      <a href="../" class="brand" aria-label="MathCase home">
+        <img src="../assets/mathcase-branding-kit/mathcase-icon-128.png" width="38" height="38" alt="">
+        <span>Math<span>Case</span></span>
+      </a>
+      <span class="mast-label">Visitor workbench</span>
+      <a class="desk-link" href="../ui/prototype/index.html">Saved Case Desk <span aria-hidden="true">→</span></a>
+    </div>
+  </header>
+  <noscript><p>This workbench needs JavaScript to edit and save cases in your browser.</p></noscript>
+  <main class="desk">
+    <aside class="library" aria-labelledby="library-heading">
+      <div class="library-top">
+        <h1 id="library-heading">My cases</h1>
+        <button class="new-case" id="new-case" type="button"><span aria-hidden="true">+</span> New case</button>
+      </div>
+      <nav aria-label="Your cases" class="cases" id="cases"></nav>
+      <button id="import-source" type="button" class="text-action">Import .lean file</button>
+      <input type="file" accept=".lean" id="source-file" hidden>
+    </aside>
+    <article class="sheet" aria-label="Case editor">
+      <div class="paper">
+        <div class="label-row">
+          <label for="case-title">Case title</label>
+          <span class="save-state" id="save-state" role="status"></span>
+        </div>
+        <input class="title-input" type="text" id="case-title" autocomplete="off" placeholder="Untitled case">
+        <label for="statement">Case statement</label>
+        <textarea class="statement" id="statement" rows="2" placeholder="State your claim, including any assumptions."></textarea>
+      </div>
+      <section class="source" aria-labelledby="source-heading">
+        <div class="source-head">
+          <h2 id="source-heading"><label for="lean">Lean source</label></h2>
+          <div class="source-actions">
+            <button class="download" id="copy-ai" type="button">Copy for my AI</button>
+            <button class="download" id="download" type="button">Download .lean <span aria-hidden="true">↓</span></button>
+          </div>
+        </div>
+        <textarea id="lean" class="lean-editor" rows="6" wrap="off" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="Write or import a Lean declaration and its proof."></textarea>
+        <p id="copy-status" role="status"></p>
+        <details id="ai-panel" hidden>
+          <summary>Review and edit AI prompt</summary>
+          <label for="ai-prompt">Prompt for your model</label>
+          <textarea id="ai-prompt" rows="7" spellcheck="false"></textarea>
+          <button type="button" id="copy-edited" class="download">Copy edited prompt</button>
+        </details>
+      </section>
+      <section class="checking" aria-labelledby="checking-heading">
+        <div class="check-row">
+          <div>
+            <h2 id="checking-heading">Check the proof</h2>
+            <p>Running sends this Lean source to live.lean-lang.org. Its editor shows the result.</p>
+          </div>
+          <div class="run-actions">
+            <button id="run-lean" type="button" class="primary" aria-expanded="false" aria-controls="live-panel">Run in Lean</button>
+            <button id="web-editor" type="button" class="text-action">Run in new tab <span aria-hidden="true">↗</span></button>
+          </div>
+        </div>
+        <section id="live-panel" class="live-panel" aria-label="Live Lean editor" hidden>
+          <div class="live-head">
+            <p>Copy any edits you make in the live editor back into your MathCase source to save them.</p>
+            <button id="close-lean" type="button" class="secondary">Close editor</button>
+          </div>
+          <div id="live-frame"></div>
+        </section>
+        <details id="local-check">
+          <summary>Check in Codespaces or locally</summary>
+          <p>Download the .lean file. In a local checkout, place it in the repository root. In a <a href="https://codespaces.new/DarthCeltic/MathCase?quickstart=1" target="_blank" rel="noopener noreferrer">MathCase Codespace <span aria-hidden="true">↗</span></a>, drag it into the repository root in Explorer. Open a terminal there and run the checker on your trusted source.</p>
+          <pre><code id="check-command"></code></pre>
+          <p>Import the resulting JSON to compare its source digest with this draft.</p>
+          <button id="import-receipt" class="secondary" type="button">Import checker receipt</button>
+          <input type="file" accept=".json,application/json" id="receipt-file" hidden>
+        </details>
+        <div class="receipt" id="receipt-panel" hidden>
+          <h3>Visitor-supplied checker receipt</h3>
+          <p id="receipt-status" role="status"></p>
+          <details id="diagnostics-panel" hidden>
+            <summary>Compiler diagnostics from receipt</summary>
+            <pre id="diagnostics"></pre>
+          </details>
+          <details>
+            <summary>Source digests</summary>
+            <dl>
+              <dt>Receipt SHA-256</dt><dd id="receipt-hash"></dd>
+              <dt>Current source SHA-256</dt><dd id="source-hash"></dd>
+            </dl>
+          </details>
+        </div>
+        <p id="feedback" class="feedback" role="status"></p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

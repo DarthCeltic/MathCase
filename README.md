@@ -2,7 +2,19 @@
 
 **Question an AI proof. Check it in Lean. Build on what holds.**
 
-[Open the no-key demo](https://darthceltic.github.io/) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip)
+[Open MathCase and start a case](https://darthceltic.github.io/visitor/) · [Explore saved proofs](https://darthceltic.github.io/) · [Open in GitHub Codespaces](https://codespaces.new/DarthCeltic/MathCase?quickstart=1) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip)
+
+## Work on your own proof
+
+Open the visitor workbench, write your claim, and edit its Lean source. The workbench saves cases in this browser. Choose **Run in Lean** to send the current source to Lean Playground and inspect its compiler messages inside the page. To ask a model for a proof or a correction, choose **Copy for my AI**, use it with your own model, and paste the proposed source back into the case. You can also download your source or run the pinned compiler in your own workspace.
+
+For a reproducible check, open the Codespaces link above and sign in to GitHub. GitHub provisions a personal development environment using your Codespaces allowance. The first setup downloads Lean 4.33.1. Edit and save the starter in `visitor-examples/MyCase.lean`, or drag in a `.lean` file you downloaded from MathCase. With that file open, use **Terminal → Run Build Task**. The task writes a JSON receipt next to the file. To run the same check from a terminal with the pinned Lean toolchain installed, use:
+
+```sh
+python3 scripts/check_visitor_case.py visitor-examples/MyCase.lean --receipt MyCase.receipt.json
+```
+
+Download the receipt and import it into the case to compare the checked bytes with the current draft. A compiler receipt records diagnostics, version and source digest. The saved Case Desk examples also include separate historical evidence such as axiom audits. To keep your proof and receipt in Git, [fork MathCase](https://github.com/DarthCeltic/MathCase/fork), open a Codespace on your fork, and commit the files there. To try the Go CLI in the Codespace, run `go run ./cmd/mathcase solve-provider -h` for its provider setup and authorization options. Stop the Codespace from GitHub when you finish.
 
 MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [no-key saved-case demo](https://darthceltic.github.io/), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2`, inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem, then follow the checked parent lemma into a √2 infinite-descent child. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
 
