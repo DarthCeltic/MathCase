@@ -50,3 +50,5 @@ scripts/*egyptian_fraction*.py -text -eol whitespace=blank-at-eol,blank-at-eof,s
 reproduction/egyptian-fractions-v9/** -text -eol -diff
 reproduction/egyptian-fractions-v9/README.md text eol=lf
 reproduction/egyptian-fractions-v9/inventory.json text eol=lf
+# Preserve hash-bound Ramsey receipts exactly as captured.
+reproduction/ramsey-r55-lean-v1/receipts/** -text -eol -diff
