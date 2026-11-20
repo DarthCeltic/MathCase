@@ -1,0 +1,439 @@
+{
+  "schema": "mathcase-r55-public-evidence-v1",
+  "status": "LOCAL_WARM_CACHE_LEAN_COMPOSITION_PASS_CANDIDATE_ONLY",
+  "claim": "There exists a simple graph on 42 vertices with no clique of size five and no independent set of size five; therefore the known lower bound R(5,5) >= 43.",
+  "exact_lean_statement": "∃ G : SimpleGraph (Fin 42), G.CliqueFree 5 ∧ (Gᶜ).CliqueFree 5",
+  "m0": {
+    "status": "YES_REVIEWED",
+    "statement_packet_sha256": "3866a0a6be46bd580c52b0677b1bc9c096ce75038d3941bb77ec795dc77f50cb",
+    "review_artifact_sha256": "466850844ba1e5e06a94c44764c1734b6e5814c31d3a01d4681aad741cf58e20"
+  },
+  "toolchain": {
+    "lean_toolchain": "leanprover/lean4:v4.33.1",
+    "mathlib_revision": "0df444a360eaa60ab8c11dca51a86af692955474"
+  },
+  "proof": {
+    "pairs": 861,
+    "proof_chunks": 27,
+    "edge_triangle_checks": 90025,
+    "witness_edge_checks": 45802,
+    "complement_edge_checks": 44223,
+    "axiom_report": "'MathCase.RamseyR55.ramsey_number_five_five_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "no_sorry_admit_native_decide_in_proof_sources": true,
+    "m4_promoted": false,
+    "signed": false
+  },
+  "witness": {
+    "sha256": "0d855016014ce4c2fbfcdba270683086a351b4a1e59afd611cc53e9b15109da7",
+    "edge_count": 435,
+    "decoded_rows_match_row_binding_and_lean_source": true
+  },
+  "source_files": [
+    {
+      "path": "MathCase/Ramsey/R55/FoundationV4.lean",
+      "sha256": "ac5701807c463c77c4aac9fd310a21d7c138a3744bd8c8f7e6527ccdfcb60691",
+      "bytes": 7048
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_000.lean",
+      "sha256": "ade59cd746331c6bf53dffba67dba98fcb8ee18e99967e504d4c5e81b2aa1595",
+      "bytes": 20879
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_001.lean",
+      "sha256": "5c41f859d57801a3b2c7a949bcbfb6b054e8dac3908f23d133da3ea0c6cccec6",
+      "bytes": 20759
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_002.lean",
+      "sha256": "9a10699c23f9a22fca29b2880499b83925c82a041ae888c95d203ed3ef130cea",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_003.lean",
+      "sha256": "a9ce6e7fca5c23487b1f5c611e8d68918ea86eac351368fba3f878bbaae57260",
+      "bytes": 21009
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_004.lean",
+      "sha256": "2dee4fbe09d76d404afe7ef8ce9297be5c282d080ec71168d9d4b9bd38a70ff1",
+      "bytes": 20869
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_005.lean",
+      "sha256": "de36369eafb094a221dc42a4fb47d3249f6d0a656b82ceb66b11b221cd99ff49",
+      "bytes": 21049
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_006.lean",
+      "sha256": "c963730738783342eb828702bec4748a82c09986c2df9e5e0c4492a4727723ee",
+      "bytes": 20749
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_007.lean",
+      "sha256": "acff33dc755bdace8efbb5da70c3d520e237f5efb2c63558b7153aef19c562c7",
+      "bytes": 20839
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_008.lean",
+      "sha256": "3b99f0f2b2f07de0b2640c1f0e3ee4a176fec2d158d452ea09c4dc9d5fa57027",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_009.lean",
+      "sha256": "fea30168a3557ef832b72a5e3e3ceb790ce2cfb7723f76b30712cfad8e3929bc",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_010.lean",
+      "sha256": "b030230ecd32a681fe1f7c267efbedc0f937c25248b1ff072beb903d83358afb",
+      "bytes": 20799
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_011.lean",
+      "sha256": "c48fb92bd9482933999f7cbcead35fdedb5cea58f26bc43119e02172add66bc1",
+      "bytes": 20739
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_012.lean",
+      "sha256": "4bdcfa1284ae4eef5883aea5f03093b3fc7c18804d3e8bedfd8dcf10a34dd804",
+      "bytes": 20779
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_013.lean",
+      "sha256": "a00983a7941363b032f13ba5c61b14c30a3f5212b9874eccce772f4b2305e808",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_014.lean",
+      "sha256": "c08114efccf10f926a7cee0e6d3b4daa8936200cff970eb549702c1857c41b81",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_015.lean",
+      "sha256": "e8ba9e92a0c55dd6ccc91f44439b6dab84f66550cbf3b7e42b4c9f248359f01a",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_016.lean",
+      "sha256": "fc431d17758f3470699591ad7ebcc95afa415f80be766d807d3e728bc831aff0",
+      "bytes": 20899
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_017.lean",
+      "sha256": "a4801f21fd835930eeb0dfdb68124689b362560b2b7c2af7a6406ac519c87ffe",
+      "bytes": 20749
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_018.lean",
+      "sha256": "feea5c9f8f9d838cab912b2a922ecea0fe4e79dd0d9111ed2d771a9990a9750b",
+      "bytes": 20759
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_019.lean",
+      "sha256": "3c5db6afcf5b3c78e056e696e556deca6cd9978908f78142adddcc0dc6631dfe",
+      "bytes": 20789
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_020.lean",
+      "sha256": "9e9e28d1dac00262f863a3a4ef800ee66785bb73b8eab22ef5bf9772aae1b78a",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_021.lean",
+      "sha256": "d553eb4d8cc3164c0846229ef7be79a23b6380073984924af0182110bfd8b177",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_022.lean",
+      "sha256": "943a387ca431512fb673a43a7f05b3743b2346129048c1c6a3dc5e01fb82e4bc",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_023.lean",
+      "sha256": "7347c516543e45e5acece48b7c1cd9fbc82a1f7984dbb2f008bd3606c029ef44",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_024.lean",
+      "sha256": "23d3b4aebf7f6e8dbc08cf56d5829b443a90f65af507b381923a7c3a07b97635",
+      "bytes": 21109
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_025.lean",
+      "sha256": "514a0394437bc44e410953426582d2c443a16c85299ab2238bb208256ba5966b",
+      "bytes": 20869
+    },
+    {
+      "path": "MathCase/Ramsey/R55/PairChunkV2_026.lean",
+      "sha256": "c6bd98021837b9010724b3aedc0a6496441b6edb4147f978ee1bb0b003117559",
+      "bytes": 19144
+    },
+    {
+      "path": "MathCase/Ramsey/R55/RamseyR55LowerBoundChunkedV2.lean",
+      "sha256": "0ee1c485d62db7ab533e3a1e7c4c8876edaaafd0135baeb579e50eee02c66ad2",
+      "bytes": 108078
+    }
+  ],
+  "chunk_receipts": [
+    {
+      "path": "receipts/chunks/PairChunkV2_000.json",
+      "sha256": "943ab21897991e578688941371a39a2c338af4668230aa6534c4ea4397a65101",
+      "module": "PairChunkV2_000",
+      "source_sha256": "ade59cd746331c6bf53dffba67dba98fcb8ee18e99967e504d4c5e81b2aa1595",
+      "olean_sha256": "43e2d608d6e904c33c60e98ac3c9cb63cd6b23965561b59b33dc08d8c59e6618",
+      "elapsed_seconds": 50.375
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_001.json",
+      "sha256": "071e38abfb329d21533547508e4079cb40a397de209db9d4e302604a2b48afb1",
+      "module": "PairChunkV2_001",
+      "source_sha256": "5c41f859d57801a3b2c7a949bcbfb6b054e8dac3908f23d133da3ea0c6cccec6",
+      "olean_sha256": "6d5250bb4ec8fbe6c2cec67500aceea3c2d9ca095dc32a2bcc21ddf59076c66e",
+      "elapsed_seconds": 50.739
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_002.json",
+      "sha256": "f40383961be6748abcd1af3935883d98aa41ddff9fb780d50d448a8867a0e1e9",
+      "module": "PairChunkV2_002",
+      "source_sha256": "9a10699c23f9a22fca29b2880499b83925c82a041ae888c95d203ed3ef130cea",
+      "olean_sha256": "6516333d74f0c874c8e90a935bf283b24b5899fa394a9c8dd8ec612af4968e03",
+      "elapsed_seconds": 47.946
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_003.json",
+      "sha256": "e3d818cd701777af2a754cdcf51527fcecec77f40d178f6d9d71f5cb95b8cad7",
+      "module": "PairChunkV2_003",
+      "source_sha256": "a9ce6e7fca5c23487b1f5c611e8d68918ea86eac351368fba3f878bbaae57260",
+      "olean_sha256": "401eb9e4aea7586694b18d84ad332982b57317e2399342fb6fdf1a2fa72fdfec",
+      "elapsed_seconds": 45.392
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_004.json",
+      "sha256": "5402f3c18b1bbc673ab8f2ecb9c089fd409dc00e7c41e1568543830a38903964",
+      "module": "PairChunkV2_004",
+      "source_sha256": "2dee4fbe09d76d404afe7ef8ce9297be5c282d080ec71168d9d4b9bd38a70ff1",
+      "olean_sha256": "d6fe90139c69e3aa8430b796e1296c2b43feadc885c33467c6c1b5197312ed74",
+      "elapsed_seconds": 42.807
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_005.json",
+      "sha256": "6084acf6200ec5a3dfad6dcab7ad9af999546d0e898c0889072fc04b95a15b50",
+      "module": "PairChunkV2_005",
+      "source_sha256": "de36369eafb094a221dc42a4fb47d3249f6d0a656b82ceb66b11b221cd99ff49",
+      "olean_sha256": "a95357489a0e835a9d918521b584fdf34a01402d402782fd369be083bdb137b7",
+      "elapsed_seconds": 40.469
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_006.json",
+      "sha256": "39f73cfa535c406692af413c7036fcdc351853db339b62f07739052d60346f70",
+      "module": "PairChunkV2_006",
+      "source_sha256": "c963730738783342eb828702bec4748a82c09986c2df9e5e0c4492a4727723ee",
+      "olean_sha256": "c49fa1f9886fa90654b045931b9c0549b404257fd96819b58f7d219fcaae32c5",
+      "elapsed_seconds": 38.037
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_007.json",
+      "sha256": "1fd749cb218782a069c313fbcea65569a2c09f3d537dff1f3e6f980dc562e309",
+      "module": "PairChunkV2_007",
+      "source_sha256": "acff33dc755bdace8efbb5da70c3d520e237f5efb2c63558b7153aef19c562c7",
+      "olean_sha256": "729d182450318e7ac350deb5154d8b5a107642a3071a14dd9671824982d6d1ba",
+      "elapsed_seconds": 40.91
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_008.json",
+      "sha256": "02cc35a1800319d6e83db7b2e94552befb2f54a535bee7abc5342fea7b770f9c",
+      "module": "PairChunkV2_008",
+      "source_sha256": "3b99f0f2b2f07de0b2640c1f0e3ee4a176fec2d158d452ea09c4dc9d5fa57027",
+      "olean_sha256": "a9e82a42b5f9bc89d4a83f3aaae19be22ad781357af22b7c85bb377b5a75de3b",
+      "elapsed_seconds": 38.433
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_009.json",
+      "sha256": "f5bf648d1fefe7b99602ee8454872e53c4a28f5080c3c9b1c6cf58b3e3a635b0",
+      "module": "PairChunkV2_009",
+      "source_sha256": "fea30168a3557ef832b72a5e3e3ceb790ce2cfb7723f76b30712cfad8e3929bc",
+      "olean_sha256": "28ce23da1c806c22c76a8ad2d370103a2bd59d0a86824512ca0eadf611789f06",
+      "elapsed_seconds": 38.348
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_010.json",
+      "sha256": "2317123ca1cbe6c9484ffbbb9c4b1f52d4c4522d566e1749c01f9a0e7cd676d8",
+      "module": "PairChunkV2_010",
+      "source_sha256": "b030230ecd32a681fe1f7c267efbedc0f937c25248b1ff072beb903d83358afb",
+      "olean_sha256": "b640d85c00e6506922bb1027c80a49f6b40399b9b5e3e61a1f4a270a17a50c61",
+      "elapsed_seconds": 35.965
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_011.json",
+      "sha256": "5d3253932b7a8624bf00b171a62c9ee067643879d5d79d7f418e2fbbccae9930",
+      "module": "PairChunkV2_011",
+      "source_sha256": "c48fb92bd9482933999f7cbcead35fdedb5cea58f26bc43119e02172add66bc1",
+      "olean_sha256": "5371876bfd25f6fa07916be09152334e27aad6da77f58b677fb4c0f99b911be3",
+      "elapsed_seconds": 35.673
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_012.json",
+      "sha256": "e17b2ad2d4cd1b84bfa41ed6677deed98bfdbd5ed2863b9f97eeae4622068f97",
+      "module": "PairChunkV2_012",
+      "source_sha256": "4bdcfa1284ae4eef5883aea5f03093b3fc7c18804d3e8bedfd8dcf10a34dd804",
+      "olean_sha256": "3b89143c5ef53294b0543b6f3d9e3a7c66f2963ca88466d7c3c235b985aab3bf",
+      "elapsed_seconds": 35.67
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_013.json",
+      "sha256": "d57c6aba0230f1de78ef0b8a4980a9a688e37ec86944e7f4966c16275874aa77",
+      "module": "PairChunkV2_013",
+      "source_sha256": "a00983a7941363b032f13ba5c61b14c30a3f5212b9874eccce772f4b2305e808",
+      "olean_sha256": "e8b726070bb81d8214575865bf351915d55f04a4680a98a83605aad2dec87ed8",
+      "elapsed_seconds": 35.683
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_014.json",
+      "sha256": "3412587d24274d86fd7973a19a4dc1852edf9c09763591910b74a46064770a0e",
+      "module": "PairChunkV2_014",
+      "source_sha256": "c08114efccf10f926a7cee0e6d3b4daa8936200cff970eb549702c1857c41b81",
+      "olean_sha256": "cb4cff560177917e6296d5677f2c64f25caa128b427415a7f6c3831f0a4f58ef",
+      "elapsed_seconds": 35.478
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_015.json",
+      "sha256": "013f7e93dd23d756236812d7761c46206fc260fc51ab69fddc0922d49f784b79",
+      "module": "PairChunkV2_015",
+      "source_sha256": "e8ba9e92a0c55dd6ccc91f44439b6dab84f66550cbf3b7e42b4c9f248359f01a",
+      "olean_sha256": "e43e1f38f40362b46c102333d6d8fd0d35c101c888f028c2dd5719db8e616cda",
+      "elapsed_seconds": 35.694
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_016.json",
+      "sha256": "9c5e5862fe802b5dd0caa788cdf97629e1eaf3fa8639952a2eb1e23902c48c59",
+      "module": "PairChunkV2_016",
+      "source_sha256": "fc431d17758f3470699591ad7ebcc95afa415f80be766d807d3e728bc831aff0",
+      "olean_sha256": "c2319fedc7a16cdebb78495e4e2ed23531a8312b5ffeb1f64e6f99d526be7598",
+      "elapsed_seconds": 33.2
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_017.json",
+      "sha256": "f61c45902f782e000de32833ebc7fd7b7900f4610908fdf6e66240977bf54c8c",
+      "module": "PairChunkV2_017",
+      "source_sha256": "a4801f21fd835930eeb0dfdb68124689b362560b2b7c2af7a6406ac519c87ffe",
+      "olean_sha256": "83f8d2c326747d75737067759380aa17514303d1370311e8ae957fca3b54592e",
+      "elapsed_seconds": 33.288
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_018.json",
+      "sha256": "014ea5ab2fe0bf2a92f8fbd8f7d37bf4da03949f435082f600f0453be4cee0aa",
+      "module": "PairChunkV2_018",
+      "source_sha256": "feea5c9f8f9d838cab912b2a922ecea0fe4e79dd0d9111ed2d771a9990a9750b",
+      "olean_sha256": "40713637ee8be6f5039cd3a7f70dbefab5deede4d6031d03652559c2a666a1e8",
+      "elapsed_seconds": 33.289
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_019.json",
+      "sha256": "09e241f312db2e2d4d5fa90aa7232d77af02530473fdcb6034d80bb995dd407a",
+      "module": "PairChunkV2_019",
+      "source_sha256": "3c5db6afcf5b3c78e056e696e556deca6cd9978908f78142adddcc0dc6631dfe",
+      "olean_sha256": "c93b98877c7fc629dde14c96b1c5cbc004d34b6c047bd5b373010ec6ddea9c70",
+      "elapsed_seconds": 33.316
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_020.json",
+      "sha256": "45bc1ea4baa9d712da5c89175b537e4c6ce1bd1ee32113e4bba99d41ffaa4f4f",
+      "module": "PairChunkV2_020",
+      "source_sha256": "9e9e28d1dac00262f863a3a4ef800ee66785bb73b8eab22ef5bf9772aae1b78a",
+      "olean_sha256": "8f0947eb55d494353f4e5374904d75c1e3d3eb657bbb84198e8f9d7f1041dc8e",
+      "elapsed_seconds": 33.293
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_021.json",
+      "sha256": "dddfce9f5e0c33c2145a91779546d3b8227ff924b7898b553a0528b84001fc5e",
+      "module": "PairChunkV2_021",
+      "source_sha256": "d553eb4d8cc3164c0846229ef7be79a23b6380073984924af0182110bfd8b177",
+      "olean_sha256": "0d7f5fe092ec5d814c268b7dd1235cf003f10523c494dbf4db4d95d9be2f1497",
+      "elapsed_seconds": 30.89
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_022.json",
+      "sha256": "f737dde76406f60d27a5a8dd5c66547052c66257af55eabb88642d0bb2e5c712",
+      "module": "PairChunkV2_022",
+      "source_sha256": "943a387ca431512fb673a43a7f05b3743b2346129048c1c6a3dc5e01fb82e4bc",
+      "olean_sha256": "3e1d0804b26efb8c61b7b2a9c7ae8c1257462e0b6963cc4611ab61de1e535588",
+      "elapsed_seconds": 30.951
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_023.json",
+      "sha256": "3e4404c1b6fb382cce9a721112f13e339f9408c862b469e128ce65e64481321b",
+      "module": "PairChunkV2_023",
+      "source_sha256": "7347c516543e45e5acece48b7c1cd9fbc82a1f7984dbb2f008bd3606c029ef44",
+      "olean_sha256": "a584ef8f4130ebc73bb84f53ab094a5eac25f0e73402e917ea16d86ef9c79785",
+      "elapsed_seconds": 30.836
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_024.json",
+      "sha256": "8f5faad08a0f64ecb2f1feb8b925d7d079d9da3fd5a9f18b94c58b4149e6fcbf",
+      "module": "PairChunkV2_024",
+      "source_sha256": "23d3b4aebf7f6e8dbc08cf56d5829b443a90f65af507b381923a7c3a07b97635",
+      "olean_sha256": "7ad3ef5fd38320490f0b5ba9b61e2b1938967491293ba9f49971b2f401f11b0f",
+      "elapsed_seconds": 33.263
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_025.json",
+      "sha256": "13611ede8b550d7d036dc61a9a4d9713919f920f495039a72e754e51c17f24dd",
+      "module": "PairChunkV2_025",
+      "source_sha256": "514a0394437bc44e410953426582d2c443a16c85299ab2238bb208256ba5966b",
+      "olean_sha256": "f29b8be2d4999096c38b26e429da8f23358ad32987df5597f4f8fbe9bb090b16",
+      "elapsed_seconds": 30.853
+    },
+    {
+      "path": "receipts/chunks/PairChunkV2_026.json",
+      "sha256": "2f887469b25a15092cd2d5a64472b3f8ed51b6311aca99ffb3713995dbd329e4",
+      "module": "PairChunkV2_026",
+      "source_sha256": "c6bd98021837b9010724b3aedc0a6496441b6edb4147f978ee1bb0b003117559",
+      "olean_sha256": "b76f030ecfabe2f127474ef539f3ded3469063b7a4253347f617e098556d6a52",
+      "elapsed_seconds": 28.467
+    }
+  ],
+  "composition_receipt": {
+    "path": "receipts/composition/RUN_RECEIPT.json",
+    "sha256": "a8ec463681175f8effad0138aac24d3b160730f640cb70304d93586bd3e97cee",
+    "stdout_sha256": "1071ef78eb11cfd8e6987e6d42a1c4f493a48d94c349a1a2db994cd6781bd9a7",
+    "olean_sha256": "b857812b7a8e725a33be9fd91d71f05a452775b4c502b85e5a8e1dd464e68a39"
+  },
+  "preserved_nonpass_receipts": [
+    {
+      "status": "COMPILE_FAILED",
+      "exit_code": 1,
+      "receipt_sha256": "cd1191f5b80a8e02867d2b254a96896fbe1e156d9e1b7187fd3d4f78182ec0ba"
+    },
+    {
+      "status": "NO_STATUS_RECORDED",
+      "exit_code": 1,
+      "receipt_sha256": "a320c021837b25d4355b9dac64dfdf0169ff73b242de96a10212a0549ff6ec6a"
+    },
+    {
+      "status": "NO_STATUS_RECORDED",
+      "exit_code": 0,
+      "receipt_sha256": "73c93f2b71a42befffdd0886f22e42cd42ea9f78bdcafa7bb44fe36d4db0a0cc"
+    },
+    {
+      "status": "COMPILE_FAILED",
+      "exit_code": 1,
+      "receipt_sha256": "13d516a36c3350848225e5a79f0fa481707c16136c7b4a94aacdb40f5a348ca0"
+    },
+    {
+      "status": "COMPILE_FAILED",
+      "exit_code": 1,
+      "receipt_sha256": "3f1c3541289687ccd336f0f950093043845162bc3dac89e866a3f1c1d9a1717f"
+    },
+    {
+      "status": "COMPILE_FAILED",
+      "exit_code": 1,
+      "receipt_sha256": "8033c854f327e066a8f352b2301102eac26e4cc969b4260a273da66c06970aff"
+    }
+  ],
+  "limits": [
+    "Known finite lower-bound verification; no new construction or theorem.",
+    "The recorded run used a local warm Mathlib cache; no fresh-checkout replay is claimed.",
+    "No determination of R(5,5), no M4 dossier pass, no signature, and no independent mathematical review."
+  ]
+}

@@ -1,0 +1,6285 @@
+{
+  "schema": "mathcase-ramsey-edge-chunks-v2",
+  "target": "R(5,5) >= 43 via a 42-vertex witness graph and its complement",
+  "witness_sha256": "0d855016014ce4c2fbfcdba270683086a351b4a1e59afd611cc53e9b15109da7",
+  "foundation_source_sha256": "ac5701807c463c77c4aac9fd310a21d7c138a3744bd8c8f7e6527ccdfcb60691",
+  "chunk_size": 32,
+  "pair_count": 861,
+  "witness_edges": 435,
+  "complement_edges": 426,
+  "witness_triangle_checks": 45802,
+  "complement_triangle_checks": 44223,
+  "triangle_checks_total": 90025,
+  "chunks": [
+    {
+      "module": "PairChunkV2_000",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_000.lean",
+      "source_sha256": "ade59cd746331c6bf53dffba67dba98fcb8ee18e99967e504d4c5e81b2aa1595",
+      "pair_count": 32,
+      "triangle_checks": 8426,
+      "pairs": [
+        {
+          "i": 0,
+          "j": 2,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 2,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 4,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 6,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 6,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 7,
+          "j": 9,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 8,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 10,
+          "j": 12,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 11,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 15,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 16,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 17,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 18,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 25,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 27,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 32,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 33,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 34,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 35,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 36,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 13,
+          "triangle_checks": 286
+        },
+        {
+          "i": 0,
+          "j": 11,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 0,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 0,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 0,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 0,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 1,
+          "j": 12,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 1,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 1,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 1,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 2,
+          "j": 4,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 2,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_001",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_001.lean",
+      "source_sha256": "5c41f859d57801a3b2c7a949bcbfb6b054e8dac3908f23d133da3ea0c6cccec6",
+      "pair_count": 32,
+      "triangle_checks": 7040,
+      "pairs": [
+        {
+          "i": 2,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 3,
+          "j": 5,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 3,
+          "j": 12,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 3,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 3,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 3,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 4,
+          "j": 6,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 4,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 4,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 4,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 4,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 5,
+          "j": 7,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 5,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 5,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 5,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 5,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 6,
+          "j": 8,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 6,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 6,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 7,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 7,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 7,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 8,
+          "j": 10,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 8,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 8,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 8,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 8,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 9,
+          "j": 11,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 9,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 9,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 9,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 10,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_002",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_002.lean",
+      "source_sha256": "9a10699c23f9a22fca29b2880499b83925c82a041ae888c95d203ed3ef130cea",
+      "pair_count": 32,
+      "triangle_checks": 7040,
+      "pairs": [
+        {
+          "i": 10,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 11,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 11,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 12,
+          "j": 14,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 12,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 12,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 13,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 13,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 13,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 13,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 14,
+          "j": 16,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 14,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 14,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 14,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 15,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 15,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 16,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 16,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 17,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 17,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 18,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 18,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 18,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 18,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 19,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 19,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 19,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 20,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 20,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 21,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 21,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 21,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_003",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_003.lean",
+      "source_sha256": "a9ce6e7fca5c23487b1f5c611e8d68918ea86eac351368fba3f878bbaae57260",
+      "pair_count": 32,
+      "triangle_checks": 6545,
+      "pairs": [
+        {
+          "i": 21,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 21,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 22,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 22,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 23,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 23,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 24,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 24,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 24,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 26,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 26,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 28,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 29,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 29,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 29,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 30,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 30,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 30,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 31,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 32,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 37,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 38,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 39,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 12,
+          "triangle_checks": 220
+        },
+        {
+          "i": 0,
+          "j": 9,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 0,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 1,
+          "j": 10,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 1,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 1,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 2,
+          "j": 11,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 2,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 2,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 2,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_004",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_004.lean",
+      "source_sha256": "2dee4fbe09d76d404afe7ef8ce9297be5c282d080ec71168d9d4b9bd38a70ff1",
+      "pair_count": 32,
+      "triangle_checks": 5280,
+      "pairs": [
+        {
+          "i": 3,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 4,
+          "j": 12,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 4,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 5,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 5,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 5,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 5,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 6,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 6,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 6,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 6,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 7,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 7,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 7,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 7,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 7,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 7,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 7,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 8,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 8,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 8,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 8,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 9,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 9,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 10,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 10,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 11,
+          "j": 13,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 11,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 11,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 12,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 12,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 12,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_005",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_005.lean",
+      "source_sha256": "de36369eafb094a221dc42a4fb47d3249f6d0a656b82ceb66b11b221cd99ff49",
+      "pair_count": 32,
+      "triangle_checks": 5100,
+      "pairs": [
+        {
+          "i": 13,
+          "j": 15,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 14,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 14,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 15,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 15,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 15,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 16,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 17,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 17,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 18,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 19,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 20,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 20,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 20,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 20,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 22,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 23,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 24,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 24,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 24,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 25,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 25,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 26,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 27,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 28,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 28,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 30,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 31,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 11,
+          "triangle_checks": 165
+        },
+        {
+          "i": 0,
+          "j": 4,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 0,
+          "j": 6,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 0,
+          "j": 14,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 0,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_006",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_006.lean",
+      "source_sha256": "c963730738783342eb828702bec4748a82c09986c2df9e5e0c4492a4727723ee",
+      "pair_count": 32,
+      "triangle_checks": 3840,
+      "pairs": [
+        {
+          "i": 0,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 0,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 0,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 5,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 7,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 14,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 1,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 2,
+          "j": 6,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 2,
+          "j": 15,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 2,
+          "j": 16,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 2,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 2,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 2,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 3,
+          "j": 9,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 3,
+          "j": 16,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 3,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 3,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 3,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 3,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 3,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 4,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_007",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_007.lean",
+      "source_sha256": "acff33dc755bdace8efbb5da70c3d520e237f5efb2c63558b7153aef19c562c7",
+      "pair_count": 32,
+      "triangle_checks": 3840,
+      "pairs": [
+        {
+          "i": 5,
+          "j": 9,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 5,
+          "j": 11,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 5,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 5,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 5,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 5,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 5,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 6,
+          "j": 10,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 6,
+          "j": 12,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 6,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 6,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 6,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 7,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 7,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 7,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 7,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 7,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 8,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 9,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 10,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 10,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 10,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 10,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 10,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 10,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_008",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_008.lean",
+      "source_sha256": "3b99f0f2b2f07de0b2640c1f0e3ee4a176fec2d158d452ea09c4dc9d5fa57027",
+      "pair_count": 32,
+      "triangle_checks": 3840,
+      "pairs": [
+        {
+          "i": 11,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 11,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 11,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 11,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 11,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 12,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 12,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 12,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 12,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 12,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 13,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 13,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 13,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 13,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 13,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 13,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 14,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 14,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 14,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 14,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 15,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 15,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 15,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 16,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 16,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 16,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 16,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 16,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 17,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 17,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 17,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 17,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_009",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_009.lean",
+      "source_sha256": "fea30168a3557ef832b72a5e3e3ceb790ce2cfb7723f76b30712cfad8e3929bc",
+      "pair_count": 32,
+      "triangle_checks": 3840,
+      "pairs": [
+        {
+          "i": 18,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 18,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 18,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 19,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 19,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 19,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 19,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 19,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 20,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 21,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 21,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 21,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 21,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 22,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 22,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 22,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 22,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 22,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 23,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 23,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 23,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 24,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 24,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 25,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 25,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 25,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 25,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 26,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 26,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 27,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 27,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 27,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_010",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_010.lean",
+      "source_sha256": "b030230ecd32a681fe1f7c267efbedc0f937c25248b1ff072beb903d83358afb",
+      "pair_count": 32,
+      "triangle_checks": 3048,
+      "pairs": [
+        {
+          "i": 28,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 29,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 29,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 32,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 32,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 33,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 34,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 35,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 35,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 36,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 10,
+          "triangle_checks": 120
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 5,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 7,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 8,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 13,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 4,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 6,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 8,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 9,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 15,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 1,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_011",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_011.lean",
+      "source_sha256": "c48fb92bd9482933999f7cbcead35fdedb5cea58f26bc43119e02172add66bc1",
+      "pair_count": 32,
+      "triangle_checks": 2688,
+      "pairs": [
+        {
+          "i": 1,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 9,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 14,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 2,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 6,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 7,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 10,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 11,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 15,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 3,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 4,
+          "j": 8,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 4,
+          "j": 9,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 4,
+          "j": 10,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 4,
+          "j": 11,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 4,
+          "j": 16,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 4,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 4,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 5,
+          "j": 10,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 5,
+          "j": 12,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 5,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 5,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_012",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_012.lean",
+      "source_sha256": "4bdcfa1284ae4eef5883aea5f03093b3fc7c18804d3e8bedfd8dcf10a34dd804",
+      "pair_count": 32,
+      "triangle_checks": 2688,
+      "pairs": [
+        {
+          "i": 5,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 5,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 6,
+          "j": 9,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 6,
+          "j": 11,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 6,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 6,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 6,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 6,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 6,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 7,
+          "j": 10,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 7,
+          "j": 11,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 7,
+          "j": 12,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 7,
+          "j": 14,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 7,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 7,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 9,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 12,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 15,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 8,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 9,
+          "j": 12,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 9,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 9,
+          "j": 16,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 9,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 9,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 9,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 10,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_013",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_013.lean",
+      "source_sha256": "a00983a7941363b032f13ba5c61b14c30a3f5212b9874eccce772f4b2305e808",
+      "pair_count": 32,
+      "triangle_checks": 2688,
+      "pairs": [
+        {
+          "i": 10,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 10,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 10,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 10,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 11,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 11,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 11,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 11,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 11,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 11,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 11,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 12,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 12,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 12,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 12,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 12,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 13,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 13,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 13,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 13,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 14,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 14,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 14,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 14,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 14,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 15,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 15,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 15,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 15,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 15,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 16,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 16,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_014",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_014.lean",
+      "source_sha256": "c08114efccf10f926a7cee0e6d3b4daa8936200cff970eb549702c1857c41b81",
+      "pair_count": 32,
+      "triangle_checks": 2688,
+      "pairs": [
+        {
+          "i": 16,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 16,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 16,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 16,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 17,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 17,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 17,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 18,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 18,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 18,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 18,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 18,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 19,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 19,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 19,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 20,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 20,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 20,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 20,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 20,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 21,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 22,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 22,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 23,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 23,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 23,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 23,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 23,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 23,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 23,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 24,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 24,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_015",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_015.lean",
+      "source_sha256": "e8ba9e92a0c55dd6ccc91f44439b6dab84f66550cbf3b7e42b4c9f248359f01a",
+      "pair_count": 32,
+      "triangle_checks": 2688,
+      "pairs": [
+        {
+          "i": 24,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 24,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 25,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 25,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 25,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 25,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 26,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 27,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 27,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 27,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 27,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 27,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 28,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 28,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 28,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 29,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 29,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 29,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 29,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 30,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 30,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 30,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 30,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 31,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 31,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_016",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_016.lean",
+      "source_sha256": "fc431d17758f3470699591ad7ebcc95afa415f80be766d807d3e728bc831aff0",
+      "pair_count": 32,
+      "triangle_checks": 2128,
+      "pairs": [
+        {
+          "i": 32,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 32,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 33,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 33,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 34,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 34,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 35,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 35,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 35,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 36,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 37,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 37,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 9,
+          "triangle_checks": 84
+        },
+        {
+          "i": 0,
+          "j": 1,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 12,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 16,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 1,
+          "j": 13,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 1,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 1,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 1,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 1,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 1,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 1,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_017",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_017.lean",
+      "source_sha256": "a4801f21fd835930eeb0dfdb68124689b362560b2b7c2af7a6406ac519c87ffe",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 1,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 5,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 8,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 10,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 12,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 19,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 2,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 13,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 3,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 7,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 14,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_018",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_018.lean",
+      "source_sha256": "feea5c9f8f9d838cab912b2a922ecea0fe4e79dd0d9111ed2d771a9990a9750b",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 4,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 4,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 6,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 8,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 15,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 5,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 7,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 13,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 16,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 6,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_019",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_019.lean",
+      "source_sha256": "3c5db6afcf5b3c78e056e696e556deca6cd9978908f78142adddcc0dc6631dfe",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 7,
+          "j": 8,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 7,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 11,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 18,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 8,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 10,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 9,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 11,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_020",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_020.lean",
+      "source_sha256": "9e9e28d1dac00262f863a3a4ef800ee66785bb73b8eab22ef5bf9772aae1b78a",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 10,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 18,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 10,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 11,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 13,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 17,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 29,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 12,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_021",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_021.lean",
+      "source_sha256": "d553eb4d8cc3164c0846229ef7be79a23b6380073984924af0182110bfd8b177",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 12,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 14,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 23,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 13,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 15,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 14,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 16,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 15,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_022",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_022.lean",
+      "source_sha256": "943a387ca431512fb673a43a7f05b3743b2346129048c1c6a3dc5e01fb82e4bc",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 16,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 16,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 20,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 22,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 27,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 17,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 21,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 18,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 19,
+          "j": 20,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 19,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 19,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 19,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_023",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_023.lean",
+      "source_sha256": "7347c516543e45e5acece48b7c1cd9fbc82a1f7984dbb2f008bd3606c029ef44",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 19,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 19,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 19,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 20,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 20,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 20,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 20,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 20,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 20,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 20,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 21,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 22,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 22,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 22,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 22,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 22,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 22,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 22,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 23,
+          "j": 24,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 23,
+          "j": 33,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 23,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 23,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 23,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 24,
+          "j": 25,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 24,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_024",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_024.lean",
+      "source_sha256": "23d3b4aebf7f6e8dbc08cf56d5829b443a90f65af507b381923a7c3a07b97635",
+      "pair_count": 32,
+      "triangle_checks": 1792,
+      "pairs": [
+        {
+          "i": 24,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 24,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 25,
+          "j": 28,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 25,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 25,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 25,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 25,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 26,
+          "j": 36,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 27,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 27,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 27,
+          "j": 32,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 27,
+          "j": 37,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 28,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 28,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 28,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 28,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 28,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 29,
+          "j": 30,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 29,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 29,
+          "j": 39,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 30,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 31,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 31,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 31,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 32,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 32,
+          "j": 35,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 32,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 33,
+          "j": 34,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 33,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 33,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 33,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 34,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_025",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_025.lean",
+      "source_sha256": "514a0394437bc44e410953426582d2c443a16c85299ab2238bb208256ba5966b",
+      "pair_count": 32,
+      "triangle_checks": 1267,
+      "pairs": [
+        {
+          "i": 34,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 36,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 36,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 37,
+          "j": 38,
+          "checked_graph": "G",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 38,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 39,
+          "j": 40,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 40,
+          "j": 41,
+          "checked_graph": "Gc",
+          "common_neighbors": 8,
+          "triangle_checks": 56
+        },
+        {
+          "i": 0,
+          "j": 10,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 1,
+          "j": 11,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 1,
+          "j": 17,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 1,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 1,
+          "j": 26,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 1,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 2,
+          "j": 7,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 3,
+          "j": 4,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 3,
+          "j": 8,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 3,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 4,
+          "j": 5,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 4,
+          "j": 23,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 6,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 6,
+          "j": 24,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 6,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 7,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 8,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 8,
+          "j": 27,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 8,
+          "j": 34,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 9,
+          "j": 19,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 11,
+          "j": 12,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 11,
+          "j": 21,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 11,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 12,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 12,
+          "j": 28,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        }
+      ]
+    },
+    {
+      "module": "PairChunkV2_026",
+      "source": "MathCase/Ramsey/R55/PairChunkV2_026.lean",
+      "source_sha256": "c6bd98021837b9010724b3aedc0a6496441b6edb4147f978ee1bb0b003117559",
+      "pair_count": 29,
+      "triangle_checks": 1015,
+      "pairs": [
+        {
+          "i": 12,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 13,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 13,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 13,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 14,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 14,
+          "j": 38,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 15,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 16,
+          "j": 33,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 17,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 18,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 19,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 19,
+          "j": 35,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 19,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 20,
+          "j": 25,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 20,
+          "j": 30,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 21,
+          "j": 22,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 21,
+          "j": 26,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 22,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 22,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 24,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 26,
+          "j": 31,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 28,
+          "j": 29,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 30,
+          "j": 31,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 30,
+          "j": 40,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 31,
+          "j": 32,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 31,
+          "j": 36,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 31,
+          "j": 41,
+          "checked_graph": "G",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 34,
+          "j": 37,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        },
+        {
+          "i": 38,
+          "j": 39,
+          "checked_graph": "Gc",
+          "common_neighbors": 7,
+          "triangle_checks": 35
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schema": "mathcase-trufflehog-history-exception-v1",
+  "approved_at": "2026-11-20 06:40 America/New_York",
+  "approval_scope": "Two specific unverified historical URI detector findings in one historical test commit only. Current source is fixed. No history rewrite and no scanner weakening.",
+  "scanner": {
+    "name": "TruffleHog",
+    "version": "3.99.9",
+    "full_history_command": "trufflehog git --branch=codex/public-evidence-nov20-20261120 --no-verification --no-update --fail-on-scan-errors --fail --json file://."
+  },
+  "prior_full_history_scan": {
+    "exit_code": 183,
+    "finding_count": 2,
+    "verified_count": 0,
+    "scan_errors": 0,
+    "jsonl_sha256": "99aed7c18ef9e665dcde101f0bf07fbdc4891ee12202bc2c3faf9ad1bc6e0a0a"
+  },
+  "source_fix": {
+    "commit": "0acdee0b59cd51a6e52e3fb80ad11a7e267f2f99",
+    "files": [
+      {
+        "path": "internal/application/solver_session_test.go",
+        "sha256": "240fd9fdce2d404ac40420058da804341bb37a43f0683f19a97b165639da258f"
+      },
+      {
+        "path": "internal/formalizer/nebius_test.go",
+        "sha256": "3cc3bd56baa0aef106e5326dbc8866634e868553c92ff6e45c8bebf3a0822fd3"
+      }
+    ],
+    "verification": {
+      "network": "disabled",
+      "go_tests": [
+        {
+          "command": "$env:GOPROXY='off'; $env:GOSUMDB='off'; go test ./internal/application -run '^TestValidateExternalEndpointRequiresCanonicalPublicHTTPSEndpoint$' -count=1",
+          "exit_code": 0
+        },
+        {
+          "command": "$env:GOPROXY='off'; $env:GOSUMDB='off'; go test ./internal/formalizer -run '^TestNebiusGeneratorConfigurationFailsClosed$' -count=1",
+          "exit_code": 0
+        }
+      ],
+      "gofmt_diff_empty": true,
+      "git_diff_check_exit_code": 0
+    }
+  },
+  "exceptions": [
+    {
+      "detector_name": "URI",
+      "detector_type": 17,
+      "verified": false,
+      "git_commit": "61a318b2a84b37a802c5fcb2121ff7cd3ce9ebca",
+      "file": "internal/application/solver_session_test.go",
+      "line": 602,
+      "raw_value_sha256": "d7f67dd733205411c6e25c727184ee94511f58e6e5a1403130f9d74eb299c53f",
+      "historical_file_sha256": "6802e6ac9159e371ee58db35c86e61c71f275725ad9e436adefd616e753f66e9",
+      "git_blob_sha1": "982cad456b941e0e8a264c7053c3891e80c39fc3",
+      "reason": "Negative-test fixture exercises rejection of URL userinfo using a reserved example domain; verified benign, no credential or live endpoint. Replaced in source using net/url; exact focused test passed offline."
+    },
+    {
+      "detector_name": "URI",
+      "detector_type": 17,
+      "verified": false,
+      "git_commit": "61a318b2a84b37a802c5fcb2121ff7cd3ce9ebca",
+      "file": "internal/formalizer/nebius_test.go",
+      "line": 242,
+      "raw_value_sha256": "1231625e7e70c4e56347672932d37a1c35eff89051483b37cbd09f7b9c58337e",
+      "historical_file_sha256": "c90738135d4630af6fab3d69a8a3242648d139193f92757c15f1e98ce0bdb60f",
+      "git_blob_sha1": "479e5e9bc5a4e595269ff012c74482088a6b7f6c",
+      "reason": "Negative-test fixture exercises rejection of URL userinfo using a reserved example domain; verified benign, no credential or live endpoint. Replaced in source using net/url; exact focused test passed offline."
+    }
+  ],
+  "policy": {
+    "history_rewritten": false,
+    "scanner_weakened": false,
+    "monitor": "Keep the same full-history scanner command and fail-closed exact matcher. Any new finding, changed finding, missing finding, verification-state change, parse error, or scan error blocks publication."
+  }
+}

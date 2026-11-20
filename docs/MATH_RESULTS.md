@@ -28,6 +28,12 @@ The first phase has an outer Docker watchdog exit code 124 even though its run-s
 
 This is not yet a clean-room replay by a stranger. The recorded image is not anonymously pullable, and the full image build context is incomplete. The Lake fallback in the package is prepared but has not been run.
 
+## A checked known Ramsey lower bound
+
+There exists a simple graph on 42 vertices with no clique of size five and no independent set of size five. Lean checked the exact proposition `∃ G : SimpleGraph (Fin 42), G.CliqueFree 5 ∧ (Gᶜ).CliqueFree 5`, which witnesses the known lower bound `R(5,5) ≥ 43`. The proof used 27 checked chunks plus a final composition; its reported axioms are `[propext, Classical.choice, Quot.sound]`. The exact sources and receipts are in the [public R(5,5) bundle](../reproduction/ramsey-r55-lean-v1/README.md). The statement received M0 YES. The result is not new, does not determine `R(5,5)`, was run with a warm local cache, and has not been independently reviewed or rebuilt from a fresh checkout. M4 remains unpromoted.
+
+The [shared affine-structure review](collatz-shared-affine-structure-2026-11-20.md) explains the Collatz result's common coefficient inequality and why it does not reduce its 2,652 trajectory equalities.
+
 ## Other public bounded results
 
 - **Collatz M13:** the Lean source covers 7,825 of 8,192 residue classes with a first descent within 1 to 21 ordinary steps. This does not close a whole modulus class or prove convergence.

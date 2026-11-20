@@ -1,0 +1,14 @@
+{
+  "schema": "mathcase-ramsey-proof-chunk-receipt-v1",
+  "module": "PairChunkV2_014",
+  "status": "PASS",
+  "exit_code": 0,
+  "elapsed_seconds": 35.478,
+  "source_sha256": "c08114efccf10f926a7cee0e6d3b4daa8936200cff970eb549702c1857c41b81",
+  "metadata_sha256": "f518538defc3fc53ed82a895ca9ad19b36ef60c79f8b8c1819e62fef28674b89",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "resource_monitor_sha256": "bbd36f5f7e04acfbe71a2f5dd1cfb13d8e803ed5ae46032ddd835b378a4998c9",
+  "olean_sha256": "cb4cff560177917e6296d5677f2c64f25caa128b427415a7f6c3831f0a4f58ef",
+  "failure_summary": null
+}
