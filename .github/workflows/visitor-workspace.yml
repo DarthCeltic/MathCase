@@ -1,0 +1,34 @@
+name: Visitor proof workspace
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - ".github/workflows/visitor-workspace.yml"
+      - ".devcontainer/**"
+      - "lean-toolchain"
+      - "proofs/r0b/lean-toolchain"
+      - "scripts/*check_visitor_case.py"
+      - "visitor-examples/**"
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Build the Codespaces image
+        run: docker build -t mathcase-visitor .devcontainer
+      - name: Install the pinned compiler and run visitor checks
+        run: |
+          docker run --rm -v "$GITHUB_WORKSPACE:/workspace:ro" -w /workspace mathcase-visitor bash -ec '
+            test "$(cat lean-toolchain)" = "$(cat proofs/r0b/lean-toolchain)"
+            elan toolchain install "$(cat lean-toolchain)"
+            python3 -B scripts/check_visitor_case.py visitor-examples/MyCase.lean --receipt /tmp/MyCase.json
+            python3 -B -m unittest discover -s scripts -p test_check_visitor_case.py -v
+          '

@@ -1,0 +1,11 @@
+{
+  "name": "MathCase proof workspace",
+  "build": { "dockerfile": "Dockerfile", "context": "." },
+  "remoteUser": "vscode",
+  "postCreateCommand": "elan toolchain install \"$(cat lean-toolchain)\" && lean --version",
+  "waitFor": "postCreateCommand",
+  "customizations": {
+    "vscode": { "extensions": ["leanprover.lean4"] },
+    "codespaces": { "openFiles": ["visitor-examples/MyCase.lean"] }
+  }
+}

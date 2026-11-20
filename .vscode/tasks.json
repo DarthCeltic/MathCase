@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "MathCase: check the current Lean file",
+      "type": "process",
+      "command": "python3",
+      "windows": { "command": "python" },
+      "args": ["${workspaceFolder}/scripts/check_visitor_case.py", "${file}", "--receipt", "${file}.receipt.json"],
+      "options": { "cwd": "${workspaceFolder}" },
+      "presentation": { "reveal": "always" },
+      "group": { "kind": "build", "isDefault": true },
+      "problemMatcher": []
+    }
+  ]
+}
