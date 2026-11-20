@@ -2,7 +2,7 @@
 
 **Question an AI proof. Check it in Lean. Build on what holds.**
 
-[Open MathCase and start a case](https://darthceltic.github.io/visitor/) · [Explore saved proofs](https://darthceltic.github.io/) · [Open in GitHub Codespaces](https://codespaces.new/DarthCeltic/MathCase?quickstart=1) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip)
+[Open MathCase and start a case](https://darthceltic.github.io/visitor/) · [Explore saved proofs](https://darthceltic.github.io/#case-desk) · [Open in GitHub Codespaces](https://codespaces.new/DarthCeltic/MathCase?quickstart=1) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip)
 
 ## Work on your own proof
 
@@ -16,7 +16,7 @@ python3 scripts/check_visitor_case.py visitor-examples/MyCase.lean --receipt MyC
 
 Download the receipt and import it into the case to compare the checked bytes with the current draft. A compiler receipt records diagnostics, version and source digest. The saved Case Desk examples also include separate historical evidence such as axiom audits. To keep your proof and receipt in Git, [fork MathCase](https://github.com/DarthCeltic/MathCase/fork), open a Codespace on your fork, and commit the files there. To try the Go CLI in the Codespace, run `go run ./cmd/mathcase solve-provider -h` for its provider setup and authorization options. Stop the Codespace from GitHub when you finish.
 
-MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [no-key saved-case demo](https://darthceltic.github.io/), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2`, inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem, then follow the checked parent lemma into a √2 infinite-descent child. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
+MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [public saved-case walkthrough](https://darthceltic.github.io/#case-desk), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2` and inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem. The local Case Desk also shows how the saved √2 infinite-descent case uses that checked parent lemma. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
 
 This repository includes the actual Case Desk frontend and Python backend used to read the saved proof story, plus the forkable Go CLI/provider core, a bounded BYOK Tavily command, a read-only MCP connector, and selected Lean examples. The Case Desk opens without an API key or paid call. Its public profile exposes three saved cases; new provider work is a separate explicit CLI action.
 
@@ -39,7 +39,7 @@ Try this short path:
 
 These are saved executions. The public Case Desk rejects writes and new model/search requests. Independent meaning and exposition review remain pending. Reading position, ink and board style are browser preferences; proof records remain unchanged. See [the Case Desk guide](docs/public-case-desk.md) for evidence checks and fork development.
 
-The [hosted saved Case Desk](https://darthceltic.github.io/) uses this same frontend with immutable saved records. It opens directly on the counterexample and keeps a **Simple reader** fallback. To export it for your own static host, follow [the static Case Desk guide](docs/static-case-desk.md). The source checkout also retains the lightweight reader at its root: run `python -m http.server 8000` and open `http://127.0.0.1:8000/`.
+The [public homepage](https://darthceltic.github.io/) offers both **Make a case** and **Open a saved case**. To open the counterexample directly, use the [saved case reader](https://darthceltic.github.io/reader.html?scope=public#case/hero-composite-counterexample-r1). To export it for your own static host, follow [the static Case Desk guide](docs/static-case-desk.md). The source checkout also retains the lightweight reader at its root: run `python -m http.server 8000` and open `http://127.0.0.1:8000/`.
 
 ## Public math results and reproduction
 
