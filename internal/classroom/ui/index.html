@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <title>Private classroom · MathCase</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <main>
+    <h1>MathCase private classroom</h1>
+    <p class="lede">A self-hosted teacher and learner workspace. Assignments and submissions stay in this server's local data file. No model or external service runs from this screen.</p>
+    <p id="status" role="status">Checking this classroom…</p>
+    <section id="auth-panel" hidden>
+      <h2>Sign in</h2>
+      <form id="login-form">
+        <label>Username <input name="username" autocomplete="username" required></label>
+        <label>Password <input name="password" type="password" autocomplete="current-password" required></label>
+        <button type="submit">Sign in</button>
+      </form>
+      <details id="bootstrap-details">
+        <summary>First-time teacher setup</summary>
+        <p>Use the one-time bootstrap token from the private token file created when the server started. Setup is available only until the first teacher is created.</p>
+        <form id="bootstrap-form">
+          <label>Setup token <input name="token" type="password" autocomplete="off" required></label>
+          <label>Teacher username <input name="username" autocomplete="username" required></label>
+          <label>Password (12 or more characters) <input name="password" type="password" autocomplete="new-password" minlength="12" required></label>
+          <button type="submit">Create teacher account</button>
+        </form>
+      </details>
+    </section>
+    <section id="account-panel" hidden>
+      <div class="account-head"><p id="account-label"></p><button id="logout-button" type="button">Sign out</button></div>
+      <section id="teacher-panel" hidden>
+        <h2>Teacher tools</h2>
+        <h3>Create a learner account</h3>
+        <form id="learner-form">
+          <label>Learner username <input name="username" autocomplete="off" required></label>
+          <label>Temporary password (12 or more characters) <input name="password" type="password" autocomplete="new-password" minlength="12" required></label>
+          <button type="submit">Create learner</button>
+        </form>
+        <div id="learners"></div>
+        <h3>Create assignment</h3>
+        <form id="assignment-form">
+          <label>Learner account ID <input name="learner_id" required></label>
+          <label>Title <input name="title" required></label>
+          <label>Plain-language statement <textarea name="plain_statement" required></textarea></label>
+          <label>Exact Lean target <textarea name="lean_target" required></textarea></label>
+          <label>Prompt for learner <textarea name="prompt"></textarea></label>
+          <button type="submit">Assign problem</button>
+        </form>
+        <h3>Assignments</h3><div id="teacher-assignments"></div>
+        <h3>Submissions to review</h3><div id="teacher-submissions"></div>
+      </section>
+      <section id="learner-panel" hidden>
+        <h2>Your assignments</h2><div id="learner-assignments"></div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

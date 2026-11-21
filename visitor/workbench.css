@@ -13,7 +13,7 @@
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--page); color: var(--ink); font-family: var(--sans); }
-button, input, textarea { font: inherit; }
+button, input, textarea, select { font: inherit; }
 button, summary { cursor: pointer; }
 button { color: inherit; }
 a { color: var(--accent); text-underline-offset: .2em; }
@@ -36,7 +36,10 @@ h1, h2, h3, p { margin: 0; }
 .brand { display: inline-flex; align-items: center; gap: 9px; color: inherit; font: 700 27px var(--serif); text-decoration: none; }
 .brand > span > span { color: #e6b878; }
 .mast-label { border-left: 1px solid #536b71; padding-left: 18px; color: #d2dfdd; font-size: .95rem; }
-.desk-link { margin-left: auto; color: #f4e9d1; font-size: .94rem; text-decoration: none; }
+.tool-nav { margin-left: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.tool-nav a { color: #f4e9d1; font-size: .9rem; text-decoration: none; }
+.tool-nav a:hover { text-decoration: underline; }
+.desk-link { color: #f4e9d1; font-size: .94rem; text-decoration: none; }
 .desk-link:hover { text-decoration: underline; }
 .desk {
   max-width: 1392px;
@@ -84,6 +87,10 @@ h1, h2, h3, p { margin: 0; }
   letter-spacing: -.035em;
 }
 .statement { resize: vertical; display: block; min-height: 2.8em; margin-top: 3px; padding: 4px 2px; font: 1.16rem/1.5 var(--serif); }
+.formal-target { margin-bottom: 5px; font: .91rem/1.5 var(--mono); min-height: 4.5em; }
+.target-help { margin: 0 0 5px; color: var(--muted); font-size: .82rem; line-height: 1.45; }
+.target-binding { color: var(--muted); font-size: .8rem; line-height: 1.45; overflow-wrap: anywhere; }
+.target-binding code { font: .77rem/1.4 var(--mono); }
 .title-input:hover, .statement:hover { border-color: var(--line); }
 .title-input:focus, .statement:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
 .source { background: var(--night); color: #e7eee7; }
@@ -153,6 +160,9 @@ dd { font: .84rem/1.55 var(--mono); overflow-wrap: anywhere; margin: 2px 0 9px; 
 @media (max-width: 590px) {
   .mast-inner { flex-wrap: wrap; gap: 10px; min-height: 58px; padding-inline: 14px; }
   .mast-label { display: none; }
+  .tool-nav { order: 3; flex: 0 0 100%; width: 100%; justify-content: flex-start; gap: 6px 12px; margin: 0; }
+  .tool-nav a { flex: 0 0 auto; font-size: .8rem; }
+  .desk-link { margin-left: auto; font-size: .86rem; }
   .brand { font-size: 23px; }
   .brand img { width: 32px; height: 32px; }
   .desk { padding: 16px 10px; }

@@ -1,0 +1,16 @@
+:root { color-scheme: light; font: 16px/1.5 system-ui, sans-serif; color: #17232c; background: #f4f7f8; }
+body { margin: 0; }
+main { max-width: 860px; margin: 0 auto; padding: 24px 18px 56px; }
+h1, h2, h3 { line-height: 1.2; }
+.lede { max-width: 70ch; color: #41525f; }
+section { margin: 20px 0; padding: 18px; border: 1px solid #d0d9df; border-radius: 12px; background: white; }
+form { display: grid; gap: 12px; max-width: 700px; }
+label { display: grid; gap: 5px; font-weight: 600; }
+input, textarea, button { box-sizing: border-box; width: 100%; border: 1px solid #9baab4; border-radius: 7px; padding: 10px; font: inherit; }
+textarea { min-height: 90px; }
+button { width: auto; justify-self: start; padding: 9px 16px; cursor: pointer; background: #0b5c82; color: white; border: 0; }
+button:hover { background: #084a68; }
+pre { white-space: pre-wrap; overflow-wrap: anywhere; background: #f1f5f7; border-radius: 8px; padding: 12px; }
+.card { margin: 12px 0; padding: 14px; border: 1px solid #d0d9df; border-radius: 9px; }
+.account-head { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+@media (max-width: 520px) { main { padding: 14px 12px 40px; } section { padding: 14px; } .account-head { align-items: flex-start; flex-direction: column; } }

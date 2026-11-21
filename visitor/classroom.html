@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Classroom file handoff · MathCase</title>
+  <link rel="icon" href="../assets/mathcase-branding-kit/favicon.ico">
+  <link rel="stylesheet" href="workbench.css"><link rel="stylesheet" href="tools.css">
+  <script defer src="classroom.js"></script>
+</head>
+<body>
+  <header class="mast"><div class="mast-inner">
+    <a href="../" class="brand"><img src="../assets/mathcase-branding-kit/mathcase-icon-128.png" width="38" height="38" alt=""><span>Math<span>Case</span></span></a>
+    <nav class="tool-nav" aria-label="MathCase tools"><a href="index.html">Workbench</a><a href="lesson.html">Guided work</a><a href="model-workflow.html">Model runs</a><a href="lab.html">Lab report</a><a href="study-lab.html">Frozen study</a><a href="classroom.html" aria-current="page">Classroom</a></nav>
+  </div></header>
+  <main class="tool-page">
+    <h1>Teach with MathCase, locally or by file.</h1>
+    <p class="tool-lede">Use the file handoff below for a no-server classroom, or run the optional self-hosted service for separate teacher and learner accounts with assignments saved on your own machine.</p>
+    <div class="tool-note"><strong>Self-hosted option:</strong> the Go prototype listens on your computer only by default. It stores accounts, assignments, and submissions in a local data directory. It does not send work to MathCase, check Lean proofs, or create evidence receipts. Read the <a href="https://github.com/DarthCeltic/MathCase/blob/main/docs/private-classroom-service.md">setup and security limits</a> before using it. Do not expose it to the public internet.</div>
+    <h2>File handoff · no server required</h2>
+    <p class="tool-lede">Create an assignment from a case, hand it to a learner, then review the returned proof and leave feedback. Assignment, submission, and review are separate downloadable files and stay on the devices where the user downloads them.</p>
+    <section class="tool-grid">
+      <article class="tool-card">
+        <h2>Teacher · make an assignment</h2>
+        <p>Import a full case packet from the workbench. The exported assignment carries the exact target and hash, plus the prompt. It omits the teacher's proof source and receipt.</p>
+        <div class="upload-row"><label for="teacher-case">Case packet</label><input id="teacher-case" type="file" accept=".json,application/json"></div>
+        <label for="assignment-prompt">Learner prompt</label>
+        <textarea id="assignment-prompt" class="statement" rows="5">Review the plain statement against the exact Lean proposition. Then write a proof attempt and explain your main step.</textarea>
+        <p id="teacher-case-status" role="status">No case loaded.</p>
+        <button class="tool-action" id="make-assignment" type="button" disabled>Download assignment JSON</button>
+      </article>
+      <article class="tool-card">
+        <h2>Learner · submit work</h2>
+        <p>Import the assignment file. Your work stays in this tab until you download the submission.</p>
+        <div class="upload-row"><label for="assignment-file">Assignment JSON</label><input id="assignment-file" type="file" accept=".json,application/json"></div>
+        <p id="assignment-status" role="status">No assignment loaded.</p>
+        <div id="learner-assignment" class="assignment-brief" aria-live="polite"></div>
+        <label for="learner-notes">Reasoning or notes</label><textarea id="learner-notes" class="statement" rows="4" placeholder="Describe your reasoning. Do not include sensitive personal information."></textarea>
+        <label for="learner-source">Lean proof source</label><textarea id="learner-source" class="lean-editor" rows="9" spellcheck="false" placeholder="Write a proof attempt. Imported or typed source is never executed here."></textarea>
+        <button class="tool-action" id="make-submission" type="button" disabled>Download submission JSON</button>
+      </article>
+      <article class="tool-card">
+        <h2>Teacher · review a submission</h2>
+        <p>Load the original assignment and the learner's returned submission. The page checks both the assignment ID and exact-target hash before enabling review export.</p>
+        <div class="upload-row"><label for="review-assignment">Original assignment</label><input id="review-assignment" type="file" accept=".json,application/json"></div>
+        <div class="upload-row"><label for="submission-file">Submission JSON</label><input id="submission-file" type="file" accept=".json,application/json"></div>
+        <p id="review-status" role="status">Load the assignment and submission.</p>
+        <div id="review-content"></div>
+        <label for="review-decision">Review outcome</label>
+        <select id="review-decision"><option value="needs_revision">Needs revision</option><option value="reviewed">Reviewed</option></select>
+        <label for="review-notes">Teacher feedback</label><textarea id="review-notes" class="statement" rows="5" placeholder="Write feedback. This stays in this browser until exported."></textarea>
+        <button class="tool-action" id="make-review" type="button" disabled>Download review JSON</button>
+      </article>
+    </section>
+    <p class="tool-footer">Files are local to your device. The review packet binds feedback to the imported submission's SHA-256, but does not authenticate either participant or constitute a signature.</p>
+  </main>
+</body>
+</html>

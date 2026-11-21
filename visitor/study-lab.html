@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Frozen study · MathCase</title>
+  <link rel="icon" href="../assets/mathcase-branding-kit/favicon.ico">
+  <link rel="stylesheet" href="workbench.css"><link rel="stylesheet" href="tools.css">
+  <script defer src="study-lab.js"></script>
+</head>
+<body>
+  <header class="mast"><div class="mast-inner">
+    <a href="../" class="brand"><img src="../assets/mathcase-branding-kit/mathcase-icon-128.png" width="38" height="38" alt=""><span>Math<span>Case</span></span></a>
+    <nav class="tool-nav" aria-label="MathCase tools"><a href="index.html">Workbench</a><a href="lesson.html">Guided work</a><a href="model-workflow.html">Model runs</a><a href="lab.html">Lab report</a><a href="study-lab.html" aria-current="page">Frozen study</a><a href="classroom.html">Classroom</a></nav>
+  </div></header>
+  <main class="tool-page">
+    <h1>Freeze the comparison before scoring it.</h1>
+    <p class="tool-lede">Import a frozen study and its run envelopes. MathCase binds scored runs to the exact manifest bytes, then keeps duplicates, conflicts, stale records, and missing case-arm outcomes visible locally in this browser.</p>
+    <div class="tool-note"><strong>No experiment runs here.</strong> This page makes no model, provider, search, or Lean calls. It reports supplied files; it does not authenticate them, verify Docker receipts, or establish that one arm is better.</div>
+    <section class="tool-card">
+      <h2>1. Load the frozen study</h2>
+      <div class="upload-row"><label for="study-file">Study manifest JSON</label><input id="study-file" type="file" accept=".json,application/json"></div>
+      <p id="study-status" role="status">No study manifest selected.</p>
+      <div id="study-info"></div>
+      <button class="tool-action" type="button" id="download-binding" disabled>Download manifest binding</button>
+      <button class="tool-action" type="button" id="download-template">Download a synthetic manifest template</button>
+      <p class="tool-note">Use the downloaded manifest SHA-256 in every new run envelope. The binding file makes the digest easy to carry forward; it is not a signature and cannot prove when the manifest was frozen. The template uses two elementary identities and is labeled synthetic, not an evaluation result.</p>
+    </section>
+    <section class="tool-card">
+      <h2>2. Import run envelopes</h2>
+      <div class="upload-row"><label for="run-files">One envelope per case and arm</label><input id="run-files" type="file" accept=".json,application/json" multiple disabled></div>
+      <p id="run-status" role="status">Load a valid study manifest first.</p>
+      <div id="summary"></div>
+      <div id="slots"></div>
+      <div class="upload-row"><button class="tool-action" type="button" id="download-report" disabled>Download bounded report</button><button class="tool-action" type="button" id="clear-study">Clear</button></div>
+    </section>
+    <section class="tool-card">
+      <h2>Scoring rule</h2>
+      <p>A planned slot is one frozen case in one arm. A slot counts as a reported pass only when exactly one non-conflicting v2 envelope binds the exact frozen manifest SHA-256, study, case, arm, problem, exact statement hash, and a run summary saying solved=true with an attempt reporting PASS plus a proof hash. Older or stale envelopes remain descriptive and never count toward matched scoring. Missing, malformed, duplicate, or conflicting inputs remain visible and do not inflate the denominator.</p>
+      <p>This is an accounting rule over user-supplied records. The report labels results as reported fields; a proof hash alone is not a Lean kernel receipt or an authenticated run.</p>
+    </section>
+    <p class="tool-footer"><a href="lab.html">Return to descriptive run report</a>. Preserve every original manifest and run envelope beside the exported report.</p>
+  </main>
+</body>
+</html>

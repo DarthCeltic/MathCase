@@ -26,20 +26,22 @@ import (
 const providerSolveOutputSchema = "mathcase-provider-solve-v1"
 
 type providerSolveOutput struct {
-	SchemaVersion string                 `json:"schema_version"`
-	EvidenceClass string                 `json:"evidence_class"`
-	RecordedAtUTC time.Time              `json:"recorded_at_utc"`
-	RunID         string                 `json:"run_id"`
-	ProblemID     string                 `json:"problem_id"`
-	ProviderID    string                 `json:"provider_id"`
-	ProtocolID    string                 `json:"protocol_id"`
-	ModelID       string                 `json:"model_id"`
-	Endpoint      string                 `json:"endpoint"`
-	Solved        bool                   `json:"solved"`
-	Proof         string                 `json:"proof,omitempty"`
-	Attempts      []domain.SolverAttempt `json:"attempts"`
-	CostJournal   string                 `json:"cost_journal"`
-	Error         string                 `json:"error,omitempty"`
+	SchemaVersion   string                 `json:"schema_version"`
+	EvidenceClass   string                 `json:"evidence_class"`
+	RecordedAtUTC   time.Time              `json:"recorded_at_utc"`
+	RunID           string                 `json:"run_id"`
+	ProblemID       string                 `json:"problem_id"`
+	LeanStatement   string                 `json:"lean_statement"`
+	StatementSHA256 string                 `json:"lean_statement_sha256"`
+	ProviderID      string                 `json:"provider_id"`
+	ProtocolID      string                 `json:"protocol_id"`
+	ModelID         string                 `json:"model_id"`
+	Endpoint        string                 `json:"endpoint"`
+	Solved          bool                   `json:"solved"`
+	Proof           string                 `json:"proof,omitempty"`
+	Attempts        []domain.SolverAttempt `json:"attempts"`
+	CostJournal     string                 `json:"cost_journal"`
+	Error           string                 `json:"error,omitempty"`
 }
 
 // runSolveProvider exposes the existing clearance-bound application session
@@ -242,6 +244,7 @@ func runSolveProvider(args []string, stdout, stderr io.Writer) int {
 		SchemaVersion: providerSolveOutputSchema,
 		EvidenceClass: "PROVIDER_CALLS_WITH_PINNED_LEAN_VERIFICATION",
 		RecordedAtUTC: time.Now().UTC(), RunID: *problemRunID, ProblemID: problem.ID,
+		LeanStatement: problem.LeanStatement, StatementSHA256: providerSolveSHA256([]byte(problem.LeanStatement)),
 		ProviderID: *providerID, ProtocolID: *protocolID, ModelID: *modelID, Endpoint: endpoint,
 		Solved: result.Solved, Proof: result.Proof, Attempts: result.Attempts, CostJournal: *costJournalPath,
 	}

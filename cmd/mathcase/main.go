@@ -74,7 +74,7 @@ func main() {
 
 func run(args []string, stdout, stderr io.Writer) int {
 	if len(args) == 0 {
-		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|solve-local-validate|solve-provider|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
+		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|solve-local-validate|solve-provider|classroom-serve|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
 		return 2
 	}
 	switch args[0] {
@@ -108,6 +108,8 @@ func run(args []string, stdout, stderr io.Writer) int {
 		return runSolveLocalValidate(args[1:], stdout, stderr)
 	case "solve-provider":
 		return runSolveProvider(args[1:], stdout, stderr)
+	case "classroom-serve":
+		return runClassroomServe(args[1:], stdout, stderr)
 	case "attackability-forecast-validate":
 		return runAttackabilityForecastValidate(args[1:], stdout, stderr)
 	case "pose-local":
@@ -139,7 +141,7 @@ func run(args []string, stdout, stderr io.Writer) int {
 	case "dossier-verify":
 		return runDossierVerify(args[1:], stdout, stderr)
 	default:
-		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|solve-local-validate|solve-provider|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
+		fmt.Fprintln(stderr, "usage: mathcase <catalog-build|catalog-validate|case-init|telescope-rank|taste-validate|taste-split|taste-labels-build|taste-labels-validate|retrieve-local|retrieve-evaluate|score-proof|proof-dependencies|solve-local|solve-local-validate|solve-provider|classroom-serve|attackability-forecast-validate|pose-local|falsify-local|gate-assess|m4-replay|formalizer-run|dossier-revise-m4|dossier-attach-queue-m4|dossier-attach-m6|dossier-read-m6|dossier-revise-formalizer-candidate|formalizer-assess-v3-candidate|dossier-store|dossier-audit|dossier-verify> [options]")
 		return 2
 	}
 }

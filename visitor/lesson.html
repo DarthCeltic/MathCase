@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Guided mathematics · MathCase</title>
+  <link rel="icon" href="../assets/mathcase-branding-kit/favicon.ico">
+  <link rel="stylesheet" href="workbench.css">
+  <link rel="stylesheet" href="tools.css">
+</head>
+<body>
+  <header class="mast"><div class="mast-inner">
+    <a href="../" class="brand"><img src="../assets/mathcase-branding-kit/mathcase-icon-128.png" width="38" height="38" alt=""><span>Math<span>Case</span></span></a>
+    <nav class="tool-nav" aria-label="MathCase tools">
+      <a href="index.html">Workbench</a><a href="lesson.html" aria-current="page">Guided work</a><a href="model-workflow.html">Model runs</a><a href="lab.html">Lab report</a><a href="study-lab.html">Frozen study</a><a href="classroom.html">Classroom</a>
+    </nav>
+  </div></header>
+  <main class="tool-page">
+    <h1>Start with a claim. See what Lean checks.</h1>
+    <p class="tool-lede">Move from a concrete counterexample to a theorem, then try a related statement on your own. Each case keeps the plain statement, exact Lean declaration, proof source, and checker receipt as separate parts.</p>
+    <div class="tool-note"><strong>How to read each card:</strong> plain statement first, exact declaration next, then the boundary of the result. A checked theorem establishes only the statement written in Lean.</div>
+    <section class="tool-grid" aria-label="Guided cases">
+      <article class="tool-card">
+        <h2>1 · A counterexample repairs a claim</h2>
+        <p><strong>Plain:</strong> A composite divisor can divide a square without dividing its root.</p>
+        <code class="formula">(4 : Nat) ∣ 2 ^ 2 ∧ ¬ (4 : Nat) ∣ 2</code>
+        <p><strong>Shows:</strong> the implication “d divides n², therefore d divides n” needs a prime hypothesis.</p>
+        <p><strong>Does not show:</strong> the corresponding statement for primes; that is the next case.</p>
+        <a class="tool-action" href="index.html?starter=counterexample">Open this case</a>
+      </article>
+      <article class="tool-card">
+        <h2>2 · Repair with primality</h2>
+        <p><strong>Plain:</strong> If a prime divides a natural number’s square, it divides that number.</p>
+        <code class="formula">∀ (p n : Nat), p.Prime → p ∣ n ^ 2 → p ∣ n</code>
+        <p><strong>Shows:</strong> a known elementary theorem, checked by Lean from the Mathlib prime-divisor lemma.</p>
+        <p><strong>Does not show:</strong> a new result or a general AI theorem-solving capability.</p>
+        <a class="tool-action" href="index.html?starter=prime">Open this case</a>
+      </article>
+      <article class="tool-card">
+        <h2>3 · Transfer challenge</h2>
+        <p><strong>Plain:</strong> If a prime divides a product squared, prove it divides at least one factor.</p>
+        <code class="formula">∀ (p a b : Nat), p.Prime → p ∣ (a * b) ^ 2 → p ∣ a ∨ p ∣ b</code>
+        <p><strong>Uses:</strong> the prime-divides-square result, followed by the prime-divides-product result.</p>
+        <p><strong>Does not show:</strong> this is a fresh teaching exercise in the workbench, not an evaluated transfer experiment. The teacher explanation is separate.</p>
+        <a class="tool-action" href="index.html?starter=transfer">Try the transfer case</a>
+      </article>
+    </section>
+    <section>
+      <h2>Take it to a class</h2>
+      <p>Download the teacher guide separately so learners see only the prompt. Assignments and submissions can move as files; the browser does not create shared class accounts or upload student work.</p>
+      <a class="tool-action" href="teacher-guide.md" download>Download teacher guide</a>
+      <a class="tool-action" href="classroom.html">Open the file handoff</a>
+    </section>
+    <p class="tool-footer">The workbench stores cases in this browser unless you export them. A visitor-supplied receipt is evidence to inspect, not a MathCase signature. No page here claims a famous open problem is solved.</p>
+  </main>
+</body>
+</html>

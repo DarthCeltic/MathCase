@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Lab report builder · MathCase</title>
+  <link rel="icon" href="../assets/mathcase-branding-kit/favicon.ico">
+  <link rel="stylesheet" href="workbench.css"><link rel="stylesheet" href="tools.css">
+  <script defer src="lab.js"></script>
+</head>
+<body>
+  <header class="mast"><div class="mast-inner">
+    <a href="../" class="brand"><img src="../assets/mathcase-branding-kit/mathcase-icon-128.png" width="38" height="38" alt=""><span>Math<span>Case</span></span></a>
+    <nav class="tool-nav" aria-label="MathCase tools"><a href="index.html">Workbench</a><a href="lesson.html">Guided work</a><a href="model-workflow.html">Model runs</a><a href="lab.html" aria-current="page">Lab report</a><a href="study-lab.html">Frozen study</a><a href="classroom.html">Classroom</a></nav>
+  </div></header>
+  <main class="tool-page">
+    <h1>Turn run records into an honest report.</h1>
+    <p class="tool-lede">Select local MathCase provider-run summaries to get the full denominator, outcomes, retained failures, elapsed time, and recorded cost. Everything is processed in this browser and downloaded as a report; nothing is uploaded.</p>
+    <div class="tool-note"><strong>This is descriptive, not a leaderboard.</strong> Historical unmatched runs cannot establish an efficacy comparison. A comparison needs targets fixed in advance, equal budgets, identical Lean snapshots, and both arms’ failures retained.</div>
+    <section class="tool-card">
+      <h2>Freeze and score a bounded comparison</h2>
+      <p>Use the separate <a href="study-lab.html">frozen-study workflow</a> to bind a fixed target set, equal run limits, both arms, duplicate handling, and missing outcomes before comparing results.</p>
+    </section>
+    <section class="tool-card">
+      <h2>Import run summaries</h2>
+      <div class="upload-row"><label for="run-files">Provider run JSON files (select all)</label><input id="run-files" type="file" accept=".json,application/json" multiple></div>
+      <p id="status" role="status">No files selected.</p>
+      <div id="summary"></div>
+      <div id="runs"></div>
+      <p class="tool-note">On-screen failure previews are shortened for readability. The downloaded report keeps each imported original failure summary in a fenced text block; preserve the original run files beside it.</p>
+      <div class="upload-row"><button class="tool-action" type="button" id="download-report" disabled>Download report</button><button class="tool-action" type="button" id="clear-report">Clear</button></div>
+    </section>
+    <section class="tool-card">
+      <h2>What a matched comparison must freeze</h2>
+      <ol>
+        <li>Target set and exact statement hashes before the run.</li>
+        <li>Library snapshot and baseline definition.</li>
+        <li>Same prover snapshot, per-target time, call count, output-token cap, and spend ceiling.</li>
+        <li>All attempted items in each denominator, including timeouts, rejected proofs, and blocked runs.</li>
+        <li>Outcome rule: Lean acceptance of a candidate bound to the exact target and source hash.</li>
+      </ol>
+      <p>No such matched experiment is run by this page. The export states the sample it actually received.</p>
+      <p><a href="lab-example-report.md" download>Download the example report</a> (synthetic fixture; not MathCase results).</p>
+    </section>
+    <p class="tool-footer">Provider outputs are user-supplied records. This builder does not verify Docker receipts, provider-call receipts, signatures, or evidence completeness; it reports the fields that were imported and highlights missing statement bindings.</p>
+  </main>
+</body>
+</html>

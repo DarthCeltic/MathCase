@@ -20,6 +20,13 @@
         <span>Math<span>Case</span></span>
       </a>
       <span class="mast-label">Visitor workbench</span>
+      <nav class="tool-nav" aria-label="MathCase tools">
+        <a href="lesson.html">Guided work</a>
+        <a href="model-workflow.html">Model runs</a>
+        <a href="lab.html">Lab report</a>
+        <a href="study-lab.html">Frozen study</a>
+        <a href="classroom.html">Classroom</a>
+      </nav>
       <a class="desk-link" href="https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1">Saved Case Desk <span aria-hidden="true">→</span></a>
     </div>
   </header>
@@ -43,15 +50,23 @@
         <input class="title-input" type="text" id="case-title" autocomplete="off" placeholder="Untitled case">
         <label for="statement">Case statement</label>
         <textarea class="statement" id="statement" rows="2" placeholder="State your claim, including any assumptions."></textarea>
+        <label for="formal-target">Exact Lean proposition this case must prove</label>
+        <textarea class="statement formal-target" id="formal-target" rows="3" spellcheck="false" placeholder="Paste the exact proposition from the MathCase problem packet. Keep it separate from the proof source."></textarea>
+        <p class="target-help">Lean checks the source you run. This exact proposition is the required target; the theorem declaration in your source must prove it.</p>
+        <p class="target-binding">Exact statement SHA-256 · <code id="target-hash">Not set</code></p>
       </div>
       <section class="source" aria-labelledby="source-heading">
         <div class="source-head">
           <h2 id="source-heading"><label for="lean">Lean source</label></h2>
           <div class="source-actions">
             <button class="download" id="copy-ai" type="button">Copy for my AI</button>
+            <button class="download" id="export-case" type="button">Export full case</button>
+            <button class="download" id="import-case" type="button">Import case</button>
             <button class="download" id="download" type="button">Download .lean <span aria-hidden="true">↓</span></button>
+            <input type="file" accept=".json,application/json" id="case-file" hidden>
           </div>
         </div>
+        <p id="case-export-status" role="status"></p>
         <textarea id="lean" class="lean-editor" rows="6" wrap="off" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="Write or import a Lean declaration and its proof."></textarea>
         <p id="copy-status" role="status"></p>
         <details id="ai-panel" hidden>
@@ -65,7 +80,7 @@
         <div class="check-row">
           <div>
             <h2 id="checking-heading">Check the proof</h2>
-            <p>Running sends this Lean source to live.lean-lang.org. Its editor shows the result.</p>
+            <p>This opens your Lean source in <a href="https://live.lean-lang.org/" target="_blank" rel="noreferrer">live.lean-lang.org</a> for a compilation check. It does not compare the theorem declaration with the target above or create a MathCase receipt.</p>
           </div>
           <div class="run-actions">
             <button id="run-lean" type="button" class="primary" aria-expanded="false" aria-controls="live-panel">Run in Lean</button>

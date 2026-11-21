@@ -23,6 +23,31 @@ func TestProviderLeanWorkspaceDefaultsToRunDirectory(t *testing.T) {
 	}
 }
 
+func TestProviderSolveOutputBindsTheExactLeanStatement(t *testing.T) {
+	t.Parallel()
+
+	statement := "theorem reviewed_target (n : Nat) : n + 0 = n"
+	output := providerSolveOutput{
+		SchemaVersion:   providerSolveOutputSchema,
+		LeanStatement:   statement,
+		StatementSHA256: providerSolveSHA256([]byte(statement)),
+	}
+	encoded, err := json.Marshal(output)
+	if err != nil {
+		t.Fatalf("json.Marshal(providerSolveOutput) error = %v, want nil", err)
+	}
+	var decoded map[string]any
+	if err := json.Unmarshal(encoded, &decoded); err != nil {
+		t.Fatalf("json.Unmarshal(providerSolveOutput) error = %v, want nil", err)
+	}
+	if got := decoded["lean_statement"]; got != statement {
+		t.Errorf("providerSolveOutput lean_statement = %v, want %q", got, statement)
+	}
+	if got, want := decoded["lean_statement_sha256"], providerSolveSHA256([]byte(statement)); got != want {
+		t.Errorf("providerSolveOutput lean_statement_sha256 = %v, want %q", got, want)
+	}
+}
+
 func TestSolveProviderRequiresExplicitDispatchBeforeReadingInputs(t *testing.T) {
 	var stdout, stderr bytes.Buffer
 	code := runSolveProvider([]string{"--problem", "does-not-exist.json"}, &stdout, &stderr)

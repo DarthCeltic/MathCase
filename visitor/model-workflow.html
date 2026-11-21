@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self'; style-src 'self'; script-src 'self'; connect-src 'none'; object-src 'none'; frame-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Model run review · MathCase</title>
+  <link rel="icon" href="../assets/mathcase-branding-kit/favicon.ico">
+  <link rel="stylesheet" href="workbench.css"><link rel="stylesheet" href="tools.css">
+  <script defer src="model-workflow.js"></script>
+</head>
+<body>
+  <header class="mast"><div class="mast-inner">
+    <a href="../" class="brand"><img src="../assets/mathcase-branding-kit/mathcase-icon-128.png" width="38" height="38" alt=""><span>Math<span>Case</span></span></a>
+    <nav class="tool-nav" aria-label="MathCase tools"><a href="index.html">Workbench</a><a href="lesson.html">Guided work</a><a href="model-workflow.html" aria-current="page">Model runs</a><a href="lab.html">Lab report</a><a href="study-lab.html">Frozen study</a><a href="classroom.html">Classroom</a></nav>
+  </div></header>
+  <main class="tool-page">
+    <h1>Your model. Your run. Lean decides.</h1>
+    <p class="tool-lede">MathCase Pages never calls a model. Run the existing CLI on a machine you control, then inspect the saved result here. The candidate, its failures, and the Lean outcome remain separate records.</p>
+    <div class="tool-note"><strong>Safety boundary:</strong> use only a target you own or have cleared, inspect the exact statement and cost limits, and keep credentials in your local environment. The pinned verifier is isolated by the CLI; do not run arbitrary model-authored programs directly on a credentialed workstation.</div>
+    <section class="tool-card">
+      <h2>1 · Bring in the exact case packet</h2>
+      <p>Export a full case from the workbench. It contains the plain statement, exact Lean proposition, draft, and any visitor-supplied receipt.</p>
+      <div class="upload-row"><label for="case-file">Case packet JSON</label><input id="case-file" type="file" accept=".json,application/json"></div>
+      <p id="case-status" role="status">No case loaded.</p>
+      <dl><dt>Exact Lean statement</dt><dd><pre id="case-target">—</pre></dd><dt>Exact statement SHA-256</dt><dd id="case-hash">—</dd></dl>
+    </section>
+    <section class="tool-card">
+      <h2>2 · Run locally only after your review</h2>
+      <p>The existing <code>mathcase solve-provider</code> command requires an explicit <code>--dispatch</code>, owner authorization, item clearance, fixed provider/model/pricing, a hard spend cap, and pinned Lean Docker verification. For local inference, the CLI allows an OpenAI-compatible HTTP endpoint only on loopback (localhost, 127.0.0.1, or ::1); the same authorization and environment-key configuration still applies. Use the exact problem packet; the browser cannot dispatch or approve it.</p>
+      <p>Command template for Bash-like shells. Replace every angle-bracket placeholder before running; the placeholders are not literal shell syntax. In PowerShell, put the arguments on one line instead of using the backslash line breaks shown here.</p>
+      <pre><code>mathcase solve-provider --dispatch \
+  --problem &lt;cleared-problem.json&gt; \
+  --owner-authorization &lt;owner-grant.json&gt; \
+  --input-clearance &lt;item-clearance.json&gt; \
+  --provider &lt;approved-provider&gt; --protocol &lt;protocol-id&gt; --model &lt;exact-model-id&gt; \
+  --base-url &lt;approved-endpoint&gt; --api-key-env &lt;ENVIRONMENT_VARIABLE_NAME&gt; \
+  --input-price-micros-per-million &lt;reviewed-rate&gt; \
+  --output-price-micros-per-million &lt;reviewed-rate&gt; \
+  --per-call-ceiling-micros &lt;cap&gt; --run-ceiling-micros &lt;cap&gt; \
+  --max-provider-calls 1 \
+  --run-id &lt;unique-run-id&gt; --output &lt;new-result.json&gt; \
+  --cost-journal &lt;local-cost-ledger.jsonl&gt; --provider-evidence-dir &lt;local-call-evidence&gt; \
+  --lean-snapshot-manifest &lt;pinned-snapshot.json&gt; \
+  --lean-sandbox-image sha256:&lt;approved-image-digest&gt; --lean-receipt-root &lt;local-receipts&gt;</code></pre>
+      <p class="warning">Do not paste API keys, owner grants, clearance files, local paths, or raw request/response files into a public page. A visitor controls provider dispatch and spend.</p>
+    </section>
+    <section class="tool-card">
+      <h2>3 · Inspect the saved run</h2>
+      <p>The imported JSON is untrusted input. This page displays selected fields as text only; it does not execute code or treat an outcome label as a signature.</p>
+      <div class="upload-row"><label for="run-file">Provider run summary JSON</label><input id="run-file" type="file" accept=".json,application/json"></div>
+      <p id="run-status" role="status">No run loaded.</p>
+      <div id="run-summary"></div>
+      <div id="attempts"></div>
+      <h3>Candidate and repair trail</h3>
+      <p>Upload the provider response JSON files from this same run. A response is displayed only when its file SHA-256 matches the recorded attempt. Request files and local path strings are not needed.</p>
+      <div class="upload-row"><label for="response-files">Provider response JSON</label><input id="response-files" type="file" accept=".json,application/json" multiple></div>
+      <p id="response-status" role="status">No provider response files loaded.</p>
+      <div id="responses"></div>
+      <button class="tool-action" id="export-review" type="button" disabled>Download review notes</button>
+    </section>
+    <p class="tool-footer">A model outcome is not a proof certificate. Only a pinned Lean receipt bound to the exact source and target can show that Lean accepted the candidate. This static viewer does not verify a local Docker run itself.</p>
+  </main>
+</body>
+</html>

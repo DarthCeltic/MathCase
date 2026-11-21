@@ -5,6 +5,7 @@ const elements = Object.fromEntries(
 );
 const prefix = "mathcase.visitor.v1.case.";
 const selectionKey = "mathcase.visitor.v1.selection";
+const maxCaseBytes = 4 * 1024 * 1024;
 const cases = new Map();
 const unsaved = new Set();
 const outcomes = {
@@ -13,20 +14,45 @@ const outcomes = {
   toolchain_error: "the toolchain encountered an error",
   timeout: "the check timed out"
 };
+const starters = {
+  counterexample: {
+    title: "A composite divisor counterexample",
+    statement: "A composite number can divide a square without dividing its root: 4 divides 2², but 4 does not divide 2.",
+    formalTarget: "(4 : Nat) ∣ 2 ^ 2 ∧ ¬ (4 : Nat) ∣ 2",
+    source: "import Mathlib\n\ntheorem composite_divisor_counterexample : (4 : Nat) ∣ 2 ^ 2 ∧ ¬ (4 : Nat) ∣ 2 := by\n  norm_num\n",
+    filename: "CompositeCounterexample.lean"
+  },
+  prime: {
+    title: "A prime divisor of a square",
+    statement: "If a prime divides the square of a natural number, it divides the number itself.",
+    formalTarget: "∀ (p n : Nat), p.Prime → p ∣ n ^ 2 → p ∣ n",
+    source: "import Mathlib.Data.Nat.Prime.Basic\n\ntheorem prime_dvd_square_implies_prime_dvd (p n : Nat) (hp : p.Prime) (h : p ∣ n ^ 2) : p ∣ n := by\n  exact hp.dvd_of_dvd_pow h\n",
+    filename: "PrimeDivisorOfSquare.lean"
+  },
+  transfer: {
+    title: "Transfer challenge: prime divides a product square",
+    statement: "Use the prime-divides-square result to show that if prime p divides (a*b)², then p divides a or p divides b.",
+    formalTarget: "∀ (p a b : Nat), p.Prime → p ∣ (a * b) ^ 2 → p ∣ a ∨ p ∣ b",
+    source: "import Mathlib.Data.Nat.Prime.Basic\n\ntheorem prime_dvd_factor_of_product_square (p a b : Nat) (hp : p.Prime) (h : p ∣ (a * b) ^ 2) : p ∣ a ∨ p ∣ b := by\n  -- First use primality on the square, then on the product.\n  ",
+    filename: "PrimeProductSquareTransfer.lean"
+  }
+};
 let activeId = "";
 let comparison = 0;
+let targetComparison = 0;
 
 function readCase(value) {
   if (!value) return null;
   const item = JSON.parse(value);
   if (typeof item?.id !== "string" || typeof item.title !== "string" ||
       typeof item.statement !== "string" || typeof item.source !== "string") return null;
+  item.formalTarget = typeof item.formalTarget === "string" ? item.formalTarget : "";
   return item;
 }
 
-function newCase(title = "", statement = "", source = "", filename = "") {
+function newCase(title = "", statement = "", source = "", filename = "", formalTarget = "") {
   const id = crypto.randomUUID?.() || Date.now() + "-" + Math.random().toString(36).slice(2);
-  return { id, title, statement, source, filename, receipt: null };
+  return { id, title, statement, formalTarget, source, filename, receipt: null };
 }
 
 function save(item) {
@@ -111,13 +137,30 @@ function openCase(id) {
   const item = active();
   elements["case-title"].value = item.title;
   elements.statement.value = item.statement;
+  elements["formal-target"].value = item.formalTarget || "";
   elements.lean.value = item.source;
   try { localStorage.setItem(selectionKey, id); } catch { /* The case still opens. */ }
   showSaveState();
   renderCases();
   updateActions();
   compareReceipt();
+  compareTarget();
   report();
+}
+
+async function compareTarget() {
+  const revision = ++targetComparison;
+  const target = active()?.formalTarget || "";
+  if (!target.trim()) {
+    elements["target-hash"].textContent = "Not set";
+    return;
+  }
+  try {
+    const digest = await sourceDigest(target);
+    if (revision === targetComparison) elements["target-hash"].textContent = digest;
+  } catch {
+    if (revision === targetComparison) elements["target-hash"].textContent = "Unavailable outside HTTPS or localhost";
+  }
 }
 
 function addCase(item) {
@@ -191,12 +234,22 @@ function restore() {
     }
     selection = localStorage.getItem(selectionKey);
   } catch { /* Save reports when the browser restricts storage. */ }
+  const starterID = new URLSearchParams(location.search).get("starter");
+  if (Object.hasOwn(starters, starterID)) {
+    const starter = starters[starterID];
+    const item = newCase(starter.title, starter.statement, starter.source, starter.filename, starter.formalTarget);
+    save(item);
+    history.replaceState(null, "", location.pathname);
+    openCase(item.id);
+    return;
+  }
   if (!cases.size) {
     const starter = newCase(
       "Doubling a natural number",
       "For every natural number n, the sum n + n is even. Find a natural number k such that n + n = 2k.",
       "theorem doubleEven (n : Nat) : ∃ k : Nat, n + n = 2 * k := by\n  exact ⟨n, (Nat.two_mul n).symm⟩\n",
-      "MyCase.lean"
+      "MyCase.lean",
+      "∀ n : Nat, ∃ k : Nat, n + n = 2 * k"
     );
     save(starter);
   }
@@ -220,6 +273,10 @@ elements.statement.addEventListener("input", () => {
   updateCase(activeId, { statement: elements.statement.value });
   renderCases();
   updateActions();
+});
+elements["formal-target"].addEventListener("input", () => {
+  updateCase(activeId, { formalTarget: elements["formal-target"].value });
+  compareTarget();
 });
 elements.lean.addEventListener("input", () => {
   closeEditor();
@@ -258,6 +315,68 @@ elements.download.addEventListener("click", () => {
   link.click();
   link.remove();
   setTimeout(() => URL.revokeObjectURL(url), 60000);
+  elements["case-export-status"].textContent = "Lean source download prepared.";
+});
+
+function downloadText(name, text, type) {
+  const url = URL.createObjectURL(new Blob([text], { type }));
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = name;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 60000);
+}
+
+elements["export-case"].addEventListener("click", () => {
+  const item = active();
+  const packet = {
+    schema_version: "mathcase-visitor-case-v1",
+    id: item.id,
+    title: item.title,
+    statement: item.statement,
+    formal_target: item.formalTarget || "",
+    source: item.source,
+    filename: filename(item),
+    receipt: item.receipt || null,
+    exported_at_utc: new Date().toISOString()
+  };
+  downloadText(filename(item).replace(/\.lean$/i, "") + ".mathcase.json", JSON.stringify(packet, null, 2) + "\n", "application/json;charset=utf-8");
+  elements["case-export-status"].textContent = "Full case export prepared, including the exact Lean proposition, proof draft, and any visitor-supplied receipt.";
+});
+
+elements["import-case"].addEventListener("click", () => elements["case-file"].click());
+elements["case-file"].addEventListener("change", async () => {
+  const file = elements["case-file"].files[0];
+  elements["case-file"].value = "";
+  if (!file) return;
+  if (file.size > maxCaseBytes) { report("Case import is limited to 4 MiB.", true); return; }
+  try {
+    const packet = JSON.parse(await file.text());
+    if (packet?.schema_version !== "mathcase-visitor-case-v1" ||
+        typeof packet.title !== "string" || typeof packet.statement !== "string" ||
+        typeof packet.formal_target !== "string" || typeof packet.source !== "string" ||
+        packet.title.length > 400 || packet.statement.length > 40000 ||
+        packet.formal_target.length > 40000 || packet.source.length > 2 * 1024 * 1024) {
+      throw new Error("unsupported-shape");
+    }
+    const item = newCase(packet.title, packet.statement, packet.source,
+      typeof packet.filename === "string" ? packet.filename : "ImportedCase.lean", packet.formal_target);
+    if (packet.receipt && typeof packet.receipt === "object" &&
+        typeof packet.receipt.digest === "string" && /^[0-9a-f]{64}$/.test(packet.receipt.digest) &&
+        typeof packet.receipt.status === "string" && Object.hasOwn(outcomes, packet.receipt.status)) {
+      item.receipt = {
+        status: packet.receipt.status,
+        digest: packet.receipt.digest,
+        diagnostics: typeof packet.receipt.diagnostics === "string" ? packet.receipt.diagnostics.slice(0, 8192) : ""
+      };
+    }
+    addCase(item);
+    report("Imported as a new local case. Nothing in the file was executed.");
+  } catch {
+    report("Could not import this file as a MathCase case packet.", true);
+  }
 });
 
 function editorUrl() {
@@ -303,10 +422,15 @@ async function copyPrompt(text) {
 
 elements["copy-ai"].addEventListener("click", async () => {
   const item = active();
+  if (!item.formalTarget.trim()) {
+    elements["copy-status"].textContent = "Add the exact Lean proposition first. MathCase needs a fixed target before it can ask for a proof of the intended claim.";
+    return;
+  }
   const parts = [
-    "Please propose a Lean 4 proof for the case below. Preserve the mathematical claim and hypotheses. Return a complete source file I can review and check. Avoid sorry, admit, and added axioms. If the claim is false, explain a counterexample instead.",
+    "Please propose a Lean 4 proof for the case below. Return a complete source file with a theorem declaration whose elaborated type is this exact proposition (allowing only binder notation or definitional equality, not a different claim). Preserve every hypothesis. Do not weaken, strengthen, or replace the target. Avoid sorry, admit, and added axioms. If you cannot prove this exact target, say so instead of changing it.",
     "Case title\n" + visibleName(item),
     "Case statement\n" + item.statement,
+    "Exact Lean proposition to prove\n" + item.formalTarget,
     "Current Lean source\n" + item.source
   ];
   if (item.receipt?.diagnostics) {
@@ -350,12 +474,13 @@ window.addEventListener("storage", (event) => {
   if (item.id === activeId && active().source !== item.source) closeEditor();
   cases.set(item.id, item);
   if (item.id === activeId) {
-    const fields = [[elements["case-title"], item.title], [elements.statement, item.statement], [elements.lean, item.source]];
+    const fields = [[elements["case-title"], item.title], [elements.statement, item.statement], [elements["formal-target"], item.formalTarget || ""], [elements.lean, item.source]];
     for (const [field, value] of fields) {
       if (field.value !== value.replace(/\r\n?/g, "\n")) field.value = value;
     }
     updateActions();
     compareReceipt();
+    compareTarget();
   }
   renderCases();
 });

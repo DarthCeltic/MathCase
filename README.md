@@ -50,6 +50,12 @@ The bounded statement is specific: for 2,652 listed progressions, after 32 Colla
 
 The [R(5,5) Lean reproduction bundle](reproduction/ramsey-r55-lean-v1/README.md) contains the exact 29 source files, 27 path-free chunk receipts, a final composition receipt, and pinned Lake metadata. The original result was compiled with a warm local cache; a fresh-checkout rebuild remains unverified. The public repository also carries a narrowly scoped [TruffleHog historical-fixture exception record](docs/security/trufflehog-history-exception-2026-11-20.md); its exact matcher keeps future findings fail-closed.
 
+## Self-host a classroom (local prototype)
+
+The browser-based [classroom file handoff](https://darthceltic.github.io/visitor/classroom.html) needs no server. If you want local accounts and assignments stored on your own machine, install Go and run `go run ./cmd/mathcase classroom-serve`. It binds to `127.0.0.1:55136` by default and prints the path to a one-time teacher setup token; open that file locally to create the first teacher account. The service stores password hashes, assignments, and submissions under your user configuration directory. Keep that directory private. For the full setup and security limits, see [the self-hosted classroom guide](docs/private-classroom-service.md).
+
+This is a local prototype. It does not send data to MathCase, call a model, run Lean, or create proof receipts. Do not expose it directly to the public internet. The file handoff remains the simplest option when separate accounts and shared local storage are not needed.
+
 ## Optional CLI and Lean setup
 
 Requirements: Go 1.27 or later, Lean 4.33.1 via `elan`/`lake`, and PowerShell 7 on Windows:
