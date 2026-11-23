@@ -1,0 +1,1 @@
+'MathCase.Collatz.WordBound.fourteen_odd_family_fails_at_step35' depends on axioms: [propext, Quot.sound]

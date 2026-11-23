@@ -1,0 +1,3 @@
+'MathCase.Collatz.WordBound.twelve_of_twenty' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.scaled_upper' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.twenty_twelve_descent' depends on axioms: [propext, Quot.sound]
