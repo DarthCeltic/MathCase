@@ -4,9 +4,9 @@ The website's [case index](https://darthceltic.github.io/cases.html) groups the 
 
 ## One-command local launcher
 
-From the repository root, run `python scripts/run_public_case.py list` to list the ten public case IDs. Then run one case, for example `python scripts/run_public_case.py collatz` or `python scripts/run_public_case.py ramsey66`. Each invocation creates a fresh output directory and stops at the first failed check. The default routes use local Python/Lean checks; `prime-sqrt2` needs a pinned Mathlib checkout or an explicit `--bootstrap` path, `riemann` fetches four hash-pinned public source files, and `visitor` requires a trusted `.lean` file. No inference model is called.
+From the repository root, run `python scripts/run_public_case.py list` to list the eleven public case IDs. Then run one case, for example `python scripts/run_public_case.py collatz` or `python scripts/run_public_case.py ramsey66`. Each invocation creates a fresh output directory and stops at the first failed check. The default routes use local Python/Lean checks; `prime-sqrt2` needs a pinned Mathlib checkout or an explicit `--bootstrap` path, `riemann` fetches four hash-pinned public source files, and `visitor` requires a trusted `.lean` file. No inference model is called.
 
-The available IDs are `counterexample`, `prime-sqrt2`, `collatz`, `collatz-table`, `model-pilot`, `ramsey55`, `ramsey66`, `egyptian`, `riemann`, and `visitor`. The lower-level commands below remain available for targeted reproduction.
+The available IDs are `counterexample`, `prime-sqrt2`, `collatz`, `collatz-at-most-twelve`, `collatz-table`, `model-pilot`, `ramsey55`, `ramsey66`, `egyptian`, `riemann`, and `visitor`. The lower-level commands below remain available for targeted reproduction.
 
 ## Six additional research tracks
 
@@ -20,6 +20,7 @@ For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second 
 - **Composite counterexample:** exact local calculation for `4 ∣ 2²` but `4 ∤ 2`. Open the [saved reader case](https://darthceltic.github.io/reader.html?scope=public#case/hero-composite-counterexample-r1).
 - **√2 child:** a local source replay is available in `reproduction/prime-sqrt2-source-replay-v1/`. It compiles the public parent then child from pinned source bytes. This is candidate-only source replay evidence; it does not promote dossier status.
 - **Collatz:** the 2,652-row affine proof route, the new 12-of-20 parity theorem and count, and an independent single-pair model comparison have separate commands and scopes under `reproduction/` and `research/`.
+- **Collatz at most 12 of 20:** `python scripts/run_public_case.py collatz-at-most-twelve` compiles the family-wide variable-step theorem, audits its axioms, and enumerates all 1,048,576 parity residues. It covers 86.841% of the modular residue classes at steps `20+h`, with `n >= 3`; it does not prove convergence.
 - **Ramsey R(6,6):** an independent Python checker exhaustively searches the 101-vertex Paley graph and complement for six-cliques. Run `python scripts/run_public_case.py ramsey66`; this is a finite certificate check, not a Lean proof or an exact value for R(6,6).
 - **Ramsey and Erdős–Straus:** use the [human work ledger](https://darthceltic.github.io/work.html#ramsey) for the known Ramsey witness and finite computations, and the [Erdős–Straus section](https://darthceltic.github.io/work.html#egyptian) for the bounded search and one identity family. Neither page claims to solve the corresponding open problem.
 

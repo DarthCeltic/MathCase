@@ -1,0 +1,101 @@
+{
+  "census": {
+    "elapsed_seconds": 6.609,
+    "endpoint_mismatch_count": 0,
+    "modulus": 1048576,
+    "non_descent_count_for_residue_at_least_3": 0,
+    "ordered_record_stream_sha256": "e3bd27f2e41e87ac736e38ab91e6bf62a5ef63ad7df26ceae810be9bf545e956",
+    "positive_base_residues_at_least_3_checked": 910593,
+    "qualifying_fraction": "910596/1048576",
+    "qualifying_percent": 86.84120178222656,
+    "qualifying_residue_count": 910596,
+    "status": "PASS"
+  },
+  "census_sha256": "da664490f25f51ca9546232cd96146e6190ede61d6e4377550e83a92df866149",
+  "external_spend_usd": 0,
+  "lean_stages": [
+    {
+      "axiom_lines": [
+        "'MathCase.Collatz.WordBound.twelve_of_twenty' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.scaled_upper' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.twenty_twelve_descent' depends on axioms: [propext, Quot.sound]"
+      ],
+      "exit_code": 0,
+      "module": "WordBound",
+      "output_sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830",
+      "source_sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d"
+    },
+    {
+      "axiom_lines": [
+        "'MathCase.Collatz.WordBound.lift_residue' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.residue_twelve_of_twenty' depends on axioms: [propext, Quot.sound]"
+      ],
+      "exit_code": 0,
+      "module": "WordResidue",
+      "output_sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d",
+      "source_sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c"
+    },
+    {
+      "axiom_lines": [
+        "'MathCase.Collatz.WordBound.at_most_twelve_descend' depends on axioms: [propext, Quot.sound]"
+      ],
+      "exit_code": 0,
+      "module": "AtMostTwelve",
+      "output_sha256": "78b216ef92a80c8563eb786129849095b59907254584064ce127f29c057d24be",
+      "source_sha256": "14c0d0ff95f90a316fb7ae671708deedc9e3ac36b0b1204c47b66c9dd9a67e40"
+    },
+    {
+      "axiom_lines": [
+        "'MathCase.Collatz.WordBound.residueCount_eq_wordCount' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'MathCase.Collatz.WordBound.count_twelve_of_twenty' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'MathCase.Collatz.WordBound.counted_progressions_descend' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "exit_code": 0,
+      "module": "CountWords",
+      "output_sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5",
+      "source_sha256": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60"
+    },
+    {
+      "axiom_lines": [
+        "'MathCase.Collatz.WordBound.residue_at_most_twelve_count' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "exit_code": 0,
+      "module": "AtMostCount",
+      "output_sha256": "6e65530c05aaabe87fb90768b511fa53630c135875464e125db750692d340e0b",
+      "source_sha256": "f082b6e52898486774475b27684a1e00376c26fbe421427b00c18747bd08c790"
+    },
+    {
+      "axiom_lines": [
+        "'MathCase.Collatz.WordBound.counted_at_most_twelve_families' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ],
+      "exit_code": 0,
+      "module": "AtMostFamilies",
+      "output_sha256": "1dc9be69aa22089306239d5c2cdb74a2e0a5bfccd931db1d77d8dc73e011596d",
+      "source_sha256": "2b76b91e3438713e05e362cdca705f1c6837d98ff333473168e88bed3b611fc0"
+    },
+    {
+      "axiom_lines": [
+        "'MathCase.Collatz.WordBound.thirteen_odd_family_not_uniformly_descending' depends on axioms: [propext, Quot.sound]"
+      ],
+      "exit_code": 0,
+      "module": "Sharpness",
+      "output_sha256": "d2850c966d8f566840e19afa5d9ffe9715a4a2a3ac1930f0315400398e48b4f2",
+      "source_sha256": "91e4b1f7cf7eb61c12336eeb821ba0f4e056de845e23cdd8ad44cbe9dfb54dd8"
+    }
+  ],
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "network_used": false,
+  "schema": "mathcase-collatz-at-most-twelve-replay-r1",
+  "scope": "At most twelve odd inputs in 20 accelerated steps; variable ordinary endpoint time 20+h; n>=3",
+  "source_sha256": {
+    "AtMostCount.lean": "f082b6e52898486774475b27684a1e00376c26fbe421427b00c18747bd08c790",
+    "AtMostFamilies.lean": "2b76b91e3438713e05e362cdca705f1c6837d98ff333473168e88bed3b611fc0",
+    "AtMostTwelve.lean": "14c0d0ff95f90a316fb7ae671708deedc9e3ac36b0b1204c47b66c9dd9a67e40",
+    "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "Sharpness.lean": "91e4b1f7cf7eb61c12336eeb821ba0f4e056de845e23cdd8ad44cbe9dfb54dd8",
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "residue-census.py": "80864a62adb35b261f81b617f31a8ed85571f7a36de603bc6f29dca4832b76a3"
+  },
+  "status": "PASS"
+}
