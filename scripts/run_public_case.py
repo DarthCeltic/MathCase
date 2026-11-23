@@ -1,5 +1,6 @@
 """List and run the check behind each public MathCase example."""
 import argparse
+import json
 import os
 from pathlib import Path
 import subprocess
@@ -9,7 +10,7 @@ import tempfile
 
 CATALOG = {
     "counterexample": "Check 4 divides 2 squared and 4 does not divide 2. Exact arithmetic.",
-    "prime-sqrt2": "Recompile the prime theorem and its square-root-of-two child. Requires pinned Mathlib.",
+    "prime-sqrt2": "Recompile the prime theorem and its square-root-of-two child. Lean stages default to a 600-second limit.",
     "collatz": "Prove the 12-of-20 descent rule and its exact residue count in Lean 4.33.1.",
     "collatz-table": "Check the saved 2,652 Collatz families and the separate sample in Lean 4.33.1.",
     "model-pilot": "Replay two original responses on the same held-out tasks in Lean 4.33.1.",
@@ -43,8 +44,31 @@ def commands(case, args, output):
     }
     if case == "prime-sqrt2":
         option, value = ("--mathlib", args.mathlib) if args.mathlib else ("--bootstrap", args.bootstrap)
-        return [("reproduction/prime-sqrt2-source-replay-v1/verify_prime_sqrt2.py", option, value, "--output", output / "parent-child.json")]
+        command = ["reproduction/prime-sqrt2-source-replay-v1/verify_prime_sqrt2.py",
+                   option, value, "--output", output / "parent-child.json"]
+        if args.stage_timeout is not None:
+            command += ["--stage-timeout", str(args.stage_timeout)]
+        return [tuple(command)]
     return routes[case]
+
+
+def classify_step(case, return_code, output):
+    report = {}
+    if case == "prime-sqrt2":
+        receipt = output / "parent-child.json"
+        if receipt.is_file():
+            try:
+                report = json.loads(receipt.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                report = {}
+        if report.get("status") == "TIMEOUT":
+            return "timed out", 124
+        if (return_code == 0 and report.get("status") == "PASS"
+                and report.get("dropped_primality_control") == "REJECTED"):
+            return "completed; negative control rejected as expected", 0
+    if return_code == 0:
+        return "completed", 0
+    return "failed", return_code
 
 
 def main(argv=None, root=ROOT):
@@ -56,6 +80,8 @@ def main(argv=None, root=ROOT):
     deps = parser.add_mutually_exclusive_group()
     deps.add_argument("--mathlib", type=Path, help="prime-sqrt2: an installed pinned Mathlib checkout")
     deps.add_argument("--bootstrap", type=Path, help="prime-sqrt2: fetch the pinned public dependencies here")
+    parser.add_argument("--stage-timeout", type=int,
+                        help="prime-sqrt2: wall-clock limit for each Lean stage (default: 600 seconds)")
     parser.add_argument("--source", type=Path, help="visitor: your own trusted .lean source file")
     args = parser.parse_args(argv)
     if args.case == "list" or args.list:
@@ -66,6 +92,10 @@ def main(argv=None, root=ROOT):
         parser.error("prime-sqrt2 needs --mathlib PATH or --bootstrap PATH")
     if args.case != "prime-sqrt2" and (args.mathlib or args.bootstrap):
         parser.error("--mathlib and --bootstrap apply to prime-sqrt2")
+    if args.stage_timeout is not None and args.stage_timeout < 1:
+        parser.error("--stage-timeout must be positive")
+    if args.case != "prime-sqrt2" and args.stage_timeout is not None:
+        parser.error("--stage-timeout applies only to prime-sqrt2")
     if args.case == "visitor" and not (args.source and args.source.is_file() and args.source.suffix.lower() == ".lean"):
         parser.error("visitor requires --source PATH to a trusted .lean file")
     if args.source and args.case != "visitor":
@@ -85,11 +115,20 @@ def main(argv=None, root=ROOT):
         with log.open("wb") as handle:
             result = subprocess.run([sys.executable, "-B", root / script, *flags], cwd=root,
                                     stdout=handle, stderr=subprocess.STDOUT, env=env)
-        state = "completed" if result.returncode == 0 else "did not pass"
-        print(f"{Path(script).name} {state} (exit {result.returncode}). Output: {log}", flush=True)
-        if result.returncode:
+        state, exit_code = classify_step(args.case, result.returncode, output)
+        receipt_path = output / "parent-child.json"
+        if args.case == "prime-sqrt2" and receipt_path.is_file():
+            try:
+                report = json.loads(receipt_path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError):
+                report = {}
+            if report.get("status") == "TIMEOUT":
+                state += (f" during {report.get('stage')} after {report.get('elapsed_s')}s"
+                          f" (limit {report.get('limit_seconds')}s)")
+        print(f"{Path(script).name} {state} (exit {exit_code}). Output: {log}", flush=True)
+        if exit_code:
             print(log.read_text(encoding="utf-8", errors="replace")[-1600:].encode("ascii","backslashreplace").decode("ascii"), file=sys.stderr)
-            return result.returncode
+            return exit_code
     return 0
 
 

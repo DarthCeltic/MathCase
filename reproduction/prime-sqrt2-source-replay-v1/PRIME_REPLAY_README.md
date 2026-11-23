@@ -18,7 +18,9 @@ python PATH/verify_prime_sqrt2.py --mathlib ../mathcase-mathlib-4.33.1 --output 
 
 The runner verifies the Mathlib revision `0df444a360eaa60ab8c11dca51a86af692955474`, locked dependency revisions, and the historical SHA-256 of both source files. It puts only the parent and child sources in a temporary directory. It builds a new parent module, then a new child module; the source checkout's historical compiled examples never enter the search path.
 
+Each Lean compile/audit stage is limited to 600 seconds by default. Add `--stage-timeout SECONDS` to override that bounded per-stage limit. A timeout writes a JSON failure receipt with `TIMEOUT`, the stage, configured limit, and elapsed time, and exits 124. The negative control is expected to be `REJECTED` inside an overall `PASS`; this is distinct from timeout.
+
 A separate file constrains the imported declarations to the expected formal types and prints their axiom dependencies. A negative control drops the primality requirement and must be rejected. The JSON records source and output hashes, compiler version, dependency revisions, timings and observed axioms. Output object hashes can differ from historical files across platforms. This is a public mathematical-source replay of a known theorem. The October campaign's qualification receipts and any human review of the explanation are separate.
 
 
-This command does not record a new M0 review, grant proof-use rights, create a standard M4 receipt, or promote a dossier gate. It is a source replay of a known theorem.
+This command does not record a new M0 review, grant proof-use rights, create a standard M4 receipt, or promote a dossier gate. It is a source replay of a known theorem. The short warm timings in the saved replay receipt are environment-specific, not portable performance guarantees.

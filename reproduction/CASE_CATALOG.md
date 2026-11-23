@@ -8,6 +8,8 @@ From the repository root, run `python scripts/run_public_case.py list` to list t
 
 The available IDs are `counterexample`, `prime-sqrt2`, `collatz`, `collatz-table`, `model-pilot`, `ramsey55`, `ramsey66`, `egyptian`, `riemann`, and `visitor`. The lower-level commands below remain available for targeted reproduction.
 
+For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second default for each Lean compile, exact-target audit, and negative-control stage. For example: `python scripts/run_public_case.py prime-sqrt2 --mathlib PATH_TO_PINNED_MATHLIB --stage-timeout 900`. A timeout exits 124 and writes a JSON receipt with `TIMEOUT`, the stage name, configured limit, and elapsed time. The deliberate dropped-primality control is recorded as `REJECTED` inside an overall `PASS`; that expected rejection is not a timeout or a failed replay.
+
 ## Included actions
 
 - **Prime divisibility:** saved model attempt, Lean rejection of the first candidate, and checked correction. Open the [saved reader case](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1).
