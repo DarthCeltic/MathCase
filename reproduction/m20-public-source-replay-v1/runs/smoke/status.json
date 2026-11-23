@@ -1,0 +1,27 @@
+{
+  "schema": "mathcase-original-m20-public-replay-v1",
+  "started_utc": "2026-11-23T13:18:34.251345+00:00",
+  "status": "SMOKE_PASS",
+  "mode": "smoke",
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean_jobs": 1,
+  "timeout_seconds_per_stage": 600,
+  "completed_compiles": 1,
+  "completed_audits": 0,
+  "completed_queries": 0,
+  "original_olean_matches": 0,
+  "nov18_phase2_olean_matches": 1,
+  "checked_input_files": 386,
+  "toolchain": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "historical_mathlib_inventory": {
+    "historical_list_sha256": "55431285c8f0d3e71a18991f70c010b411c12f1e138f2e7739adad9cc94c9e69",
+    "byte_identical": 346,
+    "different": 0,
+    "absent": []
+  },
+  "stage": "Descent127",
+  "stage_started_utc": "2026-11-23T13:18:37.290906+00:00",
+  "last_completed_stage": "Descent127",
+  "finished_utc": "2026-11-23T13:19:05.221014+00:00"
+}
