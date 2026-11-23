@@ -1,0 +1,69 @@
+{
+  "case": "5-3",
+  "colors": 5,
+  "progression_length": 3,
+  "witness_length": 170,
+  "interval_one_based": [
+    1,
+    170
+  ],
+  "implied_lower_bound_inclusive": 171,
+  "coloring_sha256_digits_followed_by_LF": "dd15440b996fa5e8cb107c640f2e652845339ef933333cc14db48c2d3c920a27",
+  "color_counts": [
+    [
+      0,
+      34
+    ],
+    [
+      1,
+      34
+    ],
+    [
+      2,
+      34
+    ],
+    [
+      3,
+      34
+    ],
+    [
+      4,
+      34
+    ]
+  ],
+  "baseline_checks": {
+    "start_step_enumeration": {
+      "progressions_examined": 7140,
+      "monochromatic": 0,
+      "first": null
+    },
+    "bit_intersections": {
+      "progressions_examined": 7140,
+      "monochromatic": 0,
+      "first": null
+    }
+  },
+  "negative_control": {
+    "change": "First 3 positions set to color zero",
+    "checks": {
+      "start_step_enumeration": {
+        "progressions_examined": 7140,
+        "monochromatic": 6,
+        "first": {
+          "a": 1,
+          "d": 1,
+          "color": 0
+        }
+      },
+      "bit_intersections": {
+        "progressions_examined": 7140,
+        "monochromatic": 6,
+        "first": {
+          "a": 1,
+          "d": 1,
+          "color": 0
+        }
+      }
+    }
+  }
+}

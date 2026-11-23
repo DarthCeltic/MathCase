@@ -1,0 +1,18 @@
+{
+  "checked_utc": "2026-11-23T14:43:14.054131+00:00",
+  "python": "3.14.7",
+  "evidence_class": "local finite exhaustive checks and bounded Hamming-radius extension search",
+  "files": {
+    "check-2-7.json": "076fa3f48367c29cf0cac24665175cb47d8ab96d8feac33f0bfcfce99653c000",
+    "check-5-3.json": "ca07a749f5a751774821323537d809f22c49ed1962108ae1276c2cd7a0c68707",
+    "coloring-2-7.txt": "442f563bc6e1ae75d9666a3417e1246e413c83393777dd22ac0bc730d0f4759a",
+    "coloring-5-3.txt": "dd15440b996fa5e8cb107c640f2e652845339ef933333cc14db48c2d3c920a27",
+    "README.md": "8fc3fcf165a9f9cc692734ccf7a313baa7c10ba7eca3bd199a1992b9a1734c16",
+    "repair-2-7.json": "55d7927e33c376d9baf85e2623e5f5be01d9d718e78ad68077518ac50f21aff3",
+    "repair-5-3.json": "4aed53d61c8192971706cfc1fb25375e2d435d31c02e2f6f4bfb81ce0580d9b0",
+    "test_vdw.py": "822325ba7bd5943b3c2590cde26cc10162beb987bfded169c2ef947317a873e8",
+    "upstream-2-7.json": "6041bb9e9219c52fa52ddb4cb2ffb3d1f39f3e8678dbe28e278b5050e41f2458",
+    "upstream-5-3.json": "1aae0375e6c7eadd968ae29a549408e40e55516059ebcf20cf0c3dc35ddcee0f",
+    "vdw.py": "f90985e24a122c5d9afb0c988221e7dab501e606b5851096dd5261da6fa514f8"
+  }
+}

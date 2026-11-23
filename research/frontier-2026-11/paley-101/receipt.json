@@ -1,0 +1,56 @@
+{
+  "schema": "mathcase-paley101-recolor-radius-v1",
+  "utc": "2026-11-23T14:49:01.787480+00:00",
+  "source_sha256": "03162107ed9204da56e84834467562b8f0b305e690b24579561534c52f3803f0",
+  "runtime_seconds": 0.68,
+  "exit": 0,
+  "result": {
+    "normalized_changed_edge": [
+      0,
+      1
+    ],
+    "common_opposite_color_neighbors": [
+      3,
+      8,
+      11,
+      12,
+      27,
+      28,
+      29,
+      35,
+      39,
+      40,
+      41,
+      42,
+      51,
+      60,
+      61,
+      62,
+      63,
+      67,
+      73,
+      74,
+      75,
+      90,
+      91,
+      94,
+      99
+    ],
+    "opposite_color_four_cliques": 96,
+    "size_seven_sets_tested": 480700,
+    "size_seven_hitting_sets": 0,
+    "local_minimum_hitting_set": 8,
+    "example_eight_vertex_hitting_set": [
+      8,
+      35,
+      39,
+      61,
+      62,
+      67,
+      75,
+      91
+    ],
+    "minimum_required_old_color_changes_each_direction": 8,
+    "lower_bound_old_color_changes_for_distinct_good_coloring": 16
+  }
+}

@@ -61,3 +61,6 @@ reproduction/collatz-twelve-of-twenty-v1/*.json -text -eol whitespace=cr-at-eol
 reproduction/collatz-twelve-of-twenty-v1/runs/*.json -text -eol whitespace=cr-at-eol
 reproduction/prime-sqrt2-source-replay-v1/*.json -text -eol whitespace=cr-at-eol
 reproduction/riemann-source-audit-v1/source-check.json -text -eol whitespace=cr-at-eol
+
+# Keep the released LRAT proof bytes identical to their receipt-bound hashes.
+research/frontier-2026-11/ramsey-four-color/proofs/*.lrat -text -eol -diff

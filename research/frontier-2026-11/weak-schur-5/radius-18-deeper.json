@@ -1,0 +1,61 @@
+{
+  "schema": "mathcase-weak-schur-radius-v1",
+  "radius": 18,
+  "node_cap_per_appended_color": 400000,
+  "witnesses": {
+    "rowley": [
+      {
+        "color": 1,
+        "nodes": 777,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 2,
+        "nodes": 637,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 3,
+        "nodes": 108393,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 4,
+        "nodes": 52545,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 5,
+        "nodes": 137,
+        "status": "UNSAT_WITHIN_RADIUS"
+      }
+    ],
+    "vicenzi": [
+      {
+        "color": 1,
+        "nodes": 1801,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 2,
+        "nodes": 733,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 3,
+        "nodes": 59593,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 4,
+        "nodes": 28145,
+        "status": "UNSAT_WITHIN_RADIUS"
+      },
+      {
+        "color": 5,
+        "nodes": 85,
+        "status": "UNSAT_WITHIN_RADIUS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "target": "five colors on [1,171], avoiding every monochromatic three-term progression",
+  "colors": 5,
+  "positions": 171,
+  "variables": 855,
+  "progressions": 7225,
+  "clauses": 38006,
+  "dimacs_sha256": "80973eadb990bcecb9e272356ead2bedd48d36208236ff19475164f99838fb7d",
+  "control_W_2_3": {
+    "8": {
+      "colorings": 256,
+      "avoiding": 6
+    },
+    "9": {
+      "colorings": 512,
+      "avoiding": 0
+    }
+  },
+  "large_target": "encoding generated"
+}

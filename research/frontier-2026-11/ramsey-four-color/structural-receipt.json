@@ -1,0 +1,705 @@
+{
+  "schema": "mathcase-fixed-ramsey-structural-search-v1",
+  "utc": "2026-11-23T14:52:27.269626+00:00",
+  "checks": {
+    "chung_recolor.py": {
+      "duration_seconds": 1.793,
+      "exit": 0,
+      "source_sha256": "506b4920ecf9c69e398ac2424e8c3c45d643fbafcd6743bd2235f0fab62ddd4d",
+      "result": {
+        "original_single_change_triangle_counts": {
+          "0": 96,
+          "1": 240,
+          "2": 480,
+          "3": 960,
+          "4": 720,
+          "5": 288,
+          "6": 840,
+          "15": 48,
+          "16": 3
+        },
+        "verified_automorphisms_used": 32,
+        "recolorings": {
+          "1": {
+            "all_distinct_old_edge_recolorings": 3675,
+            "locally_possible_recolorings_examined": 336,
+            "good_K50_colorings": 96,
+            "symmetry_classes_checked": 3,
+            "full_extension_search_nodes": 344,
+            "largest_tree": 120,
+            "K51_extensions": 0
+          },
+          "2": {
+            "all_distinct_old_edge_recolorings": 6747300,
+            "locally_possible_recolorings_examined": 56280,
+            "good_K50_colorings": 3792,
+            "symmetry_classes_checked": 156,
+            "full_extension_search_nodes": 17494,
+            "largest_tree": 120,
+            "K51_extensions": 0
+          }
+        }
+      }
+    },
+    "paley_structural.py": {
+      "duration_seconds": 0.484,
+      "exit": 0,
+      "source_sha256": "ae295a8aa222e1bffdf7e9a8c43c285cad3ba366931b677be0a73b366b14abfb",
+      "result": {
+        "covered_labeled_choices": {
+          "cut_1": 101,
+          "cut_2": 5050,
+          "cut_3": 166650,
+          "distances_1": 50,
+          "distances_2": 625
+        },
+        "representatives": 33,
+        "surviving_bases": 0,
+        "results": [
+          {
+            "changed_old_edges": 100,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              2,
+              3,
+              7,
+              8,
+              27
+            ],
+            "kind": "cut",
+            "representative": [
+              0
+            ],
+            "labeled_choices": 101
+          },
+          {
+            "changed_old_edges": 198,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1
+            ],
+            "labeled_choices": 5050
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              2
+            ],
+            "labeled_choices": 5050
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              8,
+              12,
+              28,
+              29
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              3
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              4
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              5,
+              8,
+              12
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              5
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              6,
+              8,
+              73
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              6
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              7
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              12,
+              28,
+              61
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              8
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              9
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              10
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              27,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              12
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              13
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              14
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              15
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              16
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              22
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              33
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 294,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              1,
+              3,
+              8,
+              12,
+              28
+            ],
+            "kind": "cut",
+            "representative": [
+              0,
+              1,
+              40
+            ],
+            "labeled_choices": 10100
+          },
+          {
+            "changed_old_edges": 101,
+            "status": "MONOCHROMATIC_K6",
+            "color": "blue",
+            "vertices": [
+              0,
+              1,
+              2,
+              3,
+              29,
+              41
+            ],
+            "kind": "distances",
+            "representative": [
+              1
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              2,
+              4,
+              6,
+              23,
+              25
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              2
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              3,
+              6,
+              9,
+              22,
+              25
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              3
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              13,
+              20,
+              37,
+              56
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              7
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              8,
+              13,
+              17,
+              21
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              8
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              13,
+              23,
+              56
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              10
+            ],
+            "labeled_choices": 25
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              20,
+              25,
+              56
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              11
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              13,
+              25,
+              56
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              12
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              56,
+              80,
+              86
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              15
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              13,
+              18,
+              22
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              18
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              13,
+              26,
+              30
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              26
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              23,
+              56,
+              88
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              32
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              13,
+              17,
+              37,
+              56
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              39
+            ],
+            "labeled_choices": 50
+          },
+          {
+            "changed_old_edges": 202,
+            "status": "MONOCHROMATIC_K6",
+            "color": "red",
+            "vertices": [
+              0,
+              4,
+              9,
+              13,
+              49,
+              58
+            ],
+            "kind": "distances",
+            "representative": [
+              1,
+              40
+            ],
+            "labeled_choices": 50
+          }
+        ]
+      }
+    }
+  }
+}

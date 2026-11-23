@@ -1,0 +1,19 @@
+{
+  "verified": true,
+  "translations": 617,
+  "length": 3704,
+  "geometry": "x = 0 through 3703; on [1,3704] add one to every coordinate",
+  "translations_by_independent_free_cell_count": {
+    "14": 2,
+    "20": 615
+  },
+  "sum_of_labeled_assignments": 644907008,
+  "verified_forcing_progressions": 4319,
+  "verified_final_progressions": 617,
+  "distinct_fixed_cells_in_each_contradiction": [
+    39,
+    42
+  ],
+  "scope": "Only the stated translated-quadratic family is excluded.",
+  "certificate_sha256": "dde929f05d4933110e18c558267703db5312304f21fbaaa31109988019c3b535"
+}

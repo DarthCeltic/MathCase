@@ -1,0 +1,192 @@
+{
+  "schema": "mathcase-fixed-ramsey-extension-replay-v1",
+  "utc": "2026-11-23T14:46:18.761497+00:00",
+  "python": "3.14.7",
+  "source_and_proof_sha256": {
+    "crosscheck_encodings.py": "60f6c08ae79c7aca5c7b5f6c0b479b70a52c146de8e6da31e1a42ed914f30d0c",
+    "four_color.py": "6d4b303824638920d218facd803a34b3fee8a7c13fa56088ad7627144e922b36",
+    "paley_extension.py": "8357bef1060f0d378c29387f412f40a2baea05f36db00f0b37732e5e57730638",
+    "proofs/K51-fixed.lrat": "dc79385b11b520f1e6a0159aa98e077386b56b94665c2488af1746e1a55fdf19",
+    "proofs/unrestricted.lrat": "905401aa90805c8f9447465f4be9d4a029cc6189f5e04722d03beed51abdd3f0",
+    "README.md": "a6deea6c2c663ff1c8e5bad73a5831c2bef099a35b38879ea73e275127d6eea0",
+    "sat_crosscheck.py": "a082dcef118061e1354c18513e100b74ec3992a3622d98f29a1f55a422df2b02",
+    "verify_refutation.py": "522fca3210f3e65f7540217c645bd2ba4f61043da5f7cba4c54ef929d7bc5b43"
+  },
+  "runs": {
+    "four_color": {
+      "seconds": 0.337,
+      "exit": 0,
+      "output": {
+        "n": 50,
+        "edge_counts": [
+          288,
+          288,
+          288,
+          361
+        ],
+        "triangles_checked": 19600,
+        "monochromatic_triangles": 0,
+        "matrix_sha256": "229eb103d0e8605db8799846061ca4f67d1c73c10499200713c1fe16915a0f4f",
+        "fixed_K50_one_vertex_extension": {
+          "status": "NO_EXTENSION_OF_THIS_COLORING",
+          "nodes": 120,
+          "limit": 350000,
+          "colors": null
+        }
+      }
+    },
+    "paley": {
+      "seconds": 1.701,
+      "exit": 0,
+      "output": {
+        "n": 101,
+        "base_six_cliques_red_blue": [
+          0,
+          0
+        ],
+        "base_five_cliques_red_blue": [
+          36360,
+          36360
+        ],
+        "order5": {
+          "multiplier": 36,
+          "variables": 21,
+          "clauses": 9190,
+          "dimacs_sha256": "043b3b669bc4ea9a5a797c6f7f01c2f5abc43aa84f2c674fa736db600f498fcc",
+          "exhaustive": {
+            "total_assignments": 2097152,
+            "rejected_assignments": 2097152,
+            "surviving_assignments": 0,
+            "first_survivor": null
+          }
+        },
+        "unrestricted": {
+          "multiplier": 1,
+          "variables": 101,
+          "clauses": 72720,
+          "dimacs_sha256": "5b19d39c3bf539e8f2a46e6694a66ef5fad5bd89944854f2a98a58c78b1fa810"
+        }
+      }
+    },
+    "k51_lrat": {
+      "seconds": 0.405,
+      "exit": 0,
+      "output": {
+        "status": "VERIFIED_UNSAT",
+        "rup_additions": 151,
+        "hint_clauses_read": 2473,
+        "lrat_sha256": "dc79385b11b520f1e6a0159aa98e077386b56b94665c2488af1746e1a55fdf19",
+        "variables": 200,
+        "clauses": 1575,
+        "dimacs_sha256": "ddbda8a804e805f1d33f798e879c9c62ea4b04ce6dd0b6c9265beb45bcc7811b"
+      }
+    },
+    "k102_lrat": {
+      "seconds": 1.626,
+      "exit": 0,
+      "output": {
+        "status": "VERIFIED_UNSAT",
+        "rup_additions": 1847,
+        "hint_clauses_read": 25819,
+        "lrat_sha256": "905401aa90805c8f9447465f4be9d4a029cc6189f5e04722d03beed51abdd3f0",
+        "variables": 101,
+        "clauses": 72720,
+        "dimacs_sha256": "5b19d39c3bf539e8f2a46e6694a66ef5fad5bd89944854f2a98a58c78b1fa810"
+      }
+    },
+    "independent_encoding": {
+      "seconds": 2.334,
+      "exit": 0,
+      "output": {
+        "K50": {
+          "monochromatic_triangles": 0,
+          "neighbor_pairs": 14208,
+          "clauses": 1575
+        },
+        "Paley101": {
+          "five_cliques": [
+            36360,
+            36360
+          ],
+          "cnf_sha256": "5b19d39c3bf539e8f2a46e6694a66ef5fad5bd89944854f2a98a58c78b1fa810"
+        },
+        "LRAT_controls": "valid proof accepted; false and incomplete proofs rejected"
+      }
+    },
+    "optional_independent_sat": {
+      "seconds": 0.723,
+      "exit": 0,
+      "output": {
+        "python_sat": "1.9.dev24",
+        "K51_fixed": {
+          "solver": "Glucose4",
+          "status": "UNSAT",
+          "conflict_budget": 5000,
+          "statistics": {
+            "restarts": 1,
+            "conflicts": 258,
+            "decisions": 482,
+            "propagations": 4259
+          },
+          "proof_sha256": "b535f62b12a24f91295a9f865fc7232770dbdbfb4c469cca951f6c284722a3e8",
+          "proof_lines": 560,
+          "cnf_sha256": "ddbda8a804e805f1d33f798e879c9c62ea4b04ce6dd0b6c9265beb45bcc7811b"
+        },
+        "Paley_order5": {
+          "solver": "Glucose4",
+          "status": "UNSAT",
+          "conflict_budget": 5000,
+          "statistics": {
+            "restarts": 0,
+            "conflicts": 0,
+            "decisions": 0,
+            "propagations": 21
+          },
+          "proof_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+          "proof_lines": 0
+        },
+        "Paley_unrestricted": {
+          "solver": "Glucose4",
+          "status": "UNSAT",
+          "conflict_budget": 2500,
+          "statistics": {
+            "restarts": 1,
+            "conflicts": 2353,
+            "decisions": 3171,
+            "propagations": 16562
+          },
+          "proof_sha256": "6f2b64eb24fb88e9e96eb75668a2e3baf0046ad639c53a7725986ddb0eb790f9",
+          "proof_lines": 3352
+        }
+      }
+    },
+    "drat_trim_K51-fixed": {
+      "seconds": 0.178,
+      "exit": 0,
+      "output": [
+        "c parsing input formula with 200 variables and 1575 clauses",
+        "c finished parsing",
+        "c detected empty clause; start verification via backward checking",
+        "c 671 of 1575 clauses in core",
+        "c 151 of 259 lemmas in core using 2473 resolution steps",
+        "c 0 RAT lemmas in core; 36 redundant literals in core lemmas",
+        "s VERIFIED",
+        "c verification time: 0.143 seconds"
+      ]
+    },
+    "drat_trim_unrestricted": {
+      "seconds": 0.435,
+      "exit": 0,
+      "output": [
+        "c parsing input formula with 101 variables and 72720 clauses",
+        "c finished parsing",
+        "c detected empty clause; start verification via backward checking",
+        "c 5053 of 72720 clauses in core",
+        "c 1847 of 2354 lemmas in core using 25819 resolution steps",
+        "c 0 RAT lemmas in core; 375 redundant literals in core lemmas",
+        "s VERIFIED",
+        "c verification time: 0.399 seconds"
+      ]
+    }
+  }
+}

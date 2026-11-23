@@ -1,0 +1,116 @@
+{
+  "scope": "integer witness identity with positive ordered denominators",
+  "utc": "2026-11-23T14:42:30.463236+00:00",
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "modules": {
+    "Family28": {
+      "source_sha256": "641b5a867a8cb498b77ba47186505766217ca4345bf618618c6a665934f7cf49",
+      "axioms": {
+        "ErdosStraus28kPlus21CandidateV1.reviewed_target": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    },
+    "FamilyWitness": {
+      "source_sha256": "2bcdd7cc22b51e0c54399d6849788a444812d28ae27b6fe16e768bc4c9494bb5",
+      "axioms": {
+        "MathCase.EgyptianFractions.family_witness": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "MathCase.EgyptianFractions.multiples_of_seven": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    }
+  },
+  "changed_denominator_42_to_41": "rejected",
+  "examples": [
+    {
+      "k": 0,
+      "n": 21,
+      "denominators": [
+        [
+          7,
+          22,
+          462
+        ],
+        [
+          6,
+          63,
+          126
+        ]
+      ]
+    },
+    {
+      "k": 1,
+      "n": 49,
+      "denominators": [
+        [
+          14,
+          99,
+          9702
+        ],
+        [
+          14,
+          147,
+          294
+        ]
+      ]
+    },
+    {
+      "k": 37,
+      "n": 1057,
+      "denominators": [
+        [
+          266,
+          40167,
+          1613347722
+        ],
+        [
+          302,
+          3171,
+          6342
+        ]
+      ]
+    },
+    {
+      "k": 1000000000000000000000000000000,
+      "n": 28000000000000000000000000000021,
+      "denominators": [
+        [
+          7000000000000000000000000000007,
+          28000000000000000000000000000049000000000000000000000000000022,
+          784000000000000000000000000002744000000000000000000000000003605000000000000000000000000002107000000000000000000000000000462
+        ],
+        [
+          8000000000000000000000000000006,
+          84000000000000000000000000000063,
+          168000000000000000000000000000126
+        ]
+      ]
+    },
+    {
+      "k": 2,
+      "n": 77,
+      "denominators": [
+        [
+          21,
+          232,
+          53592
+        ],
+        [
+          22,
+          231,
+          462
+        ]
+      ]
+    }
+  ],
+  "status": "PASS"
+}

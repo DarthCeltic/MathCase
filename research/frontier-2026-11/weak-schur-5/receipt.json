@@ -1,0 +1,295 @@
+{
+  "schema": "mathcase-weak-schur-replay-v1",
+  "witnesses": {
+    "rowley": {
+      "source_url": "https://raw.githubusercontent.com/oeis/oeisdata/aa67dedbb4e7fbefd9837e649293f8bdb09e5e69/seq/A072/A072842.seq",
+      "source_sha256": "dadba1c3277c9b360693b23f9309174c92128002785b2752d916b34db4c61e63",
+      "witness_check": {
+        "n": 207,
+        "admissible_pairs": 10609,
+        "monochromatic": 0,
+        "first_conflict": null,
+        "class_sizes": [
+          42,
+          42,
+          24,
+          49,
+          50
+        ]
+      },
+      "violations_by_color_if_208_appended": [
+        11,
+        9,
+        6,
+        1,
+        14
+      ],
+      "minimum_old_recolorings_necessary_by_disjoint_pairs": 1,
+      "positive_207_search_control": {
+        "n": 207,
+        "fixed_prefix": 96,
+        "node_cap": 15000,
+        "status": "SAT",
+        "candidate_check": {
+          "n": 207,
+          "admissible_pairs": 10609,
+          "monochromatic": 0,
+          "first_conflict": null,
+          "class_sizes": [
+            42,
+            42,
+            24,
+            49,
+            50
+          ]
+        },
+        "nodes": 60,
+        "most_fixed_after_propagation": 207
+      },
+      "208_search": [
+        {
+          "n": 208,
+          "fixed_prefix": 160,
+          "node_cap": 15000,
+          "status": "UNSAT_FIXED_PREFIX",
+          "nodes": 1,
+          "most_fixed_after_propagation": 0
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 128,
+          "node_cap": 15000,
+          "status": "UNSAT_FIXED_PREFIX",
+          "nodes": 3451,
+          "most_fixed_after_propagation": 177
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 104,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 181
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 96,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 181
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 80,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 172
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 64,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 166
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 48,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 166
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 40,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 166
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 32,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 166
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 24,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 166
+        }
+      ]
+    },
+    "vicenzi": {
+      "source_url": "https://raw.githubusercontent.com/rebeccavicenzi/Weak_Schur_Problem_FunSearch/f21786ee926d6535fe01767ad74392bb1c0dd985/experiments/ws5_207_sat/partition_207.json",
+      "source_sha256": "2393698ef49eba4b100b3e048e2ddc28c7db99d99cfa525ba3ba7450d0f35c0b",
+      "witness_check": {
+        "n": 207,
+        "admissible_pairs": 10609,
+        "monochromatic": 0,
+        "first_conflict": null,
+        "class_sizes": [
+          39,
+          41,
+          31,
+          46,
+          50
+        ]
+      },
+      "violations_by_color_if_208_appended": [
+        9,
+        9,
+        6,
+        2,
+        14
+      ],
+      "minimum_old_recolorings_necessary_by_disjoint_pairs": 2,
+      "positive_207_search_control": {
+        "n": 207,
+        "fixed_prefix": 96,
+        "node_cap": 15000,
+        "status": "SAT",
+        "candidate_check": {
+          "n": 207,
+          "admissible_pairs": 10609,
+          "monochromatic": 0,
+          "first_conflict": null,
+          "class_sizes": [
+            39,
+            41,
+            31,
+            46,
+            50
+          ]
+        },
+        "nodes": 30,
+        "most_fixed_after_propagation": 207
+      },
+      "208_search": [
+        {
+          "n": 208,
+          "fixed_prefix": 160,
+          "node_cap": 15000,
+          "status": "UNSAT_FIXED_PREFIX",
+          "nodes": 1,
+          "most_fixed_after_propagation": 0
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 128,
+          "node_cap": 15000,
+          "status": "UNSAT_FIXED_PREFIX",
+          "nodes": 1,
+          "most_fixed_after_propagation": 0
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 104,
+          "node_cap": 15000,
+          "status": "UNSAT_FIXED_PREFIX",
+          "nodes": 259,
+          "most_fixed_after_propagation": 159
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 96,
+          "node_cap": 15000,
+          "status": "UNSAT_FIXED_PREFIX",
+          "nodes": 807,
+          "most_fixed_after_propagation": 175
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 80,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 180
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 64,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 174
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 48,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 174
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 40,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 174
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 32,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 174
+        },
+        {
+          "n": 208,
+          "fixed_prefix": 24,
+          "node_cap": 15000,
+          "status": "UNKNOWN_NODE_LIMIT",
+          "nodes": 15000,
+          "most_fixed_after_propagation": 174
+        }
+      ]
+    }
+  },
+  "negative_controls": {
+    "corrupt_207_expected_conflict": {
+      "n": 207,
+      "admissible_pairs": 10609,
+      "monochromatic": 8,
+      "first_conflict": [
+        1,
+        2,
+        3,
+        1
+      ],
+      "class_sizes": [
+        43,
+        41,
+        24,
+        49,
+        50
+      ]
+    },
+    "allowed_equal_addends_1_plus_1": {
+      "n": 2,
+      "admissible_pairs": 0,
+      "monochromatic": 0,
+      "first_conflict": null,
+      "class_sizes": [
+        2,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "maximum_agreement_after_color_permutation": 191
+}

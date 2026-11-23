@@ -1,0 +1,21 @@
+{
+  "case": "5-3",
+  "url": "https://raw.githubusercontent.com/marijnheule/vdWaerden/d18a9106ba9b720b18fd8d92946cf8b67746eab6/certificates/W_5_3_170.cert",
+  "upstream_file_bytes": 171,
+  "upstream_sha256": "c639999c595d083f5fde1677ca12c3d67814bcfb89a3ce513a1337826246228a",
+  "upstream_color_symbols": 170,
+  "prefix_a_added": false,
+  "full_length": 170,
+  "full_checks": {
+    "start_step_enumeration": {
+      "progressions_examined": 7140,
+      "monochromatic": 0,
+      "first": null
+    },
+    "bit_intersections": {
+      "progressions_examined": 7140,
+      "monochromatic": 0,
+      "first": null
+    }
+  }
+}

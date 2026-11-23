@@ -1,0 +1,12 @@
+{
+  "schema": "mathcase-frontier-index-v1",
+  "updated": "2026-11-23",
+  "items": [
+    {"id":"vdw-2-7","name":"Two colors, seven-term progressions","status":"known lower-bound witness checked; one construction family excluded at 3704","next":"Check a different construction family or a general certified length-3704 refutation","limit":"No global upper bound or exact value"},
+    {"id":"ws-5","name":"Weak Schur · five colors","status":"two known 207 witnesses checked; radius-18 extension neighborhoods exhausted","next":"Find a 208 witness outside both neighborhoods or prove a global upper bound","limit":"No proof that 208 is impossible"},
+    {"id":"ramsey-3-3-3-3","name":"Four colors, monochromatic triangles","status":"known K50 lower-bound witness and fixed-base extension checks","next":"Find another K50 seed or certify a wider class of starting graphs","limit":"No general upper bound"},
+    {"id":"vdw-5-3","name":"Five colors, three-term progressions","status":"known 170 witness checked; unrestricted 171 probe unknown at 20 seconds","next":"Check an unrestricted 171 refutation or find an avoiding coloring","limit":"No verdict at 171; no exact value"},
+    {"id":"egyptian-28k-21","name":"Three unit fractions for n = 28k + 21","status":"Lean-checked identity families","next":"Finish the prior-literature comparison before any broader claim","limit":"Does not settle all n >= 2"},
+    {"id":"ramsey-6-6","name":"Ramsey · dots and lines · R(6,6)","status":"known Paley(101) lower-bound witness and bounded fixed-base changes checked","next":"Find a materially different 102-vertex seed and check every six-set","limit":"No exact value or global upper bound"}
+  ]
+}

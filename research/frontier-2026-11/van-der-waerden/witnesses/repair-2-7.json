@@ -1,0 +1,104 @@
+{
+  "case": "2-7",
+  "original_length": 3703,
+  "target_length": 3704,
+  "orientation": "left trials reverse the original word for the AP coordinates",
+  "searches": [
+    {
+      "side": "left",
+      "endpoint_color": 0,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 1510,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 2,
+          "d": 617
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "endpoint_color": 1,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 1483,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 3422,
+          "d": 47
+        },
+        {
+          "a": 2456,
+          "d": 208
+        },
+        {
+          "a": 2288,
+          "d": 236
+        },
+        {
+          "a": 2174,
+          "d": 255
+        },
+        {
+          "a": 1886,
+          "d": 303
+        },
+        {
+          "a": 1712,
+          "d": 332
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "endpoint_color": 0,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 1510,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 2,
+          "d": 617
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "endpoint_color": 1,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 1483,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 3422,
+          "d": 47
+        },
+        {
+          "a": 2456,
+          "d": 208
+        },
+        {
+          "a": 2288,
+          "d": 236
+        },
+        {
+          "a": 2174,
+          "d": 255
+        },
+        {
+          "a": 1886,
+          "d": 303
+        },
+        {
+          "a": 1712,
+          "d": 332
+        }
+      ]
+    }
+  ]
+}

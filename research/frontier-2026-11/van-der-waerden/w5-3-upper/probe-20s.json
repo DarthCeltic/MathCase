@@ -1,0 +1,22 @@
+{
+  "target": "five colors on [1,171], avoiding every monochromatic three-term progression",
+  "colors": 5,
+  "positions": 171,
+  "variables": 855,
+  "progressions": 7225,
+  "clauses": 38006,
+  "dimacs_sha256": "80973eadb990bcecb9e272356ead2bedd48d36208236ff19475164f99838fb7d",
+  "solver": {
+    "implementation": "Glucose 4",
+    "python_sat": "1.9.dev24",
+    "conflict_budget": 4000,
+    "wall_limit_seconds": 20
+  },
+  "control_DRAT_W_2_3": {
+    "status": "verified",
+    "proof_sha256": "87dd36bff0da7053acf732c49e3f48fccd11d444e7f486d31fea5e41dd8b5318",
+    "clauses_in_trace": 10
+  },
+  "large_target": "UNKNOWN_WALL_LIMIT",
+  "elapsed_seconds": 20.162
+}

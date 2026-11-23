@@ -1,0 +1,244 @@
+{
+  "case": "5-3",
+  "original_length": 170,
+  "target_length": 171,
+  "orientation": "left trials reverse the original word for the AP coordinates",
+  "searches": [
+    {
+      "side": "left",
+      "endpoint_color": 0,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4565,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 169,
+          "d": 1
+        },
+        {
+          "a": 139,
+          "d": 16
+        },
+        {
+          "a": 129,
+          "d": 21
+        },
+        {
+          "a": 9,
+          "d": 81
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "endpoint_color": 1,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4514,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 153,
+          "d": 9
+        },
+        {
+          "a": 133,
+          "d": 19
+        },
+        {
+          "a": 73,
+          "d": 49
+        },
+        {
+          "a": 53,
+          "d": 59
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "endpoint_color": 2,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4586,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 157,
+          "d": 7
+        },
+        {
+          "a": 117,
+          "d": 27
+        },
+        {
+          "a": 57,
+          "d": 57
+        },
+        {
+          "a": 47,
+          "d": 62
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "endpoint_color": 3,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4645,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 1,
+          "d": 85
+        }
+      ]
+    },
+    {
+      "side": "left",
+      "endpoint_color": 4,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4631,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 165,
+          "d": 3
+        },
+        {
+          "a": 75,
+          "d": 48
+        },
+        {
+          "a": 45,
+          "d": 63
+        },
+        {
+          "a": 25,
+          "d": 73
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "endpoint_color": 0,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4637,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 1,
+          "d": 85
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "endpoint_color": 1,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4627,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 97,
+          "d": 37
+        },
+        {
+          "a": 75,
+          "d": 48
+        },
+        {
+          "a": 37,
+          "d": 67
+        },
+        {
+          "a": 19,
+          "d": 76
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "endpoint_color": 2,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4563,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 151,
+          "d": 10
+        },
+        {
+          "a": 135,
+          "d": 18
+        },
+        {
+          "a": 99,
+          "d": 36
+        },
+        {
+          "a": 57,
+          "d": 57
+        },
+        {
+          "a": 27,
+          "d": 72
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "endpoint_color": 3,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4469,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 157,
+          "d": 7
+        },
+        {
+          "a": 141,
+          "d": 15
+        },
+        {
+          "a": 93,
+          "d": 39
+        },
+        {
+          "a": 85,
+          "d": 43
+        },
+        {
+          "a": 47,
+          "d": 62
+        }
+      ]
+    },
+    {
+      "side": "right",
+      "endpoint_color": 4,
+      "radius_old_recolors": 4,
+      "node_limit": 20000,
+      "distinct_search_states": 4562,
+      "status": "NO_REPAIR_WITHIN_RADIUS",
+      "fixed_old_word_conflicts_in_search_orientation": [
+        {
+          "a": 145,
+          "d": 13
+        },
+        {
+          "a": 11,
+          "d": 80
+        }
+      ]
+    }
+  ]
+}
