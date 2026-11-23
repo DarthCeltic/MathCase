@@ -1,0 +1,22 @@
+{
+  "arithmetic_audit_sha256": "d8f2329a802162f50ee42ab25c3274a415a62cecbd7aaad9b70b7e88e896a2db",
+  "attempt": 1,
+  "case_id": "collatz-at-most-thirteen-of-twenty-two-v2",
+  "external_calls": 0,
+  "external_cost_usd": 0,
+  "local_execution_receipt_sha256": "0cd932aa2a80514ed0d8b79f17171051e18ba817b0659105bab7ef79abde3656",
+  "module_timeout_seconds": 60,
+  "pre_run_record_sha256": "e46aa9fd434e614537b0c138ccf9233c52f89115fbaefff56ffbbe5e7652c9c8",
+  "public_source_sha256": {
+    "AtMostThirteen22.lean": "a6e55ea4c501fc22fc209503ea9d24c1dbaa47cd320021ab8365116bc66766bc",
+    "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "statement.txt": "16dccaf188a39b3ea41114213cf34916f25fd92772e366549e5994fc748c0462",
+    "verify_at_most_thirteen_22.py": "bac6129321bba28e5e6e08308e91d1d85a03f970d46932a3c0da4fb8aa224c64"
+  },
+  "reproduction_protocol_sha256": "8c5805d4a5d9ad6b0500d07cc007ae6ad903cfe850d316a6af67e277ef245d50",
+  "schema": "mathcase-path-free-run-binding-v1",
+  "status": "PASS",
+  "toolchain": "leanprover/lean4:v4.33.1"
+}

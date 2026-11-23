@@ -1,0 +1,33 @@
+{
+  "arithmetic_audit_sha256": "d8f2329a802162f50ee42ab25c3274a415a62cecbd7aaad9b70b7e88e896a2db",
+  "arithmetic_audit_status": "PASS",
+  "attempt_start_sha256": "9f32bafe271c052101507a2498883f109ed23d927e14486d8196def626d961fe",
+  "axiom_audit_for_compound_theorem": [
+    "propext",
+    "sorryAx",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "axiom_audit_for_failed_theorem": [
+    "sorryAx"
+  ],
+  "elapsed_seconds": 3.671713,
+  "exit_code": 1,
+  "external_calls": 0,
+  "external_cost_usd": 0,
+  "failed_module": "AtMostThirteen22",
+  "failed_module_source_sha256": "8d0ccc62b09a906b731092588726826aabc0baebe7a64ba5d1d7c4ddba4963b1",
+  "failure": "At AtMostThirteen22.lean:68, Lean could not rewrite ordinaryIter n (22 + odds n 22) inside the hypothesis whose target was acceleratedIter n 22 < n. The proof used the equality in the wrong direction.",
+  "meaning": "The v1 proof term did not elaborate. This is an implementation failure, not a counterexample to the mathematical statement.",
+  "raw_receipt_sha256": "cb4c9f19713594ea89e7a76aefc2bea57fc93c8961cde725798c50bf4b5d7015",
+  "retry_count": 0,
+  "source_placeholder_scan": {
+    "admit": false,
+    "native_decide": false,
+    "sorry": false
+  },
+  "status": "FAILED_ATTEMPT_PRESERVED",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": "68d5af57df5d4327d970e310f2e231d5d94e07051523cdfd6de21b5c21fb5c70",
+  "technical_reproduction_protocol_sha256": "6e6bb459e0e0cde7b9f7374fa874340c6bc4b84dc7400fc20aa38f818544f705"
+}

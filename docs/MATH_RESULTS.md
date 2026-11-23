@@ -37,6 +37,7 @@ The [shared affine-structure review](collatz-shared-affine-structure-2026-11-20.
 ## Other public bounded results
 
 - **Collatz M13:** the Lean source covers 7,825 of 8,192 residue classes with a first descent within 1 to 21 ordinary steps. This does not close a whole modulus class or prove convergence.
+- **At most 13 odd inputs in 22 accelerated steps:** Lean 4.33.1 proves that every start `n ≥ 3` satisfying this parity condition falls below its start after `22+h` ordinary steps, where `h ≤ 13` is the odd-input count. The exact count is 3,593,934 of 4,194,304 residue classes (85.6861%). This is a separate filter from the 21-step result; it proves no global convergence or novelty. See the [source and replay guide](../reproduction/collatz-at-most-thirteen-of-twenty-two-v2/README.md).
 - **Accumulated M15–M20 coverage:** the public source branch reports 1,021,248 of 1,048,576 residue classes (97.394%) with a listed bounded first descent. This is a finite residue count, not the fraction of Collatz trajectories that converge.
 - **M21–M31 screens:** arithmetic-only paired trajectory screens report 2,123,841,570 of 2,147,483,648 classes covered. These screens are not one Lean theorem; selected M29/M31 families have separate Lean statements.
 - **M31 structure sample:** a frozen 4,096-class sample reported 64-step concrete-descent rates of 97.754% on discovery and 97.998% on holdout. Only one of three registered hypotheses passed; no general rule was established.

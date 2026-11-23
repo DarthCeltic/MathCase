@@ -1,0 +1,75 @@
+{
+  "arithmetic_audit_sha256": "d8f2329a802162f50ee42ab25c3274a415a62cecbd7aaad9b70b7e88e896a2db",
+  "case_runner_sha256": "df3542c0368c5d9964ba97325539dfa4df1476e9964ad23ea69434d235080b78",
+  "command": [
+    "python",
+    "-B",
+    "scripts/run_public_case.py",
+    "collatz-at-most-thirteen-22"
+  ],
+  "external_calls": 0,
+  "external_cost_usd": 0,
+  "interpretation": "A second run through the public case launcher passed. Source hashes and theorem axiom reports match the first run. The final OLEAN hash differs because the compiled artifact embeds the absolute input path; this is recorded and no OLEAN byte-identity claim is made.",
+  "launcher_log_sha256": "99f5749a1b1f737f439a04887f3120ccd2bec83237044d132b56c3854da5fb23",
+  "module_timeout_seconds": 60,
+  "modules": [
+    {
+      "elapsed_seconds": 4.086101,
+      "exit_code": 0,
+      "name": "WordBound",
+      "olean_sha256": "8ca3ff4172048d00af6f97e305f564ce4ff7dc17412a3bc946a841b19b976d30",
+      "source_sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830"
+    },
+    {
+      "elapsed_seconds": 1.590164,
+      "exit_code": 0,
+      "name": "WordResidue",
+      "olean_sha256": "9bb543de9bd5da88a51fba7d8057b904349d10cd5c768f8bbfa4e4a8de7ae007",
+      "source_sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d"
+    },
+    {
+      "elapsed_seconds": 1.415491,
+      "exit_code": 0,
+      "name": "CountWords",
+      "olean_sha256": "a8d1c83c4230c8f501f38322815f4451cf0290e6bff2bede972c2bfc34dd24df",
+      "source_sha256": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5"
+    },
+    {
+      "elapsed_seconds": 5.163675,
+      "exit_code": 0,
+      "name": "AtMostThirteen22",
+      "olean_sha256": "de3619cab066a87875fb1d25209d2460721a60b8001faff33a7664c14aa9d029",
+      "source_sha256": "a6e55ea4c501fc22fc209503ea9d24c1dbaa47cd320021ab8365116bc66766bc",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "b08be60d0865178959f70139429c4ce8383c446f1b2cc67b07cf5e5beffcd10a"
+    }
+  ],
+  "package_runner_sha256": "bac6129321bba28e5e6e08308e91d1d85a03f970d46932a3c0da4fb8aa224c64",
+  "schema": "mathcase-public-case-route-replay-v1",
+  "sorryAx_observed": false,
+  "source_receipt_sha256": "fe86a980a3548ab11b92a825fccc29e10fb43bed326dea2dfa33d459f13c89b9",
+  "status": "PASS",
+  "theorem_axioms": {
+    "at_most_thirteen_of_twenty_two_descend": [
+      "Quot.sound",
+      "propext"
+    ],
+    "counted_at_most_thirteen_families_22": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "residue_at_most_thirteen_count_22": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "toolchain": "leanprover/lean4:v4.33.1"
+}
