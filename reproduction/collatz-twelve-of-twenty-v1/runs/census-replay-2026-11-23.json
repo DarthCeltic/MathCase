@@ -1,0 +1,18 @@
+{
+  "additional_relative_to_published_table": 123318,
+  "all_fixed_slope_rows_sha256_tsv_no_header": "08e7fb706ac6e129f94cc5dc153a8df5748acf549fa44859eddfe61aefbc6802",
+  "computation_type": "independent finite enumerations; applies only to the stated slope and fixed parity. A missing residue is not a counterexample to Collatz.",
+  "descent_rows_sha256_tsv_no_header": "08e7fb706ac6e129f94cc5dc153a8df5748acf549fa44859eddfe61aefbc6802",
+  "exceptions_r_to_q": {},
+  "fixed_slope_and_uniform_parity": 125970,
+  "largest_weighted_remainder": 135000320,
+  "modulus": 1048576,
+  "ordinary_rule": "even n/2, odd 3n+1",
+  "ordinary_steps": 32,
+  "published_pair_file_sha256": "30f06904507a35d180fab9d0d9195759047d13edfd857c04e2ef483eaf75194a",
+  "published_rows_reproduced": 2652,
+  "required_final_slope": 531441,
+  "residues_examined": 1048576,
+  "strict_descent_including_k_zero": 125970,
+  "sufficient_lower_cutoff_for_x_with_12_odd_in_20_accelerated": 262
+}

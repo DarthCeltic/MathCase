@@ -1,0 +1,46 @@
+{
+  "schema": "mathcase-exoo42-graph6-order-correction-v1",
+  "graph6_specification": "https://users.cecs.anu.edu.au/~bdm/data/formats.txt",
+  "standard_graph6_sha256": "a7db2ac21e14b3652629d0cfc1c47bf7b65f355e1f2fcf9048a075622c5ba75a",
+  "historical_row_major_sha256": "0d855016014ce4c2fbfcdba270683086a351b4a1e59afd611cc53e9b15109da7",
+  "original_lean_source_sha256": "ac5701807c463c77c4aac9fd310a21d7c138a3744bd8c8f7e6527ccdfcb60691",
+  "matched_lean_adjacency_rows": 42,
+  "matched_unordered_pairs": 861,
+  "actual_edges": 435,
+  "standard_verified_five_subsets": 850668,
+  "standard_red_K5": 0,
+  "standard_blue_K5": 0,
+  "legacy_if_decoded_as_standard": {
+    "K5": [
+      0,
+      2,
+      6,
+      15,
+      19
+    ],
+    "independent5": [
+      0,
+      3,
+      9,
+      18,
+      41
+    ]
+  },
+  "limits": "Corrects certificate encoding; the original Lean graph and mathematical witness are unchanged.",
+  "independent_graph6_roundtrip": {
+    "tool": "NetworkX",
+    "version": "3.7",
+    "canonical": {
+      "max_clique": 4,
+      "max_independent_set": 4,
+      "vertices": 42,
+      "edges": 435
+    },
+    "legacy_as_graph6": {
+      "max_clique": 7,
+      "max_independent_set": 7,
+      "vertices": 42,
+      "edges": 435
+    }
+  }
+}

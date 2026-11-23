@@ -1,0 +1,6 @@
+Attempt: py -3 -B replay_pilot.py --receipt runs\replay-2026-11-23.json
+Outcome: exit code 1 before compiling either arm.
+Output: error: no default toolchain configured.
+Cause found: the runner invoked the Elan shim from temporary workspaces without selecting its recorded Lean 4.33.1 toolchain.
+Correction: the runner now sets ELAN_TOOLCHAIN=leanprover/lean4:v4.33.1 for each compiler call.
+This preserves the failed local replay preflight. It is not a model response or a scored arm.

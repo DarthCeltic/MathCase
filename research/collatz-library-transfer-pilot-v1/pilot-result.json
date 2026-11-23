@@ -1,0 +1,51 @@
+{
+  "scope": "single matched pair of Codex agent responses; retrospective public rows grouped by parity prefix",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "model_endpoint_cost": "No metered external inference API dispatched; Codex credits not exposed.",
+  "split_sha256": "95fe10b16ef819c0214cf923adc0be37f8c6db8e0ac16cdb5610eb2e4f1e4dc6",
+  "source_sha256": "8a53e1cee2436efc347c6ebb07da0203d9c613670ad52bafdd0d0d19258d408c",
+  "arms": {
+    "control": {
+      "definition_sha256": "949198bd76361ba2bc637b263108d2af1270b1185b0e3c48a2b1cfec9b97cbb7",
+      "proof_sha256": "23803d81e53057d823e94150ac96e56c1fc7999c9d8bd8a4361c6edfd1f813d2",
+      "prediction_scores": {
+        "held": {
+          "pass": 681,
+          "total": 681
+        },
+        "outside": {
+          "pass": 4096,
+          "total": 4096
+        },
+        "boundary": {
+          "pass": 96,
+          "total": 96
+        }
+      },
+      "candidate_exit": 0,
+      "exact_target_audit_exit": 0,
+      "axioms": "'exactlyRequested' depends on axioms: [propext, Quot.sound]"
+    },
+    "library": {
+      "definition_sha256": "949198bd76361ba2bc637b263108d2af1270b1185b0e3c48a2b1cfec9b97cbb7",
+      "proof_sha256": "3839d74cea1b5a6afdc6391d151094fa89a36287cae2e0830a468e5019e143ef",
+      "prediction_scores": {
+        "held": {
+          "pass": 681,
+          "total": 681
+        },
+        "outside": {
+          "pass": 4096,
+          "total": 4096
+        },
+        "boundary": {
+          "pass": 96,
+          "total": 96
+        }
+      },
+      "candidate_exit": 0,
+      "exact_target_audit_exit": 0,
+      "axioms": "'exactlyRequested' depends on axioms: [propext, Quot.sound]"
+    }
+  }
+}

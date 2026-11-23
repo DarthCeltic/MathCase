@@ -1,0 +1,20 @@
+{
+  "schema": "mathcase-source-eof-cleanup-v1",
+  "note": "Original theorem inputs are preserved byte-for-byte. The current clean-source copies differ only by redundant final blank lines and have a separate fresh Lean receipt.",
+  "files": [
+    {
+      "path": "SymbolicFamilies.lean",
+      "preserved_path": "runs/initial-source-bytes/SymbolicFamilies.lean",
+      "original_sha256": "f807d7de9b511ecf07af6780aca191e423b550d07bac0b6ebed6f149421c319d",
+      "current_sha256": "ea4a87af1afec86a1ed74d2ca6caa1182e40250d2b5ebffee7644585828572ff",
+      "change": "removed redundant blank line(s) after the final source line"
+    },
+    {
+      "path": "M20ExactSmoke.lean",
+      "preserved_path": "runs/initial-source-bytes/M20ExactSmoke.lean",
+      "original_sha256": "9757e69945ef4fd06f2843442d08afd9ba159972c893d325c7d33d01cc70ea68",
+      "current_sha256": "65161aa865860e407c78ba2444c6622445cabb6aaaa8e1ef13c8a08aa39bfc99",
+      "change": "removed redundant blank line(s) after the final source line"
+    }
+  ]
+}

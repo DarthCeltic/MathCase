@@ -1,0 +1,46 @@
+private theorem evenSlopeMul (a k : Nat) (ha : a % 2 = 0) :
+    a * k = 2 * ((a / 2) * k) := by
+  have h : a = 2 * (a / 2) := by omega
+  calc
+    a * k = (2 * (a / 2)) * k := congrArg (fun n : Nat => n * k) h
+    _ = 2 * ((a / 2) * k) := Nat.mul_assoc _ _ _
+
+private theorem evenInputStep (a b k : Nat) (ha : a % 2 = 0) (hb : b % 2 = 0) :
+    collatzStep (a * k + b) = (a / 2) * k + b / 2 := by
+  have hm := evenSlopeMul a k ha
+  have hp : (a * k + b) % 2 = 0 := by omega
+  rw [collatzStep, if_pos hp]
+  omega
+
+private theorem oddInputStep (a b k : Nat) (ha : a % 2 = 0) (hb : b % 2 ≠ 0) :
+    collatzStep (a * k + b) = (3 * a) * k + (3 * b + 1) := by
+  have hm := evenSlopeMul a k ha
+  have hp : (a * k + b) % 2 ≠ 0 := by omega
+  rw [collatzStep, if_neg hp]
+  simp only [Nat.mul_add, Nat.mul_assoc, Nat.add_assoc]
+
+theorem predict_sound (a b t s q : Nat) (h : predict a b t = some (s,q)) :
+    ∀ k : Nat, iterate (a*k+b) t = s*k+q := by
+  induction t generalizing a b with
+  | zero =>
+    change some (a, b) = some (s, q) at h
+    have hs : a = s := congrArg Prod.fst (Option.some.inj h)
+    have hq : b = q := congrArg Prod.snd (Option.some.inj h)
+    intro k
+    simp only [iterate, hs, hq]
+  | succ t ih =>
+    by_cases ha : a % 2 = 0
+    · by_cases hb : b % 2 = 0
+      · have hh : predict (a / 2) (b / 2) t = some (s, q) := by
+          simpa only [predict, if_pos ha, if_pos hb] using h
+        intro k
+        change iterate (collatzStep (a * k + b)) t = s * k + q
+        rw [evenInputStep a b k ha hb]
+        exact ih (a := a / 2) (b := b / 2) hh k
+      · have hh : predict (3 * a) (3 * b + 1) t = some (s, q) := by
+          simpa only [predict, if_pos ha, if_neg hb] using h
+        intro k
+        change iterate (collatzStep (a * k + b)) t = s * k + q
+        rw [oddInputStep a b k ha hb]
+        exact ih (a := 3 * a) (b := 3 * b + 1) hh k
+    · simp [predict, ha] at h

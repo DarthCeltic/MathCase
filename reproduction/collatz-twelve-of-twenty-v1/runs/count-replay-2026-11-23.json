@@ -1,0 +1,32 @@
+{
+  "toolchain": "Lean 4.33.1",
+  "module_results": {
+    "WordBound": {
+      "sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+      "exit": 0,
+      "axioms": [
+        "'MathCase.Collatz.WordBound.twelve_of_twenty' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.scaled_upper' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.twenty_twelve_descent' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    "WordResidue": {
+      "sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+      "exit": 0,
+      "axioms": [
+        "'MathCase.Collatz.WordBound.lift_residue' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.residue_twelve_of_twenty' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    "CountWords": {
+      "sha256": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+      "exit": 0,
+      "axioms": [
+        "'MathCase.Collatz.WordBound.residueCount_eq_wordCount' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'MathCase.Collatz.WordBound.count_twelve_of_twenty' depends on axioms: [propext, Classical.choice, Quot.sound]",
+        "'MathCase.Collatz.WordBound.counted_progressions_descend' depends on axioms: [propext, Classical.choice, Quot.sound]"
+      ]
+    }
+  },
+  "off_by_one_rejected": true
+}

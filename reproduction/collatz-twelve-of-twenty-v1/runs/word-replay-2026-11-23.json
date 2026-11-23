@@ -1,0 +1,37 @@
+{
+  "toolchain": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "modules": [
+    {
+      "module": "WordBound",
+      "exit": 0,
+      "source_sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+      "axiom_audit": [
+        "'MathCase.Collatz.WordBound.scaled_upper' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.twelve_of_twenty' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.twenty_twelve_descent' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    {
+      "module": "WordOffset",
+      "exit": 0,
+      "source_sha256": "d84a922be5fc82b30ed4217cfea9ed0f78821367403edd4e14ab01d601f0a65f",
+      "axiom_audit": [
+        "'MathCase.Collatz.WordBound.affine_identity' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.offset_upper' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.twenty_twelve_offset' depends on axioms: [propext, Quot.sound]"
+      ]
+    },
+    {
+      "module": "WordResidue",
+      "exit": 0,
+      "source_sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+      "axiom_audit": [
+        "'MathCase.Collatz.WordBound.lift_residue' depends on axioms: [propext, Quot.sound]",
+        "'MathCase.Collatz.WordBound.residue_twelve_of_twenty' depends on axioms: [propext, Quot.sound]"
+      ]
+    }
+  ],
+  "scope": "Count-conditioned 32-step descent, exact affine offset, and lifting to arithmetic progressions",
+  "reproduction": "Clean temporary directory; only the three named .lean files copied in",
+  "status": "passed"
+}

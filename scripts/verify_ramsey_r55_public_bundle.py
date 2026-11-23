@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Validate the public R(5,5) source and receipt bundle without invoking Lean."""
 from __future__ import annotations
-import hashlib, json, re, sys
+import hashlib, json, os, re, sys
 from pathlib import Path
 
 BANNED_PATH = re.compile(r"(?i)(?:[A-Z]:\\|/home/|/Users/|\\Users\\)")
@@ -58,15 +58,20 @@ def validate(root: Path) -> dict:
         raise ValueError("composition receipt is not a pass")
     if sha(stdout_path.read_bytes()) != receipt.get("stdout_sha256"):
         raise ValueError("composition stdout is not bound by receipt")
-    for path in root.rglob("*"):
-        if not path.is_file():
-            continue
-        try:
-            text = path.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
-            continue
-        if BANNED_PATH.search(text):
-            raise ValueError(f"workstation path in bundle: {path.relative_to(root).as_posix()}")
+    for directory, subdirs, files in os.walk(root):
+        if Path(directory) == root and ".lake" in subdirs:
+            # Lake puts fetched dependencies and machine-specific build logs here.
+            subdirs.remove(".lake")
+        for name in files:
+            path = Path(directory) / name
+            if not path.is_file():
+                continue
+            try:
+                text = path.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                continue
+            if BANNED_PATH.search(text):
+                raise ValueError(f"workstation path in bundle: {path.relative_to(root).as_posix()}")
     return {"sources": len(evidence["source_files"]), "chunk_receipts": len(evidence["chunk_receipts"]), "composition_status": receipt["status"], "candidate_only": True}
 
 def main() -> int:

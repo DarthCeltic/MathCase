@@ -52,3 +52,12 @@ reproduction/egyptian-fractions-v9/README.md text eol=lf
 reproduction/egyptian-fractions-v9/inventory.json text eol=lf
 # Preserve hash-bound Ramsey receipts exactly as captured.
 reproduction/ramsey-r55-lean-v1/receipts/** -text -eol -diff
+
+# Keep the two prior Lean input bytes exactly as receipt-bound; the clean sources are replayed separately.
+reproduction/collatz-affine-family-replay-v1/runs/initial-source-bytes/** -text -eol -diff
+
+# Preserve captured hash-bound run receipts without line-ending normalization.
+reproduction/collatz-twelve-of-twenty-v1/*.json -text -eol whitespace=cr-at-eol
+reproduction/collatz-twelve-of-twenty-v1/runs/*.json -text -eol whitespace=cr-at-eol
+reproduction/prime-sqrt2-source-replay-v1/*.json -text -eol whitespace=cr-at-eol
+reproduction/riemann-source-audit-v1/source-check.json -text -eol whitespace=cr-at-eol

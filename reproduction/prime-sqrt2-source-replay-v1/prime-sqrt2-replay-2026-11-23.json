@@ -1,0 +1,49 @@
+{
+  "schema": "mathcase-public-prime-sqrt2-source-replay-v1",
+  "status": "PASS",
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "git_revisions": {
+    "mathlib": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "plausible": "b7eb3304aeae834b12dda98993a37f6a41f6f0bb",
+    "LeanSearchClient": "5f4d51b81cbd3f6b32b156bfad9056621a040404",
+    "importGraph": "16f02aa7642864af59f1ff0e384a015994db9118",
+    "proofwidgets": "4be2e3d5087eeb272cf5a8853b8f9dd025ef5957",
+    "aesop": "3448c0bcc5ce01b2d1546e483ec3620e32df3d0e",
+    "Qq": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+    "batteries": "4488d40d070b9700d4d5a6aa342f0d40c31b2a2d",
+    "Cli": "6130a47896ce867c6a4a55373441e59e565bad0f"
+  },
+  "dependencies": "precompiled Mathlib dependency cache",
+  "compile_order": [
+    "MathCaseCandidate",
+    "MathCaseSqrtTwoInfiniteDescent"
+  ],
+  "modules": {
+    "MathCaseCandidate": {
+      "source_sha256": "34b5edc1d9b5bbd5b750e23184edcfaa481de195ed504a28f379b059497caaa9",
+      "compiled_sha256": "4d48d06e1ffcfdd74d704e7f7aef0a3532b69e3c20da2772879d57c9ab6ff09f",
+      "exit": 0,
+      "elapsed_s": 18.576
+    },
+    "MathCaseSqrtTwoInfiniteDescent": {
+      "source_sha256": "7e21fcfc7fe30109ceb79a75dc6d40d6de2860fdaa74588351ab6d08b43a01bd",
+      "compiled_sha256": "d023a6b776e74e308d5aa1dc21fc1fb965ad791e9aba28253da03c7ce6986a8e",
+      "exit": 0,
+      "elapsed_s": 47.174
+    }
+  },
+  "exact_target_axioms": {
+    "exactParent": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "exactChild": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "challenge_sha256": "8c2a81e9dbfb4c37a3ecff64cb48aa36dd20a5b0d30ae4c7f3188771568d55e5",
+  "dropped_primality_control": "rejected"
+}

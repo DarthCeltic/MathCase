@@ -1,0 +1,33 @@
+theorem predict_sound (a b t s q : Nat) (h : predict a b t = some (s,q)) :
+    ∀ k : Nat, iterate (a*k+b) t = s*k+q := by
+  induction t generalizing a b with
+  | zero =>
+    change some (a, b) = some (s, q) at h
+    cases h
+    intro k
+    rfl
+  | succ t ih =>
+    intro k
+    change iterate (collatzStep (a * k + b)) t = s * k + q
+    by_cases ha : a % 2 = 0
+    · have half : a = a / 2 + a / 2 := by omega
+      have hm : a * k = a / 2 * k + a / 2 * k := by
+        calc
+          a * k = (a / 2 + a / 2) * k := congrArg (fun x : Nat => x * k) half
+          _ = _ := Nat.add_mul _ _ _
+      by_cases hb : b % 2 = 0
+      · simp only [predict, if_pos ha, if_pos hb] at h
+        have hp : (a * k + b) % 2 = 0 := by omega
+        have hs : collatzStep (a * k + b) = a / 2 * k + b / 2 := by
+          unfold collatzStep
+          rw [if_pos hp]
+          omega
+        rw [hs]
+        exact ih (a / 2) (b / 2) h k
+      · simp only [predict, if_pos ha, if_neg hb] at h
+        have hp : (a * k + b) % 2 ≠ 0 := by omega
+        have hs : collatzStep (a * k + b) = (3 * a) * k + (3 * b + 1) := by
+          simp only [collatzStep, if_neg hp, Nat.mul_add, Nat.mul_assoc, Nat.add_assoc]
+        rw [hs]
+        exact ih (3 * a) (3 * b + 1) h k
+    · simp [predict, ha] at h

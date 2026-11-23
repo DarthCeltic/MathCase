@@ -1,0 +1,7 @@
+def predict (a b : Nat) : Nat → Option (Nat × Nat)
+  | 0 => some (a, b)
+  | t + 1 =>
+    if a % 2 = 0 then
+      if b % 2 = 0 then predict (a / 2) (b / 2) t
+      else predict (3 * a) (3 * b + 1) t
+    else none

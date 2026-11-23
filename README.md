@@ -2,6 +2,8 @@
 
 **Question an AI proof. Check it in Lean. Build on what holds.**
 
+[Browse the public case catalog](https://darthceltic.github.io/cases.html) for saved examples, exact local calculations, and reproducible Lean routes, plus a clearly separated external Riemann-source audit.
+
 [Open MathCase and start a case](https://darthceltic.github.io/visitor/) · [Explore saved proofs](https://darthceltic.github.io/#case-desk) · [Open in GitHub Codespaces](https://codespaces.new/DarthCeltic/MathCase?quickstart=1) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip)
 
 ## Work on your own proof
@@ -43,7 +45,9 @@ The [public homepage](https://darthceltic.github.io/) offers both **Make a case*
 
 ## Public math results and reproduction
 
-The main results are summarized in [MathCase results and limits](docs/MATH_RESULTS.md), with the current [research roadmap](docs/MATHCASE_RESEARCH_ROADMAP.md). The public M20 packet includes the source, 2,652 exact affine-family statements, the source-to-kernel replay hashes, and the preserved watchdog exit. A plain-language entry point is [the reproduction index](reproduction/README.md).
+The main results are summarized in [MathCase results and limits](docs/MATH_RESULTS.md), with the current [research roadmap](docs/MATHCASE_RESEARCH_ROADMAP.md). The public M20 packet includes the source, 2,652 exact affine-family statements, the source-to-kernel replay hashes, and the preserved watchdog exit. A plain-language entry point is [the reproduction index](reproduction/README.md). The new [12-of-20 parity theorem](reproduction/collatz-twelve-of-twenty-v1/README.md) proves a fixed 32-step descent result for exactly 125,970 residue classes; the separate [compact affine-family replay](reproduction/collatz-affine-family-replay-v1/README.md) rechecks the 2,652 listed rows and a 456-row sample. A [prime-to-√2 source replay](reproduction/prime-sqrt2-source-replay-v1/README.md) gives a local pinned-source route with candidate-only status.
+
+For the local public case runner, use `python scripts/run_public_case.py list` to see ten bounded routes, then pass a case ID such as `collatz`, `ramsey55`, or `prime-sqrt2`. Every invocation writes a new output folder; see the [case catalog and command guide](reproduction/CASE_CATALOG.md). It does not make model or inference calls. The Riemann source route fetches only four pinned public files when selected.
 
 The bounded statement is specific: for 2,652 listed progressions, after 32 Collatz steps the exact affine value is smaller than the start. This is not a proof of Collatz convergence. A separate [R(5,5) Lean bundle](reproduction/ramsey-r55-lean-v1/README.md) formalizes the known lower bound `R(5,5) ≥ 43` with 27 chunk receipts and a final composition; it is candidate evidence from a warm local cache, not a new construction or M4 pass. The [M15–M20 showcase branch](https://github.com/DarthCeltic/MathCase/tree/codex/math-results-showcase-20261112) exposes additional source files; its older status notes are superseded where the Nov 18 replay package gives newer evidence.
 

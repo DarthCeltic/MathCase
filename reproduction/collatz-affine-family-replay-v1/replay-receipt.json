@@ -1,0 +1,95 @@
+{
+  "schema": "mathcase-standalone-lean-replay-v1",
+  "started_utc": "2026-11-23T13:00:32.911280+00:00",
+  "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "jobs": 1,
+  "timeout_seconds_per_module": 120,
+  "total_input_rows": {
+    "published": 2652,
+    "prespecified_outside": 456
+  },
+  "modules": [
+    {
+      "module": "CollatzAffineTrace",
+      "source_sha256": "8a53e1cee2436efc347c6ebb07da0203d9c613670ad52bafdd0d0d19258d408c",
+      "args": [
+        "-j",
+        "1",
+        "-o",
+        "CollatzAffineTrace.olean",
+        "CollatzAffineTrace.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "status": "PASS",
+      "wall_seconds": 0.783
+    },
+    {
+      "module": "SymbolicFamilies",
+      "source_sha256": "f807d7de9b511ecf07af6780aca191e423b550d07bac0b6ebed6f149421c319d",
+      "args": [
+        "-j",
+        "1",
+        "-o",
+        "SymbolicFamilies.olean",
+        "SymbolicFamilies.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "status": "PASS",
+      "wall_seconds": 0.979
+    },
+    {
+      "module": "M20ExactSmoke",
+      "source_sha256": "9757e69945ef4fd06f2843442d08afd9ba159972c893d325c7d33d01cc70ea68",
+      "args": [
+        "-j",
+        "1",
+        "-o",
+        "M20ExactSmoke.olean",
+        "M20ExactSmoke.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'MathCase.CollatzAffineTrace.familyEndpoint_exact' depends on axioms: [propext, Quot.sound]\n'MathCase.CollatzAffineTrace.m20Family_descent' depends on axioms: [propext, Quot.sound]\n'CollatzM20Shard001.iterator_bridge' does not depend on any axioms\n'CollatzM20Shard001.row239' depends on axioms: [propext, Quot.sound]\n'CollatzM20Shard001.row487' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "status": "PASS",
+      "wall_seconds": 0.855
+    },
+    {
+      "module": "M20Table",
+      "source_sha256": "bd811cfc8e355280c24fc325e7f2ceffdaa3fe187cdd8d09f0d186b14fa18f5e",
+      "args": [
+        "-j",
+        "1",
+        "-o",
+        "M20Table.olean",
+        "M20Table.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'MathCase.M20Table.all_rows' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "status": "PASS",
+      "wall_seconds": 29.725
+    },
+    {
+      "module": "Outside456",
+      "source_sha256": "3791d56e288d1fa8a582a99cbb1ddc903757f146af19ef080e8c62f752783d1c",
+      "args": [
+        "-j",
+        "1",
+        "-o",
+        "Outside456.olean",
+        "Outside456.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "'MathCase.Outside456.all_rows' depends on axioms: [propext, Quot.sound]\n",
+      "stderr": "",
+      "status": "PASS",
+      "wall_seconds": 7.721
+    }
+  ],
+  "status": "PASS",
+  "ended_utc": "2026-11-23T13:01:12.997876+00:00"
+}

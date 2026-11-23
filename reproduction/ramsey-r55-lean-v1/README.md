@@ -26,3 +26,8 @@ lake build MathCase.Ramsey.R55.RamseyR55LowerBoundChunkedV2
 ```
 
 `lean-toolchain` pins Lean 4.33.1 and the lock manifest pins Mathlib revision `0df444a360eaa60ab8c11dca51a86af692955474`. These are reproduction instructions only: this fresh-checkout build has not been run for this publication.
+
+
+## Standard graph6 interchange correction
+
+The Lean adjacency masks and their historical receipts are unchanged. The original exported graph6 bytes used row-major ordering and should not be interpreted as standard graph6. The corrected standard file, independent decoder, and row-by-row match against FoundationV4.lean are in graph6-interoperability/README.md. Do not use the historical export as an interoperable standard graph6 witness.

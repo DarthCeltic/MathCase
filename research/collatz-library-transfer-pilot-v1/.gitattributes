@@ -1,0 +1,4 @@
+* text=auto eol=lf
+
+pilot-result.json -text -eol whitespace=cr-at-eol
+runs/replay-2026-11-23.json -text -eol whitespace=cr-at-eol

@@ -1,0 +1,3 @@
+Both pinned generators reproduced the checked-in Lean source byte-for-byte.
+M20Table.lean == runs/M20Table.generated.lean: sha256 bd811cfc8e355280c24fc325e7f2ceffdaa3fe187cdd8d09f0d186b14fa18f5e
+Outside456.lean == runs/Outside456.generated.lean: sha256 3791d56e288d1fa8a582a99cbb1ddc903757f146af19ef080e8c62f752783d1c

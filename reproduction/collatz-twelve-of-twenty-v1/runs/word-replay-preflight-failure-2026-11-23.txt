@@ -1,0 +1,6 @@
+Attempt: py -3 -B check_word_bound.py --output runs\word-replay-2026-11-23.json
+Outcome: exit code 1 before compiling a Lean source.
+Output: check_word_bound.py: error: This check requires Lean 4.33.1.
+Cause found: the runner invoked the Elan shim from a fresh temporary directory without selecting the pinned Lean toolchain.
+Correction: the runner now sets ELAN_TOOLCHAIN=leanprover/lean4:v4.33.1 for its temporary-directory check.
+This record preserves the failed preflight. It is not a proof attempt or a mathematical result.
