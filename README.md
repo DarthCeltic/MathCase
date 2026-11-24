@@ -2,7 +2,7 @@
 
 MathCase lets you test a mathematical claim, inspect a proof that Lean checked, and reuse it in a second problem.
 
-**[Try the six-dot puzzle](https://darthceltic.github.io/tools.html#triangle-game)** in your browser. Color the lines red or blue and see whether three dots form a triangle of one color. For a proof example, [open the saved attempt Lean rejected and the correction it accepted](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1).
+**[Try the six-dot puzzle](https://darthceltic.github.io/)** in your browser. Color the lines red or blue and see whether three dots form a triangle of one color. For a proof example, [open the saved attempt Lean rejected and the correction it accepted](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1).
 
 [Browse all cases](https://darthceltic.github.io/cases.html) for more puzzles, checked proofs, and instructions for repeating the checks.
 
