@@ -1,8 +1,10 @@
 # MathCase
 
-**Question an AI proof. Check it in Lean. Build on what holds.**
+MathCase lets you test a mathematical claim, inspect a proof that Lean checked, and reuse it in a second problem.
 
-[Browse the public case catalog](https://darthceltic.github.io/cases.html) for saved examples, exact local calculations, and reproducible Lean routes, plus a clearly separated external Riemann-source audit.
+**[Try the six-dot puzzle](https://darthceltic.github.io/tools.html#triangle-game)** in your browser. Color the lines red or blue and see whether three dots form a triangle of one color. For a proof example, [open the saved attempt Lean rejected and the correction it accepted](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1).
+
+[Browse all cases](https://darthceltic.github.io/cases.html) for more puzzles, checked proofs, and instructions for repeating the checks.
 
 [Open MathCase and start a case](https://darthceltic.github.io/visitor/) · [Explore saved proofs](https://darthceltic.github.io/#case-desk) · [Open in GitHub Codespaces](https://codespaces.new/DarthCeltic/MathCase?quickstart=1) · [Watch the 2:57 film](https://youtu.be/-zTEJr35Q2k) · [Download the source ZIP](https://github.com/DarthCeltic/MathCase/archive/refs/heads/main.zip)
 
