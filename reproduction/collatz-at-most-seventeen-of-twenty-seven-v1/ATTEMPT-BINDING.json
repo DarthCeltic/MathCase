@@ -17,7 +17,7 @@
     "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
     "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
     "ParameterizedDescent.lean": "cd4d610ba73577d149d94a8914318118590ec99a4b4d4fc1e83d7a3fe39f5fd0",
-    "AtMostSeventeen27.lean": "ad6c363f42522ed3375743a8448db8a6ec7d4299afad3d856a39e8df6fe4cdc4"
+    "AtMostSeventeen27.lean": "dc439e0d7210cffff9b2aefcc2d30638478ce6e999d9264f5cc1a98f52f76c1f"
   },
   "audit_script_sha256": "9cb4770a5e8edfd0a623b4cd0feb8f6b7d8fca159272625f5cd6aa4b292655b7",
   "runner_sha256": "8c91d56d026ade90198696733a5bda7427de24b627cb2152686fe596b46a27ad",
@@ -27,5 +27,7 @@
     "provider_calls": 0,
     "external_cost_usd": 0
   },
-  "status": "BOUND_BEFORE_RUN"
+  "status": "BOUND_BEFORE_RUN",
+  "binding_revision": "source-normalized-lf-r2",
+  "supersedes_binding_sha256": "97ea7a38173005c772428520abc514405a241b2bdc5dcfe4382bd2f1127c1121"
 }
