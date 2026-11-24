@@ -1,0 +1,16 @@
+{
+  "attempt_number": 1,
+  "chunk_rows": 262144,
+  "cost_usd": 0,
+  "cpu_priority": "below-normal",
+  "deadline_seconds": 420,
+  "engine_source_sha256": "cf7e1774919807b343971b4a52caea438681d0d5077d718e7e22c0571288d7f2",
+  "external_calls": 0,
+  "focused_test_sha256": "f11d84d851671da6039ff32a95864146ad473b752accb779a7b6243bfad0dc77",
+  "numpy_version": "2.5.3",
+  "parent_package_sha256": "ddf870b8ca2bcfab60d57fe66aa7be4998a9d89a673a7aee5d8e7b54ea51d627",
+  "primary_source_sha256": "339e903407c1e81d88eb930fd3febe0d6bc3970348f0ca7b215ec4dc53c7221d",
+  "protocol_sha256": "85d2d3ea599ba03928a4c19eaa8640dec6b5c5c0767eeb8846321bf1dbcd307a",
+  "schema": "mathcase-collatz-m31-step34-primary-attempt-v1",
+  "started_utc": "2026-11-17T13:14:07.562311+00:00"
+}

@@ -1,0 +1,56 @@
+{
+  "cases": [
+    {
+      "axioms": "descent [propext, Quot.sound]; count/combined [Classical.choice, propext, Quot.sound]",
+      "density_percent": 89.49801921844482,
+      "id": "23/14",
+      "lean_status": "PASS",
+      "m0": "YES; packet SHA cab441ca8079f71a6c9dbaadcea53a8e38cc8d4e9ee68f18f874f6bf39fb66bb",
+      "max_odd_inputs": 14,
+      "max_ordinary_steps": 37,
+      "modulus": 8388608,
+      "qualifying_residues": 7507638,
+      "steps": 23
+    },
+    {
+      "axioms": "[Classical.choice, propext, Quot.sound]",
+      "density_percent": 92.42051839828491,
+      "id": "24/15",
+      "lean_status": "PASS",
+      "m0": "Exploratory; not reviewed",
+      "max_odd_inputs": 15,
+      "max_ordinary_steps": 39,
+      "modulus": 16777216,
+      "qualifying_residues": 15505590,
+      "steps": 24
+    },
+    {
+      "axioms": "[Classical.choice, propext, Quot.sound]",
+      "density_percent": 92.51936078071594,
+      "id": "31/19",
+      "lean_status": "source compile exit 0; separate axiom audit PASS_WITH_CLASSICAL_CHOICE",
+      "m0": "Exploratory; not reviewed",
+      "max_odd_inputs": 19,
+      "max_ordinary_steps": 50,
+      "modulus": 2147483648,
+      "qualifying_residues": 1986838144,
+      "steps": 31
+    },
+    {
+      "axioms": "[Classical.choice, propext, Quot.sound]",
+      "density_percent": 94.49079174082726,
+      "id": "32/20",
+      "lean_status": "PASS",
+      "m0": "Exploratory; not reviewed",
+      "max_odd_inputs": 20,
+      "max_ordinary_steps": 52,
+      "modulus": 4294967296,
+      "qualifying_residues": 4058348603,
+      "steps": 32
+    }
+  ],
+  "claim_boundary": "Every row is a bounded first-descent condition on parity residue classes. The percentages are not a percentage of Collatz solved and imply no global convergence or novelty claim.",
+  "m4": "not promoted",
+  "publication_scope": "public source, receipts, and truthful statement/status summary; no claim of global Collatz convergence or novelty",
+  "schema": "mathcase-collatz-parity-envelope-summary-v1"
+}

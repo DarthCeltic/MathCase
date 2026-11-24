@@ -1,0 +1,8 @@
+{
+  "normalized_display_receipt": "evidence/screen-v3.json",
+  "normalized_display_sha256": "82b03fa3a2e4adaa5ac25cab43c62e7d1b59d4276966a6f67589ab4aa5dd6aca",
+  "original_receipt": "evidence/screen-v3.original-crlf.bin",
+  "original_sha256": "ce9f60f36276b0603ef1cb5a7929ab6d71e97637a5252ef078860180c939f9b8",
+  "schema": "mathcase-screen-receipt-byte-binding-v1",
+  "scope": "The JSON content is unchanged; Git requires LF for text checkout. The original CRLF receipt bytes are preserved separately."
+}

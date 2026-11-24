@@ -1,0 +1,70 @@
+{
+  "all_m20_residues_satisfy_exact_12_of_20": true,
+  "all_methods_agree": true,
+  "conditions": [
+    {
+      "checkpoint": 20,
+      "cutoff": 12,
+      "name": "exact12of20",
+      "relation": "eq"
+    },
+    {
+      "checkpoint": 23,
+      "cutoff": 14,
+      "name": "atmost14of23",
+      "relation": "le"
+    },
+    {
+      "checkpoint": 24,
+      "cutoff": 15,
+      "name": "atmost15of24",
+      "relation": "le"
+    },
+    {
+      "checkpoint": 31,
+      "cutoff": 19,
+      "name": "atmost19of31",
+      "relation": "le"
+    },
+    {
+      "checkpoint": 32,
+      "cutoff": 20,
+      "name": "atmost20of32",
+      "relation": "le"
+    }
+  ],
+  "density_percent": 96.35903195012361,
+  "first_match_words_mod_2_32": {
+    "atmost14of23": 3392434176,
+    "atmost15of24": 93272064,
+    "atmost19of31": 100328704,
+    "atmost20of32": 36580845,
+    "exact12of20": 515973120
+  },
+  "iterative_terminal_state_count": 37,
+  "limits": "Finite parity-word count only. The component theorems remain separate; no combined Lean theorem, convergence claim, novelty claim, or basis closure is asserted.",
+  "m20_pair_rows": 2652,
+  "m20_residues_with_exact_12_of_20": 2652,
+  "previous_screen_match": {
+    "first_hit_counts_match": true,
+    "union_count_matches": true
+  },
+  "schema": "mathcase-collatz-structural-basis-screen-v3",
+  "segment_convolution_first_match_words_mod_2_32": {
+    "atmost14of23": 3392434176,
+    "atmost15of24": 93272064,
+    "atmost19of31": 100328704,
+    "atmost20of32": 36580845,
+    "exact12of20": 515973120
+  },
+  "segment_convolution_union_words_mod_2_32": 4138588909,
+  "source_bindings": {
+    "m20_pair_tsv_sha256": "30f06904507a35d180fab9d0d9195759047d13edfd857c04e2ef483eaf75194a",
+    "previous_screen_sha256": "e653f89786e0e9d56c88430b237e6689181f50111e8cb738ee77e0b344cc28c1",
+    "screen_script_sha256": "e8dbbbf76470451c949a93b1286f166c234c4d247acef281dc3449c5d136ca16"
+  },
+  "status": "PASS_INDEPENDENT_ITERATIVE_AND_SEGMENT_COUNTS",
+  "union_words_mod_2_32": 4138588909,
+  "unique_m20_residues": 2652,
+  "words_outside_union_mod_2_32": 156378387
+}

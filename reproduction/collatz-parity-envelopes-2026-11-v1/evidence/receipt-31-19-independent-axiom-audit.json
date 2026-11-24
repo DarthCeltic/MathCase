@@ -1,0 +1,15 @@
+{
+  "axiom_reports": null,
+  "case_id": "31/19",
+  "elapsed_seconds": 0.730987,
+  "exit_code": 0,
+  "lean_version": "Lean 4.33.1 (see original receipt hash)",
+  "olean_sha256": null,
+  "original_audit_receipt_sha256": "038105d77366069e5d7851d222053d15c4562b2c3d62bd0824afc7f66ddea853",
+  "privacy_projection": "Private workstation command and path fields omitted; the exact theorem axiom set and output hashes are preserved.",
+  "schema": "mathcase-public-safe-lean-axiom-audit-projection-v1",
+  "sorryAx_found": false,
+  "status": "PASS_WITH_CLASSICAL_CHOICE",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_sha256": null
+}

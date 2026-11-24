@@ -1,0 +1,5 @@
+import AtMostNineteen31
+
+#print axioms MathCase.Collatz.WordBound.residue_at_most_nineteen_count_31
+#print axioms MathCase.Collatz.WordBound.at_most_nineteen_of_thirty_one_descend
+#print axioms MathCase.Collatz.WordBound.counted_at_most_nineteen_families_31

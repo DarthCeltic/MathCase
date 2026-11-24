@@ -1,0 +1,119 @@
+{
+  "axiom_mismatches": {},
+  "axiom_reports": {
+    "at_most_fourteen_of_twenty_three_descend": [
+      "Quot.sound",
+      "propext"
+    ],
+    "count_twelve_of_twenty": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "counted_at_most_fourteen_families_23": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "counted_progressions_descend": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "lift_residue": [
+      "Quot.sound",
+      "propext"
+    ],
+    "residueCount_eq_wordCount": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "residue_at_most_fourteen_count_23": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "residue_twelve_of_twenty": [
+      "Quot.sound",
+      "propext"
+    ],
+    "scaled_upper": [
+      "Quot.sound",
+      "propext"
+    ],
+    "twelve_of_twenty": [
+      "Quot.sound",
+      "propext"
+    ],
+    "twenty_twelve_descent": [
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "case_id": "23-14",
+  "elapsed_total_seconds": 11.109126,
+  "external_cost_usd": 0,
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "modules": [
+    {
+      "axiom_reports": null,
+      "elapsed_seconds": 2.055451,
+      "exit_code": 0,
+      "module": "WordBound",
+      "olean_sha256": "8ca3ff4172048d00af6f97e305f564ce4ff7dc17412a3bc946a841b19b976d30",
+      "source_sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830",
+      "timed_out": false
+    },
+    {
+      "axiom_reports": null,
+      "elapsed_seconds": 0.914947,
+      "exit_code": 0,
+      "module": "WordResidue",
+      "olean_sha256": "9bb543de9bd5da88a51fba7d8057b904349d10cd5c768f8bbfa4e4a8de7ae007",
+      "source_sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d",
+      "timed_out": false
+    },
+    {
+      "axiom_reports": null,
+      "elapsed_seconds": 0.878228,
+      "exit_code": 0,
+      "module": "CountWords",
+      "olean_sha256": "a8d1c83c4230c8f501f38322815f4451cf0290e6bff2bede972c2bfc34dd24df",
+      "source_sha256": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5",
+      "timed_out": false
+    },
+    {
+      "axiom_reports": null,
+      "elapsed_seconds": 7.134557,
+      "exit_code": 0,
+      "module": "AtMostFourteen23",
+      "olean_sha256": "a1dd4cf25c77ab8a9487ae67af4075ac196bbbdcd349343357794199b7323b6a",
+      "source_sha256": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stdout_sha256": "6fccf403b9626e5a83f3005282ec858ea6615a5e695dd5ffea18a674ec7fa478",
+      "timed_out": false
+    }
+  ],
+  "native_decide_in_source": false,
+  "network_or_provider_calls": 0,
+  "original_receipt_sha256": "9fcb62099417bd0ad46a60dc0addab267b18145f893fb5ff2761e25dba904497",
+  "privacy_projection": "The original private command arrays and workstation paths are omitted. Source, compiler-output, and OLEAN hashes are preserved; this projection is a new public record, not a byte copy of the private receipt.",
+  "schema": "mathcase-public-safe-lean-receipt-projection-v1",
+  "sorryAx_found": false,
+  "source_sha256": {
+    "AtMostFourteen23.lean": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175",
+    "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c"
+  },
+  "statement_review": "M0 YES; not M4-promoted",
+  "status": "PASS",
+  "target_sha256": null
+}

@@ -1,0 +1,24 @@
+{
+  "schema": "mathcase-m31-step34-crlf-input-rebinding-v1",
+  "status": "PASS_INPUT_BYTES_REBOUND_TO_EXISTING_RECEIPTS_NO_RECOMPUTATION",
+  "created_utc": "2026-11-24T13:44:59.644872+00:00",
+  "primary_protocol": {
+    "artifact": "run-1/protocol-input-crlf.bin",
+    "sha256": "85d2d3ea599ba03928a4c19eaa8640dec6b5c5c0767eeb8846321bf1dbcd307a",
+    "attempt_start_sha256": "814e324d28681f888789c47eae19e3813fc0e3f62dfa5e7c46cdcf50f69ec958",
+    "attempt_start_protocol_sha256": "85d2d3ea599ba03928a4c19eaa8640dec6b5c5c0767eeb8846321bf1dbcd307a",
+    "matches": true
+  },
+  "verification_protocol": {
+    "artifact": "verification-run-1/verification-protocol-input-crlf.bin",
+    "sha256": "77b4326698ee7ea6d57b2eb51b9614356dcd8a462dcf6a73a8841f0ee8cb9e1b",
+    "receipt_sha256": "0e7cf8e5a9b8c0e3c0e67d7d3c3af024390a109683fcd5861b1f865e42a71045",
+    "receipt_protocol_sha256": "77b4326698ee7ea6d57b2eb51b9614356dcd8a462dcf6a73a8841f0ee8cb9e1b",
+    "matches": true
+  },
+  "normalized_markdown_derivatives": {
+    "protocol.md": "12646336b545d60f64209a3fb63946d904702340110103f51f8fe11b825b9f85",
+    "verification-protocol.md": "77f479648d490a74bd8f50aa9c4bc7245fed4f1754a543c8b797c6062b5a78a3"
+  },
+  "scope": "Rebinds the exact archived CRLF protocol bytes to existing attempt/verification receipt fields. Does not rerun, re-audit, or upgrade the arithmetic result; the original text-hygiene failure remains preserved."
+}

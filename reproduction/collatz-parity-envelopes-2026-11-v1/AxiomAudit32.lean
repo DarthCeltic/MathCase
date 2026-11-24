@@ -1,0 +1,5 @@
+import AtMostTwenty32
+
+#print axioms MathCase.Collatz.WordBound.residue_at_most_twenty_count_32
+#print axioms MathCase.Collatz.WordBound.at_most_twenty_of_thirty_two_descend
+#print axioms MathCase.Collatz.WordBound.counted_at_most_twenty_families_32

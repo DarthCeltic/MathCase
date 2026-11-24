@@ -1,0 +1,21 @@
+# M31 fixed-representative census through odd-only step 34
+
+## Frozen scope
+
+Evaluate the same 23,642,078 pinned odd residual representatives `n = r + 2^31` through the 34th accelerated odd-to-odd iterate `T(n) = (3n+1)/2^v2(3n+1)`. This is a one-step extension of the independently checked step-33 package. It is finite CPU arithmetic, not a Lean proof, class-wide theorem, or Collatz convergence result.
+
+## Parent and bindings
+
+Require the exact step-33 package inventory SHA-256 `ddf870b8ca2bcfab60d57fe66aa7be4998a9d89a673a7aee5d8e7b54ea51d627`, its primary summary/manifest, its independent step-33 verifier receipt, and every recorded input hash. Reconcile all first-hit bins 1..33 and the no-descent population before evaluating step 34.
+
+## Run controls
+
+One primary CPU pass and one separate independent recomputation, each with a hard 420-second cap, below-normal priority, 262,144-row chunks, no retry, no external calls, and $0 cost. The primary uses the pinned popcount engine. The checker uses the separately pinned low-bit exponent (`frexp`) engine. Any error is preserved in a fresh attempt directory and stops the chain.
+
+## Acceptance
+
+The result must conserve all 23,642,078 representatives, exactly match the parent first-hit history through step 33, reconcile the step-33 no-descent population with new step-34 hits, and match between primary and independent arithmetic across all mathematical result fields.
+
+## Limits
+
+A representative is one chosen value per residue, not every positive member of its residue class. A finite iterate horizon does not establish later behavior. No Lean, Docker, GPU, model, provider, search, public export, or gate change is part of this run.

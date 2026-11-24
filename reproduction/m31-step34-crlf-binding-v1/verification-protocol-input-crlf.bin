@@ -1,0 +1,7 @@
+# Independent verification protocol: M31 step 34
+
+The verifier starts only after the primary has completed. It validates the pinned step-33 package inventory, parent primary and verifier bindings, parent source/test/protocol hashes, and all recorded input hashes. It then validates the step-34 primary attempt, summary, manifest, and input bindings before recomputation.
+
+It recomputes the same 23,642,078 fixed representatives using the separately pinned low-bit exponent method, compares every mathematical result field (excluding only the method-description string), and verifies the first-hit history, parent reconciliation, endpoint partition, and population conservation.
+
+Limits: one attempt, 420-second cap, CPU-only, below-normal priority, no retries, and zero external calls or spend.

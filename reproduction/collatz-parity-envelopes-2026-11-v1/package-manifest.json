@@ -1,0 +1,56 @@
+{
+  "files": {
+    "AtMostFifteen24.lean": "cfceddbaceab6b55f983950eaae6d2ae84a5c1cef29bbc2e3edc5539e2fb600c",
+    "AtMostFourteen23.lean": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+    "AtMostFourteen23.original-crlf.bin": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175",
+    "AtMostNineteen31.lean": "f7c986e561d21677b897e683f4b2ec357b4a8b7d3df394d5dbe626c7d30d1fa3",
+    "AtMostTwenty32.lean": "659b3d4784a55f19072d32b785502f0903da844f70822397491d5f7171d833df",
+    "AxiomAudit31.lean": "980c11b0f26e2d68d61d20da8afa98c38c6bfe35079c41124078f5b4bd09bf66",
+    "AxiomAudit31.original-crlf.bin": "7bf3cc05d1b6cebc5df4a564441d54782bca87f03f51f077902872961c439994",
+    "AxiomAudit32.lean": "8837f9c426a2d23255244623d7c42b812b76bc0738158d79965d5e5d1f8d8b8e",
+    "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "README.md": "8a24f685f6fd858aeb4734646fd43238e508b653dabac5afdd7caeb926044457",
+    "STATEMENTS.md": "bb6cd286b5ef9a2e6dca06b2f6c7b05f8ebbebb8575ea4239c8f4e02a600ac9e",
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "evidence/failure-history.json": "4f077dba22817f88e2fb70acb0c9ee2fd04b529c2ef3d53ff5f2bb94b09a1bbc",
+    "evidence/m0-review-23-14.json": "b8cd2cb91172838068fcdb59d97f5b493b58efad8dc30ff2db22857563561dfe",
+    "evidence/receipt-23-14.json": "3f5eb663e9c7d6208ff3ebefbfe2c9144cf458d2489b5f3d5d89b2eaa3ca75ca",
+    "evidence/receipt-24-15.json": "af0f7f4dead9dc2910906386318b26dd7c5ea63cf2e22bd34e4259230cfc3828",
+    "evidence/receipt-31-19-independent-axiom-audit-v2.json": "ec92dfec5aad0dc6819db2ae6d3272d0f2d75530ec68888acb49824de9a5b562",
+    "evidence/receipt-31-19-independent-axiom-audit.json": "31f63d91675368985bf1ceb5effe552cdf624b14bbfdb1f052538547abf71a35",
+    "evidence/receipt-31-19.json": "b4430c4f348900e955f5c335d86933d8fdc9a5c62630ec0d2bc6739aeae4495e",
+    "evidence/receipt-32-20.json": "07acc131e54a3d61299d5b8ec30ee8843ed5faf73e6e202e28c9c0aac572f8e7",
+    "evidence/source-byte-bindings.json": "554d08a43a174632222d637b98392704a038e8df014bfaeac5b17010148e966a",
+    "evidence/source-hashes.json": "113fac1df7b529dc3ca600427aecd9a8fb97f5472a975534d02f3000ff2b6f75",
+    "evidence/summary.json": "b1005bf5ca870d23d02ca3c7c0bba39fd5d3fd7ae08c3fd72053a4b7cd613c75",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "replay.py": "8c33228aa3f3a103780972e6aff4e716ef3ec79c11268be1eb9b83bdb1df68b1"
+  },
+  "original_crlf_bindings": {
+    "AtMostFourteen23.lean": {
+      "byte_count": 3162,
+      "display_lf_sha256": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+      "original_private_receipt_sha256": "9fcb62099417bd0ad46a60dc0addab267b18145f893fb5ff2761e25dba904497",
+      "receipt": "receipt-23-14.json",
+      "receipt_sha256": "3f5eb663e9c7d6208ff3ebefbfe2c9144cf458d2489b5f3d5d89b2eaa3ca75ca",
+      "sha256": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175",
+      "sidecar": "AtMostFourteen23.original-crlf.bin"
+    },
+    "AxiomAudit31.lean": {
+      "byte_count": 259,
+      "display_lf_sha256": "980c11b0f26e2d68d61d20da8afa98c38c6bfe35079c41124078f5b4bd09bf66",
+      "fresh_source_compilation": false,
+      "original_audit_receipt_sha256": "038105d77366069e5d7851d222053d15c4562b2c3d62bd0824afc7f66ddea853",
+      "original_source_attempt_receipt_sha256": "70d9825f6ef13b1a300a7c5b887d179d0bf11650f2b564524f11b348e04499d7",
+      "separate_audit_projection": "receipt-31-19-independent-axiom-audit-v2.json",
+      "separate_audit_projection_sha256": "ec92dfec5aad0dc6819db2ae6d3272d0f2d75530ec68888acb49824de9a5b562",
+      "sha256": "7bf3cc05d1b6cebc5df4a564441d54782bca87f03f51f077902872961c439994",
+      "sidecar": "AxiomAudit31.original-crlf.bin",
+      "source_attempt_projection": "receipt-31-19.json",
+      "source_attempt_projection_sha256": "b4430c4f348900e955f5c335d86933d8fdc9a5c62630ec0d2bc6739aeae4495e"
+    }
+  },
+  "schema": "mathcase-collatz-parity-envelope-package-v2",
+  "text_policy": "Readable text files are LF. Two original CRLF Lean inputs are preserved as .bin sidecars; replay.py materializes and compiles those exact bytes. The LF .lean files are readable derivatives."
+}

@@ -1,0 +1,11 @@
+{
+  "decision": "YES",
+  "local_hash_bound_record_created": "2026-11-23T23:53:14.122350-05:00",
+  "local_record_sha256": "a59fa9ed3eb9f83d2a7a333cf08e51f8f37b1ac1981b0422a3bcbbfc9f693e31",
+  "packet_sha256": "cab441ca8079f71a6c9dbaadcea53a8e38cc8d4e9ee68f18f874f6bf39fb66bb",
+  "response": "Yes, faithful",
+  "review_reply_time_reported_by_Ryan": "2026-11-23 21:57 ET",
+  "review_scope": "statement fidelity only",
+  "schema": "mathcase-public-m0-review-projection-v1",
+  "time_note": "The 21:57 ET reply time is reported by Ryan in his Nov 24 release instruction. The local hash-bound record was generated at 23:53 ET; that field is record-creation time, not the reply time."
+}

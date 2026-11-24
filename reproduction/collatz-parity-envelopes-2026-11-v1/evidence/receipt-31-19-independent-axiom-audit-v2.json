@@ -1,0 +1,38 @@
+{
+  "audited_olean_sha256": "f22567e80502f6186f206ef3af0080a0bc899e30d9d9f3524e77b0f21ebfa41a",
+  "audited_source_sha256": "f7c986e561d21677b897e683f4b2ec357b4a8b7d3df394d5dbe626c7d30d1fa3",
+  "axiom_audit_source_sha256": "7bf3cc05d1b6cebc5df4a564441d54782bca87f03f51f077902872961c439994",
+  "axiom_output_sha256": "b0e49b446e2825cc079bad7959317b52d20f49f64c948c966a39ea841f1871ff",
+  "case_id": "31/19",
+  "elapsed_seconds": 0.730987,
+  "exit_code": 0,
+  "external_calls": 0,
+  "external_cost_usd": 0,
+  "fresh_source_compilation": false,
+  "lean_toolchain": "leanprover/lean4:v4.33.1",
+  "observed_axioms": {
+    "at_most_nineteen_of_thirty_one_descend": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "counted_at_most_nineteen_families_31": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "residue_at_most_nineteen_count_31": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  },
+  "original_audit_receipt_sha256": "038105d77366069e5d7851d222053d15c4562b2c3d62bd0824afc7f66ddea853",
+  "private_command_and_absolute_paths": "omitted",
+  "schema": "mathcase-public-safe-lean-axiom-audit-projection-v2",
+  "scope": "This separate audit inspects the previously source-compiled OLEAN. It does not change or overwrite the original 31/19 FAIL_AUDIT receipt and is not a second source compilation.",
+  "sorryAx_found": false,
+  "source_attempt_receipt_sha256": "70d9825f6ef13b1a300a7c5b887d179d0bf11650f2b564524f11b348e04499d7",
+  "status": "PASS_WITH_CLASSICAL_CHOICE",
+  "target_sha256": "a2b6165a20ec17599b9b7f7af6ce0095659bc68552061b7bdbb5282764c2ed98"
+}

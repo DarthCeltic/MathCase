@@ -36,7 +36,7 @@ Use `--dry-run` to inspect a route without running it. The hard 20-second W(5,3)
 
 ## Attribution and status
 
-- The van der Waerden witness sources credit John R. Rabung and Marijn J. H. Heule; the original sources and hashes are recorded beside the witnesses. Related upstream issue [google-deepmind/formal-conjectures #2286](https://github.com/google-deepmind/formal-conjectures/issues/2286) is currently open and assigned to Rafiaminhaj. It is not presented as unclaimed or endorsed work.
+- The van der Waerden witness sources credit John R. Rabung and Marijn J. H. Heule; the original sources and hashes are recorded beside the witnesses. No upstream issue number, assignment, or endorsement is claimed in this package; no issue was contacted.
 - Weak-Schur witness attribution remains with Fred Rowley and Rebecca Vicenzi and coauthors. The latest public paper reports a distinct 207-element construction: [arXiv:2611.22032](https://arxiv.org/abs/2611.22032).
 - The four-color construction credits Fan Chung and Robertson. The four-color interval currently reported in the literature is `[51,60]`; see Tatarević's [version 2 preprint](https://arxiv.org/abs/2610.36648v2). MathCase checks the lower witness and selected fixed-base changes, not the upper-bound proof.
 - The Egyptian-fraction folder cites Elsholtz and Tao for background. Its identities are presented as known-style algebraic constructions, with no priority claim.

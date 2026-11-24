@@ -1,0 +1,34 @@
+{
+  "bound_for_union": "For any start satisfying at least one rule and n\u22653, one corresponding existing component theorem gives first descent; maximum over the three coverage-expanding filters is 52 ordinary steps. The 23/14 and 31/19 subfilters can yield the sharper 37- and 50-step bounds.",
+  "claim_limit": "This is a Python exact dynamic-programming count over finite parity words, not a new Lean-checked union theorem. No convergence or novelty claim.",
+  "counting_method": "Dynamic programming over parity-word prefix odd counts through 32 bits; at each checkpoint, qualifying words are counted once at their first matching filter and removed from the continuation state. Each length-32 parity word corresponds to one residue class modulo 2^32 under the checked parity/residue bijection.",
+  "first_match_counts": {
+    "atmost14of23": 6625848,
+    "atmost15of24": 364344,
+    "atmost19of31": 50164352,
+    "atmost20of32": 36580845,
+    "exact12of20": 125970
+  },
+  "m20_rows_with_exactly_12_odd_inputs_in_first_20": 2652,
+  "m20_subset_check": "PASS",
+  "nested_filter_notes": [
+    "23/14 is a subset of 24/15: one further accelerated input can add at most one odd.",
+    "31/19 is a subset of 32/20 for the same reason."
+  ],
+  "schema": "mathcase-collatz-structural-basis-screen-v1",
+  "source_pairs_sha256": "30f06904507a35d180fab9d0d9195759047d13edfd857c04e2ef483eaf75194a",
+  "source_rows": 2652,
+  "subset_failures": [],
+  "survivors_outside_all_rules": 156378387,
+  "total_residue_classes_mod_2_32": 4294967296,
+  "union_density_percent": 2.185380063019693,
+  "union_residue_classes_mod_2_32": 93861359,
+  "union_rules": {
+    "at_most_14_of_first_23": true,
+    "at_most_15_of_first_24": true,
+    "at_most_19_of_first_31": true,
+    "at_most_20_of_first_32": true,
+    "exactly_12_of_first_20": true
+  },
+  "unique_residues": 2652
+}

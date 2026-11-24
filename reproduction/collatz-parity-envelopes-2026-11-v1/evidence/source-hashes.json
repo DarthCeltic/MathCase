@@ -1,0 +1,14 @@
+{
+  "lean_4_33_1_sources": {
+    "AtMostFifteen24.lean": "cfceddbaceab6b55f983950eaae6d2ae84a5c1cef29bbc2e3edc5539e2fb600c",
+    "AtMostFourteen23.lean": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175",
+    "AtMostNineteen31.lean": "f7c986e561d21677b897e683f4b2ec357b4a8b7d3df394d5dbe626c7d30d1fa3",
+    "AtMostTwenty32.lean": "659b3d4784a55f19072d32b785502f0903da844f70822397491d5f7171d833df",
+    "AxiomAudit31.lean": "7bf3cc05d1b6cebc5df4a564441d54782bca87f03f51f077902872961c439994",
+    "AxiomAudit32.lean": "8837f9c426a2d23255244623d7c42b812b76bc0738158d79965d5e5d1f8d8b8e",
+    "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c"
+  },
+  "schema": "mathcase-collatz-parity-public-source-hashes-v1"
+}

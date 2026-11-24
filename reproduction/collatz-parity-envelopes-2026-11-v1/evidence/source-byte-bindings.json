@@ -1,0 +1,27 @@
+{
+  "bindings": {
+    "AtMostFourteen23.lean": {
+      "byte_count": 3162,
+      "display_lf_sha256": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+      "sha256": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175",
+      "sidecar": "AtMostFourteen23.original-crlf.bin",
+      "receipt": "receipt-23-14.json",
+      "receipt_sha256": "3f5eb663e9c7d6208ff3ebefbfe2c9144cf458d2489b5f3d5d89b2eaa3ca75ca",
+      "original_private_receipt_sha256": "9fcb62099417bd0ad46a60dc0addab267b18145f893fb5ff2761e25dba904497"
+    },
+    "AxiomAudit31.lean": {
+      "byte_count": 259,
+      "display_lf_sha256": "980c11b0f26e2d68d61d20da8afa98c38c6bfe35079c41124078f5b4bd09bf66",
+      "sha256": "7bf3cc05d1b6cebc5df4a564441d54782bca87f03f51f077902872961c439994",
+      "sidecar": "AxiomAudit31.original-crlf.bin",
+      "separate_audit_projection": "receipt-31-19-independent-axiom-audit-v2.json",
+      "separate_audit_projection_sha256": "ec92dfec5aad0dc6819db2ae6d3272d0f2d75530ec68888acb49824de9a5b562",
+      "original_audit_receipt_sha256": "038105d77366069e5d7851d222053d15c4562b2c3d62bd0824afc7f66ddea853",
+      "source_attempt_projection": "receipt-31-19.json",
+      "source_attempt_projection_sha256": "b4430c4f348900e955f5c335d86933d8fdc9a5c62630ec0d2bc6739aeae4495e",
+      "original_source_attempt_receipt_sha256": "70d9825f6ef13b1a300a7c5b887d179d0bf11650f2b564524f11b348e04499d7",
+      "fresh_source_compilation": false
+    }
+  },
+  "schema": "mathcase-source-byte-bindings-v2"
+}

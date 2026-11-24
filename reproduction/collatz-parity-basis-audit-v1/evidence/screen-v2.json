@@ -1,0 +1,49 @@
+{
+  "classes_outside_union": 156378387,
+  "corrects_prior_file_sha256": "387079d882e7b68820b2d0186f241ae1c68e8f0ca4b1a10ce1e54b5918331e83",
+  "failure_audit_sha256": "c1f1c62d8e57c72b0fe49489508445207e65953fbacf909500cedd883839ae79",
+  "first_match_counts_mod_2_32": {
+    "atmost14of23": 3392434176,
+    "atmost15of24": 93272064,
+    "atmost19of31": 100328704,
+    "atmost20of32": 36580845,
+    "exact12of20": 515973120
+  },
+  "independent_recursive_dp_union": 4138588909,
+  "interpretation": "The five conditions are not all independent: 23/14 implies 24/15, and 31/19 implies 32/20. Their union count is an exact Python DP over 32-bit parity words, not a Lean-checked combined theorem. The 2,652 M20 rows are a finite subset of the exact-12-of-20 criterion.",
+  "limits": "A single Lean wrapper for the union was not attempted. The 20/23/24/31/32 component theorem receipts remain the formal evidence; this count does not prove global Collatz convergence or novelty.",
+  "m20_rows": 2652,
+  "m20_rows_in_exact_12_of_20_rule": 2652,
+  "m20_subset_check": "PASS",
+  "proper_suffix_multiplicity_applied": true,
+  "recursive_dp_states": 414,
+  "rules": [
+    {
+      "checkpoint": 20,
+      "rule": "exact12of20"
+    },
+    {
+      "checkpoint": 23,
+      "rule": "atmost14of23"
+    },
+    {
+      "checkpoint": 24,
+      "rule": "atmost15of24"
+    },
+    {
+      "checkpoint": 31,
+      "rule": "atmost19of31"
+    },
+    {
+      "checkpoint": 32,
+      "rule": "atmost20of32"
+    }
+  ],
+  "schema": "mathcase-collatz-structural-basis-screen-v2",
+  "source_pairs_sha256": "30f06904507a35d180fab9d0d9195759047d13edfd857c04e2ef483eaf75194a",
+  "status": "PASS_TWO_DP_METHODS",
+  "total_residue_classes_mod_2_32": 4294967296,
+  "union_density_percent": 96.35903195012361,
+  "union_residue_classes_mod_2_32": 4138588909,
+  "unique_m20_residues": 2652
+}

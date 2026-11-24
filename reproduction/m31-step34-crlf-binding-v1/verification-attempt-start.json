@@ -1,0 +1,15 @@
+{
+  "attempt_number": 1,
+  "chunk_rows": 262144,
+  "cost_usd": 0,
+  "cpu_priority": "below-normal",
+  "created_utc": "2026-11-17T13:14:36.128882+00:00",
+  "deadline_seconds": 420,
+  "external_calls": 0,
+  "numpy_version": "2.5.3",
+  "parent_package_sha256": "ddf870b8ca2bcfab60d57fe66aa7be4998a9d89a673a7aee5d8e7b54ea51d627",
+  "schema": "mathcase-collatz-m31-step34-verification-attempt-v1",
+  "verification_protocol_sha256": "77b4326698ee7ea6d57b2eb51b9614356dcd8a462dcf6a73a8841f0ee8cb9e1b",
+  "verification_source_sha256": "65c5661102e232985d2e58b70baff9164f0a883a95e3e6c6a3c9b30da82883ab",
+  "verification_test_sha256": "f11d84d851671da6039ff32a95864146ad473b752accb779a7b6243bfad0dc77"
+}

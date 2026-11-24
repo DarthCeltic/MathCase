@@ -1,0 +1,7 @@
+{
+  "error": "The first-match DP counted qualifying prefixes at their checkpoint but omitted the 2^(32-checkpoint) suffix extensions. Its reported 93,861,359 union count is invalid and must not be used.",
+  "original_file_sha256": "387079d882e7b68820b2d0186f241ae1c68e8f0ca4b1a10ce1e54b5918331e83",
+  "repair": "Version 2 multiplies first-match prefix counts by every suffix extension and cross-checks with a recursive memoized count of accepted 32-bit words.",
+  "schema": "mathcase-collatz-union-screen-failure-v1",
+  "status": "FAIL_CALCULATION"
+}

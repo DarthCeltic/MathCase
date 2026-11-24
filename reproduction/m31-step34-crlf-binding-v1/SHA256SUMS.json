@@ -1,0 +1,24 @@
+{
+  "schema": "mathcase-m31-step34-crlf-binding-public-manifest-v1",
+  "files": {
+    "preflight-failures.md": "578b6efda38af384be778af8bbe79de2575ecbd86c4e050eb52644a93b573389",
+    "protocol.md": "12646336b545d60f64209a3fb63946d904702340110103f51f8fe11b825b9f85",
+    "verification-protocol.md": "77f479648d490a74bd8f50aa9c4bc7245fed4f1754a543c8b797c6062b5a78a3",
+    "primary-protocol-input-crlf.bin": "85d2d3ea599ba03928a4c19eaa8640dec6b5c5c0767eeb8846321bf1dbcd307a",
+    "verification-protocol-input-crlf.bin": "77b4326698ee7ea6d57b2eb51b9614356dcd8a462dcf6a73a8841f0ee8cb9e1b",
+    "primary-attempt-start.json": "814e324d28681f888789c47eae19e3813fc0e3f62dfa5e7c46cdcf50f69ec958",
+    "primary-run-manifest.json": "deb49b29d8ff5e4fd582b123fca8b77cd782ba935979a4cbcdf2379bf67f6ae7",
+    "primary-summary.json": "9ddec6490d433b2e30b53ab6bf5ecca9b572bae748edbd685f72216a153ad7b6",
+    "primary-exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "primary-stdout.log": "3ae9ada2820eebf2bc38c31ea0cda07c3d2408cc423bf2a2b63f2e9636d11fbd",
+    "primary-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "verification-attempt-start.json": "69591bd18d597399b51425313052fca0429c988f6b48b9209d8c4a7166824256",
+    "verification-receipt.json": "0e7cf8e5a9b8c0e3c0e67d7d3c3af024390a109683fcd5861b1f865e42a71045",
+    "verification-exit-code.txt": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "verification-stdout.log": "fcd356ffdf1c041b2dfeb75dcb99e9d4b09bb5e7515168e5465c2c9a34014254",
+    "verification-stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "crlf-input-rebinding-v1.json": "afac36f55c2cf0379fff6b3c03f0da398d77ed8e39cd9a0c14aea82f752856ed",
+    "crlf-input-rebinding-v1.md": "d650587c49acba55499c5cdc1419d41c7d3c4f31ed6fb0b3b14f0be344821a22",
+    "README.md": "ac5785a0dc81f4c47cc0a52ec19b50e7732e3d8f312558821ea4b19e58eca4de"
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "failures": [
+    {
+      "attempt": "24/15 r1",
+      "failure_audit_sha256": "b042e55fa7bce96b2478f36c3392a38b12ac89041d4a2ad0a29ce66046465a62",
+      "original_receipt_sha256": "51a914f12ca82630605f66191d4d11a2172d216600fc84d18ae63685c9eed016",
+      "status": "PREFLIGHT_FAIL",
+      "summary": "Source-map preflight read stale filename AtMostNineteen31.lean after target had been renamed. No Lean module launched."
+    },
+    {
+      "attempt": "31/19 r1",
+      "failure_audit_sha256": "44dfbe7e0b1285d4dccc1708aef5d684bcb7f907d14ac8ce3681444f6329da29",
+      "original_receipt_sha256": "1f766f77fba95ad5ad59f7ecfd5e92207d49a6dde8db172bcdd7aa4d0a2c253c",
+      "status": "FAIL",
+      "summary": "Finite Fin 4830 decide proof hit maximum recursion depth; exit 1; no OLEAN. Lean error-recovery output mentioned sorryAx for the rejected declaration; this is not an accepted proof."
+    },
+    {
+      "attempt": "31/19 r2",
+      "failure_audit_sha256": "37ac57ff1bc961cbee279ec9124e3bc3ab486314dfc203e174434e22bab2e518",
+      "original_receipt_sha256": "1c17ccbedf0da194b2fdabf63c0502d654b30b2cc58d1cca887defe20ad00eb7",
+      "status": "FAIL",
+      "summary": "Chunk premise used odds n where the chunk required odds (start + (n-start)); later proof branches also hit recursion depth. Exit 1; no final OLEAN."
+    },
+    {
+      "attempt": "31/19 r3 original audit expectation",
+      "original_receipt_sha256": "70d9825f6ef13b1a300a7c5b887d179d0bf11650f2b564524f11b348e04499d7",
+      "separate_audit_receipt_sha256": "038105d77366069e5d7851d222053d15c4562b2c3d62bd0824afc7f66ddea853",
+      "status": "FAIL_AUDIT (original receipt preserved)",
+      "summary": "The theorem module compiled with exit 0, but the runner expected axiom list omitted Classical.choice. Separate independent Lean import audit passed and reported the full set [Classical.choice, Quot.sound, propext]."
+    }
+  ],
+  "preservation_note": "Original private receipts and logs remain unchanged in the owner-local archive; this public summary omits workstation paths.",
+  "schema": "mathcase-collatz-parity-failure-history-v1"
+}
