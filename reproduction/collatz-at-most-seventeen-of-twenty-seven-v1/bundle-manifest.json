@@ -1,0 +1,16 @@
+{
+  "files": {
+    "ATTEMPT-BINDING.json": "97ea7a38173005c772428520abc514405a241b2bdc5dcfe4382bd2f1127c1121",
+    "audit_frontier.py": "9cb4770a5e8edfd0a623b4cd0feb8f6b7d8fca159272625f5cd6aa4b292655b7",
+    "evidence/arithmetic-audit.json": "dfef48b04e44c3f9e905da33996f01771ddcb9623e1ea8ead77972ca72239a9e",
+    "evidence/replay-receipt.json": "578a64231c4a71daa928b0442fb602f87c9fa8d98bbd4ed5b204ca925a7cc6bd",
+    "README.md": "d1a7077dbd936399411adbb9a6e93b697856232c515f40f6593c51fcf3429d1d",
+    "sources/AtMostSeventeen27.lean": "ad6c363f42522ed3375743a8448db8a6ec7d4299afad3d856a39e8df6fe4cdc4",
+    "sources/CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "sources/ParameterizedDescent.lean": "cd4d610ba73577d149d94a8914318118590ec99a4b4d4fc1e83d7a3fe39f5fd0",
+    "sources/WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "sources/WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "statement.txt": "c085658f252bb4da21b151fd805e7f6e34e55b9c48898b0ff00edfe8c1d4f9b0",
+    "verify_at_most_seventeen_27.py": "8c91d56d026ade90198696733a5bda7427de24b627cb2152686fe596b46a27ad"
+  }
+}

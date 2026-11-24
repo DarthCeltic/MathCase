@@ -1,0 +1,31 @@
+{
+  "schema": "mathcase-one-attempt-binding-v1",
+  "case_id": "collatz-at-most-seventeen-of-twenty-seven-v1",
+  "statement": "For every natural number n at least 26,018, if no more than 17 of the first 27 accelerated Collatz inputs are odd, then the ordinary Collatz iterate after 27+h steps is strictly smaller than n, where h is that exact odd-input count.",
+  "statement_sha256": "73106b65a222dc3e099fa336ee0e898f900d03488a7e82122dbdfef1dca19197",
+  "lean_toolchain": "Lean 4.33.1",
+  "environment": "Lean 4.33.1 core only; runner makes no network requests or provider calls; one process at a time",
+  "module_order": [
+    "WordBound",
+    "WordResidue",
+    "CountWords",
+    "ParameterizedDescent",
+    "AtMostSeventeen27"
+  ],
+  "source_sha256": {
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "ParameterizedDescent.lean": "cd4d610ba73577d149d94a8914318118590ec99a4b4d4fc1e83d7a3fe39f5fd0",
+    "AtMostSeventeen27.lean": "ad6c363f42522ed3375743a8448db8a6ec7d4299afad3d856a39e8df6fe4cdc4"
+  },
+  "audit_script_sha256": "9cb4770a5e8edfd0a623b4cd0feb8f6b7d8fca159272625f5cd6aa4b292655b7",
+  "runner_sha256": "8c91d56d026ade90198696733a5bda7427de24b627cb2152686fe596b46a27ad",
+  "limits": {
+    "per_module_timeout_seconds": 60,
+    "attempts": 1,
+    "provider_calls": 0,
+    "external_cost_usd": 0
+  },
+  "status": "BOUND_BEFORE_RUN"
+}

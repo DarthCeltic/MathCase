@@ -1,0 +1,1 @@
+For every natural number n at least 26,018, if at most 17 of the first 27 accelerated Collatz inputs are odd, the ordinary iterate at step 27+h is smaller than n, where h is the exact odd-input count.

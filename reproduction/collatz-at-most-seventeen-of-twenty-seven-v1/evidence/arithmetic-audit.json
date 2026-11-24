@@ -1,0 +1,123 @@
+{
+  "status": "PASS",
+  "steps": 27,
+  "cutoff_odd_inputs": 17,
+  "parity_word_count_pascal": 126025204,
+  "parity_word_count_combinations": 126025204,
+  "total_residues": 134217728,
+  "fraction": "126025204/134217728",
+  "percentage": 93.89609396457672,
+  "minimum_start_threshold_by_odd_count": [
+    {
+      "h": 0,
+      "minimum_start": 1,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 1,
+      "minimum_start": 1,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 2,
+      "minimum_start": 2,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 3,
+      "minimum_start": 3,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 4,
+      "minimum_start": 5,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 5,
+      "minimum_start": 7,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 6,
+      "minimum_start": 11,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 7,
+      "minimum_start": 17,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 8,
+      "minimum_start": 25,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 9,
+      "minimum_start": 38,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 10,
+      "minimum_start": 57,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 11,
+      "minimum_start": 86,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 12,
+      "minimum_start": 130,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 13,
+      "minimum_start": 196,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 14,
+      "minimum_start": 302,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 15,
+      "minimum_start": 490,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 16,
+      "minimum_start": 966,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    },
+    {
+      "h": 17,
+      "minimum_start": 26018,
+      "holds_at_threshold": true,
+      "fails_at_previous": true
+    }
+  ],
+  "largest_threshold": 26018,
+  "network_or_provider_calls": 0,
+  "external_cost_usd": 0
+}
