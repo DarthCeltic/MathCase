@@ -1,0 +1,213 @@
+{
+  "schema": "mathcase-trufflehog-checksum-delta-exception-v1",
+  "approval_date": "2026-11-23",
+  "approval_scope": "Exactly 114 SHA-256 receipt/manifest matches across seven high-entropy delta-scan events. No broader detector, file, commit, or future finding is excepted.",
+  "scan": {
+    "tool": "TruffleHog Git scanner (local installed Python build)",
+    "mode": "local Git-history delta scan",
+    "base_commit": "a4a0aed7454aa58ee1fbcef036e95730d0ac8b49",
+    "candidate_commit": "737e580820068538df061a4d02e5575efe47dcbf",
+    "exit_code": 1,
+    "event_count": 7,
+    "match_count": 114,
+    "external_network_calls": 0,
+    "raw_values_in_public_record": false,
+    "raw_scan_output_retained_in_owner_local_archive": true
+  },
+  "classification": {
+    "all_matches_are_64_character_hex": true,
+    "all_matches_bind_to_public_checksum_fields": true,
+    "binding_method": "Each detected value was matched to a checksum/manifest field in the triggering commit blob or to the exact ANSI-stripped added/removed line in that commit's diff.",
+    "events": [
+      {
+        "commit": "737e580820068538df061a4d02e5575efe47dcbf",
+        "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/ATTEMPT-BINDING.json",
+        "detector_reason": "High Entropy",
+        "match_count": 8,
+        "all_matches_are_64_character_hex": true,
+        "all_matches_bind_to_public_checksum_fields": true,
+        "binding_scopes": [
+          "event_commit_blob",
+          "event_commit_diff_added_or_removed_line"
+        ],
+        "field_labels": [
+          "audit_script_sha256",
+          "runner_sha256",
+          "source_sha256.AtMostSeventeen27.lean",
+          "source_sha256.CountWords.lean",
+          "source_sha256.ParameterizedDescent.lean",
+          "source_sha256.WordResidue.lean",
+          "supersedes_binding_sha256"
+        ]
+      },
+      {
+        "commit": "737e580820068538df061a4d02e5575efe47dcbf",
+        "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/bundle-manifest.json",
+        "detector_reason": "High Entropy",
+        "match_count": 19,
+        "all_matches_are_64_character_hex": true,
+        "all_matches_bind_to_public_checksum_fields": true,
+        "binding_scopes": [
+          "event_commit_blob",
+          "event_commit_diff_added_or_removed_line"
+        ],
+        "field_labels": [
+          "files.ATTEMPT-BINDING.json",
+          "files.README.md",
+          "files.audit_frontier.py",
+          "files.evidence/arithmetic-audit.json",
+          "files.evidence/replay-receipt.json",
+          "files.sources/AtMostSeventeen27.lean",
+          "files.sources/CountWords.lean",
+          "files.sources/ParameterizedDescent.lean",
+          "files.sources/WordBound.lean",
+          "files.sources/WordResidue.lean",
+          "files.statement.txt",
+          "files.verify_at_most_seventeen_27.py",
+          "manifest.files.ATTEMPT-BINDING.json",
+          "manifest.files.evidence/replay-receipt.json",
+          "manifest.files.sources/AtMostSeventeen27.lean"
+        ]
+      },
+      {
+        "commit": "737e580820068538df061a4d02e5575efe47dcbf",
+        "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/evidence/replay-receipt.json",
+        "detector_reason": "High Entropy",
+        "match_count": 32,
+        "all_matches_are_64_character_hex": true,
+        "all_matches_bind_to_public_checksum_fields": true,
+        "binding_scopes": [
+          "event_commit_blob",
+          "event_commit_diff_added_or_removed_line"
+        ],
+        "field_labels": [
+          "binding_sha256",
+          "lean_binary_sha256",
+          "module_results[0].source_sha256",
+          "module_results[0].stderr_sha256",
+          "module_results[0].stdout_sha256",
+          "module_results[1].source_sha256",
+          "module_results[1].stderr_sha256",
+          "module_results[1].stdout_sha256",
+          "module_results[2].source_sha256",
+          "module_results[2].stderr_sha256",
+          "module_results[2].stdout_sha256",
+          "module_results[3].source_sha256",
+          "module_results[3].stderr_sha256",
+          "module_results[3].stdout_sha256",
+          "module_results[4].olean_sha256",
+          "module_results[4].source_sha256",
+          "module_results[4].stderr_sha256",
+          "module_results[4].stdout_sha256",
+          "receipt source/module SHA-256 for AtMostSeventeen27.lean",
+          "source_sha256",
+          "statement_sha256"
+        ]
+      },
+      {
+        "commit": "febd9f392fbc0309ac367cb10ab339e2ce971bf2",
+        "path": "reproduction/README.md",
+        "detector_reason": "High Entropy",
+        "match_count": 1,
+        "all_matches_are_64_character_hex": true,
+        "all_matches_bind_to_public_checksum_fields": true,
+        "binding_scopes": [
+          "event_commit_blob"
+        ],
+        "field_labels": [
+          "line 7: README SHA-256 inventory"
+        ]
+      },
+      {
+        "commit": "febd9f392fbc0309ac367cb10ab339e2ce971bf2",
+        "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/ATTEMPT-BINDING.json",
+        "detector_reason": "High Entropy",
+        "match_count": 8,
+        "all_matches_are_64_character_hex": true,
+        "all_matches_bind_to_public_checksum_fields": true,
+        "binding_scopes": [
+          "event_commit_blob"
+        ],
+        "field_labels": [
+          "audit_script_sha256",
+          "runner_sha256",
+          "source_sha256.AtMostSeventeen27.lean",
+          "source_sha256.CountWords.lean",
+          "source_sha256.ParameterizedDescent.lean",
+          "source_sha256.WordBound.lean",
+          "source_sha256.WordResidue.lean",
+          "statement_sha256"
+        ]
+      },
+      {
+        "commit": "febd9f392fbc0309ac367cb10ab339e2ce971bf2",
+        "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/bundle-manifest.json",
+        "detector_reason": "High Entropy",
+        "match_count": 12,
+        "all_matches_are_64_character_hex": true,
+        "all_matches_bind_to_public_checksum_fields": true,
+        "binding_scopes": [
+          "event_commit_blob"
+        ],
+        "field_labels": [
+          "files.ATTEMPT-BINDING.json",
+          "files.README.md",
+          "files.audit_frontier.py",
+          "files.evidence/arithmetic-audit.json",
+          "files.evidence/replay-receipt.json",
+          "files.sources/AtMostSeventeen27.lean",
+          "files.sources/CountWords.lean",
+          "files.sources/ParameterizedDescent.lean",
+          "files.sources/WordBound.lean",
+          "files.sources/WordResidue.lean",
+          "files.statement.txt",
+          "files.verify_at_most_seventeen_27.py"
+        ]
+      },
+      {
+        "commit": "febd9f392fbc0309ac367cb10ab339e2ce971bf2",
+        "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/evidence/replay-receipt.json",
+        "detector_reason": "High Entropy",
+        "match_count": 34,
+        "all_matches_are_64_character_hex": true,
+        "all_matches_bind_to_public_checksum_fields": true,
+        "binding_scopes": [
+          "event_commit_blob"
+        ],
+        "field_labels": [
+          "arithmetic_audit_sha256",
+          "binding_sha256",
+          "lean_binary_sha256",
+          "module_results[0].olean_sha256",
+          "module_results[0].source_sha256",
+          "module_results[0].stderr_sha256",
+          "module_results[0].stdout_sha256",
+          "module_results[1].olean_sha256",
+          "module_results[1].source_sha256",
+          "module_results[1].stderr_sha256",
+          "module_results[1].stdout_sha256",
+          "module_results[2].olean_sha256",
+          "module_results[2].source_sha256",
+          "module_results[2].stderr_sha256",
+          "module_results[2].stdout_sha256",
+          "module_results[3].olean_sha256",
+          "module_results[3].source_sha256",
+          "module_results[3].stderr_sha256",
+          "module_results[3].stdout_sha256",
+          "module_results[4].olean_sha256",
+          "module_results[4].source_sha256",
+          "module_results[4].stderr_sha256",
+          "module_results[4].stdout_sha256",
+          "statement_sha256"
+        ]
+      }
+    ]
+  },
+  "policy": {
+    "scanner_changed": false,
+    "history_rewritten": false,
+    "exception_applies_to_future_scans": false,
+    "additional_or_changed_findings_block_release": true,
+    "separate_historical_uri_exception_unchanged": "docs/security/trufflehog-history-exception-2026-11-20.md"
+  }
+}
