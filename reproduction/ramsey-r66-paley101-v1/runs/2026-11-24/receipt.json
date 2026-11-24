@@ -1,0 +1,14 @@
+{
+  "candidate_sha256": "330196fd61554c66c7a3305a8257ea0a33b1b2722da95750819271438289073e",
+  "cost_usd": 0,
+  "elapsed_seconds": 0.10717,
+  "exit_code": 0,
+  "external_calls": 0,
+  "schema": "mathcase-independent-ramsey66-verification-receipt-v1",
+  "status": "PASS_INDEPENDENT_FINITE_CERTIFICATE",
+  "stderr_bytes": 0,
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stdout_bytes": 130,
+  "stdout_sha256": "91e2b93ebe30eecd66f2081d0f5b5d87bdf23584bc1dc04233db7616ac1d67e0",
+  "verifier_sha256": "a80935a27a04e80bbd405a75fbbfe3d3e8452856b307eed0fc256514c566c7b3"
+}
