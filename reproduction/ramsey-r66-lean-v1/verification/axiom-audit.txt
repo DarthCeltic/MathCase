@@ -1,0 +1,3 @@
+'MathCase.RamseyR66V2.ramsey_number_six_six_lower_bound_candidate' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

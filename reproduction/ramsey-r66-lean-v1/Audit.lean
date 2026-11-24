@@ -1,0 +1,2 @@
+import MathCase.R66.Composition
+#print axioms MathCase.RamseyR66V2.ramsey_number_six_six_lower_bound_candidate

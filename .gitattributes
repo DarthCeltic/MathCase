@@ -67,3 +67,7 @@ research/frontier-2026-11/ramsey-four-color/proofs/*.lrat -text -eol -diff
 # Preserve captured Collatz 13-of-21 run bytes used by the output hashes.
 reproduction/collatz-at-most-thirteen-of-twenty-one-v1/runs/**/*.json -text -eol -diff
 reproduction/collatz-at-most-thirteen-of-twenty-one-v1/runs/**/*.txt -text -eol -diff
+# Preserve the captured R66 Lake axiom output bound by its receipt.
+reproduction/ramsey-r66-lean-v1/verification/axiom-audit.txt -text -eol -diff
+# Preserve the path-free R66 finite-check receipt and captured output bytes.
+reproduction/ramsey-r66-paley101-v1/runs/2026-11-24/** -text -eol -diff
