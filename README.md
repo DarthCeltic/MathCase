@@ -10,6 +10,8 @@
 
 Open the [visitor workbench](https://darthceltic.github.io/visitor/) and start with the worked 4-and-2 counterexample. It saves your cases in this browser. Choose **Open Lean editor below** to load the source, plus an exact-target check when you have filled in its proposition and theorem name, into the embedded public Lean editor. Press the editor's own **Run** control to see Lean's output on the same page. A collapsed **Prefer a separate window?** option is available if you want it. The public editor chooses its own Lean/Mathlib version, which may differ from MathCase's pinned Lean 4.33.1 local checker, and it does not create a MathCase receipt. You can also copy the case for your own model, download the Lean file, or export the full case packet.
 
+If the embedded editor says **No connection to Lean** or stays on **Updating…**, the online checker has not checked the proof. **Reconnect from draft** reloads the code currently in the workbench; copy any edits from the embedded editor back first. If the hosted worker still cannot connect, use the pinned local-check instructions below the editor. The online editor follows its own release, so its Lean/Mathlib version can differ from MathCase’s pinned Lean 4.33.1 check.
+
 The stronger local check uses the exported case packet. It asks the pinned Lean compiler to prove the exact proposition from the named declaration, prints the theorem's axiom dependencies, and writes a receipt binding the plain claim, target, source, and generated check. The hashes preserve which bytes were checked; a human still needs to verify that the English claim matches the Lean proposition. To run this locally with Lean 4.33.1 installed, use:
 
 ```sh

@@ -120,8 +120,15 @@
         </div>
         <section id="live-panel" class="live-panel" aria-label="Live Lean editor" hidden>
           <div class="live-head">
-            <p>The editor opens here. Press its Run control to check the code. Copy any edits back into this workbench to save them.</p>
-            <button id="close-lean" type="button" class="secondary">Close editor</button>
+            <div>
+              <p>The editor opens here. Press its Run control to check the code. Copy any edits back into this workbench to save them.</p>
+              <p class="check-disclosure">If it says “No connection to Lean” or stays on “Updating…”, the online checker has not checked your proof. Choose <strong>Reconnect from draft</strong> to reload the code currently in this workbench. Copy any changes from the editor back here first. If it still cannot connect, use the pinned local check below.</p>
+              <p id="live-connection-status" class="feedback" role="status" aria-live="polite"></p>
+            </div>
+            <div class="run-actions">
+              <button id="retry-lean" type="button" class="secondary">Reconnect from draft</button>
+              <button id="close-lean" type="button" class="secondary">Close editor</button>
+            </div>
           </div>
           <div id="live-frame"></div>
         </section>
