@@ -29,10 +29,18 @@ For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second 
 
 ## Bring a theorem of your own
 
-Use the visitor workbench to write a Lean file, save it, and request a compiler check. For a reproducible local check of a trusted Lean source, the public CLI command is:
+Use the visitor workbench to start from the 4-and-2 counterexample, edit the plain claim, then open the technical details to set the exact Lean proposition and theorem name. Export the full case and run the target-bound check:
+
+```sh
+python scripts/run_public_case.py visitor --case-packet path/to/YourCase.mathcase.json
+```
+
+The checker asks the pinned Lean compiler to prove the exact proposition using the named declaration, prints the axiom dependencies, and writes a receipt with source, target, claim, generated-input, stdout, and stderr hashes. A matching hash binds the recorded bytes; it does not prove the English sentence is a faithful description of the Lean target. A person must make that review. The import button compares the receipt to the current workbench draft. This is local visitor evidence, not an M0/M4 dossier decision, signature, novelty claim, or authenticated MathCase run. For sources that import Mathlib, use `--lake-project PATH` with a prepared Lean 4.33.1 project; this command does not install or fetch dependencies.
+
+The backward-compatible source-only route still exists for quick compiler syntax checks:
 
 ```sh
 python3 scripts/check_visitor_case.py path/to/YourTheorem.lean --receipt YourTheorem.receipt.json
 ```
 
-A compiler-accepted file shows that Lean accepted that formal statement and proof. It does not by itself confirm that the statement captures your informal problem, establish novelty, or certify an M0/M4 dossier gate.
+This legacy receipt only says Lean accepted the submitted file. It does not compare a displayed proposition, report axioms, establish novelty, or certify an M0/M4 dossier gate.

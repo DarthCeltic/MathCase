@@ -22,7 +22,7 @@ CATALOG = {
     "ramsey66": "Independently search the 101-vertex graph and its complement for a six-clique.",
     "egyptian": "Reconcile the saved witness campaign and its 100 ranges. Finite arithmetic evidence.",
     "riemann": "Compare four pinned upstream source files. Requires internet. Checks source identity.",
-    "visitor": "Compile your own trusted Lean file and record the compiler result. Requires elan.",
+    "visitor": "Check a trusted Lean file, or bind an exported case to its exact target and report axioms.",
 }
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -53,7 +53,10 @@ def commands(case, args, output):
         "ramsey66": [(R66 + "/verify_paley101_independent.py", R66 + "/graph-certificate.json", "--out-dir", output / "paley")],
         "egyptian": [("scripts/audit_egyptian_fraction_campaign_v9.py", "--output-dir", output / "witness-audit")],
         "riemann": [("reproduction/riemann-source-audit-v1/check_sources.py",)],
-        "visitor": [("scripts/check_visitor_case.py", args.source, "--receipt", output / "compiler.json")],
+        "visitor": [("scripts/check_visitor_case.py",
+                     *( ["--case-packet", args.case_packet] if args.case_packet else [args.source] ),
+                     "--receipt", output / ("target-check.json" if args.case_packet else "compiler.json"),
+                     *( ["--lake-project", args.lake_project] if args.lake_project else [] ))],
     }
     if case == "prime-sqrt2":
         option, value = ("--mathlib", args.mathlib) if args.mathlib else ("--bootstrap", args.bootstrap)
@@ -86,7 +89,7 @@ def classify_step(case, return_code, output):
 
 def main(argv=None, root=ROOT):
     parser = argparse.ArgumentParser(description=__doc__,
-        epilog="Examples: python scripts/run_public_case.py collatz   |   python scripts/run_public_case.py visitor --source MyCase.lean")
+        epilog="Examples: python scripts/run_public_case.py collatz   |   python scripts/run_public_case.py visitor --case-packet MyCase.mathcase.json")
     parser.add_argument("case", nargs="?", choices=["list", *CATALOG], default="list")
     parser.add_argument("--list", action="store_true", help="list the public cases")
     parser.add_argument("--out", type=Path, help="parent for a new run directory (default: system temporary directory)")
@@ -96,6 +99,8 @@ def main(argv=None, root=ROOT):
     parser.add_argument("--stage-timeout", type=int,
                         help="prime-sqrt2: wall-clock limit for each Lean stage (default: 600 seconds)")
     parser.add_argument("--source", type=Path, help="visitor: your own trusted .lean source file")
+    parser.add_argument("--case-packet", type=Path, help="visitor: exported .mathcase.json for exact-target checking")
+    parser.add_argument("--lake-project", type=Path, help="visitor: an already prepared local Lake project; no dependencies are fetched")
     args = parser.parse_args(argv)
     if args.case == "list" or args.list:
         for key, description in CATALOG.items():
@@ -109,11 +114,19 @@ def main(argv=None, root=ROOT):
         parser.error("--stage-timeout must be positive")
     if args.case != "prime-sqrt2" and args.stage_timeout is not None:
         parser.error("--stage-timeout applies only to prime-sqrt2")
-    if args.case == "visitor" and not (args.source and args.source.is_file() and args.source.suffix.lower() == ".lean"):
-        parser.error("visitor requires --source PATH to a trusted .lean file")
-    if args.source and args.case != "visitor":
-        parser.error("--source applies to the visitor case")
-    for name in ("source", "mathlib", "bootstrap"):
+    if args.case == "visitor":
+        if bool(args.source) == bool(args.case_packet):
+            parser.error("visitor requires exactly one of --source PATH or --case-packet PATH")
+        chosen = args.case_packet if args.case_packet else args.source
+        if not chosen.is_file():
+            parser.error("the visitor input file does not exist")
+        if args.source and args.source.suffix.lower() != ".lean":
+            parser.error("--source must name a .lean file")
+        if args.case_packet and args.case_packet.suffix.lower() != ".json":
+            parser.error("--case-packet must name a .json file")
+    elif args.source or args.case_packet or args.lake_project:
+        parser.error("--source, --case-packet, and --lake-project apply only to visitor")
+    for name in ("source", "case_packet", "lake_project", "mathlib", "bootstrap"):
         path = getattr(args, name)
         if path is not None:
             setattr(args, name, path.resolve())

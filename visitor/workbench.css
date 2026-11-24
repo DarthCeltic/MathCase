@@ -50,9 +50,37 @@ h1, h2, h3, p { margin: 0; }
   align-items: start;
   gap: clamp(20px, 3.8vw, 58px);
 }
+.desk-welcome {
+  grid-column: 1 / -1;
+  padding: clamp(18px, 2.5vw, 32px);
+  background: #e3e8de;
+  border-left: 4px solid var(--accent);
+  display: grid;
+  gap: 12px;
+}
+.desk-welcome .eyebrow { color: var(--muted); font-size: .82rem; font-weight: 700; letter-spacing: .04em; text-transform: uppercase; }
+.desk-welcome h1 { max-width: 28ch; font: 600 clamp(1.7rem, 3vw, 2.7rem)/1.12 var(--serif); letter-spacing: -.025em; }
+.desk-welcome > p:not(.eyebrow) { max-width: 78ch; line-height: 1.5; }
+.guide-level-row { display: flex; align-items: center; flex-wrap: wrap; gap: 9px 14px; }
+.guide-level-row label { font-weight: 650; }
+.guide-level-row select, .theorem-name { max-width: 100%; min-height: 40px; padding: 7px 10px; border: 1px solid #82958d; border-radius: 3px; background: var(--paper); color: var(--ink); }
+.guide-copy { min-height: 1.5em; color: #30464a; }
+.guide-copy p { line-height: 1.5; }
+.walkthrough-steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 22px; margin: 2px 0 0; padding: 0; list-style: none; }
+.walkthrough-steps li { padding-top: 9px; border-top: 1px solid #afbbb1; font-size: .92rem; line-height: 1.45; }
+.walkthrough-steps strong { display: block; margin-bottom: 3px; }
+.welcome-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 9px 16px; }
+.welcome-action { display: inline-block; padding: 9px 13px; background: var(--accent); border-radius: 3px; color: white; font-weight: 650; text-decoration: none; }
+.welcome-action:hover { background: #10464d; }
+.guide-boundary { max-width: 86ch; color: var(--muted); font-size: .83rem; line-height: 1.45; }
+.technical-target { margin-top: 12px; border-top: 1px solid var(--line); padding-top: 12px; }
+.technical-target summary { margin-bottom: 11px; }
+.technical-target label { display: block; margin-top: 11px; color: var(--muted); font-size: .84rem; font-weight: 650; }
+.theorem-name { width: 100%; margin-top: 4px; font: .9rem/1.4 var(--mono); }
+.technical-target:focus-visible, .guide-level-row select:focus-visible, .theorem-name:focus-visible { outline: 3px solid #c37732; outline-offset: 3px; }
 .library { padding-top: 3px; min-width: 0; }
 .library-top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
-.library h1, .checking h2 { font: 600 1.48rem/1.2 var(--serif); }
+.library h2, .checking h2 { font: 600 1.48rem/1.2 var(--serif); }
 .new-case, .secondary {
   background: transparent;
   border: 1px solid #93a19c;
@@ -128,6 +156,8 @@ h1, h2, h3, p { margin: 0; }
 .primary { flex-shrink: 0; background: var(--accent); color: white; border: 1px solid var(--accent); border-radius: 4px; padding: 10px 14px; font-weight: 650; font-size: .92rem; }
 .primary:hover { background: #10464d; }
 .run-actions { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
+.editor-popout > summary { color: var(--muted); font-size: .82rem; font-weight: 500; }
+.editor-popout .text-action { display: block; }
 .live-panel { margin-top: 16px; }
 .live-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 8px; }
 .live-head button { flex-shrink: 0; }
@@ -148,6 +178,7 @@ dd { font: .84rem/1.55 var(--mono); overflow-wrap: anywhere; margin: 2px 0 9px; 
 .skip:focus { top: 5px; }
 @media (max-width: 790px) {
   .desk { grid-template-columns: minmax(0, 1fr); gap: 15px; }
+  .walkthrough-steps { grid-template-columns: minmax(0, 1fr); gap: 0; }
   .library { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 14px; }
   .library-top { justify-content: flex-start; gap: 16px; }
   .cases { grid-row: 2; grid-column: 1 / -1; display: flex; margin: 9px 0 0; border: 0; }
@@ -166,6 +197,7 @@ dd { font: .84rem/1.55 var(--mono); overflow-wrap: anywhere; margin: 2px 0 9px; 
   .brand { font-size: 23px; }
   .brand img { width: 32px; height: 32px; }
   .desk { padding: 16px 10px; }
+  .desk-welcome { padding: 16px; }
   .library { padding: 0 4px; }
   .paper, .source, .checking { padding: 15px; }
   .source-head { flex-wrap: wrap; }
