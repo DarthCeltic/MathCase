@@ -14,6 +14,8 @@ A fresh source-to-kernel run compiled the three listed MathCase modules from sou
 
 The pinned local container image used for that receipt is identified by tag and image hash there; its anonymous public pull was not verified. A separate Lake project is provided below for a public-source rebuild. Its saved Lake receipt reports a successful build, but its recorded lock hash does not match the lock now checked in; the historical result is therefore not yet bound to the current Lake inputs. The later post-normalization note reports another successful build but omits the replacement lock hash, so it does not resolve that mismatch. The exact known matches and remaining provenance gap are recorded in [the lock-provenance addendum](verification/lake-lock-provenance-addendum.md). A later cache-normalization failure and its incremental recovery are also preserved in verification/package-cache-normalization-failure.json; they do not replace the earlier full source replay.
 
+The exact r3b shell driver is preserved at [verification/source-to-kernel-r3b.sh](verification/source-to-kernel-r3b.sh), with its run manifest hash, runner hash, and source/output bindings in [the r3b provenance record](verification/source-to-kernel-r3b-provenance.json). The [post-run raw-byte audit](verification/postrun-raw-binding-audit-r1.json) records 49 binding checks with no mismatches. This driver expects the recorded container image and its internal mount layout. It is included for command inspection; it is not the public clean-checkout command, and the image has not been verified anonymously pullable.
+
 ## One-command replay
 
 After installing Python 3 and Lean/Lake 4.33.1, run this from this directory:
