@@ -57,11 +57,22 @@ def main() -> None:
     assert origin['public_candidate_json_sha256']==sha(candidate_raw)
     assert origin['source_candidate_json_sha256']==result['source_candidate_file_sha256']==formula_audit['candidate_file_sha256']
     assert origin['remaining_conflict']==[4,8,12,3] and origin['best_conflict_count']==1
+    exhaustive=json.loads((ROOT/'exhaustive-radius3-result.json').read_text(encoding='utf-8'))
+    exhaustive_source=(ROOT/'exhaustive_radius3.py').read_bytes()
+    assert exhaustive['status']=='NO_REPAIR_WITHIN_RADIUS_3_EXHAUSTIVE' and exhaustive['witness'] is None
+    assert exhaustive['input_candidate_file_sha256']==sha(candidate_raw)
+    assert exhaustive['source_candidate_json_sha256']==origin['source_candidate_json_sha256']
+    assert exhaustive['script_sha256']==sha(exhaustive_source)
+    assert exhaustive['all_constraints']==10712 and exhaustive['distance_limit']==3
+    assert exhaustive['candidate_assignments_by_distance']=={'1':12,'2':9888,'3':4054144}
+    assert exhaustive['candidate_assignments_checked']==4064044
+    assert exhaustive['minimum_conflict_count_by_distance']=={'1':9,'2':8,'3':7}
+    assert exhaustive['delta_formula_sample_checks']==300 and exhaustive['structured_delta_crosschecks']==384
     package_manifest=json.loads((ROOT/'public-manifest.json').read_text(encoding='utf-8'))
     for name, entry in package_manifest['payload_files'].items():
         raw=(ROOT/name).read_bytes()
         assert len(raw)==entry['bytes'] and sha(raw)==entry['sha256'], name
     assert package_manifest['private_solver_receipt_sha256']==result['local_raw_receipt_sha256']
-    print(json.dumps({'status':'PASS','candidate_file_sha256':sha(candidate_raw),'candidate_conflicts':found,'independent_checkers_agree':True,'planted_error_control':'REJECTED','formula_sha256':sha(formula),'formula_exactly_reconstructed':True,'solver_result_bound_and_hashed':True,'package_manifest_matches':True},indent=2))
+    print(json.dumps({'status':'PASS','candidate_file_sha256':sha(candidate_raw),'candidate_conflicts':found,'independent_checkers_agree':True,'planted_error_control':'REJECTED','formula_sha256':sha(formula),'formula_exactly_reconstructed':True,'solver_result_bound_and_hashed':True,'exhaustive_replay_receipt_bound':True,'package_manifest_matches':True},indent=2))
 
 if __name__=='__main__': main()

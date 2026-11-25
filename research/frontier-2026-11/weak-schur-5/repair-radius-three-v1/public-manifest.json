@@ -7,8 +7,8 @@
       "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9"
     },
     "README.md": {
-      "bytes": 2571,
-      "sha256": "b4c46b243ebbdf07cc26565e71e3c796961ffa01648106bed10556de25a68dca"
+      "bytes": 3342,
+      "sha256": "80f5175d7c2595be9f3f6e20761c269592421248be2c3360dda5b161981f4532"
     },
     "candidate.json": {
       "bytes": 1713,
@@ -21,6 +21,14 @@
     "check-at-most-three.smt2": {
       "bytes": 2957313,
       "sha256": "13e4eb91d093f68a853e81717bf7ccae686ca4366fdd6f7db880f194170e234c"
+    },
+    "exhaustive-radius3-result.json": {
+      "bytes": 1742,
+      "sha256": "cd2986390d73aca9f322dcb15ab34507cfa7edd804da8df75fa1b2086045d985"
+    },
+    "exhaustive_radius3.py": {
+      "bytes": 7842,
+      "sha256": "8bf7e8cc54d5209220bcf71d37965bf70039b9fd9a8ae7a2abd078bb5a7de229"
     },
     "local-formula-audit.json": {
       "bytes": 840,
@@ -43,8 +51,8 @@
       "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
     },
     "verify_public_artifact.py": {
-      "bytes": 3474,
-      "sha256": "f668aecbf23513c52e0d0a7b4f19fba6503f555d32de63ed5ce7ff2a9523f225"
+      "bytes": 4439,
+      "sha256": "b5eecfc4effb8e9e50f6e2a5aa14cb3fa9de1018dc93309778d12cc55a4cfaa3"
     }
   }
 }
