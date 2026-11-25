@@ -23,5 +23,7 @@
     "one saved assignment only",
     "solver report, no independently checked proof certificate",
     "no conclusion about existence of any valid 208-coloring"
-  ]
+  ],
+  "source_formula_audit_sha256": "91d4369a825108518c1db0ee5cbe6b2db11fcf665e1133763738346d02e67a90",
+  "public_formula_audit_sha256": "e4d72e503e94e96ce379a561c452dcc1eecf9540300988177a71ee5c7732d3c0"
 }

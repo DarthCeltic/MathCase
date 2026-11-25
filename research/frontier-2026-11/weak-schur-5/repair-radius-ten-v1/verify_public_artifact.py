@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parent
 N, COLORS, LIMIT, SEED = 208, 5, 10, 20261125
 EXPECTED_SEED_SHA256 = "b849284d7b1b19774f835bcd1e2baf8683b2606b9d5a14fb93dfbf96324304cf"
 EXPECTED_QUERY_SHA256 = "fa955a5c0364d45f768b1808fe751e42df6ca226e22bb2fdbae7f5a15d68c692"
+EXPECTED_FORMULA_AUDIT_RAW_SHA256 = "91d4369a825108518c1db0ee5cbe6b2db11fcf665e1133763738346d02e67a90"
 EXPECTED_VIOLATIONS = [[1, 2, 3, 3], [1, 3, 4, 3], [5, 7, 12, 5]]
 
 
@@ -63,13 +64,11 @@ def verify_manifest():
     files = manifest.get("files")
     if not isinstance(files, dict) or not files:
         raise SystemExit("public manifest file list missing")
-    actual = {}
     for rel, expected in files.items():
         path = (ROOT / rel).resolve()
         if ROOT.resolve() not in path.parents or not path.is_file():
             raise SystemExit(f"manifest path invalid: {rel}")
-        actual[rel] = sha(path.read_bytes())
-        if actual[rel] != expected:
+        if sha(path.read_bytes()) != expected:
             raise SystemExit(f"package file hash mismatch: {rel}")
     present = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*")
                if p.is_file() and p.name != "public-manifest.json" and "__pycache__" not in p.parts}
@@ -95,18 +94,24 @@ def main():
     if len(tri) != 10712 or bad != EXPECTED_VIOLATIONS:
         raise SystemExit("seed constraints or recorded violations mismatch")
     query = (ROOT / "check-at-most-ten.smt2").read_bytes()
-    regenerated = expected_query(colors)
-    if query != regenerated or sha(query) != EXPECTED_QUERY_SHA256:
+    if query != expected_query(colors) or sha(query) != EXPECTED_QUERY_SHA256:
         raise SystemExit("SMT query differs from the independently reconstructed query")
     model_query = (ROOT / "extract-model-at-most-ten.smt2").read_bytes()
     if model_query != expected_query(colors, model=True):
         raise SystemExit("SAT-only model query differs from reconstruction")
+    formula_audit_raw = (ROOT / "formula-audit.raw.bin").read_bytes()
     formula_audit = json.loads((ROOT / "formula-audit.json").read_text(encoding="utf-8"))
+    formula_audit_raw_json = json.loads(formula_audit_raw.decode("utf-8"))
+    public_run = json.loads((ROOT / "public-run.json").read_text(encoding="utf-8"))
     if (formula_audit.get("result") != "PASS" or
         formula_audit.get("formula_sha256") != sha(query) or
         formula_audit.get("model_formula_sha256") != sha(model_query) or
-        formula_audit.get("tamper_control") != "REJECTED"):
-        raise SystemExit("formula audit does not bind the included queries")
+        formula_audit.get("tamper_control") != "REJECTED" or
+        formula_audit_raw_json != formula_audit or
+        sha(formula_audit_raw) != EXPECTED_FORMULA_AUDIT_RAW_SHA256 or
+        sha((ROOT / "formula-audit.json").read_bytes()) != public_run.get("public_formula_audit_sha256") or
+        public_run.get("source_formula_audit_sha256") != EXPECTED_FORMULA_AUDIT_RAW_SHA256):
+        raise SystemExit("formula audit does not bind the included queries and source bytes")
     assertions = sum(line.startswith(b"(assert ") for line in query.splitlines())
     if assertions != 53769 or query.count(b"(check-sat)") != 1:
         raise SystemExit("query shape mismatch")
@@ -118,13 +123,12 @@ def main():
     changed = query.replace(b") 10))\n(check-sat)", b") 9))\n(check-sat)", 1)
     if changed == query or sha(changed) == EXPECTED_QUERY_SHA256:
         raise SystemExit("query corruption control was not detected")
-    original = json.loads((ROOT / "public-run.json").read_text(encoding="utf-8"))
     original_out = (ROOT / "solver-stdout.txt").read_bytes()
     original_err = (ROOT / "solver-stderr.txt").read_bytes()
-    if (original.get("status") != "UNSAT_REPORTED" or original.get("query_sha256") != sha(query) or
-        original.get("seed_coloring_sha256") != seed_hash or original.get("stdout_sha256") != sha(original_out) or
-        original.get("stderr_sha256") != sha(original_err) or original_out.strip() != b"unsat" or
-        original.get("proof_certificate_emitted") is not False):
+    if (public_run.get("status") != "UNSAT_REPORTED" or public_run.get("query_sha256") != sha(query) or
+        public_run.get("seed_coloring_sha256") != seed_hash or public_run.get("stdout_sha256") != sha(original_out) or
+        public_run.get("stderr_sha256") != sha(original_err) or original_out.strip() != b"unsat" or
+        public_run.get("proof_certificate_emitted") is not False):
         raise SystemExit("original public run summary does not bind the stored outputs")
     replay = json.loads((ROOT / "package-replay" / "run.json").read_text(encoding="utf-8"))
     replay_out = (ROOT / "package-replay" / "solver.stdout.bin").read_bytes()
