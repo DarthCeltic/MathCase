@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "package": "matrix-exponent-2x2-v1",
+  "files": {
+    "attempt-02-summary.json": {
+      "bytes": 1212,
+      "sha256": "AB5B33538C88D4661F3D143CA0B8E8B905BC32A454D8467DA5BC7897B0BE19E7"
+    },
+    "check_matrix_example.py": {
+      "bytes": 2976,
+      "sha256": "22B5A28D42046028E1D0E2D9EE6F5D2BCB057C5DC64E9C29C2A8D30A2F0CFFA0"
+    },
+    "README.md": {
+      "bytes": 3450,
+      "sha256": "A255B1F196EF0DC77F3C53799423F859075FB83D4F3F6A769639368325027607"
+    },
+    "source-audit.json": {
+      "bytes": 2066,
+      "sha256": "382B2C61634C586FB6E2AED55AD12AFCCC6B76D618A7317BDCD7E5BA7FA4A178"
+    },
+    "test_matrix_example.py": {
+      "bytes": 1846,
+      "sha256": "3044DC3A4A76926E672B8F0D3C2B6F9423556D65907D69857434F938F04CB0AA"
+    },
+    "verify_package.py": {
+      "bytes": 1225,
+      "sha256": "6E727E2015DC871984F3207BC90873FEA1AA968D32BE19CB9F01C057C16BABD9"
+    },
+    "worked-example.json": {
+      "bytes": 867,
+      "sha256": "4CF1736708899B10E5403EF68B12BD6A0F794778856577CC527F58C4C16541A8"
+    }
+  }
+}
