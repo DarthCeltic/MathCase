@@ -1,0 +1,22 @@
+{
+  "schema": "mathcase-ws5-radius3-formula-audit-v1",
+  "status": "PASS",
+  "candidate_file_sha256": "58dba5cb6f2ef0d3ba4db46c6caf2124109a2f3ea188fd1295233590400d2810",
+  "search_result_sha256": "72bc41ac94b8517d6d0d925fa2e58d417d05d3f6224f9720985e4bedc79c90c9",
+  "candidate_violations": [
+    [
+      4,
+      8,
+      12,
+      3
+    ]
+  ],
+  "distinct_addend_triples": 10712,
+  "one_hot_constraints": 208,
+  "per_color_forbidden_triple_constraints": 53560,
+  "distance_constraint": 3,
+  "total_assertions": 53769,
+  "check_formula_sha256": "13e4eb91d093f68a853e81717bf7ccae686ca4366fdd6f7db880f194170e234c",
+  "extract_formula_sha256": "353b01f97076139255a571458e6cf2497dc9a7b4c8b3c11b33de5ca0e715a09a",
+  "note": "Encoding matches the exact saved candidate and all distinct-addend constraints; formula audit is not a solver proof."
+}

@@ -1,0 +1,50 @@
+{
+  "schema": "mathcase-public-payload-manifest-v1",
+  "private_solver_receipt_sha256": "663f452c2e3cb6bfdc8b48413b516287578ee195365d3c9fc406eb5a0a077c4f",
+  "payload_files": {
+    ".gitattributes": {
+      "bytes": 14,
+      "sha256": "a79691a93b46e49ce460c26ef22afcc03d6eca1e63bf2edbc20e96159510f6c9"
+    },
+    "README.md": {
+      "bytes": 2571,
+      "sha256": "b4c46b243ebbdf07cc26565e71e3c796961ffa01648106bed10556de25a68dca"
+    },
+    "candidate.json": {
+      "bytes": 1713,
+      "sha256": "6785bedcdd3e37ce2733f977d3fe19674bbbeb5ade0b6d80822884cd73ed5b1e"
+    },
+    "candidate-origin.json": {
+      "bytes": 910,
+      "sha256": "8ed2a8727c2c768bda1cc1ac723ca5dcea8cd3c4dd92a30f8251e26763311c98"
+    },
+    "check-at-most-three.smt2": {
+      "bytes": 2957313,
+      "sha256": "13e4eb91d093f68a853e81717bf7ccae686ca4366fdd6f7db880f194170e234c"
+    },
+    "local-formula-audit.json": {
+      "bytes": 840,
+      "sha256": "56e4b3c1c78380dc9f61e0fc69b63e68f8d503b1108e9244a4493c531b921486"
+    },
+    "prepare_query.py": {
+      "bytes": 2189,
+      "sha256": "bdb1446b17ce0d6375a35a1eb2eba195852f72ac157157ad4ecb146c343e788d"
+    },
+    "solver-result.json": {
+      "bytes": 1540,
+      "sha256": "97825f28d9781460136fde905d72a0b675144ef009f41c01b53b35d55a122d90"
+    },
+    "solver-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "solver-stdout.txt": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "verify_public_artifact.py": {
+      "bytes": 3474,
+      "sha256": "f668aecbf23513c52e0d0a7b4f19fba6503f555d32de63ed5ce7ff2a9523f225"
+    }
+  }
+}
