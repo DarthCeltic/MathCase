@@ -38,6 +38,7 @@ proofs/collatz/remaining-residues/LongPath27.exit-code.txt -text -eol whitespace
 # Keep the published reproduction evidence byte-for-byte, including captured CRLF receipts.
 reproduction/m15-m20-r2/** -text -eol -diff
 reproduction/m20-source-replay-2026-11-18/** -text -eol -diff
+reproduction/ramsey-r66-lean-v1/verification/axiom-audit.txt -text -eol -diff
 
 
 

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/openai/math",
+  "upstream_commit": "3344da59991ed94f9ba711217b29c1d760badfa6",
+  "target": {
+    "challenge_module": "ComparatorChallenges.MatrixExponent",
+    "solution_module": "OAI.LinearAlgebra.SpectralBooks.ExactExponent",
+    "theorems": [
+      "square_exponent",
+      "dual_exponent",
+      "rectangular_exponent"
+    ]
+  },
+  "toolchain": "Lean 4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "files": [
+    {
+      "path": "lean/ComparatorChallenges/MatrixExponent.json",
+      "sha256": "BF7BD1E681B75F1664D93EAAEEFA583024B0133F436F59C4A179D84B1B6A3699",
+      "git_blob_sha1": "49267c30c0d7acad2931cb79a4521f790caa10e8"
+    },
+    {
+      "path": "lean/ComparatorChallenges/MatrixExponent.lean",
+      "sha256": "A56CD2267E261903BB62E18EAA4F4663C81DFEA83510F20EB19617A42E640534",
+      "git_blob_sha1": "3dad39587df3a08b3904bf258eae27b863553e4b"
+    },
+    {
+      "path": "lean/OAI/LinearAlgebra/SpectralBooks/ExactExponent.lean",
+      "sha256": "A0E2433AE4939E469E866C683499EA8B6E370FFD892A145C24120D2933A6C962",
+      "git_blob_sha1": "c0a1bc6519c86e87e9672b3cdf7b8e766acd3a37"
+    },
+    {
+      "path": "lean/lean-toolchain",
+      "sha256": "D5EDBA4E4B8FAAD9C1BAEADB265716D20D03BE4D1A2647DC5E35B0C0325BEA7B",
+      "git_blob_sha1": "ba8ebf2dbaf6a668cd2a0e086186d6d569b69ff5"
+    },
+    {
+      "path": "lean/lake-manifest.json",
+      "sha256": "B0848E3682E0E50761A717D4EA92A40321DB8D695A22D3790B3E8B8B13814168",
+      "git_blob_sha1": "96a8aea368379c8c445bd622c6b98fde7659f45e"
+    }
+  ],
+  "audit_scope": "Raw source hashes and identifiers recorded from the pinned repository snapshot. This receipt does not contain upstream Lean source, lock contents, or proof text and is not a proof replay.",
+  "outcome": "PASS: selected upstream file identifiers and raw hashes were recorded for the pinned commit.",
+  "result_scope": "This supports file identity only. It does not validate the mathematical claims or reproduce a Lean or Comparator proof."
+}

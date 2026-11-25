@@ -1,0 +1,21 @@
+{
+  "schema": "mathcase-r66-packaging-failure-v1",
+  "run_id": "R66-PUBLIC-PACKAGE-NORMALIZATION-2026-11-24",
+  "observed_on": "2026-11-24",
+  "status": "FAILED_PACKAGING_PROCESS",
+  "stage": "incremental Lake package compile after an overbroad line-ending normalization entered ignored generated dependency files",
+  "command": "lake build -Kjobs=1 MathCase",
+  "process_exit_code": 3221225477,
+  "windows_status_hex": "0xC0000005",
+  "theorem_verdict": null,
+  "theorem_sources_changed": false,
+  "proof_source_sha256": {
+    "MathCase/R66/Foundation.lean": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+    "MathCase/R66/Rows/Representative.lean": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+    "MathCase/R66/Composition.lean": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b"
+  },
+  "diagnosis": "A line-ending normalization script entered ignored Lake dependency clones and changed generated dependency working trees; the following Lean process terminated with an access violation while loading the package root. This was a packaging/dependency-cache failure, not a failed theorem proof.",
+  "recovery": "The affected generated Qq clone was isolated; Lake fetched the lock-pinned Qq revision 92c15be17b7caf78c2ad767ec40f89052d908d81. A subsequent bounded one-job incremental Lake build and axiom audit passed; see lake-replay-receipt.json post_cache_recovery_replay.",
+  "cost_usd": 0,
+  "model_provider_or_search_calls": 0
+}

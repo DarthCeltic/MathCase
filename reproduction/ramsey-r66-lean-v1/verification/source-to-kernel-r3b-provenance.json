@@ -1,0 +1,99 @@
+{
+  "schema": "mathcase-r66-source-to-kernel-r3b-provenance-v1",
+  "run_id": "R66-SOURCE-TO-KERNEL-R3B",
+  "status": "PASS",
+  "scope": "Known R(6,6) lower-bound witness only; not a new bound or exact Ramsey value.",
+  "target": "∃ G : SimpleGraph (Fin 101), G.CliqueFree 6 ∧ (Gᶜ).CliqueFree 6",
+  "target_plain": "There exists a simple graph on 101 labeled vertices with no clique of six vertices and no independent set of six vertices.",
+  "m0_packet_sha256": "6e1382f9ad7123aad2c25f4d10e4de7cf168a296029db6144c96b64a2044fae2",
+  "bindings": {
+    "public_source_manifest": {
+      "path": "../source-manifest.json",
+      "sha256": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e"
+    },
+    "public_source_replay_receipt": {
+      "path": "../source-replay-receipt.json",
+      "sha256": "fdc8ddc05377c4313d1eacab5bb343f6d44c089a55989f737541a5c2b00db7b5"
+    },
+    "run_manifest_sha256": "0859b48e9101d4596c9bd22010cea7409952283fc59577e1cb4d5d59de95690a",
+    "runner": {
+      "path": "source-to-kernel-r3b.sh",
+      "sha256": "f301cccc6f3a32011223d6dc2569275d0d8fe5a15423248b443012f23b9b5462"
+    },
+    "postrun_raw_binding_audit": {
+      "path": "postrun-raw-binding-audit-r1.json",
+      "sha256": "87c46f06d42af44b3395918221d049c75fa9fc546fa57d10195ad3c1c57ff67e",
+      "checks_passed": 49,
+      "checks_failed": 0,
+      "checked_at_local": "2026-11-25T14:46:42-05:00"
+    }
+  },
+  "runtime": {
+    "lean": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "container_image_tag": "mathcase/lean-snapshot:8f587bf452930d3f-20261028T133835.253176900Z",
+    "container_image_id": "sha256:85fd103e179ef59ee41e8b0b8ac4216ca5034d423bf2fff127254c410ec119cd",
+    "anonymous_public_pull_verified": false,
+    "network": "none",
+    "cpu_limit": 1,
+    "memory_limit_bytes": 6442450944,
+    "global_wall_limit_seconds": 900,
+    "per_module_wall_limit_seconds": 420,
+    "docker_container_id": "916a341431c7c6a3537abfc352909ed67b03566b37304e86315fd30f8a2b2e05",
+    "docker_created_at_utc": "2026-11-24T18:36:10.640499078Z",
+    "docker_started_at_utc": "2026-11-24T18:36:12.159466885Z",
+    "docker_finished_at_utc": "2026-11-24T18:38:18.847811737Z",
+    "docker_elapsed_ms": 126688,
+    "docker_exit_code": 0,
+    "docker_oom_killed": false,
+    "mathcase_olean_reuse": false
+  },
+  "compiled_dependency": {
+    "module": "Mathlib.Algebra.Field.ZMod",
+    "source_sha256": "914009b69014a30a109fe7e443b370abbad60ce9c520b3f7f713379c8b383557",
+    "olean_sha256": "938c6f7059ce287a2b2c97015a0bec40760213bd7e56aba66ced6f1ad20ad667",
+    "exit_code": 0,
+    "elapsed_ms": 1692
+  },
+  "modules": [
+    {
+      "module": "MathCase.R66.Foundation",
+      "source_sha256": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "olean_sha256": "342fca197ad48fde32bb5c90694004fa75a1781513ae7756775e2bd5db255fe6",
+      "exit_code": 0,
+      "elapsed_ms": 20965
+    },
+    {
+      "module": "MathCase.R66.Rows.Representative",
+      "source_sha256": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "olean_sha256": "b12d10ab49070b4b2d425d26848e20959020979781a4b7127880e91370b0a4c2",
+      "exit_code": 0,
+      "elapsed_ms": 97899
+    },
+    {
+      "module": "MathCase.R66.Composition",
+      "source_sha256": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "olean_sha256": "7c8af8612ff54ca63a4bc127ed016e873708d6541f900f77cfc0342562279c94",
+      "exit_code": 0,
+      "elapsed_ms": 5218
+    }
+  ],
+  "axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "sorryAx": false,
+  "source_audit": {
+    "sorry": false,
+    "admit": false,
+    "native_decide": false
+  },
+  "provenance_note": "A read-only post-run audit matched the recorded source and output hashes to the current public Git blobs and preserved local outputs. A separate read-only container probe confirmed the pinned Mathlib commit, ZMod source hash, and Lean version without compiling Lean.",
+  "limits": [
+    "This formalizes the known Paley(101) witness and supports R(6,6) ≥ 102.",
+    "It does not establish an exact Ramsey number, a new bound, or novelty.",
+    "The custom image was not verified anonymously pullable; the full public Lake rebuild was not independently run from an anonymous checkout.",
+    "The historical Lake receipt still has a separate lock-provenance mismatch.",
+    "No independent human review, M4 promotion, signature, or merge to main is claimed."
+  ],
+  "external_provider_calls": 0,
+  "cost_usd": 0
+}

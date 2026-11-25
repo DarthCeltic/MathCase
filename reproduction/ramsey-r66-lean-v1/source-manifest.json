@@ -1,0 +1,32 @@
+{
+  "schema": "mathcase-r66-source-manifest-v1",
+  "lean_toolchain": {
+    "path": "lean-toolchain",
+    "sha256": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "bytes": 25
+  },
+  "mathcase_sources": [
+    {
+      "path": "MathCase/R66/Foundation.lean",
+      "sha256": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "bytes": 11672
+    },
+    {
+      "path": "MathCase/R66/Rows/Representative.lean",
+      "sha256": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "bytes": 226
+    },
+    {
+      "path": "MathCase/R66/Composition.lean",
+      "sha256": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "bytes": 5056
+    }
+  ],
+  "pinned_mathlib_dependency_compiled_in_recorded_run": {
+    "module": "Mathlib.Algebra.Field.ZMod",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "source_sha256": "914009b69014a30a109fe7e443b370abbad60ce9c520b3f7f713379c8b383557",
+    "olean_sha256": "938c6f7059ce287a2b2c97015a0bec40760213bd7e56aba66ced6f1ad20ad667",
+    "reason": "Its source was present at the pinned Mathlib commit, but its OLEAN was absent from the local image cache; it was compiled from source during the recorded run."
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schema": "mathcase-r66-lake-replay-receipt-v1",
+  "run_id": "R66-LAKE-PUBLIC-SOURCE-2026-11-24",
+  "status": "PASS",
+  "target": "∃ G : SimpleGraph (Fin 101), G.CliqueFree 6 ∧ (Gᶜ).CliqueFree 6",
+  "target_plain": "There exists a simple graph on 101 labeled vertices with no clique of six vertices and no independent set of six vertices.",
+  "m0_packet_sha256": "6e1382f9ad7123aad2c25f4d10e4de7cf168a296029db6144c96b64a2044fae2",
+  "checkout_scope": "Fresh standalone Lake package directory built from the public MathCase source checkout; not an anonymous clone of the entire repository.",
+  "toolchain": {
+    "lean": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "lake": "5.0.0-src+819816b",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "lake_manifest_sha256": "2a66a99e178e711c07f724bd787aa4cead8b2ae674296b5987cf0906ff3d99e9",
+    "lakefile_sha256": "4feaaa441879090046cf724545ad6e6424b76496ae1d10e95f690a5de59c912c"
+  },
+  "setup": {
+    "public_mathlib_dependencies_fetched": true,
+    "mathlib_cache_files_decompressed": 8689,
+    "mathlib_cache_missing_files": 0,
+    "public_provider_or_model_calls": 0,
+    "paid_spend_usd": 0
+  },
+  "build": {
+    "command": "lake build -Kjobs=1 MathCase",
+    "exit_code": 0,
+    "reported_jobs": 1171,
+    "MathCase_modules_built_from_source": 3,
+    "MathCase_olean_reuse": false,
+    "host": "Windows x86_64",
+    "memory_limit_bytes": null,
+    "observed_largest_lean_process_working_set_bytes": 3820744704,
+    "memory_sample_note": "Periodic process sample only; no OS-enforced memory cap and not a peak measurement.",
+    "modules": [
+      {
+        "module": "MathCase.R66.Foundation",
+        "source": {
+          "path": "MathCase/R66/Foundation.lean",
+          "bytes": 11672,
+          "sha256": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a"
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 41,
+        "olean": {
+          "path": ".lake/build/lib/lean/MathCase/R66/Foundation.olean",
+          "bytes": 371760,
+          "sha256": "1f66ed0398a6a46c50983a979e759c77be11ee6970e13dc86e633faa9b271473"
+        }
+      },
+      {
+        "module": "MathCase.R66.Rows.Representative",
+        "source": {
+          "path": "MathCase/R66/Rows/Representative.lean",
+          "bytes": 226,
+          "sha256": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733"
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 95,
+        "olean": {
+          "path": ".lake/build/lib/lean/MathCase/R66/Rows/Representative.olean",
+          "bytes": 11528,
+          "sha256": "4be20cf30984aea655ea25bfa3a4332b724ae1c2f141db17e39024d4bbfd5c1a"
+        }
+      },
+      {
+        "module": "MathCase.R66.Composition",
+        "source": {
+          "path": "MathCase/R66/Composition.lean",
+          "bytes": 5056,
+          "sha256": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b"
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 11,
+        "olean": {
+          "path": ".lake/build/lib/lean/MathCase/R66/Composition.olean",
+          "bytes": 155520,
+          "sha256": "9fadeef3c12b53359284470f1d3a8558220b12389d8e3cbe58602f805b80bdc5"
+        },
+        "axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "sorryAx": false
+      },
+      {
+        "module": "MathCase",
+        "source": {
+          "path": "MathCase.lean",
+          "bytes": 32,
+          "sha256": "1f94da3ecbd6c573282b2097ed1f85c3cd6cdb6ed42b433a7a82ea7249f6dda3"
+        },
+        "exit_code": 0,
+        "elapsed_seconds": 11,
+        "olean": {
+          "path": ".lake/build/lib/lean/MathCase.olean",
+          "bytes": 1656,
+          "sha256": "7d42ba30b492746aca557eb0878b2c7e74ed9d5b28cde8800533d1b2ff48c525"
+        }
+      }
+    ]
+  },
+  "axiom_audit": {
+    "command": "lake env lean Audit.lean",
+    "exit_code": 0,
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorryAx": false,
+    "output": {
+      "path": "verification/axiom-audit.txt",
+      "bytes": 131,
+      "sha256": "da65d5ce131035e869af692697a2d5fd84133424eace77664d93ef359758766a"
+    }
+  },
+  "limitations": [
+    "This witnesses the established lower bound R(6,6) ≥ 102 using a known Paley(101) graph.",
+    "It does not determine the exact Ramsey number and is not a new bound or novelty claim.",
+    "The full public-source build was not run from an anonymous clean checkout.",
+    "No M4 promotion or signing occurred."
+  ],
+  "audit_source": {
+    "path": "Audit.lean",
+    "bytes": 111,
+    "sha256": "0e2a380ae8d0a565605e1165131be33463832f1de4f64491c13226ef27b4a0fd"
+  },
+  "post_normalization_replay": {
+    "command": "lake build -Kjobs=1 MathCase",
+    "exit_code": 0,
+    "reported_jobs": 1171,
+    "audit_command": "lake env lean Audit.lean",
+    "audit_exit_code": 0,
+    "audit_output_sha256": "da65d5ce131035e869af692697a2d5fd84133424eace77664d93ef359758766a",
+    "note": "Repeated after LF normalization of the public package metadata; the final theorem audit matched the recorded axiom list."
+  },
+  "post_cache_recovery_replay": {
+    "status": "PASS_INCREMENTAL_RECOVERY_BUILD",
+    "command": "lake build -Kjobs=1 MathCase; lake env lean Audit.lean",
+    "exit_code": 0,
+    "reported_jobs": 1171,
+    "elapsed_seconds": 23.173,
+    "incremental": true,
+    "source_recompile_scope": "Lake rebuilt the recovered Qq dependency and replayed MathCase tasks; the three theorem modules were already built by the earlier full source replay and were not recompiled in this incremental recovery run.",
+    "recovered_dependency": {
+      "name": "Qq",
+      "locked_revision": "92c15be17b7caf78c2ad767ec40f89052d908d81",
+      "working_tree_clean": true
+    },
+    "theorem_source_sha256": {
+      "MathCase/R66/Foundation.lean": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "MathCase/R66/Rows/Representative.lean": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "MathCase/R66/Composition.lean": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b"
+    },
+    "olean_sha256": {
+      "MathCase/R66/Foundation.olean": "1f66ed0398a6a46c50983a979e759c77be11ee6970e13dc86e633faa9b271473",
+      "MathCase/R66/Rows/Representative.olean": "4be20cf30984aea655ea25bfa3a4332b724ae1c2f141db17e39024d4bbfd5c1a",
+      "MathCase/R66/Composition.olean": "9fadeef3c12b53359284470f1d3a8558220b12389d8e3cbe58602f805b80bdc5",
+      "MathCase.olean": "7d42ba30b492746aca557eb0878b2c7e74ed9d5b28cde8800533d1b2ff48c525"
+    },
+    "axiom_audit": {
+      "exit_code": 0,
+      "axioms": [
+        "propext",
+        "Classical.choice",
+        "Quot.sound"
+      ],
+      "sorryAx": false,
+      "output_sha256": "da65d5ce131035e869af692697a2d5fd84133424eace77664d93ef359758766a"
+    },
+    "claim_limit": "This is a dependency-recovery and incremental replay after the recorded packaging failure. It supplements, and does not replace, the earlier full source build receipt."
+  }
+}
