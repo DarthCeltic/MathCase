@@ -12,8 +12,25 @@ In plain words, there is a simple graph on 101 labeled vertices with no clique o
 
 A fresh source-to-kernel run compiled the three listed MathCase modules from source, with no reuse of MathCase OLEAN files, under Lean 4.33.1 and Mathlib commit 0df444a360eaa60ab8c11dca51a86af692955474. The container had networking disabled, one CPU, a 6 GiB memory limit, and 420-second per-module limits. All modules exited 0. The final theorem reports axioms [propext, Classical.choice, Quot.sound]; no sorryAx was reported. The exact source, output OLEAN, and environment hashes are in source-replay-receipt.json.
 
-The pinned local container image used for that receipt is identified by tag and image hash there; its anonymous public pull was not verified. A separate Lake project is provided below so readers can rebuild from the public Lean and Mathlib sources. That route also passed from a fresh standalone package directory in the current public MathCase checkout: a one-job Lake build exited 0, followed by an axiom audit matching the pinned-container result. It used the public Mathlib cache; it was not a whole-repository anonymous clone. See lake-replay-receipt.json and verification/lake-build-summary.md. A later cache-normalization failure and its incremental recovery are also preserved in verification/package-cache-normalization-failure.json; they do not replace the earlier full source replay.
+The pinned local container image used for that receipt is identified by tag and image hash there; its anonymous public pull was not verified. A separate Lake project is provided below for a public-source rebuild. Its saved Lake receipt reports a successful build, but its recorded lock hash does not match the lock now checked in; the historical result is therefore not yet bound to the current Lake inputs. The later post-normalization note reports another successful build but omits the replacement lock hash, so it does not resolve that mismatch. The exact known matches and remaining provenance gap are recorded in [the lock-provenance addendum](verification/lake-lock-provenance-addendum.md). A later cache-normalization failure and its incremental recovery are also preserved in verification/package-cache-normalization-failure.json; they do not replace the earlier full source replay.
 
+## One-command replay
+
+After installing Python 3 and Lean/Lake 4.33.1, run this from this directory:
+
+    python replay_r66.py
+
+The wrapper checks the pinned toolchain, source-manifest and Lake lock; before any Lake command it refuses to proceed if any pinned MathCase `.olean` already exists under `.lake/build/lib/lean`. It does not delete or reuse those outputs. On a clean checkout it fetches the pinned Lake dependencies, obtains the public Mathlib cache, builds the three MathCase modules with one Lake job, runs the axiom audit, and writes a unique receipt under `verification/`. Mathlib cache OLEANs are allowed; the guard targets only MathCase outputs listed by the source manifest. The exact successful audit text is:
+
+    'MathCase.RamseyR66V2.ramsey_number_six_six_lower_bound_candidate' depends on axioms: [propext,
+     Classical.choice,
+     Quot.sound]
+
+The `--verify-inputs` option checks the current package files, source manifest, lock contents, and saved audit text without invoking Lean; it is an integrity preflight, not a proof replay. `--check-clean-build` also verifies that no pinned MathCase OLEANs pre-exist, without invoking Lean or Lake. Focused guard checks run with `python -m unittest test_replay_r66_cleanliness.py`. `--verify-recorded` additionally requires the historic Lake receipt to bind the current lock and currently fails with `HISTORICAL_LOCK_MISMATCH`. The full wrapper has not yet been run from an anonymous clean checkout; a run from an author-side fresh clone and an independent human review are separate milestones.
+
+## Current receipt-binding caveat
+
+The current checked-in `lake-manifest.json` has SHA-256 `958b34400c85f0e6e9e1a3ec9c2c67e3df25fcfed9195c53d50302af588f3c0f`; the older `lake-replay-receipt.json` records `2a66a99e178e711c07f724bd787aa4cead8b2ae674296b5987cf0906ff3d99e9`. The current Git blob and working file are byte-identical, contain LF line endings, and are governed by `.gitattributes` with `eol=lf`. A simple CRLF conversion hashes to `2fa4d16f4151a40badebe2bb2e5388f60f54301984c824578b928c27cb345482`, not the historical value. Both manifests identify Mathlib commit `0df444a360eaa60ab8c11dca51a86af692955474`, and all nine current dependency revisions match their installed Git heads. The original historical manifest bytes were not found in the saved package/run trees. The available evidence makes pre-normalization metadata a plausible explanation, not a proven cause. Do not rewrite the old receipt. A fresh source replay under the current lock is needed to bind the present package state; it has not been run in this provenance check.
 ## Rebuild from the public sources
 
 Requirements: Lean and Lake 4.33.1, Python 3, and network access for the first download of the pinned public Mathlib dependencies and their build cache. From this directory, fetch dependencies and the Mathlib cache:
