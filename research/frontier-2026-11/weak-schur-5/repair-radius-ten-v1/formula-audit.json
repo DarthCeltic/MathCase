@@ -1,0 +1,11 @@
+{
+  "result": "PASS",
+  "formula_sha256": "fa955a5c0364d45f768b1808fe751e42df6ca226e22bb2fdbae7f5a15d68c692",
+  "model_formula_sha256": "50b154be859ee1c275e2f3fc900b6fe2dd201ef64a47265e41440b668c152b73",
+  "variables": 1040,
+  "triples": 10712,
+  "assertions": 53769,
+  "check_only_no_model_request": true,
+  "scope": "encoding audit only; no solver conclusion",
+  "tamper_control": "REJECTED"
+}

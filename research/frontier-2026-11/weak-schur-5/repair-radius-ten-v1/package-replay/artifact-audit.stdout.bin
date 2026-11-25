@@ -1,0 +1,34 @@
+{
+  "status": "PASS_ARTIFACT_AUDIT",
+  "positions": 208,
+  "colors": 5,
+  "distinct_addend_triples": 10712,
+  "saved_seed_violations": [
+    [
+      1,
+      2,
+      3,
+      3
+    ],
+    [
+      1,
+      3,
+      4,
+      3
+    ],
+    [
+      5,
+      7,
+      12,
+      5
+    ]
+  ],
+  "seed_sha256": "b849284d7b1b19774f835bcd1e2baf8683b2606b9d5a14fb93dfbf96324304cf",
+  "query_sha256": "fa955a5c0364d45f768b1808fe751e42df6ca226e22bb2fdbae7f5a15d68c692",
+  "variables": 1040,
+  "assertions": 53769,
+  "damaged_seed_control_violations": 101,
+  "query_tamper_control": "REJECTED",
+  "solver_invoked": false,
+  "scope": "artifact and encoding check only; no solver conclusion"
+}

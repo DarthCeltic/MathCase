@@ -1,0 +1,20 @@
+{
+  "schema": "mathcase-public-package-manifest-v1",
+  "files": {
+    "check-at-most-ten.smt2": "fa955a5c0364d45f768b1808fe751e42df6ca226e22bb2fdbae7f5a15d68c692",
+    "extract-model-at-most-ten.smt2": "50b154be859ee1c275e2f3fc900b6fe2dd201ef64a47265e41440b668c152b73",
+    "formula-audit.json": "91d4369a825108518c1db0ee5cbe6b2db11fcf665e1133763738346d02e67a90",
+    "package-replay/artifact-audit.stderr.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "package-replay/artifact-audit.stdout.bin": "918dbe17922eb85b92087ba044906393a5191a39897a0a0ceac6f59e412af566",
+    "package-replay/run.json": "29d7b987f19d2a69c04bf39cccfa197d14b1f9aed8ca5243090435a6f27e30ce",
+    "package-replay/solver.stderr.bin": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "package-replay/solver.stdout.bin": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18",
+    "public-run.json": "e9d619b5c26d97c982874d95e08ab30f0384c715f06c67ec902556c223844704",
+    "README.md": "310aa5f17b1576d53ff62c4a60991a1953641c9aec4a5a2f84fc81884005a580",
+    "run_repair_query.py": "4090b3942f9087d072195f668a500ba99ba826260e19039d8482ab262743dab0",
+    "seed-coloring.txt": "b849284d7b1b19774f835bcd1e2baf8683b2606b9d5a14fb93dfbf96324304cf",
+    "solver-stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "solver-stdout.txt": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18",
+    "verify_public_artifact.py": "ab6a368cfdd304f93068e36154ff0651856f079c6f41d276a6e7a76f638bd651"
+  }
+}

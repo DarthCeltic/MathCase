@@ -17,6 +17,7 @@ FRONTIER = ROOT / "research" / "frontier-2026-11"
 CASES = {
     "vdw-2-7": "Check the known 3,703-position coloring and its specified 3,704 obstruction.",
     "ws-5": "Check both published 207-number witnesses and the radius-18 extension search.",
+    "ws-5-r10": "Check whether one saved 208-number near-miss can be repaired within ten recolorings.",
     "ramsey-3-3-3-3": "Check the known four-color K50 and the fixed-graph one-vertex obstruction.",
     "vdw-5-3": "Check the known 170-position coloring and the small exact SAT control; the 171 probe stays UNKNOWN.",
     "egyptian-28k-21": "Recompile the exact Lean identities for n = 28k + 21 and positive multiples of seven.",
@@ -46,6 +47,12 @@ def plan(case: str, output: Path) -> list[tuple[str, list[str], Path]]:
             ("published witnesses", [py, "verify_weak_schur.py", "--input-cache", str(cache), "--output", str(output / "witnesses.json"), "--prefixes", "160", "128", "104", "96", "80", "64", "48", "40", "32", "24", "--nodes", "15000"], ws),
             ("radius-18 extension search", [py, "search_radius.py", "--input-cache", str(cache), "--output", str(output / "radius-18.json"), "--radius", "18", "--nodes", "400000"], ws),
             ("small exhaustive controls", [py, "radius_controls.py"], ws),
+        ]
+    if case == "ws-5-r10":
+        repair = ws / "repair-radius-ten-v1"
+        return [
+            ("seed and query audit", [py, "verify_public_artifact.py"], repair),
+            ("fixed-seed ten-change solver check", [py, "run_repair_query.py", "--docker-image", "mathcase-smt-isolated:5.3.1.0", "--out", str(output / "ws5-r10")], repair),
         ]
     if case == "ramsey-3-3-3-3":
         return [

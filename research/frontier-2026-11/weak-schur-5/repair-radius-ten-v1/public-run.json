@@ -1,0 +1,27 @@
+{
+  "schema": "mathcase-ws5-fixed-seed-public-run-summary-v1",
+  "status": "UNSAT_REPORTED",
+  "classification": "BOUNDED_SOLVER_RESULT",
+  "scope": "Z3 reported no repair within ten changes for this one saved assignment; no proof certificate was produced.",
+  "solver": "Z3 version 5.3.1 - 64 bit",
+  "exit_code": 0,
+  "solver_output": "unsat\n",
+  "elapsed_seconds": 6.056,
+  "network": "none",
+  "cpu_limit": 1,
+  "memory_limit_bytes": 2147483648,
+  "solver_timeout_seconds": 55,
+  "external_spend_usd": 0,
+  "solver_image_id": "sha256:ab8946ee9bc8040f748368d6497aa4868bd2ef42f7ae5d689e35cc38f9abdc8c",
+  "seed_coloring_sha256": "b849284d7b1b19774f835bcd1e2baf8683b2606b9d5a14fb93dfbf96324304cf",
+  "query_sha256": "fa955a5c0364d45f768b1808fe751e42df6ca226e22bb2fdbae7f5a15d68c692",
+  "stdout_sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "original_run_receipt_sha256": "6460f798949838a193cf2673bdd25acd27519cf335fa278164767c39891cbecb",
+  "proof_certificate_emitted": false,
+  "limitations": [
+    "one saved assignment only",
+    "solver report, no independently checked proof certificate",
+    "no conclusion about existence of any valid 208-coloring"
+  ]
+}
