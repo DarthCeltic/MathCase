@@ -1,0 +1,57 @@
+{
+  "title": "A 2 by 2 multiplication example",
+  "a": [
+    [
+      1,
+      2
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "b": [
+    [
+      5,
+      6
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "expected_product": [
+    [
+      19,
+      22
+    ],
+    [
+      43,
+      50
+    ]
+  ],
+  "ordinary": {
+    "scalar_multiplications": 8,
+    "additions": 4
+  },
+  "strassen": {
+    "scalar_multiplications": 7,
+    "additions_subtractions": 18
+  },
+  "strassen_products": {
+    "p1": "a(f-h)",
+    "p2": "(a+b)h",
+    "p3": "(c+d)e",
+    "p4": "d(g-e)",
+    "p5": "(a+d)(e+h)",
+    "p6": "(b-d)(g+h)",
+    "p7": "(a-c)(e+f)"
+  },
+  "strassen_recombination": {
+    "c11": "p5+p4-p2+p6",
+    "c12": "p1+p2",
+    "c21": "p3+p4",
+    "c22": "p1+p5-p3-p7"
+  },
+  "scope": "A worked integer example only; it does not establish an asymptotic matrix-multiplication exponent."
+}

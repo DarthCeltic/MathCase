@@ -1,6 +1,8 @@
 # MathCase public reproduction evidence
 
-**Question an AI proof. Check it in Lean. Build on what holds.**
+Start with the [six-dot puzzle](https://darthceltic.github.io/): color the lines between six dots and check whether one color makes a triangle. Then open the [saved proof example](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1) to see an attempt Lean rejected and a corrected proof Lean accepted.
+
+Each package below says what question it addresses, what was actually checked, and what remains open. A receipt records the exact files and tools for a run; it does not by itself prove a broader claim or replace a human review of the wording.
 
 Public evidence bundles and supplementary replay routes cover the current work:
 
@@ -19,6 +21,8 @@ Public evidence bundles and supplementary replay routes cover the current work:
 - [Erdős–Straus campaign](../research/number-theory/egyptian-fractions/README.md) — 100 bounded ranges through `d = 10,000,000`, per-witness files, versioned scripts, and the aggregate audit. The public input inventory is [here](egyptian-fractions-v9/inventory.json).
 - [R(5,5) Lean proof bundle](ramsey-r55-lean-v1/README.md) — a known 42-vertex witness, 29 Lean sources, 27 exact chunk receipts, a final composition receipt, and rebuild instructions. The recorded run used a warm cache; clean-checkout reproduction remains open.
 - [R(6,6) Paley graph certificate](ramsey-r66-paley101-v1/README.md) — an independent bounded Python search checks the 101-vertex graph and its complement for six-cliques; this finite certificate check is not a Lean proof.
+- [R(6,6) Lean witness replay](ramsey-r66-lean-v1/README.md) — a source-to-kernel replay checks the known 101-vertex witness for `R(6,6) ≥ 102`. The recorded pinned-container replay passed; the public Lake route's current lock does not match its older receipt, so a clean rebuild under the current lock remains open.
+- [2×2 matrix multiplication example](matrix-exponent-2x2-v1/README.md) — a Python checker compares the ordinary and Strassen calculations on one input and rejects a damaged result. The upstream paper claims exponent `9/4`; MathCase's exact Lean target build timed out before reaching the target or axiom audit, and the separate Comparator workflow was not run.
 
 The 1,027-file inventory stated in the 14 November handoff is not the inventory in the surviving directory. The staged package was refreshed on 17 November to add the unexecuted Lake fallback; the older payload snapshot was overwritten. This release labels the surviving contents and does not claim byte identity with the lost 1,027-file inventory.
 

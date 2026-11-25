@@ -1,0 +1,426 @@
+{
+  "schema": "mathcase-r66-r3b-postrun-raw-binding-audit-v1",
+  "checked_at_local": "2026-11-25T14:46:42-05:00",
+  "audit_kind": "read-only raw-byte binding audit; no Lean build or theorem attempt in this audit",
+  "mathcase_public_branch": "codex/collatz-parity-envelopes-20261124",
+  "mathcase_public_commit": "47c6942294a69b3bec5c0b35fc5221d7841c5724",
+  "public_feature_branch_not_main": true,
+  "private_run_manifest_sha256": "0859b48e9101d4596c9bd22010cea7409952283fc59577e1cb4d5d59de95690a",
+  "public_source_manifest_sha256": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e",
+  "public_source_receipt_sha256": "fdc8ddc05377c4313d1eacab5bb343f6d44c089a55989f737541a5c2b00db7b5",
+  "private_runner_sha256": "f301cccc6f3a32011223d6dc2569275d0d8fe5a15423248b443012f23b9b5462",
+  "modules": [
+    {
+      "module": "MathCase.R66.Foundation",
+      "source_sha256": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "olean_sha256": "342fca197ad48fde32bb5c90694004fa75a1781513ae7756775e2bd5db255fe6",
+      "exit_code": 0,
+      "elapsed_ms": 20965
+    },
+    {
+      "module": "MathCase.R66.Rows.Representative",
+      "source_sha256": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "olean_sha256": "b12d10ab49070b4b2d425d26848e20959020979781a4b7127880e91370b0a4c2",
+      "exit_code": 0,
+      "elapsed_ms": 97899
+    },
+    {
+      "module": "MathCase.R66.Composition",
+      "source_sha256": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "olean_sha256": "7c8af8612ff54ca63a4bc127ed016e873708d6541f900f77cfc0342562279c94",
+      "exit_code": 0,
+      "elapsed_ms": 5218
+    }
+  ],
+  "checks_passed": 49,
+  "checks_failed": 0,
+  "all_checks_pass": true,
+  "checks": [
+    {
+      "check": "private_manifest_recorded_sha256",
+      "expected": "0859b48e9101d4596c9bd22010cea7409952283fc59577e1cb4d5d59de95690a",
+      "actual": "0859b48e9101d4596c9bd22010cea7409952283fc59577e1cb4d5d59de95690a",
+      "pass": true
+    },
+    {
+      "check": "public_receipt_source_manifest_sha256",
+      "expected": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e",
+      "actual": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e",
+      "pass": true
+    },
+    {
+      "check": "public_receipt_target",
+      "expected": "∃ G : SimpleGraph (Fin 101), G.CliqueFree 6 ∧ (Gᶜ).CliqueFree 6",
+      "actual": "∃ G : SimpleGraph (Fin 101), G.CliqueFree 6 ∧ (Gᶜ).CliqueFree 6",
+      "pass": true
+    },
+    {
+      "check": "public_receipt_m0_packet",
+      "expected": "6e1382f9ad7123aad2c25f4d10e4de7cf168a296029db6144c96b64a2044fae2",
+      "actual": "6e1382f9ad7123aad2c25f4d10e4de7cf168a296029db6144c96b64a2044fae2",
+      "pass": true
+    },
+    {
+      "check": "public_receipt_toolchain",
+      "expected": "4.33.1",
+      "actual": "4.33.1",
+      "pass": true
+    },
+    {
+      "check": "public_receipt_mathlib_pin",
+      "expected": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "actual": "0df444a360eaa60ab8c11dca51a86af692955474",
+      "pass": true
+    },
+    {
+      "check": "private_manifest_runner_hash",
+      "expected": "f301cccc6f3a32011223d6dc2569275d0d8fe5a15423248b443012f23b9b5462",
+      "actual": "f301cccc6f3a32011223d6dc2569275d0d8fe5a15423248b443012f23b9b5462",
+      "pass": true
+    },
+    {
+      "check": "working_tree_runner_copy_hash",
+      "expected": "f301cccc6f3a32011223d6dc2569275d0d8fe5a15423248b443012f23b9b5462",
+      "actual": "f301cccc6f3a32011223d6dc2569275d0d8fe5a15423248b443012f23b9b5462",
+      "pass": true
+    },
+    {
+      "check": "local_source_inputs/lean-toolchain",
+      "expected": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "actual": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "pass": true,
+      "details": {
+        "bytes": 25
+      }
+    },
+    {
+      "check": "public_git_blob_reproduction/ramsey-r66-lean-v1/lean-toolchain",
+      "expected": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "actual": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+      "pass": true,
+      "details": {
+        "bytes": 25
+      }
+    },
+    {
+      "check": "local_source_inputs/MathCase/R66/Foundation.lean",
+      "expected": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "actual": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "pass": true,
+      "details": {
+        "bytes": 11672
+      }
+    },
+    {
+      "check": "public_git_blob_reproduction/ramsey-r66-lean-v1/MathCase/R66/Foundation.lean",
+      "expected": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "actual": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "pass": true,
+      "details": {
+        "bytes": 11672
+      }
+    },
+    {
+      "check": "local_source_inputs/MathCase/R66/Rows/Representative.lean",
+      "expected": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "actual": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "pass": true,
+      "details": {
+        "bytes": 226
+      }
+    },
+    {
+      "check": "public_git_blob_reproduction/ramsey-r66-lean-v1/MathCase/R66/Rows/Representative.lean",
+      "expected": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "actual": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "pass": true,
+      "details": {
+        "bytes": 226
+      }
+    },
+    {
+      "check": "local_source_inputs/MathCase/R66/Composition.lean",
+      "expected": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "actual": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "pass": true,
+      "details": {
+        "bytes": 5056
+      }
+    },
+    {
+      "check": "public_git_blob_reproduction/ramsey-r66-lean-v1/MathCase/R66/Composition.lean",
+      "expected": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "actual": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "pass": true,
+      "details": {
+        "bytes": 5056
+      }
+    },
+    {
+      "check": "public_manifest_source_MathCase/R66/Foundation.lean",
+      "expected": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "actual": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "pass": true,
+      "details": {
+        "bytes": 11672
+      }
+    },
+    {
+      "check": "public_manifest_source_MathCase/R66/Rows/Representative.lean",
+      "expected": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "actual": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "pass": true,
+      "details": {
+        "bytes": 226
+      }
+    },
+    {
+      "check": "public_manifest_source_MathCase/R66/Composition.lean",
+      "expected": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "actual": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "pass": true,
+      "details": {
+        "bytes": 5056
+      }
+    },
+    {
+      "check": "foundation_source_log",
+      "expected": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "actual": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "pass": true
+    },
+    {
+      "check": "foundation_output_log",
+      "expected": "342fca197ad48fde32bb5c90694004fa75a1781513ae7756775e2bd5db255fe6",
+      "actual": "342fca197ad48fde32bb5c90694004fa75a1781513ae7756775e2bd5db255fe6",
+      "pass": true,
+      "details": {
+        "bytes": 371616
+      }
+    },
+    {
+      "check": "foundation_receipt_source",
+      "expected": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "actual": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "pass": true
+    },
+    {
+      "check": "foundation_receipt_output",
+      "expected": "342fca197ad48fde32bb5c90694004fa75a1781513ae7756775e2bd5db255fe6",
+      "actual": "342fca197ad48fde32bb5c90694004fa75a1781513ae7756775e2bd5db255fe6",
+      "pass": true
+    },
+    {
+      "check": "foundation_exit",
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    {
+      "check": "representative_source_log",
+      "expected": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "actual": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "pass": true
+    },
+    {
+      "check": "representative_output_log",
+      "expected": "b12d10ab49070b4b2d425d26848e20959020979781a4b7127880e91370b0a4c2",
+      "actual": "b12d10ab49070b4b2d425d26848e20959020979781a4b7127880e91370b0a4c2",
+      "pass": true,
+      "details": {
+        "bytes": 11424
+      }
+    },
+    {
+      "check": "representative_receipt_source",
+      "expected": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "actual": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "pass": true
+    },
+    {
+      "check": "representative_receipt_output",
+      "expected": "b12d10ab49070b4b2d425d26848e20959020979781a4b7127880e91370b0a4c2",
+      "actual": "b12d10ab49070b4b2d425d26848e20959020979781a4b7127880e91370b0a4c2",
+      "pass": true
+    },
+    {
+      "check": "representative_exit",
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    {
+      "check": "composition_source_log",
+      "expected": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "actual": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "pass": true
+    },
+    {
+      "check": "composition_output_log",
+      "expected": "7c8af8612ff54ca63a4bc127ed016e873708d6541f900f77cfc0342562279c94",
+      "actual": "7c8af8612ff54ca63a4bc127ed016e873708d6541f900f77cfc0342562279c94",
+      "pass": true,
+      "details": {
+        "bytes": 155376
+      }
+    },
+    {
+      "check": "composition_receipt_source",
+      "expected": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "actual": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "pass": true
+    },
+    {
+      "check": "composition_receipt_output",
+      "expected": "7c8af8612ff54ca63a4bc127ed016e873708d6541f900f77cfc0342562279c94",
+      "actual": "7c8af8612ff54ca63a4bc127ed016e873708d6541f900f77cfc0342562279c94",
+      "pass": true
+    },
+    {
+      "check": "composition_exit",
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    {
+      "check": "dependency_source_hash",
+      "expected": "914009b69014a30a109fe7e443b370abbad60ce9c520b3f7f713379c8b383557",
+      "actual": "914009b69014a30a109fe7e443b370abbad60ce9c520b3f7f713379c8b383557",
+      "pass": true
+    },
+    {
+      "check": "dependency_olean_hash",
+      "expected": "938c6f7059ce287a2b2c97015a0bec40760213bd7e56aba66ced6f1ad20ad667",
+      "actual": "938c6f7059ce287a2b2c97015a0bec40760213bd7e56aba66ced6f1ad20ad667",
+      "pass": true,
+      "details": {
+        "bytes": 58640
+      }
+    },
+    {
+      "check": "dependency_exit",
+      "expected": "0",
+      "actual": "0",
+      "pass": true
+    },
+    {
+      "check": "source_scan_sorry",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "check": "source_scan_admit",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "check": "source_scan_native_decide",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "check": "printed_axiom_propext",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "printed_axiom_Classical.choice",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "printed_axiom_Quot.sound",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "check": "sorryAx_absent_from_audit",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "check": "run_status",
+      "expected": "PASS_ALL_SOURCE_MODULES",
+      "actual": "PASS_ALL_SOURCE_MODULES",
+      "pass": true
+    },
+    {
+      "check": "axiom_status",
+      "expected": "PASS_NO_SORRYAX",
+      "actual": "PASS_NO_SORRYAX",
+      "pass": true
+    },
+    {
+      "check": "source_placeholder_status",
+      "expected": "PASS_NO_SORRY_ADMIT_NATIVE_DECIDE",
+      "actual": "PASS_NO_SORRY_ADMIT_NATIVE_DECIDE",
+      "pass": true
+    },
+    {
+      "check": "container_runtime",
+      "expected": {
+        "network": "none",
+        "memory_limit_bytes": 6442450944,
+        "exit_code": 0
+      },
+      "actual": {
+        "network": "none",
+        "memory_limit_bytes": 6442450944,
+        "exit_code": 0
+      },
+      "pass": true,
+      "details": "docker inspect read after completion; 1 CPU and 900s global / 420s per module are manifest-bound"
+    },
+    {
+      "check": "pinned_image_readonly_probe",
+      "expected": {
+        "lean": "4.33.1",
+        "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "zmod_source_sha256": "914009b69014a30a109fe7e443b370abbad60ce9c520b3f7f713379c8b383557"
+      },
+      "actual": {
+        "lean": "4.33.1",
+        "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+        "zmod_source_sha256": "914009b69014a30a109fe7e443b370abbad60ce9c520b3f7f713379c8b383557"
+      },
+      "pass": true,
+      "details": "a separate disposable --network none container only read the toolchain, git HEAD, and source hash; it did not compile Lean"
+    }
+  ],
+  "claim_boundary": [
+    "The exact reviewed existential statement on 101 vertices compiled from the listed MathCase sources under Lean 4.33.1 / Mathlib commit 0df444a360eaa60ab8c11dca51a86af692955474.",
+    "This establishes the known lower-bound witness R(6,6) >= 102; it is not a new bound and does not determine the exact Ramsey number.",
+    "The custom image was not verified publicly pullable. The full public Lake route was not independently run from an anonymous checkout; its historical lock mismatch remains separate.",
+    "No independent human review, M4 promotion, signature, or main-branch merge is claimed."
+  ],
+  "cost_usd": 0,
+  "external_provider_calls": 0,
+  "m4_promoted": false,
+  "signed": false,
+  "working_tree_runner_copy_sha256": "f301cccc6f3a32011223d6dc2569275d0d8fe5a15423248b443012f23b9b5462",
+  "runner_copy_tracking_at_audited_commit": "untracked at the audited MathCase commit; exact copy is included in the follow-up evidence commit",
+  "container": {
+    "id": "916a341431c7c6a3537abfc352909ed67b03566b37304e86315fd30f8a2b2e05",
+    "image_id": "sha256:85fd103e179ef59ee41e8b0b8ac4216ca5034d423bf2fff127254c410ec119cd",
+    "status": "exited",
+    "exit_code": 0,
+    "oom_killed": false,
+    "network": "none",
+    "memory_limit_bytes": 6442450944,
+    "memory_swap_limit_bytes": 6442450944,
+    "nano_cpus": 1000000000,
+    "created_at_utc": "2026-11-24T18:36:10.640499078Z",
+    "started_at_utc": "2026-11-24T18:36:12.159466885Z",
+    "finished_at_utc": "2026-11-24T18:38:18.847811737Z",
+    "elapsed_ms": 126688,
+    "evidence_mount": "/evidence"
+  },
+  "revision_note": "Corrects the runner-copy check label to describe the working-tree copy before commit and adds inspected container identity/timing. No proof or Lean command was rerun during this metadata correction."
+}

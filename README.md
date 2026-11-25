@@ -20,7 +20,7 @@ The stronger local check uses the exported case packet. It asks the pinned Lean 
 python scripts/check_visitor_case.py --case-packet MyCase.mathcase.json --receipt MyCase.receipt.json
 ```
 
-From the visitor workbench, **Export full case** downloads the packet and **Import checker receipt** compares it with the current browser draft. The imported record remains visitor-supplied evidence, not a MathCase signature. To run the same command through the public case launcher, use `python scripts/run_public_case.py visitor --case-packet MyCase.mathcase.json`.
+From the visitor workbench, **Save the whole claim** downloads the packet and **Load checker receipt** compares it with the current browser draft. The imported record remains visitor-supplied evidence, not a MathCase signature. To run the same command through the public case launcher, use `python scripts/run_public_case.py visitor --case-packet MyCase.mathcase.json`.
 
 The older source-only command remains available: `python scripts/check_visitor_case.py MyCase.lean --receipt MyCase.receipt.json`. It checks whether Lean accepts that source, but it does not bind a displayed claim or target and it does not report axioms. For a source that imports Mathlib, provide `--lake-project PATH` for an already prepared local Lean 4.33.1 project with its manifest and dependencies present. The checker does not install Lean, update Lake, or fetch packages. A Codespace can install the pinned Lean Core toolchain; it does not include Mathlib by default. GitHub may charge for Codespaces usage under the account's plan. To keep a proof and receipt in Git, [fork MathCase](https://github.com/DarthCeltic/MathCase/fork), use a Codespace on your fork, and commit the files there.
 
@@ -42,7 +42,7 @@ Try this short path:
 
 1. Open **Counterexample** and test `d = 4, n = 2`.
 2. Open **Prime lemma**, choose **Chalkboard**, and follow the mathematical steps.
-3. Open **History**: inspect the actual S0 Lean rejection and S1 corrected proof, then expand the exact proof and receipts.
+3. Open **History**: inspect the rejected attempt and the correction Lean accepted, then expand the exact proof and receipts.
 4. Choose **Build on it: √2**, inspect the compiled child, and follow its link back to the exact checked parent.
 
 These are saved executions. The public Case Desk rejects writes and new model/search requests. Independent meaning and exposition review remain pending. Reading position, ink and board style are browser preferences; proof records remain unchanged. See [the Case Desk guide](docs/public-case-desk.md) for evidence checks and fork development.
