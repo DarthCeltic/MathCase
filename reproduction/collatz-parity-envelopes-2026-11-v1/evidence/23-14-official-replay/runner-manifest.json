@@ -1,0 +1,15 @@
+{
+  "schema": "mathcase-collatz-23-14-runner-manifest-v1",
+  "recorded_execution": {
+    "path": "replay-scoped-validation.py",
+    "sha256": "4f26cc3145d22dbcdc87029b693bcac04f8ece4eddc1ef63357043fad7dbee2d",
+    "lean_run": "yes"
+  },
+  "current_launcher": {
+    "path": "replay-scoped-validation-v2.py",
+    "sha256": "0ac4c95f1219efb960e5f23258959bd03bf22d857117d0236c86a889e49710f7",
+    "lean_run": "no"
+  },
+  "relationship": "The only source difference is the module docstring used for argparse help. Parsed executable ASTs excluding that module docstring are identical.",
+  "comparison": "AST equality checked locally; no Lean process was started."
+}

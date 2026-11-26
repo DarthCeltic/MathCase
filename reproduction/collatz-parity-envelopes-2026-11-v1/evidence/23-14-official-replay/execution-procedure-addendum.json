@@ -1,0 +1,14 @@
+{
+  "schema": "mathcase-lean-replay-procedure-addendum-v1",
+  "original_execution_receipt_sha256": "3e2fc2a054a049a26428f05b425d4fa158e1286863a5a9bc39fdb1cab9a6c27f",
+  "target_result_receipt_sha256": "a174ea50afcd541dd9d618a48626b581692664fd69217d1aef8e7e9c6f6a65aa",
+  "authorized_total_wall_ceiling_seconds": 600,
+  "observed_total_wall_seconds": 30.906,
+  "outer_total_wall_timeout_enforced": false,
+  "runner_per_module_timeout_seconds": 900,
+  "wall_ceiling_exceeded": false,
+  "outcome": "The run completed before the 600-second ceiling. The invoking PowerShell command had no overall timeout; each Lean subprocess had a 900-second per-module timeout. Therefore the run is a PASS for the exact Lean source/result, with a documented cap-enforcement deviation. No retry will be used.",
+  "network_clients_invoked_by_replay": [],
+  "os_level_network_isolation_enforced": false,
+  "no_new_model_provider_or_search_calls": true
+}

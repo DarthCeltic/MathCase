@@ -16,7 +16,8 @@ CATALOG = {
     "collatz-at-most-thirteen": "Fresh-source Lean proof and full 21-bit residue census for the at-most-13-of-21 descent rule.",
     "collatz-at-most-thirteen-22": "Fresh-source Lean proof and exact 22-step parity count; bounded first descent only.",
     "collatz-at-most-seventeen-27": "Lean-checked bounded descent for starts at least 26,018; separate exact parity-class audit.",
-    "collatz-parity-envelope-23-14": "Fresh-source replay of four parity-conditioned first-drop statements, including the reviewed 23/14 theorem.",
+    "collatz-parity-envelope-23-14": "Fresh-source replay of the reviewed 23/14 first-drop target and shared prerequisites only.",
+    "collatz-parity-envelopes-all": "Combined replay of the 23/14 target and exploratory 24/15, 31/19, and 32/20 targets.",
     "collatz-table": "Check the saved 2,652 Collatz families and the separate sample in Lean 4.33.1.",
     "collatz-m31-lift": "Recompute and hash-check 860 listed M31 Collatz progressions. Uses the saved Lean receipt; this route does not run Lean.",
     "model-pilot": "Replay two original responses on the same held-out tasks in Lean 4.33.1.",
@@ -51,7 +52,9 @@ def commands(case, args, output):
                                         "--output-dir", output / "lean-replay")],
         "collatz-at-most-seventeen-27": [("reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/verify_at_most_seventeen_27.py",
                                          output / "lean-replay")],
-        "collatz-parity-envelope-23-14": [("reproduction/collatz-parity-envelopes-2026-11-v1/replay.py",
+        "collatz-parity-envelope-23-14": [("reproduction/collatz-parity-envelopes-2026-11-v1/replay-scoped-validation-v2.py",
+                                          "--output", output / "lean-replay")],
+        "collatz-parity-envelopes-all": [("reproduction/collatz-parity-envelopes-2026-11-v1/replay.py",
                                           "--output", output / "lean-replay")],
         "collatz-table": [("reproduction/collatz-affine-family-replay-v1/verify_parity.py", "--receipt", output / "affine.json")],
         "collatz-m31-lift": [("reproduction/collatz-m31-lift-v1/scripts/verify_m31_lift.py", "--receipt", output / "m31-lift-check.json")],
@@ -63,9 +66,9 @@ def commands(case, args, output):
         "vp-vnp-example": [("reproduction/vp-vnp-source-audit-v1/example_check.py",)],
         "vp-vnp-source-audit": [("reproduction/vp-vnp-source-audit-v1/audit_sources.py", "--receipt", output / "vp-vnp-source-audit.json")],
         "visitor": [("scripts/check_visitor_case.py",
-                     *( ["--case-packet", args.case_packet] if args.case_packet else [args.source] ),
-                     "--receipt", output / ("target-check.json" if args.case_packet else "compiler.json"),
-                     *( ["--lake-project", args.lake_project] if args.lake_project else [] ))],
+                     *( ["--case-packet", args.case_packet] if getattr(args, "case_packet", None) else [getattr(args, "source", None)] ),
+                     "--receipt", output / ("target-check.json" if getattr(args, "case_packet", None) else "compiler.json"),
+                     *( ["--lake-project", args.lake_project] if getattr(args, "lake_project", None) else [] ))],
     }
     if case == "prime-sqrt2":
         option, value = ("--mathlib", args.mathlib) if args.mathlib else ("--bootstrap", args.bootstrap)
