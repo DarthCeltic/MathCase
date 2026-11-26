@@ -1,0 +1,128 @@
+{
+  "schema": "mathcase-public-main-replay-verification-v1",
+  "status": "PASS",
+  "case_id": "collatz-parity-envelope-23-14",
+  "repository": "DarthCeltic/MathCase",
+  "repository_commit": "ab6ff689860696e06726c74b5336782210a8f10f",
+  "checkout": "Anonymous public main checkout; the case package had no preexisting Lean OLEAN outputs.",
+  "command": [
+    "PowerShell: put the official Lean 4.33.1 bin directory first on PATH.",
+    "python -B scripts/run_public_case.py collatz-parity-envelope-23-14 --out <new-output-parent>"
+  ],
+  "toolchain": {
+    "version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "release_url": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-windows.tar.zst",
+    "archive_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a",
+    "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+  },
+  "modules": [
+    {
+      "module": "WordBound",
+      "exit_code": 0,
+      "elapsed_seconds": 46.748118,
+      "source_sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+      "source_artifact": "WordBound.lean",
+      "olean_sha256": "8ca3ff4172048d00af6f97e305f564ce4ff7dc17412a3bc946a841b19b976d30",
+      "axiom_reports": {
+        "scaled_upper": [
+          "Quot.sound",
+          "propext"
+        ],
+        "twelve_of_twenty": [
+          "Quot.sound",
+          "propext"
+        ],
+        "twenty_twelve_descent": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "published_log": "logs/WordBound.txt",
+      "published_log_sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830",
+      "local_path_redaction": "None"
+    },
+    {
+      "module": "WordResidue",
+      "exit_code": 0,
+      "elapsed_seconds": 1.012129,
+      "source_sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+      "source_artifact": "WordResidue.lean",
+      "olean_sha256": "9bb543de9bd5da88a51fba7d8057b904349d10cd5c768f8bbfa4e4a8de7ae007",
+      "axiom_reports": {
+        "lift_residue": [
+          "Quot.sound",
+          "propext"
+        ],
+        "residue_twelve_of_twenty": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "published_log": "logs/WordResidue.txt",
+      "published_log_sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d",
+      "local_path_redaction": "None"
+    },
+    {
+      "module": "CountWords",
+      "exit_code": 0,
+      "elapsed_seconds": 1.153058,
+      "source_sha256": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+      "source_artifact": "CountWords.lean",
+      "olean_sha256": "a8d1c83c4230c8f501f38322815f4451cf0290e6bff2bede972c2bfc34dd24df",
+      "axiom_reports": {
+        "count_twelve_of_twenty": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "counted_progressions_descend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "residueCount_eq_wordCount": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "published_log": "logs/CountWords.txt",
+      "published_log_sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5",
+      "local_path_redaction": "None"
+    },
+    {
+      "module": "AtMostFourteen23",
+      "exit_code": 0,
+      "elapsed_seconds": 8.768681,
+      "source_sha256": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175",
+      "source_artifact": "AtMostFourteen23.original-crlf.bin",
+      "olean_sha256": "d477c7e371a05e1eaac9ce92fe2c1ad01e98cbbfb230af643024ed339dc038d9",
+      "axiom_reports": {
+        "at_most_fourteen_of_twenty_three_descend": [
+          "Quot.sound",
+          "propext"
+        ],
+        "counted_at_most_fourteen_families_23": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "residue_at_most_fourteen_count_23": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "published_log": "logs/AtMostFourteen23.txt",
+      "published_log_sha256": "52b671cd31dc4e7a79d202a4aec7f280b7658439dd16617358e4478a08802bf3",
+      "local_path_redaction": "Temporary materialized-source path replaced by module filename; diagnostic contents otherwise retained."
+    }
+  ],
+  "summed_lean_stage_seconds": 57.681986,
+  "all_module_exits_zero": true,
+  "sorryAx_rejected_by_runner": true,
+  "result_receipt_sha256": "805b4506dfa26ea1ca6c1455f8d87831f9933939a4a260d38f962d8a057d1ae5",
+  "network": "No dependency fetch or provider call in the replay; no operating-system network-isolation claim.",
+  "claim_scope": "Ryan-reviewed 23/14 parity-conditioned bounded first drop only; no Collatz convergence claim.",
+  "first_setup_failure": "A preceding invocation through elan with no default toolchain failed before Lean read a source file; it is preserved in the private run folder and is not a mathematical failure."
+}

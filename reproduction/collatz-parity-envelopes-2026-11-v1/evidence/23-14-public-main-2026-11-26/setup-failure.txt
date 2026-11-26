@@ -1,0 +1,7 @@
+Initial setup failure (preserved)
+
+Exit code: 1. Lean was not invoked on theorem source; this was a setup failure only. The `elan` shim returned before reading a theorem source:
+
+error: no default toolchain configured. run `elan default stable` to install & configure the latest Lean 4 stable release.
+
+This was an environment setup failure, not a proof failure. The passing replay used the official Lean 4.33.1 binary on PATH.

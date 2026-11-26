@@ -1,0 +1,14 @@
+AtMostFourteen23.lean:14:25: warning: This simp argument is unused:
+  ih
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sumBelow, residueCount_eq_wordCount]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+'MathCase.Collatz.WordBound.residue_at_most_fourteen_count_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathCase.Collatz.WordBound.at_most_fourteen_of_twenty_three_descend' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.counted_at_most_fourteen_families_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
