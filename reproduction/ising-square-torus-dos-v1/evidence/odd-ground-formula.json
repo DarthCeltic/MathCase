@@ -1,0 +1,82 @@
+{
+  "schema": "mathcase-ising-odd-ground-formula-check-v1",
+  "verified": true,
+  "source_sha256": "ec4b5c9bfa3e1c4d047d3ff69895a1afb0b2f0c4295dc8c29f84f5c2f45ca35c",
+  "method": "direct row-mask dynamic count of one-defect rows and exactly L vertical alignments; binomial formula evaluated only for comparison",
+  "sizes_tested": 12,
+  "results": [
+    {
+      "L": 3,
+      "transfer_count": 102,
+      "formula_count": 102,
+      "matches": true
+    },
+    {
+      "L": 5,
+      "transfer_count": 2470,
+      "formula_count": 2470,
+      "matches": true
+    },
+    {
+      "L": 7,
+      "transfer_count": 47950,
+      "formula_count": 47950,
+      "matches": true
+    },
+    {
+      "L": 9,
+      "transfer_count": 874998,
+      "formula_count": 874998,
+      "matches": true
+    },
+    {
+      "L": 11,
+      "transfer_count": 15519262,
+      "formula_count": 15519262,
+      "matches": true
+    },
+    {
+      "L": 13,
+      "transfer_count": 270415262,
+      "formula_count": 270415262,
+      "matches": true
+    },
+    {
+      "L": 15,
+      "transfer_count": 4653525150,
+      "formula_count": 4653525150,
+      "matches": true
+    },
+    {
+      "L": 17,
+      "transfer_count": 79342610902,
+      "formula_count": 79342610902,
+      "matches": true
+    },
+    {
+      "L": 19,
+      "transfer_count": 1343120023678,
+      "formula_count": 1343120023678,
+      "matches": true
+    },
+    {
+      "L": 21,
+      "transfer_count": 22606830725598,
+      "formula_count": 22606830725598,
+      "matches": true
+    },
+    {
+      "L": 23,
+      "transfer_count": 378737813468542,
+      "formula_count": 378737813468542,
+      "matches": true
+    },
+    {
+      "L": 25,
+      "transfer_count": 6320530321886350,
+      "formula_count": 6320530321886350,
+      "matches": true
+    }
+  ],
+  "limit": "Odd L from 3 through 25; this is finite validation of the general argument in README.md."
+}

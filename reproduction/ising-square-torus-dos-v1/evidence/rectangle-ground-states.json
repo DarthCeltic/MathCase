@@ -1,0 +1,110 @@
+{
+  "schema": "mathcase-ising-rectangle-ground-state-check-v1",
+  "verified": true,
+  "source_sha256": "530f4da9051204b9bab6483fddcb6dea507acb37afc1edb88598a10f0e499c30",
+  "method": "unconstrained full row-mask max-count DP; fixes one spin by global-flip symmetry; formula is used only for comparison",
+  "rectangle_count": 9,
+  "ranges": {
+    "W": [
+      3,
+      5
+    ],
+    "H": [
+      3,
+      5
+    ]
+  },
+  "cases": [
+    {
+      "W": 3,
+      "H": 3,
+      "maximum_broken_bonds": 12,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -6,
+      "ground_degeneracy": 102,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 3,
+      "H": 4,
+      "maximum_broken_bonds": 20,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -16,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 3,
+      "H": 5,
+      "maximum_broken_bonds": 22,
+      "minimum_aligned_bonds": 8,
+      "antiferromagnetic_ground_energy": -14,
+      "ground_degeneracy": 390,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 4,
+      "H": 3,
+      "maximum_broken_bonds": 20,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -16,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 4,
+      "H": 4,
+      "maximum_broken_bonds": 32,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -32,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 4,
+      "H": 5,
+      "maximum_broken_bonds": 36,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -32,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 5,
+      "H": 3,
+      "maximum_broken_bonds": 22,
+      "minimum_aligned_bonds": 8,
+      "antiferromagnetic_ground_energy": -14,
+      "ground_degeneracy": 390,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 5,
+      "H": 4,
+      "maximum_broken_bonds": 36,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -32,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 5,
+      "H": 5,
+      "maximum_broken_bonds": 40,
+      "minimum_aligned_bonds": 10,
+      "antiferromagnetic_ground_energy": -30,
+      "ground_degeneracy": 2470,
+      "formula_matches": true,
+      "transpose_matches": true
+    }
+  ],
+  "scope": "Finite checks of the general rectangular ground-state formulas; not a full DOS outside square sizes 3,4,5."
+}
