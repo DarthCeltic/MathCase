@@ -1,0 +1,20 @@
+{
+  "schema": "mathcase-ws5-near-miss-origin-v1",
+  "source_search_result_sha256": "72bc41ac94b8517d6d0d925fa2e58d417d05d3f6224f9720985e4bedc79c90c9",
+  "method": "Simulated-annealing conflict repair: choose a violated triple, recolor one of its three entries, and accept non-increasing moves or uphill moves by the recorded temperature schedule.",
+  "seed": 20261125,
+  "chains": 30,
+  "moves_per_chain": 10000,
+  "wall_cap_seconds": 90,
+  "elapsed_seconds": 13.001,
+  "best_conflict_count": 1,
+  "remaining_conflict": [
+    4,
+    8,
+    12,
+    3
+  ],
+  "scope": "Origin metadata is a path-free projection of the local search receipt. The local search is heuristic and did not find a valid coloring.",
+  "source_candidate_json_sha256": "58dba5cb6f2ef0d3ba4db46c6caf2124109a2f3ea188fd1295233590400d2810",
+  "public_candidate_json_sha256": "6785bedcdd3e37ce2733f977d3fe19674bbbeb5ade0b6d80822884cd73ed5b1e"
+}

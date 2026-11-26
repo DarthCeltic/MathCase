@@ -1,0 +1,41 @@
+{
+  "schema": "mathcase-ws5-radius3-exhaustive-check-v1",
+  "started_local": "2026-11-25T15:26:50.492279-05:00",
+  "status": "NO_REPAIR_WITHIN_RADIUS_3_EXHAUSTIVE",
+  "input_candidate_file_sha256": "6785bedcdd3e37ce2733f977d3fe19674bbbeb5ade0b6d80822884cd73ed5b1e",
+  "source_candidate_json_sha256": "58dba5cb6f2ef0d3ba4db46c6caf2124109a2f3ea188fd1295233590400d2810",
+  "color_sequence_sha256": "598973df5261e1699944b338832a817b0a263584c0c23ddc8f9f61e6d83fca18",
+  "input_remaining_conflict": [
+    4,
+    8,
+    12,
+    3
+  ],
+  "m0_packet_sha256": "925cf68bc7f354fefebd47ddc08b6d25ecf9142868975e2248cc1baf530ad0d7",
+  "target": "exact saved five-color assignment on 1..208; distinct-addend triples only",
+  "distance_limit": 3,
+  "all_constraints": 10712,
+  "candidate_sets_excluded_reason": "Any edit set disjoint from {4,8,12} leaves the original monochromatic triple untouched; it cannot be a repair.",
+  "candidate_assignments_checked": 4064044,
+  "candidate_assignments_by_distance": {
+    "1": 12,
+    "2": 9888,
+    "3": 4054144
+  },
+  "minimum_conflict_count_by_distance": {
+    "1": 9,
+    "2": 8,
+    "3": 7
+  },
+  "delta_formula_sample_checks": 300,
+  "structured_delta_crosschecks": 384,
+  "elapsed_seconds": 7.543,
+  "wall_cap_seconds": 45.0,
+  "script_sha256": "8bf7e8cc54d5209220bcf71d37965bf70039b9fd9a8ae7a2abd078bb5a7de229",
+  "method": "Exhaustive enumeration of all color assignments at Hamming distance 1..3 that touch an endpoint of the saved conflict; exact inclusion-exclusion score deltas over all 10,712 triples, cross-checked against direct full rescoring on 300 deterministic random edits.",
+  "network": "none",
+  "external_spend_usd": 0,
+  "solver_invoked": false,
+  "lean_invoked": false,
+  "witness": null
+}

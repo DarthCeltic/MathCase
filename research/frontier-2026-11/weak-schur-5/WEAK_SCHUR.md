@@ -14,6 +14,12 @@ Fred Rowley colored the integers 1 through 207 with five colors so that no three
 
 After optimal relabeling the two published colorings agree on 191 of their 207 positions. With either seed, an extension to 208 must change **at least 19** of its existing colors, even after a global palette relabeling. A coloring farther from both seeds could still work. The unrestricted value of WS(5) remains open in this investigation. These are reproducible finite computations in Python. There is no Lean proof or independently checked UNSAT certificate for the 208 search.
 
+## A separate one-error candidate
+
+A different saved five-color assignment for 1 through 208 has one forbidden sum: 4, 8, and 12 share a color, even though 4 + 8 = 12. Any fix must change at least one of those three numbers. An exhaustive check tested every way to change one, two, or three numbers that could repair this assignment: 4,064,044 possible changes across all 10,712 distinct-addend triples. None removed every forbidden sum; the best candidates still had 9, 8, or 7 conflicts at distances one, two, or three.
+
+This result is only about that one saved assignment. It does not rule out a valid coloring of 1 through 208, say anything about other starting assignments, or change the known bound. The sources, exact candidate, fresh-clone replay, and limits are in [`repair-radius-three-v1`](repair-radius-three-v1/README.md).
+
 ## Replay
 
 Python 3.10+ with its standard library is sufficient. The first command downloads two small files from immutable public GitHub revisions, verifies both SHA-256 values, and caches the originals. With that directory present all subsequent commands run offline. The output JSONs contain computed counts and search limits. The upstream colorings stay in the input cache.

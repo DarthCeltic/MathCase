@@ -1,0 +1,2 @@
+* text eol=lf
+fresh-clone-replay-2026-11-26.json -text -eol whitespace=cr-at-eol
