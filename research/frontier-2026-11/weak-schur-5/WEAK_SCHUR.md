@@ -2,6 +2,10 @@
 
 Fred Rowley colored the integers 1 through 207 with five colors so that no three numbers of the same color satisfy `a + b = c` for distinct addends `a < b`. Rebecca Vicenzi and colleagues found a second construction using structured SAT search. MathCase checks both witnesses and tests how much of either one can survive an extension to 208. [Rowley’s entry in OEIS A072842](https://oeis.org/A072842) · [Vicenzi et al., *FunSearch and Structured SAT Search for Weak Schur Partitions*](https://arxiv.org/abs/2611.22032)
 
+## Check a proposed 208-coloring
+
+Use the [standalone candidate checker](../../../reproduction/weak-schur-5-candidate-checker-v1/README.md) to enter any proposed assignment and list every same-color `a < b`, `a+b` conflict. A conflict-free assignment would give a lower bound of 208. The 60-second adaptive search kept one conflict after 18,522 moves. [Run record](../../../reproduction/weak-schur-5-candidate-checker-v1/adaptive-run.json)
+
 ## Findings
 
 | Test | Rowley | Vicenzi et al. |
@@ -12,7 +16,7 @@ Fred Rowley colored the integers 1 through 207 with five colors so that no three
 | Longest recoloring radius fully exhausted in this experiment | 18 | 18 |
 | Shortest tested original prefix proven impossible to extend by unrestricted suffix recoloring | 128 | 96 |
 
-After optimal relabeling the two published colorings agree on 191 of their 207 positions. With either seed, an extension to 208 must change **at least 19** of its existing colors, even after a global palette relabeling. A coloring farther from both seeds could still work. The unrestricted value of WS(5) remains open in this investigation. These are reproducible finite computations in Python. There is no Lean proof or independently checked UNSAT certificate for the 208 search.
+After optimal relabeling the two published colorings agree on 191 of their 207 positions. With either seed, an extension to 208 must change **at least 19** of its existing colors, even after a global palette relabeling. A coloring farther from both seeds could still work. The unrestricted value of WS(5) remains open in this investigation. These are reproducible finite computations in Python. The position-by-position search used a Python verifier. The whole-class search below also supplies SAT certificates.
 
 An exact test also allowed entire classes to change. For each seed, holding any two old classes fixed made an extension impossible even when the other three could be repartitioned freely. Each of the 20 formulas has an independently checked DRAT proof. A search freeing four classes reached its time limit for every choice. [Whole-class extension test and public proof files](class-extensions/README.md)
 
