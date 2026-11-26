@@ -18,6 +18,11 @@ The target uses the exact original proof bytes preserved in `AtMostFourteen23.or
 
 The [diagnostics guide](../../docs/diagnostics/README.md) keeps the broader exploratory checks available. To inspect the four-target runner, see [replay.py](replay.py).
 
+## Current public-main replay
+
+The same scoped launcher was rerun from the anonymous public `main` checkout at `ab6ff689860696e06726c74b5336782210a8f10f`. Lean 4.33.1 compiled all four required modules into a new output directory; every module exited 0, the expected axiom lists matched, and the runner rejected any `sorryAx` token in captured module output. The [human-readable replay record](evidence/23-14-public-main-2026-11-26/README.md) gives the command setup, official toolchain and source/output hashes. The fresh run used 57.682 seconds summed across the four Lean invocations. This is a local replay from public source, not an independent third-party review.
+
+A first invocation in the same environment reached the `elan` shim without a default toolchain and failed before Lean read any source; its exact error is in the [setup-failure record](evidence/23-14-public-main-2026-11-26/setup-failure.txt). After putting the hash-verified official Lean 4.33.1 binary directory on `PATH`, the exact public command passed. The package's reproduction instructions already require the matching Lean executable on `PATH`.
 ## Results
 
 | Filter | Exact qualifying classes | Modulus | Maximum ordinary steps | Status |
