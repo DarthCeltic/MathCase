@@ -1,0 +1,458 @@
+{
+  "schema": "mathcase-ising-square-torus-dos-v1",
+  "model": {
+    "lattice": "periodic L x L square torus; L >= 3",
+    "spins": "sigma(r,c) in {-1,+1}",
+    "hamiltonian": "H = sum over each nearest-neighbor edge once of sigma_i * sigma_j (zero-field antiferromagnet, coupling magnitude 1)",
+    "edge_count": "2*L^2, with horizontal and vertical wrap edges each counted once",
+    "energy_relation": "H = aligned_bonds - broken_bonds = 2*L^2 - 2*broken_bonds"
+  },
+  "source_sha256": {
+    "transfer_matrix.py": "afd73cf12b92201563571ca35f0a7745ceabec544b0fffe2ec37076179ac5ef7",
+    "enumerate_gray.cpp": "64bba98550aa54bc9b87ae1465e3d584a0d933d73ba6e3c10152e859ff69fc3a",
+    "run_case.py": "807da8f93e60d0aa543493470ed1479e881e25acb9710087b7ebb1893cf9e6d5",
+    "verify_case.py": "78bef01dc0f49eddca7caf1c545dccb8d1af375d3ac2684b25ee13eb9570991c",
+    "verify_odd_ground_formula.py": "ec4b5c9bfa3e1c4d047d3ff69895a1afb0b2f0c4295dc8c29f84f5c2f45ca35c",
+    "verify_rectangular_ground_states.py": "530f4da9051204b9bab6483fddcb6dea507acb37afc1edb88598a10f0e499c30"
+  },
+  "tools": {
+    "cxx_version": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+    "cxx_binary_sha256": "9c2577eacb115c305d7a1a0b10aa0b16d0b7b697824e151d190c62b21dd2eb8c",
+    "compile_flags": [
+      "-O3",
+      "-DNDEBUG",
+      "-std=c++20"
+    ],
+    "compiler_exit_code": 0,
+    "compiler_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "compiler_seconds": 0.795,
+    "python_version": "3.14.7"
+  },
+  "results": [
+    {
+      "L": 3,
+      "sites": 9,
+      "total_bonds": 18,
+      "configurations": 512,
+      "counts_by_broken_bonds": [
+        2,
+        0,
+        0,
+        0,
+        18,
+        0,
+        48,
+        0,
+        198,
+        0,
+        144,
+        0,
+        102,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_energy_rows": [
+        {
+          "broken_bonds": 0,
+          "aligned_bonds": 18,
+          "antiferromagnetic_energy": 18,
+          "degeneracy": 2
+        },
+        {
+          "broken_bonds": 4,
+          "aligned_bonds": 14,
+          "antiferromagnetic_energy": 10,
+          "degeneracy": 18
+        },
+        {
+          "broken_bonds": 6,
+          "aligned_bonds": 12,
+          "antiferromagnetic_energy": 6,
+          "degeneracy": 48
+        },
+        {
+          "broken_bonds": 8,
+          "aligned_bonds": 10,
+          "antiferromagnetic_energy": 2,
+          "degeneracy": 198
+        },
+        {
+          "broken_bonds": 10,
+          "aligned_bonds": 8,
+          "antiferromagnetic_energy": -2,
+          "degeneracy": 144
+        },
+        {
+          "broken_bonds": 12,
+          "aligned_bonds": 6,
+          "antiferromagnetic_energy": -6,
+          "degeneracy": 102
+        }
+      ],
+      "ground_state": {
+        "broken_bonds": 12,
+        "aligned_bonds": 6,
+        "antiferromagnetic_energy": -6,
+        "degeneracy": 102
+      },
+      "method_comparison": {
+        "gray_exit_code": 0,
+        "row_transfer_matches_gray_enumeration": true,
+        "row_transfer_histogram_sha256": "3653560d8a966aa5445e07a70894a8f95309a16b696e11645fe981ab1bc6866e",
+        "gray_histogram_sha256": "3653560d8a966aa5445e07a70894a8f95309a16b696e11645fe981ab1bc6866e",
+        "gray_configurations_enumerated": 512,
+        "row_transfer_seconds": 0.001,
+        "gray_enumeration_seconds": 0.07
+      }
+    },
+    {
+      "L": 4,
+      "sites": 16,
+      "total_bonds": 32,
+      "configurations": 65536,
+      "counts_by_broken_bonds": [
+        2,
+        0,
+        0,
+        0,
+        32,
+        0,
+        64,
+        0,
+        424,
+        0,
+        1728,
+        0,
+        6688,
+        0,
+        13568,
+        0,
+        20524,
+        0,
+        13568,
+        0,
+        6688,
+        0,
+        1728,
+        0,
+        424,
+        0,
+        64,
+        0,
+        32,
+        0,
+        0,
+        0,
+        2
+      ],
+      "nonzero_energy_rows": [
+        {
+          "broken_bonds": 0,
+          "aligned_bonds": 32,
+          "antiferromagnetic_energy": 32,
+          "degeneracy": 2
+        },
+        {
+          "broken_bonds": 4,
+          "aligned_bonds": 28,
+          "antiferromagnetic_energy": 24,
+          "degeneracy": 32
+        },
+        {
+          "broken_bonds": 6,
+          "aligned_bonds": 26,
+          "antiferromagnetic_energy": 20,
+          "degeneracy": 64
+        },
+        {
+          "broken_bonds": 8,
+          "aligned_bonds": 24,
+          "antiferromagnetic_energy": 16,
+          "degeneracy": 424
+        },
+        {
+          "broken_bonds": 10,
+          "aligned_bonds": 22,
+          "antiferromagnetic_energy": 12,
+          "degeneracy": 1728
+        },
+        {
+          "broken_bonds": 12,
+          "aligned_bonds": 20,
+          "antiferromagnetic_energy": 8,
+          "degeneracy": 6688
+        },
+        {
+          "broken_bonds": 14,
+          "aligned_bonds": 18,
+          "antiferromagnetic_energy": 4,
+          "degeneracy": 13568
+        },
+        {
+          "broken_bonds": 16,
+          "aligned_bonds": 16,
+          "antiferromagnetic_energy": 0,
+          "degeneracy": 20524
+        },
+        {
+          "broken_bonds": 18,
+          "aligned_bonds": 14,
+          "antiferromagnetic_energy": -4,
+          "degeneracy": 13568
+        },
+        {
+          "broken_bonds": 20,
+          "aligned_bonds": 12,
+          "antiferromagnetic_energy": -8,
+          "degeneracy": 6688
+        },
+        {
+          "broken_bonds": 22,
+          "aligned_bonds": 10,
+          "antiferromagnetic_energy": -12,
+          "degeneracy": 1728
+        },
+        {
+          "broken_bonds": 24,
+          "aligned_bonds": 8,
+          "antiferromagnetic_energy": -16,
+          "degeneracy": 424
+        },
+        {
+          "broken_bonds": 26,
+          "aligned_bonds": 6,
+          "antiferromagnetic_energy": -20,
+          "degeneracy": 64
+        },
+        {
+          "broken_bonds": 28,
+          "aligned_bonds": 4,
+          "antiferromagnetic_energy": -24,
+          "degeneracy": 32
+        },
+        {
+          "broken_bonds": 32,
+          "aligned_bonds": 0,
+          "antiferromagnetic_energy": -32,
+          "degeneracy": 2
+        }
+      ],
+      "ground_state": {
+        "broken_bonds": 32,
+        "aligned_bonds": 0,
+        "antiferromagnetic_energy": -32,
+        "degeneracy": 2
+      },
+      "method_comparison": {
+        "gray_exit_code": 0,
+        "row_transfer_matches_gray_enumeration": true,
+        "row_transfer_histogram_sha256": "5cbb0a34eabfd17740bc2b393a01fd78044914c37a2151312dbf83a545561be7",
+        "gray_histogram_sha256": "5cbb0a34eabfd17740bc2b393a01fd78044914c37a2151312dbf83a545561be7",
+        "gray_configurations_enumerated": 65536,
+        "row_transfer_seconds": 0.024,
+        "gray_enumeration_seconds": 0.019
+      }
+    },
+    {
+      "L": 5,
+      "sites": 25,
+      "total_bonds": 50,
+      "configurations": 33554432,
+      "counts_by_broken_bonds": [
+        2,
+        0,
+        0,
+        0,
+        50,
+        0,
+        100,
+        0,
+        850,
+        0,
+        3140,
+        0,
+        16300,
+        0,
+        74500,
+        0,
+        311800,
+        0,
+        1014900,
+        0,
+        2696080,
+        0,
+        5230300,
+        0,
+        7431800,
+        0,
+        7413900,
+        0,
+        5276500,
+        0,
+        2645740,
+        0,
+        1024150,
+        0,
+        314300,
+        0,
+        82750,
+        0,
+        14800,
+        0,
+        2470,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "nonzero_energy_rows": [
+        {
+          "broken_bonds": 0,
+          "aligned_bonds": 50,
+          "antiferromagnetic_energy": 50,
+          "degeneracy": 2
+        },
+        {
+          "broken_bonds": 4,
+          "aligned_bonds": 46,
+          "antiferromagnetic_energy": 42,
+          "degeneracy": 50
+        },
+        {
+          "broken_bonds": 6,
+          "aligned_bonds": 44,
+          "antiferromagnetic_energy": 38,
+          "degeneracy": 100
+        },
+        {
+          "broken_bonds": 8,
+          "aligned_bonds": 42,
+          "antiferromagnetic_energy": 34,
+          "degeneracy": 850
+        },
+        {
+          "broken_bonds": 10,
+          "aligned_bonds": 40,
+          "antiferromagnetic_energy": 30,
+          "degeneracy": 3140
+        },
+        {
+          "broken_bonds": 12,
+          "aligned_bonds": 38,
+          "antiferromagnetic_energy": 26,
+          "degeneracy": 16300
+        },
+        {
+          "broken_bonds": 14,
+          "aligned_bonds": 36,
+          "antiferromagnetic_energy": 22,
+          "degeneracy": 74500
+        },
+        {
+          "broken_bonds": 16,
+          "aligned_bonds": 34,
+          "antiferromagnetic_energy": 18,
+          "degeneracy": 311800
+        },
+        {
+          "broken_bonds": 18,
+          "aligned_bonds": 32,
+          "antiferromagnetic_energy": 14,
+          "degeneracy": 1014900
+        },
+        {
+          "broken_bonds": 20,
+          "aligned_bonds": 30,
+          "antiferromagnetic_energy": 10,
+          "degeneracy": 2696080
+        },
+        {
+          "broken_bonds": 22,
+          "aligned_bonds": 28,
+          "antiferromagnetic_energy": 6,
+          "degeneracy": 5230300
+        },
+        {
+          "broken_bonds": 24,
+          "aligned_bonds": 26,
+          "antiferromagnetic_energy": 2,
+          "degeneracy": 7431800
+        },
+        {
+          "broken_bonds": 26,
+          "aligned_bonds": 24,
+          "antiferromagnetic_energy": -2,
+          "degeneracy": 7413900
+        },
+        {
+          "broken_bonds": 28,
+          "aligned_bonds": 22,
+          "antiferromagnetic_energy": -6,
+          "degeneracy": 5276500
+        },
+        {
+          "broken_bonds": 30,
+          "aligned_bonds": 20,
+          "antiferromagnetic_energy": -10,
+          "degeneracy": 2645740
+        },
+        {
+          "broken_bonds": 32,
+          "aligned_bonds": 18,
+          "antiferromagnetic_energy": -14,
+          "degeneracy": 1024150
+        },
+        {
+          "broken_bonds": 34,
+          "aligned_bonds": 16,
+          "antiferromagnetic_energy": -18,
+          "degeneracy": 314300
+        },
+        {
+          "broken_bonds": 36,
+          "aligned_bonds": 14,
+          "antiferromagnetic_energy": -22,
+          "degeneracy": 82750
+        },
+        {
+          "broken_bonds": 38,
+          "aligned_bonds": 12,
+          "antiferromagnetic_energy": -26,
+          "degeneracy": 14800
+        },
+        {
+          "broken_bonds": 40,
+          "aligned_bonds": 10,
+          "antiferromagnetic_energy": -30,
+          "degeneracy": 2470
+        }
+      ],
+      "ground_state": {
+        "broken_bonds": 40,
+        "aligned_bonds": 10,
+        "antiferromagnetic_energy": -30,
+        "degeneracy": 2470
+      },
+      "method_comparison": {
+        "gray_exit_code": 0,
+        "row_transfer_matches_gray_enumeration": true,
+        "row_transfer_histogram_sha256": "7baa473d57f3f1f8c769473fa802b080cc2977bd85490b1aa6e207b81eb1ff57",
+        "gray_histogram_sha256": "7baa473d57f3f1f8c769473fa802b080cc2977bd85490b1aa6e207b81eb1ff57",
+        "gray_configurations_enumerated": 33554432,
+        "row_transfer_seconds": 0.717,
+        "gray_enumeration_seconds": 0.138
+      }
+    }
+  ],
+  "scope": "Exact finite density of states for L=3,4,5 only; no thermodynamic-limit computation or new physics claim."
+}

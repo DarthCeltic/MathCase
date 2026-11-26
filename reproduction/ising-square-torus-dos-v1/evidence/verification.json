@@ -1,0 +1,47 @@
+{
+  "schema": "mathcase-ising-square-torus-dos-verification-v1",
+  "verified": true,
+  "receipt_sha256": "d6ec2e1ce1cf8e5561caee82c7b38c3a65171c777d05f66ed10b40d0544aa45d",
+  "source_sha256": {
+    "transfer_matrix.py": "afd73cf12b92201563571ca35f0a7745ceabec544b0fffe2ec37076179ac5ef7",
+    "enumerate_gray.cpp": "64bba98550aa54bc9b87ae1465e3d584a0d933d73ba6e3c10152e859ff69fc3a",
+    "run_case.py": "807da8f93e60d0aa543493470ed1479e881e25acb9710087b7ebb1893cf9e6d5",
+    "verify_case.py": "78bef01dc0f49eddca7caf1c545dccb8d1af375d3ac2684b25ee13eb9570991c",
+    "verify_odd_ground_formula.py": "ec4b5c9bfa3e1c4d047d3ff69895a1afb0b2f0c4295dc8c29f84f5c2f45ca35c",
+    "verify_rectangular_ground_states.py": "530f4da9051204b9bab6483fddcb6dea507acb37afc1edb88598a10f0e499c30"
+  },
+  "checks": [
+    {
+      "L": 3,
+      "total_configurations": 512,
+      "global_flip_pairs": true,
+      "two_all_aligned_configurations": true,
+      "checkerboard_broken_bonds": 12,
+      "odd_torus_frustration": true,
+      "row_transfer_equals_full_gray_enumeration": true,
+      "ground_state_degeneracy": 102
+    },
+    {
+      "L": 4,
+      "total_configurations": 65536,
+      "global_flip_pairs": true,
+      "two_all_aligned_configurations": true,
+      "checkerboard_broken_bonds": 32,
+      "odd_torus_frustration": null,
+      "row_transfer_equals_full_gray_enumeration": true,
+      "ground_state_degeneracy": 2
+    },
+    {
+      "L": 5,
+      "total_configurations": 33554432,
+      "global_flip_pairs": true,
+      "two_all_aligned_configurations": true,
+      "checkerboard_broken_bonds": 40,
+      "odd_torus_frustration": true,
+      "row_transfer_equals_full_gray_enumeration": true,
+      "ground_state_degeneracy": 2470
+    }
+  ],
+  "negative_control": "incrementing the B=0 bin is rejected by the exact total-state check",
+  "scope": "Exact finite density of states for L=3,4,5 only; no thermodynamic-limit computation or new physics claim."
+}
