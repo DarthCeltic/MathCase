@@ -1,5 +1,21 @@
 # MathCase public reproduction evidence
 
+## Report an independent check
+
+If you have access to a machine outside the MathCase project, there are three checks you can repeat from public files. A failed run is worth reporting too.
+
+| What you want to check | Where to start | Expected result |
+| --- | --- | --- |
+| A small Lean proof | [23-step Collatz proof, exact revision and command](https://github.com/DarthCeltic/MathCase/blob/f6025ba3ca220e5749036976497b71d11852ef29/reproduction/collatz-parity-envelopes-2026-11-v1/evidence/23-14-public-main-2026-11-26/README.md) | Four Lean Core modules compile. For starts at least 3 with at most 14 odd inputs, the 23rd shortcut endpoint lies below the start. |
+| A finite arithmetic result, using Python alone | [Smallest possible largest denominators](https://github.com/DarthCeltic/MathCase/tree/6d6791c25dea00d08e3663c0ea3fdbcec6d9dda0/research/number-theory/egyptian-fractions/least-largest-denominator-v1) | The integer checker verifies 143 minima. The unique worst ratio is 1,032 at the prime 9,601. |
+| The complete M20 build | [Full source replay instructions at the archived revision](https://github.com/DarthCeltic/MathCase/blob/0b2b343bc09e3608cf458fb693abddfe11726d7c/reproduction/m20-public-source-replay-v1/ORIGINAL_REPLAY.md) | 363 modules compile and 23 audit groups report the axioms of 4,262 declarations. The project run took about 3 hours 43 minutes on one CPU. |
+
+To [report a replay](https://github.com/DarthCeltic/MathCase/issues/new?title=Independent%20replay), give the case, commit from `git rev-parse HEAD`, OS, tool versions, command and outcome. For a failure, the first failing stage and its diagnostic are especially helpful. Small summaries or public log links are sufficient. A comparison of the two outputs, or a discrepancy you can reproduce, gives readers something concrete to follow.
+
+Mathematicians can also [review a statement](https://github.com/DarthCeltic/MathCase/issues/new?title=Mathematical%20review). Identify the declaration and the plain-language sentence you compared. Say whether the hypotheses, conclusion, step convention and literature attribution agree. A literature reference, a counterexample or a suggested correction is welcome. A mathematical review can be recorded independently of a software run.
+
+## Proofs and saved evidence
+
 Start with the [bounded 23/14 Collatz proof](collatz-parity-envelopes-2026-11-v1/README.md). For every start `n ≥ 3` with at most 14 odd inputs in the first 23 accelerated steps, an ordinary iterate is smaller by step 37. Lean counted 7,507,638 qualifying residue classes out of 8,388,608 modulo `2^23`. The package includes the one-command replay and its successful fresh public-checkout receipt.
 
 Visitors can also read the [right-triangle midpoint case](coordinate-right-triangle-midpoint-v1/README.md), start with the [six-dot puzzle](https://darthceltic.github.io/mathcase/) or inspect the [saved proof example](https://darthceltic.github.io/mathcase/reader.html?scope=public#case/hero-prime-divisibility-r1), where Lean rejected an attempt and accepted a correction.
