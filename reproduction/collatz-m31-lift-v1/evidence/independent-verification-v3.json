@@ -1,0 +1,53 @@
+{
+  "all_row_prefix_uniqueness_histogram": {
+    "49": 108,
+    "51": 406,
+    "52": 258,
+    "53": 78,
+    "54": 10
+  },
+  "axiom_checked": true,
+  "axioms": [
+    "propext",
+    "Quot.sound"
+  ],
+  "command_record_sha256": "f6e2014ca305e53bffe9363fb27734eb808ebe8f6547efac0c16da226a637430",
+  "core_lean_source_sha256": "804ecd0b2b820bc1d4a4ce9255460ffc1a564391dd957fbc6178aff54d4b79d4",
+  "core_stdout_sha256": "14ce6e808df8df0cf6cba8faef8dfcc9ed02c162228236d8ed36e42e63bdfc7f",
+  "elapsed_seconds": 0.551,
+  "external_calls": 0,
+  "families_olean_sha256": "d1187cdba32dd6ff2a0dbb2756d173f1f10e3f9f8b566b1d19b896cf0d9ee25c",
+  "family_certificate_sha256": "34c83a09b305f946cd5b745250ab3a7e998acbf36d1d8eb328c682a74383cb97",
+  "family_lean_source_sha256": "6334b18c5300f23928bb943aaee39a2ecbbf72ed555a7fba2da18cb97cc36a64",
+  "finished_utc": "2026-11-26T00:05:10.195369+00:00",
+  "finite_lift_controls_per_row": [
+    0,
+    1,
+    2
+  ],
+  "generation_receipt_sha256": "5dbd3b8de35a7b8c87775fe5d02b2ccd17edd00c04022c54d6422fdd1c5434a3",
+  "late_drop_rows": 17,
+  "late_prefix_uniqueness_histogram": {
+    "51": 4,
+    "52": 8,
+    "53": 4,
+    "54": 1
+  },
+  "lean_compiled": true,
+  "lean_elapsed_seconds": 191,
+  "lean_receipt_sha256": "569796bc8707d6e2fe9753682ca7ed0c2a9dfbefb3ba5e4f169944fdcd5cfb79",
+  "lean_stdout_sha256": "5f8ef9363c0b2310a6d6b12984872defa11970afdec3a3ab71b7fa2d312adac1",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release) ",
+  "line_ending_normalization_receipt_sha256": "8b5b238e8a974f5681336060d7a6a6ffcc78432a7169b15a91b72d78886a63b0",
+  "provider_spend_usd": 0,
+  "rows_recomputed": 860,
+  "schema": "mathcase-m31-branch-lifted-descent-independent-verification-v3",
+  "source_bindings": {
+    "source_analysis_receipt_sha256": "f2607971aad51099be36e433b85d93db52e5c404ad40062bb580d0179b441ad6",
+    "source_candidate_membership_tsv_sha256": "b709a7c638031513ef4f43acf65dac243f945ea92d777a5609b85e4c84adc5dd",
+    "source_independent_verification_sha256": "0a818221a01d6aab95bdc35205112c7a762ade5e28fab519bb53ce2d14366940",
+    "source_package_manifest_sha256": "d9ae2ec722810c85b551f775f16d806b7beccbe59c17e25d7a899df96dc2d5a0",
+    "source_result_sha256": "17e6f9d129b0f64cdb1def813117ada84fbcab681bff24e574d29e5396309ae0"
+  },
+  "status": "PASS_ARITHMETIC_AND_LEAN_AND_SOURCE_BINDINGS"
+}
