@@ -1,0 +1,17 @@
+{
+  "checked_utc": "2026-11-26T20:47:52Z",
+  "scope": "Primes p <= 10000 with p mod 24 = 1. Positive distinct denominators x < y < z.",
+  "prime_count": 143,
+  "largest_optimal_z_over_p": 1032,
+  "unique_extremal_prime": 9601,
+  "minimizing_triple": [
+    2408,
+    806484,
+    9908232
+  ],
+  "table_lf_sha256": "b03a1334b709bc74d55b1dfd4ced0941c01428e1b00c376ed8d8c420a00cc9a2",
+  "generator_comparison": "Byte-identical CSV on regeneration with search.py.",
+  "exhaustive_check": "Verified 143 distinct-denominator minima; max z/p = 1032.",
+  "boundary_control": "At p=9601 the integer scan excludes cap 9908231 and finds a witness at cap 9908232.",
+  "suboptimal_control": "The true identity with denominators (2415, 403242, 15457610) was rejected as nonoptimal."
+}
