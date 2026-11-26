@@ -83,18 +83,123 @@ def choose_receipt() -> Path:
         candidate = base.with_name(f'{base.stem}-{suffix}{base.suffix}'); suffix += 1
     return candidate
 
+def configure_utf8_console() -> None:
+    """Print captured Lean output safely on Windows consoles with legacy code pages."""
+    for stream in (sys.stdout, sys.stderr):
+        reconfigure = getattr(stream, 'reconfigure', None)
+        if callable(reconfigure):
+            reconfigure(encoding='utf-8', errors='replace')
+
+
+def sha256_file(path: Path) -> str:
+    return digest(path.read_bytes())
+
+
+def _manifest_file(manifest: dict, key: str) -> tuple[Path, str]:
+    record = manifest.get('files', {}).get(key)
+    if not isinstance(record, dict) or not isinstance(record.get('path'), str) or not isinstance(record.get('sha256'), str):
+        raise RuntimeError(f'CURRENT_RECEIPT_MANIFEST_INVALID: {key}')
+    path = (ROOT / record['path']).resolve()
+    try:
+        path.relative_to(ROOT.resolve())
+    except ValueError as exc:
+        raise RuntimeError(f'CURRENT_RECEIPT_PATH_OUTSIDE_PACKAGE: {key}') from exc
+    return path, record['sha256']
+
+
+def verify_current_recorded() -> None:
+    manifest_path = ROOT / 'verification' / 'current-lock-replay-manifest.json'
+    manifest = json.loads(manifest_path.read_text(encoding='utf-8'))
+    if manifest.get('schema') != 'mathcase-r66-current-lock-replay-manifest-v1':
+        raise RuntimeError('CURRENT_RECEIPT_MANIFEST_SCHEMA_MISMATCH')
+    if manifest.get('lake_manifest_sha256') != EXPECTED['lake-manifest.json']:
+        raise RuntimeError('CURRENT_RECEIPT_LOCK_PIN_MISMATCH')
+    if manifest.get('source_manifest_sha256') != EXPECTED['source-manifest.json']:
+        raise RuntimeError('CURRENT_RECEIPT_SOURCE_PIN_MISMATCH')
+    if manifest.get('mathlib_commit') != '0df444a360eaa60ab8c11dca51a86af692955474':
+        raise RuntimeError('CURRENT_RECEIPT_MATHLIB_PIN_MISMATCH')
+    for key in ('pass_receipt', 'execution_receipt', 'audit_output', 'first_run_failure_summary', 'historical_receipt'):
+        path, expected = _manifest_file(manifest, key)
+        if not path.is_file() or sha256_file(path) != expected:
+            raise RuntimeError(f'CURRENT_RECEIPT_FILE_HASH_MISMATCH: {key}')
+    run_path, _ = _manifest_file(manifest, 'pass_receipt')
+    run = json.loads(run_path.read_text(encoding='utf-8'))
+    execution_path, _ = _manifest_file(manifest, 'execution_receipt')
+    execution = json.loads(execution_path.read_text(encoding='utf-8'))
+    if run.get('status') != 'PASS' or run.get('sorryAx') is not False:
+        raise RuntimeError('CURRENT_REPLAY_NOT_A_PASS')
+    if run.get('source_manifest_sha256') != EXPECTED['source-manifest.json']:
+        raise RuntimeError('CURRENT_REPLAY_SOURCE_MANIFEST_MISMATCH')
+    if run.get('mathlib_commit') != manifest.get('mathlib_commit'):
+        raise RuntimeError('CURRENT_REPLAY_MATHLIB_COMMIT_MISMATCH')
+    if run.get('lean_version') != manifest.get('lean_version'):
+        raise RuntimeError('CURRENT_REPLAY_LEAN_VERSION_MISMATCH')
+    audit_path, audit_sha = _manifest_file(manifest, 'audit_output')
+    if (audit_sha != '5dc2619cfc1323829e85eaab6fce425c194a29bfdb4a81a4fb514b8491d11ffc'
+            or sha256_file(audit_path) != audit_sha
+            or audit_path.read_text(encoding='utf-8') != EXPECTED_AUDIT):
+        raise RuntimeError('CURRENT_AUDIT_OUTPUT_MISMATCH')
+    if (manifest.get('fresh_audit_output_sha256') != audit_sha
+            or run.get('fresh_audit_output_sha256') != audit_sha):
+        raise RuntimeError('CURRENT_REPLAY_AUDIT_HASH_MISMATCH')
+    if run.get('axioms') != ['propext', 'Classical.choice', 'Quot.sound']:
+        raise RuntimeError('CURRENT_REPLAY_AXIOM_SET_MISMATCH')
+    if '4.33.1' not in run.get('lean_version', ''):
+        raise RuntimeError('CURRENT_REPLAY_LEAN_VERSION_MISMATCH')
+    if execution.get('process_exit') != 0 or execution.get('project_outputs_initially_absent') is not True:
+        raise RuntimeError('CURRENT_EXECUTION_RECORD_MISMATCH')
+    if execution.get('lake_lock_sha256') != EXPECTED['lake-manifest.json']:
+        raise RuntimeError('CURRENT_EXECUTION_LOCK_MISMATCH')
+    if not manifest.get('pass_receipt_is_raw_execution_json'):
+        raise RuntimeError('CURRENT_RECEIPT_IS_NOT_RAW_EXECUTION_JSON')
+    if execution.get('replay_receipt_sha256') != sha256_file(run_path):
+        raise RuntimeError('CURRENT_EXECUTION_RECEIPT_HASH_MISMATCH')
+    if run.get('replay_driver_sha256') != manifest.get('replay_driver_sha256_at_run'):
+        raise RuntimeError('CURRENT_REPLAY_DRIVER_HASH_MISMATCH')
+    failure_path, _ = _manifest_file(manifest, 'first_run_failure_summary')
+    failure = json.loads(failure_path.read_text(encoding='utf-8'))
+    if failure.get('original_receipt_sha256') != 'dbbb91872b2c84aad8e81a5d8aeab34b0a2f3e9b8c0ce41f3d336241471e6eaa':
+        raise RuntimeError('FIRST_RUN_FAILURE_PROVENANCE_MISMATCH')
+    if execution.get('python_output_encoding') != 'UTF-8':
+        raise RuntimeError('CURRENT_EXECUTION_ENCODING_MISMATCH')
+    if execution.get('source_commit') != manifest.get('source_commit'):
+        raise RuntimeError('CURRENT_EXECUTION_SOURCE_COMMIT_MISMATCH')
+    commands = run.get('commands', [])
+    build_ok = any(c.get('argv') == ['lake', 'build', '-Kjobs=1', 'MathCase'] and c.get('exit_code') == 0 for c in commands)
+    audit_ok = any(c.get('argv') == ['lake', 'env', 'lean', 'Audit.lean'] and c.get('exit_code') == 0 for c in commands)
+    if not build_ok or not audit_ok or run.get('clean_source_preflight') != 'PASS':
+        raise RuntimeError('CURRENT_REPLAY_COMMAND_RECORD_MISMATCH')
+
+
+def verify_historical_receipt() -> None:
+    manifest = json.loads((ROOT / 'verification' / 'current-lock-replay-manifest.json').read_text(encoding='utf-8'))
+    path, expected = _manifest_file(manifest, 'historical_receipt')
+    prior = json.loads(path.read_text(encoding='utf-8'))
+    historical_lock = prior.get('toolchain', {}).get('lake_manifest_sha256')
+    current_lock = digest((ROOT / 'lake-manifest.json').read_bytes())
+    if sha256_file(path) != expected or prior.get('status') != 'PASS':
+        raise RuntimeError('HISTORICAL_RECEIPT_NOT_PRESERVED')
+    if historical_lock != manifest.get('historical_lock_sha256') or historical_lock == current_lock:
+        raise RuntimeError('HISTORICAL_RECEIPT_BINDING_MISMATCH')
+    if prior.get('axiom_audit', {}).get('output', {}).get('sha256') != EXPECTED['verification/axiom-audit.txt']:
+        raise RuntimeError('HISTORICAL_RECEIPT_AUDIT_BINDING_MISMATCH')
+
+
 def main() -> int:
+    configure_utf8_console()
     parser = argparse.ArgumentParser(description='Rebuild and audit the pinned R(6,6) >= 102 Lean witness.')
     parser.add_argument('--verify-inputs', action='store_true', help='check package input hashes without invoking Lean or Lake')
-    parser.add_argument('--verify-recorded', action='store_true', help='require the historic Lake receipt to bind the current lock')
+    parser.add_argument('--verify-recorded', action='store_true', help='verify the fresh replay receipt for the current Lake lock')
+    parser.add_argument('--verify-historical', action='store_true', help='verify the preserved older receipt and its historical lock mismatch')
     parser.add_argument('--receipt', type=Path, help='write a run receipt at this path; default is a unique timestamped file')
     parser.add_argument('--check-clean-build', action='store_true', help='check that no pinned MathCase OLEANs pre-exist; does not invoke Lean or Lake')
     args = parser.parse_args()
-    if args.check_clean_build and (args.verify_inputs or args.verify_recorded or args.receipt):
+    verify_modes = [args.verify_inputs, args.verify_recorded, args.verify_historical]
+    if args.check_clean_build and (any(verify_modes) or args.receipt):
         parser.error('--check-clean-build is a standalone preflight mode')
-    if args.verify_recorded and args.receipt:
-        parser.error('--receipt cannot be used with --verify-recorded')
-    if args.verify_inputs and args.verify_recorded:
+    if args.receipt and any(verify_modes):
+        parser.error('--receipt cannot be used with a saved-file verification mode')
+    if sum(bool(mode) for mode in verify_modes) > 1:
         parser.error('choose only one verification mode')
     if args.check_clean_build:
         try:
@@ -107,21 +212,18 @@ def main() -> int:
             print(f'FAIL: {exc}', file=sys.stderr)
             return 1
 
-    if args.verify_inputs or args.verify_recorded:
+    if args.verify_inputs or args.verify_recorded or args.verify_historical:
         try:
             bound = verify_inputs()
             if args.verify_recorded:
-                prior = json.loads((ROOT / 'lake-replay-receipt.json').read_text(encoding='utf-8'))
-                historic_lock = prior.get('toolchain', {}).get('lake_manifest_sha256')
-                current_lock = digest((ROOT / 'lake-manifest.json').read_bytes())
-                if prior.get('status') != 'PASS' or prior.get('axiom_audit', {}).get('output', {}).get('sha256') != EXPECTED['verification/axiom-audit.txt']:
-                    raise RuntimeError('RECORDED_RECEIPT_BINDING_MISMATCH')
-                if historic_lock != current_lock:
-                    raise RuntimeError(f'HISTORICAL_LOCK_MISMATCH: receipt={historic_lock}; current={current_lock}')
-                print('PASS: historical receipt binds the current lock and axiom output.')
+                verify_current_recorded()
+                print('PASS: the fresh replay receipt, execution record, captured audit output, and current Lake lock match their hashes.')
+            elif args.verify_historical:
+                verify_historical_receipt()
+                print('PASS: the original historical receipt is unchanged and explicitly binds the older lock; it is not a replay of the current lock.')
             else:
                 print('PASS: current package input hashes and recorded audit text match their pins.')
-            print('No Lean or Lake command was run; this mode does not replay the theorem.')
+            print('No Lean or Lake command was run; these modes verify saved files only.')
             print(f"Mathlib: {bound['mathlib_commit']}; MathCase modules in manifest: {bound['mathcase_source_count']}.")
             print(f"Current lake-manifest SHA-256: {EXPECTED['lake-manifest.json']}.")
             return 0

@@ -1,0 +1,71 @@
+{
+  "schema": "mathcase-r66-single-command-replay-v1",
+  "replay_driver_sha256": "1a21720fbc7e373993a69888abf6546eae1f9f7aa0b7e77dc63ea6887eca6dd8",
+  "started_utc": "2026-11-26T02:21:52.884181+00:00",
+  "status": "PASS",
+  "commands": [
+    {
+      "argv": [
+        "lake",
+        "exe",
+        "cache",
+        "get"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 17.609,
+      "stdout": "Current branch: HEAD\nUsing cache from origin: (some leanprover-community/mathlib4)\nNo files to download\nAlready decompressed 8690 file(s)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 2.347,
+      "stdout": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lake",
+        "build",
+        "-Kjobs=1",
+        "MathCase"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 117.74,
+      "stdout": "\u26a0 [1167/1171] Built MathCase.R66.Foundation (16s)\nwarning: MathCase/R66/Foundation.lean:57:6: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\nwarning: MathCase/R66/Foundation.lean:185:4: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\nwarning: MathCase/R66/Foundation.lean:199:4: try 'simp' instead of 'simpa'\n\nNote: This linter can be disabled with `set_option linter.unnecessarySimpa false`\n\u2714 [1168/1171] Built MathCase.R66.Rows.Representative (83s)\n\u26a0 [1169/1171] Built MathCase.R66.Composition (7.8s)\nwarning: MathCase/R66/Composition.lean:127:4: Try this: \n  letI\u0335\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\nwarning: MathCase/R66/Composition.lean:130:4: Try this: \n  letI\u0335\n\nThe goal is a proposition, so `let` is preferred over `letI`.\nThe difference between `let` and `letI` is that `letI` inlines the value.\nBut this is not relevant for proofs because of proof irrelevance.\n\nNote: This linter can be disabled with `set_option linter.style.haveILetI false`\ninfo: MathCase/R66/Composition.lean:132:0: 'MathCase.RamseyR66V2.ramsey_number_six_six_lower_bound_candidate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n\u2714 [1170/1171] Built MathCase (7.3s)\nBuild completed successfully (1171 jobs).\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "lake",
+        "env",
+        "lean",
+        "Audit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 10.084,
+      "stdout": "'MathCase.RamseyR66V2.ramsey_number_six_six_lower_bound_candidate' depends on axioms: [propext,\n Classical.choice,\n Quot.sound]\n",
+      "stderr": ""
+    }
+  ],
+  "claim_scope": "Known R(6,6) lower bound from a 101-vertex witness; not a new or exact value.",
+  "source_manifest_sha256": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "mathcase_source_count": 3,
+  "clean_source_preflight": "PASS",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "fresh_audit_output_sha256": "5dc2619cfc1323829e85eaab6fce425c194a29bfdb4a81a4fb514b8491d11ffc",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx": false,
+  "elapsed_seconds": 147.782,
+  "completed_utc": "2026-11-26T02:24:20.666066+00:00"
+}

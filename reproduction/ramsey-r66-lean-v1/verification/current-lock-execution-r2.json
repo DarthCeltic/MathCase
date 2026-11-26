@@ -1,0 +1,12 @@
+{
+  "source_commit": "343e9e9fcbd002bc474fffc9ed5faace1351cd37",
+  "started": "2026-11-25T21:21:52.7565583-05:00",
+  "project_outputs_initially_absent": true,
+  "dependency_cache": "official public Mathlib cache hydrated during r1; project build recreated",
+  "python_output_encoding": "UTF-8",
+  "process_exit": 0,
+  "wall_seconds": 147.929,
+  "lake_lock_sha256": "958b34400c85f0e6e9e1a3ec9c2c67e3df25fcfed9195c53d50302af588f3c0f",
+  "r1_composition_olean_preserved_sha256": "6f3de647dc7d60fe68e0936351b271ce2c0dd3b3f8b4e92d4c182a1b8dac380d",
+  "replay_receipt_sha256": "063fa8bb61a1c48d53158879d5eed3120995bcfd49be270d1290697e397530aa"
+}

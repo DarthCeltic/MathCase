@@ -19,8 +19,16 @@ The saved public-source Lake receipt reports a successful source build and axiom
 
 `python replay_r66.py --verify-inputs` checks the current package's pinned files and recorded audit text. It does not invoke Lean or Lake and is not a theorem replay. In a disposable copy, this check passed unchanged inputs and rejected a one-byte-mutated manifest with `INPUT_HASH_MISMATCH`.
 
-`python replay_r66.py --verify-recorded` additionally requires the historic Lake receipt's lock hash to equal the checked-in lock hash. It currently fails closed with `HISTORICAL_LOCK_MISMATCH`. The disposable pass/reject exercise invoked no Lean or Lake commands.
+The --verify-recorded option now checks the fresh receipt for the current Lake lock. The --verify-historical option confirms that the original older receipt is unchanged and still binds the older lock. Both checks operate on saved files only; neither invokes Lean or Lake. The disposable pass/reject exercise invoked no Lean or Lake commands.
 
 ## Remaining work
 
-The old lock bytes are unavailable in the saved trees, so the historic receipt cannot presently be tied to the checked-in lock. A fresh source build and axiom audit under the exact current lock, with a new receipt that binds that lock, are still needed. That full replay was not run as part of this forensic check. This package verifies the known Paley(101) witness for the established lower bound `R(6,6) ≥ 102`; it does not establish a new bound or the exact Ramsey number.
+At the time of the original forensic check, no fresh current-lock replay was available. That gap was closed by the run recorded below. The reason for the older receipt's lock mismatch remains unknown. This package checks a known Paley(101) witness for the established lower bound R(6,6) ≥ 102; it does not establish a new bound or the exact Ramsey number.
+
+## Update: fresh current-lock public-source replay
+
+On 2026-11-25, a fresh project-output run compiled the three MathCase modules from the public source commit 343e9e9 under the checked-in Lake manifest SHA-256 958b34400c85f0e6e9e1a3ec9c2c67e3df25fcfed9195c53d50302af588f3c0f. Mathlib 0df444a360eaa60ab8c11dca51a86af692955474 and Lean 4.33.1 were used. All build and audit commands exited 0; the axiom set was [propext, Classical.choice, Quot.sound], with no sorryAx. The recorded wall time was 147.929 seconds. The official public Mathlib cache fetched during the earlier setup attempt was reused; no pre-existing MathCase OLEANs were used.
+
+The first wrapper invocation completed the project build but failed while Python printed a Lean warning character through the Windows legacy console encoding. Its original raw receipt remains in the private run archive; the public summary records its exact SHA-256 and the successful build stage. The later UTF-8 run passed. The checked-in wrapper now configures UTF-8 output and its focused regression test forces the prior cp1252 environment. The wrapper-source change itself was not run through a second full Lean build.
+
+The current-lock run record, execution record, normalized audit output, failure summary, and unchanged historical receipt are bound by verification/current-lock-replay-manifest.json. The raw current-lock run JSON hash is also recorded in the execution receipt. The old 2a66... lock mismatch remains unresolved as a historical provenance question and is not overwritten by the new current-lock receipt. This is an author-side public-source replay, not an independent second-host replay or human review.

@@ -1,0 +1,2 @@
+current-lock-execution-r2.json -text -eol whitespace=cr-at-eol
+current-lock-replay-r2-pass.json -text -eol whitespace=cr-at-eol
