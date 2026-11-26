@@ -2,7 +2,7 @@
 
 Start with the [bounded 23/14 Collatz proof](collatz-parity-envelopes-2026-11-v1/README.md). For every start `n ≥ 3` with at most 14 odd inputs in the first 23 accelerated steps, an ordinary iterate is smaller by step 37. Lean counted 7,507,638 qualifying residue classes out of 8,388,608 modulo `2^23`. The package includes the one-command replay and its successful fresh public-checkout receipt.
 
-Visitors can also read the [right-triangle midpoint case](coordinate-right-triangle-midpoint-v1/README.md), start with the [six-dot puzzle](https://darthceltic.github.io/) or inspect the [saved proof example](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1), where Lean rejected an attempt and accepted a correction.
+Visitors can also read the [right-triangle midpoint case](coordinate-right-triangle-midpoint-v1/README.md), start with the [six-dot puzzle](https://darthceltic.github.io/mathcase/) or inspect the [saved proof example](https://darthceltic.github.io/mathcase/reader.html?scope=public#case/hero-prime-divisibility-r1), where Lean rejected an attempt and accepted a correction.
 
 Each package below says what question it addresses, what was actually checked, and what remains open. A receipt records the exact files and tools for a run; it does not by itself prove a broader claim or replace a human review of the wording.
 
@@ -32,4 +32,4 @@ Secondary source audits, worked examples for upstream results, selected M31 reco
 
 The [TruffleHog history exception](../docs/security/trufflehog-history-exception-2026-11-20.md) records exactly two benign historical test-fixture findings, the current source correction, and the fail-closed monitor. No history rewrite or scanner weakening was performed.
 
-The public MathCase [README](../README.md) links to the live Case Desk, the primary 23/14 theorem, and the secondary diagnostics archive. The companion human-facing site is [darthceltic.github.io](https://darthceltic.github.io/).
+The public MathCase [README](../README.md) links to the live Case Desk, the primary 23/14 theorem, and the secondary diagnostics archive. The companion human-facing site is [darthceltic.github.io](https://darthceltic.github.io/mathcase/).
