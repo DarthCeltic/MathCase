@@ -1,0 +1,281 @@
+{
+  "artifact_sha256": "0016b05e506a003b6197292aaabeb8e9d5f46ec8cfc72ab8e16f2d3e84a323ab",
+  "controls": {
+    "direct_witness_simulation": true,
+    "residue_methods_agree": true,
+    "tiny_exhaustive": {
+      "accepted_words": 165,
+      "binomial_control": 165,
+      "horizon": 8,
+      "max_crossing_ordinary": 6,
+      "max_crossing_shortcut": 4
+    }
+  },
+  "gates": {
+    "6+12-first-only": {
+      "all_start_proof": {
+        "direct_finite_start_control": {
+          "all_within_claimed_shortcut_bound": true,
+          "checked_n_range": [
+            3,
+            36
+          ],
+          "maximum_ordinary_first_drop_in_range": 11,
+          "maximum_shortcut_first_drop_in_range": 7,
+          "qualifying_starts_checked": 31
+        },
+        "large_n_affine_endpoint_bound": {
+          "all_start_cutoff_inclusive": 37,
+          "steps": 10,
+          "worst_prefix_state": {
+            "max_affine_c": 10640,
+            "max_c_attaining_prefix_word": "0000111111",
+            "odd_count": 6,
+            "odd_count_first_window": 6,
+            "odd_count_second_window": 0,
+            "required_n": 37,
+            "slope": 295
+          }
+        },
+        "logic": "At the stated endpoint, exact affine-c bounds prove descent for every n at or above the cutoff. Every smaller n >= 3 is then checked directly with an independent integer-orbit simulation. A slope crossing without the affine-c check is not treated as an all-start proof."
+      },
+      "class_count": 10280960,
+      "gate": {
+        "first_12_at_most_odd": 6,
+        "second_12_at_most_odd": 12
+      },
+      "max_ordinary_witness": {
+        "affine_c_at_first_drop_step": 989,
+        "endpoint_value_at_first_drop": 248,
+        "first_drop_accelerated_step": 10,
+        "first_drop_ordinary_step": 16,
+        "label": "6+12-first-only max ordinary",
+        "least_integer_threshold_for_first_drop": 4,
+        "modulus": 16777216,
+        "n": 347,
+        "odd_count_first_window": 6,
+        "odd_count_second_window": 8,
+        "odd_inputs_through_drop": 6,
+        "residue_mod_2_24": 347,
+        "slope_at_first_drop_step": 295,
+        "word": "110111010000011111010110",
+        "word_hex": "0xdd07d6"
+      },
+      "max_shortcut_witness": {
+        "affine_c_at_first_drop_step": 989,
+        "endpoint_value_at_first_drop": 248,
+        "first_drop_accelerated_step": 10,
+        "first_drop_ordinary_step": 16,
+        "label": "6+12-first-only max shortcut",
+        "least_integer_threshold_for_first_drop": 4,
+        "modulus": 16777216,
+        "n": 347,
+        "odd_count_first_window": 6,
+        "odd_count_second_window": 8,
+        "odd_inputs_through_drop": 6,
+        "residue_mod_2_24": 347,
+        "slope_at_first_drop_step": 295,
+        "word": "110111010000011111010110",
+        "word_hex": "0xdd07d6"
+      },
+      "max_slope_crossing_ordinary_steps": 16,
+      "max_slope_crossing_shortcut_steps": 10,
+      "ordinary_word": "110110110000000000000000",
+      "ordinary_word_count": 12,
+      "sharp_max_actual_first_drop_accelerated_steps": 10,
+      "sharp_max_actual_first_drop_ordinary_steps": 16,
+      "shortcut_word": "110110110000000000000000",
+      "shortcut_word_count": 12,
+      "small_witness_scan": {
+        "first_maximal_witness_found": 347,
+        "starts_checked_in_order_through_inclusive": 347
+      }
+    },
+    "6+9": {
+      "all_start_proof": {
+        "direct_finite_start_control": {
+          "all_within_claimed_shortcut_bound": true,
+          "checked_n_range": [
+            3,
+            36
+          ],
+          "maximum_ordinary_first_drop_in_range": 11,
+          "maximum_shortcut_first_drop_in_range": 7,
+          "qualifying_starts_checked": 31
+        },
+        "large_n_affine_endpoint_bound": {
+          "all_start_cutoff_inclusive": 37,
+          "steps": 10,
+          "worst_prefix_state": {
+            "max_affine_c": 10640,
+            "max_c_attaining_prefix_word": "0000111111",
+            "odd_count": 6,
+            "odd_count_first_window": 6,
+            "odd_count_second_window": 0,
+            "required_n": 37,
+            "slope": 295
+          }
+        },
+        "logic": "At the stated endpoint, exact affine-c bounds prove descent for every n at or above the cutoff. Every smaller n >= 3 is then checked directly with an independent integer-orbit simulation. A slope crossing without the affine-c check is not treated as an all-start proof."
+      },
+      "class_count": 10082670,
+      "gate": {
+        "first_12_at_most_odd": 6,
+        "second_12_at_most_odd": 9
+      },
+      "max_ordinary_witness": {
+        "affine_c_at_first_drop_step": 989,
+        "endpoint_value_at_first_drop": 248,
+        "first_drop_accelerated_step": 10,
+        "first_drop_ordinary_step": 16,
+        "label": "6+9 max ordinary",
+        "least_integer_threshold_for_first_drop": 4,
+        "modulus": 16777216,
+        "n": 347,
+        "odd_count_first_window": 6,
+        "odd_count_second_window": 8,
+        "odd_inputs_through_drop": 6,
+        "residue_mod_2_24": 347,
+        "slope_at_first_drop_step": 295,
+        "word": "110111010000011111010110",
+        "word_hex": "0xdd07d6"
+      },
+      "max_shortcut_witness": {
+        "affine_c_at_first_drop_step": 989,
+        "endpoint_value_at_first_drop": 248,
+        "first_drop_accelerated_step": 10,
+        "first_drop_ordinary_step": 16,
+        "label": "6+9 max shortcut",
+        "least_integer_threshold_for_first_drop": 4,
+        "modulus": 16777216,
+        "n": 347,
+        "odd_count_first_window": 6,
+        "odd_count_second_window": 8,
+        "odd_inputs_through_drop": 6,
+        "residue_mod_2_24": 347,
+        "slope_at_first_drop_step": 295,
+        "word": "110111010000011111010110",
+        "word_hex": "0xdd07d6"
+      },
+      "max_slope_crossing_ordinary_steps": 16,
+      "max_slope_crossing_shortcut_steps": 10,
+      "ordinary_word": "110110110000000000000000",
+      "ordinary_word_count": 12,
+      "sharp_max_actual_first_drop_accelerated_steps": 10,
+      "sharp_max_actual_first_drop_ordinary_steps": 16,
+      "shortcut_word": "110110110000000000000000",
+      "shortcut_word_count": 12,
+      "small_witness_scan": {
+        "first_maximal_witness_found": 347,
+        "starts_checked_in_order_through_inclusive": 347
+      }
+    },
+    "9+6": {
+      "all_start_proof": {
+        "direct_finite_start_control": {
+          "all_within_claimed_shortcut_bound": true,
+          "checked_n_range": [
+            3,
+            117
+          ],
+          "maximum_ordinary_first_drop_in_range": 13,
+          "maximum_shortcut_first_drop_in_range": 8,
+          "qualifying_starts_checked": 93
+        },
+        "large_n_affine_endpoint_bound": {
+          "all_start_cutoff_inclusive": 118,
+          "steps": 24,
+          "worst_prefix_state": {
+            "max_affine_c": 286131032,
+            "max_c_attaining_prefix_word": "000111111111000000111111",
+            "odd_count": 15,
+            "odd_count_first_window": 9,
+            "odd_count_second_window": 6,
+            "required_n": 118,
+            "slope": 2428309
+          }
+        },
+        "logic": "At the stated endpoint, exact affine-c bounds prove descent for every n at or above the cutoff. Every smaller n >= 3 is then checked directly with an independent integer-orbit simulation. A slope crossing without the affine-c check is not treated as an all-start proof."
+      },
+      "class_count": 10082670,
+      "gate": {
+        "first_12_at_most_odd": 9,
+        "second_12_at_most_odd": 6
+      },
+      "max_ordinary_witness": {
+        "affine_c_at_first_drop_step": 32900023,
+        "endpoint_value_at_first_drop": 244,
+        "first_drop_accelerated_step": 24,
+        "first_drop_ordinary_step": 39,
+        "label": "9+6 max ordinary",
+        "least_integer_threshold_for_first_drop": 14,
+        "modulus": 16777216,
+        "n": 283,
+        "odd_count_first_window": 9,
+        "odd_count_second_window": 6,
+        "odd_inputs_through_drop": 15,
+        "residue_mod_2_24": 283,
+        "slope_at_first_drop_step": 2428309,
+        "word": "110111111001111000101010",
+        "word_hex": "0xdf9e2a"
+      },
+      "max_shortcut_witness": {
+        "affine_c_at_first_drop_step": 32900023,
+        "endpoint_value_at_first_drop": 244,
+        "first_drop_accelerated_step": 24,
+        "first_drop_ordinary_step": 39,
+        "label": "9+6 max shortcut",
+        "least_integer_threshold_for_first_drop": 14,
+        "modulus": 16777216,
+        "n": 283,
+        "odd_count_first_window": 9,
+        "odd_count_second_window": 6,
+        "odd_inputs_through_drop": 15,
+        "residue_mod_2_24": 283,
+        "slope_at_first_drop_step": 2428309,
+        "word": "110111111001111000101010",
+        "word_hex": "0xdf9e2a"
+      },
+      "max_slope_crossing_ordinary_steps": 39,
+      "max_slope_crossing_shortcut_steps": 24,
+      "ordinary_word": "110110110111001101011010",
+      "ordinary_word_count": 24464,
+      "sharp_max_actual_first_drop_accelerated_steps": 24,
+      "sharp_max_actual_first_drop_ordinary_steps": 39,
+      "shortcut_word": "110110110111001101011010",
+      "shortcut_word_count": 24464,
+      "small_witness_scan": {
+        "first_maximal_witness_found": 283,
+        "starts_checked_in_order_through_inclusive": 283
+      }
+    }
+  },
+  "generated_utc": "2026-11-26T21:07:21+00:00",
+  "global_24_15_class_fraction": 0.9242051839828491,
+  "global_24_15_reference_class_count": 15505590,
+  "independent_full_residue_scan": {
+    "classes_scanned_per_gate": 16777216,
+    "method": "direct accelerated-orbit simulation from the least n>=3 in each 24-bit residue class",
+    "record": "independent-residue-scan.csv",
+    "record_sha256": "f9e2b86d1b1cf42270c9f57c84e1da085303bad39820df22de22fd9983ac42c7",
+    "source": "check_all_residues.cpp",
+    "source_sha256": "7094088ec360742f62e94af6eb333c66768fe4fb1cde1af7d369da4d309a6f12"
+  },
+  "limitations": [
+    "This is a bounded parity-filter comparison, not a claim that every Collatz trajectory converges.",
+    "The reported maxima concern first drops guaranteed/attained within the stated 24-step filter window.",
+    "A strict slope crossing alone does not certify small starts; the all-start bounds below separately include affine constants and n >= 3.",
+    "No Lean theorem, novelty claim, or independent mathematical review is included."
+  ],
+  "map": "accelerated x -> x/2 for even x; x -> (3*x+1)/2 for odd x",
+  "method": "exact dynamic program over all parity words, affine all-start bounds, compact direct-start witness scan, residue-word certificates, and independent tiny exhaustive control",
+  "runtime": {
+    "implementation": "CPython",
+    "python": "3.14.7"
+  },
+  "schema_version": 1,
+  "title": "Two 12-step Collatz parity-window first-drop comparison",
+  "two_window_class_count": 10082670,
+  "two_window_class_fraction_of_all_words": 0.6009739637374878,
+  "window_definition": "oddness is read at the input to each accelerated step; windows are positions 1-12 and 13-24"
+}
