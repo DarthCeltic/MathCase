@@ -1,0 +1,13 @@
+{
+  "schema": "mathcase-collatz-six-of-ten-verification-v1",
+  "verified": true,
+  "replay_receipt_sha256": "a919a23ea611bd8c52be4153c52605d9dc4c15de1bec4c04e0a0831d53714cc1",
+  "source_sha256": {
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "SixOfTen.lean": "d1d2f6c5371b95ed329b7bbb79c87a023429fb7be9d602ae7ff116b7db3c8af8"
+  },
+  "lean_binary_checked": true,
+  "axioms_match": true,
+  "kernel_compile_exit_zero": true,
+  "proof_escape_scan_pass": true
+}
