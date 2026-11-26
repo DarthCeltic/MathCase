@@ -68,3 +68,6 @@ research/frontier-2026-11/ramsey-four-color/proofs/*.lrat -text -eol -diff
 # Preserve captured Collatz 13-of-21 run bytes used by the output hashes.
 reproduction/collatz-at-most-thirteen-of-twenty-one-v1/runs/**/*.json -text -eol -diff
 reproduction/collatz-at-most-thirteen-of-twenty-one-v1/runs/**/*.txt -text -eol -diff
+
+# Keep the pinned-source audit package in deterministic UTF-8/LF text form.
+reproduction/vp-vnp-source-audit-v1/** text eol=lf

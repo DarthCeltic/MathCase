@@ -1,0 +1,41 @@
+{
+  "schema": "mathcase-vp-vnp-pinned-source-audit-v1",
+  "status": "PASS_SOURCE_AUDIT_AND_EXAMPLE",
+  "upstream": "anthropics/formal-math",
+  "commit": "11b6c7e3c927df2658f513b6b68ea7f8929c62c5",
+  "checked_utc": "2026-11-26T00:15:08.276022+00:00",
+  "scope": "Fetches seven pinned upstream source/config files in memory, checks their SHA-256 values and selected declaration/config strings, and checks one exact 2x2 arithmetic example. It does not parse or compile Lean, run Comparator or nanoda, audit proof axioms, or validate the upstream theorem.",
+  "source_message": "all seven pinned source/config files and declared targets match",
+  "source_sha256": {
+    "vp-vnp/Challenge.lean": "808337bc2f4bc2a60d3a1971c9caa1da11ce22bcd7ad5da94a663387a9540912",
+    "vp-vnp/Solution.lean": "97bdfbf83eb1f84b9791d0c525a324c5bf1cbbda5e253efb0b536022eadb4c85",
+    "vp-vnp/Statement.lean": "f090345dafa13c7629ff0c0737bb1c2fe5d60e8b2d08372281cbb2e65b506ffd",
+    "vp-vnp/comparator.json": "e52c3c8a04ee33f7583ab9dd583a322bea5668841e2226c30f963078b6b3eceb",
+    "vp-vnp/lake-manifest.json": "e802752382ed2eddb4ed3b430caea1ebe13f9973225b349c234bb3cb289cb9a5",
+    "vp-vnp/lakefile.toml": "48059b78ff6f9ebd6af5a5b289384190e3268cecc02e18845a7121e0c5dc9387",
+    "vp-vnp/lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "example": {
+    "matrix": [
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "permanent_over_integers": 2,
+    "determinant_over_integers": 0,
+    "permanent_mod_2": 0,
+    "determinant_mod_2": 0,
+    "wrong_answer_1_rejected": true
+  },
+  "lean": "NOT_RUN",
+  "comparator": "NOT_RUN",
+  "nanoda": "NOT_RUN",
+  "axiom_audit": "NOT_RUN",
+  "external_model_or_provider_calls": 0,
+  "provider_spend_usd": 0
+}
