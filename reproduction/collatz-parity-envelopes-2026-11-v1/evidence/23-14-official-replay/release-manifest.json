@@ -1,0 +1,82 @@
+{
+  "schema": "mathcase-collatz-23-14-release-manifest-v1",
+  "recorded_execution": {
+    "source_commit": "343e9e9fcbd002bc474fffc9ed5faace1351cd37",
+    "executed_runner": "replay-scoped-validation.py",
+    "executed_runner_sha256": "4f26cc3145d22dbcdc87029b693bcac04f8ece4eddc1ef63357043fad7dbee2d",
+    "result": "PASS",
+    "independent_third_party_replay": false,
+    "outer_global_timeout_enforced": false,
+    "archived_runner_commit": "f9250c96eed7000e5441ad83854b58898521b1a1"
+  },
+  "current_launcher": {
+    "runner": "replay-scoped-validation-v2.py",
+    "runner_sha256": "0ac4c95f1219efb960e5f23258959bd03bf22d857117d0236c86a889e49710f7",
+    "lean_run": true,
+    "tested_source_commit": "f9250c96eed7000e5441ad83854b58898521b1a1",
+    "verification": "evidence/23-14-official-replay/public-launcher/verification.json"
+  },
+  "raw_logs": "Published transcripts replace the local path prefix in the 23/14 target's lint warning. The verification records identify the exact checked source and file digests.",
+  "artifacts": [
+    {
+      "path": "evidence/23-14-official-replay/execution-procedure-addendum.json",
+      "sha256": "4bae6179a01c1e38eb1a61f00afab5ffd0fb4a0b3deb365e79649d87c3e4502e"
+    },
+    {
+      "path": "evidence/23-14-official-replay/execution-receipt.json",
+      "sha256": "3e2fc2a054a049a26428f05b425d4fa158e1286863a5a9bc39fdb1cab9a6c27f"
+    },
+    {
+      "path": "evidence/23-14-official-replay/logs/AtMostFourteen23.txt",
+      "sha256": "c06b9752dac2fefed240d2fa0f69ffe964bb6e649bd23987a8f7b0f7710317fe"
+    },
+    {
+      "path": "evidence/23-14-official-replay/logs/CountWords.txt",
+      "sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5"
+    },
+    {
+      "path": "evidence/23-14-official-replay/logs/SHA256SUMS",
+      "sha256": "e8f7fee930a4626b49c0c0d2f99ad9c94af631a188acefe6c6a80dd2da7c1d4b"
+    },
+    {
+      "path": "evidence/23-14-official-replay/logs/WordBound.txt",
+      "sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830"
+    },
+    {
+      "path": "evidence/23-14-official-replay/logs/WordResidue.txt",
+      "sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d"
+    },
+    {
+      "path": "evidence/23-14-official-replay/replay-result.json",
+      "sha256": "a174ea50afcd541dd9d618a48626b581692664fd69217d1aef8e7e9c6f6a65aa"
+    },
+    {
+      "path": "replay-scoped-validation-v2.py",
+      "sha256": "0ac4c95f1219efb960e5f23258959bd03bf22d857117d0236c86a889e49710f7"
+    },
+    {
+      "path": "evidence/23-14-official-replay/public-launcher/logs/AtMostFourteen23.txt",
+      "sha256": "8dd44c00b495ecb5e8de54de3b044a41093504c7640571979420a4496a22699d"
+    },
+    {
+      "path": "evidence/23-14-official-replay/public-launcher/logs/CountWords.txt",
+      "sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5"
+    },
+    {
+      "path": "evidence/23-14-official-replay/public-launcher/logs/WordBound.txt",
+      "sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830"
+    },
+    {
+      "path": "evidence/23-14-official-replay/public-launcher/logs/WordResidue.txt",
+      "sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d"
+    },
+    {
+      "path": "evidence/23-14-official-replay/public-launcher/replay-result.json",
+      "sha256": "02427d3d6a5adfd217fd59147a35d33842783594c372108defe03971970a45cb"
+    },
+    {
+      "path": "evidence/23-14-official-replay/public-launcher/verification.json",
+      "sha256": "6e2482bd6e836349542372e8c8c8c04787678fe923e226ca1cec3c42af9472c6"
+    }
+  ]
+}

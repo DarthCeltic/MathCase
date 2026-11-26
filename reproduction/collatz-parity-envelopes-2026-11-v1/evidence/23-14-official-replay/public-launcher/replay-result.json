@@ -1,0 +1,103 @@
+{
+  "case_id": "collatz-parity-envelope-23-14",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "modules": [
+    {
+      "axiom_reports": {
+        "scaled_upper": [
+          "Quot.sound",
+          "propext"
+        ],
+        "twelve_of_twenty": [
+          "Quot.sound",
+          "propext"
+        ],
+        "twenty_twelve_descent": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "elapsed_seconds": 3.182591,
+      "exit_code": 0,
+      "log": "logs/WordBound.txt",
+      "module": "WordBound",
+      "olean_sha256": "8ca3ff4172048d00af6f97e305f564ce4ff7dc17412a3bc946a841b19b976d30",
+      "source_artifact": "WordBound.lean",
+      "source_sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d"
+    },
+    {
+      "axiom_reports": {
+        "lift_residue": [
+          "Quot.sound",
+          "propext"
+        ],
+        "residue_twelve_of_twenty": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "elapsed_seconds": 1.000895,
+      "exit_code": 0,
+      "log": "logs/WordResidue.txt",
+      "module": "WordResidue",
+      "olean_sha256": "9bb543de9bd5da88a51fba7d8057b904349d10cd5c768f8bbfa4e4a8de7ae007",
+      "source_artifact": "WordResidue.lean",
+      "source_sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c"
+    },
+    {
+      "axiom_reports": {
+        "count_twelve_of_twenty": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "counted_progressions_descend": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "residueCount_eq_wordCount": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "elapsed_seconds": 1.16629,
+      "exit_code": 0,
+      "log": "logs/CountWords.txt",
+      "module": "CountWords",
+      "olean_sha256": "a8d1c83c4230c8f501f38322815f4451cf0290e6bff2bede972c2bfc34dd24df",
+      "source_artifact": "CountWords.lean",
+      "source_sha256": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60"
+    },
+    {
+      "axiom_reports": {
+        "at_most_fourteen_of_twenty_three_descend": [
+          "Quot.sound",
+          "propext"
+        ],
+        "counted_at_most_fourteen_families_23": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "residue_at_most_fourteen_count_23": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      "elapsed_seconds": 8.468169,
+      "exit_code": 0,
+      "log": "logs/AtMostFourteen23.txt",
+      "module": "AtMostFourteen23",
+      "olean_sha256": "6124215c5395ae55040ef7079f1001f433b02b3a293ed92aa7c5970314ab98b0",
+      "source_artifact": "AtMostFourteen23.original-crlf.bin",
+      "source_sha256": "680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175"
+    }
+  ],
+  "network_access": "not used by this script; run in an offline environment for a sealed replay",
+  "schema": "mathcase-collatz-parity-envelope-replay-v1",
+  "scope": "Only the Ryan-reviewed 23/14 parity-conditioned first-drop statement and its shared prerequisites; no other exploratory target, combined theorem, or convergence claim",
+  "status": "PASS"
+}

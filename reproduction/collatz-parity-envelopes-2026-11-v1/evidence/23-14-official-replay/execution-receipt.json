@@ -1,0 +1,12 @@
+{
+  "source_commit": "343e9e9fcbd002bc474fffc9ed5faace1351cd37",
+  "checkout": "credentials-disabled public clone; proof sources untouched; one frozen candidate runner materialized",
+  "candidate_runner_sha256": "4f26cc3145d22dbcdc87029b693bcac04f8ece4eddc1ef63357043fad7dbee2d",
+  "official_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "started_at": "2026-11-25T20:57:28.8144876-05:00",
+  "wall_seconds": 30.906,
+  "process_exit": 0,
+  "stdout_sha256": "25513c01b315b25f4dab59803802fcfc86e9590fd701fd5ef4d3faa9ce747e12",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "target_receipt_sha256": "a174ea50afcd541dd9d618a48626b581692664fd69217d1aef8e7e9c6f6a65aa"
+}

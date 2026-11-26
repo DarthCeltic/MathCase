@@ -1,0 +1,45 @@
+{
+  "public_commit": "f9250c96eed7000e5441ad83854b58898521b1a1",
+  "clean_checkout_before_run": true,
+  "launcher": "python -B scripts/run_public_case.py collatz-parity-envelope-23-14",
+  "runtime_seconds": 14.251,
+  "process_exit": 0,
+  "input_toolchain": "official hash-verified Lean 4.33.1",
+  "receipt_sha256": "02427d3d6a5adfd217fd59147a35d33842783594c372108defe03971970a45cb",
+  "proof_status": "PASS",
+  "modules": [
+    "WordBound",
+    "WordResidue",
+    "CountWords",
+    "AtMostFourteen23"
+  ],
+  "official_lean_archive_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a",
+  "official_lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "independent_third_party_replay": false,
+  "log_projections": [
+    {
+      "path": "logs/AtMostFourteen23.txt",
+      "raw_sha256": "ba5f3183687ddc3191cfc762d293b776a1c1f9782b1364bd931260d991574818",
+      "published_sha256": "8dd44c00b495ecb5e8de54de3b044a41093504c7640571979420a4496a22699d",
+      "absolute_prefix_removed": true
+    },
+    {
+      "path": "logs/CountWords.txt",
+      "raw_sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5",
+      "published_sha256": "77b26375ea83d288553cbce80faf5bf3722f6ec8322e9f1c712ed7eded7496c5",
+      "absolute_prefix_removed": false
+    },
+    {
+      "path": "logs/WordBound.txt",
+      "raw_sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830",
+      "published_sha256": "14583d736222100317b75504d369c4339100adcec076bed1772347e2bb171830",
+      "absolute_prefix_removed": false
+    },
+    {
+      "path": "logs/WordResidue.txt",
+      "raw_sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d",
+      "published_sha256": "f7339547ef36c067bf926ea3b4470b31d0d9798425b8835049efeb8096756d0d",
+      "absolute_prefix_removed": false
+    }
+  ]
+}
