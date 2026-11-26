@@ -12,7 +12,7 @@ ROOT = Path(__file__).resolve().parent
 # f = y^m - A*x^n, g = y^a - B*x^b over F_p.
 CASES = [
     ("transverse-lines-F3", 3, 1, 1, 1, 1, 1, 2),
-    ("tangent-lines-F3", 3, 1, 2, 1, 1, 2, 2),
+    ("tangent-parabolas-F3", 3, 1, 2, 1, 1, 2, 2),
     ("coincident-tangent-F3", 3, 1, 2, 1, 1, 2, 1),
     ("x-y2-vs-y3-x2-F2", 2, 2, 1, 1, 3, 2, 1),
     ("x-y2-vs-y3-x2-F5", 5, 2, 1, 1, 3, 2, 1),

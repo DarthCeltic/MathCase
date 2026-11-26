@@ -35,7 +35,7 @@ The common-component cases are separated before interpreting quotient dimensions
 | Example | Field and branches | Result |
 | --- | --- | --- |
 | Transverse lines | `F₃`: `y-x`, `y-2x` | isolated, multiplicity 1 |
-| Tangent lines | `F₃`: `y-x²`, `y-2x²` | isolated, multiplicity 2 |
+| Tangent parabolas | `F₃`: `y-x²`, `y-2x²` | isolated, multiplicity 2 |
 | Coincident tangent branch | `F₃`: `y-x²`, `y-x²` | common component |
 | `x=y²`, `x²=y³` | `F₅` | isolated, multiplicity 3 |
 | `x=y²`, `x²=y⁴` | `F₅` | common component |
