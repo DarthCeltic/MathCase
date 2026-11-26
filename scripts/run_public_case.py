@@ -10,6 +10,7 @@ import tempfile
 
 CATALOG = {
     "counterexample": "Check 4 divides 2 squared and 4 does not divide 2. Exact arithmetic.",
+    "geometry-midpoint": "Fresh-source Lean replay of the known midpoint identity in a normalized, axis-aligned right-triangle coordinate model.",
     "prime-sqrt2": "Recompile the prime theorem and its square-root-of-two child. Lean stages default to a 600-second limit.",
     "collatz": "Prove the 12-of-20 descent rule and its exact residue count in Lean 4.33.1.",
     "collatz-at-most-twelve": "Prove and recount the at-most-12-of-20 descent family, including the 13-odd boundary.",
@@ -39,6 +40,7 @@ R66 = "reproduction/ramsey-r66-paley101-v1"
 def commands(case, args, output):
     routes = {
         "counterexample": [("scripts/hero_counterexample.py",)],
+        "geometry-midpoint": [("reproduction/coordinate-right-triangle-midpoint-v1/replay.py", "--output-dir", output / "lean-replay")],
         "collatz": [
             (COLLATZ + "/check_word_bound.py", "--output", output / "descent.json"),
             (COLLATZ + "/verify_count.py", "--output", output / "count.json"),

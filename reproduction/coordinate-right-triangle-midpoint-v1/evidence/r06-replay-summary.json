@@ -1,0 +1,54 @@
+{
+  "schema": "mathcase-coordinate-midpoint-r06-public-projection-v1",
+  "run_id": "GEOMETRY-MIDPOINT-PINNED-MINIMAL-IMPORTS-2026-11-25-R06",
+  "status": "PASS_FRESH_SOURCE_AND_AXIOM_AUDIT_CANDIDATE_ONLY",
+  "claim_scope": "For positive real a,b, the midpoint of the hypotenuse in the normalized model A=(0,0), B=(a,0), C=(0,b) has equal squared distance to all three vertices.",
+  "statement_packet_sha256": "9df2a1dfe30f3c308ed84db99fd8134aeff2f1440037f8024a671c4c512fd6bf",
+  "private_replay_summary_sha256": "0fa1416ae010158665bf9bf4370ec17190b6b18dc09ef31b581c6ed35609185b",
+  "source_sha256": "831db7bfe3ec643eea8ae02e129d87e926bbdc51186566c9dae46d3842e69dcf",
+  "audit_source_sha256": "ce304794c34dba1d6e76617e3a20a4e7fe28448643d9878049e31ac8923f248e",
+  "outputs": {
+    "theorem_olean_sha256": "be1e43bd6ca55ee0435aa22e0fa5d1c28ebafd81f32c4572da687bfb1e49ce0e",
+    "audit_olean_sha256": "9f8a8e45aeb953e5fde8235b60d5af613d58a6ff799dcb3db55beff4b62f680f",
+    "source_stdout_sha256": "7bffe7274d7555499fa37f892398a0eb5e6d0ca7c8870cec20173ec0b4b8ce43",
+    "audit_stdout_sha256": "0fe3177bd51e4c7dd6cf86974016746b543f7b8dbfa0c57dec787bf7490d71d5",
+    "source_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "audit_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "exit_codes_file_sha256": "7abb521aaa65cc6be23b1f7ebceb280b7002a1dbdb4693b182a8c3c77ca8959c"
+  },
+  "toolchain": {
+    "lean": "4.33.1",
+    "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+    "network": "disabled",
+    "cpu_limit": 1,
+    "memory_limit_bytes": 2147483648,
+    "per_process_timeout_seconds": 180,
+    "dependency_cache": "warm pinned cache; not a cold dependency build"
+  },
+  "exit_codes": {
+    "source": 0,
+    "axiom_audit": 0,
+    "container": 0
+  },
+  "axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "sorryAx_reported": false,
+  "legacy_receipt_conflict": {
+    "receipt_preserved": true,
+    "earlier_structured_sorryAx_field": true,
+    "fresh_printed_axiom_output_contains_sorryAx": false,
+    "r06_reproduced_earlier_olean_and_stdout_hashes": true
+  },
+  "prior_attempts": [
+    {"attempt": "R01", "status": "setup failure before source load"},
+    {"attempt": "R02", "status": "timeout before verdict"},
+    {"attempt": "R03", "status": "timeout before theorem elaboration"},
+    {"attempt": "R05", "status": "container entrypoint setup failure before Lean"}
+  ],
+  "fresh_public_clone_replay": "not yet independently performed",
+  "independent_review": false,
+  "novelty_claim": false,
+  "m4_promoted": false,
+  "external_calls": 0,
+  "cost_usd": 0
+}

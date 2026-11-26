@@ -1,6 +1,6 @@
 # Public case catalog
 
-The website's [case index](https://darthceltic.github.io/cases.html) groups demonstrations by what a visitor can actually do: inspect saved evidence, run exact arithmetic, or replay a local Lean check. Opening the saved reader does not start a new proof or model call. The featured Lean result is the bounded 23/14 first-drop theorem below; source audits and exploratory runs are listed separately as diagnostics.
+The [right-triangle midpoint identity](coordinate-right-triangle-midpoint-v1/README.md) gives a worked geometry example and a bounded Lean replay path. The website's [case index](https://darthceltic.github.io/cases.html) groups demonstrations by what a visitor can actually do: inspect saved evidence, run exact arithmetic, or replay a local Lean check. Opening the saved reader does not start a new proof or model call. The featured Lean result is the bounded 23/14 first-drop theorem below; source audits and exploratory runs are listed separately as diagnostics.
 
 ## One-command local launcher
 
@@ -19,6 +19,8 @@ The separate [frontier package](../research/frontier-2026-11/README.md) includes
 For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second default for each Lean compile, exact-target audit, and negative-control stage. For example: `python scripts/run_public_case.py prime-sqrt2 --mathlib PATH_TO_PINNED_MATHLIB --stage-timeout 900`. A timeout exits 124 and writes a JSON receipt with `TIMEOUT`, the stage name, configured limit, and elapsed time. The deliberate dropped-primality control is recorded as `REJECTED` inside an overall `PASS`; that expected rejection is not a timeout or a failed replay.
 
 ## Included actions
+
+- **Right-triangle midpoint:** `python scripts/run_public_case.py geometry-midpoint` rebuilds the known squared-distance identity for the normalized model `(0,0)`, `(a,0)`, `(0,b)`, with positive `a,b`. It does not formalize the coordinate reduction for every Euclidean right triangle; the public clean replay is still unverified. Read the [human explanation and limits](coordinate-right-triangle-midpoint-v1/README.md).
 
 - **Diagnostics and lab notes:** [VP/VNP source identity and arithmetic example](../docs/diagnostics/README.md), [matrix example](../docs/diagnostics/README.md), [Riemann source check](../docs/diagnostics/README.md), and bounded solver outcomes. These commands check only their stated examples, bytes, or bounded searches; they do not independently verify the upstream mathematical results.
 
