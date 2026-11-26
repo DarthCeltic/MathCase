@@ -46,7 +46,7 @@ It is attained by alternating rows and columns with the necessary odd-cycle seam
 2W [ 2 binom(W+H−1,H−1) − H ]
 ```
 
-when both dimensions are odd. For the odd-by-odd case, the row-cycle argument above uses `H` increments summing to antipodal distance `W`; the two arcs have `binom(W+H−1,H−1)` weak compositions each and share the `H` single-jump paths. The [unconstrained rectangular row-transfer check](evidence/rectangle-ground-states.json) tests all nine cases `3≤W,H≤5`, including transposed sizes and all parity combinations. It verifies ground energy and degeneracy only; the full rectangular density of states is outside this package.
+when both dimensions are odd. For the odd-by-odd case, the row-cycle argument above uses `H` increments summing to antipodal distance `W`; the two arcs have `binom(W+H−1,H−1)` weak compositions each and share the `H` single-jump paths. The original [unconstrained rectangular row-transfer check](evidence/rectangle-ground-states.json) tests all nine cases `3≤W,H≤5`, including transposed sizes and all parity combinations. A separate [wider rectangle check](evidence/wide-rectangle-ground-states.json) tests 36 sizes with `3≤W≤6` and `3≤H≤11`; it directly compares transposes only when both orientations are in that set (16 cases). Both are unconstrained max-count row-mask dynamic programs that use the formulas only for comparison. They verify ground energy and degeneracy only; the full rectangular density of states is outside this package.
 
 ## Prior work and claim boundary
 
@@ -60,6 +60,7 @@ Use Python 3.10+ and a C++20 compiler (`g++` or `clang++`). From the repository 
 python -B reproduction/ising-square-torus-dos-v1/run_case.py --cxx <path-to-g++-or-clang++> --output-dir <new-output-directory>
 python -B reproduction/ising-square-torus-dos-v1/verify_odd_ground_formula.py --output <new-output-directory>/odd-ground-formula.json
 python -B reproduction/ising-square-torus-dos-v1/verify_rectangular_ground_states.py --output <new-output-directory>/rectangle-ground-states.json
+python -B reproduction/ising-square-torus-dos-v1/verify_wide_rectangles.py --output <new-output-directory>/wide-rectangle-ground-states.json
 ```
 
-The first command compiles the Gray-code enumerator in a temporary directory under the chosen output directory, writes the full histograms and a verification record, and checks exact state totals, global-flip pairs, two aligned all-spin configurations, checkerboard frustration, and equality of the two histograms. The later commands test the closed odd-square count and its rectangular ground-state extension. They use only exact integer arithmetic and the Python standard library. No external service, stochastic search, GPU, or paid tool is used.
+The first command compiles the Gray-code enumerator in a temporary directory under the chosen output directory, writes the full histograms and a verification record, and checks exact state totals, global-flip pairs, two aligned all-spin configurations, checkerboard frustration, and equality of the two histograms. The later commands test the closed odd-square count and its rectangular ground-state extension, including the wider finite rectangle range. They use only exact integer arithmetic and the Python standard library. No external service, stochastic search, GPU, or paid tool is used.

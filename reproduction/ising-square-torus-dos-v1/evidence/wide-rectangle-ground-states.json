@@ -1,0 +1,417 @@
+{
+  "schema": "mathcase-ising-wide-rectangle-ground-state-check-v1",
+  "verified": true,
+  "source_sha256": "03000971bd076e46709e947b128977c50efdc4017c9987d0ca6eb952cff16be8",
+  "method": "unconstrained full row-mask max-count DP; fixes one spin by global-flip symmetry; formula used only for comparison",
+  "rectangle_count": 36,
+  "ranges": {
+    "W": [
+      3,
+      6
+    ],
+    "H": [
+      3,
+      11
+    ]
+  },
+  "transposition_rule": "Compared only when the reversed dimensions are also in this checked rectangle set.",
+  "cases": [
+    {
+      "W": 3,
+      "H": 3,
+      "maximum_broken_bonds": 12,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -6,
+      "ground_degeneracy": 102,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 3,
+      "H": 4,
+      "maximum_broken_bonds": 20,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -16,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 3,
+      "H": 5,
+      "maximum_broken_bonds": 22,
+      "minimum_aligned_bonds": 8,
+      "antiferromagnetic_ground_energy": -14,
+      "ground_degeneracy": 390,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 3,
+      "H": 6,
+      "maximum_broken_bonds": 30,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -24,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 3,
+      "H": 7,
+      "maximum_broken_bonds": 32,
+      "minimum_aligned_bonds": 10,
+      "antiferromagnetic_ground_energy": -22,
+      "ground_degeneracy": 966,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 3,
+      "H": 8,
+      "maximum_broken_bonds": 40,
+      "minimum_aligned_bonds": 8,
+      "antiferromagnetic_ground_energy": -32,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 3,
+      "H": 9,
+      "maximum_broken_bonds": 42,
+      "minimum_aligned_bonds": 12,
+      "antiferromagnetic_ground_energy": -30,
+      "ground_degeneracy": 1926,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 3,
+      "H": 10,
+      "maximum_broken_bonds": 50,
+      "minimum_aligned_bonds": 10,
+      "antiferromagnetic_ground_energy": -40,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 3,
+      "H": 11,
+      "maximum_broken_bonds": 52,
+      "minimum_aligned_bonds": 14,
+      "antiferromagnetic_ground_energy": -38,
+      "ground_degeneracy": 3366,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 4,
+      "H": 3,
+      "maximum_broken_bonds": 20,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -16,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 4,
+      "H": 4,
+      "maximum_broken_bonds": 32,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -32,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 4,
+      "H": 5,
+      "maximum_broken_bonds": 36,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -32,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 4,
+      "H": 6,
+      "maximum_broken_bonds": 48,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -48,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 4,
+      "H": 7,
+      "maximum_broken_bonds": 52,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -48,
+      "ground_degeneracy": 14,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 4,
+      "H": 8,
+      "maximum_broken_bonds": 64,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -64,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 4,
+      "H": 9,
+      "maximum_broken_bonds": 68,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -64,
+      "ground_degeneracy": 18,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 4,
+      "H": 10,
+      "maximum_broken_bonds": 80,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -80,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 4,
+      "H": 11,
+      "maximum_broken_bonds": 84,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -80,
+      "ground_degeneracy": 22,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 5,
+      "H": 3,
+      "maximum_broken_bonds": 22,
+      "minimum_aligned_bonds": 8,
+      "antiferromagnetic_ground_energy": -14,
+      "ground_degeneracy": 390,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 5,
+      "H": 4,
+      "maximum_broken_bonds": 36,
+      "minimum_aligned_bonds": 4,
+      "antiferromagnetic_ground_energy": -32,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 5,
+      "H": 5,
+      "maximum_broken_bonds": 40,
+      "minimum_aligned_bonds": 10,
+      "antiferromagnetic_ground_energy": -30,
+      "ground_degeneracy": 2470,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 5,
+      "H": 6,
+      "maximum_broken_bonds": 54,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -48,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 5,
+      "H": 7,
+      "maximum_broken_bonds": 58,
+      "minimum_aligned_bonds": 12,
+      "antiferromagnetic_ground_energy": -46,
+      "ground_degeneracy": 9170,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 5,
+      "H": 8,
+      "maximum_broken_bonds": 72,
+      "minimum_aligned_bonds": 8,
+      "antiferromagnetic_ground_energy": -64,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 5,
+      "H": 9,
+      "maximum_broken_bonds": 76,
+      "minimum_aligned_bonds": 14,
+      "antiferromagnetic_ground_energy": -62,
+      "ground_degeneracy": 25650,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 5,
+      "H": 10,
+      "maximum_broken_bonds": 90,
+      "minimum_aligned_bonds": 10,
+      "antiferromagnetic_ground_energy": -80,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 5,
+      "H": 11,
+      "maximum_broken_bonds": 94,
+      "minimum_aligned_bonds": 16,
+      "antiferromagnetic_ground_energy": -78,
+      "ground_degeneracy": 59950,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 6,
+      "H": 3,
+      "maximum_broken_bonds": 30,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -24,
+      "ground_degeneracy": 6,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 6,
+      "H": 4,
+      "maximum_broken_bonds": 48,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -48,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 6,
+      "H": 5,
+      "maximum_broken_bonds": 54,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -48,
+      "ground_degeneracy": 10,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 6,
+      "H": 6,
+      "maximum_broken_bonds": 72,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -72,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": true,
+      "transpose_matches": true
+    },
+    {
+      "W": 6,
+      "H": 7,
+      "maximum_broken_bonds": 78,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -72,
+      "ground_degeneracy": 14,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 6,
+      "H": 8,
+      "maximum_broken_bonds": 96,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -96,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 6,
+      "H": 9,
+      "maximum_broken_bonds": 102,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -96,
+      "ground_degeneracy": 18,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 6,
+      "H": 10,
+      "maximum_broken_bonds": 120,
+      "minimum_aligned_bonds": 0,
+      "antiferromagnetic_ground_energy": -120,
+      "ground_degeneracy": 2,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    },
+    {
+      "W": 6,
+      "H": 11,
+      "maximum_broken_bonds": 126,
+      "minimum_aligned_bonds": 6,
+      "antiferromagnetic_ground_energy": -120,
+      "ground_degeneracy": 22,
+      "formula_matches": true,
+      "transpose_checked": false,
+      "transpose_matches": null
+    }
+  ],
+  "scope": "Finite ground-state energy and degeneracy checks only; not a rectangular density of states."
+}
