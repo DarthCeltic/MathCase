@@ -1,0 +1,37 @@
+{
+  "schema": "mathcase-public-evidence-manifest-v1",
+  "files": [
+    {
+      "path": "CollatzLift.lean",
+      "sha256": "804ecd0b2b820bc1d4a4ce9255460ffc1a564391dd957fbc6178aff54d4b79d4"
+    },
+    {
+      "path": "LiftedFamilies.lean",
+      "sha256": "6334b18c5300f23928bb943aaee39a2ecbbf72ed555a7fba2da18cb97cc36a64"
+    },
+    {
+      "path": "family-certificate.json",
+      "sha256": "34c83a09b305f946cd5b745250ab3a7e998acbf36d1d8eb328c682a74383cb97"
+    },
+    {
+      "path": "evidence/independent-verification-v3.json",
+      "sha256": "f1d7623ffb57f8b00a4a1add97a725877d80e7a36a2c210160ceb828e7f0f83e"
+    },
+    {
+      "path": "evidence/lean-replay/lean-replay-receipt-attempt-08.json",
+      "sha256": "569796bc8707d6e2fe9753682ca7ed0c2a9dfbefb3ba5e4f169944fdcd5cfb79"
+    },
+    {
+      "path": "evidence/lean-replay/core-attempt-08.stdout",
+      "sha256": "14ce6e808df8df0cf6cba8faef8dfcc9ed02c162228236d8ed36e42e63bdfc7f"
+    },
+    {
+      "path": "evidence/lean-replay/families-attempt-08.stdout",
+      "sha256": "5f8ef9363c0b2310a6d6b12984872defa11970afdec3a3ab71b7fa2d312adac1"
+    },
+    {
+      "path": "scripts/replay_families.sh",
+      "sha256": "3dfb31b216fa374ed58be6acbf8217b58cd00fc92e341b47834e8fee8f5947cc"
+    }
+  ]
+}

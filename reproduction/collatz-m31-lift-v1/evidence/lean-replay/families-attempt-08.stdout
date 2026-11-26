@@ -1,0 +1,4 @@
+'collatz_iterate_pow2_lift' depends on axioms: [propext, Quot.sound]
+'collatz_lifted_strict_descent' depends on axioms: [propext, Quot.sound]
+'liftedFamilies' depends on axioms: [propext, Quot.sound]
+'liftedFamilies_count' depends on axioms: [propext, Quot.sound]

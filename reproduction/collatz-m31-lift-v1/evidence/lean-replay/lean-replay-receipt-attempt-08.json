@@ -1,0 +1,22 @@
+{
+  "schema": "mathcase-collatz-lift-lean-replay-v1",
+  "status": "PASS_LEAN_REPLAY",
+  "lean_version": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release) ",
+  "core_source_sha256": "804ecd0b2b820bc1d4a4ce9255460ffc1a564391dd957fbc6178aff54d4b79d4",
+  "families_source_sha256": "6334b18c5300f23928bb943aaee39a2ecbbf72ed555a7fba2da18cb97cc36a64",
+  "core_exit_code": 0,
+  "core_wall_cap_seconds": 180,
+  "core_elapsed_seconds": 157,
+  "families_exit_code": 0,
+  "families_wall_cap_seconds": 180,
+  "core_olean_reused": false,
+  "elapsed_seconds": 191,
+  "started_utc": "2026-11-25T14:32:51Z",
+  "finished_utc": "2026-11-25T14:36:02Z",
+  "core_stdout_sha256": "14ce6e808df8df0cf6cba8faef8dfcc9ed02c162228236d8ed36e42e63bdfc7f",
+  "families_stdout_sha256": "5f8ef9363c0b2310a6d6b12984872defa11970afdec3a3ab71b7fa2d312adac1",
+  "core_olean_sha256": "e25d2f61ad6d80f9dd62e31a01a11311bc7702a3631417f86cb9e0d109efcec6",
+  "families_olean_sha256": "d1187cdba32dd6ff2a0dbb2756d173f1f10e3f9f8b566b1d19b896cf0d9ee25c",
+  "network": "none (enforced by the Docker invocation)",
+  "provider_spend_usd": 0
+}
