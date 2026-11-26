@@ -20,6 +20,8 @@ For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second 
 
 ## Included actions
 
+- **Parameterized Collatz parity-window atlas:** the standalone [atlas CLI](collatz-window-atlas-v1/README.md) accepts any two positive window lengths with total at most 24, then enumerates every upper-cap pair and exact parity class. It is a lower-level compiled research tool, not a fixed `run_public_case.py` action. Curated JSON includes a direct representative scan and a separately computed affine member classification; partial filters expose unresolved least representatives rather than presenting them as completed bounds.
+
 - **Smallest possible largest denominator.** For all 143 primes up to 10,000 with remainder 1 modulo 24, MathCase computed the least possible largest denominator in a decomposition of 4/p into three distinct unit fractions. The worst ratio is 1,032 times the prime and is attained only at p = 9,601. Run `python -B scripts/run_public_case.py egyptian-minimax` to verify every optimum. [Method and table](../research/number-theory/egyptian-fractions/least-largest-denominator-v1/README.md)
 
 - **Right-triangle midpoint:** `python scripts/run_public_case.py geometry-midpoint` rebuilds the known squared-distance identity for the normalized model `(0,0)`, `(a,0)`, `(0,b)`, with positive `a,b`. It does not formalize the coordinate reduction for every Euclidean right triangle; the public clean replay is still unverified. Read the [human explanation and limits](coordinate-right-triangle-midpoint-v1/README.md).
