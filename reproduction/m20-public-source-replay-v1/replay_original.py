@@ -11,7 +11,7 @@ import shutil
 import subprocess
 import sys
 import time
-from bootstrap_original import env_for, LEAN_REV, MATHCASE_SHA, MATHLIB_SHA, git
+from bootstrap_original import M20_IMPORT, env_for, LEAN_REV, MATHCASE_SHA, MATHLIB_SHA, git
 
 COMPILE_SHA = "f18fcf6fa13df3308a31b13dcc067556a6c77a1de27cd1fffe5bdad298687036"
 AXIOM_SHA = "f64f25c8bb87daf75679188515f10fa541c540d458bcb51a0bbcd3fb12b341aa"
