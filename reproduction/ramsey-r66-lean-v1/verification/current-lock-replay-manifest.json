@@ -1,0 +1,49 @@
+{
+  "schema": "mathcase-r66-current-lock-replay-manifest-v1",
+  "source_commit": "343e9e9fcbd002bc474fffc9ed5faace1351cd37",
+  "source_manifest_sha256": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e",
+  "lake_manifest_sha256": "958b34400c85f0e6e9e1a3ec9c2c67e3df25fcfed9195c53d50302af588f3c0f",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "replay_driver_sha256_at_run": "1a21720fbc7e373993a69888abf6546eae1f9f7aa0b7e77dc63ea6887eca6dd8",
+  "fresh_audit_output_sha256": "5dc2619cfc1323829e85eaab6fce425c194a29bfdb4a81a4fb514b8491d11ffc",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx": false,
+  "elapsed_seconds": 147.782,
+  "claim_scope": "Known R(6,6) lower bound from a 101-vertex witness; not a new or exact value.",
+  "historical_lock_sha256": "2a66a99e178e711c07f724bd787aa4cead8b2ae674296b5987cf0906ff3d99e9",
+  "pass_receipt_is_raw_execution_json": true,
+  "files": {
+    "pass_receipt": {
+      "path": "verification/current-lock-replay-r2-pass.json",
+      "sha256": "063fa8bb61a1c48d53158879d5eed3120995bcfd49be270d1290697e397530aa"
+    },
+    "execution_receipt": {
+      "path": "verification/current-lock-execution-r2.json",
+      "sha256": "9a152ca6137a1534e8ba50361fdc8634f78159335ad737dd4b166c2de6294a25"
+    },
+    "audit_output": {
+      "path": "verification/current-lock-audit-r2.txt",
+      "sha256": "5dc2619cfc1323829e85eaab6fce425c194a29bfdb4a81a4fb514b8491d11ffc"
+    },
+    "first_run_failure_summary": {
+      "path": "verification/current-lock-replay-r1-encoding-failure-summary.json",
+      "sha256": "9e6ea6d7524a0120c6554d7246cde75b90d6ad00983420c2dfa5ea20236536d6"
+    },
+    "historical_receipt": {
+      "path": "lake-replay-receipt.json",
+      "sha256": "410c20ed1931d120c534f8ca8b2e2cbc9d7e64749cd5d79ffa1b4f772277c0bf"
+    }
+  },
+  "notes": [
+    "Run r1 completed a source build with no pre-existing MathCase OLEAN files, then failed while printing Lean's UTF-8 warning character through the Windows legacy console encoding. The concise public failure summary preserves the original raw receipt hash.",
+    "A separate Audit.lean invocation on the r1 outputs exited 0 and matched the axiom set.",
+    "Run r2 rebuilt MathCase outputs from source in a fresh project output tree and passed the full build plus axiom wrapper. It reused the official public Mathlib cache populated during r1.",
+    "Run r2 used python -X utf8 -B replay_r66.py. The checked-in runner now configures UTF-8 output itself; this output-only wrapper fix was not represented as a second Lean build.",
+    "The raw r2 JSON receipt is included unchanged and its digest is bound by both the execution receipt and this manifest."
+  ]
+}

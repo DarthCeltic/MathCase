@@ -1,0 +1,33 @@
+{
+  "schema": "mathcase-r66-run-summary-v1",
+  "status": "WRAPPER_FAILURE_AFTER_SUCCESSFUL_BUILD",
+  "original_receipt_sha256": "dbbb91872b2c84aad8e81a5d8aeab34b0a2f3e9b8c0ce41f3d336241471e6eaa",
+  "replay_driver_sha256": "1a21720fbc7e373993a69888abf6546eae1f9f7aa0b7e77dc63ea6887eca6dd8",
+  "source_manifest_sha256": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e",
+  "failure": "Python's Windows console encoding could not print Lean's U+26A0 warning character; the Lean build itself exited 0.",
+  "commands": [
+    {
+      "command": "lake update",
+      "exit_code": 0
+    },
+    {
+      "command": "lake exe cache get",
+      "exit_code": 0
+    },
+    {
+      "command": "lake env lean --version",
+      "exit_code": 0
+    },
+    {
+      "command": "lake build -Kjobs=1 MathCase",
+      "exit_code": 0
+    }
+  ],
+  "audit_command_in_failed_wrapper": "not reached",
+  "separate_audit_after_wrapper_failure": {
+    "command": "lake env lean Audit.lean",
+    "exit_code": 0,
+    "output_sha256": "5dc2619cfc1323829e85eaab6fce425c194a29bfdb4a81a4fb514b8491d11ffc"
+  },
+  "claim_limit": "This wrapper failure was an output-encoding failure after a successful source build, not a Lean proof failure."
+}
