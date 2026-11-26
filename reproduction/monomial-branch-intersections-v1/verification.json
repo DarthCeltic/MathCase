@@ -1,0 +1,538 @@
+{
+  "cases": [
+    {
+      "branches": [
+        "y^1 - 1*x^1",
+        "y^1 - 2*x^1"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 1,
+      "dimension_one_cutoff_later": 1,
+      "field": "F_3",
+      "hilbert_function_increments": [
+        1,
+        0
+      ],
+      "label": "transverse-lines-F3",
+      "local_intersection_multiplicity": 1,
+      "macaulay_basis_size_at_resultant_cutoff": 1,
+      "macaulay_cutoffs": [
+        1,
+        2
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 0,
+      "parameters": {
+        "A": 1,
+        "B": 2,
+        "a": 1,
+        "b": 1,
+        "m": 1,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 1,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 1,
+        "right_resultant_coefficient_mod_p": 2,
+        "right_resultant_weight": 1
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        1
+      ]
+    },
+    {
+      "branches": [
+        "y^1 - 1*x^2",
+        "y^1 - 2*x^2"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 2,
+      "dimension_one_cutoff_later": 2,
+      "field": "F_3",
+      "hilbert_function_increments": [
+        1,
+        1,
+        0
+      ],
+      "label": "tangent-lines-F3",
+      "local_intersection_multiplicity": 2,
+      "macaulay_basis_size_at_resultant_cutoff": 3,
+      "macaulay_cutoffs": [
+        1,
+        2,
+        3
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 1,
+      "parameters": {
+        "A": 1,
+        "B": 2,
+        "a": 1,
+        "b": 2,
+        "m": 1,
+        "n": 2
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 1,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 2,
+        "right_resultant_coefficient_mod_p": 2,
+        "right_resultant_weight": 2
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "branches": [
+        "y^1 - 1*x^2",
+        "y^1 - 1*x^2"
+      ],
+      "classification": "common component",
+      "dimension_sequence_is_finite_evidence_only": true,
+      "field": "F_3",
+      "hilbert_function_increments": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "label": "coincident-tangent-F3",
+      "local_intersection_multiplicity": null,
+      "macaulay_cutoffs": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 1,
+        "b": 2,
+        "m": 1,
+        "n": 2
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 1,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 2,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 2
+      },
+      "truncated_quotient_dimensions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^1",
+        "y^3 - 1*x^2"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 3,
+      "dimension_one_cutoff_later": 3,
+      "field": "F_2",
+      "hilbert_function_increments": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "label": "x-y2-vs-y3-x2-F2",
+      "local_intersection_multiplicity": 3,
+      "macaulay_basis_size_at_resultant_cutoff": 6,
+      "macaulay_cutoffs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 3,
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 3,
+        "b": 2,
+        "m": 2,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 1,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 3,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^1",
+        "y^3 - 1*x^2"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 3,
+      "dimension_one_cutoff_later": 3,
+      "field": "F_5",
+      "hilbert_function_increments": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "label": "x-y2-vs-y3-x2-F5",
+      "local_intersection_multiplicity": 3,
+      "macaulay_basis_size_at_resultant_cutoff": 6,
+      "macaulay_cutoffs": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 3,
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 3,
+        "b": 2,
+        "m": 2,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 1,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 3,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^1",
+        "y^4 - 1*x^2"
+      ],
+      "classification": "common component",
+      "dimension_sequence_is_finite_evidence_only": true,
+      "field": "F_5",
+      "hilbert_function_increments": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "label": "x-y2-vs-y4-x2-common-F5",
+      "local_intersection_multiplicity": null,
+      "macaulay_cutoffs": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 4,
+        "b": 2,
+        "m": 2,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 2,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 4,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^1",
+        "y^5 - 1*x^2"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 4,
+      "dimension_one_cutoff_later": 4,
+      "field": "F_5",
+      "hilbert_function_increments": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "label": "x-y2-vs-y5-x2-F5",
+      "local_intersection_multiplicity": 4,
+      "macaulay_basis_size_at_resultant_cutoff": 10,
+      "macaulay_cutoffs": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 6,
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 5,
+        "b": 2,
+        "m": 2,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 1,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 5,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^1",
+        "y^6 - 1*x^2"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 4,
+      "dimension_one_cutoff_later": 4,
+      "field": "F_5",
+      "hilbert_function_increments": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "label": "x-y2-vs-y6-x2-F5",
+      "local_intersection_multiplicity": 4,
+      "macaulay_basis_size_at_resultant_cutoff": 10,
+      "macaulay_cutoffs": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 6,
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 6,
+        "b": 2,
+        "m": 2,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 2,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 6,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^1",
+        "y^4 - 2*x^2"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 4,
+      "dimension_one_cutoff_later": 4,
+      "field": "F_3",
+      "hilbert_function_increments": [
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "label": "equal-weight-unequal-coeff-F3",
+      "local_intersection_multiplicity": 4,
+      "macaulay_basis_size_at_resultant_cutoff": 10,
+      "macaulay_cutoffs": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 6,
+      "parameters": {
+        "A": 1,
+        "B": 2,
+        "a": 4,
+        "b": 2,
+        "m": 2,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 2,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 4,
+        "right_resultant_coefficient_mod_p": 2,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        2,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^3",
+        "y^3 - 1*x^2"
+      ],
+      "classification": "isolated",
+      "dimension_at_resultant_length_cutoff": 4,
+      "dimension_one_cutoff_later": 4,
+      "field": "F_2",
+      "hilbert_function_increments": [
+        1,
+        2,
+        1,
+        0,
+        0
+      ],
+      "label": "unequal-weights-F2",
+      "local_intersection_multiplicity": 4,
+      "macaulay_basis_size_at_resultant_cutoff": 10,
+      "macaulay_cutoffs": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "macaulay_relation_rank_at_resultant_cutoff": 6,
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 3,
+        "b": 2,
+        "m": 2,
+        "n": 3
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 1,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 9,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        1,
+        3,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "branches": [
+        "y^2 - 1*x^1",
+        "y^4 - 1*x^2"
+      ],
+      "classification": "common component",
+      "dimension_sequence_is_finite_evidence_only": true,
+      "field": "F_2",
+      "hilbert_function_increments": [
+        4,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "label": "common-component-F2",
+      "local_intersection_multiplicity": null,
+      "macaulay_cutoffs": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "parameters": {
+        "A": 1,
+        "B": 1,
+        "a": 4,
+        "b": 2,
+        "m": 2,
+        "n": 1
+      },
+      "resultant_data": {
+        "d_gcd_y_degrees": 2,
+        "left_resultant_coefficient_mod_p": 1,
+        "left_resultant_weight": 4,
+        "right_resultant_coefficient_mod_p": 1,
+        "right_resultant_weight": 4
+      },
+      "truncated_quotient_dimensions": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    }
+  ],
+  "common_component_boundary": "A zero resultant classifies a shared component; truncated-dimension growth is recorded only for the listed cutoffs and is not used to claim stabilization or non-stabilization by itself.",
+  "method": "binomial resultant formula compared with exact Macaulay ranks over F_p",
+  "reference": "William Fulton, Algebraic Curves, Chapter 3, Section 3 (intersection numbers)",
+  "schema_version": 1,
+  "scope": "11 small explicit pairs over F_2, F_3, and F_5; classical computation, not new mathematics"
+}
