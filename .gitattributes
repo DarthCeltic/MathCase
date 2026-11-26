@@ -79,3 +79,7 @@ reproduction/coordinate-right-triangle-midpoint-v1/*.lean -text -eol whitespace=
 reproduction/coordinate-right-triangle-midpoint-v1/evidence/*.olean binary
 reproduction/coordinate-right-triangle-midpoint-v1/evidence/*.log -text -eol whitespace=cr-at-eol
 reproduction/coordinate-right-triangle-midpoint-v1/evidence/*.txt -text -eol whitespace=cr-at-eol
+
+# Keep the published graph explanation readable in diffs while leaving its hash-pinned evidence byte-exact.
+reproduction/m15-m20-r2/evidence/knowledge-graph/public-slice-v1/README.md text eol=lf diff
+reproduction/m15-m20-r2/PACKAGE_INVENTORY.json text eol=lf diff

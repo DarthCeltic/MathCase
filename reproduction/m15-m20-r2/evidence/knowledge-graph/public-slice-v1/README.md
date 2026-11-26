@@ -1,6 +1,6 @@
-# Public safe partial knowledge graph slice (staged candidate)
+# Public partial knowledge-graph slice: M15–M20
 
-This is a partial exact-statement index for the M15-M20 shard replay. It contains 4,262 theorem records. Each exact statement, source digest, dependency list, axiom report, and receipt row was checked against source bytes and receipts bundled in this candidate. The graph index supports exact statement-hash matches only; it does not perform semantic retrieval or infer theorem reuse.
+This published MathCase package contains a partial exact-statement index for the M15–M20 shard replay: 4,262 theorem records. Each exact statement, source digest, dependency list, axiom report, and receipt row is checked against source bytes and receipts in the package. The index supports exact statement-hash matches only. It does not perform semantic retrieval or infer theorem reuse.
 
 ## What a row means
 
@@ -12,6 +12,6 @@ The slice excludes 29 owner-local or out-of-package records and three historical
 
 ## Verify
 
-From the candidate package root, run `py -3 tools\verify_public_knowledge_graph_slice.py`. The application’s exact-match graph loader can be smoke-tested with the staged slice directory and the SHA-256 of this slice’s `manifest.json`.
+From the M15–M20 package root, run `py -3 tools\verify_public_knowledge_graph_slice.py`. This verifies the graph files against the pinned source and receipt bytes; it does not run Lean. The separate [original M20 public-source replay instructions](../../../../m20-public-source-replay-v1/ORIGINAL_REPLAY.md) describe that replay path and its limits.
 
-This candidate has not been merged or published. The public Lean image and clean-room build context remain unavailable, so these records do not establish independent reproduction. No M4 gate is changed.
+This graph slice is part of the public MathCase repository. Its verifier checks the graph files against the bundled source and receipt bytes; it does not invoke Lean or independently replay the theorem proofs. Read the linked replay records for the exact build status and limitations. These 4,262 records are a partial exact-match index, not a complete MathCase knowledge graph, semantic search system, or proof-reuse engine. No M4 gate is changed.

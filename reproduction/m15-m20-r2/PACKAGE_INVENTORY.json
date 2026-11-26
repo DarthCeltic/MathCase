@@ -3916,8 +3916,8 @@
   },
   {
     "path": "evidence/knowledge-graph/public-slice-v1/README.md",
-    "bytes": 2101,
-    "sha256": "69f9cd7f14d858998164a94f38415704951d4b850c09576c9b6a86c673fa79cd"
+    "bytes": 2452,
+    "sha256": "e649a33f5479ccd6bab5e80e59bc5d6b291774fa97c38d571992057ca5a9abf3"
   },
   {
     "path": "evidence/knowledge-graph/public-slice-v1/index.jsonl",
