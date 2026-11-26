@@ -69,6 +69,8 @@ Additional source audits, small worked examples for upstream results, explorator
 
 The 2,652-family M20 result and its original replay status remain documented in [MathCase results and limits](docs/MATH_RESULTS.md) and the [reproduction index](reproduction/README.md). The original M20 public-source rerun guide records one smoke-test shard only; it does not claim a completed public-source replay of all 363 modules.
 
+A new finite bridge audit checks that every one of those 2,652 listed rows satisfies the separately Lean-checked 12-of-20 parity condition and reaches its recorded base endpoint by both step conventions. It combines with that broader theorem but does not replace or complete the historical 363-module replay. See the [bridge explanation and command](reproduction/collatz-m20-twelve-of-twenty-bridge-v1/README.md).
+
 The [case catalog](reproduction/CASE_CATALOG.md) separates visitor examples, exact Lean replays, finite arithmetic checks, and external source checks. Each runner ID names an action, not a proved theorem. Six additional bounded research tracks have a separate [frontier evidence package](research/frontier-2026-11/README.md), runner, and [plain-language page](https://darthceltic.github.io/frontier.html); a completed bounded search can still return `UNKNOWN` and does not prove impossibility.
 
 The public [R(5,5) Lean bundle](reproduction/ramsey-r55-lean-v1/README.md) records a known lower-bound witness compiled with a warm cache; a fresh-checkout rebuild remains unverified. The public repository also documents its narrowly scoped historical scanner exceptions and fail-closed future-finding gate.

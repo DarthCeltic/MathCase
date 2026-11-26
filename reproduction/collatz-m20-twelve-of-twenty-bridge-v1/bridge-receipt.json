@@ -1,0 +1,62 @@
+{
+  "schema": "mathcase-m20-twelve-of-twenty-finite-bridge-v1",
+  "status": "PASS",
+  "created_utc": "2026-11-26T06:26:51.307824+00:00",
+  "method": "Finite Python audit of every pinned M20 coefficient row, with separate accelerated and ordinary-step implementations; links the rows to the already saved Lean theorem by exact source and receipt hashes.",
+  "result": {
+    "published_rows_checked": 2652,
+    "rows_with_exactly_12_odd_inputs_in_20_accelerated_steps": 2652,
+    "accelerated_base_endpoints_matching_q": 2652,
+    "ordinary_32_base_endpoints_matching_q": 2652,
+    "all_intercept_gaps_positive": true,
+    "residue_count_in_saved_lean_theorem": 125970,
+    "residue_space_size": 1048576,
+    "histogram_of_odd_counts": {
+      "12": 2652
+    }
+  },
+  "source_hashes": {
+    "reproduction/collatz-affine-family-replay-v1/PAIRS.tsv": "30f06904507a35d180fab9d0d9195759047d13edfd857c04e2ef483eaf75194a",
+    "reproduction/collatz-affine-family-replay-v1/M20Table.lean": "bd811cfc8e355280c24fc325e7f2ceffdaa3fe187cdd8d09f0d186b14fa18f5e",
+    "reproduction/collatz-affine-family-replay-v1/generate_m20_table.py": "26947efafb476dcf59302abab8d6350305773b7b05b4fc5ad058f922f8033b64",
+    "reproduction/collatz-twelve-of-twenty-v1/WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "reproduction/collatz-twelve-of-twenty-v1/WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "reproduction/collatz-twelve-of-twenty-v1/CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "reproduction/collatz-twelve-of-twenty-v1/count-receipt.json": "47bffda67288f09fd520e4251b52fe62fa1307fe3c353fbe6c04b0ffcf95fe58",
+    "reproduction/collatz-m20-twelve-of-twenty-bridge-v1/verify_bridge.py": "348f6907e73a66b663d750b54e94eb512974c4b9413d3c6e4f60e4bae0287a67"
+  },
+  "composition_provenance": {
+    "composition_modules": 133,
+    "composition_source_files": 133,
+    "all_referenced_module_hashes_match": true,
+    "all_referenced_source_lines_match": true
+  },
+  "table_regeneration": {
+    "generator_output_matches_checked_in_table": true,
+    "rows": 2652
+  },
+  "existing_lean_receipt": {
+    "status": "existing saved Lean receipt verified by hash",
+    "toolchain": "Lean 4.33.1",
+    "target": "MathCase.Collatz.WordBound.counted_progressions_descend",
+    "axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "sorryAx": false,
+    "new_lean_run_performed": false
+  },
+  "negative_control": {
+    "description": "The first row's q was increased by 1.",
+    "rejected": true,
+    "accelerated_endpoint_match": false
+  },
+  "wall_seconds": 1.019,
+  "limits": [
+    "This is a finite arithmetic bridge over the 2,652 listed rows, not a new Lean run.",
+    "The universal conclusion comes from combining this bridge with the separately hash-pinned Lean theorem.",
+    "It does not rewrite or replace the historical M20 replay.",
+    "It does not prove global Collatz convergence or establish novelty."
+  ]
+}
