@@ -43,6 +43,17 @@ class CandidateVerifierTests(unittest.TestCase):
             self.assertEqual(bad.returncode, 2)
             self.assertEqual(json.loads(bad.stdout)["status"], "INPUT_ERROR")
 
+    def test_saved_coloring_is_checked_even_with_incorrect_metadata(self):
+        fixture = (Path(__file__).resolve().parents[2] / "research/frontier-2026-11"
+                   / "weak-schur-5/repair-radius-three-v1/candidate.json")
+        saved = json.loads(fixture.read_text(encoding="utf-8"))
+        saved["conflicts"] = 0
+        with tempfile.TemporaryDirectory() as td:
+            path = Path(td) / "coloring.json"
+            path.write_text(json.dumps(saved), encoding="utf-8")
+            conflicts = MODULE.find_conflicts(MODULE.load_candidate(path))
+        self.assertEqual(conflicts, [{"a": 4, "b": 8, "sum": 12, "color": 3}])
+
     def test_rejects_wrong_length_and_non_integer_colors(self):
         with tempfile.TemporaryDirectory() as td:
             path = Path(td) / "candidate.json"

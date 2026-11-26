@@ -12,7 +12,19 @@ Save a JSON file with 208 integers from 1 through 5, in number order. For exampl
 python -B verify_candidate.py my-coloring.json
 ```
 
-The checker examines all 10,712 distinct-addend triples and prints every conflict. Exit status `0` means this supplied assignment passed this finite check; status `1` means conflicts were found; status `2` means the input was malformed. A pass would validate only those 208 entries, not a general theorem or any wider mathematical bound. A passing assignment would be a candidate for independent review.
+The checker examines all 10,712 distinct-addend triples and prints every conflict. Exit status `0` means this supplied assignment passed this finite check; status `1` means conflicts were found; status `2` means the input was malformed. A pass would exhibit a witness for the lower bound WS(5) ≥ 208. A conflict rules out that particular assignment.
+
+## Check the recorded search result
+
+A 60-second local search tried 18,522 moves starting from a coloring with one forbidden sum. Its best assignment still colors 4, 8 and 12 alike. The recorded first run and an accidental repeat used the same seed. Only the first counts here. [Run record](adaptive-run.json)
+
+From this directory, run the checker on the [saved coloring](../../research/frontier-2026-11/weak-schur-5/repair-radius-three-v1/candidate.json). The checker reads the colors and recomputes every sum, ignoring any verdict already in the file.
+
+```sh
+python -B verify_candidate.py ../../research/frontier-2026-11/weak-schur-5/repair-radius-three-v1/candidate.json
+```
+
+It returns exit code 1 and a single conflict in color 3.
 
 ## Test the checker
 

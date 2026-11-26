@@ -1,0 +1,90 @@
+{
+  "method": "whole-domain adaptive tabu/min-conflicts; each step selects conflict variables plus 12 uniform positions from all 208; random whole-assignment shake after 1800 non-improving moves; not a fixed-radius query",
+  "master_seed": 2026112601,
+  "per_chain_step_cap": 100000,
+  "wall_cap_seconds": 60.0,
+  "elapsed_seconds": 60.004,
+  "status": "TIMEOUT",
+  "initial_controls": [
+    {
+      "name": "existing_near_miss",
+      "conflicts": 1,
+      "triples": [
+        [
+          4,
+          8,
+          12,
+          3
+        ]
+      ]
+    },
+    {
+      "name": "Rowley_207_plus_208_color4",
+      "conflicts": 1,
+      "triples": [
+        [
+          12,
+          196,
+          208,
+          4
+        ]
+      ]
+    },
+    {
+      "name": "Vicenzi_207_best_append",
+      "conflicts": 2,
+      "triples": [
+        [
+          12,
+          196,
+          208,
+          4
+        ],
+        [
+          74,
+          134,
+          208,
+          4
+        ]
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "chain": 0,
+      "seed": 2065198339,
+      "start": "existing_near_miss",
+      "start_conflicts": 1,
+      "steps": 17744,
+      "best_conflicts": 1,
+      "best_triples": [
+        [
+          4,
+          8,
+          12,
+          3
+        ]
+      ],
+      "status": "TIME_CAP"
+    }
+  ],
+  "best_conflict_count": 1,
+  "best_violation_triples": [
+    [
+      4,
+      8,
+      12,
+      3
+    ]
+  ],
+  "assignment": "../../research/frontier-2026-11/weak-schur-5/repair-radius-three-v1/candidate.json",
+  "control_methods": [
+    "enumeration by distinct addends",
+    "enumeration by sum"
+  ],
+  "valid_207_seeds": [
+    "Rowley",
+    "Vicenzi et al."
+  ],
+  "interpretation": "The time limit expired during the first chain. The best coloring equals the starting coloring."
+}

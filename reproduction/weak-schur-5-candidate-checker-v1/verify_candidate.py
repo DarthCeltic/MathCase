@@ -16,8 +16,8 @@ def load_candidate(path: Path) -> list[int]:
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
         raise ValueError(f"cannot read JSON candidate: {exc}") from exc
     if isinstance(obj, dict):
-        if set(obj) != {"colors_1_to_208"}:
-            raise ValueError("object must contain only 'colors_1_to_208'")
+        if "colors_1_to_208" not in obj:
+            raise ValueError("object must contain 'colors_1_to_208'")
         values = obj["colors_1_to_208"]
     else:
         values = obj
@@ -62,7 +62,7 @@ def main() -> int:
         "conflict_count": len(conflicts),
         "conflicts": conflicts,
         "status": "VALID_CANDIDATE" if not conflicts else "CONFLICTS_FOUND",
-        "meaning": "This checks only the supplied finite coloring; it does not establish a global bound.",
+        "meaning": "A conflict-free assignment witnesses WS(5) >= 208. A conflict rules out this assignment.",
     }
     rendered = json.dumps(result, indent=2) + "\n"
     if args.output:
