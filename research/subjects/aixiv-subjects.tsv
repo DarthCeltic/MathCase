@@ -1,0 +1,156 @@
+code	name	field	submissions	coverage	topic	check	evidence
+math.AC	Commutative Algebra	Mathematics	open	Proposed	Hilbert functions of small monomial quotients	Count standard monomials degree by degree and compare with the Hilbert series.	—
+math.AG	Algebraic Geometry	Mathematics	open	Proposed	Intersection multiplicities of plane curves	Compare quotient-algebra dimension with a resultant on isolated examples.	—
+math.AP	Analysis of PDEs	Mathematics	open	Proposed	Decay of heat-equation modes	Bound the residual of a truncated solution and compare with exact Fourier modes.	—
+math.AT	Algebraic Topology	Mathematics	open	Proposed	Homology of triangulated surfaces	Compute boundary ranks over F₂ and test invariance under elementary subdivision.	—
+math.CA	Classical Analysis and ODEs	Mathematics	open	Proposed	Error in a rational approximation to a logarithm	Enclose the remainder by interval arithmetic and compare with a series bound.	—
+math.CO	Combinatorics	Mathematics	open	Checked case	Extending five-color weak Schur partitions to 208	Check the published 207 seeds and independently validate refutations for whole-class recolorings.	https://github.com/DarthCeltic/MathCase/tree/28adad574cb35f3e717cc108071de46fb99fb927/research/frontier-2026-11/weak-schur-5/class-extensions
+math.CT	Category Theory	Mathematics	open	Proposed	Adjunctions between finite posets	Test the hom-set equivalence for every pair of objects in two explicit posets.	—
+math.CV	Complex Variables	Mathematics	open	Proposed	Zero counts in a complex disk	Certify the boundary inequality in Rouché’s theorem and compare with a polynomial factorization.	—
+math.DG	Differential Geometry	Mathematics	open	Proposed	Angle defects on a polyhedral surface	Sum vertex defects and compare the result with Euler characteristic.	—
+math.DS	Dynamical Systems	Mathematics	open	Checked case	Lean-checked first descent under a six-of-ten parity filter	Check the parity-conditioned first-drop theorem with Lean 4.33.1 and replay its exact residue-class scope.	https://github.com/DarthCeltic/MathCase/tree/159e92d9c719896582d36dc6042866f03316184b/reproduction/collatz-six-of-ten-lean-v1
+math.FA	Functional Analysis	Mathematics	open	Proposed	Sharp norms of finite-dimensional operators	Prove a dual upper bound and exhibit a vector attaining equality.	—
+math.GM	General Mathematics	Mathematics	open	Proposed	A finite model illustrating an elementary principle	Pair a short general proof with a smallest counterexample after one hypothesis is removed.	—
+math.GN	General Topology	Mathematics	open	Proposed	Separation axioms in finite topological spaces	Enumerate open sets and compare T₀ and T₁ tests against the specialization preorder.	—
+math.GR	Group Theory	Mathematics	open	Proposed	Orbit counts for a finite permutation group	Compare direct orbit enumeration with Burnside’s lemma.	—
+math.GT	Geometric Topology	Mathematics	open	Proposed	A knot invariant under Reidemeister moves	Calculate Fox colorings before and after explicit diagram moves.	—
+math.HO	History and Overview	Mathematics	open	Proposed	The history of the parity stopping-time criterion	Trace the precise hypotheses from Terras to a modern formal statement with page references.	—
+math.IT	Information Theory	Mathematics	open	Proposed	Weight enumerators of small linear codes	Compare primal and dual enumerators under the MacWilliams identity.	—
+math.KT	K-Theory and Homology	Mathematics	open	Proposed	Grothendieck groups of small exact categories	Compute a finite presentation and check the class relations on explicit examples.	—
+math.LO	Logic	Mathematics	open	Proposed	A finite independence example in propositional logic	Exhibit two small models that agree on the axioms and differ on the target formula.	—
+math.MG	Metric Geometry	Mathematics	open	Proposed	Tight spans of finite tree metrics	Reconstruct a weighted tree and verify all pair distances and the four-point condition.	—
+math.MP	Mathematical Physics	Mathematics	open	Proposed	Exact finite-volume Ising energy multiplicities	Compare row transfer and spin enumeration on a specified periodic lattice.	—
+math.NA	Numerical Analysis	Mathematics	open	Proposed	Certified error for a tridiagonal linear solve	Compare an interval residual bound with an exact rational solution.	—
+math.NT	Number Theory	Mathematics	open	Checked case	Smallest possible largest denominators in three unit fractions	Verify each identity and exclude all smaller largest denominators for the tabulated primes.	https://github.com/DarthCeltic/MathCase/tree/0d75728b0c357bd2102e24c84bf1e81d2159897e/research/number-theory/egyptian-fractions/least-largest-denominator-v1
+math.OA	Operator Algebras	Mathematics	open	Proposed	Positivity of a matrix-algebra map	Check its Choi matrix exactly and construct a witness when positivity fails.	—
+math.OC	Optimization and Control	Mathematics	open	Proposed	Optimal cost in a finite-horizon control system	Compare a Bellman certificate with exhaustive policy evaluation.	—
+math.PR	Probability	Mathematics	open	Proposed	Hitting times on a finite Markov chain	Solve the linear equations over the rationals and compare with path counts.	—
+math.QA	Quantum Algebra	Mathematics	open	Proposed	A small representation of a Hecke algebra	Verify its quadratic and braid relations symbolically.	—
+math.RA	Rings and Algebras	Mathematics	open	Proposed	Radicals of finite-dimensional algebras	Check ideal closure, nilpotence, and the structure of the quotient.	—
+math.RT	Representation Theory	Mathematics	open	Proposed	Characters of a finite permutation representation	Compute multiplicities two ways and check character orthogonality.	—
+math.SG	Symplectic Geometry	Mathematics	open	Proposed	Area preservation for a discrete symplectic map	Check the pullback of the symplectic form exactly on a polynomial example.	—
+math.SP	Spectral Theory	Mathematics	open	Proposed	Eigenvalue multiplicities on a cycle graph	Compare a graph Laplacian characteristic polynomial with the Fourier spectrum.	—
+math.ST	Statistics Theory	Mathematics	open	Proposed	Coverage of a finite-sample confidence interval	Enumerate binomial outcomes and bound the minimum coverage between breakpoints.	—
+math-ph	Mathematical Physics	Theoretical and Mathematical Physics	open	Proposed	Finite-lattice partition functions	Recover a partition polynomial from the full energy histogram and test its values at special temperatures.	—
+hep-th	High Energy Physics - Theory	Theoretical and Mathematical Physics	open	Proposed	Gauge invariance in a finite lattice model	Enumerate a tiny discrete gauge orbit and verify invariance of its Wilson loops.	—
+gr-qc	General Relativity and Quantum Cosmology	Theoretical and Mathematical Physics	open	Proposed	Curvature of a specified spacetime metric	Compare two symbolic computations of a curvature scalar in overlapping coordinates.	—
+quant-ph	Quantum Physics	Theoretical and Mathematical Physics	open	Proposed	Entanglement and partial transpose in two qubits	Compute exact spectra for a parametrized state and check the separability threshold.	—
+cond-mat.stat-mech	Statistical Mechanics	Theoretical and Mathematical Physics	open	Proposed	Density of states of a periodic Ising lattice	Compare exact degeneracies from two algorithms, including the frustrated odd-size boundary.	—
+nlin.SI	Exactly Solvable and Integrable Systems	Theoretical and Mathematical Physics	open	Proposed	Discrete conserved quantities for a small Toda model	Verify a proposed first integral symbolically on one explicitly defined update.	—
+nlin.CD	Chaotic Dynamics	Theoretical and Mathematical Physics	open	Proposed	Periodic points of a piecewise-linear map	Count primitive orbits from a transition matrix and compare with explicit itineraries.	—
+nlin.PS	Pattern Formation and Solitons	Theoretical and Mathematical Physics	open	Proposed	Onset of instability in a pattern-forming equation	Compare a dispersion relation with the exact spectrum of a periodic discretization.	—
+cs.AI	Artificial Intelligence	Computer Science	coming soon	Supporting artifact	How proof verification changes an AI-assisted correction	Use the saved rejected proof, accepted correction, and downstream reuse as one documented case.	https://darthceltic.github.io/mathcase/
+cs.AR	Hardware Architecture	Computer Science	coming soon	Proposed	Cache behavior of a small proof checker	Compare measured misses for two layouts with a trace-driven cache simulation.	—
+cs.CC	Computational Complexity	Computer Science	coming soon	Supporting artifact	Source audit of a VP/VNP proof request	Trace the saved request to its cited sources and identify the exact statement and scope they support; this is a source audit, not a complexity result.	https://github.com/DarthCeltic/MathCase/tree/0d75728b0c357bd2102e24c84bf1e81d2159897e/reproduction/vp-vnp-source-audit-v1
+cs.CE	Computational Engineering, Finance, and Science	Computer Science	coming soon	Proposed	Reproducibility of a numerical engineering model	Use manufactured solutions to compare two independent implementations.	—
+cs.CG	Computational Geometry	Computer Science	coming soon	Proposed	Robust orientation predicates near collinearity	Count disagreements between floating-point and exact rational determinants.	—
+cs.CL	Computation and Language	Computer Science	coming soon	Proposed	Translating numerical conditions from prose into logic	Test quantified phrases on manually labeled examples and publish disagreement cases.	—
+cs.CR	Cryptography and Security	Computer Science	coming soon	Proposed	Perfect secrecy in a finite one-time-pad model	Enumerate message and ciphertext distributions and check equality exactly.	—
+cs.CV	Computer Vision and Pattern Recognition	Computer Science	coming soon	Proposed	Calibration of a synthetic camera	Recover known projective parameters from rendered calibration points and quantify error.	—
+cs.CY	Computers and Society	Computer Science	coming soon	Proposed	How readers interpret a checked-proof label	Compare interpretations with a preregistered rubric and consented reader responses.	—
+cs.DB	Databases	Computer Science	coming soon	Proposed	Consistency of a versioned proof catalog	Compare constraint-checked query answers before and after a schema migration.	—
+cs.DC	Distributed, Parallel, and Cluster Computing	Computer Science	coming soon	Proposed	Agreement in a finite asynchronous state model	Enumerate legal event orders and verify a stated invariant.	—
+cs.DL	Digital Libraries	Computer Science	coming soon	Proposed	Persistent references in mathematical archives	Resolve a dated sample of proof references and classify exact-version availability.	—
+cs.DM	Discrete Mathematics	Computer Science	coming soon	Checked case	Recoloring constraints in weakly sum-free partitions	Verify a finite extension obstruction from explicit assignments or refutation trees.	https://github.com/DarthCeltic/MathCase/tree/28adad574cb35f3e717cc108071de46fb99fb927/research/frontier-2026-11/weak-schur-5/class-extensions
+cs.DS	Data Structures and Algorithms	Computer Science	coming soon	Supporting artifact	Algorithms for exact first descent in Collatz parity windows	Compare the compiled residue-class scan with the independent affine classifier, including partial gates and unresolved representatives.	https://github.com/DarthCeltic/MathCase/tree/6649e9490648e74b8c9bc76c6e6a13901aba225c/reproduction/collatz-window-atlas-v1
+cs.ET	Emerging Technologies	Computer Science	coming soon	Proposed	Arithmetic precision on an unconventional compute substrate	Emulate a specified number format and compare its error to an exact baseline.	—
+cs.FL	Formal Languages and Automata Theory	Computer Science	coming soon	Proposed	Equivalence of two finite automata	Search the product automaton and return a shortest distinguishing word or a certificate.	—
+cs.GL	General Literature	Computer Science	coming soon	Proposed	A reproducibility survey for mathematical software	Publish a selection protocol and independently classify a fixed set of artifacts.	—
+cs.GR	Graphics	Computer Science	coming soon	Proposed	Correctness of rasterization at shared edges	Compare pixel coverage with exact polygon membership on a synthetic grid.	—
+cs.GT	Computer Science and Game Theory	Computer Science	coming soon	Proposed	Equilibria of small rational games	Compare support enumeration with direct best-response inequalities.	—
+cs.HC	Human-Computer Interaction	Computer Science	coming soon	Proposed	Whether readers can locate a proof’s assumptions	Measure task completion with consenting participants using a declared protocol.	—
+cs.IR	Information Retrieval	Computer Science	coming soon	Proposed	Retrieval of related mathematical statements	Measure recall against a human-labeled query set and publish false matches.	—
+cs.IT	Information Theory	Computer Science	coming soon	Proposed	Exact decoding performance on a small noisy channel	Compute block error from all possible received words and compare with a channel formula.	—
+cs.LG	Machine Learning	Computer Science	coming soon	Proposed	Calibration of predictions of proof acceptance	Evaluate held-out, labeled attempts and report uncertainty and class balance.	—
+cs.LO	Logic in Computer Science	Computer Science	coming soon	Proposed	A reference checker for finite refutations	Accept valid certificates, reject deliberately corrupted branches, and compare implementations.	—
+cs.MA	Multiagent Systems	Computer Science	coming soon	Proposed	Task allocation and independent validation in a multiagent workflow	Compare a preregistered division of labor and merge protocol with matched single-agent baselines on the same bounded tasks.	—
+cs.MM	Multimedia	Computer Science	coming soon	Proposed	Synchronization error in an annotated math presentation	Compare predicted and measured frame-to-transcript alignment against labeled events.	—
+cs.MS	Mathematical Software	Computer Science	coming soon	Supporting artifact	A runnable mathematical proof workbench	Replay a named case, inspect the checked statement and recover its source and receipt.	https://github.com/DarthCeltic/MathCase/tree/0d75728b0c357bd2102e24c84bf1e81d2159897e/reproduction/README.md
+cs.NA	Numerical Analysis	Computer Science	coming soon	Proposed	Precision required for a stable eigenvalue computation	Compare floating-point results at increasing precision with exact small cases.	—
+cs.NE	Neural and Evolutionary Computing	Computer Science	coming soon	Proposed	Reproducibility of a stochastic coloring heuristic	Record seeds and move budgets, then compare outcome distributions on a held-out instance set.	—
+cs.NI	Networking and Internet Architecture	Computer Science	coming soon	Proposed	Delays in a small queueing network	Compare exact finite-state probabilities with a trace-driven simulator.	—
+cs.OH	Other Computer Science	Computer Science	coming soon	Proposed	Portability of a mathematical artifact	Replay the same pinned case on distinct platforms and record each discrepancy.	—
+cs.OS	Operating Systems	Computer Science	coming soon	Proposed	File-system effects on deterministic proof builds	Measure clean-build outputs across two declared filesystem configurations.	—
+cs.PF	Performance	Computer Science	coming soon	Proposed	Where time goes in a proof replay	Record repeat measurements and separate tool bootstrap, compilation, and checking.	—
+cs.PL	Programming Languages	Computer Science	coming soon	Proposed	Preservation of arithmetic semantics by a toy compiler	Compare a formal expression evaluator with execution of the generated instructions.	—
+cs.RO	Robotics	Computer Science	coming soon	Proposed	Reachability for a planar teaching robot	Check a small motion plan against exact link-length and obstacle constraints.	—
+cs.SC	Symbolic Computation	Computer Science	coming soon	Proposed	Verifying symbolic identities after simplification	Check polynomial normal forms and retain assumptions required by divisions.	—
+cs.SD	Sound	Computer Science	coming soon	Proposed	Pitch estimation on known synthetic signals	Compare estimators under measured sampling and noise conditions.	—
+cs.SE	Software Engineering	Computer Science	coming soon	Proposed	Whether a published evidence package survives a format change	Replay a versioned corpus before and after migration and compare claim-level outcomes.	—
+cs.SI	Social and Information Networks	Computer Science	coming soon	Proposed	How a mathematical correction propagates through citations	Build a dated public citation graph and manually check a sample of links.	—
+cs.SY	Systems and Control	Computer Science	coming soon	Proposed	Reachable states of a discrete-time controller	Compare symbolic reachability with exhaustive finite-state traversal.	—
+hep-ex	High Energy Physics - Experiment	Physics	coming soon	Proposed	Uncertainty in a public particle-count histogram	Reconstruct a published binning and compare exact Poisson intervals with reported errors.	—
+hep-lat	High Energy Physics - Lattice	Physics	coming soon	Proposed	Autocorrelation in a tiny lattice field model	Compare exact expectation values with sampled estimates and effective sample size.	—
+hep-ph	High Energy Physics - Phenomenology	Physics	coming soon	Proposed	A dimensionless kinematic endpoint	Check its analytic expression against exact conservation laws on synthetic events.	—
+nucl-ex	Nuclear Experiment	Physics	coming soon	Proposed	Background subtraction in a public counting spectrum	Use a known synthetic background and verify recovery and interval coverage.	—
+nucl-th	Nuclear Theory	Physics	coming soon	Proposed	Convergence of a published toy bound-state calculation	Compare a finite-basis spectrum with an independently solved reference Hamiltonian.	—
+physics.acc-ph	Accelerator Physics	Physics	coming soon	Proposed	Stability of an idealized linear focusing cell	Check the transfer-matrix trace criterion against repeated matrix powers.	—
+physics.ao-ph	Atmospheric and Oceanic Physics	Physics	coming soon	Proposed	Energy conservation in a shallow-water discretization	Compare numerical drift with the analytic energy on a specified periodic domain.	—
+physics.app-ph	Applied Physics	Physics	coming soon	Proposed	Heat flow across a layered slab	Compare a discrete solver with the exact steady-state thermal resistance.	—
+physics.atm-clus	Atomic and Molecular Clusters	Physics	coming soon	Proposed	Normal modes of a harmonic three-particle cluster	Verify mode multiplicities and the zero translational mode.	—
+physics.atom-ph	Atomic Physics	Physics	coming soon	Proposed	Degeneracies in a hydrogenic model	Compare analytic levels with a radial discretization at declared grid sizes.	—
+physics.bio-ph	Biological Physics	Physics	coming soon	Proposed	Thermal fluctuations of a bead in an optical trap	Compare the finite-sample variance with the harmonic equilibrium prediction.	—
+physics.chem-ph	Chemical Physics	Physics	coming soon	Proposed	Partition function of a Morse oscillator	Compare truncated level sums with an independently bounded tail.	—
+physics.class-ph	Classical Physics	Physics	coming soon	Proposed	Period of a nonlinear pendulum	Compare time integration with a certified elliptic-integral value.	—
+physics.comp-ph	Computational Physics	Physics	coming soon	Proposed	Exact and simulated finite-lattice observables	Cross-check a model’s enumeration, transfer matrix, and Monte Carlo estimates.	—
+physics.data-an	Data Analysis, Statistics and Probability	Physics	coming soon	Proposed	Bias in fitting noisy power laws	Use simulated observations with known exponents and report coverage under repeated sampling.	—
+physics.ed-ph	Physics Education	Physics	coming soon	Proposed	Understanding uncertainty in a measurement exercise	Score consented learner explanations against a prespecified rubric.	—
+physics.flu-dyn	Fluid Dynamics	Physics	coming soon	Proposed	Convergence of a Taylor–Green vortex benchmark	Compare measured decay and grid refinement with the analytic solution.	—
+physics.gen-ph	General Physics	Physics	coming soon	Proposed	Consistency of a dimensional scaling law	Test unit invariance and compare predictions with an explicit reference model.	—
+physics.geo-ph	Geophysics	Physics	coming soon	Proposed	Travel times in a layered Earth model	Compare ray-path minima with Snell-law predictions for a two-layer example.	—
+physics.hist-ph	History and Philosophy of Physics	Physics	coming soon	Proposed	The provenance of a physical constant in a historical table	Compare a primary edition with later transcriptions and document rounding.	—
+physics.ins-det	Instrumentation and Detectors	Physics	coming soon	Proposed	Dead-time corrections in a synthetic counter	Compare exact accepted-event counts with two idealized detector models.	—
+physics.med-ph	Medical Physics	Physics	coming soon	Proposed	Reconstructing a digital tomography phantom	Compare recovered intensities to known synthetic truth across projection counts.	—
+physics.optics	Optics	Physics	coming soon	Proposed	Diffraction by a finite aperture	Compare a discrete Fourier calculation with an analytic fringe location.	—
+physics.plasm-ph	Plasma Physics	Physics	coming soon	Proposed	Dispersion in an idealized linear plasma model	Verify dimensional consistency and compare computed modes with a stated analytic limit.	—
+physics.pop-ph	Popular Physics	Physics	coming soon	Proposed	A public demonstration of random-walk spread	Compare observed displacements with the exact small-step distribution.	—
+physics.soc-ph	Physics and Society	Physics	coming soon	Proposed	Sensitivity of a small voter model	Compare simulated consensus times with exact absorbing-chain calculations.	—
+physics.space-ph	Space Physics	Physics	coming soon	Proposed	Idealized charged-particle drift in a uniform field	Compare the numerical orbit with the exact guiding-center trajectory.	—
+astro-ph.CO	Cosmology and Nongalactic Astrophysics	Astrophysics	coming soon	Proposed	Distances in a specified cosmological model	Compare quadrature against a closed-form limiting cosmology.	—
+astro-ph.EP	Earth and Planetary Astrophysics	Astrophysics	coming soon	Proposed	Transit depths in a toy two-disk model	Compare numerical integration of overlap with the analytic area.	—
+astro-ph.GA	Astrophysics of Galaxies	Astrophysics	coming soon	Proposed	Projection of an idealized stellar density profile	Compare line-of-sight integration with a known surface-density law.	—
+astro-ph.HE	High Energy Astrophysical Phenomena	Astrophysics	coming soon	Proposed	Poisson variability in a public light curve	Check exposure normalization and compare a synthetic null signal with count statistics.	—
+astro-ph.IM	Instrumentation and Methods for Astrophysics	Astrophysics	coming soon	Proposed	Sampling bias in an unevenly observed periodogram	Recover injected periods and measure alias rates over declared cadences.	—
+astro-ph.SR	Solar and Stellar Astrophysics	Astrophysics	coming soon	Proposed	Hydrostatic equilibrium in a simple stellar model	Compare a Lane–Emden solver with a case having a closed-form solution.	—
+cond-mat.dis-nn	Disordered Systems and Neural Networks	Condensed Matter	coming soon	Proposed	Finite-size behavior in a random-bond spin model	Enumerate small disorder samples exactly and compare the mean with direct averaging.	—
+cond-mat.mes-hall	Mesoscale and Nanoscale Physics	Condensed Matter	coming soon	Proposed	Conductance of a finite tight-binding chain	Compare a transfer-matrix calculation with direct linear algebra.	—
+cond-mat.mtrl-sci	Materials Science	Condensed Matter	coming soon	Proposed	Symmetry constraints on a model elastic tensor	Verify invariance under a specified crystal point group.	—
+cond-mat.other	Other Condensed Matter	Condensed Matter	coming soon	Proposed	Combinatorics of finite dimer coverings	Compare exact enumeration to a determinant on a suitable bipartite lattice.	—
+cond-mat.quant-gas	Quantum Gases	Condensed Matter	coming soon	Proposed	Occupancy counts for a finite ideal quantum gas	Compare generating-function coefficients with a state-by-state enumeration.	—
+cond-mat.soft	Soft Condensed Matter	Condensed Matter	coming soon	Proposed	Packing exclusions for hard rods on a ring	Compare an exact counting formula with all small discrete configurations.	—
+cond-mat.str-el	Strongly Correlated Electrons	Condensed Matter	coming soon	Proposed	The Hubbard dimer in fixed particle-number sectors	Compare exact diagonalization with the known analytic eigenvalues.	—
+cond-mat.supr-con	Superconductivity	Condensed Matter	coming soon	Proposed	Flux periodicity of a toy superconducting ring	Compare a finite winding-number minimization with the analytic period.	—
+nlin.AO	Adaptation and Self-Organizing Systems	Nonlinear Sciences	coming soon	Proposed	Phase locking in a finite oscillator model	Compare a computed locking condition with the two-oscillator analytic threshold.	—
+nlin.CG	Cellular Automata and Lattice Gases	Nonlinear Sciences	coming soon	Proposed	Conservation laws in a cellular automaton	Enumerate periodic states and check the proposed invariant after each update.	—
+q-bio.BM	Biomolecules	Quantitative Biology	coming soon	Proposed	Equilibrium occupancies of a textbook binding model	Compare an exact partition sum with a closed-form two-state reference.	—
+q-bio.CB	Cell Behavior	Quantitative Biology	coming soon	Proposed	Variation in sizes of plant cells on public microscopy slides	Compare two measurement pipelines against hand-labeled outlines.	—
+q-bio.GN	Genomics	Quantitative Biology	coming soon	Proposed	Sampling uncertainty in plant allele counts	Check exact confidence intervals on public aggregate counts with a finite sampling model.	—
+q-bio.MN	Molecular Networks	Quantitative Biology	coming soon	Proposed	Ambiguity of paths in a published plant metabolic graph	Compare exact graph reachability with manually verified paths in a fixed dataset.	—
+q-bio.NC	Neurons and Cognition	Quantitative Biology	coming soon	Proposed	Bias of spike-count statistics for simulated neurons	Compare estimated rates with known generating probabilities.	—
+q-bio.OT	Other Quantitative Biology	Quantitative Biology	coming soon	Proposed	Reliability of a flowering-time observation series	Audit missingness and compare two rules for estimating peak bloom.	—
+q-bio.PE	Populations and Evolution	Quantitative Biology	coming soon	Proposed	Seasonal abundance in a public butterfly census	Compare a count model with held-out years and quantify uncertainty.	—
+q-bio.QM	Quantitative Methods	Quantitative Biology	coming soon	Proposed	False discoveries in a simulated multiple-testing study	Compare measured error rates with the finite null distribution.	—
+q-bio.SC	Subcellular Processes	Quantitative Biology	coming soon	Proposed	Diffusion recovery in a synthetic microscopy trace	Compare a fitted diffusion timescale with a known analytic model.	—
+q-bio.TO	Tissues and Organs	Quantitative Biology	coming soon	Proposed	Measurement uncertainty in public leaf-vein images	Compare graph summaries under repeated segmentations and known synthetic controls.	—
+q-fin.CP	Computational Finance	Quantitative Finance	coming soon	Proposed	Numerical error in an option-pricing benchmark	Compare a binomial-tree result with a stated analytic limiting model.	—
+q-fin.EC	Economics	Quantitative Finance	coming soon	Proposed	A stylized exchange economy with rational endowments	Compare computed prices with explicit market-clearing equations.	—
+q-fin.GN	General Finance	Quantitative Finance	coming soon	Proposed	Consistency of day-count conventions	Verify accrued quantities in a synthetic contract across calendar boundaries.	—
+q-fin.MF	Mathematical Finance	Quantitative Finance	coming soon	Proposed	A finite martingale pricing identity	Enumerate all paths and compare the replicating and expectation values.	—
+q-fin.PM	Portfolio Management	Quantitative Finance	coming soon	Proposed	Sensitivity of a toy minimum-variance solution	Check optimality conditions across a grid of synthetic covariance matrices.	—
+q-fin.PR	Pricing of Securities	Quantitative Finance	coming soon	Proposed	No-arbitrage bounds in a finite scenario tree	Verify primal and dual bounds for a specified synthetic payoff.	—
+q-fin.RM	Risk Management	Quantitative Finance	coming soon	Proposed	Expected shortfall for a finite loss distribution	Check analytic tail averages against exact enumeration, including tied losses.	—
+q-fin.ST	Statistical Finance	Quantitative Finance	coming soon	Proposed	Bias of a volatility estimator on simulated prices	Compare finite-sample behavior to a known data-generating law.	—
+q-fin.TR	Trading and Market Microstructure	Quantitative Finance	coming soon	Proposed	Matching behavior in a synthetic limit-order book	Replay deterministic event streams and check price-time precedence and quantity conservation.	—
+stat.AP	Applications	Statistics	coming soon	Proposed	Uncertainty in a public observational dataset	Publish a stated estimand and test sensitivity to the missing-data rule.	—
+stat.CO	Computation	Statistics	coming soon	Proposed	Error control in exact permutation tests	Compare an optimized algorithm with exhaustive permutations on small samples.	—
+stat.ME	Methodology	Statistics	coming soon	Proposed	Coverage after model selection in a finite example	Calculate the sampling distribution and compare naive and adjusted intervals.	—
+stat.ML	Machine Learning	Statistics	coming soon	Proposed	Calibration under a controlled distribution shift	Use disjoint synthetic train/test sets and compare calibration intervals.	—
+stat.OT	Other Statistics	Statistics	coming soon	Proposed	Reproducibility of a reported summary statistic	Recalculate a public worked example and trace a documented discrepancy to its rule.	—
+stat.TH	Statistics Theory	Statistics	coming soon	Proposed	Finite-sample bias of a rank statistic	Derive the exact distribution under exchangeability and compare with enumeration.	—
+eess.AS	Audio and Speech Processing	Electrical Engineering and Systems Science	coming soon	Proposed	Time-delay estimation from synthetic audio	Recover known sample offsets and measure errors under controlled noise.	—
+eess.IV	Image and Video Processing	Electrical Engineering and Systems Science	coming soon	Proposed	Invertibility of a simple image transform	Reconstruct known phantoms and compare pixel values before and after quantization.	—
+eess.SP	Signal Processing	Electrical Engineering and Systems Science	coming soon	Proposed	Perfect reconstruction in a two-channel filter bank	Verify the polyphase identity symbolically and compare impulse responses.	—
+eess.SY	Systems and Control	Electrical Engineering and Systems Science	coming soon	Proposed	Stability margin of a sampled-data controller	Compare exact characteristic roots with a time-domain perturbation experiment.	—
+econ.EM	Econometrics	Economics	coming soon	Proposed	Finite-sample behavior of an instrumental-variable estimator	Use a declared synthetic model and compare estimates with exact low-dimensional calculations.	—
+econ.GN	General Economics	Economics	coming soon	Proposed	Sensitivity of a price index to weighting choices	Recompute a documented basket under multiple explicit index definitions.	—
+econ.TH	Theoretical Economics	Economics	coming soon	Proposed	Stability of matching in a small two-sided market	Enumerate all matchings and pairwise deviations, then compare with deferred acceptance.	—
