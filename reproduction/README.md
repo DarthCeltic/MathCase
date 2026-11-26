@@ -51,3 +51,5 @@ Secondary source audits, worked examples for upstream results, selected M31 reco
 The [TruffleHog history exception](../docs/security/trufflehog-history-exception-2026-11-20.md) records exactly two benign historical test-fixture findings, the current source correction, and the fail-closed monitor. No history rewrite or scanner weakening was performed.
 
 The public MathCase [README](../README.md) links to the live Case Desk, the primary 23/14 theorem, and the secondary diagnostics archive. The companion human-facing site is [darthceltic.github.io](https://darthceltic.github.io/mathcase/).
+
+- [F₂ homology of three triangulated surfaces](math-at-f2-surface-homology-v1/README.md) — a small standard-library computation for explicit sphere, torus, and real-projective-plane meshes. Exact boundary ranks are cross-checked by image enumeration; the scope is only the three supplied finite complexes.
