@@ -1,0 +1,111 @@
+{
+  "schema": 1,
+  "solver": "Glucose4 via python-sat 1.9.dev25",
+  "conflict_budget": 20000,
+  "seconds_per_case": 5,
+  "width": 4,
+  "checker_binary_sha256": "d0d7e33c22d76cda4264d93c6f412a9285460ad5af984d3f43ef75d813465c56",
+  "invalid_proof_rejected": true,
+  "cases": [
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        2,
+        3,
+        4,
+        5
+      ],
+      "status": "inconclusive_wall_limit"
+    }
+  ]
+}

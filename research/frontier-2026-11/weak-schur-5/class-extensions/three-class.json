@@ -1,0 +1,316 @@
+{
+  "schema": 1,
+  "solver": "Glucose4 via python-sat 1.9.dev25",
+  "conflict_budget": 75000,
+  "seconds_per_case": 120,
+  "width": 3,
+  "checker_binary_sha256": "d0d7e33c22d76cda4264d93c6f412a9285460ad5af984d3f43ef75d813465c56",
+  "invalid_proof_rejected": true,
+  "cases": [
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        2,
+        3
+      ],
+      "free_vertices": 109,
+      "clauses": 5715,
+      "cnf_sha256": "280e1f1685450e23a582a89a59372f6df835eee07a65b2c76fdf68e52a03a7c4",
+      "solver_conflicts": 7830,
+      "status": "verified_refutation",
+      "proof_sha256": "8052dfc3e1cf71b5471641dfa1c023c16b1e3263487bc8610f002c9ef72c5ad1",
+      "proof_bytes": 549385
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        2,
+        4
+      ],
+      "free_vertices": 134,
+      "clauses": 9555,
+      "cnf_sha256": "9fd28d3915cbce42f228e51415527d17c38628ce5caf56ed145e81bd9f857f6f",
+      "solver_conflicts": 13070,
+      "status": "verified_refutation",
+      "proof_sha256": "23c6826a250acd92355c1b6469d9cfe1bbb1768ed8463e7163804157c16256f5",
+      "proof_bytes": 1078099
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        2,
+        5
+      ],
+      "free_vertices": 135,
+      "clauses": 10176,
+      "cnf_sha256": "f17c02b48b652b28f9c30ec0b747b40d21cc7d904726fc4d4f91e3050a20b5c0",
+      "solver_conflicts": 2185,
+      "status": "verified_refutation",
+      "proof_sha256": "70473a50a209ac40053409a2363f8de91a289efe25bffafb598295846e0fdb09",
+      "proof_bytes": 131636
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        3,
+        4
+      ],
+      "free_vertices": 116,
+      "clauses": 5958,
+      "cnf_sha256": "55d12821e5c2e42019397927dc2b8dcbc1c4625451738b8fb7b0e879ff2841d6",
+      "solver_conflicts": 4015,
+      "status": "verified_refutation",
+      "proof_sha256": "be5b0cbbe7b361a466d7121bb708bd04613f0ef31c38ce04b3fd51f9082565ca",
+      "proof_bytes": 276279
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        3,
+        5
+      ],
+      "free_vertices": 117,
+      "clauses": 6522,
+      "cnf_sha256": "e81fdbedbe7125509b27360592cc8abbee0382d076c9d1b730387b371ee435dc",
+      "solver_conflicts": 7479,
+      "status": "verified_refutation",
+      "proof_sha256": "586b9edf7bfa65a0255b761c2572549066e7ddae2171007bdd360050db216e2f",
+      "proof_bytes": 602033
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        1,
+        4,
+        5
+      ],
+      "free_vertices": 142,
+      "clauses": 10797,
+      "cnf_sha256": "162558515ee2d177ba775af72483569cf9a07aaf63bcc06fc25a246d6dca6ee0",
+      "solver_conflicts": 12244,
+      "status": "verified_refutation",
+      "proof_sha256": "5ca2f9875b67ba8de87a1c8bd072b7f29d1a3417817881e25d64d6474097c8ec",
+      "proof_bytes": 910853
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        2,
+        3,
+        4
+      ],
+      "free_vertices": 116,
+      "clauses": 5895,
+      "cnf_sha256": "d16c54f741691dddc62e6fb74c810d7eaeefe78e250fb8134c7344ba727c144d",
+      "solver_conflicts": 1539,
+      "status": "verified_refutation",
+      "proof_sha256": "ed538bd1ebc7a79b7afe0957dfe132358e862c33cb3624cf9ff248070cf61d22",
+      "proof_bytes": 71936
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        2,
+        3,
+        5
+      ],
+      "free_vertices": 117,
+      "clauses": 6510,
+      "cnf_sha256": "16bfcf915b3cf68914f4e2e55b32522a69e446d403f525c067d903cd0cc81f5a",
+      "solver_conflicts": 12919,
+      "status": "verified_refutation",
+      "proof_sha256": "40d1b1b537059c03b28984772ce2f81b97fb04d2bb831f14354ae7e6f9f4e4ed",
+      "proof_bytes": 884739
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        2,
+        4,
+        5
+      ],
+      "free_vertices": 142,
+      "clauses": 10623,
+      "cnf_sha256": "d25d82797bfb4aea3f2e23157b0fcc86764638a525630d2d5a97a958c3be14ff",
+      "solver_conflicts": 10436,
+      "status": "verified_refutation",
+      "proof_sha256": "dd138091b579c17bb7b3d7c5cc8c72d22a52f106e24f082c75aa21a72a39526b",
+      "proof_bytes": 741497
+    },
+    {
+      "seed": "rowley",
+      "free_colors": [
+        3,
+        4,
+        5
+      ],
+      "free_vertices": 124,
+      "clauses": 6792,
+      "cnf_sha256": "8f50073fffa3d00879264b747838b505e04ae34202573469b78a8c25f86f6ab7",
+      "solver_conflicts": 3744,
+      "status": "verified_refutation",
+      "proof_sha256": "cb5e4912be5467278d9ba2949a6188f18f93fcd60dac0bef19986976fa2833c5",
+      "proof_bytes": 207935
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        2,
+        3
+      ],
+      "free_vertices": 112,
+      "clauses": 6021,
+      "cnf_sha256": "0a7d5dc7c9d35768f6cf2373308d446d29d7b8805f354d8b3f82f187c837f0b3",
+      "solver_conflicts": 5914,
+      "status": "verified_refutation",
+      "proof_sha256": "fbdcf2b620085f7aba7881a0aac546d92853da02a80f734cad08fbf5140e116d",
+      "proof_bytes": 462352
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        2,
+        4
+      ],
+      "free_vertices": 127,
+      "clauses": 8328,
+      "cnf_sha256": "a32a63e04e9c3741e4868b9dca59dc2b81f21885c20a2ff3b23db35275ab21e7",
+      "solver_conflicts": 8536,
+      "status": "verified_refutation",
+      "proof_sha256": "5c022bbf1988a80c879d3984e426afd2d60ef86bc9fcbf44cd56e89d69368c35",
+      "proof_bytes": 620488
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        2,
+        5
+      ],
+      "free_vertices": 131,
+      "clauses": 9342,
+      "cnf_sha256": "d791fa188c128c8f6051a64d6a18ce6bbc09f9402012e2a63f7949fc85236639",
+      "solver_conflicts": 5454,
+      "status": "verified_refutation",
+      "proof_sha256": "40e19dbf372764719406f82422d0f980a15b2f5b932c7de01e7ad0b4ffe4d584",
+      "proof_bytes": 330384
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        3,
+        4
+      ],
+      "free_vertices": 117,
+      "clauses": 6153,
+      "cnf_sha256": "7448bb16e8d6354d79a3e688f62e177c5a2d0ef8bec90dbadd1d26afc745654b",
+      "solver_conflicts": 4916,
+      "status": "verified_refutation",
+      "proof_sha256": "29f1189d9d39c3aa9cff3ee87630fe0e21759148f4b837f2256fd6d1971ce818",
+      "proof_bytes": 274857
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        3,
+        5
+      ],
+      "free_vertices": 121,
+      "clauses": 7032,
+      "cnf_sha256": "063278ad4d14ebae9cc54d14ab0dec780e02173946bb19c7b7ee88b2ca3d002b",
+      "solver_conflicts": 16351,
+      "status": "verified_refutation",
+      "proof_sha256": "9132a8cfedf9236248b1b1d22ed064f52111830c2d9e9411d356c0fbddddb1a1",
+      "proof_bytes": 1228059
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        1,
+        4,
+        5
+      ],
+      "free_vertices": 136,
+      "clauses": 9597,
+      "cnf_sha256": "b6d285e945f8c5440c9b7eb512f32bb9502ae6126d0f4cbddc0ec52ad09080ca",
+      "solver_conflicts": 18347,
+      "status": "verified_refutation",
+      "proof_sha256": "616b4e1158e2cc34c34cfb30bbd3e622e98c66f3a3e30b5e87c190c60276d724",
+      "proof_bytes": 1577057
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        2,
+        3,
+        4
+      ],
+      "free_vertices": 119,
+      "clauses": 6375,
+      "cnf_sha256": "493c8d5224211621cc0121b6c3b7bfba6fc7f2654a10091da405f2f3fdb41d56",
+      "solver_conflicts": 2234,
+      "status": "verified_refutation",
+      "proof_sha256": "47f2ece7edc86890e9e2db4368e589f2b4ad574038b25e881e3bd49e6a59babc",
+      "proof_bytes": 125332
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        2,
+        3,
+        5
+      ],
+      "free_vertices": 123,
+      "clauses": 7338,
+      "cnf_sha256": "9d4c66c083f824336be252306186608c42eeb2aee1b3f35bd84985d209157be3",
+      "solver_conflicts": 11553,
+      "status": "verified_refutation",
+      "proof_sha256": "cf65eceb6f82054b0ec56ca0749a52fbf3c854a8807d4fea85cb865d19b6c774",
+      "proof_bytes": 901550
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        2,
+        4,
+        5
+      ],
+      "free_vertices": 138,
+      "clauses": 9924,
+      "cnf_sha256": "f207bec4f2697e303206cb04acd06213af65c6b4b2777fa36d985f60ac3f2c5a",
+      "solver_conflicts": 12512,
+      "status": "verified_refutation",
+      "proof_sha256": "2e83127924ad8a3ae03480eeb663db8b5ea41d9e3b201bfe054184feb2e6c53e",
+      "proof_bytes": 1084252
+    },
+    {
+      "seed": "vicenzi",
+      "free_colors": [
+        3,
+        4,
+        5
+      ],
+      "free_vertices": 128,
+      "clauses": 7398,
+      "cnf_sha256": "932ea4fb6a14bcb7dbbb907141a4e20ea28bdff74eed302c222359bdc54e3c44",
+      "solver_conflicts": 3111,
+      "status": "verified_refutation",
+      "proof_sha256": "9142c5af3f0ae03643d70b13482e329f4271efe7f73ede595f4e5f0a00c036b4",
+      "proof_bytes": 240486
+    }
+  ],
+  "archive_url": "https://huggingface.co/datasets/darthceltic85/mathcase-proof-certificates/resolve/16d108c20a61f6b4f2848d9298fd490ff4843e41/weak-schur/208/three-class-extensions-v1/proofs.zip",
+  "archive_sha256": "00c377057ad1b923903fa6b8efae5c663f67585c6329405f08c0426b9656e442",
+  "archive_bytes": 4011470,
+  "drat_trim_revision": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+  "drat_trim_source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee"
+}
