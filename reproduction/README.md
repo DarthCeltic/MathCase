@@ -53,3 +53,4 @@ The [TruffleHog history exception](../docs/security/trufflehog-history-exception
 The public MathCase [README](../README.md) links to the live Case Desk, the primary 23/14 theorem, and the secondary diagnostics archive. The companion human-facing site is [darthceltic.github.io](https://darthceltic.github.io/mathcase/).
 
 - [F₂ homology of three triangulated surfaces](math-at-f2-surface-homology-v1/README.md) — a small standard-library computation for explicit sphere, torus, and real-projective-plane meshes. Exact boundary ranks are cross-checked by image enumeration; the scope is only the three supplied finite complexes.
+- [Local intersections of monomial branches](monomial-branch-intersections-v1/README.md) — the classical binomial-resultant formula checked against exact Macaulay ranks over `F₂`, `F₃`, and `F₅`, with a separate monomial-graph sweep of 1,701 small parameter tuples. Shared-component cases are kept distinct from isolated multiplicities.
