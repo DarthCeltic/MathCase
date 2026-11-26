@@ -8,7 +8,19 @@ $$
 \frac{4}{9601}=\frac{1}{2408}+\frac{1}{806484}+\frac{1}{9908232}.
 $$
 
-The [table](witnesses.csv) gives one minimizing triple per prime. It compares the best possible denominators over complete decompositions, which answers a different question from the [earlier campaign to find a witness for each filtered input](https://darthceltic.github.io/mathcase/work.html#egyptian). The constant applies to this finite prime set. The computation makes no claim of priority or of a bound beyond 10,000.
+The [table](witnesses.csv) gives one minimizing triple per prime. The [earlier campaign](https://darthceltic.github.io/mathcase/work.html#egyptian) sought one witness for each filtered input. Here the search also excludes every triple with a smaller largest denominator.
+
+## What follows for multiples
+
+Let $S$ be the 143 primes in the table. Every positive integer $n$ divisible by at least one member of $S$ admits three distinct positive denominators for $4/n$ with largest denominator at most $1032n$. To see this, write $n=mp$. Dividing a table identity by $m$ gives denominators $mx<my<mz$ and $mz\le 1032mp=1032n$. A multiple can have a better triple of its own. The uniform factor 1,032 is sharp on this union because the union contains $n=9601$.
+
+How much of the positive integers does that rule cover? Take a full period of length $P=\prod_{p\in S}p$. By the Chinese remainder theorem, exactly $\prod_{p\in S}(p-1)$ residue classes avoid all these primes. The natural density of the integers reached by the scaling rule is therefore
+
+$$
+1-\prod_{p\in S}\left(1-\frac1p\right)\ \approx\ 8.52026928\%.
+$$
+
+Other inputs may also admit the same denominator bound. The prime-by-prime optimality computation covers just the 143 listed primes. Scaling and the density calculation are elementary consequences.
 
 ## Check the result
 
@@ -30,4 +42,4 @@ The first factor is positive and less than $b$. The generator enumerates the pos
 
 The checker instead sets a cap $L=z-1$. For every multiple of $p$ up to $L$, it scans possible smaller residual denominators $u$ directly. The conditions $1/u+1/v=a/b$ and $u<v\le L$ give $u>b/a$, $u<2b/a$, and $u\ge bL/(aL-b)$ whenever $aL>b$. The checker recovers $v=bu/(au-b)$ by exact division. Exhausting these ranges proves that the next smaller cap fails. A witness at $z$ establishes the matching upper bound.
 
-The prime-divisibility split is classical. Elsholtz and Tao discuss solutions classified by which denominators contain $p$; their paper studies solution counts. MathCase records the finite optimization above and its two executable checks. [Elsholtz and Tao, *Counting the number of solutions to the Erdős–Straus equation on unit fractions*](https://arxiv.org/abs/1107.1010)
+Elsholtz and Tao classify solutions by which denominators contain $p$. Minimizing the largest denominator also has a history in Egyptian-fraction algorithms. MathCase supplies the table, its two executable checks, and the consequence for multiples. Priority for this particular table has not been established. [Elsholtz and Tao on solution counts](https://arxiv.org/abs/1107.1010) · [Eppstein’s archive of algorithms and minimum-denominator searches](https://ics.uci.edu/~eppstein/numth/egypt/)

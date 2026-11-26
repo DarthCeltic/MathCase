@@ -3,6 +3,7 @@
 import csv
 import sys
 from fractions import Fraction
+from math import prod
 from pathlib import Path
 
 
@@ -57,6 +58,8 @@ def verify(path):
             raise ValueError(f"checker failed inclusive boundary control for {p}")
     print(f"Verified {len(rows)} distinct-denominator minima; max z/p = {worst}.")
     print("Maximizers:", maximizers)
+    density = 1 - prod(Fraction(p - 1, p) for p, x, y, z in rows)
+    print(f"Density of integers divisible by a listed prime: {100 * float(density):.8f}%")
 
 
 if __name__ == "__main__":
