@@ -7,12 +7,13 @@
 - The public Case Desk opens without a key and shows saved proof attempts and Lean checks.
 - The public reproduction bundle contains M15–M20 sources, receipts, a hash-bound exact-statement graph, and bounded Erdős–Straus records.
 - A Nov 18 two-phase source replay compiles all 363 M15–M20 modules from source with no MathCase OLEAN reuse. The phases agree on their per-module outputs and axiom checks. Phase 1's Docker wrapper exit 124 is preserved; Phase 2 exits 0.
-- The current public replay is not a clean-room stranger reproduction: the image is not anonymously pullable and the complete image build context is missing.
+- A Nov 23 author-side public-source run reported PASS. A later read-only audit matched its saved sources, outputs, and Mathlib dependency bytes against the published manifests. Its runner hash was not recorded, so it is not a runner-bound replay; a fresh stranger reproduction remains open.
+- The old Docker image is not anonymously pullable and its full build context is incomplete. A public-source Lake recipe is available and is being updated to bind the exact runner and toolchain.
 - No new theorem has received independent review. There is no frozen ErdosBench result and no measured library-versus-baseline transfer result.
 
 ## Next work, in order
 
-1. **Make one clean-room replay possible.** Publish a complete pinned build recipe or a pullable image, then have an independent operator reproduce the 363-module result from a fresh checkout. Keep the original phase-1 exit 124 and historical OLEAN hash mismatch in the record.
+1. **Close public replay provenance.** Run the updated pinned Lake recipe from a fresh checkout, confirm its code and toolchain hashes, then have an independent operator reproduce the 363-module result. Keep the unbound Nov 23 record, phase-1 exit 124, and historical OLEAN hash mismatch visible as separate evidence.
 2. **Prepare an independent review packet.** Give a reviewer the plain theorem, exact Lean statement, finite scope, source links, both replay records, and the limits. Ryan handles any request for review in his own words.
 3. **Choose one finite-structure target.** Pin an exact public Formal Conjectures revision; compare the target statement to its English wording and check nearby prior work before any attempt. Preserve the candidate list and selection reason.
 4. **Turn Erdős–Straus computation toward proof.** Work from existing denominator-offset records; do not extend the range as the headline. Search for one exact identity family or a useful general criterion, and keep every pattern labeled conjectural until it has a proof and prior-work check.

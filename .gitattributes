@@ -72,6 +72,9 @@ reproduction/collatz-at-most-thirteen-of-twenty-one-v1/runs/**/*.txt -text -eol 
 # Preserve the byte hashes of the public 23/14 replay receipts.
 reproduction/collatz-parity-envelopes-2026-11-v1/evidence/23-14-official-replay/*.json -text -eol whitespace=cr-at-eol
 
+# Preserve the exact line endings of the audited M20 stage log.
+reproduction/m20-public-source-replay-v1/runs/2026-11-23-artifact-audit/saved-stages.jsonl -text -eol -diff
+
 # Keep the pinned-source audit package in deterministic UTF-8/LF text form.
 reproduction/vp-vnp-source-audit-v1/** text eol=lf
 # Preserve the exact coordinate-midpoint Lean inputs and captured R06 outputs.

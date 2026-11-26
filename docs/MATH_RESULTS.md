@@ -40,7 +40,7 @@ Two network-disabled runs used Lean 4.33.1, Mathlib v4.33.1, one CPU, and a 2 Gi
 
 The first phase has an outer Docker watchdog exit code 124 even though its run-status and every per-module Lean result record completion and exit code 0. The second phase exits 0. Both facts are preserved in the [replay report](../reproduction/m20-source-replay-2026-11-18/README.md). New OLEAN hashes match between the two phases but differ from the 363 older recorded OLEAN hashes. The report does not describe those historical bytes as reproduced.
 
-This is not yet a clean-room replay by a stranger. The recorded image is not anonymously pullable, and the full image build context is incomplete. The Lake fallback in the package is prepared but has not been run.
+The Lake fallback was later run on the author's host from pinned public MathCase and Mathlib revisions. Its saved source, compiler-output, OLEAN, and dependency files were rehashed against the published manifests and matched. That older run did not record the replay runner's hash, so it is not a runner-bound receipt or a stranger reproduction. A fresh v2 run that binds the exact runner and toolchain remains open. The recorded Docker image is not anonymously pullable, and its full build context is incomplete.
 
 ## A checked known Ramsey lower bound
 

@@ -1,0 +1,42 @@
+{
+  "schema": "mathcase-m20-posthoc-artifact-audit-v1",
+  "audit_status": "PASS",
+  "audit_kind": "author-side read-only artifact rehash; not a fresh Lean build",
+  "audited_utc": "2026-11-26T09:40:38.979320+00:00",
+  "run_reported_status": "PASS",
+  "run_started_utc": "2026-11-23T13:19:05.438208+00:00",
+  "run_finished_utc": "2026-11-23T18:46:53.862798+00:00",
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean_toolchain": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "pinned_inputs": {
+    "source_files": 386,
+    "compile_modules": 363,
+    "axiom_groups": 23,
+    "axiom_queries": 4262,
+    "sorryAx_queries": 0
+  },
+  "rehash_results": {
+    "staged_sources": 386,
+    "staged_logs": 772,
+    "compiled_oleans": 363,
+    "compiled_oleans_matching_phase2": 363,
+    "compiled_oleans_matching_original_container": 0,
+    "historical_mathlib_oleans": 346,
+    "historical_mathlib_oleans_matching": 346
+  },
+  "file_sha256": {
+    "saved_status.json": "c8a399bce08480133061c33cf516ef821fd9d6259ecdc02fc0c0c144deb76ce5",
+    "saved_stages.jsonl": "1aded36691b1272af0c9a0d76c5b74d95e19ff93e352e62fbd094d8de1ab3be3",
+    "compile_records.tsv": "f18fcf6fa13df3308a31b13dcc067556a6c77a1de27cd1fffe5bdad298687036",
+    "axiom_records.tsv": "f64f25c8bb87daf75679188515f10fa541c540d458bcb51a0bbcd3fb12b341aa",
+    "historical_mathlib_inventory.sha256": "55431285c8f0d3e71a18991f70c010b411c12f1e138f2e7739adad9cc94c9e69",
+    "auditor_script.py": "ffddc680ce9c38194823623bc2fb4c997fff390e008ebd6bc8ee790674d2a9f1"
+  },
+  "runner_sha256_bound": false,
+  "limitations": [
+    "The saved run does not record the replay runner hash, so the exact code that orchestrated that historical run is unbound.",
+    "This read-only audit rehashed saved source, stdout, stderr, OLEAN, and dependency files against pinned manifests; it did not rerun Lean.",
+    "This author-side artifact audit is not an independent stranger reproduction."
+  ]
+}

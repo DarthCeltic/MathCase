@@ -1,16 +1,32 @@
 """Prepare public pinned MathCase sources and the official Mathlib cache for M20."""
 import argparse
+from datetime import datetime, timezone
+import hashlib
 import json
 import os
 from pathlib import Path
 import shutil
 import subprocess
+import sys
+import time
 
 MATHCASE_SHA = "17174a4a6311eb2e32556d9e4fb38255290a36be"
 MATHLIB_SHA = "0df444a360eaa60ab8c11dca51a86af692955474"
 LEAN_REV = "819816b2e0a3bf405af45ae5c7af2491d8f5bee6"
 SPARSE = ("reproduction/m15-m20-r2", "reproduction/m20-source-replay-2026-11-18")
 M20_IMPORT = "Mathlib.Data.Nat.Prime.Basic"
+
+def file_hash(path):
+    with Path(path).open("rb") as stream:
+        return hashlib.file_digest(stream, "sha256").hexdigest()
+
+def now():
+    return datetime.now(timezone.utc).isoformat()
+
+def atomic_json(path, value):
+    temp = path.with_suffix(".tmp")
+    temp.write_bytes((json.dumps(value, indent=2) + "\n").encode("utf-8"))
+    temp.replace(path)
 
 def git(folder, *args, capture=False):
     env = dict(os.environ, GIT_TERMINAL_PROMPT="0")
@@ -58,6 +74,9 @@ def main():
                     help="Fetch a separate optional public Mathlib dependency")
     args = ap.parse_args()
     root = args.workspace.resolve()
+    root.mkdir(parents=True, exist_ok=True)
+    started = now()
+    start_mono = time.monotonic()
     mathlib = root / "mathlib"
     checkout(root/"source", "https://github.com/DarthCeltic/MathCase.git", MATHCASE_SHA, SPARSE)
     checkout(mathlib, "https://github.com/leanprover-community/mathlib4.git", MATHLIB_SHA)
@@ -73,7 +92,40 @@ def main():
     version = subprocess.check_output([lake,"env","lean","--version"],cwd=mathlib,env=env,text=True)
     if "version 4.33.1," not in version or LEAN_REV not in version:
         raise ValueError(f"Unexpected Lean build: {version}")
-    subprocess.run([lake,"exe","cache","get",M20_IMPORT,*args.also_cache],cwd=mathlib,env=env,check=True)
+    lean_path_code = "import shutil; print(shutil.which('lean') or '')"
+    lean_path = subprocess.check_output([lake,"env",sys.executable,"-c",lean_path_code],
+                                        cwd=mathlib,env=env,text=True).strip()
+    if not lean_path or not Path(lean_path).is_file():
+        raise ValueError("Could not resolve Lean executable inside the pinned Lake environment")
+    cache_stdout = root / "cache-get.stdout"
+    cache_stderr = root / "cache-get.stderr"
+    with cache_stdout.open("wb") as stdout, cache_stderr.open("wb") as stderr:
+        cache_result = subprocess.run([lake,"exe","cache","get",M20_IMPORT,*args.also_cache],
+                                      cwd=mathlib,env=env,stdout=stdout,stderr=stderr,check=False)
+    if cache_result.returncode != 0:
+        raise subprocess.CalledProcessError(cache_result.returncode, [lake,"exe","cache","get",M20_IMPORT,*args.also_cache])
+    receipt = {
+        "schema": "mathcase-original-m20-bootstrap-v1",
+        "status": "PASS",
+        "started_utc": started,
+        "finished_utc": now(),
+        "elapsed_seconds": round(time.monotonic() - start_mono, 3),
+        "source_commit": MATHCASE_SHA,
+        "mathlib_commit": MATHLIB_SHA,
+        "lake_manifest_sha256": file_hash(mathlib / "lake-manifest.json"),
+        "lean_version": version.strip(),
+        "lean_commit": LEAN_REV,
+        "python_version": sys.version.split()[0],
+        "python_executable_sha256": file_hash(Path(sys.executable).resolve()),
+        "lake_executable_sha256": file_hash(Path(lake).resolve()),
+        "lean_executable_sha256": file_hash(Path(lean_path).resolve()),
+        "bootstrap_script_sha256": file_hash(Path(__file__).resolve()),
+        "cache_modules": [M20_IMPORT, *args.also_cache],
+        "cache_exit_code": cache_result.returncode,
+        "cache_stdout_sha256": file_hash(cache_stdout),
+        "cache_stderr_sha256": file_hash(cache_stderr),
+    }
+    atomic_json(root / "bootstrap-receipt.json", receipt)
     print("Upstream sources and Mathlib cache ready.", flush=True)
 
 if __name__ == "__main__":
