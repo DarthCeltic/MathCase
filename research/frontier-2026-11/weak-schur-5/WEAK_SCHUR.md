@@ -2,6 +2,10 @@
 
 Fred Rowley colored the integers 1 through 207 with five colors so that no three numbers of the same color satisfy `a + b = c` for distinct addends `a < b`. Rebecca Vicenzi and colleagues found a second construction using structured SAT search. MathCase checks both witnesses and tests how much of either one can survive an extension to 208. [Rowley’s entry in OEIS A072842](https://oeis.org/A072842) · [Vicenzi et al., *FunSearch and Structured SAT Search for Weak Schur Partitions*](https://arxiv.org/abs/2611.22032)
 
+## Check a proposed 208-coloring
+
+Use the [standalone candidate checker](../../../reproduction/weak-schur-5-candidate-checker-v1/README.md) to enter any proposed assignment and list every same-color `a < b`, `a+b` conflict. It checks the finite candidate only; it does not prove a general bound.
+
 ## Findings
 
 | Test | Rowley | Vicenzi et al. |
