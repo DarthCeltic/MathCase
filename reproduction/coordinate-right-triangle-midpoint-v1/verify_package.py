@@ -43,6 +43,10 @@ def check() -> list[str]:
         actual = sha(path)
         if actual != expected:
             raise ValueError(f"hash mismatch: {rel}: {actual}")
+    actual_files = {p.relative_to(ROOT).as_posix() for p in ROOT.rglob("*")
+                    if p.is_file() and p.name != "SHA256SUMS.txt"}
+    if actual_files != set(sums):
+        raise ValueError(f"package inventory mismatch: unlisted={sorted(actual_files - set(sums))}, missing={sorted(set(sums) - actual_files)}")
     for rel in ("README.md", "Audit.lean", "lakefile.toml", "lake-manifest.json", "lean-toolchain", "replay.py", "verify_package.py", ".gitattributes", "evidence/r06-replay-summary.json"):
         if rel not in sums:
             raise ValueError(f"file not covered by SHA256SUMS: {rel}")
