@@ -108,12 +108,55 @@ def main():
     out=args.output.resolve()
     if args.timeout<1:
         ap.error("--timeout must be positive")
+    bootstrap_file=root/"bootstrap-receipt.json"
+    if not bootstrap_file.is_file():
+        ap.error("Run bootstrap_original.py in this workspace first; bootstrap-receipt.json is required")
+    bootstrap=json.loads(bootstrap_file.read_bytes())
+    bootstrap_script=Path(__file__).with_name("bootstrap_original.py").resolve()
+    bootstrap_script_sha=file_hash(bootstrap_script)
+    if (bootstrap.get("schema")!="mathcase-original-m20-bootstrap-v1" or
+        bootstrap.get("status")!="PASS" or
+        bootstrap.get("source_commit")!=MATHCASE_SHA or
+        bootstrap.get("mathlib_commit")!=MATHLIB_SHA or
+        bootstrap.get("bootstrap_script_sha256")!=bootstrap_script_sha):
+        ap.error("Bootstrap receipt does not bind this public runner's pinned inputs and bootstrap script")
+    if (bootstrap.get("cache_exit_code")!=0 or M20_IMPORT not in bootstrap.get("cache_modules",[]) or
+        bootstrap.get("lake_manifest_sha256")!=file_hash(root/"mathlib"/"lake-manifest.json")):
+        ap.error("Bootstrap receipt does not bind the required public cache and Mathlib dependency lock")
+    for log_name,field in [("cache-get.stdout","cache_stdout_sha256"),
+                           ("cache-get.stderr","cache_stderr_sha256")]:
+        log=root/log_name
+        if not log.is_file() or file_hash(log)!=bootstrap.get(field):
+            ap.error(f"Bootstrap log does not match its receipt: {log_name}")
+    lake_exe=shutil.which(args.lake)
+    if not lake_exe:
+        ap.error("Install Lean 4.33.1 with Lake or pass --lake PATH")
+    lake_sha=file_hash(Path(lake_exe).resolve())
+    python_sha=file_hash(Path(sys.executable).resolve())
+    if bootstrap.get("lake_executable_sha256")!=lake_sha:
+        ap.error("Lake executable differs from the pinned bootstrap receipt")
+    if bootstrap.get("python_executable_sha256")!=python_sha:
+        ap.error("Python executable differs from the pinned bootstrap receipt")
+    if bootstrap.get("lean_version") is None:
+        ap.error("Bootstrap receipt is missing Lean version output")
+    if bootstrap.get("lean_commit")!=LEAN_REV:
+        ap.error("Bootstrap receipt is missing the pinned Lean commit")
     out.mkdir(exist_ok=True,parents=True)
     if any(out.iterdir()):
         ap.error("Output must be new or empty. A previous attempt must be preserved.")
-    status={"schema":"mathcase-original-m20-public-replay-v1","started_utc":now(),
+    status={"schema":"mathcase-original-m20-public-replay-v2","started_utc":now(),
             "status":"PREPARING","mode":"smoke" if args.smoke else "full",
             "source_commit":MATHCASE_SHA,"mathlib_commit":MATHLIB_SHA,
+            "runner_sha256":file_hash(Path(__file__).resolve()),
+            "bootstrap_script_sha256":bootstrap_script_sha,
+            "bootstrap_receipt_sha256":file_hash(bootstrap_file),
+            "python_version":sys.version.split()[0],
+            "python_executable_sha256":python_sha,
+            "lake_executable_sha256":lake_sha,
+            "bootstrap_receipt_schema":bootstrap["schema"],
+            "bootstrap_started_utc":bootstrap["started_utc"],
+            "bootstrap_finished_utc":bootstrap["finished_utc"],
+            "command_template":"python -B replay_original.py <workspace> <fresh-output> [--smoke] [--timeout SECONDS]",
             "lean_jobs":1,"timeout_seconds_per_stage":args.timeout,
             "completed_compiles":0,"completed_audits":0,"completed_queries":0,
             "original_olean_matches":0,"nov18_phase2_olean_matches":0}
@@ -127,6 +170,11 @@ def main():
         status["checked_input_files"]=len(stages)
         lean,paths,version=runtime(root,args.lake)
         status["toolchain"]=version
+        if bootstrap["lean_version"].strip()!=version.strip():
+            raise ValueError("Lean version output differs from the pinned bootstrap receipt")
+        status["lean_executable_sha256"]=file_hash(Path(lean).resolve())
+        if bootstrap.get("lean_executable_sha256")!=status["lean_executable_sha256"]:
+            raise ValueError("Lean executable differs from the pinned bootstrap receipt")
         status["historical_mathlib_inventory"]=dependency_inventory(root/"mathlib")
         if status["historical_mathlib_inventory"]["absent"]:
             raise ValueError("Required Mathlib dependency OLEANs missing; run the public cache bootstrap")

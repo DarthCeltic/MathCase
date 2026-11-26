@@ -67,7 +67,7 @@ The [case catalog](reproduction/CASE_CATALOG.md) documents local commands. They 
 
 Additional source audits, small worked examples for upstream results, exploratory finite searches, and records whose independent replay remains open are collected in [Diagnostics and lab notes](docs/diagnostics/README.md). Their original source files, records, and URLs remain available. The proof library is an optional reference, not a substitute for replaying a theorem.
 
-The 2,652-family M20 result and its original replay status remain documented in [MathCase results and limits](docs/MATH_RESULTS.md) and the [reproduction index](reproduction/README.md). The original M20 public-source rerun guide records one smoke-test shard only; it does not claim a completed public-source replay of all 363 modules.
+The 2,652-family M20 result and its replay status remain documented in [MathCase results and limits](docs/MATH_RESULTS.md) and the [reproduction index](reproduction/README.md). A Nov. 23 author-side full run reports PASS and its saved artifacts match the pinned manifests, but its receipt did not bind the runner hash. A fresh v2 run is needed for a runner-bound replay of all 363 modules.
 
 A new finite bridge audit checks that every one of those 2,652 listed rows satisfies the separately Lean-checked 12-of-20 parity condition and reaches its recorded base endpoint by both step conventions. It combines with that broader theorem but does not replace or complete the historical 363-module replay. See the [bridge explanation and command](reproduction/collatz-m20-twelve-of-twenty-bridge-v1/README.md).
 
