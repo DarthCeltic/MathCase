@@ -1,0 +1,2 @@
+'MathCase.Collatz.WordBound.lift_residue' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.residue_twelve_of_twenty' depends on axioms: [propext, Quot.sound]

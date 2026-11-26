@@ -2,31 +2,21 @@
 
 Lean checked four different conditions under which the Collatz sequence falls below its start. Only 23/14 has a human-reviewed statement; the other three remain exploratory. None proves the Collatz conjecture.
 
-## Reproduce the source checks
+## Reproduce the reviewed 23/14 proof
 
-Install Lean 4.33.1 locally. The toolchain is pinned in `lean-toolchain`. From the repository root run:
-
-```sh
-python -B reproduction/collatz-parity-envelopes-2026-11-v1/replay.py
-```
-
-This combined command builds the 23/14 target and the separate exploratory 24/15, 31/19, and 32/20 targets. For the reviewed 23/14 target alone, use the separately recorded source runner instead:
+Install Lean 4.33.1 and make its `lean` executable available on your path. From the root of a fresh MathCase checkout, run:
 
 ```sh
-python -B reproduction/collatz-parity-envelopes-2026-11-v1/replay-scoped-validation-v2.py --lean /path/to/lean --output /path/to/new/replay-output
+python -B scripts/run_public_case.py collatz-parity-envelope-23-14
 ```
 
-The output directory must be new. This runner compiles the 23/14 target and shared prerequisite modules; it does not compile the other three parameter targets. The recorded run used `replay-scoped-validation.py`, SHA-256 `4f26cc3145d22dbcdc87029b693bcac04f8ece4eddc1ef63357043fad7dbee2d`. `replay-scoped-validation-v2.py` differs only in the argparse help description (SHA-256 `0ac4c95f1219efb960e5f23258959bd03bf22d857117d0236c86a889e49710f7`); it was not itself Lean-run. The [release manifest](evidence/23-14-official-replay/release-manifest.json) binds both files, the receipts, procedure addendum, and sanitized logs; it records the AST comparison as a static check. The execution receipt binds the exact runner used for the recorded pass.
+The launcher builds the four required modules from source in a new output directory. Lean Core is sufficient. The command checks the exact target and its axioms, then writes the replay receipt to that directory.
 
-The combined `replay.py` script creates a new temporary output directory, compiles the three shared modules, four target modules, and two axiom-audit modules with one Lean process at a time, records compiler output and source/olean hashes, checks each expected theorem axiom set, and rejects any `sorryAx` report. It does not download Lean or dependencies. The proofs use Lean Core only; no Mathlib or Docker is required. For a recorded route through the common case launcher, use `python -B scripts/run_public_case.py collatz-parity-envelope-23-14`.
+We ran this command on Windows from a fresh, credentials-disabled clone of [the tested public commit](https://github.com/DarthCeltic/MathCase/commit/f9250c96eed7000e5441ad83854b58898521b1a1) using the official Lean 4.33.1 release. It passed in 14.251 seconds with all four module exits at zero. The descent theorem uses `propext` and `Quot.sound`. The count and combined statement also use `Classical.choice`. The [replay receipt](evidence/23-14-official-replay/public-launcher/replay-result.json) and [verification record](evidence/23-14-official-replay/public-launcher/verification.json) give the source and toolchain hashes. An independent third-party rerun remains open.
 
-Git requires LF text in this repository. The exact original CRLF bytes of `AtMostFourteen23.lean` and `AxiomAudit31.lean` are therefore kept in adjacent `.original-crlf.bin` files. The replay script verifies each byte snapshot and that its LF-readable `.lean` copy is otherwise identical, then compiles the exact preserved bytes. `evidence/source-byte-bindings.json` records the original and display hashes and binds each snapshot to its public receipt projection and the original private receipt digest. The prior 23/14 receipt binds `AtMostFourteen23.lean` at SHA-256 `680d0ea3f62203261456ec4a9e75b5294bbf0991cb769321ba96bd7cd789d175`.
+The target uses the exact original proof bytes preserved in `AtMostFourteen23.original-crlf.bin`. The runner verifies that snapshot against its hash and checks that the adjacent readable source differs only in newline encoding. The [release manifest](evidence/23-14-official-replay/release-manifest.json) also binds the earlier replay and points to its archived runner.
 
-### Recorded public-source 23/14 replay
-
-An author-side run from an anonymous public clone at MathCase source commit `343e9e9fcbd002bc474fffc9ed5faace1351cd37` used the separate target runner above. It compiled four modules, each with exit code 0, in 30.906 seconds total. Lean reported version 4.33.1; the execution receipt records executable SHA-256 `af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d` and official archive SHA-256 `f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a`. The target receipt records the exact theorem axiom dependencies: the union is `[Classical.choice, propext, Quot.sound]`; it reports no `sorryAx`, `native_decide`, or `trustCompiler` dependency. The target covers 7,507,638 residue classes out of 8,388,608 modulo `2^23`, with bounded descent by at most 37 ordinary steps for `n ≥ 3` when at most 14 of the first 23 accelerated inputs are odd.
-
-The script made no network requests, but operating-system network isolation was not enforced. This is an author-side public-clone replay, not an independent third-party replay. The direct Python invocation had no outer global timeout; the runner set 900 seconds per Lean process and the full run completed in 30.906 seconds, within the authorized 600-second ceiling. The [execution procedure addendum](evidence/23-14-official-replay/execution-procedure-addendum.json) records that the ceiling was not enforced by an outer watchdog; the PASS is for the Lean result, with that procedure limitation noted. The exact [result receipt](evidence/23-14-official-replay/replay-result.json) has SHA-256 `a174ea50afcd541dd9d618a48626b581692664fd69217d1aef8e7e9c6f6a65aa`; the [execution receipt](evidence/23-14-official-replay/execution-receipt.json) has SHA-256 `3e2fc2a054a049a26428f05b425d4fa158e1286863a5a9bc39fdb1cab9a6c27f`. Path-sanitized module transcripts are in `evidence/23-14-official-replay/logs/`; the result receipt's relative log references resolve to these copies. The only redaction replaces the single absolute source path in `AtMostFourteen23.txt` with `materialized-inputs/AtMostFourteen23.lean`; the raw logs remain private. The sanitized transcript hashes are recorded in [`logs/SHA256SUMS`](evidence/23-14-official-replay/logs/SHA256SUMS). These receipts do not establish global convergence, novelty, or independent review. This package is not the 363-module M20 Docker replay.
+The [diagnostics guide](../../docs/diagnostics/README.md) keeps the broader exploratory checks available. To inspect the four-target runner, see [replay.py](replay.py).
 
 ## Results
 
