@@ -14,6 +14,8 @@ Fred Rowley colored the integers 1 through 207 with five colors so that no three
 
 After optimal relabeling the two published colorings agree on 191 of their 207 positions. With either seed, an extension to 208 must change **at least 19** of its existing colors, even after a global palette relabeling. A coloring farther from both seeds could still work. The unrestricted value of WS(5) remains open in this investigation. These are reproducible finite computations in Python. There is no Lean proof or independently checked UNSAT certificate for the 208 search.
 
+An exact test also allowed entire classes to change. For each seed, holding any two old classes fixed made an extension impossible even when the other three could be repartitioned freely. Each of the 20 formulas has an independently checked DRAT proof. A search freeing four classes reached its time limit for every choice. [Whole-class extension test and public proof files](class-extensions/README.md)
+
 ## A separate one-error candidate
 
 A different saved five-color assignment for 1 through 208 has one forbidden sum: 4, 8, and 12 share a color, even though 4 + 8 = 12. Any fix must change at least one of those three numbers. An exhaustive check tested every way to change one, two, or three numbers that could repair this assignment: 4,064,044 possible changes across all 10,712 distinct-addend triples. None removed every forbidden sum; the best candidates still had 9, 8, or 7 conflicts at distances one, two, or three.
