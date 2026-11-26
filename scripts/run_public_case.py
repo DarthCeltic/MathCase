@@ -23,6 +23,8 @@ CATALOG = {
     "ramsey66": "Independently search the 101-vertex graph and its complement for a six-clique.",
     "egyptian": "Reconcile the saved witness campaign and its 100 ranges. Finite arithmetic evidence.",
     "riemann": "Compare four pinned upstream source files. Requires internet. Checks source identity.",
+    "vp-vnp-example": "Work through the all-ones 2x2 permanent and determinant; a deliberately wrong count is rejected.",
+    "vp-vnp-source-audit": "Fetch and hash seven upstream VP/VNP source files at a pinned commit. Does not replay the proof.",
     "visitor": "Check a trusted Lean file, or bind an exported case to its exact target and report axioms.",
 }
 
@@ -56,6 +58,8 @@ def commands(case, args, output):
         "ramsey66": [(R66 + "/verify_paley101_independent.py", R66 + "/graph-certificate.json", "--out-dir", output / "paley")],
         "egyptian": [("scripts/audit_egyptian_fraction_campaign_v9.py", "--output-dir", output / "witness-audit")],
         "riemann": [("reproduction/riemann-source-audit-v1/check_sources.py",)],
+        "vp-vnp-example": [("reproduction/vp-vnp-source-audit-v1/example_check.py",)],
+        "vp-vnp-source-audit": [("reproduction/vp-vnp-source-audit-v1/audit_sources.py", "--receipt", output / "vp-vnp-source-audit.json")],
         "visitor": [("scripts/check_visitor_case.py",
                      *( ["--case-packet", args.case_packet] if args.case_packet else [args.source] ),
                      "--receipt", output / ("target-check.json" if args.case_packet else "compiler.json"),

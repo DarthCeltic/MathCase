@@ -1,0 +1,29 @@
+{
+  "schema": "mathcase-public-package-manifest-v1",
+  "files": {
+    "audit_sources.py": {
+      "bytes": 7308,
+      "sha256": "111a6a92c7b4cba20eb26af5f09c66e8ad7b94aebb6f26c9dd02da7a29029aaa"
+    },
+    "example_check.py": {
+      "bytes": 1270,
+      "sha256": "1769f8e2b2547507594cfc540bad99ec232038cd6fd8e4578c9b8998e2a87e29"
+    },
+    "README.md": {
+      "bytes": 3228,
+      "sha256": "593df4a5aa564e387b4004e9c1be6e9f98247302ae5a5bf6def5f1959eaefca4"
+    },
+    "source-audit-receipt.json": {
+      "bytes": 1794,
+      "sha256": "1b77c6456f2fef85fb321d5fee15984a4cd3123e74c3b1e30cff49aa3cce012f"
+    },
+    "test_audit_sources.py": {
+      "bytes": 1109,
+      "sha256": "4057a0a89c9c068c5e26a651bd97dc998cc231dbff79c5f1c1ac9981cae88769"
+    },
+    "verify_manifest.py": {
+      "bytes": 1622,
+      "sha256": "e6bb59a75f5db7126ee799734c5a44fe7724697b5fe1aba109e217242b963883"
+    }
+  }
+}
