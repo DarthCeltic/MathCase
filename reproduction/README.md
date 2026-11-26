@@ -2,13 +2,14 @@
 
 Start with the [bounded 23/14 Collatz proof](collatz-parity-envelopes-2026-11-v1/README.md). For every start `n ≥ 3` with at most 14 odd inputs in the first 23 accelerated steps, an ordinary iterate is smaller by step 37. Lean counted 7,507,638 qualifying residue classes out of 8,388,608 modulo `2^23`. The package includes the one-command replay and its successful fresh public-checkout receipt.
 
-Visitors can also start with the [six-dot puzzle](https://darthceltic.github.io/) or inspect the [saved proof example](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1), where Lean rejected an attempt and accepted a correction.
+Visitors can also read the [right-triangle midpoint case](coordinate-right-triangle-midpoint-v1/README.md), start with the [six-dot puzzle](https://darthceltic.github.io/) or inspect the [saved proof example](https://darthceltic.github.io/reader.html?scope=public#case/hero-prime-divisibility-r1), where Lean rejected an attempt and accepted a correction.
 
 Each package below says what question it addresses, what was actually checked, and what remains open. A receipt records the exact files and tools for a run; it does not by itself prove a broader claim or replace a human review of the wording.
 
 Other preserved verification packages include:
 
 - [M15–M20 package](m15-m20-r2/README.md) — the surviving r2 snapshot, including source, historical receipts, the exact-statement graph, and read-only replay tools. It contains 1,036 files including its regenerated inventory, SHA-256 `98271fc28d712e48714dc21e4a871e5cc112f492c2c13461a7e2e0328690c9ee`.
+- [Right-triangle midpoint identity](coordinate-right-triangle-midpoint-v1/README.md) — a known coordinate-model result with an exact R06 Lean source replay; the general coordinate reduction has not been formalized.
 - [Twelve-of-twenty Collatz theorem](collatz-twelve-of-twenty-v1/README.md) — one table-free Lean theorem proves 32-step descent for every progression whose first 20 accelerated steps contain exactly 12 odd inputs; Lean also proves the exact 125,970-residue count.
 - [At-most-thirteen-of-twenty-two theorem](collatz-at-most-thirteen-of-twenty-two-v2/README.md) — Lean 4.33.1 proves a parity-conditioned first drop by ordinary step 35 for 3,593,934 residue classes modulo `2^22`; the prior failed proof attempt is preserved with its cause.
 - [Four parity-envelope statements](collatz-parity-envelopes-2026-11-v1/README.md) — 23/14 is M0-reviewed and Lean-checked; 24/15, 31/19, and 32/20 remain exploratory. The combined script compiles all four and is not a 23/14-only command.

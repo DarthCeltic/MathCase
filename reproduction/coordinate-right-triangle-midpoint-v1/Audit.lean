@@ -1,0 +1,2 @@
+import GeometryMidpoint
+#print axioms right_triangle_hypotenuse_midpoint_equidistant

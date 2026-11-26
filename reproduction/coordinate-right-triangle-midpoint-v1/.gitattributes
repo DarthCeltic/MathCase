@@ -1,0 +1,5 @@
+# The Lean inputs and captured R06 outputs are hash-bound evidence.
+*.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+evidence/*.olean binary
+evidence/*.log -text -eol whitespace=cr-at-eol
+evidence/*.txt -text -eol whitespace=cr-at-eol

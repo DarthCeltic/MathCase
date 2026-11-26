@@ -1,0 +1,1 @@
+'right_triangle_hypotenuse_midpoint_equidistant' depends on axioms: [propext, Classical.choice, Quot.sound]
