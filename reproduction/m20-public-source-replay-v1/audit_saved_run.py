@@ -1,10 +1,12 @@
 """Recheck a saved M20 run against the public source and phase-2 manifests."""
 import argparse
 import csv
+from collections import Counter
 from datetime import datetime, timezone
 import hashlib
 import json
 from pathlib import Path
+import re
 import subprocess
 import sys
 
@@ -57,6 +59,15 @@ def main():
         raise ValueError("Published phase-2 manifest digest mismatch")
     if file_hash(inventory_file) != INVENTORY_SHA:
         raise ValueError("Historical dependency inventory digest mismatch")
+    runner_file = Path(__file__).with_name("replay_original.py")
+    bootstrap_file = Path(__file__).with_name("bootstrap_original.py")
+    if status.get("runner_sha256") and file_hash(runner_file) != status["runner_sha256"]:
+        raise ValueError("Saved runner hash does not match the public replay script")
+    if status.get("bootstrap_script_sha256") and file_hash(bootstrap_file) != status["bootstrap_script_sha256"]:
+        raise ValueError("Saved bootstrap hash does not match the public bootstrap script")
+    bootstrap_receipt = workspace / "bootstrap-receipt.json"
+    if status.get("bootstrap_receipt_sha256") and file_hash(bootstrap_receipt) != status["bootstrap_receipt_sha256"]:
+        raise ValueError("Saved bootstrap receipt hash mismatch")
     if git_head(workspace / "source") != MATHCASE_SHA or git_head(mathlib) != MATHLIB_SHA:
         raise ValueError("Workspace source revisions do not match the public pins")
     if status.get("status") != "PASS" or status.get("mode") != "full":
@@ -121,6 +132,9 @@ def main():
         source_files += 1
 
     query_count = 0
+    axiom_counts = Counter()
+    source_native_decide = []
+    source_sorry = []
     for row in axiom_rows:
         name = row["group"]
         rel = row["source_path"]
@@ -129,9 +143,17 @@ def main():
         source = package / rel.removeprefix("inputs/")
         if file_hash(source) != row["source_sha256"]:
             raise ValueError(f"Pinned axiom source mismatch: {name}")
+        source_text = source.read_text(encoding="utf-8")
+        if re.search(r"\bnative_decide\b", source_text):
+            source_native_decide.append(name)
+        if re.search(r"\bsorry\b", source_text):
+            source_sorry.append(name)
         staged = run / "sources" / f"{name}.lean"
         query_count += sum(line.startswith("#print axioms ") for line in staged.read_text(encoding="utf-8").splitlines())
         check_stage("audit", name, row["source_sha256"], row["stdout_sha256"], row["stderr_sha256"])
+        audit_text = (run / "logs" / f"{name}.stdout").read_text(encoding="utf-8", errors="replace")
+        for match in re.finditer(r"depends on axioms: \[([^\]]*)\]", audit_text):
+            axiom_counts.update(part.strip() for part in match.group(1).split(",") if part.strip())
         source_files += 1
     if source_files != 386 or query_count != 4262 or query_count != status.get("completed_queries"):
         raise ValueError("Full input/query counts do not match saved status")
@@ -141,6 +163,22 @@ def main():
         raise ValueError("Saved historical OLEAN match count mismatch")
     if status.get("nov18_phase2_olean_matches") != phase2_olean_matches or phase2_olean_matches != 363:
         raise ValueError("Saved phase-2 OLEAN match count mismatch")
+    compile_texts = [
+        (package / row["source_path"].removeprefix("inputs/")).read_text(encoding="utf-8")
+        for row in compile_rows
+    ]
+    source_native_decide.extend(
+        row["module"] for row, source_text in zip(compile_rows, compile_texts)
+        if re.search(r"\bnative_decide\b", source_text)
+    )
+    source_sorry.extend(
+        row["module"] for row, source_text in zip(compile_rows, compile_texts)
+        if re.search(r"\bsorry\b", source_text)
+    )
+    if source_native_decide or source_sorry or "sorryAx" in axiom_counts:
+        raise ValueError("Forbidden native_decide/sorry source or sorryAx audit result")
+    if axiom_counts != Counter({"propext": query_count, "Quot.sound": query_count}):
+        raise ValueError("Unexpected axiom union or per-axiom query count")
 
     inventory_rows = []
     for line in inventory_file.read_text(encoding="ascii").splitlines():
@@ -165,8 +203,15 @@ def main():
         "source_commit": MATHCASE_SHA,
         "mathlib_commit": MATHLIB_SHA,
         "lean_toolchain": status["toolchain"],
+        "runner_sha256": status.get("runner_sha256"),
+        "bootstrap_script_sha256": status.get("bootstrap_script_sha256"),
+        "bootstrap_receipt_sha256": status.get("bootstrap_receipt_sha256"),
+        "timeout_seconds_per_stage": status.get("timeout_seconds_per_stage"),
         "pinned_inputs": {"source_files": source_files, "compile_modules": 363, "axiom_groups": 23,
                           "axiom_queries": query_count, "sorryAx_queries": 0},
+        "axiom_names": sorted(axiom_counts),
+        "axiom_occurrences": dict(sorted(axiom_counts.items())),
+        "source_controls": {"native_decide_hits": source_native_decide, "sorry_hits": source_sorry},
         "rehash_results": {"staged_sources": 386, "staged_logs": 772, "compiled_oleans": 363,
                            "compiled_oleans_matching_phase2": phase2_olean_matches,
                            "compiled_oleans_matching_original_container": historical_olean_matches,
@@ -181,10 +226,11 @@ def main():
         },
         "runner_sha256_bound": bool(status.get("runner_sha256")),
         "limitations": [
-            "The saved run does not record the replay runner hash, so the exact code that orchestrated that historical run is unbound.",
             "This read-only audit rehashed saved source, stdout, stderr, OLEAN, and dependency files against pinned manifests; it did not rerun Lean.",
             "This author-side artifact audit is not an independent stranger reproduction.",
-        ],
+        ] + ([] if status.get("runner_sha256") else [
+            "This saved run did not record a replay runner hash, so its orchestrating code is unbound."
+        ]),
     }
     rendered = json.dumps(receipt, indent=2) + "\n"
     if args.output:

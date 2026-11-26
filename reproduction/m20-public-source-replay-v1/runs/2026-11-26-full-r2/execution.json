@@ -1,0 +1,75 @@
+{
+  "schema": "mathcase-m20-public-source-execution-v1",
+  "result": "PASS",
+  "run_started_utc": "2026-11-26T15:00:22.936324+00:00",
+  "run_finished_utc": "2026-11-26T18:42:53.254492+00:00",
+  "elapsed_seconds": 13350.318,
+  "exit_code": 0,
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": {
+    "version": "4.33.1",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550"
+  },
+  "python": {
+    "version": "3.11.16",
+    "executable_sha256": "92d7e40ec50be176cb1b790c7568b7e08cd862137b5aa69f1413ba1967886b79"
+  },
+  "lake_executable_sha256": "60330ab6f07dce20f3fa9ebb08e8b984ea9549eac172afeb15d9d2227060e2b3",
+  "runner_sha256": "100b7b827669578a93e9a6bb41d981f107e3d423d05c600252a427caacdb8b37",
+  "bootstrap_script_sha256": "667b4e864609db4d8273f8529c1f230ce729bc693b107a0b4bbaa9f5a078f4d0",
+  "bootstrap_receipt_sha256": "9c6417bdc8d1a26656ced060bcd9015253955a3c1828d6ed89863ef6f24ffe12",
+  "command": [
+    "python3",
+    "-B",
+    "replay_original.py",
+    "/data/workspace",
+    "/data/outputs/full-linux-20261126-r2",
+    "--lake",
+    "/data/toolchain/lean-4.33.1-linux/bin/lake",
+    "--timeout",
+    "1800"
+  ],
+  "execution_limits": {
+    "cpu_count": 1,
+    "memory_limit_bytes": 4294967296,
+    "network": "none",
+    "timeout_seconds_per_module": 1800,
+    "runner_default_timeout_seconds": 600
+  },
+  "container_image": {
+    "local_tag": "mathcase-m20-replay:2026-11-26-r2",
+    "image_id": "sha256:6c72867677783c9e1fd645b2b1597636a147ccb0c6a008d2376d0a3615d6c916",
+    "public_pull_url": null,
+    "note": "This local image has no public pull URL in this release. The documented source bootstrap is the public reproduction route."
+  },
+  "results": {
+    "staged_lean_sources": 386,
+    "compiled_modules": 363,
+    "fresh_olean_hashes_matching_nov18_phase2": 363,
+    "fresh_olean_hashes_matching_older_original_container": 0,
+    "axiom_groups": 23,
+    "theorem_axiom_queries": 4262,
+    "axiom_union": [
+      "propext",
+      "Quot.sound"
+    ],
+    "sorryAx": false,
+    "source_sorry_hits": [],
+    "source_native_decide_hits": [],
+    "pinned_mathlib_oleans": 346,
+    "pinned_mathlib_oleans_matching": 346
+  },
+  "artifact_sha256": {
+    "status.json": "1261c2452ff019e8f037af49abf2193409bcae132d6942944f7e5052261e50bc",
+    "stages.jsonl": "fed426fbf149cd41a68bc3741d23b579786c419ac50d02f866ba6553d997241b",
+    "logs.zip": "53dd1ea0b11564fb2646e69ebd57310699d85f8cacc2305c5dd9220c140c1adf",
+    "artifact-audit.json": "d1bcb9e0452660fa750069e459a84019b39e3a85d484ba5e2b555109acfeaece"
+  },
+  "limits": [
+    "This is a same-host public-source replay, not an independent stranger reproduction.",
+    "This bounded theorem does not prove global Collatz convergence and is not claimed as new.",
+    "The older original-container OLEAN manifest did not match these fresh outputs; the November 18 phase-2 output manifest matched all 363."
+  ]
+}
