@@ -1,0 +1,62 @@
+{
+  "schema": "mathcase-public-payload-manifest-v1",
+  "private_solver_receipt_sha256": "663f452c2e3cb6bfdc8b48413b516287578ee195365d3c9fc406eb5a0a077c4f",
+  "payload_files": {
+    ".gitattributes": {
+      "bytes": 81,
+      "sha256": "168202337cbae10da94ca205a1d7d85dd0f9c2956bb89958b6dad7b5554195a0"
+    },
+    "README.md": {
+      "bytes": 3927,
+      "sha256": "d87828c5470a00b9563d326df342abf8a580f9c9f7577809e11d1f303be3ca6d"
+    },
+    "candidate.json": {
+      "bytes": 1713,
+      "sha256": "6785bedcdd3e37ce2733f977d3fe19674bbbeb5ade0b6d80822884cd73ed5b1e"
+    },
+    "candidate-origin.json": {
+      "bytes": 910,
+      "sha256": "8ed2a8727c2c768bda1cc1ac723ca5dcea8cd3c4dd92a30f8251e26763311c98"
+    },
+    "check-at-most-three.smt2": {
+      "bytes": 2957313,
+      "sha256": "13e4eb91d093f68a853e81717bf7ccae686ca4366fdd6f7db880f194170e234c"
+    },
+    "exhaustive-radius3-result.json": {
+      "bytes": 1742,
+      "sha256": "cd2986390d73aca9f322dcb15ab34507cfa7edd804da8df75fa1b2086045d985"
+    },
+    "exhaustive_radius3.py": {
+      "bytes": 7842,
+      "sha256": "8bf7e8cc54d5209220bcf71d37965bf70039b9fd9a8ae7a2abd078bb5a7de229"
+    },
+    "local-formula-audit.json": {
+      "bytes": 840,
+      "sha256": "56e4b3c1c78380dc9f61e0fc69b63e68f8d503b1108e9244a4493c531b921486"
+    },
+    "prepare_query.py": {
+      "bytes": 2189,
+      "sha256": "bdb1446b17ce0d6375a35a1eb2eba195852f72ac157157ad4ecb146c343e788d"
+    },
+    "solver-result.json": {
+      "bytes": 1540,
+      "sha256": "97825f28d9781460136fde905d72a0b675144ef009f41c01b53b35d55a122d90"
+    },
+    "solver-stderr.txt": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "solver-stdout.txt": {
+      "bytes": 6,
+      "sha256": "5c17dfcc2a8f1f30d9e96df6a9825a5030ade046d560332c19de74d93d591a18"
+    },
+    "verify_public_artifact.py": {
+      "bytes": 4439,
+      "sha256": "b5eecfc4effb8e9e50f6e2a5aa14cb3fa9de1018dc93309778d12cc55a4cfaa3"
+    },
+    "fresh-clone-replay-2026-11-26.json": {
+      "bytes": 1783,
+      "sha256": "09566d818bbfd4640d64ccd58a646fb1fb84b18f9153dd1f90377b5cc2087b1b"
+    }
+  }
+}
