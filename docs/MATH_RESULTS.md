@@ -16,6 +16,10 @@ Three adjacent parameter cases are preserved as **exploratory and not M0-reviewe
 
 The exact finite union of these three filters and the 23/14 and 12-of-20 conditions contains **4,138,588,909 of 4,294,967,296** length-32 parity words (96.3590%). A separate dynamic-program screen checked the count by iterative state propagation and binomial segment convolution. It is a finite arithmetic audit of the union of five separately proved conditions, not a single combined Lean theorem, not a natural-density claim, and not proof that the remaining M15/M16/M18 collections are covered by a smaller basis. The first invalid count, `93,861,359`, and its correction are preserved in the [basis-audit package](../reproduction/collatz-parity-basis-audit-v1/README.md). Basis-search closure remains open.
 
+## Two disjoint 12-step parity windows
+
+A separate finite arithmetic comparison studies caps of 9 then 6 odd accelerated inputs, and the reversed caps of 6 then 9. Each matched two-window filter admits exactly 10,082,670 of the `2^24` parity classes; both are subsets of the existing 24/15 gate and do not improve its class coverage. Their sharp maximum first drops are respectively 24 accelerated / 39 ordinary steps and 10 / 16 steps. The first-window cap of 6 alone suffices for the 10 / 16 bound, admitting 10,280,960 classes; this broader filter is not a subset of 24/15 because it permits up to 18 odd inputs overall. The [reproducible package](../reproduction/collatz-two-window-first-drop-2026-11-v1/README.md) gives exact affine bounds, all-start coverage of the finite small-start ranges, and residue-word witnesses `n=283` and `n=347`. It is not a Lean theorem or a claim about full Collatz convergence.
+
 ## A precise bounded Collatz statement
 
 For each of the 2,652 listed residue offsets in the M20 Lean package, every natural parameter k gives a starting number 2^20 k + r. After 32 ordinary Collatz steps it equals 3^12 k + q, and that value is strictly smaller than the start.
