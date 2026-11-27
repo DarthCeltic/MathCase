@@ -1,0 +1,15 @@
+{
+  "schema": "mathcase-package-trufflehog-scan-v1",
+  "status": "PASS_ZERO_FINDINGS",
+  "command": "docker run --rm --network none --mount type=bind,source=<package>,target=/repo,readonly trufflesecurity/trufflehog:3.99.9 filesystem /repo --json --no-verification --fail --fail-on-scan-errors",
+  "tool": "trufflesecurity/trufflehog:3.99.9",
+  "image_digest": "sha256:2ec535840f860aa27f11fee20222fb790326ecd66325c96bd49d02ec6af46eca",
+  "network": "none",
+  "mount": "read-only",
+  "exit_code": 0,
+  "verified_findings": 0,
+  "unverified_findings": 0,
+  "bytes_scanned": 15514,
+  "stderr_sha256": "665ee57b04b230b895477b447c9d2b87b690a7e714c443480a4b4590dfc305c9",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}
