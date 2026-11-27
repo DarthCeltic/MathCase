@@ -1,0 +1,142 @@
+{
+  "status": "PASS",
+  "scope": "finite residue screen only; not a Lean proof, M0 review, or new theorem",
+  "steps": 24,
+  "max_odd_inputs": 15,
+  "total_masks": 15505590,
+  "independent_methods_agree": true,
+  "all_fixed_word_slopes_positive": true,
+  "all_minimum_margins_positive": true,
+  "damaged_margin_rejected": true,
+  "altered_residue_rejected": true,
+  "rows": [
+    {
+      "h": 0,
+      "mask_count": 1,
+      "minimum_margin_scaled": 281474959933440,
+      "example_residue": 0,
+      "example_start": 16777216,
+      "example_endpoint": 1
+    },
+    {
+      "h": 1,
+      "mask_count": 24,
+      "minimum_margin_scaled": 70368727400448,
+      "example_residue": 4194304,
+      "example_start": 4194304,
+      "example_endpoint": 1
+    },
+    {
+      "h": 2,
+      "mask_count": 276,
+      "minimum_margin_scaled": 17592169267200,
+      "example_residue": 1048576,
+      "example_start": 1048576,
+      "example_endpoint": 1
+    },
+    {
+      "h": 3,
+      "mask_count": 2024,
+      "minimum_margin_scaled": 4398029733888,
+      "example_residue": 262144,
+      "example_start": 262144,
+      "example_endpoint": 1
+    },
+    {
+      "h": 4,
+      "mask_count": 10626,
+      "minimum_margin_scaled": 1099494850560,
+      "example_residue": 65536,
+      "example_start": 65536,
+      "example_endpoint": 1
+    },
+    {
+      "h": 5,
+      "mask_count": 42504,
+      "minimum_margin_scaled": 274861129728,
+      "example_residue": 16384,
+      "example_start": 16384,
+      "example_endpoint": 1
+    },
+    {
+      "h": 6,
+      "mask_count": 134596,
+      "minimum_margin_scaled": 68702699520,
+      "example_residue": 4096,
+      "example_start": 4096,
+      "example_endpoint": 1
+    },
+    {
+      "h": 7,
+      "mask_count": 346104,
+      "minimum_margin_scaled": 17163091968,
+      "example_residue": 1024,
+      "example_start": 1024,
+      "example_endpoint": 1
+    },
+    {
+      "h": 8,
+      "mask_count": 735471,
+      "minimum_margin_scaled": 4278190080,
+      "example_residue": 256,
+      "example_start": 256,
+      "example_endpoint": 1
+    },
+    {
+      "h": 9,
+      "mask_count": 1307504,
+      "minimum_margin_scaled": 1056964608,
+      "example_residue": 64,
+      "example_start": 64,
+      "example_endpoint": 1
+    },
+    {
+      "h": 10,
+      "mask_count": 1961256,
+      "minimum_margin_scaled": 251658240,
+      "example_residue": 16,
+      "example_start": 16,
+      "example_endpoint": 1
+    },
+    {
+      "h": 11,
+      "mask_count": 2496144,
+      "minimum_margin_scaled": 50331648,
+      "example_residue": 4,
+      "example_start": 4,
+      "example_endpoint": 1
+    },
+    {
+      "h": 12,
+      "mask_count": 2704156,
+      "minimum_margin_scaled": 16777216,
+      "example_residue": 3,
+      "example_start": 3,
+      "example_endpoint": 2
+    },
+    {
+      "h": 13,
+      "mask_count": 2496144,
+      "minimum_margin_scaled": 1845493760,
+      "example_residue": 123,
+      "example_start": 123,
+      "example_endpoint": 13
+    },
+    {
+      "h": 14,
+      "mask_count": 1961256,
+      "minimum_margin_scaled": 1895825408,
+      "example_residue": 159,
+      "example_start": 159,
+      "example_endpoint": 46
+    },
+    {
+      "h": 15,
+      "mask_count": 1307504,
+      "minimum_margin_scaled": 268435456,
+      "example_residue": 171,
+      "example_start": 171,
+      "example_endpoint": 155
+    }
+  ]
+}
