@@ -1,0 +1,19 @@
+{
+  "checkout": "fresh public HTTPS clone with credential.helper disabled, depth 2",
+  "commands": [
+    "python -B verify_width4.py --max-length 5 --max-seconds 120 --output evidence/runs/final-clean-replay-2026-11-27/receipt.json",
+    "python -B compare_square_l4.py --joint-receipt evidence/runs/final-clean-replay-2026-11-27/receipt.json --reference ../ising-square-torus-dos-v1/evidence/density-of-states.json --output evidence/runs/final-clean-replay-2026-11-27/square-l4-crosscheck.json"
+  ],
+  "crosscheck_receipt_sha256": "63c49c377e0e6ada73ecddc2036e4a8ea18fa81f28af8b2cb1c1a8b6fdcb24d1",
+  "crosschecker_sha256": "6483ad7b3b15de72939e6a6d87ae3109864e5c76c9d6a23702fb6e947c67432e",
+  "lean_verified": false,
+  "pinned_reference_sha256": "0cb4edc0a8c30d292ed5f644939f138d5ddfd4e2b0d6bfb14a5dd29181f44528",
+  "provider_spend_usd": 0,
+  "recorded_local": "2026-11-27 13:41:28 -0500",
+  "runner_receipt_sha256": "4891bbea34851ce21a270c5d2626c3691fbdfa440a6cf5a698d3a341e19829ab",
+  "runner_sha256": "d2ad28561df2b4d31aebf5498fd3c970b71c9deef365bf28e9e1aeb9cedce274",
+  "schema": "mathcase-ising-width4-clean-release-candidate-run-v1",
+  "source_base_commit": "a3caed11b3cca198439e3d85aae67dd3fa56a55a",
+  "status": "PASS",
+  "working_tree_clean_before_candidate_files": true
+}

@@ -1,0 +1,9 @@
+6483ad7b3b15de72939e6a6d87ae3109864e5c76c9d6a23702fb6e947c67432e  compare_square_l4.py
+3e69fc150bfa5bb1bc1b35b7542c28567df78265910284d1f6aa61df19c17dae  evidence/implementation-corrections.md
+6de92dcd3b7b6969f7262ab4682f7566701d08869a695710ae4a9f20096da7ff  evidence/runs/final-clean-replay-2026-11-27/crosscheck-stdout.txt
+4891bbea34851ce21a270c5d2626c3691fbdfa440a6cf5a698d3a341e19829ab  evidence/runs/final-clean-replay-2026-11-27/receipt.json
+a406125620be2ca5acdc7d4a5e01d13379496aa7c2d93eeff89e60638da44806  evidence/runs/final-clean-replay-2026-11-27/run-manifest.json
+63c49c377e0e6ada73ecddc2036e4a8ea18fa81f28af8b2cb1c1a8b6fdcb24d1  evidence/runs/final-clean-replay-2026-11-27/square-l4-crosscheck.json
+2a9def0c69e454adb1d8e519767b5684e946c363525c7cac1148d69e075f3c6d  evidence/runs/final-clean-replay-2026-11-27/stdout.txt
+37f7309f621b69a9bf9b66d5994510e47f6a05f3a92899ce54a0b33696d87ea6  README.md
+d2ad28561df2b4d31aebf5498fd3c970b71c9deef365bf28e9e1aeb9cedce274  verify_width4.py

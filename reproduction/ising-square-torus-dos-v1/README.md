@@ -67,3 +67,7 @@ python -B reproduction/ising-square-torus-dos-v1/run_3x10.py --cxx <path-to-g++-
 ```
 
 The first command compiles the Gray-code enumerator in a temporary directory under the chosen output directory, writes the full histograms and a verification record, and checks exact state totals, global-flip pairs, two aligned all-spin configurations, checkerboard frustration, and equality of the two histograms. The later commands test the closed odd-square count and its rectangular ground-state extension, including the wider finite rectangle range. They use only exact integer arithmetic and the Python standard library. No external service, stochastic search, GPU, or paid tool is used.
+
+## Related joint spin counts
+
+A separate [4-by-L joint histogram check](../ising-width4-joint-density-v1/README.md) counts both disagreeing bonds and plus spins for L=3,4,5. Its L=4 broken-bond marginal is compared against this package's saved 4-by-4 density-of-states receipt. This is a finite consistency check, not a new Ising result.

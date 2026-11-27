@@ -1,0 +1,16 @@
+{
+  "altered_reference_hash_control_rejected": true,
+  "broken_bond_marginal_matches_pinned_receipt": true,
+  "checker_sha256": "6483ad7b3b15de72939e6a6d87ae3109864e5c76c9d6a23702fb6e947c67432e",
+  "damaged_one_bin_control_rejected": true,
+  "joint_receipt_sha256": "4891bbea34851ce21a270c5d2626c3691fbdfa440a6cf5a698d3a341e19829ab",
+  "matched_assignments": 65536,
+  "matched_length": 4,
+  "reference_commit": "a3caed11b3cca198439e3d85aae67dd3fa56a55a",
+  "reference_git_blob": "1097cc53e843436b9ed14d0f9fee848d6a6b7603",
+  "reference_path": "reproduction/ising-square-torus-dos-v1/evidence/density-of-states.json",
+  "reference_sha256": "0cb4edc0a8c30d292ed5f644939f138d5ddfd4e2b0d6bfb14a5dd29181f44528",
+  "schema": "mathcase-ising-width4-square-slice-crosscheck-v1",
+  "scope": "A consistency cross-check against the existing public square-torus record; not an independent proof of the general transfer identity.",
+  "status": "PASS"
+}
