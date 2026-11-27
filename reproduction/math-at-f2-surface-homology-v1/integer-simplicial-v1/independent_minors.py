@@ -133,6 +133,26 @@ def validate_vertex_links(n_vertices: int, faces: list[tuple[int, int, int]], na
             raise AssertionError(f"{name}: link of vertex {vertex} is disconnected")
 
 
+def klein_grid_faces(width: int = 3, height: int = 3) -> tuple[int, list[tuple[int, int, int]]]:
+    """Construct the reflected-row quotient with a separate indexing routine."""
+    def label(x: int, y: int) -> int:
+        crossings, row = divmod(y, height)
+        x %= width
+        if crossings & 1:
+            x = (width - x) % width
+        return row + height * x
+
+    triangles = []
+    for y in range(height):
+        for x in range(width):
+            lower_left = label(x, y)
+            lower_right = label(x + 1, y)
+            upper_left = label(x, y + 1)
+            upper_right = label(x + 1, y + 1)
+            triangles.extend(((lower_left, lower_right, upper_right), (lower_left, upper_left, upper_right)))
+    return width * height, triangles
+
+
 def gcd_maximal_minors(matrix: list[list[int]], rank: int) -> tuple[int, int]:
     if rank == 0:
         return 1, 1
@@ -218,10 +238,15 @@ def compute() -> dict:
         name: analyze(name, n_vertices, faces, expected_f2)
         for name, (n_vertices, faces, expected_f2, _orientable) in SURFACES.items()
     }
+    klein_vertices, klein_faces = klein_grid_faces()
+    surfaces["klein_twisted_grid_3x3"] = analyze(
+        "klein_twisted_grid_3x3", klein_vertices, klein_faces, (1, 2, 1)
+    )
     expected = {
         "sphere_tetrahedron": (0, 1, 1),
         "torus_periodic_3x3": (2, 1, 1),
         "projective_plane_six_vertex": (0, 0, 2),
+        "klein_twisted_grid_3x3": (1, 0, 2),
     }
     for name, (h1_rank, h2_rank, torsion_order) in expected.items():
         h = surfaces[name]["homology_over_Z"]
@@ -229,7 +254,7 @@ def compute() -> dict:
             raise AssertionError(f"{name}: independent invariants do not match expected values")
     return {
         "format": "mathcase.integer-simplicial-surface-homology-independent.v1",
-        "scope": "Independent arithmetic cross-check for the same three explicit meshes.",
+        "scope": "Independent arithmetic cross-check for the same three explicit meshes and the separately generated twisted-grid Klein bottle.",
         "elapsed_seconds": round(time.perf_counter() - start, 6),
         "surfaces": surfaces,
     }

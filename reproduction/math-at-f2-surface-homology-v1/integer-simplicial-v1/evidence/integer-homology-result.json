@@ -1,7 +1,91 @@
 {
+  "cross_checks": {
+    "klein_F2_checker": {
+      "betti_numbers_f2": {
+        "b0": 1,
+        "b1": 2,
+        "b2": 1
+      },
+      "boundary_ranks_f2": {
+        "d1": 8,
+        "d2": 17
+      },
+      "boundary_squared_zero": true,
+      "closed_surface_edge_incidence": "every edge is in exactly two triangles",
+      "connected": true,
+      "edges": 27,
+      "euler_characteristic": 0,
+      "independent_rank_methods_agree": true,
+      "orientable": false,
+      "triangles": 18,
+      "vertices": 9
+    },
+    "klein_model_description": "3x3 grid quotient with (i+3,j)~(i,j) and (i,j+3)~(-i,j); each square split by the listed diagonal rule."
+  },
   "format": "mathcase.integer-simplicial-surface-homology.v1",
-  "scope": "Exact integer homology for the three explicit meshes imported from the adjacent F2 case.",
+  "scope": "Exact integer homology for the three adjacent F2 meshes and one explicit twisted-grid Klein-bottle triangulation.",
   "surfaces": {
+    "klein_twisted_grid_3x3": {
+      "checks": {
+        "connected_1_skeleton": true,
+        "each_edge_in_two_faces": true,
+        "each_vertex_link_is_a_cycle": true,
+        "integer_boundary_squared_zero": true,
+        "smith_divisibility_chain": true
+      },
+      "cycle_rank_from_spanning_tree": 19,
+      "face_boundary_presentation_shape": [
+        19,
+        18
+      ],
+      "homology_over_F2_betti": [
+        1,
+        2,
+        1
+      ],
+      "homology_over_Z": {
+        "H0": {
+          "free_rank": 1,
+          "torsion": []
+        },
+        "H1": {
+          "free_rank": 1,
+          "torsion_cyclic_orders": [
+            2
+          ]
+        },
+        "H2": {
+          "free_rank": 0,
+          "torsion": []
+        }
+      },
+      "simplices": {
+        "edges": 27,
+        "faces": 18,
+        "vertices": 9
+      },
+      "smith_factors": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "surface": "klein_twisted_grid_3x3"
+    },
     "projective_plane_six_vertex": {
       "checks": {
         "connected_1_skeleton": true,

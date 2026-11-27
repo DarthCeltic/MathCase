@@ -13,7 +13,8 @@ sys.path.insert(0, str(PARENT))
 
 import integer_homology as primary
 import independent_minors as independent
-from homology import SURFACES
+import verify_package as package_verifier
+from homology import SURFACES, analyze as analyze_f2
 
 
 class IntegerSurfaceHomologyTests(unittest.TestCase):
@@ -23,6 +24,7 @@ class IntegerSurfaceHomologyTests(unittest.TestCase):
             "sphere_tetrahedron": (0, [], 1),
             "torus_periodic_3x3": (2, [], 1),
             "projective_plane_six_vertex": (0, [2], 0),
+            "klein_twisted_grid_3x3": (1, [2], 0),
         }
         for name, (h1_rank, torsion, h2_rank) in expected.items():
             groups = results[name]["homology_over_Z"]
@@ -86,6 +88,26 @@ class IntegerSurfaceHomologyTests(unittest.TestCase):
         self.assertEqual(integer["H1"]["free_rank"], 0)
         self.assertEqual(integer["H1"]["torsion_cyclic_orders"], [2])
         self.assertEqual(integer["H2"]["free_rank"], 0)
+
+    def test_twisted_grid_matches_klein_cw_homology_and_differs_from_torus(self) -> None:
+        primary_n, primary_faces = primary.klein_twisted_grid()
+        independent_n, independent_faces = independent.klein_grid_faces()
+        self.assertEqual(primary_n, independent_n)
+        self.assertEqual(
+            {tuple(sorted(face)) for face in primary_faces},
+            {tuple(sorted(face)) for face in independent_faces},
+        )
+        klein = primary.analyze("klein", primary_n, primary_faces, (1, 2, 1))
+        f2 = analyze_f2("klein", primary_n, primary_faces, (1, 2, 1), False)
+        torus = primary.compute()["surfaces"]["torus_periodic_3x3"]
+        self.assertEqual(f2["betti_numbers_f2"], {"b0": 1, "b1": 2, "b2": 1})
+        self.assertFalse(f2["orientable"])
+        self.assertEqual(klein["simplices"], {"vertices": 9, "edges": 27, "faces": 18})
+        self.assertEqual(klein["homology_over_Z"]["H1"], {"free_rank": 1, "torsion_cyclic_orders": [2]})
+        self.assertEqual(klein["homology_over_Z"]["H2"]["free_rank"], 0)
+        self.assertEqual(torus["simplices"], klein["simplices"])
+        self.assertEqual(torus["homology_over_Z"]["H1"], {"free_rank": 2, "torsion_cyclic_orders": []})
+        self.assertEqual(package_verifier.check_saved_cw_model()["status"], "PASS")
 
 
 if __name__ == "__main__":

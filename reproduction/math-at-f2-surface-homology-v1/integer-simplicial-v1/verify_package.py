@@ -8,14 +8,17 @@ import hashlib
 import json
 import math
 import platform
+import re
 from pathlib import Path
 
 import independent_minors
 import integer_homology
+import verify_hashes
 from homology import SURFACES
 
 ROOT = Path(__file__).resolve().parent
 PARENT = ROOT.parent
+REPOSITORY_ROOT = ROOT.parents[2]
 
 
 def sha256(path: Path) -> str:
@@ -31,14 +34,101 @@ def write_json(path: Path, value: object) -> None:
         stream.write(json.dumps(value, indent=2, sort_keys=True) + "\n")
 
 
+def check_saved_cw_model() -> dict:
+    cw_root = PARENT / "integer-cw-v1"
+    manifest_path = cw_root / "SHA256SUMS"
+    verified_hashes = {}
+    for line_number, line in enumerate(manifest_path.read_text(encoding="utf-8").splitlines(), start=1):
+        if not line or line.startswith("#"):
+            continue
+        match = re.fullmatch(r"([0-9a-f]{64})  ([^\r\n]+)", line)
+        if not match:
+            raise AssertionError(f"CW manifest has invalid line {line_number}")
+        expected_hash, relative = match.groups()
+        target = (cw_root / relative).resolve()
+        if not target.is_relative_to(REPOSITORY_ROOT) or not target.is_file():
+            raise AssertionError(f"CW manifest target is missing or outside the repository: {relative}")
+        if sha256(target) != expected_hash:
+            raise AssertionError(f"CW evidence hash mismatch: {relative}")
+        verified_hashes[relative] = expected_hash
+    if not verified_hashes:
+        raise AssertionError("CW manifest is empty")
+
+    primary_path = cw_root / "evidence" / "primary-run.json"
+    independent_path = cw_root / "evidence" / "independent-run.json"
+    fresh_replay_path = ROOT / "evidence" / "cw-model-crosscheck.json"
+    primary = json.loads(primary_path.read_text(encoding="utf-8"))
+    independent = json.loads(independent_path.read_text(encoding="utf-8"))
+    fresh_replay = json.loads(fresh_replay_path.read_text(encoding="utf-8"))
+    expected = {"H0": "Z", "H1_free_rank": 1, "H1_torsion_orders": [2], "H2_free_rank": 0}
+    for label, record in (("primary", primary), ("independent", independent)):
+        if record.get("status") != "PASS":
+            raise AssertionError(f"CW {label} record is not PASS")
+        group = record.get("results", {}).get("klein_bottle", {}).get("homology", {})
+        if group != expected:
+            raise AssertionError(f"CW {label} Klein homology does not match the triangulated result")
+    if fresh_replay.get("status") != "PASS" or fresh_replay.get("klein_homology") != expected:
+        raise AssertionError("fresh CW source replay projection is missing or disagrees")
+    if not re.fullmatch(r"[0-9a-f]{40}", fresh_replay.get("source_checkout_commit", "")):
+        raise AssertionError("fresh CW source replay does not name a full public commit")
+    runs = fresh_replay.get("runs", {})
+    run_pins = {
+        "primary": "verify_integer_cw.py",
+        "independent": "independent_check.py",
+    }
+    model_hash = verified_hashes.get("models.json")
+    if model_hash is None:
+        raise AssertionError("CW manifest does not pin its model input")
+    for label, source_name in run_pins.items():
+        run = runs.get(label, {})
+        if run.get("exit_code") != 0:
+            raise AssertionError(f"fresh CW {label} replay did not exit successfully")
+        if run.get("models_sha256") != model_hash:
+            raise AssertionError(f"fresh CW {label} replay used different model bytes")
+        if run.get("source_sha256") != verified_hashes.get(source_name):
+            raise AssertionError(f"fresh CW {label} replay used different source bytes")
+        checks_passed = run.get("checks_passed")
+        checks_total = run.get("checks_total")
+        if not isinstance(checks_passed, int) or not isinstance(checks_total, int) or checks_total <= 0 or checks_passed != checks_total:
+            raise AssertionError(f"fresh CW {label} replay has incomplete checks")
+        controls_passed = run.get("controls_passed")
+        controls_total = run.get("controls_total")
+        if not isinstance(controls_passed, int) or not isinstance(controls_total, int) or controls_total <= 0 or controls_passed != controls_total:
+            raise AssertionError(f"fresh CW {label} replay has incomplete negative controls")
+        if not re.fullmatch(r"[0-9a-f]{64}", run.get("raw_receipt_sha256", "")):
+            raise AssertionError(f"fresh CW {label} replay does not bind its raw receipt hash")
+    focused = runs.get("focused_tests", {})
+    if focused.get("exit_code") != 0 or focused.get("tests_passed") != 5:
+        raise AssertionError("fresh CW focused tests did not pass all five cases")
+    for label, record in (("primary", primary), ("independent", independent)):
+        if record.get("models_sha256") != model_hash:
+            raise AssertionError(f"saved CW {label} receipt uses different model bytes")
+        source_name = run_pins[label]
+        if record.get("source_sha256") != verified_hashes.get(source_name):
+            raise AssertionError(f"saved CW {label} receipt uses different source bytes")
+    return {
+        "status": "PASS",
+        "method": "Compare the triangulated result with two separately implemented, SHA256SUMS-verified CW receipts and a fresh public-source replay projection.",
+        "sha256_manifest_entries_verified": len(verified_hashes),
+        "primary_receipt_sha256": sha256(primary_path),
+        "independent_receipt_sha256": sha256(independent_path),
+        "fresh_CW_source_replay_projection_sha256": sha256(fresh_replay_path),
+        "klein_homology": expected,
+    }
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--out", type=Path, default=ROOT / "evidence")
+    parser.add_argument("--out", type=Path, required=True)
     args = parser.parse_args()
     out = args.out
+    if out.resolve() == (ROOT / "evidence").resolve():
+        raise SystemExit("ARCHIVED_EVIDENCE_IS_READ_ONLY: choose a fresh output directory")
+    verified_package_entries = verify_hashes.verify_manifest(ROOT / "SHA256SUMS")
 
     primary = integer_homology.compute()
     independent = independent_minors.compute()
+    cw_cross_check = check_saved_cw_model()
     for name, first in primary["surfaces"].items():
         second = independent["surfaces"][name]
         smith = first["smith_factors"]
@@ -132,15 +222,17 @@ def main() -> int:
             "independent_receipt_sha256": sha256(out / "independent-minors-receipt.json"),
             "independent_result_sha256": sha256(independent_result_path),
         },
-        "agreement": "PASS: exact ranks, H1 free ranks, H2 ranks, and torsion orders agree for all three meshes.",
+        "archived_package_manifest_entries_verified": verified_package_entries,
+        "agreement": "PASS: exact ranks, H1 free ranks, H2 ranks, and torsion orders agree for all four models.",
         "negative_controls": negative_controls,
-        "scope": "Three explicit triangulated meshes only; exact Python arithmetic, not Lean and not a general topology prover.",
+        "saved_CW_model_cross_check": cw_cross_check,
+        "scope": "Three explicit triangulated meshes and one explicit twisted-grid quotient only; exact Python arithmetic, not Lean and not a general topology prover.",
     }
     summary_path = out / "verification.json"
     write_json(summary_path, summary)
     print("PASS: primary Smith reduction and independent rational-rank/minor checks agree")
     print("PASS: missing-face, disconnected-mesh, vertex-link, and wrong-sign controls rejected")
-    print(f"PASS: 3 models; {sum(v['number_of_maximal_minors_checked'] for v in independent['surfaces'].values())} maximal minors checked")
+    print(f"PASS: {len(primary['surfaces'])} models; {sum(v['number_of_maximal_minors_checked'] for v in independent['surfaces'].values())} maximal minors checked")
     print(f"verification receipt SHA-256: {sha256(summary_path)}")
     return 0
 

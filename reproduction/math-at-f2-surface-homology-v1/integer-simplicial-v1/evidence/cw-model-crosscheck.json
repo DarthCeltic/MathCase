@@ -1,0 +1,47 @@
+{
+  "cross_model_result": "The fresh CW calculation and the triangulated twisted-grid calculation both give H1 = Z ⊕ Z/2Z and H2 = 0.",
+  "format": "mathcase.integer-surface-cw-crosscheck.v1",
+  "klein_homology": {
+    "H0": "Z",
+    "H1_free_rank": 1,
+    "H1_torsion_orders": [
+      2
+    ],
+    "H2_free_rank": 0
+  },
+  "provider_spend_usd": 0,
+  "python_version": "3.14.7",
+  "runs": {
+    "focused_tests": {
+      "command": "python -B reproduction/math-at-f2-surface-homology-v1/integer-cw-v1/test_integer_cw.py",
+      "exit_code": 0,
+      "tests_passed": 5
+    },
+    "independent": {
+      "checks_passed": 8,
+      "checks_total": 8,
+      "command_template": "python -B reproduction/math-at-f2-surface-homology-v1/integer-cw-v1/independent_check.py --receipt <fresh-output>/cw-independent.json",
+      "controls_passed": 3,
+      "controls_total": 3,
+      "exit_code": 0,
+      "models_sha256": "cb8dee81efbc8ee3a0e4ac78f598170af26e4f1392d5e5738282c60559c1c523",
+      "raw_receipt_sha256": "adab1b90ae409fb8d723d14355e1d9a3375096236b7f09562c28cba656582070",
+      "source_sha256": "17da1c0ae540135ef60eb0d22f957453daf0df2f183636ddd88037317c86c8fa"
+    },
+    "primary": {
+      "checks_passed": 12,
+      "checks_total": 12,
+      "command_template": "python -B reproduction/math-at-f2-surface-homology-v1/integer-cw-v1/verify_integer_cw.py --receipt <fresh-output>/cw-primary.json",
+      "controls_passed": 3,
+      "controls_total": 3,
+      "exit_code": 0,
+      "models_sha256": "cb8dee81efbc8ee3a0e4ac78f598170af26e4f1392d5e5738282c60559c1c523",
+      "raw_receipt_sha256": "4fbfa6846ef7c29f1085811334f626ff9e10202e912281229d79f3a46bc9c824",
+      "source_sha256": "8ca1be251ff76a9984680c2f9fc1b777f48d656e21bfdac12b52eb392975d491"
+    }
+  },
+  "scope": "Fresh local Python replay of the published finite CW checkers, compared with a different explicit triangulation. Not Lean, not independent human review, and not a new topology theorem.",
+  "source_checkout": "fresh sparse public clone of MathCase main; no prior receipt or generated output reused for these commands",
+  "source_checkout_commit": "132e0c416bb15f40e5ff0c05f1be4b75677b3d46",
+  "status": "PASS"
+}
