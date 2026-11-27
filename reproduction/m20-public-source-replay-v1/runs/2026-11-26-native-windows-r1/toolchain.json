@@ -1,0 +1,9 @@
+{
+  "distribution": "Official Lean 4.33.1 Windows archive",
+  "url": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-windows.tar.zst",
+  "size_bytes": 583557483,
+  "sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a",
+  "reported_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "lake_executable_sha256": "565c3976275d79e104421014b6229f4fcf4a8c8edfe164a43b344c91af6f496c"
+}
