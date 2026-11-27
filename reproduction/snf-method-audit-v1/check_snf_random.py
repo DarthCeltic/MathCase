@@ -107,6 +107,9 @@ def main() -> int:
     start = time.perf_counter()
     reducer, source_sha, source_path = load_public_reducer(args.repo.resolve())
     cases = make_cases()
+    fixed_case_count = 4
+    seeded_case_count = len(cases) - fixed_case_count
+    observed_max_abs_entry = max(abs(value) for matrix in cases for row in matrix for value in row)
     rows = []
     for index, matrix in enumerate(cases):
         actual = reducer(matrix)
@@ -126,9 +129,12 @@ def main() -> int:
         "source_path": "reproduction/math-at-f2-surface-homology-v1/integer-simplicial-v1/integer_homology.py",
         "source_sha256": source_sha,
         "case_count": len(cases),
+        "fixed_case_count": fixed_case_count,
+        "seeded_case_count": seeded_case_count,
         "seed": 20261127,
-        "entry_bound": 5,
-        "method": "Public reducer output compared with exact rational rank and gcds of every maximal minor, using an independent Bareiss implementation.",
+        "entry_bound": observed_max_abs_entry,
+        "observed_max_abs_entry": observed_max_abs_entry,
+        "method": "Public reducer output compared with exact rational rank and gcds of every k-by-k minor for each k from 1 through rational rank, using an independent Bareiss implementation.",
         "cases": rows,
         "damaged_output_control_rejected": damaged_rejected,
         "limits": [
