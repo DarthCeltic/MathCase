@@ -1,0 +1,16 @@
+{
+  "verified": true,
+  "states": 1073741824,
+  "dimensions": "3x10",
+  "checks": {
+    "shape_and_nonnegative_counts": true,
+    "all_assignments_counted": true,
+    "magnetization_marginal_is_binomial": true,
+    "global_spin_flip_symmetry": true,
+    "uniform_states_are_the_only_zero_bond_states": true,
+    "odd_bond_bins_are_empty": true,
+    "maximum_broken_bonds_is_50_for_3x10": true,
+    "six_ground_states_have_zero_magnetization": true,
+    "broken_bond_marginal_matches_saved_independent_histogram": true
+  }
+}

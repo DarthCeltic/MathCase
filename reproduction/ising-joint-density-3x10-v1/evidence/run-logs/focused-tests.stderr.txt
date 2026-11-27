@@ -1,0 +1,8 @@
+test_damaged_count_table_is_rejected (test_joint_density.JointDensityTests.test_damaged_count_table_is_rejected) ... ok
+test_small_rectangle_matches_independent_site_enumeration (test_joint_density.JointDensityTests.test_small_rectangle_matches_independent_site_enumeration) ... ok
+test_spin_flip_symmetry_and_binomial_marginal (test_joint_density.JointDensityTests.test_spin_flip_symmetry_and_binomial_marginal) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 1.259s
+
+OK
