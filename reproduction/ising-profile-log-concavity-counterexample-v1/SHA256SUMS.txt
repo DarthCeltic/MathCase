@@ -1,0 +1,3 @@
+bcdcc54a213c82da11d158ffc7d13a51399d27d8da701e43ee27077abd811ba7  README.md
+3f8d79ae0caebbf38a4d7992afd7210d2a93b11157d8f0b543272c190708d0c2  verify_counterexample.py
+cc7b4bab18cb42ae9cefd81bd99416ebbfa57ed6b7cc8660abf75a7351af176b  evidence/runs/4x3-main-replay-2026-11-27/receipt.json
