@@ -1,0 +1,11 @@
+{
+  "schema": "mathcase-collatz-coefficient-cutoff-failed-drafts-public-v1",
+  "status": "preserved failures; none is a mathematical counterexample",
+  "attempts": [
+    {"stage":"initial runner invocation","result":"failed before source load","reason":"The source file was outside the active Lean root.","recovery":"reran from the package root.","private_raw_log_sha256":"be9c6bc29e4c134eb4d1ea01836c8a48c9252235515bf1d1a939f3f7a220667d"},
+    {"stage":"first import attempt","result":"failed before target theorem compilation","reason":"LEAN_PATH omitted the fresh output directory containing EnvelopeLemma.olean.","recovery":"added the fresh output directory to LEAN_PATH.","private_raw_log_sha256":"91a97d3eccf6f75063f17ef0f0421dfad504a646d76451bfc196e2ee6a05cc1a"},
+    {"stage":"first complete coefficient file","result":"failed compile","reason":"Lean Core did not provide the unqualified lt_of_le_of_lt identifier; error recovery output included sorryAx and is not a pass.","recovery":"used Nat.lt_of_le_of_lt and rebuilt in a new empty output directory.","private_raw_log_sha256":"03eced2298608827a66e71775611d0127b25e7946add128e5315f7144169b67d"}
+  ],
+  "raw_failure_logs_are_retained_in_the_owner_local_evidence_archive": true,
+  "passing_run":"evidence/replay-receipt.json"
+}

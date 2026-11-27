@@ -1,0 +1,78 @@
+{
+  "schema": "mathcase-collatz-coefficient-cutoff-replay-v1",
+  "status": "PASS",
+  "lean_executable_name": "lean.exe",
+  "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "lean_version_sha256": "ed48af7b3a60bededd7d6981799a85b0c864758b5c5d0aa7159900b8680aaf2f",
+  "source_pins": [
+    {
+      "path": "EnvelopeLemma.lean",
+      "expected_sha256": "bcec9121e2519ffd4cb48ecd11181ac64f0e16be2fadd7b3f481a98fcc23db3c",
+      "actual_sha256": "bcec9121e2519ffd4cb48ecd11181ac64f0e16be2fadd7b3f481a98fcc23db3c",
+      "match": true
+    },
+    {
+      "path": "CoefficientCutoff.lean",
+      "expected_sha256": "7fa2115f07fbb990f24e35c133205dd44372d68865c297b9d16596de1a4ed525",
+      "actual_sha256": "7fa2115f07fbb990f24e35c133205dd44372d68865c297b9d16596de1a4ed525",
+      "match": true
+    },
+    {
+      "path": "negative-control/WrongCutoff.lean",
+      "expected_sha256": "b06d4013bde3a130b183eedf90fc7e06e0b6dc4224811af3b393eaf9e8a2d3a4",
+      "actual_sha256": "b06d4013bde3a130b183eedf90fc7e06e0b6dc4224811af3b393eaf9e8a2d3a4",
+      "match": true
+    }
+  ],
+  "source_context_commit": "f2b7ecedf233b56e78bdb171681afb8afad48a67",
+  "fresh_empty_output_directory": true,
+  "output_directory_initially_empty": true,
+  "files": {
+    "lean_version": {
+      "exit": 0,
+      "sha256": "ed48af7b3a60bededd7d6981799a85b0c864758b5c5d0aa7159900b8680aaf2f",
+      "elapsed_seconds": 0.07692700007464737,
+      "text": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+    },
+    "EnvelopeLemma": {
+      "command": [
+        "lean.exe",
+        "-o",
+        "../../fresh-output-r1/EnvelopeLemma.olean",
+        "EnvelopeLemma.lean"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.8500505000120029,
+      "source_sha256": "bcec9121e2519ffd4cb48ecd11181ac64f0e16be2fadd7b3f481a98fcc23db3c",
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "olean_sha256": "1c67402176a7f45cdc123ef08281a303dd59e197f3baa3c5c366f6241676e731"
+    },
+    "CoefficientCutoff": {
+      "command": [
+        "lean.exe",
+        "-o",
+        "../../fresh-output-r1/CoefficientCutoff.olean",
+        "CoefficientCutoff.lean"
+      ],
+      "exit": 0,
+      "elapsed_seconds": 0.8487932999851182,
+      "source_sha256": "7fa2115f07fbb990f24e35c133205dd44372d68865c297b9d16596de1a4ed525",
+      "stdout_sha256": "03eced2298608827a66e71775611d0127b25e7946add128e5315f7144169b67d",
+      "olean_sha256": "abc1b3858f1d21abdc662a7ea7ccc1d2a49d0335e44baf9262fec37acdc13509"
+    },
+    "wrong_cutoff_control": {
+      "command": [
+        "lean.exe",
+        "negative-control/WrongCutoff.lean"
+      ],
+      "exit": 1,
+      "elapsed_seconds": 0.6994057999690995,
+      "source_sha256": "b06d4013bde3a130b183eedf90fc7e06e0b6dc4224811af3b393eaf9e8a2d3a4",
+      "stdout_sha256": "875c504e9585ebf58f0a8913a98b9449f9b28eba3e6f84c29742958dff9cbac5",
+      "expected_rejection": true
+    }
+  },
+  "no_external_model_or_provider_calls": true,
+  "network_access": "No network command was invoked; OS-level isolation was not configured.",
+  "total_elapsed_seconds": 2.4855539998970926
+}

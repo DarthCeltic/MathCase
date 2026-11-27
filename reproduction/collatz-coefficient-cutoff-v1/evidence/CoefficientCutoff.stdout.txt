@@ -1,0 +1,15 @@
+'MathCase.Collatz.WordBound.division_cutoff_iff' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.coefficient_inequality_iff_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathCase.Collatz.WordBound.all_admitted_envelopes_below_iff_cutoff' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathCase.Collatz.WordBound.cutoff_20_12' does not depend on any axioms
+'MathCase.Collatz.WordBound.cutoff_21_13' does not depend on any axioms
+'MathCase.Collatz.WordBound.cutoff_22_13' does not depend on any axioms
+'MathCase.Collatz.WordBound.cutoff_23_14' does not depend on any axioms
+'MathCase.Collatz.WordBound.cutoff_24_15' does not depend on any axioms
+'MathCase.Collatz.WordBound.cutoff_27_17' does not depend on any axioms
+'MathCase.Collatz.WordBound.cutoff_31_19' does not depend on any axioms
+'MathCase.Collatz.WordBound.cutoff_32_20' does not depend on any axioms

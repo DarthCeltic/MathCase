@@ -1,0 +1,132 @@
+{
+  "schema": "mathcase-collatz-coefficient-cutoff-verification-v1",
+  "status": "PASS",
+  "receipt_sha256": "d6ff06b78f6c7fd934f64b8d6d78c8e72bebaa5596400f399ecaa46f85ad887e",
+  "checks": [
+    {
+      "check": "source_pin:EnvelopeLemma.lean",
+      "pass": true,
+      "detail": "bcec9121e2519ffd4cb48ecd11181ac64f0e16be2fadd7b3f481a98fcc23db3c"
+    },
+    {
+      "check": "source_pin:CoefficientCutoff.lean",
+      "pass": true,
+      "detail": "7fa2115f07fbb990f24e35c133205dd44372d68865c297b9d16596de1a4ed525"
+    },
+    {
+      "check": "source_pin:negative-control/WrongCutoff.lean",
+      "pass": true,
+      "detail": "b06d4013bde3a130b183eedf90fc7e06e0b6dc4224811af3b393eaf9e8a2d3a4"
+    },
+    {
+      "check": "receipt_pass",
+      "pass": true,
+      "detail": "PASS"
+    },
+    {
+      "check": "lean_4_33_1",
+      "pass": true,
+      "detail": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+    },
+    {
+      "check": "official_binary_hash",
+      "pass": true,
+      "detail": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d"
+    },
+    {
+      "check": "compile_exit:EnvelopeLemma",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "olean_hash:EnvelopeLemma",
+      "pass": true,
+      "detail": "1c67402176a7f45cdc123ef08281a303dd59e197f3baa3c5c366f6241676e731"
+    },
+    {
+      "check": "log_hash:EnvelopeLemma",
+      "pass": true,
+      "detail": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "check": "relative_compile_command:EnvelopeLemma",
+      "pass": true,
+      "detail": "['lean.exe', '-o', '../../fresh-output-r1/EnvelopeLemma.olean', 'EnvelopeLemma.lean']"
+    },
+    {
+      "check": "compile_exit:CoefficientCutoff",
+      "pass": true,
+      "detail": "0"
+    },
+    {
+      "check": "olean_hash:CoefficientCutoff",
+      "pass": true,
+      "detail": "abc1b3858f1d21abdc662a7ea7ccc1d2a49d0335e44baf9262fec37acdc13509"
+    },
+    {
+      "check": "log_hash:CoefficientCutoff",
+      "pass": true,
+      "detail": "03eced2298608827a66e71775611d0127b25e7946add128e5315f7144169b67d"
+    },
+    {
+      "check": "relative_compile_command:CoefficientCutoff",
+      "pass": true,
+      "detail": "['lean.exe', '-o', '../../fresh-output-r1/CoefficientCutoff.olean', 'CoefficientCutoff.lean']"
+    },
+    {
+      "check": "axiom_audit:division_cutoff_iff",
+      "pass": true,
+      "detail": "full axiom text is in evidence/CoefficientCutoff.stdout.txt"
+    },
+    {
+      "check": "axiom_audit:coefficient_inequality_iff_cutoff",
+      "pass": true,
+      "detail": "full axiom text is in evidence/CoefficientCutoff.stdout.txt"
+    },
+    {
+      "check": "axiom_audit:all_admitted_envelopes_below_iff_cutoff",
+      "pass": true,
+      "detail": "full axiom text is in evidence/CoefficientCutoff.stdout.txt"
+    },
+    {
+      "check": "expected_axioms",
+      "pass": true,
+      "detail": "generic cutoff theorem reports [propext, Classical.choice, Quot.sound]"
+    },
+    {
+      "check": "false_cutoff_rejected",
+      "pass": true,
+      "detail": "Lean rejected false cutoff 678"
+    },
+    {
+      "check": "negative_log_path_clean",
+      "pass": true,
+      "detail": "relative diagnostic contains no drive path"
+    },
+    {
+      "check": "negative_command_relative",
+      "pass": true,
+      "detail": "['lean.exe', 'negative-control/WrongCutoff.lean']"
+    },
+    {
+      "check": "context_sources_pinned",
+      "pass": true,
+      "detail": "f2b7ecedf233b56e78bdb171681afb8afad48a67"
+    },
+    {
+      "check": "context_cutoffs_match_python",
+      "pass": true,
+      "detail": "8 source-bound parameter rows"
+    },
+    {
+      "check": "python_independent_table",
+      "pass": true,
+      "detail": "8 exact integer rows"
+    },
+    {
+      "check": "no_external_calls",
+      "pass": true,
+      "detail": "$0 provider calls"
+    }
+  ]
+}
