@@ -1,0 +1,99 @@
+{
+  "schema": "mathcase-coordinate-midpoint-anonymous-replay-v1",
+  "run_id": "anonymous-public-clone-r2-2026-11-26",
+  "status": "PASS",
+  "claim_scope": "normalized axis-aligned right triangle A=(0,0), B=(a,0), C=(0,b), a>0, b>0",
+  "repository": "https://github.com/DarthCeltic/MathCase",
+  "clone": {
+    "commit": "9556a8863d232256ab6113cc6740d0571d628171",
+    "method": "fresh depth-1 sparse public clone; Git credential helper explicitly disabled; case package checked out",
+    "github_extraheader_configured": false
+  },
+  "command_template": "python -B replay.py --output-dir <new-empty-directory> (run from the case package directory; Lean and Lake 4.33.1 on PATH)",
+  "started_utc": "2026-11-26T21:46:55.944893-05:00",
+  "finished_utc": "2026-11-26T21:58:42.441566-05:00",
+  "total_wall_seconds": 706.497,
+  "summed_stage_seconds": 706.466,
+  "toolchain": {
+    "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lake_version": "Lake version 5.0.0-src+819816b (Lean version 4.33.1)",
+    "archive_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a",
+    "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+    "lake_executable_sha256": "565c3976275d79e104421014b6229f4fcf4a8c8edfe164a43b344c91af6f496c"
+  },
+  "package_inputs": {
+    "Audit.lean": "ce304794c34dba1d6e76617e3a20a4e7fe28448643d9878049e31ac8923f248e",
+    "GeometryMidpoint.lean": "831db7bfe3ec643eea8ae02e129d87e926bbdc51186566c9dae46d3842e69dcf",
+    "lake-manifest.json": "a1fc30ff9eea129dd11b2c86b1fec70785fe086390a0d857d741199aac48fefb",
+    "lakefile.toml": "5db1caca737560627fa992f0cd2ec007d8e5ed91df1e1bce8fd8a2160ef3ac4f",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "pinned_manifest_sha256": "a1fc30ff9eea129dd11b2c86b1fec70785fe086390a0d857d741199aac48fefb",
+  "post_update_manifest_sha256": "a1fc30ff9eea129dd11b2c86b1fec70785fe086390a0d857d741199aac48fefb",
+  "manifest_unchanged_after_update": true,
+  "stages": [
+    {
+      "name": "lean-version",
+      "exit_code": 0,
+      "elapsed_seconds": 0.099,
+      "timeout_seconds": 3600,
+      "output_sha256": "89c79d9c5b24343255f93bb0203ae89e6b8715c652def77008a34f37656c9c82"
+    },
+    {
+      "name": "lake-version",
+      "exit_code": 0,
+      "elapsed_seconds": 0.16,
+      "timeout_seconds": 3600,
+      "output_sha256": "e475ba02fef5717a6caa256e1e25ac50268497b7d1e36955357f37b4701ee4a0"
+    },
+    {
+      "name": "lake-update",
+      "exit_code": 0,
+      "elapsed_seconds": 572.832,
+      "timeout_seconds": 3600,
+      "output_sha256": "851cf4cb905f0785d76c0709263fcfa4f7fff68f179780cced3a60408856a6c6"
+    },
+    {
+      "name": "mathlib-cache",
+      "exit_code": 0,
+      "elapsed_seconds": 11.796,
+      "timeout_seconds": 3600,
+      "output_sha256": "1fc4c3c0cb089274455690709c3407556cd761d92e1b84b9eb8efd982aac14c4"
+    },
+    {
+      "name": "lean-build",
+      "exit_code": 0,
+      "elapsed_seconds": 111.84,
+      "timeout_seconds": 3600,
+      "output_sha256": "ab4974916645a211848b4c1b10971c67336b0eac226456c8e0c53569690f65d2"
+    },
+    {
+      "name": "axiom-audit",
+      "exit_code": 0,
+      "elapsed_seconds": 9.739,
+      "timeout_seconds": 3600,
+      "output_sha256": "0fe3177bd51e4c7dd6cf86974016746b543f7b8dbfa0c57dec787bf7490d71d5"
+    }
+  ],
+  "theorem_olean_sha256": "bcbc7decccebb98f7f9972ef27e9c67c54b450489aeb7e4bb2daa8fd524fe25b",
+  "audit_output_sha256": "0fe3177bd51e4c7dd6cf86974016746b543f7b8dbfa0c57dec787bf7490d71d5",
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "sorryAx_reported": false,
+  "process_limits": {
+    "lake_build_jobs": 1,
+    "stage_timeout_seconds": 3600,
+    "operating_system_memory_limit": "none"
+  },
+  "network": "Public Git and Mathlib cache downloads used; no model/provider calls; external-provider spend $0.",
+  "original_raw_receipt_sha256": "03e1427327cae30d809ee09d9ae720243c7fb80e50172e8201fcc28b25aab684",
+  "prior_setup_failure": {
+    "path": "evidence/anonymous-public-clone-r1-setup-failure.json",
+    "sha256": "043e33f925a58b1e97fcec4f3394464ddd618f047967060ec23bd4202efb0714",
+    "theorem_verdict": "NOT_RUN"
+  },
+  "review_status": "Owner-run replay from a fresh public clone; not an independent third-party replay or mathematical review."
+}
