@@ -1,0 +1,26 @@
+{
+  "schema": "mathcase-collatz-envelope-proof-refactor-source-pins-v1",
+  "base_repository": "DarthCeltic/MathCase",
+  "base_commit": "1c172c2e598c4a38ca3de57e9fcf2d1ca99256d2",
+  "shared_sources": {
+    "WordBound.lean": {
+      "path": "WordBound.lean",
+      "sha256": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d"
+    },
+    "WordResidue.lean": {
+      "path": "WordResidue.lean",
+      "sha256": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c"
+    },
+    "CountWords.lean": {
+      "path": "CountWords.lean",
+      "sha256": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60"
+    },
+    "AtMostFourteen23.original.lean": {
+      "path": "AtMostFourteen23.lean",
+      "sha256": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9"
+    }
+  },
+  "scope": "The three shared modules are exact copies of the pinned public base package. The original 23/14 target source is byte-identical to the reference hash; the new module changes only proof structure and removes one unused simp argument.",
+  "reviewed_statement_packet_sha256": "cab441ca8079f71a6c9dbaadcea53a8e38cc8d4e9ee68f18f874f6bf39fb66bb",
+  "m0_status": "Statement fidelity reviewed; this proof refactor does not add a target or claim new M0 review."
+}
