@@ -1,0 +1,4 @@
+# Preserve exact bytes for this receipt-bound package across Windows and Unix checkouts.
+* -text
+*.lean -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+*.olean binary

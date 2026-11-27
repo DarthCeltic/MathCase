@@ -1,0 +1,39 @@
+{
+  "schema": "mathcase-coordinate-midpoint-source-replay-projection-v1",
+  "status": "PASS",
+  "run_id": "coordinate-geometry-general-midpoint-run-04-2026-11-26",
+  "claim": "For all A, B, C in R^2, if (B-A) dot (C-A) = 0, midpoint(B,C) has equal squared distances to A, B, and C; degenerate cases are allowed.",
+  "statement_review": {
+    "result": "YES, statement fidelity only",
+    "stored_packet_sha256": "ffb26e7ff0aaeb6b8bbfebbaa6d9cf72b560d708dc5b7c8588410b839eac3957",
+    "hash_binding_note": "The chat response displayed a 63-character digest, one character shorter than the stored packet digest. The stored packet and review record agree; exact chat-text digest binding is imperfect."
+  },
+  "source_sha256": "5c681f34857d51e38e23f8de86aeea29a38eb685c20a5d692d09ff32cf8e0261",
+  "audit_source_sha256": "eb27f11996ff0c5cd2314ad3c34c23efb385e1640bae6d2746ade0b5cb5be03e",
+  "runner_sha256": "f873fd2e54fd7fbfef8bd4ccaf7bb59da459a3b45a7999b9fc67b07bb8abeeb4",
+  "original_receipt_sha256": "50384f53d881c1014b5446c3739e579cd98a270eaa658b950436ef9beb862326",
+  "receipt_verification_record_sha256": "3082ec6df4477c328ee728156fceacc464184b325920a4ee59aea4cea81b4437",
+  "lean": "4.33.1, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, x86_64-unknown-linux-gnu",
+  "lean_executable_sha256": "e8baaa71855a616dc351028f3ad2200051b0671f423a1696a100e809302d5550",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "environment": {
+    "container_image_digest": "sha256:4369ceac887f69dfcc4b7247f1f70513da4dcdbb8dfb730f4fad399814b32b1d",
+    "mathlib_outputs": "pinned public cache mounted read-only",
+    "theorem_output": "created in a new empty output directory",
+    "network": "disabled",
+    "cpu_cores": 1,
+    "memory_bytes": 2147483648,
+    "wall_seconds": 176,
+    "provider_spend_usd": 0
+  },
+  "commands": {
+    "compile_exit": 0,
+    "axiom_audit_exit": 0,
+    "axiom_audit_output_sha256": "5c6b16f0226e99d8eaa6958877663b1a1ad0c7d9b60b34051d0fd9a021f99197"
+  },
+  "axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "sorryAx": false,
+  "native_decide": false,
+  "theorem_olean_sha256": "37a60c62309b4d79a80921905668c5d2510ebd0e39d53bf470f8237f60f3fcac",
+  "scope_note": "This records an exact-source owner-side compile and audit using read-only cached dependencies. The hash-bound review record checked receipt fields and file hashes; it is not an independent theorem proof or mathematical review. This is not an abstract Euclidean-geometry formalization or a novelty result. The separate public-package replay is recorded independently when run."
+}

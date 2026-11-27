@@ -1,0 +1,51 @@
+{
+  "schema": "mathcase-coordinate-midpoint-attempt-history-v1",
+  "claim_scope": "The general-coordinate midpoint theorem in statement.md",
+  "records": [
+    {
+      "run_id": "coordinate-geometry-general-midpoint-run-01-2026-11-26",
+      "status": "TIMEOUT_BEFORE_THEOREM_ELABORATION",
+      "original_receipt_sha256": "86edc075ae27321d4e0beec419bbf410c4528c86d943c711a73eb773b9f7a41b",
+      "source_sha256": "23f9d79b335a35c89d77cbd7989ecbf691dfc50c0b3ca04e72c16b1dffd981f0",
+      "wall_cap_seconds": 180,
+      "compile_exit": 124,
+      "audit_run": false,
+      "what_happened": "The pinned Mathlib Linarith import did not finish loading before the cap. Lean produced no theorem diagnostic or elaboration result."
+    },
+    {
+      "run_id": "coordinate-geometry-general-midpoint-run-02-2026-11-26",
+      "status": "TIMEOUT_BEFORE_THEOREM_ELABORATION",
+      "original_receipt_sha256": "c310fe3e44b691e1553f6597b3b91c0a1519c9128bbc11fc716655e679973c80",
+      "source_sha256": "7e8f70bf1a83bd6b623554adf34216c2e240b25b2298e80fc68e18ceb9c31402",
+      "wall_cap_seconds": 180,
+      "compile_exit": 124,
+      "audit_run": false,
+      "what_happened": "The import load still exceeded the cap after replacing the heavier tactic import with a ring-based proof. No theorem diagnostic or elaboration result was produced."
+    },
+    {
+      "run_id": "coordinate-geometry-general-midpoint-run-03-2026-11-26",
+      "status": "FAIL_SOURCE_COMPILE",
+      "original_receipt_sha256": "6ed94b04bc55aeac4c618d63176bed25575b44cbc1fa1dfec9ac18dd7e0aba41",
+      "source_sha256": "7e8f70bf1a83bd6b623554adf34216c2e240b25b2298e80fc68e18ceb9c31402",
+      "wall_cap_seconds": 900,
+      "compile_exit": 1,
+      "audit_run": false,
+      "what_happened": "Lean rejected real division in the midpoint definition because the declaration was not marked noncomputable. This was a source error before theorem elaboration, not a mathematical counterexample."
+    },
+    {
+      "run_id": "coordinate-geometry-general-midpoint-run-04-2026-11-26",
+      "status": "PASS",
+      "original_receipt_sha256": "50384f53d881c1014b5446c3739e579cd98a270eaa658b950436ef9beb862326",
+      "source_sha256": "5c681f34857d51e38e23f8de86aeea29a38eb685c20a5d692d09ff32cf8e0261",
+      "wall_seconds": 176,
+      "compile_exit": 0,
+      "audit_exit": 0,
+      "axioms": ["propext", "Classical.choice", "Quot.sound"],
+      "sorryAx": false,
+      "native_decide": false,
+      "theorem_olean_sha256": "37a60c62309b4d79a80921905668c5d2510ebd0e39d53bf470f8237f60f3fcac",
+      "what_happened": "A noncomputable section was added without changing the proposition. The exact source compiled and the separate axiom audit passed."
+    }
+  ],
+  "disclosure": "Original detailed receipts remain in the private archive. This public file is a path-free projection; its original receipt hashes permit an owner-side byte check without exposing workstation paths."
+}
