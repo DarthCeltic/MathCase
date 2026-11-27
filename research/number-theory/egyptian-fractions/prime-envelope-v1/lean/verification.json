@@ -1,0 +1,19 @@
+{
+  "case": "prime-envelope-v1",
+  "verified_on": "2026-11-27",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "source": "PrimeBand.lean",
+  "source_sha256": "2143c9c2e25d2657489284036a7c7b677088131bdeddb66478ed1b3752cfedbb",
+  "build": "lean -o PrimeBand.olean PrimeBand.lean",
+  "axiom_check": "Set LEAN_PATH to absolute package directory; lean Check.lean",
+  "leanchecker": "Set LEAN_PATH to absolute package directory; leanchecker -v PrimeBand",
+  "leanchecker_result": "replayed PrimeBand successfully",
+  "theorems": {
+    "MathCase.PrimeBand.floor_bound": ["propext", "Classical.choice", "Quot.sound"],
+    "MathCase.PrimeBand.at_floor": ["propext", "Classical.choice", "Quot.sound"],
+    "MathCase.PrimeBand.classification": ["propext", "Classical.choice", "Quot.sound"],
+    "MathCase.PrimeBand.unique_under_cap": ["propext", "Classical.choice", "Quot.sound"]
+  },
+  "mutation_control": "p=71, B=5 has the valid triple (20,284,355); this refutes the false stronger cap z <= 6*71.",
+  "claim_boundary": "Density/sparsity and literature priority are not formalized."
+}
