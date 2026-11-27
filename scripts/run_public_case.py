@@ -42,6 +42,12 @@ R66 = "reproduction/ramsey-r66-paley101-v1"
 
 
 def commands(case, args, output):
+    if case == "collatz-six-of-ten":
+        return [
+            (SIX_OF_TEN + "/replay.py", "--lean", args.lean, "--output-dir", output / "lean-replay"),
+            (SIX_OF_TEN + "/verify_receipt.py", "--receipt", output / "lean-replay/replay-receipt.json",
+             "--lean", args.lean, "--output", output / "lean-replay/verification.json"),
+        ]
     routes = {
         "counterexample": [("scripts/hero_counterexample.py",)],
         "geometry-midpoint": [("reproduction/coordinate-right-triangle-midpoint-v1/replay.py", "--output-dir", output / "lean-replay")],
@@ -51,11 +57,6 @@ def commands(case, args, output):
         ],
         "collatz-at-most-twelve": [("reproduction/collatz-at-most-twelve-v1/verify_at_most_twelve.py",
                                     "--output", output / "at-most-twelve.json")],
-        "collatz-six-of-ten": [
-            (SIX_OF_TEN + "/replay.py", "--lean", args.lean, "--output-dir", output / "lean-replay"),
-            (SIX_OF_TEN + "/verify_receipt.py", "--receipt", output / "lean-replay/replay-receipt.json",
-             "--lean", args.lean, "--output", output / "lean-replay/verification.json"),
-        ],
         "collatz-at-most-thirteen": [("reproduction/collatz-at-most-thirteen-of-twenty-one-v1/verify_at_most_thirteen.py",
                                       "--output", output / "at-most-thirteen.json",
                                       "--evidence-dir", output / "lean-and-census-output")],
