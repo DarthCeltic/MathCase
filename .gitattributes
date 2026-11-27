@@ -72,6 +72,10 @@ reproduction/collatz-at-most-thirteen-of-twenty-one-v1/runs/**/*.txt -text -eol 
 # Preserve the byte hashes of the public 23/14 replay receipts.
 reproduction/collatz-parity-envelopes-2026-11-v1/evidence/23-14-official-replay/*.json -text -eol whitespace=cr-at-eol
 
+# Preserve the hashes of the fresh six-of-ten replay receipts.
+reproduction/collatz-six-of-ten-lean-v1/evidence/public-replay-2026-11-27/*.json -text -eol whitespace=cr-at-eol
+reproduction/collatz-six-of-ten-lean-v1/evidence/public-replay-2026-11-27/SHA256SUMS.txt -text -eol whitespace=cr-at-eol
+
 # Preserve the exact line endings of the audited M20 stage log.
 reproduction/m20-public-source-replay-v1/runs/2026-11-23-artifact-audit/saved-stages.jsonl -text -eol -diff
 
