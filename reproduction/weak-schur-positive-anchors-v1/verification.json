@@ -1,0 +1,278 @@
+{
+  "drat_checked": true,
+  "drat_proof_metadata": {
+    "gzip_bytes": 716727,
+    "gzip_sha256": "b7ec01a132ce8aea4fda8f09c621a951623804fdb27dc51c6d74f3d539bd59f6",
+    "raw_bytes": 2893201,
+    "raw_sha256": "8c52034bd7e7d0bcbffde1cff1891a53408d44949fa2cf52198fec629cf5cf17"
+  },
+  "formula_metadata": {
+    "all_66_anchors": {
+      "clauses": 55914,
+      "sha256": "af8a9d1b0ae8facfcd2597812bc9af11304ed560006aa68ae3844ff088251baf",
+      "unit_count": 66
+    },
+    "without_190": {
+      "clauses": 55913,
+      "sha256": "3d9adf377ceed1bdb2b52faa8c1b991938f90b3c90a93f53dbd56c7665c3bee7",
+      "unit_count": 65
+    }
+  },
+  "outsider_joinable_counts_by_color_1_to_5": {
+    "rowley": [
+      7,
+      0,
+      38,
+      0,
+      6
+    ],
+    "vicenzi": [
+      10,
+      1,
+      10,
+      6,
+      6
+    ]
+  },
+  "outsider_joinable_values_by_color_1_to_5": {
+    "rowley": {
+      "1": [
+        42,
+        78,
+        82,
+        86,
+        142,
+        146,
+        150
+      ],
+      "2": [],
+      "3": [
+        2,
+        3,
+        52,
+        57,
+        62,
+        63,
+        67,
+        70,
+        71,
+        78,
+        82,
+        83,
+        86,
+        87,
+        91,
+        102,
+        103,
+        106,
+        107,
+        111,
+        117,
+        121,
+        122,
+        125,
+        126,
+        137,
+        141,
+        145,
+        146,
+        157,
+        158,
+        161,
+        165,
+        166,
+        171,
+        179,
+        180,
+        204
+      ],
+      "4": [],
+      "5": [
+        79,
+        83,
+        87,
+        141,
+        145,
+        149
+      ]
+    },
+    "vicenzi": {
+      "1": [
+        42,
+        74,
+        78,
+        82,
+        90,
+        122,
+        134,
+        138,
+        142,
+        146
+      ],
+      "2": [
+        180
+      ],
+      "3": [
+        3,
+        52,
+        57,
+        111,
+        117,
+        125,
+        141,
+        166,
+        171,
+        179
+      ],
+      "4": [
+        79,
+        91,
+        133,
+        137,
+        145,
+        149
+      ],
+      "5": [
+        71,
+        83,
+        87,
+        91,
+        141,
+        161
+      ]
+    }
+  },
+  "positive_anchor_result": {
+    "anchor_positions": [
+      1,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      11,
+      13,
+      15,
+      16,
+      17,
+      19,
+      21,
+      22,
+      23,
+      32,
+      37,
+      38,
+      42,
+      43,
+      46,
+      50,
+      54,
+      58,
+      62,
+      66,
+      70,
+      74,
+      76,
+      77,
+      90,
+      94,
+      96,
+      97,
+      98,
+      102,
+      106,
+      110,
+      114,
+      118,
+      122,
+      126,
+      130,
+      131,
+      132,
+      134,
+      138,
+      151,
+      152,
+      154,
+      158,
+      162,
+      166,
+      170,
+      174,
+      178,
+      182,
+      185,
+      186,
+      191,
+      192,
+      205,
+      206,
+      207
+    ],
+    "anchored_classes": [
+      1,
+      3
+    ],
+    "class_sizes": {
+      "1": 42,
+      "3": 24
+    },
+    "drat_check_results": {
+      "all_66_anchors": {
+        "checker_returncode": 0,
+        "resolution_steps": 1195947,
+        "status": "VERIFIED"
+      },
+      "without_190": {
+        "checker_returncode": 0,
+        "resolution_steps": 1195947,
+        "status": "VERIFIED"
+      }
+    },
+    "drat_checked": true,
+    "fixed_anchor_count": 65,
+    "proof_sha256": "8c52034bd7e7d0bcbffde1cff1891a53408d44949fa2cf52198fec629cf5cf17",
+    "seed": "rowley",
+    "solver_formula_hashes": {
+      "all_66_anchors": "af8a9d1b0ae8facfcd2597812bc9af11304ed560006aa68ae3844ff088251baf",
+      "without_190": "3d9adf377ceed1bdb2b52faa8c1b991938f90b3c90a93f53dbd56c7665c3bee7"
+    },
+    "unanchored_exception": 190
+  },
+  "proof_provenance": {
+    "drat_trimmer_revision": "2e3b2dc0ecf938addbd779d42877b6ed69d9a985",
+    "drat_trimmer_source_sha256": "d834b649f437e091597f5347f259b9f681087f89ca0844d0cee250a1a1a0c2ee",
+    "generator": "Glucose4 via python-sat 1.9.dev25 with proof generation enabled",
+    "reduced_formula_removes_only_unit_for_vertex_190": true,
+    "same_drat_checked_on_full_and_reduced_formulas": true,
+    "solver_conflicts": 25029,
+    "solver_elapsed_seconds": 0.312255,
+    "solver_formula": "all 66 old Rowley members in classes 1 and 3 fixed; every other value including 208 may use any of the five colors"
+  },
+  "rowley_saturated_classes": {
+    "2": [
+      36,
+      172
+    ],
+    "4": [
+      12,
+      196
+    ]
+  },
+  "seed_checks": {
+    "rowley": "sum-free on 1..207",
+    "vicenzi": "sum-free on 1..207"
+  },
+  "seed_metadata": {
+    "rowley": {
+      "sha256": "dadba1c3277c9b360693b23f9309174c92128002785b2752d916b34db4c61e63",
+      "url": "https://raw.githubusercontent.com/oeis/oeisdata/aa67dedbb4e7fbefd9837e649293f8bdb09e5e69/seq/A072/A072842.seq"
+    },
+    "vicenzi": {
+      "sha256": "2393698ef49eba4b100b3e048e2ddc28c7db99d99cfa525ba3ba7450d0f35c0b",
+      "url": "https://raw.githubusercontent.com/rebeccavicenzi/Weak_Schur_Problem_FunSearch/f21786ee926d6535fe01767ad74392bb1c0dd985/experiments/ws5_207_sat/partition_207.json"
+    }
+  },
+  "status": "PASS"
+}
