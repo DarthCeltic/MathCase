@@ -17,6 +17,8 @@ Thus the allowed differences start $0,8,24,48,80$. Equivalently, $1+D(B)-p$ must
 
 ## Proof
 
+The four central finite statements also have a Lean 4 formalization in [`lean/`](lean/README.md): the floor bound, its equality characterization, the exact offset classification below each stated cap, and uniqueness of the triple under that cap. The formalization assumes integer primality, the band inequalities $D(B-1)<p\le D(B)$, and the stated size conditions; it proves the algebraic and Diophantine claims from those hypotheses. It does not formalize the sparsity/density estimates in the next section or settle literature priority, which remain ordinary mathematical arguments and open review questions.
+
 Clearing denominators gives $4xyz=p(xy+xz+yz)$. At least one denominator is a multiple of $p$. All three cannot be multiples, since multiplying the original identity by $p$ would give 4 as a sum of three reciprocals of positive integers.
 
 If there is exactly one multiple $kp$, call the other two denominators $u,v$. Then $(4k-1)uv=kp(u+v)$, and $p$ divides neither $u$ nor $v$. Hence $p\mid 4k-1$ and $k\ge(p+1)/4$.
