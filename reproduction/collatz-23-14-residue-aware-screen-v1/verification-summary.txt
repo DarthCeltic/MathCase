@@ -1,0 +1,7 @@
+PASS: C++ and independent Python split enumeration agree on all 15 rows
+PASS: 7,507,638 parity masks with at most 14 odd bits were counted and checked
+PASS: worst-mask direct trajectories match parity, coefficient identity, residue and margin
+PASS: damaged zero-margin control rejected; altered residue control rejected
+PASS: coefficient-only envelope matches short-word brute force and is explicitly false for h=4..14
+RESIDUE_AWARE_MINIMUM_DROPS=8388607,2097151,524287,131071,32767,8191,2047,511,127,31,7,2,97,97,67
+FULL_23_BIT_ENUMERATION_IS_NOT_A_LEAN_PROOF
