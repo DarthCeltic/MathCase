@@ -1,0 +1,4 @@
+d0c94c0e0ab13070b5cd0ece23dc10126b66e924bf88b67cb8eb2b5d02c796a4  README.md
+0c8fb7115e1e023fbc164c13fe2c39519d0912988588b7fac1cff8728a9475c1  check_snf_random.py
+3a4ef3c75ae195bcf43b8fe81bd0fcee091c4cb26e4c0f962417472e89e0da33  evidence/attempt-01-import-failure.txt
+921904358e66a36732dbf6bb6b8cebd6b309096c435e01c3d7bbc6ee6b47a43f  evidence/runs/post-clone-2026-11-27/receipt.json
