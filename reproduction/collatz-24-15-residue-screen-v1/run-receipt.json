@@ -1,7 +1,8 @@
 {
   "run_id": "collatz-24-15-residue-aware-screen-v1",
-  "recorded_at_local": "2026-11-27T12:01:01-05:00",
-  "command": "python -B reproduce.py (from package directory)",
+  "recorded_at_utc": "2026-11-27T17:07:03+00:00",
+  "replay_run_id": "20261127T170632.825513Z",
+  "command": "python -B reproduce.py",
   "input": {
     "public_mathcase_main_commit": "5d5e37df0b2bf4ce74309b53a78be35fa406497c",
     "files": {
@@ -12,7 +13,7 @@
       "reproduction/collatz-parity-envelopes-2026-11-v1/evidence/receipt-24-15.json": "af0f7f4dead9dc2910906386318b26dd7c5ea63cf2e22bd34e4259230cfc3828"
     }
   },
-  "claim_context": "Existing exploratory Lean target: for n >= 3, if at most 15 of the first 24 accelerated inputs are odd, ordinary iterate at 24+h is below n. Its existing Lean receipt is referenced; this computational run did not invoke Lean.",
+  "claim_context": "Existing exploratory Lean target: for n >= 3, if at most 15 of the first 24 accelerated inputs are odd, ordinary iterate at 24+h is below n. This screen did not invoke Lean.",
   "existing_lean_receipt": "reproduction/collatz-parity-envelopes-2026-11-v1/evidence/receipt-24-15.json",
   "existing_lean_receipt_sha256": "af0f7f4dead9dc2910906386318b26dd7c5ea63cf2e22bd34e4259230cfc3828",
   "existing_statement_status": "Exploratory; M0 not reviewed",
@@ -160,39 +161,28 @@
   },
   "local_run": {
     "status": "PASS",
-    "stages": [
-      {
-        "label": "Python split enumeration",
-        "command": "python -B enumerate_split.py",
-        "exit_code": 0,
-        "elapsed_seconds": 29.525,
-        "log": "python-run.log"
-      },
-      {
-        "label": "C++17 build",
-        "command": "g++ -std=c++17 -O3 -DNDEBUG enumerate_direct.cpp -o build/enumerate_direct.exe",
-        "exit_code": 0,
-        "elapsed_seconds": 0.662,
-        "log": "compile.log"
-      },
-      {
-        "label": "C++ direct enumeration",
-        "command": "build/enumerate_direct.exe",
-        "exit_code": 0,
-        "elapsed_seconds": 1.374,
-        "log": "cpp-run.log"
-      },
-      {
-        "label": "Cross-method verifier",
-        "command": "python -B verify_screen.py",
-        "exit_code": 0,
-        "elapsed_seconds": 0.085,
-        "log": "verify-run.log"
-      }
-    ],
-    "python_version": "3.14.7",
-    "compiler": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
-    "standard": "C++17",
+    "run_id": "20261127T170632.825513Z",
+    "environment": {
+      "python": "3.14.7",
+      "compiler": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+      "standard": "C++17"
+    },
+    "source_sha256": {
+      "enumerate_split.py": "fe566a4097ae55c0c5c6d6bb6410284a84eb80149b0c40c35e6a6edad258c6c5",
+      "enumerate_direct.cpp": "555a5a3ecf6c18c85711aa97ea99e5d3cd2b333fd866958aeef106034784650d",
+      "verify_screen.py": "a2ee429c4e37d34fc17cf645f84098487c863f2b42b4b10eefa145d24c9659c0",
+      "reproduce.py": "7a8221272f9e028d773768ee1997ef2b5e35d212e2bc44f540fee6540be43a92"
+    },
+    "output_sha256": {
+      "python-result.json": "cf424d3f64a14d09b07f5c94e2e98413cfce4c01fe0763b452c518aad1a47f90",
+      "cpp-result.json": "b4562226876d29d8f523c2295c6deca65d276ac9cff94d1b88d2f8e052c41332",
+      "verification.json": "3da6affce9a8c3864b8f42c385b02a5c6596d61cf4be4849e3994ef3cf92e3ba",
+      "python-run.log": "786f415b580c84f7e41076739da8df4f2c1159d25499aa318692189343616feb",
+      "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "cpp-run.log": "b4562226876d29d8f523c2295c6deca65d276ac9cff94d1b88d2f8e052c41332",
+      "verify-run.log": "028a162c4ce168102cb08499364b01774c8bc2218ac4f63db80ad595487957fa",
+      "execution-timings.json": "f25c4eaba1f22f64ddebe79dcadf60babbb9607a36a120769a9687c050c2f2db"
+    },
     "external_cost_usd": 0,
     "model_calls": 0
   },
@@ -201,21 +191,5 @@
     "Does not reduce the proof to a smaller mathematical basis.",
     "M0 review remains absent.",
     "No global convergence or novelty claim follows."
-  ],
-  "file_sha256": {
-    ".gitignore": "020c2606e8ed484089c2083e0be438b9d0736bee1558a6b76af0d58bd23f69cf",
-    "enumerate_split.py": "fe566a4097ae55c0c5c6d6bb6410284a84eb80149b0c40c35e6a6edad258c6c5",
-    "enumerate_direct.cpp": "555a5a3ecf6c18c85711aa97ea99e5d3cd2b333fd866958aeef106034784650d",
-    "verify_screen.py": "a2ee429c4e37d34fc17cf645f84098487c863f2b42b4b10eefa145d24c9659c0",
-    "reproduce.py": "5f03828abe8233fc711dc0f80f99a7ee7f384bf94eaf60c3f8e6b35475550b4e",
-    "README.md": "6d3b6b3147d752acd2c506e6ec7c92f44f59838362f42a9df6afbb91766be911",
-    "python-result.json": "a033718c5b574a096c7c4f5285a0dd7201181f56ccd0377a9327cfa76bcc364e",
-    "cpp-result.json": "1344dcc0c8054ced9511f89442a2b7c269560be56397d39ebef08cb12d5d7edc",
-    "verification.json": "3da6affce9a8c3864b8f42c385b02a5c6596d61cf4be4849e3994ef3cf92e3ba",
-    "python-run.log": "9128e0d0b6cd5c18116e56a48cf6511cb0203feb40ad7d7c80ec8ccc909da213",
-    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "cpp-run.log": "1344dcc0c8054ced9511f89442a2b7c269560be56397d39ebef08cb12d5d7edc",
-    "verify-run.log": "028a162c4ce168102cb08499364b01774c8bc2218ac4f63db80ad595487957fa",
-    "execution-timings.json": "991efe8119f9ed1c68a5de8035d200643d76ea9cd488f2427605e5f6ea0025d4"
-  }
+  ]
 }
