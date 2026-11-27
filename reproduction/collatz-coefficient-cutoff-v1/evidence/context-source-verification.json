@@ -1,0 +1,112 @@
+{
+  "schema": "mathcase-collatz-envelope-context-source-verification-v1",
+  "context_commit": "f2b7ecedf233b56e78bdb171681afb8afad48a67",
+  "row_count": 8,
+  "all_checks_pass": true,
+  "rows": [
+    {
+      "steps": 20,
+      "odd_cap": 12,
+      "cutoff": 262,
+      "path": "reproduction/collatz-at-most-twelve-v1/AtMostTwelve.lean",
+      "expected_sha256": "14c0d0ff95f90a316fb7ae671708deedc9e3ac36b0b1204c47b66c9dd9a67e40",
+      "actual_sha256": "14c0d0ff95f90a316fb7ae671708deedc9e3ac36b0b1204c47b66c9dd9a67e40",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "\u00b7 have hnlarge : 262 \u2264 n := by omega"
+      ]
+    },
+    {
+      "steps": 21,
+      "odd_cap": 13,
+      "cutoff": 808,
+      "path": "reproduction/collatz-at-most-thirteen-of-twenty-one-v1/AtMostThirteen21.lean",
+      "expected_sha256": "7d6c717ce994335f053ca8dfa0d77362053cce0d1ba17abb523ea0c8311b1515",
+      "actual_sha256": "7d6c717ce994335f053ca8dfa0d77362053cce0d1ba17abb523ea0c8311b1515",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "\u00b7 have hnlarge : 808 \u2264 n := by omega"
+      ]
+    },
+    {
+      "steps": 22,
+      "odd_cap": 13,
+      "cutoff": 313,
+      "path": "reproduction/collatz-at-most-thirteen-of-twenty-two-v2/AtMostThirteen22.lean",
+      "expected_sha256": "a6e55ea4c501fc22fc209503ea9d24c1dbaa47cd320021ab8365116bc66766bc",
+      "actual_sha256": "a6e55ea4c501fc22fc209503ea9d24c1dbaa47cd320021ab8365116bc66766bc",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "\u00b7 have hnlarge : 313 \u2264 n := by omega"
+      ]
+    },
+    {
+      "steps": 23,
+      "odd_cap": 14,
+      "cutoff": 677,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostFourteen23.lean",
+      "expected_sha256": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+      "actual_sha256": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "\u00b7 have hnlarge : 677 \u2264 n := by omega"
+      ]
+    },
+    {
+      "steps": 24,
+      "odd_cap": 15,
+      "cutoff": 3019,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostFifteen24.lean",
+      "expected_sha256": "cfceddbaceab6b55f983950eaae6d2ae84a5c1cef29bbc2e3edc5539e2fb600c",
+      "actual_sha256": "cfceddbaceab6b55f983950eaae6d2ae84a5c1cef29bbc2e3edc5539e2fb600c",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "\u00b7 have hnlarge : 3019 \u2264 n := by omega"
+      ]
+    },
+    {
+      "steps": 27,
+      "odd_cap": 17,
+      "cutoff": 26018,
+      "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/sources/AtMostSeventeen27.lean",
+      "expected_sha256": "dc439e0d7210cffff9b2aefcc2d30638478ce6e999d9264f5cc1a98f52f76c1f",
+      "actual_sha256": "dc439e0d7210cffff9b2aefcc2d30638478ce6e999d9264f5cc1a98f52f76c1f",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "theorem at_most_seventeen_of_twenty_seven_descend (n : Nat) (hn : 26018 \u2264 n)"
+      ]
+    },
+    {
+      "steps": 31,
+      "odd_cap": 19,
+      "cutoff": 4830,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostNineteen31.lean",
+      "expected_sha256": "f7c986e561d21677b897e683f4b2ec357b4a8b7d3df394d5dbe626c7d30d1fa3",
+      "actual_sha256": "f7c986e561d21677b897e683f4b2ec357b4a8b7d3df394d5dbe626c7d30d1fa3",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "\u00b7 have hnlarge : 4830 \u2264 n := by omega"
+      ]
+    },
+    {
+      "steps": 32,
+      "odd_cap": 20,
+      "cutoff": 17667,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostTwenty32.lean",
+      "expected_sha256": "659b3d4784a55f19072d32b785502f0903da844f70822397491d5f7171d833df",
+      "actual_sha256": "659b3d4784a55f19072d32b785502f0903da844f70822397491d5f7171d833df",
+      "source_hash_match": true,
+      "threshold_line_found": true,
+      "threshold_lines": [
+        "\u00b7 have hnlarge : 17667 \u2264 n := by omega"
+      ]
+    }
+  ]
+}

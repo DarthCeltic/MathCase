@@ -1,0 +1,76 @@
+{
+  "schema": "mathcase-collatz-coefficient-cutoff-source-pins-v1",
+  "source_hashes": {
+    "EnvelopeLemma.lean": "bcec9121e2519ffd4cb48ecd11181ac64f0e16be2fadd7b3f481a98fcc23db3c",
+    "CoefficientCutoff.lean": "7fa2115f07fbb990f24e35c133205dd44372d68865c297b9d16596de1a4ed525",
+    "negative-control/WrongCutoff.lean": "b06d4013bde3a130b183eedf90fc7e06e0b6dc4224811af3b393eaf9e8a2d3a4"
+  },
+  "context_source_commit": "f2b7ecedf233b56e78bdb171681afb8afad48a67",
+  "context_source_note": "The arithmetic cutoffs are compared with parameter windows already recorded in MathCase at this public main commit; this package does not compile those separate target proofs.",
+  "reference_window_sources": [
+    {
+      "steps": 20,
+      "sha256": "14c0d0ff95f90a316fb7ae671708deedc9e3ac36b0b1204c47b66c9dd9a67e40",
+      "cutoff": 262,
+      "line_pattern": "262 ≤ n",
+      "odd_cap": 12,
+      "path": "reproduction/collatz-at-most-twelve-v1/AtMostTwelve.lean"
+    },
+    {
+      "steps": 21,
+      "sha256": "7d6c717ce994335f053ca8dfa0d77362053cce0d1ba17abb523ea0c8311b1515",
+      "cutoff": 808,
+      "line_pattern": "808 ≤ n",
+      "odd_cap": 13,
+      "path": "reproduction/collatz-at-most-thirteen-of-twenty-one-v1/AtMostThirteen21.lean"
+    },
+    {
+      "steps": 22,
+      "sha256": "a6e55ea4c501fc22fc209503ea9d24c1dbaa47cd320021ab8365116bc66766bc",
+      "cutoff": 313,
+      "line_pattern": "313 ≤ n",
+      "odd_cap": 13,
+      "path": "reproduction/collatz-at-most-thirteen-of-twenty-two-v2/AtMostThirteen22.lean"
+    },
+    {
+      "steps": 23,
+      "sha256": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+      "cutoff": 677,
+      "line_pattern": "677 ≤ n",
+      "odd_cap": 14,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostFourteen23.lean"
+    },
+    {
+      "steps": 24,
+      "sha256": "cfceddbaceab6b55f983950eaae6d2ae84a5c1cef29bbc2e3edc5539e2fb600c",
+      "cutoff": 3019,
+      "line_pattern": "3019 ≤ n",
+      "odd_cap": 15,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostFifteen24.lean"
+    },
+    {
+      "steps": 27,
+      "sha256": "dc439e0d7210cffff9b2aefcc2d30638478ce6e999d9264f5cc1a98f52f76c1f",
+      "cutoff": 26018,
+      "line_pattern": "26018 ≤ n",
+      "odd_cap": 17,
+      "path": "reproduction/collatz-at-most-seventeen-of-twenty-seven-v1/sources/AtMostSeventeen27.lean"
+    },
+    {
+      "steps": 31,
+      "sha256": "f7c986e561d21677b897e683f4b2ec357b4a8b7d3df394d5dbe626c7d30d1fa3",
+      "cutoff": 4830,
+      "line_pattern": "4830 ≤ n",
+      "odd_cap": 19,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostNineteen31.lean"
+    },
+    {
+      "steps": 32,
+      "sha256": "659b3d4784a55f19072d32b785502f0903da844f70822397491d5f7171d833df",
+      "cutoff": 17667,
+      "line_pattern": "17667 ≤ n",
+      "odd_cap": 20,
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostTwenty32.lean"
+    }
+  ]
+}

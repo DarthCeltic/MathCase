@@ -1,0 +1,63 @@
+{
+  "schema": "mathcase-collatz-parity-envelope-cutoff-independent-check-v1",
+  "method": "Python arbitrary-precision integers, direct formula and direct inequality evaluation",
+  "cases": [
+    {
+      "steps": 20,
+      "odd_cap": 12,
+      "coefficient_cutoff": 262,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    },
+    {
+      "steps": 21,
+      "odd_cap": 13,
+      "coefficient_cutoff": 808,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    },
+    {
+      "steps": 22,
+      "odd_cap": 13,
+      "coefficient_cutoff": 313,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    },
+    {
+      "steps": 23,
+      "odd_cap": 14,
+      "coefficient_cutoff": 677,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    },
+    {
+      "steps": 24,
+      "odd_cap": 15,
+      "coefficient_cutoff": 3019,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    },
+    {
+      "steps": 27,
+      "odd_cap": 17,
+      "coefficient_cutoff": 26018,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    },
+    {
+      "steps": 31,
+      "odd_cap": 19,
+      "coefficient_cutoff": 4830,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    },
+    {
+      "steps": 32,
+      "odd_cap": 20,
+      "coefficient_cutoff": 17667,
+      "all_admitted_counts_pass_at_cutoff": true,
+      "cap_fails_one_below": true
+    }
+  ],
+  "count": 8
+}
