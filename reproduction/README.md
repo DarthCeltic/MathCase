@@ -29,6 +29,7 @@ Each package below says what question it addresses, what was actually checked, a
 Other preserved verification packages include:
 
 - [Joint energy and magnetization counts for a 3×10 Ising torus](ising-joint-density-3x10-v1/README.md) — exact row transfer and a separate full Gray-code enumeration agree on all `2^30` labeled states; this is finite-size computation, not a new physical result.
+- [Bounded Smith-normal-form method audit](snf-method-audit-v1/README.md) — an independent exact-rank and maximal-minor calculation agrees with the public integer reducer on 130 deterministic matrices; this is finite method evidence, not a proof for all matrices.
 - [A finite Ising log-concavity counterexample](ising-profile-log-concavity-counterexample-v1/README.md) — for one fixed five-up-spin slice of a periodic 4×3 grid, the exact counts 276, 60, 24 at 14, 16, 18 broken bonds violate log-concavity; one finite example only.
 
 - [M15–M20 package](m15-m20-r2/README.md) — the surviving r2 snapshot, including source, historical receipts, the exact-statement graph, and read-only replay tools. It contains 1,036 files including its regenerated inventory, SHA-256 `98271fc28d712e48714dc21e4a871e5cc112f492c2c13461a7e2e0328690c9ee`.

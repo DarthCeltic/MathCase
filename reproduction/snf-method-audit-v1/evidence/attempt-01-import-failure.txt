@@ -1,0 +1,1 @@
+The first audit launch failed before any matrix was checked: the dynamic loader executed the public module without defining `__file__`, so the module's own path initialization raised `NameError`. The public source and inputs were unchanged. The harness was corrected to provide the source path, then rerun with the same deterministic cases and seed.
