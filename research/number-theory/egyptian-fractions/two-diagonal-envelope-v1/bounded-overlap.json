@@ -1,0 +1,28 @@
+{
+  "search": "all 1<=a<b<=700, prime factors 43<=p<=5000 with B>=16 of d=4ab-a-b, exact x=pab/d",
+  "first_prime_with_two_distinct_triples_in_box": 821,
+  "triples_found": 8,
+  "first_four_triples": [
+    [
+      206,
+      84563,
+      169126
+    ],
+    [
+      209,
+      18062,
+      31198
+    ],
+    [
+      210,
+      9852,
+      114940
+    ],
+    [
+      210,
+      12315,
+      34482
+    ]
+  ],
+  "minimality_scope": "finite search box only; not a claim about any p or multipliers outside these bounds"
+}
