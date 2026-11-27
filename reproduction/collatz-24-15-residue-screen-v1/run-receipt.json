@@ -1,0 +1,221 @@
+{
+  "run_id": "collatz-24-15-residue-aware-screen-v1",
+  "recorded_at_local": "2026-11-27T12:01:01-05:00",
+  "command": "python -B reproduce.py (from package directory)",
+  "input": {
+    "public_mathcase_main_commit": "5d5e37df0b2bf4ce74309b53a78be35fa406497c",
+    "files": {
+      "reproduction/collatz-parity-envelopes-2026-11-v1/WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+      "reproduction/collatz-parity-envelopes-2026-11-v1/WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+      "reproduction/collatz-parity-envelopes-2026-11-v1/CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+      "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostFifteen24.lean": "cfceddbaceab6b55f983950eaae6d2ae84a5c1cef29bbc2e3edc5539e2fb600c",
+      "reproduction/collatz-parity-envelopes-2026-11-v1/evidence/receipt-24-15.json": "af0f7f4dead9dc2910906386318b26dd7c5ea63cf2e22bd34e4259230cfc3828"
+    }
+  },
+  "claim_context": "Existing exploratory Lean target: for n >= 3, if at most 15 of the first 24 accelerated inputs are odd, ordinary iterate at 24+h is below n. Its existing Lean receipt is referenced; this computational run did not invoke Lean.",
+  "existing_lean_receipt": "reproduction/collatz-parity-envelopes-2026-11-v1/evidence/receipt-24-15.json",
+  "existing_lean_receipt_sha256": "af0f7f4dead9dc2910906386318b26dd7c5ea63cf2e22bd34e4259230cfc3828",
+  "existing_statement_status": "Exploratory; M0 not reviewed",
+  "result": {
+    "status": "PASS",
+    "eligible_residue_classes": 15505590,
+    "total_residue_classes": 16777216,
+    "methods": "Python low/high 12-bit split and direct C++17 residue scan",
+    "all_16_binomial_counts_match": true,
+    "method_outputs_agree": true,
+    "all_fixed_word_slopes_positive": true,
+    "all_per_h_minimum_margins_positive": true,
+    "zero_margin_control_rejected": true,
+    "wrong_residue_control_rejected": true,
+    "rows": [
+      {
+        "h": 0,
+        "mask_count": 1,
+        "minimum_margin_scaled": 281474959933440,
+        "example_residue": 0,
+        "example_start": 16777216,
+        "example_endpoint": 1
+      },
+      {
+        "h": 1,
+        "mask_count": 24,
+        "minimum_margin_scaled": 70368727400448,
+        "example_residue": 4194304,
+        "example_start": 4194304,
+        "example_endpoint": 1
+      },
+      {
+        "h": 2,
+        "mask_count": 276,
+        "minimum_margin_scaled": 17592169267200,
+        "example_residue": 1048576,
+        "example_start": 1048576,
+        "example_endpoint": 1
+      },
+      {
+        "h": 3,
+        "mask_count": 2024,
+        "minimum_margin_scaled": 4398029733888,
+        "example_residue": 262144,
+        "example_start": 262144,
+        "example_endpoint": 1
+      },
+      {
+        "h": 4,
+        "mask_count": 10626,
+        "minimum_margin_scaled": 1099494850560,
+        "example_residue": 65536,
+        "example_start": 65536,
+        "example_endpoint": 1
+      },
+      {
+        "h": 5,
+        "mask_count": 42504,
+        "minimum_margin_scaled": 274861129728,
+        "example_residue": 16384,
+        "example_start": 16384,
+        "example_endpoint": 1
+      },
+      {
+        "h": 6,
+        "mask_count": 134596,
+        "minimum_margin_scaled": 68702699520,
+        "example_residue": 4096,
+        "example_start": 4096,
+        "example_endpoint": 1
+      },
+      {
+        "h": 7,
+        "mask_count": 346104,
+        "minimum_margin_scaled": 17163091968,
+        "example_residue": 1024,
+        "example_start": 1024,
+        "example_endpoint": 1
+      },
+      {
+        "h": 8,
+        "mask_count": 735471,
+        "minimum_margin_scaled": 4278190080,
+        "example_residue": 256,
+        "example_start": 256,
+        "example_endpoint": 1
+      },
+      {
+        "h": 9,
+        "mask_count": 1307504,
+        "minimum_margin_scaled": 1056964608,
+        "example_residue": 64,
+        "example_start": 64,
+        "example_endpoint": 1
+      },
+      {
+        "h": 10,
+        "mask_count": 1961256,
+        "minimum_margin_scaled": 251658240,
+        "example_residue": 16,
+        "example_start": 16,
+        "example_endpoint": 1
+      },
+      {
+        "h": 11,
+        "mask_count": 2496144,
+        "minimum_margin_scaled": 50331648,
+        "example_residue": 4,
+        "example_start": 4,
+        "example_endpoint": 1
+      },
+      {
+        "h": 12,
+        "mask_count": 2704156,
+        "minimum_margin_scaled": 16777216,
+        "example_residue": 3,
+        "example_start": 3,
+        "example_endpoint": 2
+      },
+      {
+        "h": 13,
+        "mask_count": 2496144,
+        "minimum_margin_scaled": 1845493760,
+        "example_residue": 123,
+        "example_start": 123,
+        "example_endpoint": 13
+      },
+      {
+        "h": 14,
+        "mask_count": 1961256,
+        "minimum_margin_scaled": 1895825408,
+        "example_residue": 159,
+        "example_start": 159,
+        "example_endpoint": 46
+      },
+      {
+        "h": 15,
+        "mask_count": 1307504,
+        "minimum_margin_scaled": 268435456,
+        "example_residue": 171,
+        "example_start": 171,
+        "example_endpoint": 155
+      }
+    ]
+  },
+  "local_run": {
+    "status": "PASS",
+    "stages": [
+      {
+        "label": "Python split enumeration",
+        "command": "python -B enumerate_split.py",
+        "exit_code": 0,
+        "elapsed_seconds": 29.525,
+        "log": "python-run.log"
+      },
+      {
+        "label": "C++17 build",
+        "command": "g++ -std=c++17 -O3 -DNDEBUG enumerate_direct.cpp -o build/enumerate_direct.exe",
+        "exit_code": 0,
+        "elapsed_seconds": 0.662,
+        "log": "compile.log"
+      },
+      {
+        "label": "C++ direct enumeration",
+        "command": "build/enumerate_direct.exe",
+        "exit_code": 0,
+        "elapsed_seconds": 1.374,
+        "log": "cpp-run.log"
+      },
+      {
+        "label": "Cross-method verifier",
+        "command": "python -B verify_screen.py",
+        "exit_code": 0,
+        "elapsed_seconds": 0.085,
+        "log": "verify-run.log"
+      }
+    ],
+    "python_version": "3.14.7",
+    "compiler": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+    "standard": "C++17",
+    "external_cost_usd": 0,
+    "model_calls": 0
+  },
+  "boundaries": [
+    "Computational screen only; not a new Lean proof.",
+    "Does not reduce the proof to a smaller mathematical basis.",
+    "M0 review remains absent.",
+    "No global convergence or novelty claim follows."
+  ],
+  "file_sha256": {
+    ".gitignore": "020c2606e8ed484089c2083e0be438b9d0736bee1558a6b76af0d58bd23f69cf",
+    "enumerate_split.py": "fe566a4097ae55c0c5c6d6bb6410284a84eb80149b0c40c35e6a6edad258c6c5",
+    "enumerate_direct.cpp": "555a5a3ecf6c18c85711aa97ea99e5d3cd2b333fd866958aeef106034784650d",
+    "verify_screen.py": "a2ee429c4e37d34fc17cf645f84098487c863f2b42b4b10eefa145d24c9659c0",
+    "reproduce.py": "5f03828abe8233fc711dc0f80f99a7ee7f384bf94eaf60c3f8e6b35475550b4e",
+    "README.md": "6d3b6b3147d752acd2c506e6ec7c92f44f59838362f42a9df6afbb91766be911",
+    "python-result.json": "a033718c5b574a096c7c4f5285a0dd7201181f56ccd0377a9327cfa76bcc364e",
+    "cpp-result.json": "1344dcc0c8054ced9511f89442a2b7c269560be56397d39ebef08cb12d5d7edc",
+    "verification.json": "3da6affce9a8c3864b8f42c385b02a5c6596d61cf4be4849e3994ef3cf92e3ba",
+    "python-run.log": "9128e0d0b6cd5c18116e56a48cf6511cb0203feb40ad7d7c80ec8ccc909da213",
+    "compile.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cpp-run.log": "1344dcc0c8054ced9511f89442a2b7c269560be56397d39ebef08cb12d5d7edc",
+    "verify-run.log": "028a162c4ce168102cb08499364b01774c8bc2218ac4f63db80ad595487957fa",
+    "execution-timings.json": "991efe8119f9ed1c68a5de8035d200643d76ea9cd488f2427605e5f6ea0025d4"
+  }
+}
