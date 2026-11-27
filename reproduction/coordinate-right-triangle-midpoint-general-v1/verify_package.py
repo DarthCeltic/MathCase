@@ -100,6 +100,31 @@ def main() -> int:
             raise ValueError("PUBLIC_RUNNER_FAILURE_RECORD_MISMATCH")
         if any(stage.get("name") not in {"lean-version", "lake-version"} for stage in runner_failure.get("stages", [])):
             raise ValueError("PUBLIC_RUNNER_FAILURE_REACHED_BUILD")
+    public_receipt_path = ROOT / "evidence/public-replay.json"
+    public_context_path = ROOT / "evidence/public-replay-context.json"
+    if not public_receipt_path.is_file() or not public_context_path.is_file():
+        raise ValueError("PUBLIC_REPLAY_EVIDENCE_MISSING")
+    public_receipt = json.loads(public_receipt_path.read_text(encoding="utf-8"))
+    public_context = json.loads(public_context_path.read_text(encoding="utf-8"))
+    required_stages = ["lean-version", "lake-version", "lake-update", "mathlib-cache", "lean-build", "axiom-audit"]
+    if (
+        public_receipt.get("status") != "PASS"
+        or public_receipt.get("fresh_project_inputs", {}).get("GeometryGeneral.lean") != EXPECTED_SOURCE
+        or public_receipt.get("audit_source_sha256") != EXPECTED_AUDIT
+        or public_receipt.get("axioms") != ["propext", "Classical.choice", "Quot.sound"]
+        or public_receipt.get("sorryAx_reported") is not False
+        or public_receipt.get("manifest_unchanged_after_update") is not True
+        or [stage.get("name") for stage in public_receipt.get("stages", [])] != required_stages
+        or any(stage.get("exit_code") != 0 or stage.get("timed_out") for stage in public_receipt.get("stages", []))
+    ):
+        raise ValueError("PUBLIC_REPLAY_RECEIPT_MISMATCH")
+    if (
+        public_context.get("status") != "PASS"
+        or public_context.get("source_commit") != "efc62fd8c091b92c46bd55ed0486327897d4d78c"
+        or public_context.get("replay_receipt_sha256") != digest(public_receipt_path)
+        or public_context.get("result", {}).get("theorem_olean_sha256") != public_receipt.get("theorem_olean_sha256")
+    ):
+        raise ValueError("PUBLIC_REPLAY_CONTEXT_MISMATCH")
     for markdown in ROOT.rglob("*.md"):
         body = markdown.read_text(encoding="utf-8")
         for raw in re.findall(r"\]\(([^)]+)\)", body):
