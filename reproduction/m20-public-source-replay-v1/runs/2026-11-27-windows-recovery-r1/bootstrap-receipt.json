@@ -1,0 +1,23 @@
+{
+  "schema": "mathcase-original-m20-bootstrap-v1",
+  "status": "PASS",
+  "started_utc": "2026-11-27T19:46:05.499933+00:00",
+  "finished_utc": "2026-11-27T19:49:27.554240+00:00",
+  "elapsed_seconds": 202.054,
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lake_manifest_sha256": "1009a101f52a9d5d8ca57666f0256bae91abdb693e0f27b5a4622cffcc38cf03",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "python_version": "3.14.7",
+  "python_executable_sha256": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9",
+  "lake_executable_sha256": "320f91a39ddf3225443b2f84778f090c77b96cafb8c71abdd58463726faa2c58",
+  "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "bootstrap_script_sha256": "667b4e864609db4d8273f8529c1f230ce729bc693b107a0b4bbaa9f5a078f4d0",
+  "cache_modules": [
+    "Mathlib.Data.Nat.Prime.Basic"
+  ],
+  "cache_exit_code": 0,
+  "cache_stdout_sha256": "12c699a9c6ea4c3ea0fe3a86e99a74b52e9bbb39db3d8fe05c6759c71988314b",
+  "cache_stderr_sha256": "86b548fee8b828705a7e980f79f6a05552cc2d09d91fd528afaf2ea6287e4fc0"
+}

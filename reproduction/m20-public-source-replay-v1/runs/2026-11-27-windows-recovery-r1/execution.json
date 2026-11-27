@@ -1,0 +1,43 @@
+{
+  "schema": "mathcase-m20-windows-recovery-record-v1",
+  "recorded_utc": "2026-11-27T23:50:16.044535Z",
+  "result": "PASS_AFTER_RECOVERY",
+  "scope": "M15-M20 public-source composition replay",
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "toolchain": "Lean 4.33.1",
+  "lean_commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+  "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "runner_sha256": "100b7b827669578a93e9a6bb41d981f107e3d423d05c600252a427caacdb8b37",
+  "bootstrap_receipt_sha256": "7e2cd91f1093ae0031daf14db577de0dac1d2d72d87fb5f03bbbfb3361eb9d92",
+  "initial_attempt": {
+    "status": "FAILED_DURING_STATUS_PUBLICATION",
+    "completed_compiles": 134,
+    "completed_audits": 0,
+    "completed_queries": 0,
+    "failed_stage": "M20Shard038",
+    "error": "Windows access denied while atomically replacing the progress status file",
+    "raw_failure_status_sha256": "44626508e50275ff61968d9b4c2ed3766156d14290ef13170c4ed5902f19f49f",
+    "process_exit_code": "not retained in the run artifact"
+  },
+  "recovery": {
+    "status": "PASS",
+    "completed_compiles": 363,
+    "completed_audits": 23,
+    "completed_queries": 4262,
+    "stage_exit_code_zero_count": 386,
+    "nov18_phase2_olean_matches": 363,
+    "older_original_container_olean_matches": 0,
+    "axiom_union": ["propext", "Quot.sound"],
+    "sorryAx": false,
+    "forbidden_source_hits": [],
+    "resume_status_sha256": "7c4a87d9af13f3842a6e2878884cad1b451f8a247e3787a9c0e1c1ed21c37833",
+    "stages_sha256": "eeaa7b9464b0779ef9084bcf48ddfdfdec9d82aeecaaaf42dd41f186912a4154",
+    "recovery_process_exit_code": "not retained in the run artifact"
+  },
+  "limitations": [
+    "This recovery reuses outputs from its own failed first attempt; it is not an independent stranger replay.",
+    "The raw failure contains a local path and remains private; only its SHA-256 and path-free diagnosis are recorded here.",
+    "The bounded result does not establish global Collatz convergence and is not claimed as a new theorem."
+  ]
+}
