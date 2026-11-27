@@ -1,0 +1,16 @@
+{
+  "schema": "mathcase-m0-packet-hash-correction-v1",
+  "recorded_local": "2026-11-27 09:40:00 -05:00",
+  "scope": "Correction to the chat-digest length note only; no proof or theorem status change.",
+  "packet_sha256": "ffb26e7ff0aaeb6b8bbfebbaa6d9cf72b560d708dc5b7c8588410b839eac3957",
+  "stored_review_decision": "YES, statement fidelity only",
+  "recheck": "The 64-character digest visible in the owner-side M0 question is identical to the stored packet SHA-256 and the saved review record SHA-256.",
+  "prior_projection": "evidence/r04-source-replay.json is preserved unchanged; its hash_binding_note incorrectly says the chat displayed 63 characters.",
+  "correction": "The 63-character statement was not supported by the visible owner-side question. The earlier note remains in the immutable historical projection and is superseded for this field by this correction.",
+  "limitations": [
+    "The statement review did not verify the proof.",
+    "The M0 YES did not authorize the Lean run.",
+    "No novelty or independent-review claim is made."
+  ],
+  "run_receipt_sha256": "50384f53d881c1014b5446c3739e579cd98a270eaa658b950436ef9beb862326"
+}

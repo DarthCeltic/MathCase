@@ -36,7 +36,7 @@ The first execution of this new public-package runner stopped before dependency 
 
 Run 04 was an owner-side exact-source compile with pinned Mathlib outputs mounted read-only; its path-free [receipt projection](evidence/r04-source-replay.json) and captured output hashes are preserved here. Separately, the documented package command passed from a fresh sparse public-source clone at commit `efc62fd`. It fetched the dependencies named by the checked-in lock, built fresh theorem outputs, and passed the separate axiom audit in 604.485 seconds across stages. The [exact receipt](evidence/public-replay.json) and [clone/toolchain context](evidence/public-replay-context.json) are available. This replay was run by the project owner on the project owner's host; an independent stranger replay remains open.
 
-The statement review is recorded as YES for wording only. The review record's stored 64-character packet hash matches `statement.md`; the chat response displayed a 63-character digest, so exact message-to-packet hash binding is imperfect. The discrepancy remains visible in the evidence.
+The statement review is YES for wording only. The exact 64-character SHA-256 displayed in the owner-visible M0 question matches the stored packet and review record. An earlier replay projection incorrectly said the chat showed a 63-character digest; that historical projection is preserved unchanged, and the correction is recorded in [`evidence/m0-packet-hash-correction-2026-11-27.json`](evidence/m0-packet-hash-correction-2026-11-27.json). This is a correction to provenance wording only: the YES did not check the proof or establish novelty.
 
 ## Reproduce
 
@@ -56,6 +56,7 @@ The replay uses one Lake build job and a 3,600-second cap per stage. It does not
 - `replay.py` — fresh-output source replay runner.
 - `verify_package.py` and `SHA256SUMS.txt` — offline package integrity and evidence checks.
 - `evidence/r04-source-replay.json` — path-free summary of the first successful exact-source run.
+- `evidence/m0-packet-hash-correction-2026-11-27.json` — corrects one inaccurate digest-length note while preserving the original replay projection.
 - `evidence/public-replay.json` and `evidence/public-replay-context.json` — exact fresh public-clone result and its source commit, toolchain, stage timings, and scope.
 - `evidence/attempt-history.json` — path-free record of the two timeouts, source fix, and pass.
 - `evidence/public-package-replay-r1-failure.json` — preserved first-run setup failure in the new public runner.
