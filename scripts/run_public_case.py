@@ -14,6 +14,7 @@ CATALOG = {
     "prime-sqrt2": "Recompile the prime theorem and its square-root-of-two child. Lean stages default to a 600-second limit.",
     "collatz": "Prove the 12-of-20 descent rule and its exact residue count in Lean 4.33.1.",
     "collatz-at-most-twelve": "Prove and recount the at-most-12-of-20 descent family, including the 13-odd boundary.",
+    "collatz-six-of-ten": "Rebuild the bounded six-of-ten Collatz descent theorem and verify its receipt with Lean 4.33.1; not a convergence proof.",
     "collatz-at-most-thirteen": "Fresh-source Lean proof and full 21-bit residue census for the at-most-13-of-21 descent rule.",
     "collatz-at-most-thirteen-22": "Fresh-source Lean proof and exact 22-step parity count; bounded first descent only.",
     "collatz-at-most-seventeen-27": "Lean-checked bounded descent for starts at least 26,018; separate exact parity-class audit.",
@@ -35,6 +36,7 @@ CATALOG = {
 
 ROOT = Path(__file__).resolve().parents[1]
 COLLATZ = "reproduction/collatz-twelve-of-twenty-v1"
+SIX_OF_TEN = "reproduction/collatz-six-of-ten-lean-v1"
 R55 = "reproduction/ramsey-r55-lean-v1"
 R66 = "reproduction/ramsey-r66-paley101-v1"
 
@@ -49,6 +51,11 @@ def commands(case, args, output):
         ],
         "collatz-at-most-twelve": [("reproduction/collatz-at-most-twelve-v1/verify_at_most_twelve.py",
                                     "--output", output / "at-most-twelve.json")],
+        "collatz-six-of-ten": [
+            (SIX_OF_TEN + "/replay.py", "--lean", args.lean, "--output-dir", output / "lean-replay"),
+            (SIX_OF_TEN + "/verify_receipt.py", "--receipt", output / "lean-replay/replay-receipt.json",
+             "--lean", args.lean, "--output", output / "lean-replay/verification.json"),
+        ],
         "collatz-at-most-thirteen": [("reproduction/collatz-at-most-thirteen-of-twenty-one-v1/verify_at_most_thirteen.py",
                                       "--output", output / "at-most-thirteen.json",
                                       "--evidence-dir", output / "lean-and-census-output")],
@@ -114,6 +121,7 @@ def main(argv=None, root=ROOT):
     deps = parser.add_mutually_exclusive_group()
     deps.add_argument("--mathlib", type=Path, help="prime-sqrt2: an installed pinned Mathlib checkout")
     deps.add_argument("--bootstrap", type=Path, help="prime-sqrt2: fetch the pinned public dependencies here")
+    parser.add_argument("--lean", type=Path, help="collatz-six-of-ten: official Lean 4.33.1 executable")
     parser.add_argument("--stage-timeout", type=int,
                         help="prime-sqrt2: wall-clock limit for each Lean stage (default: 600 seconds)")
     parser.add_argument("--source", type=Path, help="visitor: your own trusted .lean source file")
@@ -126,6 +134,12 @@ def main(argv=None, root=ROOT):
         return 0
     if args.case == "prime-sqrt2" and not (args.mathlib or args.bootstrap):
         parser.error("prime-sqrt2 needs --mathlib PATH or --bootstrap PATH")
+    if args.case == "collatz-six-of-ten" and not args.lean:
+        parser.error("collatz-six-of-ten needs --lean PATH_TO_LEAN_4_33_1")
+    if args.case == "collatz-six-of-ten" and not args.lean.is_file():
+        parser.error("the Lean executable does not exist")
+    if args.case != "collatz-six-of-ten" and args.lean is not None:
+        parser.error("--lean applies only to collatz-six-of-ten")
     if args.case != "prime-sqrt2" and (args.mathlib or args.bootstrap):
         parser.error("--mathlib and --bootstrap apply to prime-sqrt2")
     if args.stage_timeout is not None and args.stage_timeout < 1:
@@ -144,7 +158,7 @@ def main(argv=None, root=ROOT):
             parser.error("--case-packet must name a .json file")
     elif args.source or args.case_packet or args.lake_project:
         parser.error("--source, --case-packet, and --lake-project apply only to visitor")
-    for name in ("source", "case_packet", "lake_project", "mathlib", "bootstrap"):
+    for name in ("source", "case_packet", "lake_project", "mathlib", "bootstrap", "lean"):
         path = getattr(args, name)
         if path is not None:
             setattr(args, name, path.resolve())
