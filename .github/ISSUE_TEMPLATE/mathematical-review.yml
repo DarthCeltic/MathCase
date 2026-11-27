@@ -1,0 +1,46 @@
+name: Review a mathematical statement
+description: Record a mathematical assessment, a prior reference, or a gap in a specific result.
+title: "Mathematical review · "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: Which result and revision did you read?
+      description: Link the statement, proof or certificate. A commit-specific link is ideal.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Which inference did you check?
+      description: Identify the hypotheses and conclusion you examined. If you checked a computation, explain how the encoded inputs relate to the mathematical statement.
+    validations:
+      required: true
+  - type: dropdown
+    id: verdict
+    attributes:
+      label: What did you conclude about that part?
+      options:
+        - The argument works under the stated assumptions.
+        - I found a gap or a counterexample.
+        - I found relevant prior work.
+        - My check was inconclusive.
+    validations:
+      required: true
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Reasoning or reference
+      description: Give the argument, counterexample, or citation that supports your conclusion. Say which parts you left open.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Were you involved in producing this MathCase result?
+      options:
+        - "No"
+        - "Yes"
+        - Prefer not to say
+    validations:
+      required: true

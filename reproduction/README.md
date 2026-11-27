@@ -12,7 +12,11 @@ If you have access to a machine outside the MathCase project, there are three ch
 
 To [report a replay](https://github.com/DarthCeltic/MathCase/issues/new?title=Independent%20replay), give the case, commit from `git rev-parse HEAD`, OS, tool versions, command and outcome. For a failure, the first failing stage and its diagnostic are especially helpful. Small summaries or public log links are sufficient. A comparison of the two outputs, or a discrepancy you can reproduce, gives readers something concrete to follow.
 
-Mathematicians can also [review a statement](https://github.com/DarthCeltic/MathCase/issues/new?title=Mathematical%20review). Identify the declaration and the plain-language sentence you compared. Say whether the hypotheses, conclusion, step convention and literature attribution agree. A literature reference, a counterexample or a suggested correction is welcome. A mathematical review can be recorded independently of a software run.
+Mathematicians can also [review a statement](https://github.com/DarthCeltic/MathCase/issues/new?template=mathematical-review.yml). Identify the declaration and the plain-language sentence you compared. Say whether the hypotheses, conclusion, step convention and literature attribution agree. A literature reference, a counterexample or a suggested correction is welcome. A mathematical review can be recorded independently of a software run.
+
+If you tried a question of your own, [report what happened in the visitor lab](https://github.com/DarthCeltic/MathCase/issues/new?template=own-problem.yml). The form asks where your input came from and accepts unsuccessful attempts.
+
+For a short mathematical review, take the [prime denominator criterion](../research/number-theory/egyptian-fractions/prime-envelope-v1/README.md). Does the parity step exclude every competing multiplier under the stated cap? Does the counting argument establish the stated density bound? A prior reference for either claim is welcome.
 
 ## Proofs and saved evidence
 
