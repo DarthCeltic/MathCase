@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "coefficient_ring": "Z",
+  "cell_model": "one vertex, named loop edges, one 2-cell attached along a word",
+  "cases": {
+    "sphere": {
+      "generators": "",
+      "attaching_word": "",
+      "expected": {"H0": "Z", "H1_free_rank": 0, "H1_torsion_orders": [], "H2_free_rank": 1},
+      "euler_characteristic": 2
+    },
+    "real_projective_plane": {
+      "generators": "a",
+      "attaching_word": "aa",
+      "expected": {"H0": "Z", "H1_free_rank": 0, "H1_torsion_orders": [2], "H2_free_rank": 0},
+      "euler_characteristic": 1
+    },
+    "torus": {
+      "generators": "ab",
+      "attaching_word": "abAB",
+      "expected": {"H0": "Z", "H1_free_rank": 2, "H1_torsion_orders": [], "H2_free_rank": 1},
+      "euler_characteristic": 0
+    },
+    "klein_bottle": {
+      "generators": "ab",
+      "attaching_word": "abAb",
+      "expected": {"H0": "Z", "H1_free_rank": 1, "H1_torsion_orders": [2], "H2_free_rank": 0},
+      "euler_characteristic": 0
+    }
+  }
+}

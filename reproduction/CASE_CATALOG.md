@@ -42,6 +42,9 @@ For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second 
 - **Ramsey R(6,6) Lean replay:** the separate [Lean bundle](ramsey-r66-lean-v1/README.md) checks the known 101-vertex witness. An author-side public-source replay rebuilt all three MathCase modules with no pre-existing MathCase OLEANs and passed under the checked-in Lake lock; it reused the public Mathlib cache fetched during setup. The original container receipt still binds an older lock with an unexplained mismatch. A stranger's independent rebuild and mathematical review remain open.
 - **Ramsey and Erdős–Straus:** use the [human work ledger](https://darthceltic.github.io/mathcase/work.html#ramsey) for the known Ramsey witness and finite computations, and the [Erdős–Straus section](https://darthceltic.github.io/mathcase/work.html#egyptian) for the bounded search and one identity family. Neither page claims to solve the corresponding open problem.
 
+- **F₂ homology of triangulated surfaces:** `python -B reproduction/math-at-f2-surface-homology-v1/homology.py` checks three explicit meshes; see the [F₂ case notes](math-at-f2-surface-homology-v1/README.md).
+- **Integer homology and torsion:** run the [four-model cellular calculation](math-at-f2-surface-homology-v1/integer-cw-v1/README.md). It checks exact arithmetic for the listed cell models; it is not a Lean proof or a claim about arbitrary surfaces.
+
 ## Bring a theorem of your own
 
 Use the visitor workbench to start from the 4-and-2 counterexample, edit the plain claim, then open the technical details to set the exact Lean proposition and theorem name. Export the full case and run the target-bound check:
