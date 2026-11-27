@@ -88,3 +88,6 @@ reproduction/m15-m20-r2/evidence/knowledge-graph/public-slice-v1/README.md text 
 reproduction/m15-m20-r2/PACKAGE_INVENTORY.json text eol=lf diff
 # Preserve the native M20 replay evidence exactly as listed in its SHA256SUMS.
 reproduction/m20-public-source-replay-v1/runs/2026-11-26-native-windows-r1/** -text -eol -diff
+# Keep the new Egyptian minimax replay legible in text diffs with deterministic LF bytes.
+research/number-theory/egyptian-fractions/least-largest-denominator-v1/README.md text eol=lf diff
+research/number-theory/egyptian-fractions/least-largest-denominator-v1/runs/2026-11-26-public-source-r1/** text eol=lf diff

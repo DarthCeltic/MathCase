@@ -1,0 +1,12 @@
+{
+  "schema": "mathcase-public-tree-secret-scan-v1",
+  "scanner": "TruffleHog 3.99.9",
+  "image_id": "sha256:c50b55a0cdcc7ac7ee8b29d209833a22d6e2b44d4f0d8fc87099e8c877cb6afe",
+  "image_manifest_digest": "sha256:2ec535840f860aa27f11fee20222fb790326ecd66325c96bd49d02ec6af46eca",
+  "scope": "Current working tree of the release candidate; full Git history not scanned in this run.",
+  "command": "docker run --rm --network none --mount type=bind,source=<checkout>,target=/repo,readonly trufflesecurity/trufflehog:3.99.9 filesystem /repo --json --no-verification --fail --fail-on-scan-errors",
+  "exit_code": 0,
+  "verified_findings": 0,
+  "unverified_findings": 0,
+  "full_history_status": "Not rerun. The repository retains its separately documented historical findings and exception; this receipt covers the current tree only."
+}

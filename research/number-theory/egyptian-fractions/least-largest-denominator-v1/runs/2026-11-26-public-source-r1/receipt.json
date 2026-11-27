@@ -1,0 +1,54 @@
+{
+  "schema": "mathcase-public-source-replay-v1",
+  "status": "PASS",
+  "run_date_local": "2026-11-26",
+  "timezone": "America/New_York",
+  "source_commit": "5d1dac84b257802c1c3efc01bdb4f8e29cc9df00",
+  "source_method": "Git archive of the public commit; extracted package bytes were compared byte-for-byte with git cat-file blobs before execution.",
+  "package_path": "research/number-theory/egyptian-fractions/least-largest-denominator-v1",
+  "runtime": {
+    "python": "3.14.7",
+    "platform": "Windows x86_64"
+  },
+  "scope": "All 143 primes p <= 10000 with p mod 24 = 1; optimize the largest of three distinct positive denominators for 4/p.",
+  "inputs": {
+    "README.md": {"bytes": 4291, "sha256": "aae3fc62945c0dc93f48ad067fcb7d680df28cd5fb8dcbca407bed2bd5c8d411", "git_blob_match": true},
+    "search.py": {"bytes": 2504, "sha256": "f188077949556ae97ce6b2b55077750fe6b2075722234cf17a7bb0a910f5918f", "git_blob_match": true},
+    "verification.json": {"bytes": 785, "sha256": "01568c611bdb55e736d14ed01c79d6b2b116268ab6faecae4a1b0220bdaab869", "git_blob_match": true},
+    "verify.py": {"bytes": 2717, "sha256": "3f0d20f0ec8c7a9c66470bba316fced7485bf44ede06747fe27f8aea4c962998", "git_blob_match": true},
+    "witnesses.csv": {"bytes": 3299, "sha256": "b03a1334b709bc74d55b1dfd4ced0941c01428e1b00c376ed8d8c420a00cc9a2", "git_blob_match": true}
+  },
+  "positive_stages": [
+    {"command": "python -B verify.py", "exit_code": 0, "elapsed_seconds": 7.270, "result": "Verified 143 distinct-denominator minima; max z/p = 1032. Maximizer: p=9601, (2408,806484,9908232)."},
+    {"command": "python -B search.py replay-generated.csv", "exit_code": 0, "elapsed_seconds": 0.192, "result": "143 primes; sharp uniform z/p bound 1032; unique maximizer p=9601."},
+    {"command": "python -B verify.py replay-generated.csv", "exit_code": 0, "elapsed_seconds": 7.285, "result": "Verified regenerated table; max z/p = 1032; maximizer p=9601."}
+  ],
+  "regenerated_table": {
+    "published_sha256": "b03a1334b709bc74d55b1dfd4ced0941c01428e1b00c376ed8d8c420a00cc9a2",
+    "generated_sha256": "b03a1334b709bc74d55b1dfd4ced0941c01428e1b00c376ed8d8c420a00cc9a2",
+    "byte_identical": true
+  },
+  "negative_control": {
+    "file": "control-nonminimal.csv",
+    "sha256": "6690844e32230700acefab5227b702d04d64893db3edb54cc8f1e53a5512434a",
+    "input_is_valid_identity": true,
+    "input_triple_at_p_9601": [2415, 403242, 15457610],
+    "expected_exit_code": 1,
+    "observed_exit_code": 1,
+    "rejected_as": "not optimal; a smaller valid maximum denominator was found",
+    "observed_better_triple": [2408, 806484, 9908232],
+    "elapsed_seconds": 6.217
+  },
+  "attempt_history": [
+    {"attempt": 1, "status": "RECEIPT_ASSEMBLY_FAILURE", "detail": "A local receipt-harness variable-name error stopped result serialization after the mathematical commands. No result was attributed to this run."},
+    {"attempt": 2, "status": "PASS", "detail": "The published checker, generator, regenerated-table checker, and nonminimal-control rejection were rerun with a corrected receipt harness."}
+  ],
+  "measured_stage_seconds_sum": 20.964,
+  "limitations": [
+    "Finite prime set only: p <= 10000 and p mod 24 = 1.",
+    "This is exact integer computation, not a Lean theorem.",
+    "Operator-run public-source replay; not an independent stranger replay or independent mathematical review.",
+    "No conclusion about all primes or the full Erdős-Straus conjecture."
+  ],
+  "external_spend_usd": 0
+}
