@@ -16,7 +16,7 @@ So all three distances are 5. The proof checks the same calculation for every po
 
 The source defines squared Euclidean distance for points in ℝ² and proves that the squared distances from (a/2,b/2) to (0,0), (a,0), and (0,b) are equal. The assumptions are a > 0 and b > 0. The positivity assumptions make these points a non-degenerate right triangle with the right angle at the origin.
 
-This is a known coordinate identity. The Lean source proves the algebra in the displayed coordinate model; it does not formalize the rotation-and-translation step from every Euclidean right triangle to that model. It is not a novelty claim.
+This is a known coordinate identity. This package proves the algebra in the displayed model. The separate [general-coordinate case](../coordinate-right-triangle-midpoint-general-v1/README.md) proves the corresponding dot-product statement directly for arbitrary real coordinates; neither package formalizes a conversion from every abstract Euclidean plane to coordinates. This is not a novelty claim.
 
 ## What was checked
 

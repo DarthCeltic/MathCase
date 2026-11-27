@@ -1,0 +1,57 @@
+{
+  "axioms": [],
+  "claim_scope": "all A, B, C in R^2 with (B-A) dot (C-A)=0; equality of the three squared distances from midpoint(B,C), with degenerate points allowed",
+  "external_model_calls": 0,
+  "external_provider_spend_usd": 0,
+  "finished_utc": "2026-11-27T03:31:29.714692+00:00",
+  "lake_executable_sha256": "565c3976275d79e104421014b6229f4fcf4a8c8edfe164a43b344c91af6f496c",
+  "lake_version": "Lake version 5.0.0-src+819816b (Lean version 4.33.1)",
+  "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+  "lean_inputs": {
+    "Audit.lean": "eb27f11996ff0c5cd2314ad3c34c23efb385e1640bae6d2746ade0b5cb5be03e",
+    "GeometryGeneral.lean": "5c681f34857d51e38e23f8de86aeea29a38eb685c20a5d692d09ff32cf8e0261",
+    "lake-manifest.json": "473a29cba8a3e09010572bc7da29cde05056d3fcdc635742b18b21d52a9e025f",
+    "lakefile.toml": "e7698276e3e9f441ff221c1d3fac21f1963c255ee87856be7ff030a9ea63a63b",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71"
+  },
+  "lean_toolchain_pin": "leanprover/lean4:v4.33.1",
+  "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "package_inputs": {
+    "Audit.lean": "eb27f11996ff0c5cd2314ad3c34c23efb385e1640bae6d2746ade0b5cb5be03e",
+    "GeometryGeneral.lean": "5c681f34857d51e38e23f8de86aeea29a38eb685c20a5d692d09ff32cf8e0261",
+    "check_examples.py": "bbea1fafc2475f1ccd885073fe1a5ade9b5a60415b5d3cbdc8feea2c352df4cc",
+    "lake-manifest.json": "473a29cba8a3e09010572bc7da29cde05056d3fcdc635742b18b21d52a9e025f",
+    "lakefile.toml": "e7698276e3e9f441ff221c1d3fac21f1963c255ee87856be7ff030a9ea63a63b",
+    "lean-toolchain": "3aac669c7a910ec2389f4e4f921b605adf6ebf2d1e0c9b9cd0be4d33f3f5db71",
+    "replay.py": "b334796105a53759b5045f196abd0aee55f7df9fb671691f94af858674c2df82",
+    "verify_package.py": "734503898e2427b02ad2bc1040fa13e10c094e0648ddd6ad075d0408c5a8eafb"
+  },
+  "pinned_lake_manifest_sha256": "473a29cba8a3e09010572bc7da29cde05056d3fcdc635742b18b21d52a9e025f",
+  "reason": "name 'INPUTS' is not defined",
+  "run_id": "public-package-replay-r1",
+  "schema": "mathcase-general-coordinate-midpoint-public-replay-v1",
+  "sorryAx_reported": null,
+  "stages": [
+    {
+      "command": "lean --version",
+      "elapsed_seconds": 0.076,
+      "exit_code": 0,
+      "name": "lean-version",
+      "output_sha256": "89c79d9c5b24343255f93bb0203ae89e6b8715c652def77008a34f37656c9c82",
+      "timed_out": false,
+      "timeout_seconds": 3600
+    },
+    {
+      "command": "lake --version",
+      "elapsed_seconds": 0.082,
+      "exit_code": 0,
+      "name": "lake-version",
+      "output_sha256": "e475ba02fef5717a6caa256e1e25ac50268497b7d1e36955357f37b4701ee4a0",
+      "timed_out": false,
+      "timeout_seconds": 3600
+    }
+  ],
+  "started_utc": "2026-11-27T03:31:29.539532+00:00",
+  "status": "FAIL_OR_BLOCKED",
+  "total_stage_seconds": 0.158
+}

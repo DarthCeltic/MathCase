@@ -1,0 +1,3 @@
+import GeometryGeneral
+
+#print axioms midpoint_perpendicular_equidistant
