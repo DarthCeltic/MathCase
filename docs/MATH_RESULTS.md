@@ -40,13 +40,15 @@ The table extracted from the 133 composition modules has 2,652 unique input resi
 
 This states first descent for these 2,652 progressions after a bounded 32 steps. It does not show that every integer descends, prove global Collatz convergence, classify all residues, or establish novelty.
 
-## What the fresh replay checked
+## What the full source replay checked
 
-Two network-disabled runs used Lean 4.33.1, Mathlib v4.33.1, one CPU, and a 2 GiB limit. Each began with no MathCase OLEAN output available and compiled the 229 shard sources and 134 composition modules from source. All 363 per-module source/output hashes agree across phases. Both runs report 23 successful axiom groups over 4,262 theorem queries, zero sorryAx, and final dependencies [propext, Quot.sound].
+The Nov 18 sealed replay used two clean phases. Each compiled 229 shard modules and 134 composition modules, covering the exact statement for 2,652 listed progressions; both phases agreed on all 363 source/output hashes. Both completed 23 axiom groups over 4,262 declaration queries, with axiom union `[propext, Quot.sound]` and no `sorryAx`. The phase-one Docker watchdog exit 124 remains preserved even though its per-module Lean commands finished; Phase 2 exited 0. The older original-container OLEAN hashes were not reproduced.
 
-The first phase has an outer Docker watchdog exit code 124 even though its run-status and every per-module Lean result record completion and exit code 0. The second phase exits 0. Both facts are preserved in the [replay report](../reproduction/m20-source-replay-2026-11-18/README.md). New OLEAN hashes match between the two phases but differ from the 363 older recorded OLEAN hashes. The report does not describe those historical bytes as reproduced.
+The public-source recipe has since completed **two runner-bound full replays** on Nov 26. The Linux-container replay completed in 3:42:30.318 with network access disabled; the separate native Windows replay completed in 3:51:54.679 and was not recorded as OS-level network-isolated. Both compiled all 363 modules from fresh MathCase output trees, completed all 23 axiom groups and 4,262 queries, and match all 363 November 18 Phase 2 OLEAN hashes. Each matched all 346 pinned historical Mathlib OLEANs. Both matched 0/363 OLEAN hashes from the older original-container manifest. These are author-side replays from public pinned sources, not a stranger reproduction or independent review.
 
-The Lake fallback was later run on the author's host from pinned public MathCase and Mathlib revisions. Its saved source, compiler-output, OLEAN, and dependency files were rehashed against the published manifests and matched. That older run did not record the replay runner's hash, so it is not a runner-bound receipt or a stranger reproduction. A fresh v2 run that binds the exact runner and toolchain remains open. The recorded Docker image is not anonymously pullable, and its full build context is incomplete.
+The exact theorem remains bounded to the 2,652 recorded progressions. It does not prove that every integer descends, show that every Collatz sequence reaches 1, classify all residues, or establish novelty. The original Docker image is still not verified as anonymously pullable; the supported public route is the pinned-source recipe in [ORIGINAL_REPLAY.md](../reproduction/m20-public-source-replay-v1/ORIGINAL_REPLAY.md).
+
+Evidence: [Linux replay](../reproduction/m20-public-source-replay-v1/runs/2026-11-26-full-r2/README.md) · [native Windows replay](../reproduction/m20-public-source-replay-v1/runs/2026-11-26-native-windows-r1/README.md) · [original Nov 18 replay report](../reproduction/m20-source-replay-2026-11-18/README.md).
 
 ## A checked known Ramsey lower bound
 

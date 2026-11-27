@@ -1,25 +1,52 @@
 # MathCase research roadmap
 
-**Build a tool mathematicians can inspect, reproduce, and use on their own questions.** The current evidence is strongest as a disciplined verification and evidence pipeline; broad autonomous discovery has not yet been demonstrated.
+**MathCase is a public workspace for trying a mathematical question, checking a proposed answer, and inspecting the evidence.** The strongest demonstrated capability is still careful, scoped verification. The cases below show work in several areas; they do not show that MathCase can autonomously solve arbitrary mathematics.
 
-## Current checkpoint
+## What is checked today
 
-- The public Case Desk opens without a key and shows saved proof attempts and Lean checks.
-- The public reproduction bundle contains M15–M20 sources, receipts, a hash-bound exact-statement graph, and bounded Erdős–Straus records.
-- A Nov 18 two-phase source replay compiles all 363 M15–M20 modules from source with no MathCase OLEAN reuse. The phases agree on their per-module outputs and axiom checks. Phase 1's Docker wrapper exit 124 is preserved; Phase 2 exits 0.
-- A Nov 23 author-side public-source run reported PASS. A later read-only audit matched its saved sources, outputs, and Mathlib dependency bytes against the published manifests. Its runner hash was not recorded, so it is not a runner-bound replay; a fresh stranger reproduction remains open.
-- The old Docker image is not anonymously pullable and its full build context is incomplete. A public-source Lake recipe is available and is being updated to bind the exact runner and toolchain.
-- No new theorem has received independent review. There is no frozen ErdosBench result and no measured library-versus-baseline transfer result.
+The public repository now contains several different kinds of work. Read the label beside each result: a Lean proof, a finite exact computation, and a bounded search answer different questions.
 
-## Next work, in order
+| Area | What a reader can inspect or run | What it establishes |
+|---|---|---|
+| **Collatz sequences** | The [23/14 Lean case](../reproduction/collatz-parity-envelopes-2026-11-v1/README.md) and the [M15–M20 source replay](../reproduction/m20-public-source-replay-v1/ORIGINAL_REPLAY.md). | The 23/14 statement is about starts whose first 23 accelerated steps contain at most 14 odd inputs: Lean counts 7,507,638 qualifying classes out of 8,388,608 and proves a first drop by at most 37 ordinary steps. The M20 theorem covers 2,652 listed progressions after 32 steps. Neither proves global convergence. The separate [two-window comparison](../reproduction/collatz-two-window-first-drop-2026-11-v1/README.md) is an exact arithmetic computation, not a Lean theorem. |
+| **Ramsey and coloring problems** | The six runnable entries in the [frontier guide](../research/frontier-2026-11/README.md), the [Weak Schur candidate checker](../reproduction/weak-schur-5-candidate-checker-v1/README.md), and the [R(6,6) Lean replay](../reproduction/ramsey-r66-lean-v1/README.md). | The checked examples and finite searches cover their named graphs, colorings, and search neighborhoods. The 208-number Weak Schur search ended with one conflict; it found no valid 208-coloring and proved no impossibility. The R(6,6) Lean result rechecks a known 101-vertex witness for the lower bound 102; it is not a new bound. |
+| **Fractions** | The [Erdős–Straus family](../research/frontier-2026-11/egyptian-28k-plus-21/README.md) and the [least-largest-denominator study](../research/number-theory/egyptian-fractions/least-largest-denominator-v1/README.md). | Lean checks the stated identity for `n = 28k + 21`; the denominator study exhaustively checks 143 listed primes and the consequences stated in its own report. These are restricted families, not a proof of the full Erdős–Straus conjecture. |
+| **Algebraic geometry** | The [binomial-curve intersection case](../reproduction/monomial-branch-intersections-v1/README.md). | Exact computations check eleven finite examples and an independent sweep of small exponents over three prime fields, alongside a cited classical resultant formula. This is not a new general formula or a symbolic algebra system. |
+| **Topology** | The [F₂ homology case](../reproduction/math-at-f2-surface-homology-v1/README.md). | Two exact rank methods agree on three listed triangulations: a sphere, a torus, and a projective plane. This is not a general topology library. |
+| **Statistical physics** | The [finite Ising enumeration](../reproduction/ising-square-torus-dos-v1/README.md). | Two exact methods agree on the full energy histograms for the listed small tori; separate checks test stated odd-square and rectangular ground-state formulas over finite ranges. The work makes no physics-priority claim. |
 
-1. **Close public replay provenance.** Run the updated pinned Lake recipe from a fresh checkout, confirm its code and toolchain hashes, then have an independent operator reproduce the 363-module result. Keep the unbound Nov 23 record, phase-1 exit 124, and historical OLEAN hash mismatch visible as separate evidence.
-2. **Prepare an independent review packet.** Give a reviewer the plain theorem, exact Lean statement, finite scope, source links, both replay records, and the limits. Ryan handles any request for review in his own words.
-3. **Choose one finite-structure target.** Pin an exact public Formal Conjectures revision; compare the target statement to its English wording and check nearby prior work before any attempt. Preserve the candidate list and selection reason.
-4. **Turn Erdős–Straus computation toward proof.** Work from existing denominator-offset records; do not extend the range as the headline. Search for one exact identity family or a useful general criterion, and keep every pattern labeled conjectural until it has a proof and prior-work check.
-5. **Test transfer only when the measurement is valid.** The 11 locked evaluation bundles remain closed. A future benchmark needs a fixed target set, equal budgets, a same-snapshot library arm and baseline arm, and reviewed statements. The model-based comparison remains staged; no model calls are running and external cost is $0.
-6. **Keep the research UI actionable.** Build a timeline, evidence explorer, coefficient calculator, and a readable roadmap. Every result needs a clickable way to inspect the source or receipt; no status shorthand without an explanation.
+The [Case Desk](https://darthceltic.github.io/mathcase/) offers hands-on examples. The [visitor workbench](https://darthceltic.github.io/mathcase/visitor/) can send a draft to the public Lean editor embedded in the page. That hosted editor chooses its own version and does not create a MathCase receipt; the pinned local commands and receipts are the reproducible route.
 
-## Guardrails
+## How to read a result
 
-No public statement should imply global Collatz convergence, a solved Erdős–Straus conjecture, novelty, independent review, M4 promotion, or measured autonomous research. Keep the 11 locked benchmark bundles closed. Do not publish Tao/Grimoire wording, mined Zulip material, licensed/uncleared corpora, Signal Table material, Daine-credited files, credentials, or workstation paths. Model/API calls are not running. External spend remains $0.
+- **Lean checked:** the pinned Lean compiler accepted the exact formal proposition. Read the English statement beside the symbols; a matching hash does not by itself prove that the two say the same thing.
+- **Exact finite computation:** every item in the stated finite set was checked by the described algorithm. This does not extend to objects outside that set.
+- **Bounded search:** the search explored only its recorded candidates, seed, and limits. `UNKNOWN`, a timeout, or a best candidate with conflicts is not a proof that no answer exists.
+- **Source audit:** files matched pinned public hashes. That proves file identity, not that a theorem was independently re-proved.
+
+Receipts, source files, commands, and preserved failures are linked from each case. A visitor can start from the plain-language case report and open the technical evidence when needed.
+
+## What has and has not been reproduced
+
+The M15–M20 source bundle has **two runner-bound full public-source replays**, one in a Linux container and one on native Windows. Each rebuilt 363 Lean modules and completed 23 axiom groups over 4,262 declarations. Both match all 363 outputs in the November 18 Phase 2 manifest; the fresh outputs match none of the older original-container OLEAN hashes. The native Windows run was not recorded as OS-level network-isolated. Both replay reports state these limits plainly: [Linux run](../reproduction/m20-public-source-replay-v1/runs/2026-11-26-full-r2/README.md) · [Windows run](../reproduction/m20-public-source-replay-v1/runs/2026-11-26-native-windows-r1/README.md).
+
+A stranger has not yet completed the full M15–M20 replay from the public recipe, and no independent mathematician review is recorded. The R(6,6) package has a separate current-lock Lean replay; its older historical lock mismatch and failed wrapper attempt remain preserved in the [replay history](../reproduction/ramsey-r66-lean-v1/README.md).
+
+## The next milestones
+
+1. **Get a stranger through the full replay.** Have someone outside the author-side run environment follow the published M15–M20 recipe from a clean checkout. Keep the result distinct from the two existing author-side runs.
+2. **Prepare independent mathematical review.** Provide the exact statement, source, bounds, receipts, and a short list of claims the reviewer should check. Ryan handles any request in his own words.
+3. **Make transfer measurable.** No model calls are running. A future comparison needs reviewed held-out problems, a frozen target set, equal budgets, and saved baseline results. The earlier matched pilot showed no difference between its two arms; it did not demonstrate transfer improvement.
+4. **Continue open coloring searches carefully.** The public Weak Schur and van der Waerden packages make candidates and finite search scopes inspectable. Any new witness must pass the independent full checker; a bounded failure leaves the general question open.
+5. **Broaden the mathematics with the same evidence bar.** A new area needs a precise question, a working example, a declared check type, and a reproducible artifact. Do not describe examples across several subjects as an all-purpose autonomous solver.
+6. **Make the site easier to use.** Keep a visitor-facing worked question and one next action first; leave logs, compiler details, and search terminology in expandable technical sections. Current desktop and mobile interaction still needs direct browser acceptance after site changes.
+
+## Open boundaries
+
+MathCase has not proved global Collatz convergence, solved Erdős–Straus, produced a valid 208-term Weak Schur coloring, or established a new general Ramsey or van der Waerden bound. No new theorem has independent mathematical review. General autonomous theorem discovery and measured library-to-new-problem transfer remain undemonstrated. Model/provider calls are not running; external spend is $0.
+
+The [frontier guide](../research/frontier-2026-11/README.md) lists each bounded search, its exact status, limits, and next measurable question. The [reproduction index](../reproduction/README.md) lists the supported commands and tells readers what each kind of check does.
+
+## Publication safeguards
+
+The 11 locked evaluation bundles remain closed. Do not publish Tao/Grimoire wording, mined Zulip material, uncleared corpora, Signal Table material, Daine-credited files, credentials, or workstation paths. Keep historical failures visible and preserve original receipts when a corrected run supersedes them.
