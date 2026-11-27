@@ -99,3 +99,5 @@ research/number-theory/egyptian-fractions/least-largest-denominator-v1/README.md
 research/number-theory/egyptian-fractions/least-largest-denominator-v1/runs/2026-11-26-public-source-r1/** text eol=lf diff
 # Preserve the new 23/14 proof-refactor receipt-bound inputs and outputs byte-for-byte.
 reproduction/collatz-parity-envelopes-2026-11-v1/envelope-proof-refactor/** -text -eol whitespace=cr-at-eol
+# Preserve exact bytes listed in the width-four Ising run manifest.
+reproduction/ising-width4-joint-density-v1/evidence/runs/final-clean-replay-2026-11-27/** -text -eol whitespace=cr-at-eol

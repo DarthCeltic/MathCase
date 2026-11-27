@@ -1,0 +1,1 @@
+{"L":4,"altered_reference_hash_control_rejected":true,"assignments":65536,"damaged_control_rejected":true,"marginal_match":true,"receipt":"evidence\\runs\\final-clean-replay-2026-11-27\\square-l4-crosscheck.json","reference_sha256":"0cb4edc0a8c30d292ed5f644939f138d5ddfd4e2b0d6bfb14a5dd29181f44528","status":"PASS"}

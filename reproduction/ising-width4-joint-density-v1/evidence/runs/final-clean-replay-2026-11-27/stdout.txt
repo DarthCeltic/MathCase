@@ -1,0 +1,1 @@
+{"assignments":[4096,65536,1048576],"damaged_control_rejected":true,"error":null,"lengths":[3,4,5],"receipt":"evidence\\runs\\final-clean-replay-2026-11-27\\receipt.json","runtime_seconds":6.607953,"status":"PASS"}
