@@ -1,8 +1,40 @@
 {
-  "elapsed_seconds": 0.503959,
+  "elapsed_seconds": 0.586898,
   "format": "mathcase.integer-simplicial-surface-homology-independent.v1",
-  "scope": "Independent arithmetic cross-check for the same three explicit meshes.",
+  "scope": "Independent arithmetic cross-check for the same three explicit meshes and the separately generated twisted-grid Klein bottle.",
   "surfaces": {
+    "klein_twisted_grid_3x3": {
+      "boundary_shape": [
+        27,
+        18
+      ],
+      "closed_surface_input_checks": {
+        "connected_1_skeleton": true,
+        "each_edge_in_two_faces": true,
+        "each_vertex_link_is_a_cycle": true,
+        "integer_boundary_squared_zero": true
+      },
+      "cycle_coordinate_shape": [
+        19,
+        18
+      ],
+      "homology_over_F2_betti": [
+        1,
+        2,
+        1
+      ],
+      "homology_over_Z": {
+        "H0_free_rank": 1,
+        "H1_free_rank": 1,
+        "H1_torsion_order": 2,
+        "H2_free_rank": 0
+      },
+      "independent_method": "Fraction Gaussian rank plus gcd of all maximal minors via Bareiss determinants",
+      "number_of_maximal_minors_checked": 19,
+      "rank_over_Q": 18,
+      "surface": "klein_twisted_grid_3x3",
+      "torsion_order_from_determinantal_divisor": 2
+    },
     "projective_plane_six_vertex": {
       "boundary_shape": [
         15,

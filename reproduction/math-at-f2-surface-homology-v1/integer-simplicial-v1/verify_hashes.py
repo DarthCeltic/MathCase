@@ -19,12 +19,9 @@ def digest(path: Path) -> str:
     return value.hexdigest()
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--manifest", type=Path, default=ROOT / "SHA256SUMS")
-    args = parser.parse_args()
+def verify_manifest(manifest: Path = ROOT / "SHA256SUMS") -> int:
     entries = 0
-    for line_number, line in enumerate(args.manifest.read_text(encoding="utf-8").splitlines(), start=1):
+    for line_number, line in enumerate(manifest.read_text(encoding="utf-8").splitlines(), start=1):
         if not line or line.startswith("#"):
             continue
         match = re.fullmatch(r"([0-9a-f]{64})  ([^\r\n]+)", line)
@@ -42,6 +39,14 @@ def main() -> int:
         entries += 1
     if entries == 0:
         raise SystemExit("EMPTY_MANIFEST")
+    return entries
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--manifest", type=Path, default=ROOT / "SHA256SUMS")
+    args = parser.parse_args()
+    entries = verify_manifest(args.manifest)
     print(f"PASS: {entries} listed files match SHA-256")
     return 0
 

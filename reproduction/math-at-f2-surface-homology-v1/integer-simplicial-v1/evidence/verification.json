@@ -1,7 +1,8 @@
 {
-  "agreement": "PASS: exact ranks, H1 free ranks, H2 ranks, and torsion orders agree for all three meshes.",
+  "agreement": "PASS: exact ranks, H1 free ranks, H2 ranks, and torsion orders agree for all four models.",
+  "archived_package_manifest_entries_verified": 25,
   "format": "mathcase.integer-simplicial-surface-homology-verification.v1",
-  "generated_at_utc": "2026-11-27T08:33:33.728365+00:00",
+  "generated_at_utc": "2026-11-27T09:05:39.658457+00:00",
   "negative_controls": {
     "independent_disconnected_mesh": {
       "reason": "two-disjoint-spheres: 1-skeleton is disconnected",
@@ -33,20 +34,36 @@
     }
   },
   "outputs": {
-    "independent_receipt_sha256": "30c186ae45a0166db63f66fd2e223c82bc0ca6487eda4f9f0a3651415f4d8ee3",
-    "independent_result_sha256": "dd6eafd8d3a27e1ca0e292850f6b7b3d7bfd6774b0409eaebc255d0692984c30",
-    "integer_homology_receipt_sha256": "26d2ca16b9b34f8b6d795b15cd38c21e9e3a0882952519aec828a2a4d01f4186",
-    "integer_homology_result_sha256": "03235d8234819dcfe3a92f0fae251bb76b5661e63e3d9214b8d0d9ac50c6aca5"
+    "independent_receipt_sha256": "0f6764a3fec7c3bc03b5b4ad7eba7a01bff5459bc2572ad31f7078625e79587f",
+    "independent_result_sha256": "97f0e9289da53f30ba1f8fb5b32cb6d4da02e1c6af0c20e566dfb68b8658745e",
+    "integer_homology_receipt_sha256": "1acd77d914e418e876cfcf1d607b1447376b146a89c37ebee84b79b7e92e63d6",
+    "integer_homology_result_sha256": "8f8a39087536deee4c51e9c1eb66b5f8cc47800c18ce5eb3aed95d17f92cdb09"
   },
   "python_version": "3.14.7",
-  "scope": "Three explicit triangulated meshes only; exact Python arithmetic, not Lean and not a general topology prover.",
+  "saved_CW_model_cross_check": {
+    "fresh_CW_source_replay_projection_sha256": "7804893ae7781c150a91fd19db7b7fad77150e632d524140715b69e54d86d110",
+    "independent_receipt_sha256": "ab3f0d4566407ef7fdb4901975b63b43f3e28d894c70191718d1643639448088",
+    "klein_homology": {
+      "H0": "Z",
+      "H1_free_rank": 1,
+      "H1_torsion_orders": [
+        2
+      ],
+      "H2_free_rank": 0
+    },
+    "method": "Compare the triangulated result with two separately implemented, SHA256SUMS-verified CW receipts and a fresh public-source replay projection.",
+    "primary_receipt_sha256": "a46e17f3e817590bf418464309384334a3adefa21a06222a1aedb363aea2b850",
+    "sha256_manifest_entries_verified": 7,
+    "status": "PASS"
+  },
+  "scope": "Three explicit triangulated meshes and one explicit twisted-grid quotient only; exact Python arithmetic, not Lean and not a general topology prover.",
   "sources": {
-    "independent_minors.py": "67ec3cc868ca225965ec77ceaabc6358c41e3be38d0b43bdb83c5ba01bdaf0f4",
-    "integer_homology.py": "3734c76e56a6e741c71e809b37c9d3cdcc9d8c11114826295f049863272ce276",
+    "independent_minors.py": "8139feccfcdb1bb3ea3c322fd58a49ca906c21ddf037326ffc187f13e5b04bab",
+    "integer_homology.py": "ffbfae660fb91bca1b63e19a3f7eac0c21e66f5b6dcb9a587882969770c9da4a",
     "parent_mesh_source": "d0c871b2e94d3cc6dc03e8d94ed207601b13275a7c6c7358442e92a908f42b1b",
-    "test_integer_homology.py": "9b70e0760b67cb16eccc420f11cd12ee404a99072e50ef23440782c8df6eb202",
-    "verify_hashes.py": "87202ad767ceaa7b860cef04a324dd1c71ba8db626dc19938f42159a0fa5c829",
-    "verify_package.py": "a26e8aeb38faf7cc4e5a2714e40c15388354c659783c88cb3e7b433674e3fe12"
+    "test_integer_homology.py": "9a1a97862d8550e741b89855c48edf4609619b907fbee1f1c1ccbf64cfea15e3",
+    "verify_hashes.py": "ce7e48ca28769d774b01fdf0ab6fc8a27af24475842824430e960eb370c44111",
+    "verify_package.py": "2bc1a6f2a1ebe7d25df06b13e2de04a199c176a4fbfbd51e1ea8865869984e73"
   },
   "status": "PASS"
 }

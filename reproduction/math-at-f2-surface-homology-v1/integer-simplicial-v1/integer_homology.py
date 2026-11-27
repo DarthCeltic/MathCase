@@ -12,7 +12,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent
 PARENT = ROOT.parent
 sys.path.insert(0, str(PARENT))
-from homology import SURFACES  # noqa: E402
+from homology import SURFACES, analyze as analyze_f2  # noqa: E402
 
 
 def sha256(path: Path) -> str:
@@ -55,6 +55,22 @@ def validate_vertex_links(n_vertices: int, faces: list[tuple[int, int, int]], na
                 pending.append(neighbor)
         if len(seen) != len(link):
             raise AssertionError(f"{name}: link of vertex {vertex} is disconnected")
+
+
+def klein_twisted_grid(m: int = 3, n: int = 3) -> tuple[int, list[tuple[int, int, int]]]:
+    """Triangulate the quotient (i+m,j)~(i,j), (i,j+n)~(-i,j)."""
+    def vertex(i: int, j: int) -> int:
+        layer, row = divmod(j, n)
+        if layer % 2:
+            i = -i
+        return (i % m) * n + row
+
+    faces = []
+    for i in range(m):
+        for j in range(n):
+            faces.append((vertex(i, j), vertex(i + 1, j), vertex(i + 1, j + 1)))
+            faces.append((vertex(i, j), vertex(i, j + 1), vertex(i + 1, j + 1)))
+    return m * n, faces
 
 
 def smith_diagonal(matrix: list[list[int]]) -> list[int]:
@@ -237,10 +253,16 @@ def compute() -> dict:
     surfaces = {}
     for name, (n_vertices, faces, expected_f2, _orientable) in SURFACES.items():
         surfaces[name] = analyze(name, n_vertices, faces, expected_f2)
+    klein_vertices, klein_faces = klein_twisted_grid()
+    klein_f2 = analyze_f2("klein_twisted_grid_3x3", klein_vertices, klein_faces, (1, 2, 1), False)
+    surfaces["klein_twisted_grid_3x3"] = analyze(
+        "klein_twisted_grid_3x3", klein_vertices, klein_faces, (1, 2, 1)
+    )
     expected = {
         "sphere_tetrahedron": (0, [], 1),
         "torus_periodic_3x3": (2, [], 1),
         "projective_plane_six_vertex": (0, [2], 0),
+        "klein_twisted_grid_3x3": (1, [2], 0),
     }
     for name, (h1_rank, torsion, h2_rank) in expected.items():
         homology = surfaces[name]["homology_over_Z"]
@@ -252,8 +274,12 @@ def compute() -> dict:
             raise AssertionError(f"{name}: unexpected H2 rank")
     return {
         "format": "mathcase.integer-simplicial-surface-homology.v1",
-        "scope": "Exact integer homology for the three explicit meshes imported from the adjacent F2 case.",
+        "scope": "Exact integer homology for the three adjacent F2 meshes and one explicit twisted-grid Klein-bottle triangulation.",
         "surfaces": surfaces,
+        "cross_checks": {
+            "klein_F2_checker": klein_f2,
+            "klein_model_description": "3x3 grid quotient with (i+3,j)~(i,j) and (i,j+3)~(-i,j); each square split by the listed diagonal rule.",
+        },
     }
 
 
