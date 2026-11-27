@@ -36,7 +36,7 @@ The command runs the focused small-grid tests, computes the 3×10 table by trans
 python -B -m unittest -v test_joint_density.py
 ```
 
-The committed run is recorded in [the receipt](evidence/run-receipt.json). Its two matching tables are [row transfer](evidence/joint-density-3x10.json) and [Gray-code enumeration](evidence/gray-joint-density-3x10.json); the focused test and compiler logs are beside them. To verify the saved hashes and table without rebuilding:
+The run is recorded in [the receipt](evidence/run-receipt.json). Its two matching tables are [row transfer](evidence/joint-density-3x10.json) and [Gray-code enumeration](evidence/gray-joint-density-3x10.json); the focused test and compiler logs are beside them. A fresh public-branch clone reran the command in 10.66 seconds and reproduced both table hashes; this is an author-side replay, not an outside review ([summary](evidence/fresh-public-branch-replay.json), [runner receipt](evidence/fresh-public-branch/run-receipt.json), and [logs](evidence/fresh-public-branch/run-logs/)). To verify the saved hashes and table without rebuilding:
 
 ```text
 python -B reproduction/ising-joint-density-3x10-v1/verify_saved.py
