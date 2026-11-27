@@ -42,6 +42,14 @@ python -B reproduction/collatz-six-of-ten-lean-v1/verify_receipt.py --receipt <n
 
 The replay compiles the existing `WordBound.lean` directly into a temporary build directory, compiles `SixOfTen.lean` against that OLEAN, captures `#print axioms`, checks for `sorry` and `native_decide`, and writes source, binary, output, and OLEAN hashes. It does not copy or modify the historical source. The verification command checks the receipt against the current source bytes and, when `--lean` is supplied, the exact Lean executable hash and version.
 
+The central MathCase launcher can run both stages and verify the generated receipt in one action:
+
+```text
+python -B scripts/run_public_case.py collatz-six-of-ten --lean <official Lean 4.33.1 executable> --out <scratch parent directory>
+```
+
+It creates a unique run folder beneath the scratch parent and saves the compile log, replay receipt, and receipt-verification record there. The launcher lists the action as a route to this bounded theorem, not as an additional mathematical result.
+
 ## First-party receipt
 
 The [official Lean 4.33.1 replay receipt](evidence/official-lean-4.33.1-replay.json) binds the two source files and Lean binary. Its recorded theorem axioms are `[propext, Quot.sound]` for `cap_scaled_descent`, `six_of_ten`, and `six_of_twelve`; `n347_first_drop` has no axioms. The [verification record](evidence/official-lean-4.33.1-verification.json) confirms source hashes, the compiler exit, axiom output, and proof-token scan. This was a local first-party replay; an independent third-party run is not claimed.
