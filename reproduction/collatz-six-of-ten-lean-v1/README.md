@@ -45,3 +45,7 @@ The replay compiles the existing `WordBound.lean` directly into a temporary buil
 ## First-party receipt
 
 The [official Lean 4.33.1 replay receipt](evidence/official-lean-4.33.1-replay.json) binds the two source files and Lean binary. Its recorded theorem axioms are `[propext, Quot.sound]` for `cap_scaled_descent`, `six_of_ten`, and `six_of_twelve`; `n347_first_drop` has no axioms. The [verification record](evidence/official-lean-4.33.1-verification.json) confirms source hashes, the compiler exit, axiom output, and proof-token scan. This was a local first-party replay; an independent third-party run is not claimed.
+
+## Fresh public-checkout replay
+
+A fresh credential-disabled public checkout was replayed with Lean 4.33.1 on 2026-11-27 UTC. Both modules compiled from source into a new output directory, and their OLEAN hashes matched the first-party receipt. The [run receipt](evidence/public-replay-2026-11-27/replay-receipt.json), [receipt verification](evidence/public-replay-2026-11-27/verification.json), and [tamper-control result](evidence/public-replay-2026-11-27/negative-control-result.json) are available with a [plain-language report](evidence/public-replay-2026-11-27/README.md) and [file hashes](evidence/public-replay-2026-11-27/SHA256SUMS.txt). This was run by the project operator on the same host, not by an independent stranger or reviewer.

@@ -1,0 +1,52 @@
+{
+  "schema": "mathcase-collatz-six-of-ten-public-replay-context-v1",
+  "status": "PASS",
+  "run_date_utc": "2026-11-27",
+  "run_date_local": "2026-11-26",
+  "timezone": "America/New_York",
+  "source_commit": "900cce6d95fe4f6008b4d997b789eade05e3176d",
+  "source_repository": "https://github.com/DarthCeltic/MathCase",
+  "clone_method": "Fresh depth-1 sparse clone from the public HTTPS URL with credential.helper and core.askPass disabled and terminal prompts disabled.",
+  "working_tree_clean_after_checkout": true,
+  "toolchain": {
+    "lean_version": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lean_binary_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+    "toolchain_source": "Reused the already hash-verified official public Windows distribution; this run did not redownload it.",
+    "dependencies": "Lean Core only; no Lake project or Mathlib dependency."
+  },
+  "commands": [
+    "python -B reproduction/collatz-six-of-ten-lean-v1/replay.py --lean <official Lean 4.33.1 executable> --output-dir <new output directory>",
+    "python -B reproduction/collatz-six-of-ten-lean-v1/verify_receipt.py --receipt <output directory>/replay-receipt.json --lean <same executable> --output <output directory>/verification.json"
+  ],
+  "replay": {
+    "exit_code": 0,
+    "wrapper_elapsed_seconds": 26.274,
+    "fresh_module_outputs": {
+      "WordBound": {"exit_code": 0, "elapsed_seconds": 2.218, "olean_sha256": "12d26a92e5332cfee88e82a589d3ef4d007d94a2966769afd7d602966b9202a8"},
+      "SixOfTen": {"exit_code": 0, "elapsed_seconds": 23.59, "olean_sha256": "0fbec0087b519001228bc1f2138476fc8f822293dd594e0dbd803c4066ffb820"}
+    },
+    "outputs_match_first_party_receipt": true,
+    "axioms": {
+      "MathCase.Collatz.SixOfTen.cap_scaled_descent": ["propext", "Quot.sound"],
+      "MathCase.Collatz.SixOfTen.six_of_ten": ["propext", "Quot.sound"],
+      "MathCase.Collatz.SixOfTen.six_of_twelve": ["propext", "Quot.sound"],
+      "MathCase.Collatz.SixOfTen.n347_first_drop": []
+    },
+    "sorryAx": false,
+    "sorry_or_native_decide_source_scan": false
+  },
+  "tamper_control": {
+    "exit_code": 1,
+    "elapsed_seconds": 0.126,
+    "result": "The verifier rejected a receipt whose SixOfTen source SHA-256 was changed to 64 zeroes, before writing a positive verification record.",
+    "stderr": "Source digest mismatch for SixOfTen.lean",
+    "tampered_receipt_sha256": "0214c8641708bb7899e57206eab8fc192f6555be800ba06b4be76218271cab5b",
+    "positive_verification_created": false
+  },
+  "limitations": [
+    "Operator-run replay from a credential-disabled fresh public checkout on the same host; not an independent stranger run or mathematical review.",
+    "Lean execution was not OS-level network-isolated, although the core-only replay uses no network dependencies.",
+    "This is a bounded first-drop theorem under the stated parity condition, not global Collatz convergence or a novelty claim."
+  ],
+  "external_spend_usd": 0
+}

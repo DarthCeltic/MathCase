@@ -1,0 +1,11 @@
+{
+  "schema": "mathcase-collatz-replay-negative-control-v1",
+  "test": "tamper the recorded SixOfTen source SHA-256; verifier must reject before writing a positive verification record",
+  "exit_code": 1,
+  "elapsed_seconds": 0.126,
+  "stderr": "Source digest mismatch for SixOfTen.lean",
+  "rejected_as_expected": true,
+  "tampered_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+  "tampered_receipt_sha256": "0214c8641708bb7899e57206eab8fc192f6555be800ba06b4be76218271cab5b",
+  "positive_output_created": false
+}
