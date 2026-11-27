@@ -1,0 +1,18 @@
+# SHA-256 of the archived package, exact mesh source, and linked catalog entries.
+# This manifest intentionally does not hash itself.
+2dbb94cee7568011b705718c77d52b54ba4e117c3e56f75f180e862638a6d19a  README.md
+3734c76e56a6e741c71e809b37c9d3cdcc9d8c11114826295f049863272ce276  integer_homology.py
+67ec3cc868ca225965ec77ceaabc6358c41e3be38d0b43bdb83c5ba01bdaf0f4  independent_minors.py
+a26e8aeb38faf7cc4e5a2714e40c15388354c659783c88cb3e7b433674e3fe12  verify_package.py
+87202ad767ceaa7b860cef04a324dd1c71ba8db626dc19938f42159a0fa5c829  verify_hashes.py
+9b70e0760b67cb16eccc420f11cd12ee404a99072e50ef23440782c8df6eb202  test_integer_homology.py
+03235d8234819dcfe3a92f0fae251bb76b5661e63e3d9214b8d0d9ac50c6aca5  evidence/integer-homology-result.json
+26d2ca16b9b34f8b6d795b15cd38c21e9e3a0882952519aec828a2a4d01f4186  evidence/integer-homology-receipt.json
+dd6eafd8d3a27e1ca0e292850f6b7b3d7bfd6774b0409eaebc255d0692984c30  evidence/independent-minors-result.json
+30c186ae45a0166db63f66fd2e223c82bc0ca6487eda4f9f0a3651415f4d8ee3  evidence/independent-minors-receipt.json
+af50211d8f94c808e02d6268ae8107187bfd649828be74f7998722c454da9c1a  evidence/verification.json
+d0c871b2e94d3cc6dc03e8d94ed207601b13275a7c6c7358442e92a908f42b1b  ../homology.py
+ccaae73c3d9f593ba76979b8d0c2f26a1575dadfed38775be7e5f9b857d0f5a6  ../README.md
+cf995e33da5388e151f23ee8c561494054f1d33c35a74ffdfd8ffa78e3cda378  ../../README.md
+2ddd16beb22ef5c34cd55ad7404359dee9bd99c6069e9bd70085e7e2baa33415  ../../CASE_CATALOG.md
+b18fe932807c833204dc8a7013897c7d20f9c186553ff89efa73bf2285ab6d4f  ../../../README.md
