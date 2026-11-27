@@ -51,6 +51,8 @@ The [public homepage](https://darthceltic.github.io/mathcase/) offers both **Mak
 
 ## Public math results and reproduction
 
+See the [research roadmap](docs/MATHCASE_RESEARCH_ROADMAP.md) for the current demonstrated scope, open limits, and next measurable milestones.
+
 ### A bounded Collatz proof you can rerun
 
 For every start `n ≥ 3`, if at most 14 of its first 23 accelerated Collatz steps begin on an odd number, an ordinary iterate is below `n` by step 37. Lean checked the exact count: **7,507,638 of 8,388,608** residue classes modulo `2^23` meet that condition. This is a bounded first-drop theorem and a demonstration of proof checking; it is not a new Collatz discovery and does not prove that every sequence reaches 1.
