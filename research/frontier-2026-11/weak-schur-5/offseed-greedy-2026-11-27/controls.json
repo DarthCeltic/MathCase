@@ -1,0 +1,39 @@
+{
+  "known_207": {
+    "direct_conflicts": 0,
+    "formal_check": {
+      "n": 207,
+      "admissible_pairs": 10609,
+      "monochromatic": 0,
+      "first_conflict": null,
+      "class_sizes": [
+        42,
+        42,
+        24,
+        49,
+        50
+      ]
+    }
+  },
+  "broken_207": {
+    "direct_conflicts": 18,
+    "formal_check": {
+      "n": 207,
+      "admissible_pairs": 10609,
+      "monochromatic": 18,
+      "first_conflict": [
+        1,
+        40,
+        41,
+        2
+      ],
+      "class_sizes": [
+        41,
+        43,
+        24,
+        49,
+        50
+      ]
+    }
+  }
+}
