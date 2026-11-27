@@ -12,7 +12,7 @@ In a cyclic matrix-product term for T^L, the transition weights contribute v(s_1
 
 ## Reproduce the check
 
-Run python -B transfer_check.py in this folder. It checks the transfer polynomial against direct enumeration for all assignments at lengths 3 through 6, then compares the length-10 polynomial with both independently recorded histograms in the pinned public MathCase receipt density-3x10-public.json. A modified transition exponent is a negative control.
+Run `python -B transfer_check.py` in this folder. It checks the transfer polynomial against direct enumeration for all assignments at lengths 3 through 6, then compares the length-10 polynomial with both independently recorded histograms in the pinned public MathCase receipt `density-3x10-public.json`. A modified transition exponent is a negative control. The command writes a fresh untracked receipt under `evidence/runs/local-result.json`; use `--output path/to/receipt.json` for another location and leave the committed `result.json` unchanged.
 
 The script uses Python exact integers and finite polynomial dictionaries. It performs no network or provider calls. The reference JSON was retrieved from public MathCase at commit 2bce5aa25f3d31020d59ac5bf42cc61b70ef79a3; the SHA-256 is recorded in SHA256SUMS.txt.
 

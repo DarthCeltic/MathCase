@@ -9,7 +9,7 @@
   "exit_code": 0,
   "verified_findings": 0,
   "unverified_findings": 0,
-  "bytes_scanned": 15514,
-  "stderr_sha256": "665ee57b04b230b895477b447c9d2b87b690a7e714c443480a4b4590dfc305c9",
+  "bytes_scanned": 17747,
+  "stderr_sha256": "aff6251cc0989f439915f77d8a795997067a476ee3d7637d1c794d8e71834d14",
   "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 }

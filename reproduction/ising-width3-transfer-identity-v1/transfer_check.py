@@ -5,6 +5,7 @@ import itertools
 import json
 import platform
 import time
+import argparse
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -96,6 +97,14 @@ def normalize(poly: dict[int, int], max_degree: int) -> list[int]:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--output",
+        type=Path,
+        default=HERE / "evidence" / "runs" / "local-result.json",
+        help="write a fresh receipt here instead of changing the committed result.json",
+    )
+    args = parser.parse_args()
     started = time.perf_counter()
     checks = {}
     small = {}
@@ -147,7 +156,8 @@ def main() -> int:
         "provider_spend_usd": 0,
         "claim_boundary": "A finite implementation check of an elementary transfer-matrix identity; finite Ising density-of-states and transfer-matrix methods are established, no novelty claim.",
     }
-    path = HERE / "result.json"
+    path = args.output if args.output.is_absolute() else HERE / args.output
+    path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8", newline="\n")
     print(json.dumps({"status": result["status"], "checks_passed": sum(checks.values()), "checks_total": len(checks), "elapsed_seconds": result["elapsed_seconds"], "result": str(path)}, indent=2))
     return 0 if result["status"] == "PASS" else 1
