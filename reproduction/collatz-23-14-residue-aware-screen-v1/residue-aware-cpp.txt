@@ -1,0 +1,17 @@
+method=explicit parity-mask enumeration with direct coefficient sum and modular inverse
+enumerated_masks_with_h_le_14=7507638
+h=0 max_coefficient=0 worst_mask=0 worst_residue=0 least_n=8388608 worst_c=0 min_margin=70368735789056 PASS
+h=1 max_coefficient=4194304 worst_mask=2097152 worst_residue=2097152 least_n=2097152 worst_c=2097152 min_margin=17592177655808 PASS
+h=2 max_coefficient=10485760 worst_mask=2621440 worst_residue=524288 least_n=524288 worst_c=3670016 min_margin=4398038122496 PASS
+h=3 max_coefficient=19922944 worst_mask=2752512 worst_residue=131072 least_n=131072 worst_c=4849664 min_margin=1099503239168 PASS
+h=4 max_coefficient=34078720 worst_mask=2785280 worst_residue=32768 least_n=32768 worst_c=5734400 min_margin=274869518336 PASS
+h=5 max_coefficient=55312384 worst_mask=2793472 worst_residue=8192 least_n=8192 worst_c=6397952 min_margin=68711088128 PASS
+h=6 max_coefficient=87162880 worst_mask=2795520 worst_residue=2048 least_n=2048 worst_c=6895616 min_margin=17171480576 PASS
+h=7 max_coefficient=134938624 worst_mask=2796032 worst_residue=512 least_n=512 worst_c=7268864 min_margin=4286578688 PASS
+h=8 max_coefficient=206602240 worst_mask=2796160 worst_residue=128 least_n=128 worst_c=7548800 min_margin=1065353216 PASS
+h=9 max_coefficient=314097664 worst_mask=2796192 worst_residue=32 least_n=32 worst_c=7758752 min_margin=260046848 PASS
+h=10 max_coefficient=475340800 worst_mask=2796200 worst_residue=8 least_n=8 worst_c=7916216 min_margin=58720256 PASS
+h=11 max_coefficient=717205504 worst_mask=2796195 worst_residue=3 least_n=3 worst_c=7857167 min_margin=16777216 PASS
+h=12 max_coefficient=1080002560 worst_mask=4927805 worst_residue=105 least_n=105 worst_c=11307559 min_margin=813694976 PASS
+h=13 max_coefficient=1624198144 worst_mask=6698587 worst_residue=123 least_n=123 worst_c=22002079 min_margin=813694976 PASS
+h=14 max_coefficient=2440491520 worst_mask=4540383 worst_residue=159 least_n=159 worst_c=11259865 min_margin=562036736 PASS

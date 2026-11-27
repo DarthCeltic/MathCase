@@ -1,0 +1,151 @@
+{
+  "schema": "mathcase-computational-run-receipt-v1",
+  "run_id": "collatz-23-14-residue-aware-screen-2026-11-27",
+  "date": "2026-11-27",
+  "claim_boundary": "A bounded finite computation supporting an existing Lean-checked result. The full screen is not a Lean proof; no new theorem, novelty, or convergence claim.",
+  "toolchains": {
+    "python": "Python 3.14.7",
+    "cpp": "g++.exe (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+    "lean": "Lean 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release",
+    "lean_binary_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+    "lean_distribution_archive_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a"
+  },
+  "runs": [
+    {
+      "method": "Python split-word enumeration",
+      "command": "python -B independent_split_enumeration.py",
+      "exit_code": 0,
+      "elapsed_ms": 3798,
+      "masks_checked": 7507638,
+      "result_sha256": "6db4bd1b96eeee3617aa769c3cf3e01d91e72594f4a6faf565fb38a27f837784"
+    },
+    {
+      "method": "C++ compilation",
+      "command": "g++ -O3 -std=c++17 exhaustive_residue_aware.cpp -o exhaustive_residue_aware.exe",
+      "exit_code": 0,
+      "elapsed_ms": 3194
+    },
+    {
+      "method": "C++ direct-mask enumeration",
+      "command": "exhaustive_residue_aware.exe",
+      "exit_code": 0,
+      "elapsed_ms": 605,
+      "masks_checked": 7507638,
+      "result_sha256": "e3b4b80d5eca57884d944534ad0b499d86f38e64f6896917ebc6ece6711be5cb"
+    },
+    {
+      "method": "Cross-run and control validation",
+      "command": "python -B verify_experiment.py",
+      "exit_code": 0,
+      "elapsed_ms": 90,
+      "result_sha256": "24b286488ce7841afcf8f2fe8f8bcf1fb1f44c70e28f546e2992c6e0dffb873c"
+    },
+    {
+      "method": "One-command Python/C++ reproduction",
+      "command": "python -B reproduce.py",
+      "exit_code": 0,
+      "elapsed_ms": 5494,
+      "result_sha256": "748f76728e81feacc9c155bb9da247abbf9c46a68c4ed85fc84a74104f1e6887"
+    },
+    {
+      "method": "Lean Core prefix kernel check",
+      "command": "lean LeanPrefixCheck16384Optimized.lean",
+      "exit_code": 0,
+      "elapsed_ms": 289208,
+      "mask_scope": "0 <= mask < 16384",
+      "axioms": [
+        "propext"
+      ],
+      "source_sha256": "9e99b329dd5c7181f97e8e99e44d08e108d75d51dde19690c5983aad1ba47910",
+      "stdout_sha256": "63e81c47a9363c1e512073d31f7cd32c68a0c006831574f02bbe3c8b23acc4f2"
+    },
+    {
+      "method": "Lean Core power and inverse table checks",
+      "command": "lean LeanTableValidation.lean",
+      "exit_code": 0,
+      "elapsed_ms": 1061,
+      "axioms": [],
+      "source_sha256": "cc45478fbae2fe850335e69867dda4df0dbaec8cafc4e7592124d4ea17dd3c48",
+      "stdout_sha256": "c395df9abd2534a1432ad9e568567922df521863739a68c34893018d3e81b4ed"
+    }
+  ],
+  "full_enumeration_result": {
+    "odd_count_h_range": [
+      0,
+      14
+    ],
+    "parity_masks_checked": 7507638,
+    "minimum_accelerated_drop_by_h": [
+      8388607,
+      2097151,
+      524287,
+      131071,
+      32767,
+      8191,
+      2047,
+      511,
+      127,
+      31,
+      7,
+      2,
+      97,
+      97,
+      67
+    ],
+    "independent_implementations_match": true,
+    "damaged_margin_control_rejected": true,
+    "altered_residue_control_rejected": true,
+    "coefficient_only_bound_passes_h": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "coefficient_only_bound_fails_h": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ]
+  },
+  "limitations": [
+    "The residue-to-parity bridge is explained in README but is not a separate Lean theorem in this package.",
+    "The full 7,507,638-mask enumeration is not Lean-checked.",
+    "The 16,384-mask Lean result is a prefix only.",
+    "No independent human review has been completed."
+  ],
+  "source_sha256": {
+    ".gitattributes": "d1250e9edf119e088ee89bf335d2964b594851f1a8c0a46e9a279a39055893b3",
+    "README.md": "5982d7a5e5a0cb4f39e7e3748438dab015f9909a08b526cf2d7cb79ff68b0bad",
+    "derive_envelope.py": "1717452d924a5726ff02b44246995d7a73d1fd06a587136c17594498668b3b06",
+    "exhaustive_envelope.cpp": "894657fe582609f0899c9ed73dd0598f81b0005e4f77953c9822429f354440ba",
+    "exhaustive_residue_aware.cpp": "481bfc64305d4bc069ccb60e0c2bb66fb86ebf045e1e379754a5a7148fab19a5",
+    "independent_split_enumeration.py": "2eddc3f00d0ee99b4ce19a57c029871c86d3a0a669302cb36fe0c8478ca5950e",
+    "verify_experiment.py": "55249d379aefceee1e525b0ba6442c61290eb9fa48da6b17a572c0f07813191d",
+    "reproduce.py": "c623cae33788e0f7f791823f875bff174dd8e7a08ba09dc34741496e0ba28c21",
+    "LeanPrefixCheck16384.lean": "6d5cb67dc96c2dce886ec8003729cf96314000ec2ef72d6f9c0af7044b97de37",
+    "LeanPrefixCheck16384Optimized.lean": "9e99b329dd5c7181f97e8e99e44d08e108d75d51dde19690c5983aad1ba47910",
+    "LeanTableValidation.lean": "cc45478fbae2fe850335e69867dda4df0dbaec8cafc4e7592124d4ea17dd3c48",
+    "failures/README.md": "be11be16e909b0e4dff04888fd8f1ad583016f8fd7d4328b519944cf3e002929",
+    "failures/LeanResidueSmoke_incorrect_residue_recurrence.lean": "acbc0507301f7d7af2b60587c356a65217c86a8f72308969251496738507a031",
+    "failures/LeanResidueSmoke_incorrect_inverse_and_timeout.lean": "c47c60e3f4298d122cac568cf0e2867e595562f59e0ba24f7e3474e2c27790b8",
+    "failures/test_envelope_naive_assumption_failed.py": "2bb9d110e8a8a0b79c685341df5bc3412c8f2c43c8f949bd69189a16dfc903a5"
+  },
+  "output_sha256": {
+    "python-envelope.json": "00e99464ee9c5f816c51f8332ed3aea2f2776897c2d2082b8068ca7e58194ebd",
+    "residue-aware-python.json": "6db4bd1b96eeee3617aa769c3cf3e01d91e72594f4a6faf565fb38a27f837784",
+    "residue-aware-cpp.txt": "e3b4b80d5eca57884d944534ad0b499d86f38e64f6896917ebc6ece6711be5cb",
+    "verification-summary.txt": "24b286488ce7841afcf8f2fe8f8bcf1fb1f44c70e28f546e2992c6e0dffb873c",
+    "lean-prefix-check-16384.log": "43db0efcd4caf13074e4be73d3de6af1ad7e17d2096a05c06e40f6afd2bee65f",
+    "lean-prefix-check-16384-optimized.log": "63e81c47a9363c1e512073d31f7cd32c68a0c006831574f02bbe3c8b23acc4f2",
+    "lean-table-validation.log": "c395df9abd2534a1432ad9e568567922df521863739a68c34893018d3e81b4ed",
+    "reproduction-run.log": "748f76728e81feacc9c155bb9da247abbf9c46a68c4ed85fc84a74104f1e6887"
+  }
+}

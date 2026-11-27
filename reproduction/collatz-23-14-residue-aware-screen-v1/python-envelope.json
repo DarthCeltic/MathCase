@@ -1,0 +1,116 @@
+{
+  "claim_scope": "For n >= 3 with at most 14 odd inputs among the first 23 accelerated steps, the exact ordinary iterate at step 23+h is below n, provided every listed envelope inequality passes.",
+  "j": 23,
+  "h_max": 14,
+  "recurrence": "B(0,0)=0; B(j+1,h)=max(2*B(j,h), 3^(h-1)+2*B(j,h-1)), omitting impossible terms.",
+  "coefficient_formula": "c=sum_{i:eps_i=1} 2^i*3^(sum_{k>i} eps_k)",
+  "short_bruteforce_check": true,
+  "checks": [
+    {
+      "h": 0,
+      "max_coefficient": 0,
+      "descent_threshold_at_n3": 25165821,
+      "strict_margin": 25165821,
+      "passes": true
+    },
+    {
+      "h": 1,
+      "max_coefficient": 4194304,
+      "descent_threshold_at_n3": 25165815,
+      "strict_margin": 20971511,
+      "passes": true
+    },
+    {
+      "h": 2,
+      "max_coefficient": 10485760,
+      "descent_threshold_at_n3": 25165797,
+      "strict_margin": 14680037,
+      "passes": true
+    },
+    {
+      "h": 3,
+      "max_coefficient": 19922944,
+      "descent_threshold_at_n3": 25165743,
+      "strict_margin": 5242799,
+      "passes": true
+    },
+    {
+      "h": 4,
+      "max_coefficient": 34078720,
+      "descent_threshold_at_n3": 25165581,
+      "strict_margin": -8913139,
+      "passes": false
+    },
+    {
+      "h": 5,
+      "max_coefficient": 55312384,
+      "descent_threshold_at_n3": 25165095,
+      "strict_margin": -30147289,
+      "passes": false
+    },
+    {
+      "h": 6,
+      "max_coefficient": 87162880,
+      "descent_threshold_at_n3": 25163637,
+      "strict_margin": -61999243,
+      "passes": false
+    },
+    {
+      "h": 7,
+      "max_coefficient": 134938624,
+      "descent_threshold_at_n3": 25159263,
+      "strict_margin": -109779361,
+      "passes": false
+    },
+    {
+      "h": 8,
+      "max_coefficient": 206602240,
+      "descent_threshold_at_n3": 25146141,
+      "strict_margin": -181456099,
+      "passes": false
+    },
+    {
+      "h": 9,
+      "max_coefficient": 314097664,
+      "descent_threshold_at_n3": 25106775,
+      "strict_margin": -288990889,
+      "passes": false
+    },
+    {
+      "h": 10,
+      "max_coefficient": 475340800,
+      "descent_threshold_at_n3": 24988677,
+      "strict_margin": -450352123,
+      "passes": false
+    },
+    {
+      "h": 11,
+      "max_coefficient": 717205504,
+      "descent_threshold_at_n3": 24634383,
+      "strict_margin": -692571121,
+      "passes": false
+    },
+    {
+      "h": 12,
+      "max_coefficient": 1080002560,
+      "descent_threshold_at_n3": 23571501,
+      "strict_margin": -1056431059,
+      "passes": false
+    },
+    {
+      "h": 13,
+      "max_coefficient": 1624198144,
+      "descent_threshold_at_n3": 20382855,
+      "strict_margin": -1603815289,
+      "passes": false
+    },
+    {
+      "h": 14,
+      "max_coefficient": 2440491520,
+      "descent_threshold_at_n3": 10816917,
+      "strict_margin": -2429674603,
+      "passes": false
+    }
+  ],
+  "all_pass": false
+}

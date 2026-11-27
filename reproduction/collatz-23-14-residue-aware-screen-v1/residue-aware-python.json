@@ -1,0 +1,159 @@
+{
+  "method": "independent 12+11 bit split-word enumeration",
+  "split": 12,
+  "modulus": 8388608,
+  "enumerated_masks_with_h_le_14": 7507638,
+  "checks": [
+    {
+      "h": 0,
+      "max_coefficient": 0,
+      "min_margin": 70368735789056,
+      "worst_mask": 0,
+      "worst_residue": 0,
+      "least_n": 8388608,
+      "worst_coefficient": 0,
+      "words": 1
+    },
+    {
+      "h": 1,
+      "max_coefficient": 4194304,
+      "min_margin": 17592177655808,
+      "worst_mask": 2097152,
+      "worst_residue": 2097152,
+      "least_n": 2097152,
+      "worst_coefficient": 2097152,
+      "words": 23
+    },
+    {
+      "h": 2,
+      "max_coefficient": 10485760,
+      "min_margin": 4398038122496,
+      "worst_mask": 2621440,
+      "worst_residue": 524288,
+      "least_n": 524288,
+      "worst_coefficient": 3670016,
+      "words": 253
+    },
+    {
+      "h": 3,
+      "max_coefficient": 19922944,
+      "min_margin": 1099503239168,
+      "worst_mask": 2752512,
+      "worst_residue": 131072,
+      "least_n": 131072,
+      "worst_coefficient": 4849664,
+      "words": 1771
+    },
+    {
+      "h": 4,
+      "max_coefficient": 34078720,
+      "min_margin": 274869518336,
+      "worst_mask": 2785280,
+      "worst_residue": 32768,
+      "least_n": 32768,
+      "worst_coefficient": 5734400,
+      "words": 8855
+    },
+    {
+      "h": 5,
+      "max_coefficient": 55312384,
+      "min_margin": 68711088128,
+      "worst_mask": 2793472,
+      "worst_residue": 8192,
+      "least_n": 8192,
+      "worst_coefficient": 6397952,
+      "words": 33649
+    },
+    {
+      "h": 6,
+      "max_coefficient": 87162880,
+      "min_margin": 17171480576,
+      "worst_mask": 2795520,
+      "worst_residue": 2048,
+      "least_n": 2048,
+      "worst_coefficient": 6895616,
+      "words": 100947
+    },
+    {
+      "h": 7,
+      "max_coefficient": 134938624,
+      "min_margin": 4286578688,
+      "worst_mask": 2796032,
+      "worst_residue": 512,
+      "least_n": 512,
+      "worst_coefficient": 7268864,
+      "words": 245157
+    },
+    {
+      "h": 8,
+      "max_coefficient": 206602240,
+      "min_margin": 1065353216,
+      "worst_mask": 2796160,
+      "worst_residue": 128,
+      "least_n": 128,
+      "worst_coefficient": 7548800,
+      "words": 490314
+    },
+    {
+      "h": 9,
+      "max_coefficient": 314097664,
+      "min_margin": 260046848,
+      "worst_mask": 2796192,
+      "worst_residue": 32,
+      "least_n": 32,
+      "worst_coefficient": 7758752,
+      "words": 817190
+    },
+    {
+      "h": 10,
+      "max_coefficient": 475340800,
+      "min_margin": 58720256,
+      "worst_mask": 2796200,
+      "worst_residue": 8,
+      "least_n": 8,
+      "worst_coefficient": 7916216,
+      "words": 1144066
+    },
+    {
+      "h": 11,
+      "max_coefficient": 717205504,
+      "min_margin": 16777216,
+      "worst_mask": 2796195,
+      "worst_residue": 3,
+      "least_n": 3,
+      "worst_coefficient": 7857167,
+      "words": 1352078
+    },
+    {
+      "h": 12,
+      "max_coefficient": 1080002560,
+      "min_margin": 813694976,
+      "worst_mask": 4927805,
+      "worst_residue": 105,
+      "least_n": 105,
+      "worst_coefficient": 11307559,
+      "words": 1352078
+    },
+    {
+      "h": 13,
+      "max_coefficient": 1624198144,
+      "min_margin": 813694976,
+      "worst_mask": 6698587,
+      "worst_residue": 123,
+      "least_n": 123,
+      "worst_coefficient": 22002079,
+      "words": 1144066
+    },
+    {
+      "h": 14,
+      "max_coefficient": 2440491520,
+      "min_margin": 562036736,
+      "worst_mask": 4540383,
+      "worst_residue": 159,
+      "least_n": 159,
+      "worst_coefficient": 11259865,
+      "words": 817190
+    }
+  ],
+  "all_residue_aware_margins_positive": true
+}
