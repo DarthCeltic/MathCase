@@ -26,7 +26,7 @@ The Lean source SHA-256 is `831db7bfe3ec643eea8ae02e129d87e926bbdc51186566c9dae4
 
 Earlier records include two setup failures and two timeouts before a theorem verdict. A later runner entrypoint setup failure also stopped before Lean started. Those failures remain preserved in the owner record; the R06 exact-source pass supersedes none of their bytes.
 
-The owner-run exact-source replay above used a warm pinned cache; it is not an independent review. An initial anonymous public-clone attempt stopped before Lean compiled anything: `lake update` exited 0 but changed the manifest root name from `mathcase_ramsey_r66` to `mathcase_coordinate_midpoint`. The nine dependency records did not change, and the strict runner correctly refused to proceed. Its path-free failure record is `evidence/anonymous-public-clone-r1-setup-failure.json`; the original local receipt remains preserved. The package manifest has now been corrected to match `lakefile.toml`. A fresh replay from the corrected public commit is still pending.
+The owner-run exact-source replay above used a warm pinned cache; it is not an independent review. An initial anonymous public-clone attempt stopped before Lean compiled anything: `lake update` exited 0 but changed the manifest root name from `mathcase_ramsey_r66` to `mathcase_coordinate_midpoint`. The nine dependency records did not change, and the strict runner correctly refused to proceed. Its path-free failure record is `evidence/anonymous-public-clone-r1-setup-failure.json`; the original local receipt remains preserved. The package manifest now matches `lakefile.toml`. A second owner-run replay passed from a fresh depth-1 sparse clone of public MathCase main at commit `9556a8863d232256ab6113cc6740d0571d628171`, with the Git credential helper disabled and fresh theorem outputs. The runner, all six stages, and the axiom audit exited 0; the post-update manifest hash matched the pinned hash. See `evidence/anonymous-public-clone-r2-replay.json` for versions, timings, hashes, and stage outputs. This is an author-side public-clone replay, not an independent stranger replay or mathematical review.
 
 ## Reproduce
 
@@ -38,7 +38,7 @@ Optional output location:
 
     python -B replay.py --output-dir PATH
 
-The command is supplied as a public reproduction route but has not yet been independently run from an anonymous checkout. A successful local run is a source replay, not an independent mathematical review. The sample values above are elementary arithmetic illustrations; the universal algebraic identity is the Lean-checked claim.
+The documented command passed in the owner-run fresh public clone recorded above. The result confirms that the package can replay from public source on this host; it does not establish an independent stranger run or mathematical review. The sample values above are elementary arithmetic illustrations; the universal normalized-coordinate identity is the Lean-checked claim.
 
 ## Files
 
@@ -46,5 +46,7 @@ The command is supplied as a public reproduction route but has not yet been inde
 - `Audit.lean` — prints the theorem's axioms.
 - `lakefile.toml`, `lake-manifest.json`, and `lean-toolchain` — pinned Lean/Mathlib project setup.
 - `replay.py` — fresh-directory public replay runner.
-- `evidence/r06-replay-summary.json` — path-free projection of the exact R06 source replay and output hashes.
+- `evidence/r06-replay-summary.json` — path-free projection of the earlier warm-cache exact-source replay.
+- `evidence/anonymous-public-clone-r1-setup-failure.json` — path-free record of the initial metadata setup failure; Lean did not run.
+- `evidence/anonymous-public-clone-r2-replay.json` — path-free receipt for the fresh public-clone replay.
 - `verify_package.py` — offline check of package file hashes and pinned source identity.
