@@ -26,7 +26,7 @@ The Lean source SHA-256 is `831db7bfe3ec643eea8ae02e129d87e926bbdc51186566c9dae4
 
 Earlier records include two setup failures and two timeouts before a theorem verdict. A later runner entrypoint setup failure also stopped before Lean started. Those failures remain preserved in the owner record; the R06 exact-source pass supersedes none of their bytes.
 
-This is an owner-run exact-source replay from a warm pinned cache, not an independent review or a fully cold anonymous build. A clean public replay command is included below for others to try; its result has not yet been independently reproduced from a public clone.
+The owner-run exact-source replay above used a warm pinned cache; it is not an independent review. An initial anonymous public-clone attempt stopped before Lean compiled anything: `lake update` exited 0 but changed the manifest root name from `mathcase_ramsey_r66` to `mathcase_coordinate_midpoint`. The nine dependency records did not change, and the strict runner correctly refused to proceed. Its path-free failure record is `evidence/anonymous-public-clone-r1-setup-failure.json`; the original local receipt remains preserved. The package manifest has now been corrected to match `lakefile.toml`. A fresh replay from the corrected public commit is still pending.
 
 ## Reproduce
 

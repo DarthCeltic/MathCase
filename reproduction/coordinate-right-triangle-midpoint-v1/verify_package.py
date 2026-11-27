@@ -51,6 +51,8 @@ def check() -> list[str]:
         if rel not in sums:
             raise ValueError(f"file not covered by SHA256SUMS: {rel}")
     lock = json.loads((ROOT / "lake-manifest.json").read_text(encoding="utf-8"))
+    if lock.get("name") != "mathcase_coordinate_midpoint":
+        raise ValueError("Lake manifest root project name mismatch")
     mathlib = [entry for entry in lock.get("packages", []) if entry.get("name") == "mathlib"]
     if len(mathlib) != 1 or mathlib[0].get("rev") != "0df444a360eaa60ab8c11dca51a86af692955474":
         raise ValueError("Mathlib lock does not match the pinned source replay")
