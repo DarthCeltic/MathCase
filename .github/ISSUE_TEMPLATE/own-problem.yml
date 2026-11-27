@@ -1,0 +1,41 @@
+name: Report a problem you tried in the lab
+description: Describe your question, what you entered, and what happened.
+title: "Lab use · "
+body:
+  - type: markdown
+    attributes:
+      value: "Reports appear publicly on GitHub. A small public example or a description is enough."
+  - type: textarea
+    id: question
+    attributes:
+      label: What question did you bring?
+      description: What did you hope to find out, and what made this input interesting to you?
+    validations:
+      required: true
+  - type: dropdown
+    id: origin
+    attributes:
+      label: Where did the input come from?
+      options:
+        - I supplied my own problem or data.
+        - I adapted an existing MathCase example.
+        - I replayed a published example.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What happened?
+      description: Give the tool, the input or a shareable subset, the result you saw, and anything that failed. A public receipt or exact error is welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Did you help build this MathCase tool?
+      options:
+        - "No"
+        - "Yes"
+        - Prefer not to say
+    validations:
+      required: true
