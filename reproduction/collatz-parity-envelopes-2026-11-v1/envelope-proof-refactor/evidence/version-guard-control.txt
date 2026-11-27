@@ -1,0 +1,1 @@
+PASS: Lean 4.29.1 was rejected before an output directory was created.

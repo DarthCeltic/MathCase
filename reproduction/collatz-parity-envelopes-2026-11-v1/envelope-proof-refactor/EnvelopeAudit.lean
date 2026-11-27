@@ -1,0 +1,5 @@
+import AtMostFourteen23
+#print axioms MathCase.Collatz.WordBound.scaledEnvelope_step
+#print axioms MathCase.Collatz.WordBound.scaledEnvelope_le_cap
+#print axioms MathCase.Collatz.WordBound.at_most_fourteen_of_twenty_three_descend
+#print axioms MathCase.Collatz.WordBound.counted_at_most_fourteen_families_23

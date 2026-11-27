@@ -1,0 +1,21 @@
+'MathCase.Collatz.WordBound.twelve_of_twenty' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.scaled_upper' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.twenty_twelve_descent' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.lift_residue' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.residue_twelve_of_twenty' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.residueCount_eq_wordCount' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathCase.Collatz.WordBound.count_twelve_of_twenty' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathCase.Collatz.WordBound.counted_progressions_descend' depends on axioms: [propext, Classical.choice, Quot.sound]
+'MathCase.Collatz.WordBound.residue_at_most_fourteen_count_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathCase.Collatz.WordBound.at_most_fourteen_of_twenty_three_descend' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.counted_at_most_fourteen_families_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'MathCase.Collatz.WordBound.scaledEnvelope_step' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.scaledEnvelope_le_cap' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.at_most_fourteen_of_twenty_three_descend' depends on axioms: [propext, Quot.sound]
+'MathCase.Collatz.WordBound.counted_at_most_fourteen_families_23' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]

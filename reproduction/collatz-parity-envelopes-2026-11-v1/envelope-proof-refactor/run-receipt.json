@@ -1,0 +1,105 @@
+{
+  "related_axiom_audits": {
+    "count": "MathCase.Collatz.WordBound.residue_at_most_fourteen_count_23: [Classical.choice, propext, Quot.sound]",
+    "combined": "MathCase.Collatz.WordBound.counted_at_most_fourteen_families_23: [Classical.choice, propext, Quot.sound]"
+  },
+  "status": "PASS",
+  "source_checkout": {
+    "base_commit": "1c172c2e598c4a38ca3de57e9fcf2d1ca99256d2",
+    "mode": "fresh anonymous sparse checkout; candidate package added after checkout",
+    "repository": "DarthCeltic/MathCase"
+  },
+  "run": {
+    "external_spend_usd": 0,
+    "audit_source": "EnvelopeAudit.lean",
+    "audit_output_sha256": "1d47b72a6128f922534be58dc5559b7cbb26f6017fb5dcf111d91d6d6ec9c9ba",
+    "elapsed_seconds": 12.8409942,
+    "external_provider_calls": 0,
+    "compiled_modules": [
+      "WordBound",
+      "WordResidue",
+      "CountWords",
+      "EnvelopeLemma",
+      "AtMostFourteen23"
+    ],
+    "audit_output": "evidence/lean-run.stdout.txt",
+    "command_template": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\replay.ps1 -LeanExe <Lean 4.33.1 lean.exe> -OutDir <new empty directory>",
+    "network_isolation": "Not measured by this run; the Lean Core replay required no external dependencies.",
+    "exit_code": 0,
+    "completed_at_utc": "2026-11-27T17:56:22Z",
+    "version_guard": "The runner rejects a Lean version other than 4.33.1 before creating its output directory; Lean 4.29.1 rejection control passed."
+  },
+  "source_sha256": {
+    "EnvelopeLemma.lean": "5fe0719e5e19a526d1004013737e2650a601f9035efb026011f92643638dc94c",
+    "CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "AtMostFourteen23.original.lean": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+    "EnvelopeAudit.lean": "e12e7dbc3c4ba488403b4a5692cc14171b91ba16fa451394f28cddff2f771848",
+    "AtMostFourteen23.refactored.lean": "7bda1ed6664e71d30c6929b5376701548664853aa1f560059cb0659ffa26f370",
+    "replay.ps1": "5ba82232e545051a562d5f7b5b6f9f7a8be2c85dd68b807a49c2cb5b628092c5"
+  },
+  "proof_structure": {
+    "gap_at_677": 526083,
+    "gap_at_676": -3079556,
+    "finite_small_start_check": "3 <= n < 677 remains unchanged",
+    "new_large_start_branches": 0,
+    "coefficient_gap": "3605639*n - 2440491520",
+    "old_large_start_branches": 15
+  },
+  "axiom_audit": {
+    "target": "MathCase.Collatz.WordBound.at_most_fourteen_of_twenty_three_descend",
+    "native_decide": false,
+    "sorryAx": false,
+    "axioms": [
+      "propext",
+      "Quot.sound"
+    ]
+  },
+  "target_scope": "Existing M0-reviewed 23/14 theorem; the theorem statement and residue count are unchanged. This package changes only the large-start proof structure.",
+  "schema": "mathcase-collatz-envelope-proof-refactor-run-v1",
+  "result": "Lean Core source replay completed successfully; fresh OLEAN outputs were produced by this run.",
+  "lean": {
+    "binary_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+    "platform": "x86_64-w64-windows-gnu",
+    "version": "4.33.1",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "distribution_archive_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a"
+  },
+  "statement_packet_sha256": "cab441ca8079f71a6c9dbaadcea53a8e38cc8d4e9ee68f18f874f6bf39fb66bb",
+  "fresh_outputs": {
+    "no_preexisting_olean_files": true,
+    "olean_files": {
+      "WordResidue.olean": {
+        "sha256": "9bb543de9bd5da88a51fba7d8057b904349d10cd5c768f8bbfa4e4a8de7ae007",
+        "bytes": 204072
+      },
+      "AtMostFourteen23.olean": {
+        "sha256": "228e077c8ffca70547706818baf89f3c64ba219617a116b8d427a09dc4878515",
+        "bytes": 118896
+      },
+      "CountWords.olean": {
+        "sha256": "a8d1c83c4230c8f501f38322815f4451cf0290e6bff2bede972c2bfc34dd24df",
+        "bytes": 344464
+      },
+      "WordBound.olean": {
+        "sha256": "8ca3ff4172048d00af6f97e305f564ce4ff7dc17412a3bc946a841b19b976d30",
+        "bytes": 373648
+      },
+      "EnvelopeLemma.olean": {
+        "sha256": "f665259a8dee54956937e92b3c993a6644a211c9d85b3785148b451f9dc6c462",
+        "bytes": 166472
+      }
+    }
+  },
+  "limits": [
+    "No new theorem or target statement.",
+    "No reduction in the 7,507,638 qualifying residue classes or the finite small-start check.",
+    "No global Collatz convergence claim.",
+    "No novelty or priority claim."
+  ],
+  "m0_status": "Statement fidelity reviewed; no new M0 review is claimed.",
+  "qualifying_residue_count": 7507638,
+  "residue_space_size": 8388608,
+  "exact_target_statement": "For every n : Nat, if 3 <= n and odds n 23 <= 14, then ordinaryIter n (23 + odds n 23) < n."
+}
