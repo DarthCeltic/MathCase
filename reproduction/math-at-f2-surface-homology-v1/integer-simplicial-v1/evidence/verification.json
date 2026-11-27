@@ -1,0 +1,52 @@
+{
+  "agreement": "PASS: exact ranks, H1 free ranks, H2 ranks, and torsion orders agree for all three meshes.",
+  "format": "mathcase.integer-simplicial-surface-homology-verification.v1",
+  "generated_at_utc": "2026-11-27T08:33:33.728365+00:00",
+  "negative_controls": {
+    "independent_disconnected_mesh": {
+      "reason": "two-disjoint-spheres: 1-skeleton is disconnected",
+      "status": "REJECTED"
+    },
+    "independent_missing_face": {
+      "reason": "damaged-projective-plane: every edge must occur in exactly two faces",
+      "status": "REJECTED"
+    },
+    "independent_vertex_wedge": {
+      "reason": "two-spheres-wedged-at-one-vertex: link of vertex 0 is disconnected",
+      "status": "REJECTED"
+    },
+    "primary_disconnected_mesh": {
+      "reason": "two-disjoint-spheres: 1-skeleton is disconnected",
+      "status": "REJECTED"
+    },
+    "primary_missing_face": {
+      "reason": "damaged-projective-plane: an edge does not occur in exactly two faces",
+      "status": "REJECTED"
+    },
+    "primary_vertex_wedge": {
+      "reason": "two-spheres-wedged-at-one-vertex: link of vertex 0 is disconnected",
+      "status": "REJECTED"
+    },
+    "wrong_face_boundary_sign": {
+      "reason": "\u22021\u22022 was nonzero",
+      "status": "REJECTED"
+    }
+  },
+  "outputs": {
+    "independent_receipt_sha256": "30c186ae45a0166db63f66fd2e223c82bc0ca6487eda4f9f0a3651415f4d8ee3",
+    "independent_result_sha256": "dd6eafd8d3a27e1ca0e292850f6b7b3d7bfd6774b0409eaebc255d0692984c30",
+    "integer_homology_receipt_sha256": "26d2ca16b9b34f8b6d795b15cd38c21e9e3a0882952519aec828a2a4d01f4186",
+    "integer_homology_result_sha256": "03235d8234819dcfe3a92f0fae251bb76b5661e63e3d9214b8d0d9ac50c6aca5"
+  },
+  "python_version": "3.14.7",
+  "scope": "Three explicit triangulated meshes only; exact Python arithmetic, not Lean and not a general topology prover.",
+  "sources": {
+    "independent_minors.py": "67ec3cc868ca225965ec77ceaabc6358c41e3be38d0b43bdb83c5ba01bdaf0f4",
+    "integer_homology.py": "3734c76e56a6e741c71e809b37c9d3cdcc9d8c11114826295f049863272ce276",
+    "parent_mesh_source": "d0c871b2e94d3cc6dc03e8d94ed207601b13275a7c6c7358442e92a908f42b1b",
+    "test_integer_homology.py": "9b70e0760b67cb16eccc420f11cd12ee404a99072e50ef23440782c8df6eb202",
+    "verify_hashes.py": "87202ad767ceaa7b860cef04a324dd1c71ba8db626dc19938f42159a0fa5c829",
+    "verify_package.py": "a26e8aeb38faf7cc4e5a2714e40c15388354c659783c88cb3e7b433674e3fe12"
+  },
+  "status": "PASS"
+}

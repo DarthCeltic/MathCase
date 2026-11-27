@@ -35,4 +35,4 @@ This is an exact computation for these three finite complexes. It is not a gener
 
 ## Integer coefficients and torsion
 
-The [integer-cell-model companion](integer-cw-v1/README.md) works through the sphere, real projective plane, torus, and Klein bottle using their standard one-vertex cell descriptions. It makes the `Z/2` torsion visible, which the neighboring `F₂` Betti-number table does not distinguish. The two packages use different finite models and coefficient systems; neither is a general topology prover.
+The [integer simplicial companion](integer-simplicial-v1/README.md) reuses these same three triangle lists over `Z`; an independent exact rank/minor calculation confirms the Smith-normal-form results. In particular, the projective-plane mesh has `H1 = Z/2Z` over the integers, while its `F₂` first Betti number is 1. The separate [integer-cell-model companion](integer-cw-v1/README.md) checks four standard CW models, including the Klein bottle. These are finite calculations, not a general topology prover.

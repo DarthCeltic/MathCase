@@ -1,0 +1,113 @@
+{
+  "format": "mathcase.integer-simplicial-surface-homology-independent-receipt.v1",
+  "python_version": "3.14.7",
+  "result": {
+    "elapsed_seconds": 0.503959,
+    "format": "mathcase.integer-simplicial-surface-homology-independent.v1",
+    "scope": "Independent arithmetic cross-check for the same three explicit meshes.",
+    "surfaces": {
+      "projective_plane_six_vertex": {
+        "boundary_shape": [
+          15,
+          10
+        ],
+        "closed_surface_input_checks": {
+          "connected_1_skeleton": true,
+          "each_edge_in_two_faces": true,
+          "each_vertex_link_is_a_cycle": true,
+          "integer_boundary_squared_zero": true
+        },
+        "cycle_coordinate_shape": [
+          10,
+          10
+        ],
+        "homology_over_F2_betti": [
+          1,
+          1,
+          1
+        ],
+        "homology_over_Z": {
+          "H0_free_rank": 1,
+          "H1_free_rank": 0,
+          "H1_torsion_order": 2,
+          "H2_free_rank": 0
+        },
+        "independent_method": "Fraction Gaussian rank plus gcd of all maximal minors via Bareiss determinants",
+        "number_of_maximal_minors_checked": 1,
+        "rank_over_Q": 10,
+        "surface": "projective_plane_six_vertex",
+        "torsion_order_from_determinantal_divisor": 2
+      },
+      "sphere_tetrahedron": {
+        "boundary_shape": [
+          6,
+          4
+        ],
+        "closed_surface_input_checks": {
+          "connected_1_skeleton": true,
+          "each_edge_in_two_faces": true,
+          "each_vertex_link_is_a_cycle": true,
+          "integer_boundary_squared_zero": true
+        },
+        "cycle_coordinate_shape": [
+          3,
+          4
+        ],
+        "homology_over_F2_betti": [
+          1,
+          0,
+          1
+        ],
+        "homology_over_Z": {
+          "H0_free_rank": 1,
+          "H1_free_rank": 0,
+          "H1_torsion_order": 1,
+          "H2_free_rank": 1
+        },
+        "independent_method": "Fraction Gaussian rank plus gcd of all maximal minors via Bareiss determinants",
+        "number_of_maximal_minors_checked": 4,
+        "rank_over_Q": 3,
+        "surface": "sphere_tetrahedron",
+        "torsion_order_from_determinantal_divisor": 1
+      },
+      "torus_periodic_3x3": {
+        "boundary_shape": [
+          27,
+          18
+        ],
+        "closed_surface_input_checks": {
+          "connected_1_skeleton": true,
+          "each_edge_in_two_faces": true,
+          "each_vertex_link_is_a_cycle": true,
+          "integer_boundary_squared_zero": true
+        },
+        "cycle_coordinate_shape": [
+          19,
+          18
+        ],
+        "homology_over_F2_betti": [
+          1,
+          2,
+          1
+        ],
+        "homology_over_Z": {
+          "H0_free_rank": 1,
+          "H1_free_rank": 2,
+          "H1_torsion_order": 1,
+          "H2_free_rank": 1
+        },
+        "independent_method": "Fraction Gaussian rank plus gcd of all maximal minors via Bareiss determinants",
+        "number_of_maximal_minors_checked": 3078,
+        "rank_over_Q": 17,
+        "surface": "torus_periodic_3x3",
+        "torsion_order_from_determinantal_divisor": 1
+      }
+    }
+  },
+  "result_sha256": "dd6eafd8d3a27e1ca0e292850f6b7b3d7bfd6774b0409eaebc255d0692984c30",
+  "source_sha256": {
+    "independent_minors.py": "67ec3cc868ca225965ec77ceaabc6358c41e3be38d0b43bdb83c5ba01bdaf0f4",
+    "mesh_source_homology.py": "d0c871b2e94d3cc6dc03e8d94ed207601b13275a7c6c7358442e92a908f42b1b"
+  },
+  "status": "PASS"
+}

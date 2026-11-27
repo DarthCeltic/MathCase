@@ -1,0 +1,171 @@
+{
+  "format": "mathcase.integer-simplicial-surface-homology-receipt.v1",
+  "python_version": "3.14.7",
+  "result": {
+    "format": "mathcase.integer-simplicial-surface-homology.v1",
+    "scope": "Exact integer homology for the three explicit meshes imported from the adjacent F2 case.",
+    "surfaces": {
+      "projective_plane_six_vertex": {
+        "checks": {
+          "connected_1_skeleton": true,
+          "each_edge_in_two_faces": true,
+          "each_vertex_link_is_a_cycle": true,
+          "integer_boundary_squared_zero": true,
+          "smith_divisibility_chain": true
+        },
+        "cycle_rank_from_spanning_tree": 10,
+        "face_boundary_presentation_shape": [
+          10,
+          10
+        ],
+        "homology_over_F2_betti": [
+          1,
+          1,
+          1
+        ],
+        "homology_over_Z": {
+          "H0": {
+            "free_rank": 1,
+            "torsion": []
+          },
+          "H1": {
+            "free_rank": 0,
+            "torsion_cyclic_orders": [
+              2
+            ]
+          },
+          "H2": {
+            "free_rank": 0,
+            "torsion": []
+          }
+        },
+        "simplices": {
+          "edges": 15,
+          "faces": 10,
+          "vertices": 6
+        },
+        "smith_factors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        "surface": "projective_plane_six_vertex"
+      },
+      "sphere_tetrahedron": {
+        "checks": {
+          "connected_1_skeleton": true,
+          "each_edge_in_two_faces": true,
+          "each_vertex_link_is_a_cycle": true,
+          "integer_boundary_squared_zero": true,
+          "smith_divisibility_chain": true
+        },
+        "cycle_rank_from_spanning_tree": 3,
+        "face_boundary_presentation_shape": [
+          3,
+          4
+        ],
+        "homology_over_F2_betti": [
+          1,
+          0,
+          1
+        ],
+        "homology_over_Z": {
+          "H0": {
+            "free_rank": 1,
+            "torsion": []
+          },
+          "H1": {
+            "free_rank": 0,
+            "torsion_cyclic_orders": []
+          },
+          "H2": {
+            "free_rank": 1,
+            "torsion": []
+          }
+        },
+        "simplices": {
+          "edges": 6,
+          "faces": 4,
+          "vertices": 4
+        },
+        "smith_factors": [
+          1,
+          1,
+          1
+        ],
+        "surface": "sphere_tetrahedron"
+      },
+      "torus_periodic_3x3": {
+        "checks": {
+          "connected_1_skeleton": true,
+          "each_edge_in_two_faces": true,
+          "each_vertex_link_is_a_cycle": true,
+          "integer_boundary_squared_zero": true,
+          "smith_divisibility_chain": true
+        },
+        "cycle_rank_from_spanning_tree": 19,
+        "face_boundary_presentation_shape": [
+          19,
+          18
+        ],
+        "homology_over_F2_betti": [
+          1,
+          2,
+          1
+        ],
+        "homology_over_Z": {
+          "H0": {
+            "free_rank": 1,
+            "torsion": []
+          },
+          "H1": {
+            "free_rank": 2,
+            "torsion_cyclic_orders": []
+          },
+          "H2": {
+            "free_rank": 1,
+            "torsion": []
+          }
+        },
+        "simplices": {
+          "edges": 27,
+          "faces": 18,
+          "vertices": 9
+        },
+        "smith_factors": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "surface": "torus_periodic_3x3"
+      }
+    }
+  },
+  "result_sha256": "03235d8234819dcfe3a92f0fae251bb76b5661e63e3d9214b8d0d9ac50c6aca5",
+  "source_sha256": {
+    "integer_homology.py": "3734c76e56a6e741c71e809b37c9d3cdcc9d8c11114826295f049863272ce276",
+    "mesh_source_homology.py": "d0c871b2e94d3cc6dc03e8d94ed207601b13275a7c6c7358442e92a908f42b1b"
+  },
+  "status": "PASS"
+}

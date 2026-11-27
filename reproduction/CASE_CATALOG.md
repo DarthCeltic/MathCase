@@ -43,6 +43,7 @@ For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second 
 - **Ramsey and Erdős–Straus:** use the [human work ledger](https://darthceltic.github.io/mathcase/work.html#ramsey) for the known Ramsey witness and finite computations, and the [Erdős–Straus section](https://darthceltic.github.io/mathcase/work.html#egyptian) for the bounded search and one identity family. Neither page claims to solve the corresponding open problem.
 
 - **F₂ homology of triangulated surfaces:** `python -B reproduction/math-at-f2-surface-homology-v1/homology.py` checks three explicit meshes; see the [F₂ case notes](math-at-f2-surface-homology-v1/README.md).
+- **Integer homology on the same meshes:** `python -B reproduction/math-at-f2-surface-homology-v1/integer-simplicial-v1/verify_package.py --out path/to/fresh-output` runs Smith reduction and an independent exact rank/minor check for the sphere, torus, and projective plane; see the [worked comparison](math-at-f2-surface-homology-v1/integer-simplicial-v1/README.md). It exposes `H1 = Z/2Z` for the projective plane and is a finite Python calculation, not a Lean proof.
 - **Integer homology and torsion:** run the [four-model cellular calculation](math-at-f2-surface-homology-v1/integer-cw-v1/README.md). It checks exact arithmetic for the listed cell models; it is not a Lean proof or a claim about arbitrary surfaces.
 
 ## Bring a theorem of your own
