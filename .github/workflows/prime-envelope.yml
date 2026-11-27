@@ -71,6 +71,11 @@ jobs:
           import json, sys
           from pathlib import Path
           actual, expected = (json.loads(Path(name).read_text()) for name in sys.argv[1:])
+          if "run_metadata" in expected:
+              print("Hosted replay metadata:", json.dumps(actual["run_metadata"], sort_keys=True))
+              for field in ("generated_utc", "command", "python_version"):
+                  del actual["run_metadata"][field]
+                  del expected["run_metadata"][field]
           if actual != expected:
               raise SystemExit(f"Calculated prime sweep differs from {sys.argv[2]}")
           print(json.dumps(actual["counts"], indent=2))
