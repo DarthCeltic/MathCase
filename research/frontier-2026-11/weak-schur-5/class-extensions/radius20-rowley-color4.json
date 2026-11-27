@@ -1,0 +1,28 @@
+{
+  "schema": "mathcase-weak-schur-radius-single-v1",
+  "seed": "rowley",
+  "source_url": "https://raw.githubusercontent.com/oeis/oeisdata/aa67dedbb4e7fbefd9837e649293f8bdb09e5e69/seq/A072/A072842.seq",
+  "source_sha256": "dadba1c3277c9b360693b23f9309174c92128002785b2752d916b34db4c61e63",
+  "appended_color": 4,
+  "radius": 20,
+  "node_cap": 1500000,
+  "result": {
+    "color": 4,
+    "nodes": 156241,
+    "status": "UNSAT_WITHIN_RADIUS"
+  },
+  "seed_independent_check": {
+    "n": 207,
+    "admissible_pairs": 10609,
+    "monochromatic": 0,
+    "first_conflict": null,
+    "class_sizes": [
+      42,
+      42,
+      24,
+      49,
+      50
+    ]
+  },
+  "claim_limit": "Finite Hamming-ball query only; no unrestricted 208 conclusion."
+}
