@@ -1,0 +1,70 @@
+{
+  "checker_sha256": "3f8d79ae0caebbf38a4d7992afd7210d2a93b11157d8f0b543272c190708d0c2",
+  "checkout_head": "288b0f4b6bae28db0d4b2feb6dbcab3dd4022f8b",
+  "controls": {
+    "24_distinct_edges": true,
+    "all_choose_12_5_subsets_counted": true,
+    "damaged_log_concavity_control_rejected": true,
+    "full_even_bond_target_profile_not_log_concave": true,
+    "full_profile_matches_pinned_joint_receipt": true,
+    "log_concavity_positive_control_passed": true,
+    "one_count_mutation_rejected": true
+  },
+  "limits": [
+    "One exact finite counterexample on the periodic 4x3 torus only.",
+    "No general statement about other widths, lengths, or thermodynamic limits.",
+    "No Lean proof, novelty claim, or literature-priority claim."
+  ],
+  "method": "Enumerate all choose(12,5)=792 subsets of five + vertices and count cut edges in the explicit 24-edge periodic 4x3 grid.",
+  "nonzero_profile_by_broken_bonds": [
+    [
+      8,
+      24
+    ],
+    [
+      10,
+      132
+    ],
+    [
+      12,
+      276
+    ],
+    [
+      14,
+      276
+    ],
+    [
+      16,
+      60
+    ],
+    [
+      18,
+      24
+    ]
+  ],
+  "profile_definition": "c_b is the number of configurations with exactly five + spins and exactly b disagreeing edges; test log-concavity on the naturally spaced even-b sequence.",
+  "python": "3.14.7",
+  "reference_git_blob": "aae37926c003c157f4272d59a98398f3800e5af5",
+  "reference_origin_commit": "288b0f4b6bae28db0d4b2feb6dbcab3dd4022f8b",
+  "reference_path": "reproduction/ising-width4-joint-density-v1/evidence/runs/final-clean-replay-2026-11-27/receipt.json",
+  "reference_sha256": "4891bbea34851ce21a270c5d2626c3691fbdfa440a6cf5a698d3a341e19829ab",
+  "runtime_seconds": 0.17773,
+  "schema": "mathcase-ising-4x3-fixed-magnetization-logconcavity-counterexample-v1",
+  "status": "PASS_EXACT_FINITE_COUNTEREXAMPLE",
+  "strict_counterexample": {
+    "b_values": [
+      14,
+      16,
+      18
+    ],
+    "conclusion": "This finite fixed-magnetization energy profile is not log-concave.",
+    "counts": [
+      276,
+      60,
+      24
+    ],
+    "inequality": "3600 < 6624",
+    "middle_squared": 3600,
+    "neighbor_product": 6624
+  }
+}
