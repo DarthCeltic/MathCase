@@ -1,0 +1,72 @@
+{
+  "schema": "mathcase-m20-public-source-native-execution-v1",
+  "result": "PASS",
+  "run_started_utc": "2026-11-26T16:39:16.531173-05:00",
+  "run_finished_utc": "2026-11-26T20:31:11.210099-05:00",
+  "elapsed_seconds": 13914.679,
+  "exit_code": 0,
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean": {
+    "version": "4.33.1",
+    "commit": "819816b2e0a3bf405af45ae5c7af2491d8f5bee6",
+    "distribution_url": "https://github.com/leanprover/lean4/releases/download/v4.33.1/lean-4.33.1-windows.tar.zst",
+    "distribution_bytes": 583557483,
+    "distribution_sha256": "f63029c0e1e6daed0f4807481b6fcd8f8b77fbce6d63f205c7f9191072387a7a",
+    "lean_executable_sha256": "af49bacfabaa1fea71332ca0feae0fa1a60912219d5902291adc79f905bffb8d",
+    "lake_executable_sha256": "565c3976275d79e104421014b6229f4fcf4a8c8edfe164a43b344c91af6f496c"
+  },
+  "python": {
+    "version": "3.14.7",
+    "executable_sha256": "4942b86a6597e5aee0128daa00050ed79bc21f6e709a78eb19cbfeb0c2f39ac9"
+  },
+  "runner_sha256": "100b7b827669578a93e9a6bb41d981f107e3d423d05c600252a427caacdb8b37",
+  "bootstrap_script_sha256": "667b4e864609db4d8273f8529c1f230ce729bc693b107a0b4bbaa9f5a078f4d0",
+  "bootstrap_receipt_sha256": "b15541a867538243bd408fb95d43540301b41e4991400b52325a196411a90485",
+  "bootstrap": {
+    "status": "PASS",
+    "elapsed_seconds": 357.291,
+    "lake_manifest_sha256": "1009a101f52a9d5d8ca57666f0256bae91abdb693e0f27b5a4622cffcc38cf03",
+    "cache_modules": [
+      "Mathlib.Data.Nat.Prime.Basic"
+    ],
+    "cache_exit_code": 0
+  },
+  "command": "python -B replay_original.py <workspace> <fresh-output> --lake <Lean 4.33.1>/bin/lake.exe --timeout 1800",
+  "execution_limits": {
+    "cpu_count": 1,
+    "timeout_seconds_per_module": 1800,
+    "runner_default_timeout_seconds": 600,
+    "network": "not isolated at OS level during replay"
+  },
+  "results": {
+    "staged_lean_sources": 386,
+    "compiled_modules": 363,
+    "fresh_olean_hashes_matching_nov18_phase2": 363,
+    "fresh_olean_hashes_matching_older_original_container": 0,
+    "axiom_groups": 23,
+    "theorem_axiom_queries": 4262,
+    "axiom_union": [
+      "propext",
+      "Quot.sound"
+    ],
+    "sorryAx": false,
+    "source_sorry_hits": [],
+    "source_native_decide_hits": [],
+    "pinned_mathlib_oleans": 346,
+    "pinned_mathlib_oleans_matching": 346
+  },
+  "limitations": [
+    "Author-side native Windows replay from public pinned sources; not an independent stranger reproduction.",
+    "Public dependencies were prepared before replay. The replay was not recorded as OS-level network-isolated.",
+    "The bounded theorem is not global Collatz convergence and is not claimed as new.",
+    "The older original-container OLEAN manifest did not match; the November 18 phase-2 output manifest matched all 363 modules."
+  ],
+  "artifact_sha256": {
+    "status.json": "5acb9a580bdbccf71587e4c80376fc98ba32c24b42a98ba686da067f306bd777",
+    "stages.jsonl": "8b71abfa7ec3b43075c7f2106bfc284a6f91e73bdd324019627ee3bb023c6cc6",
+    "artifact-audit.json": "79b0c206f1e93b74df76c492c4e3e19436a1f22b8213445704479a893fe77676",
+    "bootstrap-receipt.json": "b15541a867538243bd408fb95d43540301b41e4991400b52325a196411a90485",
+    "logs.zip": "e926191bf4e89ddb7141bc032cc47872ba47c3840bcdbdb57d636513383a39ad"
+  }
+}

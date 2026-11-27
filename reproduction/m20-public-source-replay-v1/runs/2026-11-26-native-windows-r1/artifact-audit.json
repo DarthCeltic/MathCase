@@ -1,0 +1,57 @@
+{
+  "schema": "mathcase-m20-posthoc-artifact-audit-v1",
+  "audit_status": "PASS",
+  "audit_kind": "author-side read-only artifact rehash; not a fresh Lean build",
+  "audited_utc": "2026-11-27T01:32:01.161593+00:00",
+  "run_reported_status": "PASS",
+  "run_started_utc": "2026-11-26T21:39:16.531173+00:00",
+  "run_finished_utc": "2026-11-27T01:31:11.210099+00:00",
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474",
+  "lean_toolchain": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "runner_sha256": "100b7b827669578a93e9a6bb41d981f107e3d423d05c600252a427caacdb8b37",
+  "bootstrap_script_sha256": "667b4e864609db4d8273f8529c1f230ce729bc693b107a0b4bbaa9f5a078f4d0",
+  "bootstrap_receipt_sha256": "b15541a867538243bd408fb95d43540301b41e4991400b52325a196411a90485",
+  "timeout_seconds_per_stage": 1800,
+  "pinned_inputs": {
+    "source_files": 386,
+    "compile_modules": 363,
+    "axiom_groups": 23,
+    "axiom_queries": 4262,
+    "sorryAx_queries": 0
+  },
+  "axiom_names": [
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_occurrences": {
+    "Quot.sound": 4262,
+    "propext": 4262
+  },
+  "source_controls": {
+    "native_decide_hits": [],
+    "sorry_hits": []
+  },
+  "rehash_results": {
+    "staged_sources": 386,
+    "staged_logs": 772,
+    "compiled_oleans": 363,
+    "compiled_oleans_matching_phase2": 363,
+    "compiled_oleans_matching_original_container": 0,
+    "historical_mathlib_oleans": 346,
+    "historical_mathlib_oleans_matching": 346
+  },
+  "file_sha256": {
+    "saved_status.json": "5acb9a580bdbccf71587e4c80376fc98ba32c24b42a98ba686da067f306bd777",
+    "saved_stages.jsonl": "8b71abfa7ec3b43075c7f2106bfc284a6f91e73bdd324019627ee3bb023c6cc6",
+    "compile_records.tsv": "f18fcf6fa13df3308a31b13dcc067556a6c77a1de27cd1fffe5bdad298687036",
+    "axiom_records.tsv": "f64f25c8bb87daf75679188515f10fa541c540d458bcb51a0bbcd3fb12b341aa",
+    "historical_mathlib_inventory.sha256": "55431285c8f0d3e71a18991f70c010b411c12f1e138f2e7739adad9cc94c9e69",
+    "auditor_script.py": "ecc0e67ff05781ff28089c6fd6723705f203d654cc4753e6f02b635e5120562d"
+  },
+  "runner_sha256_bound": true,
+  "limitations": [
+    "This read-only audit rehashed saved source, stdout, stderr, OLEAN, and dependency files against pinned manifests; it did not rerun Lean.",
+    "This author-side artifact audit is not an independent stranger reproduction."
+  ]
+}

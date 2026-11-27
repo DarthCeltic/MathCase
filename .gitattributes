@@ -86,3 +86,5 @@ reproduction/coordinate-right-triangle-midpoint-v1/evidence/*.txt -text -eol whi
 # Keep the published graph explanation readable in diffs while leaving its hash-pinned evidence byte-exact.
 reproduction/m15-m20-r2/evidence/knowledge-graph/public-slice-v1/README.md text eol=lf diff
 reproduction/m15-m20-r2/PACKAGE_INVENTORY.json text eol=lf diff
+# Preserve the native M20 replay evidence exactly as listed in its SHA256SUMS.
+reproduction/m20-public-source-replay-v1/runs/2026-11-26-native-windows-r1/** -text -eol -diff
