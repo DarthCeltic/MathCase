@@ -47,6 +47,7 @@ research/number-theory/egyptian-fractions/** -text -eol -diff
 research/number-theory/egyptian-fractions/README.md -text -eol diff
 research/number-theory/egyptian-fractions/PUBLIC_DATA_NOTES.md -text -eol diff
 research/number-theory/egyptian-fractions/prime-envelope-v1/** -text -eol diff
+research/number-theory/egyptian-fractions/centered-window-v1/** text eol=lf diff
 research/number-theory/egyptian-fractions/campaign-v9-10m-audit-v1/*.md -text -eol diff
 scripts/*egyptian_fraction*.py -text -eol whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
 reproduction/egyptian-fractions-v9/** -text -eol -diff

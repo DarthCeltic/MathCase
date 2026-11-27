@@ -1,0 +1,70 @@
+{
+  "centered_window_domain": "p prime >= 43 with B >= 16; smaller B counted separately and excluded",
+  "classification": "FINITE_CHECKS_ONLY_NOT_A_PROOF_OR_UNBOUNDED_CLAIM",
+  "counts": {
+    "additional_nonempty_windows_over_first_band": 2802,
+    "all_primes_43_to_limit": 78485,
+    "all_size_gate_center_entries": 8790,
+    "all_size_gate_multiple_triple_primes": 389,
+    "center_formula_matches": 78357,
+    "certified_B_at_least_16": 78357,
+    "direct_xy_primes": 162,
+    "divisor_enumerations": 78357,
+    "excluded_B_below_16": 128,
+    "excluded_B_below_16_floor_hits": 7,
+    "first_band_nonempty_windows": 1495,
+    "nonempty_certified_windows": 4297,
+    "second_triple_at_width_equality_primes": 1,
+    "size_gate_widths_checked": 10515727,
+    "unique_triple_windows": 4297
+  },
+  "limitations": [
+    "divisor enumeration checks the finite algebraic parameterization through 4p+1",
+    "direct x,y enumeration is an independent check only through the requested cutoff",
+    "the sweep does not establish Erd\u0151s-Straus for primes outside each tested cap"
+  ],
+  "maximal_slack_definition": "largest s >= 0 satisfying D(B+s)<2p, 4(B+s)-1<p, and s(s-7)<8B-2",
+  "prime_range": [
+    43,
+    1000000
+  ],
+  "run_metadata": {
+    "checker_sha256": "9b2b524af9cb579a649b32882a9264dcf227f92c7a1def3c47b63617af249da5",
+    "command": "python -B research/number-theory/egyptian-fractions/centered-window-v1/verify.py --limit 1000000 --direct-through 2000 --output research/number-theory/egyptian-fractions/centered-window-v1/verification.json",
+    "generated_utc": "2026-11-27T06:18:31.908368+00:00",
+    "python_version": "3.14.7"
+  },
+  "sharp_boundary_example": {
+    "B": 80,
+    "centers": [
+      80,
+      84
+    ],
+    "p": 25121,
+    "s": 29,
+    "triples": [
+      [
+        6320,
+        1984559,
+        2009680
+      ],
+      [
+        6322,
+        1457018,
+        2738189
+      ]
+    ]
+  },
+  "slack_comparison_to_first_band": {
+    "centered_s_strictly_larger_count": 78357,
+    "first_band_max_s": "floor(sqrt(B))-1",
+    "largest_slack_gain": 45,
+    "maximum_centered_s": 66,
+    "mean_centered_max_s": 52.83776816366119,
+    "mean_first_band_max_s": 16.14671312071672,
+    "same_s_count": 0,
+    "smaller_s_count": 0,
+    "sum_centered_max_s": 4140209,
+    "sum_first_band_max_s": 1265208
+  }
+}

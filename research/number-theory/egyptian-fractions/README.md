@@ -39,3 +39,10 @@ This campaign reports finite witnesses for the stated factor-conditioned candida
 Provider/model/search API calls: zero. GPU: unused. External spend: $0.
 
 For the one historical range-cap failure whose stderr transcript contained a local absolute path, the public copy preserves the error and stack shape while omitting only that environment-specific path. The source/public hashes and handling are recorded in `PUBLIC_DATA_NOTES.md`.
+
+## Separate prime-denominator window result
+
+The independent [`centered-window-v1`](centered-window-v1/README.md) package
+studies distinct triples for prime `p` near the least possible largest
+denominator. Its exact centered classification and strict uniqueness bound
+are separate from the bounded residual witness campaign summarized above.
