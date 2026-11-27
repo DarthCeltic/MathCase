@@ -1,0 +1,12 @@
+{
+  "schema": "mathcase-m20-replay-failure-projection-v1",
+  "status": "FAILED_DURING_STATUS_PUBLICATION",
+  "stage": "M20Shard038",
+  "completed_compiles": 134,
+  "completed_audits": 0,
+  "completed_queries": 0,
+  "diagnosis": "Windows denied the runner's atomic progress-status replacement; no Lean exit failure was recorded at that stage.",
+  "raw_failure_status_sha256": "44626508e50275ff61968d9b4c2ed3766156d14290ef13170c4ed5902f19f49f",
+  "source_commit": "17174a4a6311eb2e32556d9e4fb38255290a36be",
+  "mathlib_commit": "0df444a360eaa60ab8c11dca51a86af692955474"
+}
