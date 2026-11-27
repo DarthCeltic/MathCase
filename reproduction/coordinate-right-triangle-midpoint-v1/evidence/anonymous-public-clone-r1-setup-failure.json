@@ -1,0 +1,49 @@
+{
+  "schema": "mathcase-coordinate-midpoint-anonymous-replay-failure-v1",
+  "run_id": "anonymous-public-clone-r1",
+  "clone_commit": "1713d929d9d9834e4ef823658a5dc3acd026dff7",
+  "status": "FAIL_OR_BLOCKED",
+  "mathematical_verdict": "NOT_RUN",
+  "reason": "LAKE_UPDATE_CHANGED_PINNED_MANIFEST",
+  "original_receipt_sha256": "d0281259d2444e953de72d8d02e554bdaad6820c8b2411d0e1de7e8b17b9b6be",
+  "input_manifest_sha256": "958b34400c85f0e6e9e1a3ec9c2c67e3df25fcfed9195c53d50302af588f3c0f",
+  "post_update_manifest_sha256": "a1fc30ff9eea129dd11b2c86b1fec70785fe086390a0d857d741199aac48fefb",
+  "manifest_comparison": {
+    "only_changed_field": "root project name",
+    "input_project_name": "mathcase_ramsey_r66",
+    "generated_project_name": "mathcase_coordinate_midpoint",
+    "dependency_entries": 9,
+    "dependency_entries_identical": true
+  },
+  "stages": [
+    {
+      "name": "lean-version",
+      "exit_code": 0,
+      "elapsed_seconds": 0.086,
+      "output_sha256": "89c79d9c5b24343255f93bb0203ae89e6b8715c652def77008a34f37656c9c82"
+    },
+    {
+      "name": "lake-version",
+      "exit_code": 0,
+      "elapsed_seconds": 0.727,
+      "output_sha256": "e475ba02fef5717a6caa256e1e25ac50268497b7d1e36955357f37b4701ee4a0"
+    },
+    {
+      "name": "lake-update",
+      "exit_code": 0,
+      "elapsed_seconds": 619.431,
+      "output_sha256": "1675984c4d27cc410c37fa3b30075e17b98a671881d6e4258d94df93a08c5d1f"
+    },
+    {
+      "name": "mathlib-cache",
+      "exit_code": 0,
+      "elapsed_seconds": 11.666,
+      "output_sha256": "1fc4c3c0cb089274455690709c3407556cd761d92e1b84b9eb8efd982aac14c4"
+    }
+  ],
+  "lean_compilation_started": false,
+  "axiom_audit_started": false,
+  "theorem_source_sha256": "831db7bfe3ec643eea8ae02e129d87e926bbdc51186566c9dae46d3842e69dcf",
+  "audit_source_sha256": "ce304794c34dba1d6e76617e3a20a4e7fe28448643d9878049e31ac8923f248e",
+  "interpretation": "The runner correctly stopped before Lean because the published Lake manifest used a stale root project name. All nine dependency records were unchanged. This is a setup failure, not a theorem result."
+}
