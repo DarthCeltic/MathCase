@@ -1,0 +1,120 @@
+{
+  "checks": {
+    "klein_bottle_Euler_characteristics_agree": true,
+    "klein_bottle_homology_matches_expected": true,
+    "klein_bottle_one_vertex_boundary_d1_d2_is_zero": true,
+    "real_projective_plane_Euler_characteristics_agree": true,
+    "real_projective_plane_homology_matches_expected": true,
+    "real_projective_plane_one_vertex_boundary_d1_d2_is_zero": true,
+    "sphere_Euler_characteristics_agree": true,
+    "sphere_homology_matches_expected": true,
+    "sphere_one_vertex_boundary_d1_d2_is_zero": true,
+    "torus_Euler_characteristics_agree": true,
+    "torus_homology_matches_expected": true,
+    "torus_one_vertex_boundary_d1_d2_is_zero": true
+  },
+  "controls": {
+    "projective_plane_Z_over_3_claim_rejected": true,
+    "torus_commutator_rejected_as_klein_model": true,
+    "unknown_edge_symbol_rejected": true
+  },
+  "elapsed_seconds": 0.0025868999073281884,
+  "method": "Count signed edge occurrences in each attaching word. For a single boundary column, its gcd is the nonzero Smith invariant; the quotient gives H1 and the kernel gives H2.",
+  "models_sha256": "cb8dee81efbc8ee3a0e4ac78f598170af26e4f1392d5e5738282c60559c1c523",
+  "provider_spend_usd": 0,
+  "python_version": "3.14.7",
+  "results": {
+    "klein_bottle": {
+      "attaching_word": "abAb",
+      "d1_d2": 0,
+      "d1_row": [
+        0,
+        0
+      ],
+      "d2_column": [
+        0,
+        2
+      ],
+      "d2_rank": 1,
+      "euler_characteristic_from_cells": 0,
+      "euler_characteristic_from_free_ranks": 0,
+      "gcd_invariant": 2,
+      "generators": "ab",
+      "homology": {
+        "H0": "Z",
+        "H1_free_rank": 1,
+        "H1_torsion_orders": [
+          2
+        ],
+        "H2_free_rank": 0
+      }
+    },
+    "real_projective_plane": {
+      "attaching_word": "aa",
+      "d1_d2": 0,
+      "d1_row": [
+        0
+      ],
+      "d2_column": [
+        2
+      ],
+      "d2_rank": 1,
+      "euler_characteristic_from_cells": 1,
+      "euler_characteristic_from_free_ranks": 1,
+      "gcd_invariant": 2,
+      "generators": "a",
+      "homology": {
+        "H0": "Z",
+        "H1_free_rank": 0,
+        "H1_torsion_orders": [
+          2
+        ],
+        "H2_free_rank": 0
+      }
+    },
+    "sphere": {
+      "attaching_word": "",
+      "d1_d2": 0,
+      "d1_row": [],
+      "d2_column": [],
+      "d2_rank": 0,
+      "euler_characteristic_from_cells": 2,
+      "euler_characteristic_from_free_ranks": 2,
+      "gcd_invariant": 0,
+      "generators": "",
+      "homology": {
+        "H0": "Z",
+        "H1_free_rank": 0,
+        "H1_torsion_orders": [],
+        "H2_free_rank": 1
+      }
+    },
+    "torus": {
+      "attaching_word": "abAB",
+      "d1_d2": 0,
+      "d1_row": [
+        0,
+        0
+      ],
+      "d2_column": [
+        0,
+        0
+      ],
+      "d2_rank": 0,
+      "euler_characteristic_from_cells": 0,
+      "euler_characteristic_from_free_ranks": 0,
+      "gcd_invariant": 0,
+      "generators": "ab",
+      "homology": {
+        "H0": "Z",
+        "H1_free_rank": 2,
+        "H1_torsion_orders": [],
+        "H2_free_rank": 1
+      }
+    }
+  },
+  "schema": "mathcase-integer-surface-cw-homology-check-v1",
+  "scope": "Exact arithmetic for four explicitly stated one-vertex, one-face CW models. The calculation assumes the listed models describe the named standard surfaces; it does not construct those spaces, prove the general cellular-homology theorem, or provide Lean verification.",
+  "source_sha256": "8ca1be251ff76a9984680c2f9fc1b777f48d656e21bfdac12b52eb392975d491",
+  "status": "PASS"
+}

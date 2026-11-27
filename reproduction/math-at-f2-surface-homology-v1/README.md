@@ -30,4 +30,9 @@ The command prints a short PASS summary and regenerates [`verification.json`](ve
 - Torus: vertices `(i,j)` with both coordinates modulo 3. For each square with lower-left `(i,j)`, use triangles `((i,j),(i+1,j),(i+1,j+1))` and `((i,j),(i,j+1),(i+1,j+1))`, with coordinates reduced modulo 3.
 - Real projective plane: the ten faces `012, 013, 024, 035, 045, 125, 134, 145, 234, 235`.
 
+
 This is an exact computation for these three finite complexes. It is not a general topology library, a proof of a theorem about every surface triangulation, or a claim about an automated geometry pipeline.
+
+## Integer coefficients and torsion
+
+The [integer-cell-model companion](integer-cw-v1/README.md) works through the sphere, real projective plane, torus, and Klein bottle using their standard one-vertex cell descriptions. It makes the `Z/2` torsion visible, which the neighboring `F₂` Betti-number table does not distinguish. The two packages use different finite models and coefficient systems; neither is a general topology prover.
