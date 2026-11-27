@@ -1,0 +1,17 @@
+{
+  "schema": "mathcase-trufflehog-package-scan-v1",
+  "status": "PASS",
+  "command": "docker run --rm --network none --mount type=bind,source=<package>,target=/repo,readonly trufflesecurity/trufflehog:3.99.9 filesystem /repo --json --no-verification --fail --fail-on-scan-errors",
+  "image": "trufflesecurity/trufflehog:3.99.9",
+  "image_sha256": "c50b55a0cdcc7ac7ee8b29d209833a22d6e2b44d4f0d8fc87099e8c877cb6afe",
+  "exit_code": 0,
+  "verified_findings": 0,
+  "unverified_findings": 0,
+  "bytes_scanned": 79695,
+  "logs": [
+    "stdout.jsonl",
+    "stderr.txt"
+  ],
+  "scope": "This package only; the repository-wide history gate remains a separate release requirement.",
+  "network": "none"
+}

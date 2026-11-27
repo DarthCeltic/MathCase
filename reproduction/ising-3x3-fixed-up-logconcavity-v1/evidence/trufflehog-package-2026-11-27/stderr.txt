@@ -1,0 +1,2 @@
+{"level":"info-0","ts":"2026-11-27T21:38:17Z","logger":"trufflehog","msg":"running source","source_name":"trufflehog - filesystem","source_type":"SOURCE_TYPE_FILESYSTEM","source_id":1,"job_id":1,"source_manager_worker_id":"LRD4R","with_units":true}
+{"level":"info-0","ts":"2026-11-27T21:38:17Z","logger":"trufflehog","msg":"finished scanning","chunks":12,"bytes":79695,"verified_secrets":0,"unverified_secrets":0,"scan_duration":"39.209132ms","trufflehog_version":"3.99.9","verification_caching":{"Hits":0,"Misses":0,"HitsWasted":0,"AttemptsSaved":0,"VerificationTimeSpentMS":0}}
