@@ -1,0 +1,106 @@
+{
+  "schema": "mathcase-ising-joint-density-run-v1",
+  "status": "PASS",
+  "completed_at_utc": "2026-11-27T09:45:53+00:00",
+  "model": "periodic 3x10 square-lattice Ising torus, zero-field state enumeration",
+  "states": 1073741824,
+  "checks": {
+    "python_transfer_internal_checks": true,
+    "gray_output_schema_matches": true,
+    "gray_dimensions_and_state_total_match": true,
+    "independent_full_2_pow_30_joint_tables_match": true,
+    "python_table_checks": true,
+    "gray_table_checks": true,
+    "damaged_joint_table_is_rejected": true
+  },
+  "toolchain": {
+    "python": "3.14.7",
+    "cxx": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+    "cxx_standard": "C++20"
+  },
+  "inputs": {
+    "joint_density.py_sha256": "f716947abce31e6df0678590ebe8940c4000bfbc70a51811d28dee4bddff8066",
+    "gray_joint_3x10.cpp_sha256": "54f5f86823c8d4882926fe81f642304ccd7f53b9942bd288bccf308978a170eb",
+    "test_joint_density.py_sha256": "72d09a1f5963f6f9e7f4d0310c599ec74c8e2428a464828c3e06ba0e2fd6b41d",
+    "run_case.py_sha256": "1b18776bf95873531dda3e863bdfbeccb3b240076505883b37eefade0f450c34",
+    "energy_histogram_reference_sha256": "5f6b2bb9e0450c5cb56ee970b7678c72f8901eb3144e12100fba7242a1511e14"
+  },
+  "outputs": {
+    "joint-density-3x10.json_sha256": "edc3545905b6f3ad0bfdc52bbf6855f981c8149e39322c2d241c240c379d8c70",
+    "gray-joint-density-3x10.json_sha256": "3c1b1fd49b5e95d656bc0fd5fb37e369995d41630cb382a8455693ae3fd98ea4"
+  },
+  "temporary_gray_executable_sha256": "ea38438bb3016ad302e7657c4f58f189774e5dfaa3e824276ea65ca54e48844f",
+  "steps": {
+    "compiler-version": {
+      "command": [
+        "g++",
+        "--version"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.025372,
+      "stdout_sha256": "d2d3cf08854ea544d60a7fd0b4dce2d1ec4f3eff1c646bd7225d1b125aa921e0",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "focused-tests": {
+      "command": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "-v",
+        "test_joint_density.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1.420742,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b45503780a56b475700ebdee4d2cde39fc6e2ca053e437713fe132003d4e2218"
+    },
+    "python-transfer": {
+      "command": [
+        "python",
+        "-B",
+        "joint_density.py",
+        "--width",
+        "3",
+        "--height",
+        "10",
+        "--reference",
+        "reproduction/ising-square-torus-dos-v1/evidence/density-3x10.json",
+        "--output",
+        "joint-density-3x10.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.194477,
+      "stdout_sha256": "c20f8d41e3ed014437899768d3e158dbec246ffc8e5156eefdd9dc51d5e02fe9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gray-code-build": {
+      "command": [
+        "g++",
+        "-O3",
+        "-DNDEBUG",
+        "-std=c++20",
+        "gray_joint_3x10.cpp",
+        "-o",
+        "temporary binary"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.677729,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "gray-code-enumeration": {
+      "command": [
+        "temporary gray_joint_3x10 executable"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 8.270333,
+      "stdout_file_sha256": "3c1b1fd49b5e95d656bc0fd5fb37e369995d41630cb382a8455693ae3fd98ea4",
+      "raw_stdout_sha256": "e646d8460886220a4391c4307802c7962a407b8e0a16f75fd42a2c107d7e682f",
+      "line_ending_normalization": "CRLF-to-LF",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "elapsed_seconds": 10.658872,
+  "claim_boundary": "Exact finite computation for this 3x10 periodic lattice. It is not a new Ising result, a thermodynamic-limit claim, a Lean proof, or an independent review."
+}

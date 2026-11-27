@@ -1,0 +1,45 @@
+{
+  "schema": "mathcase-ising-fresh-public-branch-replay-v1",
+  "status": "PASS",
+  "completed_at_utc": "2026-11-27T09:45:53+00:00",
+  "source_public_branch": "codex/ising-joint-density-3x10-20261127",
+  "source_commit": "2af334941bdb640b02393ac56d597d2c78a92ab0",
+  "checkout_clean_before_and_after": true,
+  "command": "python -B reproduction/ising-joint-density-3x10-v1/run_case.py --cxx g++ --output-dir <new-scratch-directory>",
+  "scope": "Fresh public Git branch clone; this is author-side reproduction, not an outside stranger run or independent mathematical review.",
+  "toolchain": {
+    "python": "3.14.7",
+    "cxx": "g++ (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r3) 16.2.0",
+    "cxx_standard": "C++20"
+  },
+  "elapsed_seconds": 10.658872,
+  "configurations": 1073741824,
+  "focused_tests_exit_code": 0,
+  "checks": {
+    "python_transfer_internal_checks": true,
+    "gray_output_schema_matches": true,
+    "gray_dimensions_and_state_total_match": true,
+    "independent_full_2_pow_30_joint_tables_match": true,
+    "python_table_checks": true,
+    "gray_table_checks": true,
+    "damaged_joint_table_is_rejected": true
+  },
+  "inputs_sha256": {
+    "joint_density.py": "f716947abce31e6df0678590ebe8940c4000bfbc70a51811d28dee4bddff8066",
+    "gray_joint_3x10.cpp": "54f5f86823c8d4882926fe81f642304ccd7f53b9942bd288bccf308978a170eb",
+    "test_joint_density.py": "72d09a1f5963f6f9e7f4d0310c599ec74c8e2428a464828c3e06ba0e2fd6b41d",
+    "run_case.py": "1b18776bf95873531dda3e863bdfbeccb3b240076505883b37eefade0f450c34"
+  },
+  "energy_histogram_reference_sha256": "5f6b2bb9e0450c5cb56ee970b7678c72f8901eb3144e12100fba7242a1511e14",
+  "fresh_output_sha256": {
+    "joint-density-3x10.json": "edc3545905b6f3ad0bfdc52bbf6855f981c8149e39322c2d241c240c379d8c70",
+    "gray-joint-density-3x10.json": "3c1b1fd49b5e95d656bc0fd5fb37e369995d41630cb382a8455693ae3fd98ea4"
+  },
+  "saved_public_output_sha256": {
+    "joint-density-3x10.json": "edc3545905b6f3ad0bfdc52bbf6855f981c8149e39322c2d241c240c379d8c70",
+    "gray-joint-density-3x10.json": "3c1b1fd49b5e95d656bc0fd5fb37e369995d41630cb382a8455693ae3fd98ea4"
+  },
+  "fresh_outputs_match_saved": true,
+  "fresh_run_receipt_sha256": "842b85178bb7e952fd1a6f778e90ddcc9b3ddb92a03d485f1761287e919e53c3",
+  "claim_boundary": "A clean public-source replay of exact finite computation for the 3x10 periodic lattice. No novelty, thermodynamic-limit, or outside-review claim."
+}

@@ -28,6 +28,8 @@ Each package below says what question it addresses, what was actually checked, a
 
 Other preserved verification packages include:
 
+- [Joint energy and magnetization counts for a 3×10 Ising torus](ising-joint-density-3x10-v1/README.md) — exact row transfer and a separate full Gray-code enumeration agree on all `2^30` labeled states; this is finite-size computation, not a new physical result.
+
 - [M15–M20 package](m15-m20-r2/README.md) — the surviving r2 snapshot, including source, historical receipts, the exact-statement graph, and read-only replay tools. It contains 1,036 files including its regenerated inventory, SHA-256 `98271fc28d712e48714dc21e4a871e5cc112f492c2c13461a7e2e0328690c9ee`.
 - [Right-triangle midpoint identity](coordinate-right-triangle-midpoint-v1/README.md) — the normalized coordinate case with a fresh public-clone replay.
 - [General-coordinate midpoint theorem](coordinate-right-triangle-midpoint-general-v1/README.md) — Lean proves the equal-squared-distance claim directly for any three real coordinate points whose two vectors from the right-angle corner have dot product zero. It includes a fresh-project replay command and the earlier failure record. Neither package formalizes a coordinate equivalence for every abstract Euclidean plane.
