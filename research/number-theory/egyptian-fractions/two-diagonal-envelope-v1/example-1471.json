@@ -1,0 +1,24 @@
+{
+  "status": "certified",
+  "certified": true,
+  "p": 1471,
+  "B": 20,
+  "s": 7,
+  "cap": 39717,
+  "hypotheses": {
+    "p_prime_at_least_43": true,
+    "B_at_least_16": true,
+    "D_B_minus_1_lt_p_le_D_B": true,
+    "D_B_plus_s_lt_2p": true,
+    "single_multiple_excluded": true,
+    "j_bound": true
+  },
+  "gap": 10,
+  "families": [
+    [
+      378,
+      20594,
+      39717
+    ]
+  ]
+}
