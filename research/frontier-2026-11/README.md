@@ -44,11 +44,19 @@ variants, completed 83 starts and 9,941 moves, and retained no new distinct
 367-sized seed. It still found no 368 code. Both are `UNKNOWN` search results,
 not impossibility proofs.
 
+The latest [exact-neighborhood continuation](shannon-c7-368-multiseed-neighborhood-v1/README.md)
+starts from the same nine audited 367-word seeds but computes exact outsider
+conflict neighborhoods before each exchange. With a 45-second cap it built
+seven seed masks, completed 84 starts and 161,280 candidate evaluations, and
+again stayed at 367. Its direct checker passes all 67,161 candidate and
+baseline pairs and rejects a planted conflict. It is also registered as
+`c7-multiseed-neighborhood` in the public launcher.
+
 ## How to reproduce
 
 The standard-library Python checks need Python 3.10 or later. The Erdős–Straus route also needs Lean 4.33.1; it recompiles the two small `Init`-level sources in a temporary directory and checks the declared axioms and a deliberately wrong denominator control. It does not build Mathlib. The weak-Schur route downloads only the two immutable, hash-pinned source witnesses on first run; the exact upstream attribution and hashes are in `weak-schur-5/verify_weak_schur.py`.
 
-The public launcher exposes these ten focused research routes. A focused regression test checks case registration and dry-run behavior without launching any calculations:
+The public launcher exposes these eleven focused research routes. A focused regression test checks case registration and dry-run behavior without launching any calculations:
 
 ```text
 python -m unittest tests.test_run_frontier_case
@@ -63,6 +71,7 @@ python scripts/run_frontier_case.py c7-greedy
 python scripts/run_frontier_case.py c7-ejection
 python scripts/run_frontier_case.py c7-surplus
 python scripts/run_frontier_case.py c7-equal-seed-persist
+python scripts/run_frontier_case.py c7-multiseed-neighborhood
 ```
 
 Use `--dry-run` to inspect a route without running it. The hard 20-second W(5,3) SAT probe is preserved as `van-der-waerden/w5-3-upper/probe-20s.json`; the public runner checks the witness and positive control but does not repeat that probe automatically.

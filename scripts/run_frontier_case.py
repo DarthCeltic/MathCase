@@ -25,6 +25,7 @@ CASES = {
     "c7-ejection": "Run the bounded C7^5 ejection-chain search from the known 367-word seed.",
     "c7-surplus": "Run the bounded C7^5 surplus-neighborhood search; a miss remains UNKNOWN.",
     "c7-equal-seed-persist": "Run the bounded C7^5 equal-size-seed persistence search; a miss remains UNKNOWN.",
+    "c7-multiseed-neighborhood": "Run the bounded exact conflict-neighborhood C7^5 continuation; a miss remains UNKNOWN.",
     "ising-width5": "Check periodic 5x3 and 5x4 Ising joint counts by enumeration and a 32-state transfer DP.",
     "ising-width6": "Check the periodic 6x3 Ising joint count with direct, transfer, and Gray-code methods.",
     "ising-width7": "Check the periodic 7x3 Ising joint count with direct and independent transfer methods.",
@@ -97,6 +98,12 @@ def plan(case: str, output: Path) -> list[tuple[str, list[str], Path]]:
         return [
             ("equal-size-seed persistence search", [py, "search_persist.py", "--base", str(c7 / "base_c7.json"), "--seconds", "180", "--seed", "281129", "--out", str(output)], c7),
             ("independent pair checker", [py, "verify.py", "--base", str(c7 / "base_c7.json"), "--result", str(output / "search-result.json"), "--out", str(output / "verification.json")], c7),
+        ]
+    if case == "c7-multiseed-neighborhood":
+        c7 = FRONTIER / "shannon-c7-368-multiseed-neighborhood-v1"
+        return [
+            ("multi-seed exact-neighborhood search", [py, "search.py", "--base", str(c7 / "base_c7.json"), "--seconds", "45", "--seed", "28112803", "--trials-per-seed", "12", "--depth", "12", "--out", str(output)], c7),
+            ("independent direct pair checker", [py, "verify.py", "--base", str(c7 / "base_c7.json"), "--candidate", str(output / "candidate.json"), "--out", str(output / "verification.json")], c7),
         ]
     if case == "ising-width5":
         ising = ROOT / "reproduction" / "ising-width5-joint-density-v1"

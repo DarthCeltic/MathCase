@@ -21,6 +21,7 @@ EXPECTED = {
     "c7-ejection",
     "c7-surplus",
     "c7-equal-seed-persist",
+    "c7-multiseed-neighborhood",
     "ising-width5",
     "ising-width6",
     "ising-width7",

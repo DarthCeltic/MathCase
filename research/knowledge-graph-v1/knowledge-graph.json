@@ -130,6 +130,24 @@
       "path": "research/frontier-2026-11/shannon-c7-368-multiseed-ejection-v1/README.md"
     },
     {
+      "id": "case-c7-multiseed-neighborhood",
+      "kind": "question",
+      "label": "Can exact conflict neighborhoods from nine 367-word seeds reach 368?",
+      "path": "research/frontier-2026-11/shannon-c7-368-multiseed-neighborhood-v1/README.md"
+    },
+    {
+      "id": "evidence-c7-multiseed-neighborhood",
+      "kind": "evidence",
+      "label": "84-start exact-neighborhood pilot with independent pair and planted-error checks",
+      "path": "research/frontier-2026-11/shannon-c7-368-multiseed-neighborhood-v1/run-03/independent-verification.json"
+    },
+    {
+      "id": "limit-c7-multiseed-neighborhood-unknown",
+      "kind": "limit",
+      "label": "NO_368_FOUND_UNKNOWN for the seven-seed-mask, 45-second bounded run",
+      "path": "research/frontier-2026-11/shannon-c7-368-multiseed-neighborhood-v1/README.md"
+    },
+    {
       "id": "case-ising-3x3",
       "kind": "question",
       "label": "Does the tested 3x3 periodic Ising profile stay log-concave?",
@@ -437,6 +455,10 @@
     { "from": "case-c7-multiseed-ejection", "relation": "checked_by", "to": "evidence-c7-multiseed-ejection" },
     { "from": "case-c7-multiseed-ejection", "relation": "limited_by", "to": "limit-c7-multiseed-unknown" },
     { "from": "case-c7-multiseed-ejection", "relation": "extends", "to": "case-c7-persistence-v3" },
+    { "from": "case-c7-multiseed-neighborhood", "relation": "checked_by", "to": "evidence-c7-multiseed-neighborhood" },
+    { "from": "case-c7-multiseed-neighborhood", "relation": "limited_by", "to": "limit-c7-multiseed-neighborhood-unknown" },
+    { "from": "case-c7-multiseed-neighborhood", "relation": "extends", "to": "case-c7-multiseed-ejection" },
+    { "from": "case-c7-multiseed-neighborhood", "relation": "uses_method", "to": "method-independent-control" },
     { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
     { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
     { "from": "case-ising-width4", "relation": "checked_by", "to": "evidence-ising-width4" },
