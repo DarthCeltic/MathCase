@@ -44,7 +44,7 @@ The bounded C7 five-symbol search now has a narrower clean-clone milestone: a fr
 3. **Make transfer measurable.** No model calls are running. A future comparison needs reviewed held-out problems, a frozen target set, equal budgets, and saved baseline results. The earlier matched pilot showed no difference between its two arms; it did not demonstrate transfer improvement.
 4. **Continue open coloring searches carefully.** The public Weak Schur and van der Waerden packages make candidates and finite search scopes inspectable. Any new witness must pass the independent full checker; a bounded failure leaves the general question open.
 5. **Broaden the mathematics with the same evidence bar.** A new area needs a precise question, a working example, a declared check type, and a reproducible artifact. Do not describe examples across several subjects as an all-purpose autonomous solver.
-6. **Make the site easier to use.** Keep a visitor-facing worked question and one next action first; leave logs, compiler details, and search terminology in expandable technical sections. Current desktop and mobile interaction still needs direct browser acceptance after site changes.
+6. **Make the site easier to use.** Keep a visitor-facing worked question and one next action first; leave logs, compiler details, and search terminology in expandable technical sections. The current deployment passed signed-out Chrome checks at desktop and 390px mobile widths, including the classroom feedback action and the embedded Lean editor; independent human review remains separate.
 
 ## Open boundaries
 
