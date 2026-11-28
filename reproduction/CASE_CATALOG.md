@@ -34,7 +34,8 @@ For the `prime-sqrt2` route, `--stage-timeout SECONDS` overrides the 600-second 
 The 500,000-row replay is also available through the normal launcher:
 `python scripts/run_public_case.py dahan-theorem39-500000`. It creates a fresh
 output directory and runs generation followed by the independent row audit;
-the command is finite evidence only and does not prove Erdős–Straus.
+the command is finite evidence only and does not prove Erdős–Straus. The
+route-level result is preserved in the [launcher verification receipt](dahan-theorem39-launcher-verification-2026-11-28-v1/README.md).
 
 - **Right-triangle midpoint:** `python scripts/run_public_case.py geometry-midpoint` rebuilds the known squared-distance identity for the normalized model `(0,0)`, `(a,0)`, `(0,b)`, with positive `a,b`. Its fresh public-source replay passed on the owner host; an independent stranger replay is still open. It does not formalize the coordinate reduction for every Euclidean right triangle. Read the [human explanation and limits](coordinate-right-triangle-midpoint-v1/README.md).
 - **General-coordinate midpoint:** `python scripts/run_public_case.py geometry-midpoint-general` replays the stronger theorem for any three real-coordinate points whose two vectors from the right-angle corner have dot product zero. Its public receipt records a PASS with `[propext, Classical.choice, Quot.sound]` and no `sorryAx`; it is still a coordinate theorem, not a formal development of every abstract Euclidean plane. Read the [general source and receipt](coordinate-right-triangle-midpoint-general-v1/README.md).
