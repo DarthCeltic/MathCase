@@ -20,11 +20,12 @@ EXPECTED = {
     "c7-greedy",
     "c7-ejection",
     "c7-surplus",
+    "c7-equal-seed-persist",
 }
 
 
 class FrontierRunnerTests(unittest.TestCase):
-    def test_list_registers_exactly_six_cases(self) -> None:
+    def test_list_registers_all_public_cases(self) -> None:
         result = subprocess.run(
             [sys.executable, str(RUNNER), "list"], cwd=ROOT,
             capture_output=True, text=True, check=True,

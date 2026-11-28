@@ -40,6 +40,24 @@
       "path": "research/frontier-2026-11/shannon-c7-368-whole-graph-greedy-v2/README.md"
     },
     {
+      "id": "case-c7-equal-seed-persist",
+      "kind": "question",
+      "label": "Can ejection search preserve a distinct valid 367-word seed?",
+      "path": "research/frontier-2026-11/shannon-c7-368-equal-seed-persist-v1/README.md"
+    },
+    {
+      "id": "evidence-c7-equal-seed-persist",
+      "kind": "evidence",
+      "label": "180-second persistence search retained zero distinct equal-size seeds",
+      "path": "research/frontier-2026-11/shannon-c7-368-equal-seed-persist-v1/verification.json"
+    },
+    {
+      "id": "limit-c7-equal-seed-unknown",
+      "kind": "limit",
+      "label": "Bounded search miss; no global 368 impossibility result",
+      "path": "research/frontier-2026-11/shannon-c7-368-equal-seed-persist-v1/README.md"
+    },
+    {
       "id": "case-ising-3x3",
       "kind": "question",
       "label": "Does the tested 3x3 periodic Ising profile stay log-concave?",
@@ -195,6 +213,9 @@
     { "from": "case-collatz-23-14", "relation": "limited_by", "to": "limit-collatz-open" },
     { "from": "case-c7-368", "relation": "checked_by", "to": "evidence-c7-search" },
     { "from": "case-c7-368", "relation": "limited_by", "to": "limit-c7-unknown" },
+    { "from": "case-c7-equal-seed-persist", "relation": "checked_by", "to": "evidence-c7-equal-seed-persist" },
+    { "from": "case-c7-equal-seed-persist", "relation": "limited_by", "to": "limit-c7-equal-seed-unknown" },
+    { "from": "case-c7-equal-seed-persist", "relation": "extends", "to": "case-c7-368" },
     { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
     { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
     { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666" },

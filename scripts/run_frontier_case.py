@@ -1,4 +1,4 @@
-"""Run one of the nine public frontier checks without overwriting prior output."""
+"""Run one of the ten public frontier checks without overwriting prior output."""
 from __future__ import annotations
 
 import argparse
@@ -24,6 +24,7 @@ CASES = {
     "c7-greedy": "Run the bounded whole-graph greedy C7^5 search; a miss remains UNKNOWN.",
     "c7-ejection": "Run the bounded C7^5 ejection-chain search from the known 367-word seed.",
     "c7-surplus": "Run the bounded C7^5 surplus-neighborhood search; a miss remains UNKNOWN.",
+    "c7-equal-seed-persist": "Run the bounded C7^5 equal-size-seed persistence search; a miss remains UNKNOWN.",
 }
 
 
@@ -87,6 +88,12 @@ def plan(case: str, output: Path) -> list[tuple[str, list[str], Path]]:
         return [
             ("surplus-neighborhood search", [py, "search.py", "--base", str(c7 / "base_c7.json"), "--seconds", "30", "--starts", "12", "--depth", "4", "--seed", "281128", "--out", str(output)], c7),
             ("independent surplus checker", [py, "verify.py", "--base", str(c7 / "base_c7.json"), "--result", str(output / "search-result.json"), "--out", str(output / "verification.json")], c7),
+        ]
+    if case == "c7-equal-seed-persist":
+        c7 = FRONTIER / "shannon-c7-368-equal-seed-persist-v1"
+        return [
+            ("equal-size-seed persistence search", [py, "search_persist.py", "--base", str(c7 / "base_c7.json"), "--seconds", "180", "--seed", "281129", "--out", str(output)], c7),
+            ("independent pair checker", [py, "verify.py", "--base", str(c7 / "base_c7.json"), "--result", str(output / "search-result.json"), "--out", str(output / "verification.json")], c7),
         ]
     raise ValueError(f"unknown case: {case}")
 

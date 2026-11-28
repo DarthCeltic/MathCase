@@ -36,6 +36,12 @@ best observed surplus was `-1`; its direct checker passed the seed and rejected
 a planted duplicate. This is a bounded criterion check, not an exhaustive
 obstruction.
 
+A fourth [equal-size-seed persistence pilot](shannon-c7-368-equal-seed-persist-v1/README.md)
+ran the changed ejection method for 180 seconds, with six starts and 419 moves.
+It retained zero distinct valid 367-sized seeds beyond the published seed and
+still found no 368 code. This is another `UNKNOWN` search result, not an
+impossibility proof.
+
 ## How to reproduce
 
 The standard-library Python checks need Python 3.10 or later. The Erdős–Straus route also needs Lean 4.33.1; it recompiles the two small `Init`-level sources in a temporary directory and checks the declared axioms and a deliberately wrong denominator control. It does not build Mathlib. The weak-Schur route downloads only the two immutable, hash-pinned source witnesses on first run; the exact upstream attribution and hashes are in `weak-schur-5/verify_weak_schur.py`.

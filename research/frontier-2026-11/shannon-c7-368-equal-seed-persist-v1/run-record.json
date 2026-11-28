@@ -1,0 +1,9 @@
+{
+  "command": "python -B search_persist.py --base <base_c7.json> --seconds 180 --seed 281129 --out .",
+  "status": "NO_368_FOUND_UNKNOWN",
+  "best_size": 367,
+  "starts": 6,
+  "moves": 419,
+  "retained_equal_size_codes": 0,
+  "no_external_calls": true
+}
