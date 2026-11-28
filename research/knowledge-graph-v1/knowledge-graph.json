@@ -110,6 +110,24 @@
       "kind": "limit",
       "label": "The formal statement is coordinate geometry; a Euclidean reduction is separate",
       "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/README.md"
+    },
+    {
+      "id": "case-egyptian-28k21",
+      "kind": "question",
+      "label": "Can 4/(28k+21) be written as three unit fractions in this exact family?",
+      "path": "research/frontier-2026-11/egyptian-28k-plus-21/README.md"
+    },
+    {
+      "id": "evidence-egyptian-28k21",
+      "kind": "evidence",
+      "label": "Lean identity and denominator-order checks",
+      "path": "research/frontier-2026-11/egyptian-28k-plus-21/checked.json"
+    },
+    {
+      "id": "limit-egyptian-open",
+      "kind": "limit",
+      "label": "One infinite family; not a solution of Erdős–Straus for all n",
+      "path": "research/frontier-2026-11/egyptian-28k-plus-21/README.md"
     }
   ],
   "edges": [
@@ -127,6 +145,9 @@
     { "from": "case-c7-368", "relation": "next_question", "to": "case-ramsey-666" },
     { "from": "case-geometry-midpoint", "relation": "checked_by", "to": "evidence-geometry-midpoint" },
     { "from": "case-geometry-midpoint", "relation": "limited_by", "to": "limit-geometry-coordinate" },
-    { "from": "case-geometry-midpoint", "relation": "uses_method", "to": "method-kernel-replay" }
+    { "from": "case-geometry-midpoint", "relation": "uses_method", "to": "method-kernel-replay" },
+    { "from": "case-egyptian-28k21", "relation": "checked_by", "to": "evidence-egyptian-28k21" },
+    { "from": "case-egyptian-28k21", "relation": "limited_by", "to": "limit-egyptian-open" },
+    { "from": "case-egyptian-28k21", "relation": "uses_method", "to": "method-kernel-replay" }
   ]
 }
