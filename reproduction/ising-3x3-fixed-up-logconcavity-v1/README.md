@@ -28,7 +28,7 @@ From the root of a MathCase checkout with Python 3:
 python -B reproduction/ising-3x3-fixed-up-logconcavity-v1/verify_width3_fixed_up.py --output reproduction/ising-3x3-fixed-up-logconcavity-v1/evidence/runs/your-run/receipt.json
 ```
 
-The checked-in `precomputed-receipt.json` records the same result before a fresh run. Two fresh outputs are preserved under `evidence/runs/3x3-main-replay-2026-11-27/` and `evidence/runs/3x3-main-replay-2026-11-27-r2/`; the first packaging failure is preserved beside them. `SHA256SUMS.txt` binds the source, explanation, and recorded receipts.
+The checked-in `precomputed-receipt.json` records the same result before a fresh run. Two fresh outputs are preserved under `evidence/runs/3x3-main-replay-2026-11-27/` and `evidence/runs/3x3-main-replay-2026-11-27-r2/`; the first packaging failure is preserved beside them. A fresh run of this checked-in script from an isolated worktree at public main commit `bfc1ab3` is recorded at `evidence/runs/3x3-main-replay-2026-11-28/receipt.json`. It reproduces the same finite result with the same two methods in the checker; it is a rerun, not an external review. `SHA256SUMS.txt` binds the source, explanation, and recorded receipts.
 
 ## Limits
 

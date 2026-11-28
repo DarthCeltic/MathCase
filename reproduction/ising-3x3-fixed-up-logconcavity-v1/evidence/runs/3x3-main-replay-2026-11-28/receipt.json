@@ -1,0 +1,1062 @@
+{
+  "checker_sha256": "ea46161137c09ffb1b84d2cf835d6eb56d7ebe7496c26de1defe6e094f7daac1",
+  "controls": {
+    "all_profiles_sum_to_binomial_counts": true,
+    "edge_count_18": true,
+    "explicit_equals_independent_transfer": true,
+    "interior_zero_control_rejected": true,
+    "positive_log_concavity_control": true
+  },
+  "edge_count": 18,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      7
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ],
+    [
+      4,
+      5
+    ],
+    [
+      4,
+      7
+    ],
+    [
+      5,
+      8
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      6,
+      8
+    ],
+    [
+      7,
+      8
+    ]
+  ],
+  "grid": "periodic 3x3 torus",
+  "limitations": [
+    "Finite 3x3 computation only.",
+    "No Lean proof and no thermodynamic-limit claim.",
+    "No novelty or priority claim; this checks whether the earlier finite failure already appears on the smaller grid."
+  ],
+  "methods": [
+    "explicit enumeration of all 2^9 assignments and 18 edges",
+    "independent 8-state column transfer DP with cyclic closure"
+  ],
+  "python": "3.14.7",
+  "rows": [
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          0,
+          0
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "d97d1e2bdc6faef1e9820ca5ce7d604663e2a5437abd0772c2dbe020f18050e4",
+      "expected_states": 1,
+      "plus_spins": 0,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          0,
+          0
+        ],
+        "violations": []
+      },
+      "states": 1
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          4,
+          4
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "880cc70707fd60f471de1476ef0bc5981ed6fba6bb47bc317c119538c99c8691",
+      "expected_states": 9,
+      "plus_spins": 1,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          4,
+          4
+        ],
+        "violations": []
+      },
+      "states": 9
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          6,
+          8
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "0f037bf9cd6e9db92e8fcc5f56b635c4ebeaac59da328ae5c1670604ae2008f0",
+      "expected_states": 36,
+      "plus_spins": 2,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          6,
+          8
+        ],
+        "violations": [
+          {
+            "labels": [
+              6,
+              7,
+              8
+            ],
+            "left_times_right": 324,
+            "middle_squared": 0,
+            "values": [
+              18,
+              0,
+              18
+            ]
+          }
+        ]
+      },
+      "states": 36
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          6,
+          12
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          36
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "3ae2cb2259bed7eb4f5d2d1137bd0be8071c508bdb4b58001a1aa4b3f4cc3063",
+      "expected_states": 84,
+      "plus_spins": 3,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          6,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              6,
+              7,
+              8
+            ],
+            "left_times_right": 216,
+            "middle_squared": 0,
+            "values": [
+              6,
+              0,
+              36
+            ]
+          },
+          {
+            "labels": [
+              8,
+              9,
+              10
+            ],
+            "left_times_right": 1296,
+            "middle_squared": 0,
+            "values": [
+              36,
+              0,
+              36
+            ]
+          },
+          {
+            "labels": [
+              10,
+              11,
+              12
+            ],
+            "left_times_right": 216,
+            "middle_squared": 0,
+            "values": [
+              36,
+              0,
+              6
+            ]
+          }
+        ]
+      },
+      "states": 84
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          8,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "left_times_right": 2025,
+            "middle_squared": 1296,
+            "values": [
+              45,
+              36,
+              45
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          8,
+          45
+        ],
+        [
+          10,
+          36
+        ],
+        [
+          12,
+          45
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "0dc6557417373836ef9e2844dc942dfa98f01a2056fca04888ee90b7aa6ef755",
+      "expected_states": 126,
+      "plus_spins": 4,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          8,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              9,
+              10
+            ],
+            "left_times_right": 1620,
+            "middle_squared": 0,
+            "values": [
+              45,
+              0,
+              36
+            ]
+          },
+          {
+            "labels": [
+              10,
+              11,
+              12
+            ],
+            "left_times_right": 1620,
+            "middle_squared": 0,
+            "values": [
+              36,
+              0,
+              45
+            ]
+          }
+        ]
+      },
+      "states": 126
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          8,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "left_times_right": 2025,
+            "middle_squared": 1296,
+            "values": [
+              45,
+              36,
+              45
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          8,
+          45
+        ],
+        [
+          10,
+          36
+        ],
+        [
+          12,
+          45
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "0dc6557417373836ef9e2844dc942dfa98f01a2056fca04888ee90b7aa6ef755",
+      "expected_states": 126,
+      "plus_spins": 5,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          8,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              9,
+              10
+            ],
+            "left_times_right": 1620,
+            "middle_squared": 0,
+            "values": [
+              45,
+              0,
+              36
+            ]
+          },
+          {
+            "labels": [
+              10,
+              11,
+              12
+            ],
+            "left_times_right": 1620,
+            "middle_squared": 0,
+            "values": [
+              36,
+              0,
+              45
+            ]
+          }
+        ]
+      },
+      "states": 126
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          6,
+          12
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          36
+        ],
+        [
+          12,
+          6
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "3ae2cb2259bed7eb4f5d2d1137bd0be8071c508bdb4b58001a1aa4b3f4cc3063",
+      "expected_states": 84,
+      "plus_spins": 6,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          6,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              6,
+              7,
+              8
+            ],
+            "left_times_right": 216,
+            "middle_squared": 0,
+            "values": [
+              6,
+              0,
+              36
+            ]
+          },
+          {
+            "labels": [
+              8,
+              9,
+              10
+            ],
+            "left_times_right": 1296,
+            "middle_squared": 0,
+            "values": [
+              36,
+              0,
+              36
+            ]
+          },
+          {
+            "labels": [
+              10,
+              11,
+              12
+            ],
+            "left_times_right": 216,
+            "middle_squared": 0,
+            "values": [
+              36,
+              0,
+              6
+            ]
+          }
+        ]
+      },
+      "states": 84
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          6,
+          8
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          18
+        ],
+        [
+          8,
+          18
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "0f037bf9cd6e9db92e8fcc5f56b635c4ebeaac59da328ae5c1670604ae2008f0",
+      "expected_states": 36,
+      "plus_spins": 7,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          6,
+          8
+        ],
+        "violations": [
+          {
+            "labels": [
+              6,
+              7,
+              8
+            ],
+            "left_times_right": 324,
+            "middle_squared": 0,
+            "values": [
+              18,
+              0,
+              18
+            ]
+          }
+        ]
+      },
+      "states": 36
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          4,
+          4
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          9
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "880cc70707fd60f471de1476ef0bc5981ed6fba6bb47bc317c119538c99c8691",
+      "expected_states": 9,
+      "plus_spins": 8,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          4,
+          4
+        ],
+        "violations": []
+      },
+      "states": 9
+    },
+    {
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          0,
+          0
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          8,
+          0
+        ],
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          0
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "d97d1e2bdc6faef1e9820ca5ce7d604663e2a5437abd0772c2dbe020f18050e4",
+      "expected_states": 1,
+      "plus_spins": 9,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": true,
+        "support_labels": [
+          0,
+          0
+        ],
+        "violations": []
+      },
+      "states": 1
+    }
+  ],
+  "runtime_seconds": 0.006305,
+  "schema": "mathcase-ising-3x3-fixed-up-logconcavity-v1",
+  "statement": "For the periodic 3x3 square-lattice Ising torus, enumerate all configurations and, for each fixed number u of + spins, test log-concavity of the broken-bond counts on the naturally spaced even-bond sequence.",
+  "status": "PASS_EXACT_FINITE_SCREEN",
+  "summary": {
+    "even_bond_log_concave_profiles": 8,
+    "even_bond_non_log_concave_profiles": 2,
+    "first_even_profile_failure": {
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          8,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "left_times_right": 2025,
+            "middle_squared": 1296,
+            "values": [
+              45,
+              36,
+              45
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          0
+        ],
+        [
+          4,
+          0
+        ],
+        [
+          6,
+          0
+        ],
+        [
+          8,
+          45
+        ],
+        [
+          10,
+          36
+        ],
+        [
+          12,
+          45
+        ],
+        [
+          14,
+          0
+        ],
+        [
+          16,
+          0
+        ],
+        [
+          18,
+          0
+        ]
+      ],
+      "even_bond_profile_sha256": "0dc6557417373836ef9e2844dc942dfa98f01a2056fca04888ee90b7aa6ef755",
+      "expected_states": 126,
+      "plus_spins": 4,
+      "raw_integer_bond_log_concavity": {
+        "log_concave": false,
+        "support_labels": [
+          8,
+          12
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              9,
+              10
+            ],
+            "left_times_right": 1620,
+            "middle_squared": 0,
+            "values": [
+              45,
+              0,
+              36
+            ]
+          },
+          {
+            "labels": [
+              10,
+              11,
+              12
+            ],
+            "left_times_right": 1620,
+            "middle_squared": 0,
+            "values": [
+              36,
+              0,
+              45
+            ]
+          }
+        ]
+      },
+      "states": 126
+    },
+    "fixed_up_spin_profiles": 10,
+    "raw_integer_bond_log_concave_profiles": 4,
+    "raw_integer_bond_non_log_concave_profiles": 6
+  },
+  "zero_bin_policy": "Trim leading/trailing zero bins. Retain interior zero bins; if c_i=0 with positive neighbors, c_i^2 < c_{i-1}c_{i+1} and the profile fails log-concavity. The parity-compressed even-bond profile is the primary test because odd broken-bond counts are impossible on this torus."
+}
