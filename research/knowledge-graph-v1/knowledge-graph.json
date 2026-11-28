@@ -74,6 +74,24 @@
       "kind": "limit",
       "label": "Does not rule out a different 102-vertex graph",
       "path": "research/frontier-2026-11/README.md"
+    },
+    {
+      "id": "method-independent-control",
+      "kind": "method",
+      "label": "Pairwise or finite-subset checker plus a deliberately damaged control",
+      "path": "research/frontier-2026-11/README.md"
+    },
+    {
+      "id": "method-two-path-replay",
+      "kind": "method",
+      "label": "Two independently implemented calculations compared on the same finite input",
+      "path": "reproduction/ising-3x3-fixed-up-logconcavity-v1/README.md"
+    },
+    {
+      "id": "method-kernel-replay",
+      "kind": "method",
+      "label": "Pinned source rebuilt by Lean with an axiom audit",
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/README.md"
     }
   ],
   "edges": [
@@ -84,6 +102,10 @@
     { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
     { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
     { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666" },
-    { "from": "case-ramsey-666", "relation": "limited_by", "to": "limit-ramsey-666" }
+    { "from": "case-ramsey-666", "relation": "limited_by", "to": "limit-ramsey-666" },
+    { "from": "case-c7-368", "relation": "uses_method", "to": "method-independent-control" },
+    { "from": "case-ising-3x3", "relation": "uses_method", "to": "method-two-path-replay" },
+    { "from": "case-collatz-23-14", "relation": "uses_method", "to": "method-kernel-replay" },
+    { "from": "case-c7-368", "relation": "next_question", "to": "case-ramsey-666" }
   ]
 }

@@ -19,7 +19,7 @@ class KnowledgeGraphTest(unittest.TestCase):
 
         by_id = set(node_ids)
         for node in nodes:
-            self.assertIn(node["kind"], {"question", "evidence", "limit"})
+            self.assertIn(node["kind"], {"question", "evidence", "limit", "method"})
             self.assertTrue(node["path"])
             self.assertTrue((ROOT / node["path"]).is_file(), node["path"])
         for edge in graph["edges"]:
