@@ -11,3 +11,13 @@ This was a new package build inside the existing public MathCase checkout, not a
 After package metadata was normalized to LF, lake build -Kjobs=1 MathCase was run again and exited 0 (1,171 jobs); the final Audit.lean output hash was unchanged.
 
 After that successful source replay, a packaging line-ending script accidentally changed files in the ignored generated dependency cache. One subsequent incremental Lake command exited 3221225477 (0xC0000005) before producing a theorem verdict; the proof source hashes were unchanged. This failure is preserved in package-cache-normalization-failure.json. The damaged generated Qq clone was replaced at its locked revision, then a bounded one-job incremental build and axiom audit passed. That recovery run reused the already-built theorem modules, so it is not described as another full source replay.
+
+## Lock-provenance qualification (2026-11-24)
+
+The saved historical `lake-replay-receipt.json` records lock SHA-256
+`2a66a99e178e711c07f724bd787aa4cead8b2ae674296b5987cf0906ff3d99e9`; the
+checked-in manifest is
+`958b34400c85f0e6e9e1a3ec9c2c67e3df25fcfed9195c53d50302af588f3c0f`. That
+historical mismatch is preserved. The later current-lock replay is bound by
+`verification/current-lock-replay-r2-pass.json` and its manifest; it is the
+receipt used for the present PASS claim.
