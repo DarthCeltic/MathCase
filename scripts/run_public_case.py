@@ -140,7 +140,7 @@ def main(argv=None, root=ROOT):
     deps.add_argument("--bootstrap", type=Path, help="prime-sqrt2: fetch the pinned public dependencies here")
     parser.add_argument("--lean", type=Path, help="Lean 4.33.1 executable for Lean-backed routes")
     parser.add_argument("--stage-timeout", type=int,
-                        help="prime-sqrt2 or geometry-midpoint: wall-clock limit for each Lean stage")
+                        help="prime-sqrt2 or either geometry route: wall-clock limit for each Lean stage")
     parser.add_argument("--source", type=Path, help="visitor: your own trusted .lean source file")
     parser.add_argument("--case-packet", type=Path, help="visitor: exported .mathcase.json for exact-target checking")
     parser.add_argument("--lake-project", type=Path, help="visitor: an already prepared local Lake project; no dependencies are fetched")
