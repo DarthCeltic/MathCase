@@ -18,7 +18,7 @@ The public repository now contains several different kinds of work. Read the lab
 
 The [Case Desk](https://darthceltic.github.io/mathcase/) offers hands-on examples. The [visitor workbench](https://darthceltic.github.io/mathcase/visitor/) can send a draft to the public Lean editor embedded in the page. That hosted editor chooses its own version and does not create a MathCase receipt; the pinned local commands and receipts are the reproducible route.
 
-The statistical-physics inventory now also includes the [width-six 6×3 replay](../reproduction/ising-width6-joint-density-v1/README.md): direct enumeration, a 64-state transfer calculation, and an independent Gray-code walk agree on all 262,144 assignments. Its 9/19 finite profile failures remain a grid-specific observation, not a general or thermodynamic-limit result.
+The statistical-physics inventory now also includes the [width-six 6×3 replay](../reproduction/ising-width6-joint-density-v1/README.md) and [width-seven 7×3 replay](../reproduction/ising-width7-joint-density-v1/README.md). Width six agrees across direct enumeration, a 64-state transfer calculation, and a Gray-code walk on all 262,144 assignments; width seven agrees across Gray-code enumeration and an 8-state transfer on all 2,097,152 assignments. Their finite profile failures remain grid-specific observations, not general or thermodynamic-limit results.
 
 ## How to read a result
 

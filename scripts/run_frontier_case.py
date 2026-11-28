@@ -27,6 +27,7 @@ CASES = {
     "c7-equal-seed-persist": "Run the bounded C7^5 equal-size-seed persistence search; a miss remains UNKNOWN.",
     "ising-width5": "Check periodic 5x3 and 5x4 Ising joint counts by enumeration and a 32-state transfer DP.",
     "ising-width6": "Check the periodic 6x3 Ising joint count with direct, transfer, and Gray-code methods.",
+    "ising-width7": "Check the periodic 7x3 Ising joint count with direct and independent transfer methods.",
 }
 
 
@@ -108,6 +109,9 @@ def plan(case: str, output: Path) -> list[tuple[str, list[str], Path]]:
             ("width-six direct and transfer check", [py, "check_width6.py", "--max-seconds", "120", "--output", str(output / "receipt.json")], ising),
             ("independent Gray-code cross-check", [py, "independent_gray_crosscheck.py", "--receipt", str(output / "receipt.json"), "--output", str(output / "independent-check-r2.json")], ising),
         ]
+    if case == "ising-width7":
+        ising = ROOT / "reproduction" / "ising-width7-joint-density-v1"
+        return [("width-seven direct and transfer check", [py, "check_width7x3.py", "--max-seconds", "180", "--output", str(output / "receipt.json")], ising)]
     raise ValueError(f"unknown case: {case}")
 
 

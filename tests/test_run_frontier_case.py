@@ -23,6 +23,7 @@ EXPECTED = {
     "c7-equal-seed-persist",
     "ising-width5",
     "ising-width6",
+    "ising-width7",
 }
 
 
