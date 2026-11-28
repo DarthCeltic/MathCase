@@ -215,6 +215,7 @@
     { "from": "case-dahan-theorem39-300k", "relation": "checked_by", "to": "evidence-dahan-theorem39-300k" },
     { "from": "case-dahan-theorem39-300k", "relation": "limited_by", "to": "limit-dahan-300k-finite" },
     { "from": "case-dahan-theorem39-300k", "relation": "uses_method", "to": "method-dahan-criterion" },
+    { "from": "case-dahan-theorem39-300k", "relation": "extends", "to": "case-dahan-theorem39-200k" },
     { "from": "case-transfer-pilot", "relation": "checked_by", "to": "evidence-transfer-pilot" },
     { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" }
   ]
