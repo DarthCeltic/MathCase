@@ -61,6 +61,18 @@ python -B check_input.py --prime 884 --offset 3 --out unsupported.json
 python -B -m unittest test_check_input.py
 ```
 
+The visitor page's current downloads use the same `mathcase-prime-envelope-input-v1`
+receipt contract, so a downloaded file can be checked directly:
+
+```sh
+python -B check_input.py --verify mathcase-prime-envelope-883-s3.json
+```
+
+The verifier also accepts the earlier browser-only v1 shape as a compatibility
+path; [`fixtures/browser-v1-883-s3.json`](fixtures/browser-v1-883-s3.json) is an
+authentic saved exclusion used by the regression test. In both paths the
+arithmetic is recomputed from the two inputs and a changed result is rejected.
+
 From the repository root, the same two-step check is available through the
 standard catalog:
 
