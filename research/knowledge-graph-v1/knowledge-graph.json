@@ -260,6 +260,24 @@
       "kind": "limit",
       "label": "No held-out learner or model improvement has been established",
       "path": "research/collatz-library-transfer-pilot-v1/README.md"
+    },
+    {
+      "id": "case-ws5-block-crossover",
+      "kind": "question",
+      "label": "Can blockwise hybrids of two 207 colorings reach 208?",
+      "path": "research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/README.md"
+    },
+    {
+      "id": "evidence-ws5-block-crossover",
+      "kind": "evidence",
+      "label": "39-start capped pilot; best candidate has one forbidden sum",
+      "path": "research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/result.json"
+    },
+    {
+      "id": "limit-ws5-block-crossover",
+      "kind": "limit",
+      "label": "Capped search miss; does not rule out any other 208 coloring",
+      "path": "research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/README.md"
     }
   ],
   "edges": [
@@ -304,6 +322,9 @@
     { "from": "case-dahan-theorem39-500k", "relation": "uses_method", "to": "method-dahan-criterion" },
     { "from": "case-dahan-theorem39-500k", "relation": "extends", "to": "case-dahan-theorem39-300k" },
     { "from": "case-transfer-pilot", "relation": "checked_by", "to": "evidence-transfer-pilot" },
-    { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" }
+    { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" },
+    { "from": "case-ws5-block-crossover", "relation": "checked_by", "to": "evidence-ws5-block-crossover" },
+    { "from": "case-ws5-block-crossover", "relation": "limited_by", "to": "limit-ws5-block-crossover" },
+    { "from": "case-ws5-block-crossover", "relation": "uses_method", "to": "method-independent-control" }
   ]
 }

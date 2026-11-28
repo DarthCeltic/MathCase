@@ -26,6 +26,19 @@ A different saved five-color assignment for 1 through 208 has one forbidden sum:
 
 This result is only about that one saved assignment. It does not rule out a valid coloring of 1 through 208, say anything about other starting assignments, or change the known bound. The sources, exact candidate, fresh-clone replay, and limits are in [`repair-radius-three-v1`](repair-radius-three-v1/README.md).
 
+## A block-crossover repair pilot
+
+A separate 30-second search mixed contiguous blocks from the two published
+207 colorings, tried all five colors for 208, and applied greedy
+conflict-delta repairs. It reached the cap after 39 of 50 designed starts
+and 46,766 single-number moves. The best result still has one violation,
+`12 + 196 = 208` in color 4. This candidate is not the same coloring as
+Rowley's assignment with 208 appended: it differs at seven positions, while
+retaining the same sole violation. The bounded run neither finds a valid 208
+coloring nor shows that one cannot exist. Its source, saved assignment, and
+independent direct/bitset checks are in
+[`block-crossover-2026-11-28`](block-crossover-2026-11-28/README.md).
+
 ## Replay
 
 Python 3.10+ with its standard library is sufficient. The first command downloads two small files from immutable public GitHub revisions, verifies both SHA-256 values, and caches the originals. With that directory present all subsequent commands run offline. The output JSONs contain computed counts and search limits. The upstream colorings stay in the input cache.
