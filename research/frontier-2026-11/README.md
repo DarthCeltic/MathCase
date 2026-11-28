@@ -17,7 +17,7 @@ Run `python scripts/run_frontier_case.py list` from the repository root. Then ru
 
 ## Additional bounded research result
 
-The [C7 five-symbol greedy pilot](../frontier/c7-five-symbol-greedy-v1/README.md)
+The [C7 five-symbol greedy pilot](shannon-c7-368-whole-graph-greedy-v2/README.md)
 searched the full 16,807-word space from an empty set for 180 seconds. It
 completed 12,549 trials and found a valid best set of 253 words, while the
 published 367-word control passed the independent checker and a planted
