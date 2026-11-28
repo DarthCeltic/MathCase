@@ -26,6 +26,13 @@ class GeometryMidpointDispatchTests(unittest.TestCase):
         self.assertEqual(command[1], "--output-dir")
         self.assertEqual(Path(command[2]), output / "lean-replay")
 
+    def test_route_forwards_stage_timeout(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "run"
+            args = type("Args", (), {"stage_timeout": 75})()
+            command = launcher.commands("geometry-midpoint", args, output)[0]
+        self.assertEqual(command[-2:], ("--stage-timeout", "75"))
+
 
 if __name__ == "__main__":
     unittest.main()

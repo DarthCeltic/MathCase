@@ -10,7 +10,7 @@ import tempfile
 
 CATALOG = {
     "counterexample": "Check 4 divides 2 squared and 4 does not divide 2. Exact arithmetic.",
-    "geometry-midpoint": "Fresh-source Lean replay of the known midpoint identity in a normalized, axis-aligned right-triangle coordinate model.",
+    "geometry-midpoint": "Fresh-source Lean replay of the known midpoint identity in a normalized, axis-aligned right-triangle coordinate model. Supports --stage-timeout.",
     "prime-sqrt2": "Recompile the prime theorem and its square-root-of-two child. Lean stages default to a 600-second limit.",
     "collatz": "Prove the 12-of-20 descent rule and its exact residue count in Lean 4.33.1.",
     "collatz-at-most-twelve": "Prove and recount the at-most-12-of-20 descent family, including the 13-odd boundary.",
@@ -93,6 +93,9 @@ def commands(case, args, output):
         if args.stage_timeout is not None:
             command += ["--stage-timeout", str(args.stage_timeout)]
         return [tuple(command)]
+    if case == "geometry-midpoint" and args.stage_timeout is not None:
+        return [commands(case, type("GeometryArgs", (), {"stage_timeout": None})(), output)[0]
+                + ("--stage-timeout", str(args.stage_timeout))]
     return routes[case]
 
 
@@ -126,7 +129,7 @@ def main(argv=None, root=ROOT):
     deps.add_argument("--bootstrap", type=Path, help="prime-sqrt2: fetch the pinned public dependencies here")
     parser.add_argument("--lean", type=Path, help="collatz-six-of-ten: official Lean 4.33.1 executable")
     parser.add_argument("--stage-timeout", type=int,
-                        help="prime-sqrt2: wall-clock limit for each Lean stage (default: 600 seconds)")
+                        help="prime-sqrt2 or geometry-midpoint: wall-clock limit for each Lean stage")
     parser.add_argument("--source", type=Path, help="visitor: your own trusted .lean source file")
     parser.add_argument("--case-packet", type=Path, help="visitor: exported .mathcase.json for exact-target checking")
     parser.add_argument("--lake-project", type=Path, help="visitor: an already prepared local Lake project; no dependencies are fetched")
@@ -147,8 +150,8 @@ def main(argv=None, root=ROOT):
         parser.error("--mathlib and --bootstrap apply to prime-sqrt2")
     if args.stage_timeout is not None and args.stage_timeout < 1:
         parser.error("--stage-timeout must be positive")
-    if args.case != "prime-sqrt2" and args.stage_timeout is not None:
-        parser.error("--stage-timeout applies only to prime-sqrt2")
+    if args.case not in ("prime-sqrt2", "geometry-midpoint") and args.stage_timeout is not None:
+        parser.error("--stage-timeout applies only to prime-sqrt2 or geometry-midpoint")
     if args.case == "visitor":
         if bool(args.source) == bool(args.case_packet):
             parser.error("visitor requires exactly one of --source PATH or --case-packet PATH")
