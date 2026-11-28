@@ -101,7 +101,7 @@ def commands(case, args, output):
         if args.stage_timeout is not None:
             command += ["--stage-timeout", str(args.stage_timeout)]
         return [tuple(command)]
-    if case == "collatz-parity-envelope-23-14" and getattr(args, "lean", None) is not None:
+    if case in ("collatz-parity-envelope-23-14", "collatz-at-most-thirteen-22") and getattr(args, "lean", None) is not None:
         command = list(routes[case][0])
         command[1:1] = ["--lean", str(args.lean)]
         return [tuple(command)]
@@ -153,8 +153,8 @@ def main(argv=None, root=ROOT):
         parser.error("collatz-six-of-ten needs --lean PATH_TO_LEAN_4_33_1")
     if args.case == "collatz-six-of-ten" and not args.lean.is_file():
         parser.error("the Lean executable does not exist")
-    if args.case not in ("collatz-six-of-ten", "geometry-midpoint", "collatz-parity-envelope-23-14") and args.lean is not None:
-        parser.error("--lean applies only to collatz-six-of-ten, geometry-midpoint, or collatz-parity-envelope-23-14")
+    if args.case not in ("collatz-six-of-ten", "geometry-midpoint", "collatz-parity-envelope-23-14", "collatz-at-most-thirteen-22") and args.lean is not None:
+        parser.error("--lean applies only to collatz-six-of-ten, geometry-midpoint, collatz-parity-envelope-23-14, or collatz-at-most-thirteen-22")
     if args.case != "prime-sqrt2" and (args.mathlib or args.bootstrap):
         parser.error("--mathlib and --bootstrap apply to prime-sqrt2")
     if args.stage_timeout is not None and args.stage_timeout < 1:

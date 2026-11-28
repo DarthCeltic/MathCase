@@ -117,7 +117,10 @@ def arithmetic_audit() -> dict[str, object]:
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", required=True, type=Path)
-    parser.add_argument("--lean-toolchain", default=TOOLCHAIN)
+    parser.add_argument("--lean", dest="lean_executable", type=Path,
+                        help="explicit Lean executable; bypasses elan")
+    parser.add_argument("--lean-toolchain", default=TOOLCHAIN,
+                        help="elan toolchain name when --lean is not supplied")
     args = parser.parse_args()
 
     packet = Path(__file__).resolve().parent
@@ -156,7 +159,13 @@ def main() -> int:
     overall = "PASS"
     for module in MODULES:
         out_file = build / f"{module}.olean"
-        command = ["elan", "run", args.lean_toolchain, "lean", "-o", str(out_file), str(copied_sources[module])]
+        if args.lean_executable is not None:
+            lean_executable = args.lean_executable.resolve()
+            if not lean_executable.is_file():
+                parser.error(f"the Lean executable does not exist: {lean_executable}")
+            command = [str(lean_executable), "-o", str(out_file), str(copied_sources[module])]
+        else:
+            command = ["elan", "run", args.lean_toolchain, "lean", "-o", str(out_file), str(copied_sources[module])]
         stdout_path = output / f"{module}.stdout.txt"
         stderr_path = output / f"{module}.stderr.txt"
         tic = time.monotonic()
@@ -225,7 +234,9 @@ def main() -> int:
         "started_utc": started,
         "finished_utc": utc_now(),
         "lean_toolchain": args.lean_toolchain,
-        "lean_command": ["elan", "run", args.lean_toolchain, "lean", "-o", "<module>.olean", "<module>.lean"],
+        "lean_command": (["<lean-executable>", "-o", "<module>.olean", "<module>.lean"]
+                         if args.lean_executable is not None else
+                         ["elan", "run", args.lean_toolchain, "lean", "-o", "<module>.olean", "<module>.lean"]),
         "network_or_provider_calls": 0,
         "external_cost_usd": 0,
         "retry_count": 0,

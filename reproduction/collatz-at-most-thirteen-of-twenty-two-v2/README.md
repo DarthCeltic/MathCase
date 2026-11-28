@@ -25,6 +25,8 @@ An independent Python integer audit confirmed the binomial count, the large-star
 
 The first v1 attempt failed on a proof-term rewrite direction. Its failed source, protocol, and path-free summary are preserved under [`attempt-v1-failed/`](attempt-v1-failed/). The raw receipt and compiler logs remain in the local MathCase run archive; their hashes are recorded in the summary. Version 2 changes the proof term and passes. The [reproduction protocol](REPLAY-PROTOCOL.md), [path-free run binding](ATTEMPT-BINDING.json), and [verification summary](verification-summary.json) record the compiled source hashes and results. See [the replay outcome and limits](REPLAY-RESULTS.md).
 
+The dated [repair record](repair-2026-11-28.json) preserves a separate wrapper failure: an explicit executable path had incorrectly been passed to `elan`. The repaired runner invokes `--lean PATH` directly and the fresh four-module replay passes; the arithmetic audit and the failed receipt remain separate evidence.
+
 ## Reproduce
 
 Install Lean 4.33.1 through `elan` and Python 3. Run from this directory:
@@ -33,7 +35,19 @@ Install Lean 4.33.1 through `elan` and Python 3. Run from this directory:
 python verify_at_most_thirteen_22.py --output-dir RUN_DIR
 ```
 
-`RUN_DIR` must be new. The command compiles `WordBound`, `WordResidue`, `CountWords`, and `AtMostThirteen22` in order, with one Lean process at a time and a 60-second cap per module. It stores source copies, compiler output, `.olean` hashes, axiom reports, and an independent arithmetic audit. The runner's module docstring retains the v1 packet name; the v2 source and passing hashes are recorded in the binding and verification summary. No Mathlib, Docker, model, provider, search service, network, GPU, or paid service is used.
+For a pinned executable (recommended for an independent replay), pass it explicitly:
+
+```sh
+python verify_at_most_thirteen_22.py --lean PATH_TO_LEAN_4_33_1 --output-dir RUN_DIR
+```
+
+The same route is available through the public launcher:
+
+```sh
+python scripts/run_public_case.py collatz-at-most-thirteen-22 --lean PATH_TO_LEAN_4_33_1 --out RUN_PARENT
+```
+
+`RUN_DIR` must be new. The command compiles `WordBound`, `WordResidue`, `CountWords`, and `AtMostThirteen22` in order, with one Lean process at a time and a 60-second cap per module. It stores source copies, compiler output, `.olean` hashes, axiom reports, and an independent arithmetic audit. With `--lean`, the runner invokes that executable directly; without it, the named `elan` toolchain is used. The runner's module docstring retains the v1 packet name; the v2 source and passing hashes are recorded in the binding and verification summary. No Mathlib, Docker, model, provider, search service, network, GPU, or paid service is used.
 
 ## Limits
 

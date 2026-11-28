@@ -1,0 +1,27 @@
+{
+  "schema": "mathcase-collatz-replay-repair-v1",
+  "status": "PASS",
+  "problem": "The preserved first run passed the independent arithmetic audit but failed before theorem elaboration because the wrapper sent a full executable path to elan as if it were a toolchain name.",
+  "repair": "--lean now invokes the supplied Lean executable directly; elan remains the default when --lean is omitted.",
+  "previous_failure_receipt_sha256": "25d9d5204b0d1f369f6d391cdcc4ef64d8b7be2d0e820babf173780e654ad659",
+  "note": "The previous failure receipt is retained locally. This path-free record binds the repaired source and the fresh passing receipt.",
+  "runner_source_sha256": "f2c27bae3a35b9c1352d473a6d4290887f36b2c9db89d4ed779d134a6ee8e93e",
+  "fresh_receipt_sha256": "c6e766e80077a78e4533d127f32b388ccdc7a011e7e25ba3b723014c9902836c",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "modules": 4,
+  "axioms": ["propext", "Classical.choice", "Quot.sound"],
+  "sorryAx": false,
+  "arithmetic_audit": {
+    "steps": 22,
+    "odd_input_cutoff": 13,
+    "modulus": 4194304,
+    "qualifying_residue_count": 3593934,
+    "density_percent": 85.68606376647949,
+    "large_start_cutoff": 313,
+    "small_starts_checked": 226,
+    "counterexamples": 0,
+    "audit_sha256": "d8f2329a802162f50ee42ab25c3274a415a62cecbd7aaad9b70b7e88e896a2db"
+  },
+  "external_calls": 0,
+  "external_cost_usd": 0
+}
