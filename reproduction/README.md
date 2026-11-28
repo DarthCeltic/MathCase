@@ -28,6 +28,10 @@ Start with the [bounded 23/14 Collatz proof](collatz-parity-envelopes-2026-11-v1
 
 Visitors can also read the [right-triangle midpoint case](coordinate-right-triangle-midpoint-v1/README.md), including the [general-coordinate theorem](coordinate-right-triangle-midpoint-general-v1/README.md), start with the [six-dot puzzle](https://darthceltic.github.io/mathcase/) or inspect the [saved proof example](https://darthceltic.github.io/mathcase/reader.html?scope=public#case/hero-prime-divisibility-r1), where Lean rejected an attempt and accepted a correction.
 
+To replay the stronger geometry case directly from a clone, run
+`python scripts/run_public_case.py geometry-midpoint-general`; the existing
+`geometry-midpoint` command remains the smaller normalized teaching example.
+
 Each package below says what question it addresses, what was actually checked, and what remains open. A receipt records the exact files and tools for a run; it does not by itself prove a broader claim or replace a human review of the wording.
 
 Other preserved verification packages include:
