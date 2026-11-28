@@ -41,6 +41,38 @@ For $\sqrt X<p\le X$ we have $b\le\sqrt X$ for large $X$ and $b-a\le8\sqrt X/\lo
 
 ## Replay
 
+### Check one visitor-supplied prime and offset
+
+`check_input.py` evaluates the exact offset criterion stated above for one
+structured input `(p,s)`. It uses deterministic integer arithmetic; it does
+**not** launch Lean or create a new formal proof. The result is classified as
+an attained triple, no triple **under the requested cap**, or unsupported
+input. In particular, a negative result does not exclude larger denominators.
+The receipt binds the exact `PrimeBand.lean` and evaluator bytes by SHA-256,
+and has its own integrity digest. Verification reruns the arithmetic and
+checks those source pins against this checkout.
+
+```sh
+python -B check_input.py --prime 881 --offset 3 --out 881.json
+python -B check_input.py --verify 881.json
+python -B check_input.py --prime 883 --offset 3 --out 883.json
+python -B check_input.py --prime 887 --offset 3 --out new-input.json
+python -B check_input.py --prime 884 --offset 3 --out unsupported.json
+python -B -m unittest test_check_input.py
+```
+
+For `p=881,s=3`, the cap is `19p` and the unique triple is
+`(228,10572,16739)`. For `p=883,s=3`, the receipt says only that no triple
+exists through `19p`; it does not rule out a larger one. Composite or
+out-of-theorem inputs are marked `UNSUPPORTED_INPUT`, never as mathematical
+exclusions. A changed receipt is rejected by `--verify`.
+
+The package theorem version is `prime-envelope-v1`; its Lean source is
+[`lean/PrimeBand.lean`](lean/PrimeBand.lean), whose existing Lean replay and
+axiom report are documented in [`lean/README.md`](lean/README.md). The per-
+input receipt records that this command is arithmetic evaluation of the
+Lean-classified rule, not a fresh Lean run.
+
 From this directory run the following with Python 3.10 or newer.
 
 ```sh
