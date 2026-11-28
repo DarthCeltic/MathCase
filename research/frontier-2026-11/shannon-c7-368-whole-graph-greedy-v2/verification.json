@@ -1,0 +1,47 @@
+{
+  "schema": "c7-368-redesign-independent-check-v1",
+  "baseline_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "candidate_sha256": "8ba51c41d162c4445c0a4bd39b457d292d6f2710cefad7c6c8c776b0f050ca37",
+  "checks": [
+    {
+      "case": "published_367",
+      "size": 367,
+      "pairwise_valid": true,
+      "pair_tests": 67161
+    },
+    {
+      "case": "searched_best",
+      "size": 253,
+      "pairwise_valid": true,
+      "pair_tests": 31878
+    },
+    {
+      "case": "planted_adjacent_word_control",
+      "rejected": true,
+      "detail": {
+        "reason": "conflicting_pair",
+        "codes": [
+          20,
+          3045
+        ],
+        "words": [
+          [
+            6,
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            6,
+            1,
+            1
+          ]
+        ]
+      }
+    }
+  ],
+  "claim": "The saved best candidate is pairwise valid at its reported size; no 368-word witness was found in the bounded search."
+}

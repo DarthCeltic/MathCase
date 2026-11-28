@@ -1,0 +1,20 @@
+{
+  "run_id": "c7-368-whole-graph-random-greedy-2026-11-28",
+  "started_local_date": "2026-11-28 America/New_York",
+  "machine_scope": "local CPU; no network, model calls, paid compute, or external solver",
+  "command": "python -u search.py --seconds 180 --seed 28112026 --out .",
+  "python_version": "Python 3.14.7",
+  "seed": 28112026,
+  "search_cap_seconds": 180,
+  "mask_build_seconds": 5.341107,
+  "elapsed_seconds_including_setup_and_final_pair_check": 185.367398,
+  "trials": 12549,
+  "best_size": 253,
+  "status": "NO_368_FOUND_UNKNOWN",
+  "best_candidate_sha256": "8ba51c41d162c4445c0a4bd39b457d292d6f2710cefad7c6c8c776b0f050ca37",
+  "baseline_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "independent_verification": "Published 367 baseline valid over 67,161 pairs; saved 253 candidate valid over 31,878 pairs; planted adjacent-coordinate corruption rejected.",
+  "measured_free_bytes_before": {"C": 45895348224, "T": 296874205184},
+  "measured_free_bytes_after": {"C": 45661442048, "T": 296874164224},
+  "notes": "Search began from the empty set on the full 16,807-vertex graph; no seed vertices frozen and no diagonal-slice constraints. Search-loop seconds may overrun slightly due one trial completing after the deadline; final validation is outside the cap."
+}
