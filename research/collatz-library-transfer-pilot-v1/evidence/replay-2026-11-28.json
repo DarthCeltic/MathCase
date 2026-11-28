@@ -1,0 +1,18 @@
+{
+  "schema": "mathcase-transfer-pilot-replay-v1",
+  "scope": "saved-response replay; no external inference call",
+  "toolchain": "Lean 4.33.1",
+  "source_sha256": "8a53e1cee2436efc347c6ebb07da0203d9c613670ad52bafdd0d0d19258d408c",
+  "split_sha256": "95fe10b16ef819c0214cf923adc0be37f8c6db8e0ac16cdb5610eb2e4f1e4dc6",
+  "arms": {
+    "control": {"held_out": [681, 681], "outside": [4096, 4096], "boundary": [96, 96], "exact_target_audit": "PASS", "axioms": ["propext", "Quot.sound"]},
+    "saved_library": {"held_out": [681, 681], "outside": [4096, 4096], "boundary": [96, 96], "exact_target_audit": "PASS", "axioms": ["propext", "Quot.sound"]}
+  },
+  "observed_uplift": false,
+  "result": "Both saved arms produced identical measured outcomes.",
+  "limits": [
+    "This is a reproducibility replay of saved responses, not a new model call.",
+    "It is not a learner study and does not establish improvement on harder tasks.",
+    "The exact local run envelope is preserved privately; this file is a path-free public projection."
+  ]
+}

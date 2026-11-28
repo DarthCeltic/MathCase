@@ -11,6 +11,8 @@ Two fresh Codex agents each received one attempt to write a Lean predictor for a
 
 Both agents returned byte-identical predictor definitions and different soundness proofs. Both proofs use only `propext` and `Quot.sound`. This comparison found no advantage on the task. One pair, a historically public table and a perfect control score cannot estimate the average effect of MathCase on harder problems. The exact backend snapshot, token usage and Codex credit cost were unavailable. There were no third-party inference API calls.
 
+The same saved-response pilot was replayed from the public launcher on 2026-11-28. The path-free receipt is [`evidence/replay-2026-11-28.json`](evidence/replay-2026-11-28.json); it reproduces the table above and again finds no observed uplift. This is a reproducibility record, not a claim that library reuse improves a model.
+
 ## Replay
 
 Install Python 3 and the pinned Lean 4.33.1 toolchain. Run `python replay_pilot.py` from this folder. Use `--lean` to select an explicit compiler or `--receipt result.json` to save the new scores. The runner compiles each original response in a fresh temporary directory, checks the exact proposition and executes its predictor on all 4,873 examples. Some inputs require the predictor to decline. The run needs no additional Lean packages.
