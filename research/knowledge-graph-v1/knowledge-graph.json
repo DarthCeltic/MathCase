@@ -304,6 +304,24 @@
       "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/README.md"
     },
     {
+      "id": "case-dahan-theorem39-1000k",
+      "kind": "question",
+      "label": "Does the same criterion reproduce on a 1,000,000-prime finite sample?",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-1000000-v1/README.md"
+    },
+    {
+      "id": "evidence-dahan-theorem39-1000k",
+      "kind": "evidence",
+      "label": "1,000,000 finite rows succeeded with an independent audit",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-1000000-v1/receipt.json"
+    },
+    {
+      "id": "limit-dahan-1000k-finite",
+      "kind": "limit",
+      "label": "Million-row replay remains finite evidence only",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-1000000-v1/README.md"
+    },
+    {
       "id": "evidence-dahan-500k-launcher",
       "kind": "evidence",
       "label": "Public case launcher dispatched generation and independent audit",
@@ -401,6 +419,10 @@
     { "from": "case-dahan-theorem39-500k", "relation": "uses_method", "to": "method-dahan-criterion" },
     { "from": "case-dahan-theorem39-500k", "relation": "extends", "to": "case-dahan-theorem39-300k" },
     { "from": "case-dahan-theorem39-500k", "relation": "launcher_verified_by", "to": "evidence-dahan-500k-launcher" },
+    { "from": "case-dahan-theorem39-1000k", "relation": "checked_by", "to": "evidence-dahan-theorem39-1000k" },
+    { "from": "case-dahan-theorem39-1000k", "relation": "limited_by", "to": "limit-dahan-1000k-finite" },
+    { "from": "case-dahan-theorem39-1000k", "relation": "uses_method", "to": "method-dahan-criterion" },
+    { "from": "case-dahan-theorem39-1000k", "relation": "extends", "to": "case-dahan-theorem39-500k" },
     { "from": "case-transfer-pilot", "relation": "checked_by", "to": "evidence-transfer-pilot" },
     { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" },
     { "from": "case-ws5-block-crossover", "relation": "checked_by", "to": "evidence-ws5-block-crossover" },

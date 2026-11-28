@@ -77,3 +77,9 @@ receipts extend the exact two-parameter replay to 300,000 and 500,000
 eligible primes. Both report zero failures and a separately run row-by-row
 identity audit. They are larger finite checks of the published criterion, not
 an asymptotic theorem or a solution of Erdős–Straus.
+
+The [`dahan-theorem39-extension-1000000-v1`](dahan-theorem39-extension-1000000-v1/README.md)
+receipt extends the same replay to 1,000,000 eligible primes: 1,000,000/1,000,000
+rows succeeded and the independent audit passed. This remains finite evidence
+only; the million-row generated file is retained privately and represented in
+Git by its compact hash-bound receipt.
