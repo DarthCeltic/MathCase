@@ -11,6 +11,7 @@ import tempfile
 CATALOG = {
     "counterexample": "Check 4 divides 2 squared and 4 does not divide 2. Exact arithmetic.",
     "geometry-midpoint": "Fresh-source Lean replay of the known midpoint identity in a normalized, axis-aligned right-triangle coordinate model. Supports --lean and --stage-timeout.",
+    "geometry-midpoint-general": "Fresh-source Lean replay of the general-coordinate midpoint theorem for any real points with a right-angle dot-product condition.",
     "prime-sqrt2": "Recompile the prime theorem and its square-root-of-two child. Lean stages default to a 600-second limit.",
     "collatz": "Prove the 12-of-20 descent rule and its exact residue count in Lean 4.33.1.",
     "collatz-at-most-twelve": "Prove and recount the at-most-12-of-20 descent family, including the 13-odd boundary.",
@@ -52,6 +53,7 @@ def commands(case, args, output):
     routes = {
         "counterexample": [("scripts/hero_counterexample.py",)],
         "geometry-midpoint": [("reproduction/coordinate-right-triangle-midpoint-v1/replay.py", "--output-dir", output / "lean-replay")],
+        "geometry-midpoint-general": [("reproduction/coordinate-right-triangle-midpoint-general-v1/replay.py", "--output-dir", output / "lean-replay")],
         "collatz": [
             (COLLATZ + "/check_word_bound.py", "--output", output / "descent.json"),
             (COLLATZ + "/verify_count.py", "--output", output / "count.json"),
@@ -93,7 +95,7 @@ def commands(case, args, output):
         if args.stage_timeout is not None:
             command += ["--stage-timeout", str(args.stage_timeout)]
         return [tuple(command)]
-    if case == "geometry-midpoint":
+    if case in ("geometry-midpoint", "geometry-midpoint-general"):
         command = list(routes[case][0])
         lean_arg = getattr(args, "lean", None)
         if lean_arg is not None:
@@ -153,14 +155,14 @@ def main(argv=None, root=ROOT):
         parser.error("collatz-six-of-ten needs --lean PATH_TO_LEAN_4_33_1")
     if args.case == "collatz-six-of-ten" and not args.lean.is_file():
         parser.error("the Lean executable does not exist")
-    if args.case not in ("collatz-six-of-ten", "geometry-midpoint", "collatz-parity-envelope-23-14", "collatz-at-most-thirteen-22") and args.lean is not None:
-        parser.error("--lean applies only to collatz-six-of-ten, geometry-midpoint, collatz-parity-envelope-23-14, or collatz-at-most-thirteen-22")
+    if args.case not in ("collatz-six-of-ten", "geometry-midpoint", "geometry-midpoint-general", "collatz-parity-envelope-23-14", "collatz-at-most-thirteen-22") and args.lean is not None:
+        parser.error("--lean applies only to collatz-six-of-ten, geometry-midpoint, geometry-midpoint-general, collatz-parity-envelope-23-14, or collatz-at-most-thirteen-22")
     if args.case != "prime-sqrt2" and (args.mathlib or args.bootstrap):
         parser.error("--mathlib and --bootstrap apply to prime-sqrt2")
     if args.stage_timeout is not None and args.stage_timeout < 1:
         parser.error("--stage-timeout must be positive")
-    if args.case not in ("prime-sqrt2", "geometry-midpoint") and args.stage_timeout is not None:
-        parser.error("--stage-timeout applies only to prime-sqrt2 or geometry-midpoint")
+    if args.case not in ("prime-sqrt2", "geometry-midpoint", "geometry-midpoint-general") and args.stage_timeout is not None:
+        parser.error("--stage-timeout applies only to prime-sqrt2, geometry-midpoint, or geometry-midpoint-general")
     if args.case == "visitor":
         if bool(args.source) == bool(args.case_packet):
             parser.error("visitor requires exactly one of --source PATH or --case-packet PATH")

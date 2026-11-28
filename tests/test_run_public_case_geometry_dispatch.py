@@ -41,6 +41,17 @@ class GeometryMidpointDispatchTests(unittest.TestCase):
             command = launcher.commands("geometry-midpoint", args, output)[0]
         self.assertEqual(command[1:3], ("--lean", str(Path(temp) / "lean.exe")))
 
+    def test_general_route_uses_general_package(self):
+        with tempfile.TemporaryDirectory() as temp:
+            output = Path(temp) / "run"
+            command = launcher.commands("geometry-midpoint-general", common_args(), output)[0]
+        self.assertEqual(command[0], "reproduction/coordinate-right-triangle-midpoint-general-v1/replay.py")
+        self.assertEqual(command[1], "--output-dir")
+        self.assertEqual(Path(command[2]), output / "lean-replay")
+
+    def test_general_catalog_is_explicit(self):
+        self.assertIn("general-coordinate", launcher.CATALOG["geometry-midpoint-general"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -31,6 +31,7 @@ scopes:
 | --- | --- |
 | `python scripts/run_public_case.py collatz-parity-envelope-23-14` | The reviewed 23/14 Lean target replays; it is not Collatz convergence. |
 | `python scripts/run_public_case.py geometry-midpoint` | The coordinate midpoint theorem replays under its stated model. |
+| `python scripts/run_public_case.py geometry-midpoint-general` | Replays the stronger general-coordinate midpoint theorem and its axiom audit. |
 | `python scripts/run_frontier_case.py egyptian-28k-21` | The exact `28k+21` identities check; Erdős–Straus remains open. |
 | `python scripts/run_frontier_case.py ramsey-6-6` | The Paley(101) witness and fixed-base checks pass; other 102-vertex graphs are not ruled out. |
 | `python scripts/run_frontier_case.py c7-greedy --dry-run` | The bounded C7 search command is registered; a search miss is `UNKNOWN`, not impossibility. |
