@@ -1,0 +1,13 @@
+{
+  "schema": "mathcase-c7-public-clone-check-v1",
+  "checkout": "fresh public clone at MathCase commit 6f38f73c94db41f305b8b171a8cf82e2b39849a2",
+  "command": "python -B verify.py --baseline base_c7.json --candidate search-result.json --out c7-verification.json",
+  "sha256_manifest_entries_checked": 9,
+  "sha256_manifest_mismatches": 0,
+  "verification_output_sha256": "f4db2b1d032da11de3e59709c154edd7df77c0f01d60fbb1b8306eb12d6e8121",
+  "published_367_control": {"size": 367, "pair_tests": 67161, "pairwise_valid": true},
+  "saved_best_candidate": {"size": 253, "pair_tests": 31878, "pairwise_valid": true},
+  "planted_conflict_control": {"rejected": true},
+  "result": "The public package is reproducible from a fresh clone; the bounded search still found no 368-word witness.",
+  "scope": "This is a clean-clone artifact check, not an exhaustive search and not an impossibility proof."
+}
