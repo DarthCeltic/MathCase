@@ -32,11 +32,15 @@ The owner-run exact-source replay above used a warm pinned cache; it is not an i
 
 Requirements: Python 3, Lean/Lake 4.33.1, and internet access for the first retrieval of the pinned Mathlib source and selected public cache files. The runner makes a new output directory and refuses to continue if the lock or source hashes differ. It compiles the theorem source and runs the axiom audit; it does not modify this package.
 
-    python -B replay.py
+    python -B replay.py --lean PATH_TO_LEAN_4_33_1
 
 Optional output location:
 
-    python -B replay.py --output-dir PATH
+    python -B replay.py --lean PATH_TO_LEAN_4_33_1 --output-dir PATH
+
+The `--lean` option is optional when `lean` is already on `PATH`; supplying it
+makes the exact compiler binary explicit on a clean Windows host. The
+general-coordinate sibling runner accepts the same option.
 
 The documented command passed in the owner-run fresh public clone recorded above. The result confirms that the package can replay from public source on this host; it does not establish an independent stranger run or mathematical review. The sample values above are elementary arithmetic illustrations; the universal normalized-coordinate identity is the Lean-checked claim.
 
