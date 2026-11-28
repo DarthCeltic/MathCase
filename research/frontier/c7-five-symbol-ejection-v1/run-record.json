@@ -1,0 +1,11 @@
+{
+  "command": "python -u search.py --base <base_c7.json> --seconds 180 --seed 281131 --out .",
+  "python": "3.14.7",
+  "status": "NO_368_FOUND_UNKNOWN",
+  "best_size": 367,
+  "starts": 6,
+  "moves": 447,
+  "elapsed_seconds": 180.0,
+  "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "no_external_calls": true
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "c7-ejection-independent-verification-v1",
+  "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "result_sha256": "47e8522ac8856f1f322f399fb3846d6e7563de661b206a41a55671fd4e08b55e",
+  "checks": {
+    "base_independent": true,
+    "candidate_independent": true,
+    "planted_duplicate_rejected": true,
+    "base_detail": {
+      "pair_tests": 67161
+    },
+    "candidate_detail": {
+      "pair_tests": 67161
+    },
+    "damaged_detail": {
+      "reason": "invalid_word_set"
+    }
+  },
+  "status": "PASS"
+}
