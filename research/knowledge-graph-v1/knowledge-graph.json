@@ -458,6 +458,30 @@
       "kind": "method",
       "label": "Deterministic integer evaluation bound to the pinned Lean classification",
       "path": "research/number-theory/egyptian-fractions/prime-envelope-v1/README.md"
+    },
+    {
+      "id": "case-geometry-midpoint-general",
+      "kind": "question",
+      "label": "For any coordinate right angle, is the opposite-side midpoint equally far from all three points?",
+      "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/README.md"
+    },
+    {
+      "id": "evidence-geometry-midpoint-general",
+      "kind": "evidence",
+      "label": "Pinned Lean coordinate theorem, exact examples, and changed-angle control",
+      "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/evidence/public-replay.json"
+    },
+    {
+      "id": "limit-geometry-midpoint-general",
+      "kind": "limit",
+      "label": "Coordinate theorem only; no abstract Euclidean-plane equivalence",
+      "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/README.md"
+    },
+    {
+      "id": "method-geometry-midpoint-general",
+      "kind": "method",
+      "label": "Kernel replay plus independent rational examples and a changed-condition control",
+      "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/README.md"
     }
   ],
   "edges": [
@@ -541,6 +565,10 @@
     { "from": "case-ws5-block-crossover", "relation": "uses_method", "to": "method-independent-control" },
     { "from": "case-prime-envelope-input", "relation": "checked_by", "to": "evidence-prime-envelope-input" },
     { "from": "case-prime-envelope-input", "relation": "limited_by", "to": "limit-prime-envelope-input" },
-    { "from": "case-prime-envelope-input", "relation": "uses_method", "to": "method-prime-envelope-receipt" }
+    { "from": "case-prime-envelope-input", "relation": "uses_method", "to": "method-prime-envelope-receipt" },
+    { "from": "case-geometry-midpoint-general", "relation": "checked_by", "to": "evidence-geometry-midpoint-general" },
+    { "from": "case-geometry-midpoint-general", "relation": "limited_by", "to": "limit-geometry-midpoint-general" },
+    { "from": "case-geometry-midpoint-general", "relation": "uses_method", "to": "method-geometry-midpoint-general" },
+    { "from": "case-geometry-midpoint-general", "relation": "extends", "to": "case-geometry-midpoint" }
   ]
 }
