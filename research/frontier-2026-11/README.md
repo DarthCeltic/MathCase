@@ -15,6 +15,16 @@ Run `python scripts/run_frontier_case.py list` from the repository root. Then ru
 | `egyptian-28k-21` | Lean 4.33.1 checks an exact three-unit-fraction identity for every `n = 28k+21`, and a separate identity for every positive multiple of seven. | These cover two infinite families only, not every integer `n ≥ 2`; the full Erdős–Straus conjecture remains open. | Compare the identity carefully with prior literature, then formalize a genuinely broader family if one is found. |
 | `ramsey-6-6` | The known Paley graph on 101 vertices has no monochromatic six-clique, giving `R(6,6) ≥ 102`. The certificates rule out adding a vertex while keeping that graph unchanged. Bounded recoloring checks say at least 16 old edges must change, with none of the 33 tested structured variants surviving. | This does not rule out a different 102-vertex coloring, establish a global upper bound, or show that 16 changes suffice. | Find a materially different 102-vertex seed and check every six-vertex subset, or formalize a broader obstruction. |
 
+## Additional bounded research result
+
+The [C7 five-symbol greedy pilot](../frontier/c7-five-symbol-greedy-v1/README.md)
+searched the full 16,807-word space from an empty set for 180 seconds. It
+completed 12,549 trials and found a valid best set of 253 words, while the
+published 367-word control passed the independent checker and a planted
+conflict was rejected. The result is `NO_368_FOUND_UNKNOWN`: it is a bounded
+search miss, not an impossibility proof and not a change to the known
+`367 ≤ α(C7^5) ≤ 401` interval.
+
 ## How to reproduce
 
 The standard-library Python checks need Python 3.10 or later. The Erdős–Straus route also needs Lean 4.33.1; it recompiles the two small `Init`-level sources in a temporary directory and checks the declared axioms and a deliberately wrong denominator control. It does not build Mathlib. The weak-Schur route downloads only the two immutable, hash-pinned source witnesses on first run; the exact upstream attribution and hashes are in `weak-schur-5/verify_weak_schur.py`.
