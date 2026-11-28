@@ -2,6 +2,10 @@
 
 ## Report an independent check
 
+Use the [review checklist](INDEPENDENT_REVIEW_CHECKLIST.md) for a compact
+software-and-wording review of the strongest bounded cases before opening a
+report.
+
 If you have access to a machine outside the MathCase project, there are three checks you can repeat from public files. A failed run is worth reporting too.
 
 | What you want to check | Where to start | Expected result |
