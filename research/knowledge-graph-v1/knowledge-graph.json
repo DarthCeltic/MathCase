@@ -434,6 +434,30 @@
       "kind": "limit",
       "label": "Capped search miss; does not rule out any other 208 coloring",
       "path": "research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/README.md"
+    },
+    {
+      "id": "case-prime-envelope-input",
+      "kind": "question",
+      "label": "For one prime p and offset s, what does the bounded denominator rule say?",
+      "path": "research/number-theory/egyptian-fractions/prime-envelope-v1/README.md"
+    },
+    {
+      "id": "evidence-prime-envelope-input",
+      "kind": "evidence",
+      "label": "Source-bound arithmetic receipt with offline replay and tamper rejection",
+      "path": "research/number-theory/egyptian-fractions/prime-envelope-v1/check_input.py"
+    },
+    {
+      "id": "limit-prime-envelope-input",
+      "kind": "limit",
+      "label": "A negative result excludes only denominators through the displayed cap",
+      "path": "research/number-theory/egyptian-fractions/prime-envelope-v1/README.md"
+    },
+    {
+      "id": "method-prime-envelope-receipt",
+      "kind": "method",
+      "label": "Deterministic integer evaluation bound to the pinned Lean classification",
+      "path": "research/number-theory/egyptian-fractions/prime-envelope-v1/README.md"
     }
   ],
   "edges": [
@@ -514,6 +538,9 @@
     { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" },
     { "from": "case-ws5-block-crossover", "relation": "checked_by", "to": "evidence-ws5-block-crossover" },
     { "from": "case-ws5-block-crossover", "relation": "limited_by", "to": "limit-ws5-block-crossover" },
-    { "from": "case-ws5-block-crossover", "relation": "uses_method", "to": "method-independent-control" }
+    { "from": "case-ws5-block-crossover", "relation": "uses_method", "to": "method-independent-control" },
+    { "from": "case-prime-envelope-input", "relation": "checked_by", "to": "evidence-prime-envelope-input" },
+    { "from": "case-prime-envelope-input", "relation": "limited_by", "to": "limit-prime-envelope-input" },
+    { "from": "case-prime-envelope-input", "relation": "uses_method", "to": "method-prime-envelope-receipt" }
   ]
 }
