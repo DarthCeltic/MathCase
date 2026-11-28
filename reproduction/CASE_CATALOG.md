@@ -8,6 +8,12 @@ From the repository root, `python scripts/run_public_case.py list` prints the av
 
 Use `python scripts/run_public_case.py list` to see the current identifiers. Lower-level commands remain available for targeted reproduction.
 
+The `prime-envelope` action accepts one prime and offset, writes a source-bound
+receipt, and verifies it in a second step. For example,
+`python -B scripts/run_public_case.py prime-envelope --prime 881 --offset 3`.
+This evaluates the published Lean-classified rule with exact integer
+arithmetic; it does not start a new Lean proof for that input.
+
 Run `python -B scripts/run_public_case.py collatz-parity-envelope-23-14` with Lean 4.33.1 to check the reviewed bounded first-drop theorem. Four modules compiled from a fresh public checkout. The [case README](collatz-parity-envelopes-2026-11-v1/README.md) gives the result and exact scope. The [diagnostics guide](../docs/diagnostics/README.md) lists the separate exploratory checks.
 
 M31 v1, upstream source audits and small worked examples, and bounded solver probes are diagnostics rather than featured results. Their exact commands and limits are in [Diagnostics and lab notes](../docs/diagnostics/README.md).

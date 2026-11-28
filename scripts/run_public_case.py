@@ -29,6 +29,7 @@ CATALOG = {
     "ramsey66": "Independently search the 101-vertex graph and its complement for a six-clique.",
     "egyptian": "Reconcile the saved witness campaign and its 100 ranges. Finite arithmetic evidence.",
     "egyptian-minimax": "Check the least possible largest denominator for 143 primes up to 10,000.",
+    "prime-envelope": "Evaluate one prime-envelope input and verify its source-bound arithmetic receipt.",
     "dahan-theorem39-500000": "Replay Dahan Theorem 3.9 on 500,000 eligible primes; finite evidence only.",
     "dahan-theorem39-1000000": "Replay Dahan Theorem 3.9 on 1,000,000 eligible primes; finite evidence only.",
     "riemann": "Compare four pinned upstream source files. Requires internet. Checks source identity.",
@@ -46,6 +47,13 @@ R66 = "reproduction/ramsey-r66-paley101-v1"
 
 
 def commands(case, args, output):
+    if case == "prime-envelope":
+        return [
+            ("research/number-theory/egyptian-fractions/prime-envelope-v1/check_input.py",
+             "--prime", str(args.prime), "--offset", str(args.offset), "--out", output / "result.json"),
+            ("research/number-theory/egyptian-fractions/prime-envelope-v1/check_input.py",
+             "--verify", output / "result.json"),
+        ]
     if case == "collatz-six-of-ten":
         return [
             (SIX_OF_TEN + "/replay.py", "--lean", args.lean, "--output-dir", output / "lean-replay"),
@@ -158,6 +166,8 @@ def main(argv=None, root=ROOT):
     parser.add_argument("--source", type=Path, help="visitor: your own trusted .lean source file")
     parser.add_argument("--case-packet", type=Path, help="visitor: exported .mathcase.json for exact-target checking")
     parser.add_argument("--lake-project", type=Path, help="visitor: an already prepared local Lake project; no dependencies are fetched")
+    parser.add_argument("--prime", type=int, help="prime-envelope: visitor-supplied prime p")
+    parser.add_argument("--offset", type=int, help="prime-envelope: visitor-supplied offset s")
     args = parser.parse_args(argv)
     if args.case == "list" or args.list:
         for key, description in CATALOG.items():
@@ -165,6 +175,8 @@ def main(argv=None, root=ROOT):
         return 0
     if args.case == "prime-sqrt2" and not (args.mathlib or args.bootstrap):
         parser.error("prime-sqrt2 needs --mathlib PATH or --bootstrap PATH")
+    if args.case == "prime-envelope" and (args.prime is None or args.offset is None):
+        parser.error("prime-envelope needs --prime P and --offset S")
     if args.case == "collatz-six-of-ten" and not args.lean:
         parser.error("collatz-six-of-ten needs --lean PATH_TO_LEAN_4_33_1")
     if args.case == "collatz-six-of-ten" and not args.lean.is_file():
@@ -173,6 +185,8 @@ def main(argv=None, root=ROOT):
         parser.error("--lean applies only to collatz-six-of-ten, geometry-midpoint, geometry-midpoint-general, collatz-parity-envelope-23-14, or collatz-at-most-thirteen-22")
     if args.case != "prime-sqrt2" and (args.mathlib or args.bootstrap):
         parser.error("--mathlib and --bootstrap apply to prime-sqrt2")
+    if args.case != "prime-envelope" and (args.prime is not None or args.offset is not None):
+        parser.error("--prime and --offset apply only to prime-envelope")
     if args.stage_timeout is not None and args.stage_timeout < 1:
         parser.error("--stage-timeout must be positive")
     if args.case not in ("prime-sqrt2", "geometry-midpoint", "geometry-midpoint-general") and args.stage_timeout is not None:

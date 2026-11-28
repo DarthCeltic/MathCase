@@ -61,6 +61,16 @@ python -B check_input.py --prime 884 --offset 3 --out unsupported.json
 python -B -m unittest test_check_input.py
 ```
 
+From the repository root, the same two-step check is available through the
+standard catalog:
+
+```sh
+python -B scripts/run_public_case.py prime-envelope --prime 881 --offset 3
+```
+
+The launcher creates a new run directory, writes `result.json`, and then runs
+the receipt verifier against that exact file.
+
 For `p=881,s=3`, the cap is `19p` and the unique triple is
 `(228,10572,16739)`. For `p=883,s=3`, the receipt says only that no triple
 exists through `19p`; it does not rule out a larger one. Composite or
