@@ -112,6 +112,24 @@
       "path": "research/frontier-2026-11/shannon-c7-368-persistence-v3/README.md"
     },
     {
+      "id": "case-c7-multiseed-ejection",
+      "kind": "question",
+      "label": "Can coordinated refill from nine validated 367-word seeds find 368?",
+      "path": "research/frontier-2026-11/shannon-c7-368-multiseed-ejection-v1/README.md"
+    },
+    {
+      "id": "evidence-c7-multiseed-ejection",
+      "kind": "evidence",
+      "label": "Eight bounded ejection starts retained no new equal-size seed",
+      "path": "research/frontier-2026-11/shannon-c7-368-multiseed-ejection-v1/verification.json"
+    },
+    {
+      "id": "limit-c7-multiseed-unknown",
+      "kind": "limit",
+      "label": "NO_368_FOUND_UNKNOWN for this finite nine-seed search",
+      "path": "research/frontier-2026-11/shannon-c7-368-multiseed-ejection-v1/README.md"
+    },
+    {
       "id": "case-ising-3x3",
       "kind": "question",
       "label": "Does the tested 3x3 periodic Ising profile stay log-concave?",
@@ -380,6 +398,9 @@
     { "from": "case-c7-persistence-v3", "relation": "limited_by", "to": "limit-c7-persistence-v3" },
     { "from": "case-c7-persistence-v3", "relation": "extends", "to": "case-c7-equal-seed-persist" },
     { "from": "case-c7-persistence-v3", "relation": "extends", "to": "case-c7-368" },
+    { "from": "case-c7-multiseed-ejection", "relation": "checked_by", "to": "evidence-c7-multiseed-ejection" },
+    { "from": "case-c7-multiseed-ejection", "relation": "limited_by", "to": "limit-c7-multiseed-unknown" },
+    { "from": "case-c7-multiseed-ejection", "relation": "extends", "to": "case-c7-persistence-v3" },
     { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
     { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
     { "from": "case-ising-width4", "relation": "checked_by", "to": "evidence-ising-width4" },

@@ -1,0 +1,18 @@
+{
+  "schema": "c7-multiseed-independent-check-v1",
+  "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "result_sha256": "1be6e25e48f32d88c678826c4b1a44d98b7bd055445ae76b08652f631064aaa9",
+  "seed_pool_sha256": "4fe7b13cfd7eab5211776733cc48d4e0f9e9a5510066316d7c28ce67e85b0447",
+  "checks": {
+    "published_367_valid": true,
+    "published_pair_tests": 67161,
+    "best_candidate_valid": true,
+    "candidate_pair_tests": 67161,
+    "all_seed_codes_valid": true,
+    "seed_count": 9,
+    "planted_conflict_rejected": true,
+    "planted_conflict_pair_tests_until_reject": 67162,
+    "planted_word": 2
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,7 @@
+{
+  "command": "python -B search_multiseed.py",
+  "elapsed_seconds": 60,
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "external_calls": 0,
+  "result_sha256": "1be6e25e48f32d88c678826c4b1a44d98b7bd055445ae76b08652f631064aaa9"
+}

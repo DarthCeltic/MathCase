@@ -33,7 +33,7 @@ The M15–M20 source bundle has **two runner-bound full public-source replays**,
 
 A fresh public-clone replay has now completed the full M15–M20 recipe and is recorded in the [clean-clone receipt](../reproduction/m20-public-source-replay-v1/runs/2026-11-28-clean-stranger-r1/README.md). It is still an author-controlled run, not an independent peer review; no independent mathematician review is recorded. The R(6,6) package has a separate current-lock Lean replay; its older historical lock mismatch and failed wrapper attempt remain preserved in the [replay history](../reproduction/ramsey-r66-lean-v1/README.md).
 
-The bounded C7 five-symbol search now has a narrower clean-clone milestone: a fresh anonymous clone checked every committed manifest entry, re-ran the published 367-word control, re-ran the bounded 253-word candidate, and rejected a deliberately planted conflict. That closes reproduction of this finite search package only; it is not a 368-word construction, an impossibility result, or a stranger review of the full M15–M20 proof bundle.
+The bounded C7 five-symbol search now has a narrower clean-clone milestone: a fresh anonymous clone checked every committed manifest entry, re-ran the published 367-word control, re-ran the bounded 253-word candidate, and rejected a deliberately planted conflict. A later nine-seed ejection run also found no 368 code, with its exact finite scope and checker preserved separately. These close reproduction of finite search packages only; they are not a 368-word construction, an impossibility result, or a stranger review of the full M15–M20 proof bundle.
 
 ## The next milestones
 
