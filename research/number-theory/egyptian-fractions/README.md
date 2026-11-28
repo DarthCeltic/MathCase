@@ -55,3 +55,8 @@ independent [`dahan-theorem39-extension-5000-v1`](dahan-theorem39-extension-5000
 package extends that same finite test to 5,000 consecutive primes, with its
 full rows and independent audit. Both are finite evidence only; neither is an
 asymptotic result or a proof of Erdős–Straus.
+
+The sibling [`dahan-theorem34-control-5000-v1`](dahan-theorem34-control-5000-v1/README.md)
+is a bounded control on the same rows: fixing `a=1` and `u≤40` succeeds on
+4,989/5,000, with 11 explicit capped misses. It is a control result, not the
+unrestricted Theorem 3.4 claim.
