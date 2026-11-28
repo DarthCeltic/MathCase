@@ -27,6 +27,14 @@ class KnowledgeGraphTest(unittest.TestCase):
             self.assertIn(edge["to"], by_id)
             self.assertTrue(edge["relation"])
 
+        transfer = next(node for node in nodes if node["id"] == "evidence-transfer-pilot")
+        transfer_receipt = json.loads((ROOT / transfer["path"]).read_text(encoding="utf-8"))
+        self.assertFalse(transfer_receipt["observed_uplift"])
+        self.assertEqual(
+            transfer_receipt["arms"]["control"],
+            transfer_receipt["arms"]["saved_library"],
+        )
+
 
 if __name__ == "__main__":
     unittest.main()
