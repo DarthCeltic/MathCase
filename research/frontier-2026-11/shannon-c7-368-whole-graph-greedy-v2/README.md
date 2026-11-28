@@ -19,7 +19,7 @@ The run record reports Python 3.14.7, 185.367 seconds including setup and final 
 
 The criterion checked is exact: two distinct words conflict when every coordinate difference modulo seven is 0, 1, or 6. A valid code contains no conflicting pair.
 
-The known construction is attributed to Polak and Schrijver ([arXiv:1808.07438](https://arxiv.org/abs/1808.07438)); the published context records `367 ≤ α(C7⁵) ≤ 401`. This experiment is a bounded search record, not a maximality proof, impossibility proof, novelty claim, or solution of a Shannon-capacity problem.
+The known construction is attributed to Polak and Schrijver ([arXiv:1808.07438](https://arxiv.org/abs/1808.07438)); the published context records `367 ≤ α(C7⁵) ≤ 401`. This experiment is a bounded search record, not a maximality proof, impossibility proof, novelty claim, or solution of a Shannon-capacity problem. `SHA256SUMS` binds the committed public bytes; the run record also preserves the original local artifact hashes.
 
 ## Next question
 
