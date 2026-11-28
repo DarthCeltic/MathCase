@@ -23,7 +23,7 @@ Encode a word as five base-7 digits. Distinct words are confusable exactly when 
 
 The baseline input is the published `base_c7.json` from `spectra-research/shannon-capacity-lean`, commit `aa21eeb12b75b0413d3fa9fb4208b5d0bf2c4d65`, attributed there to the Polak–Schrijver 367-word construction. Its SHA-256 is pinned in the verification output. Current prior-art context was checked against `molind/c7-five` (README updated 2026-09-22): it records restricted-domain obstructions and the published bounds `367 ≤ α(C7^5) ≤ 401`, with no 368 construction or global 368-impossibility proof. This experiment does not repeat or certify those restricted-domain results and does not imply a global bound.
 
-Primary reference for the known 367 construction: Polak and Schrijver, [arXiv:1808.07438](https://arxiv.org/abs/1808.07438). The C7^5 computational status and closed-domain inventory were read from [molind/c7-five](https://github.com/molind/c7-five). The earlier diagonal-slice audit at `C:\MathCase\owner-local\research\aixiv-2026-11-27\c7-diagonal-slices-audit\audit.json` was not rerun: 233 domains were already marked exhausted and five time-limited; this full-vertex greedy method is a separate experiment.
+Primary reference for the known 367 construction: Polak and Schrijver, [arXiv:1808.07438](https://arxiv.org/abs/1808.07438). The C7^5 computational status and closed-domain inventory were read from [molind/c7-five](https://github.com/molind/c7-five). An earlier diagonal-slice audit is preserved separately and was not rerun here; this full-vertex greedy method is a separate experiment.
 
 ## Limits and next useful experiment
 

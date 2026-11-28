@@ -20,7 +20,7 @@ The seed snapshots are included and hash-pinned. The audit and CNF reconstructio
 gcc -std=gnu99 -O2 -Dgetc_unlocked=getc drat-trim/drat-trim.c -o drat-trim-check.exe
 python -B reproduction/weak-schur-positive-anchors-v1/positive_anchor_check.py `
   --checker ./drat-trim-check.exe `
-  --scratch-dir T:\MathCase-local-scratch\positive-anchor-check
+  --scratch-dir .\scratch\positive-anchor-check
 ```
 
 The checker reconstructs both the 66-anchor and 65-anchor CNFs, verifies their byte hashes, expands the compressed DRAT in the selected scratch directory, and requires `s VERIFIED` for both formulas. It prints the outsider counts, the exact 65 anchored values, seed checks, and the two proof-check results. [`verification.json`](verification.json) records the checked run, formula and proof hashes, solver provenance, and DRAT-trim revision/source hash.
@@ -30,7 +30,7 @@ The included 717 KB compressed DRAT proof was produced with Glucose4 through `py
 ```powershell
 python -m pip install python-sat==1.9.dev25
 python -B reproduction/weak-schur-positive-anchors-v1/generate_proof.py `
-  --output T:\MathCase-local-scratch\regenerated-positive-anchor.drat
+  --output .\scratch\regenerated-positive-anchor.drat
 ```
 
 The proof is checked against both formula byte strings: all 66 anchors, and the strictly weaker formula with the single unit for 190 removed.
