@@ -130,6 +130,30 @@
       "path": "research/frontier-2026-11/egyptian-28k-plus-21/README.md"
     },
     {
+      "id": "case-dahan-theorem39-200k",
+      "kind": "question",
+      "label": "Does Dahan's two-parameter criterion reproduce on 200,000 eligible primes?",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-200000-v1/README.md"
+    },
+    {
+      "id": "evidence-dahan-theorem39-200k",
+      "kind": "evidence",
+      "label": "200,000 finite rows succeeded with independent identity audit",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-200000-v1/full-result.json"
+    },
+    {
+      "id": "limit-dahan-finite",
+      "kind": "limit",
+      "label": "Finite replay only; no asymptotic or full-conjecture result",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-200000-v1/README.md"
+    },
+    {
+      "id": "method-dahan-criterion",
+      "kind": "method",
+      "label": "Divisor, congruence, reconstruction, and exact identity audit",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-200000-v1/README.md"
+    },
+    {
       "id": "case-transfer-pilot",
       "kind": "question",
       "label": "Do saved examples help on held-out mathematical tasks?",
@@ -167,6 +191,9 @@
     { "from": "case-egyptian-28k21", "relation": "checked_by", "to": "evidence-egyptian-28k21" },
     { "from": "case-egyptian-28k21", "relation": "limited_by", "to": "limit-egyptian-open" },
     { "from": "case-egyptian-28k21", "relation": "uses_method", "to": "method-kernel-replay" },
+    { "from": "case-dahan-theorem39-200k", "relation": "checked_by", "to": "evidence-dahan-theorem39-200k" },
+    { "from": "case-dahan-theorem39-200k", "relation": "limited_by", "to": "limit-dahan-finite" },
+    { "from": "case-dahan-theorem39-200k", "relation": "uses_method", "to": "method-dahan-criterion" },
     { "from": "case-transfer-pilot", "relation": "checked_by", "to": "evidence-transfer-pilot" },
     { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" }
   ]
