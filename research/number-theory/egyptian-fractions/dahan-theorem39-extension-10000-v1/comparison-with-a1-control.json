@@ -1,0 +1,11 @@
+{
+  "a1_control_max_u": 36,
+  "a1_control_misses": 16,
+  "a1_control_misses_recovered_by_full": 16,
+  "full_max_u": 8,
+  "full_minimal_a_eq_1": 8227,
+  "full_minimal_a_gt_1": 1773,
+  "full_rows": 10000,
+  "interpretation": "Finite comparison of the two published tables; not an asymptotic or novelty claim.",
+  "same_u_when_full_a1": 8227
+}

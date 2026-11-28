@@ -25,3 +25,9 @@ python -B .\audit_theorem34_slice.py .\a1-control-result.json
 
 This is finite evidence only. It does not prove Erdős–Straus, an asymptotic
 statement, or novelty.
+
+The [`comparison-with-a1-control.json`](comparison-with-a1-control.json)
+joins the two saved tables: 8,227 minimum-depth rows use `a=1`, 1,773 use
+`a>1`, and all 16 control misses are recovered by the two-parameter replay.
+The full replay's largest selected `u` is 8, versus 36 in the bounded
+control. This is a finite table comparison only.
