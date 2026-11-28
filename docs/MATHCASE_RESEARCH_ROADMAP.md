@@ -33,6 +33,8 @@ The M15–M20 source bundle has **two runner-bound full public-source replays**,
 
 A stranger has not yet completed the full M15–M20 replay from the public recipe, and no independent mathematician review is recorded. The R(6,6) package has a separate current-lock Lean replay; its older historical lock mismatch and failed wrapper attempt remain preserved in the [replay history](../reproduction/ramsey-r66-lean-v1/README.md).
 
+The bounded C7 five-symbol search now has a narrower clean-clone milestone: a fresh anonymous clone checked every committed manifest entry, re-ran the published 367-word control, re-ran the bounded 253-word candidate, and rejected a deliberately planted conflict. That closes reproduction of this finite search package only; it is not a 368-word construction, an impossibility result, or a stranger review of the full M15–M20 proof bundle.
+
 ## The next milestones
 
 1. **Get a stranger through the full replay.** Have someone outside the author-side run environment follow the published M15–M20 recipe from a clean checkout. Keep the result distinct from the two existing author-side runs.
