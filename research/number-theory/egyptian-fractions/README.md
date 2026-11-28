@@ -65,3 +65,8 @@ The [`dahan-theorem34-miss-resolution-v1`](dahan-theorem34-miss-resolution-v1/RE
 package then searches those 11 capped misses over the explicit finite range
 `1≤u≤n`: three reappear at larger `u`, while eight remain unresolved within
 that range. It preserves both the positive and negative rows.
+
+The [`dahan-theorem39-extension-10000-v1`](dahan-theorem39-extension-10000-v1/README.md)
+extends the same paired experiment to 10,000 primes: the two-parameter
+criterion succeeds on all 10,000, while the matched `a=1,u≤40` control has
+16 capped misses. This remains finite evidence only.
