@@ -33,6 +33,7 @@
     "forbidden_source_hits": [],
     "resume_status_sha256": "7c4a87d9af13f3842a6e2878884cad1b451f8a247e3787a9c0e1c1ed21c37833",
     "stages_sha256": "eeaa7b9464b0779ef9084bcf48ddfdfdec9d82aeecaaaf42dd41f186912a4154",
+    "public_stages_sha256": "3f610a11828d58a5acf57e3ced0390b74b53b3c872d2e60890f0fdda21db3478",
     "recovery_process_exit_code": "not retained in the run artifact"
   },
   "limitations": [

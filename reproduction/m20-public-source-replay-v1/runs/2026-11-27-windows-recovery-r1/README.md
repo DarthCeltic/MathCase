@@ -26,4 +26,6 @@ records. The theorem is bounded first descent for 2,652 listed progressions;
 it is not a proof of global Collatz convergence or a new general rule.
 
 The large source, OLEAN, and raw-log tree remains on the T: scratch volume.
-`stages.jsonl` is copied here as the compact per-stage hash/exit ledger.
+`stages.jsonl` is copied here as the compact per-stage hash/exit ledger. Git
+stores this public text projection with LF line endings; `execution.json`
+retains the raw runner-stage hash and also records the public projection hash.
