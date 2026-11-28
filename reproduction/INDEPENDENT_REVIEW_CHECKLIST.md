@@ -58,8 +58,8 @@ replay.
 
 ## 5. Reproduce the finite Dahan criterion replay
 
-1. Run the command in [`dahan-theorem39-extension-300000-v1/README.md`](../research/number-theory/egyptian-fractions/dahan-theorem39-extension-300000-v1/README.md) from a clean checkout.
-2. Confirm that it reports `300000` successes and `0` failures for primes with `n ≡ 1 (mod 24)`, using coprime `u,a <= 40`.
+1. Run the command in [`dahan-theorem39-extension-500000-v1/README.md`](../research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/README.md) from a clean checkout.
+2. Confirm that it reports `500000` successes and `0` failures for primes with `n ≡ 1 (mod 24)`, using coprime `u,a <= 40`. The earlier 300,000-row receipt remains available as a smaller replay.
 3. Run the independent row audit and compare the generated result hash with the public receipt. Record Python version, operating system, command, elapsed time, and audit output.
 4. Confirm the wording remains finite arithmetic evidence only. It is not an Erdős–Straus proof, asymptotic theorem, novelty claim, or priority claim.
 
