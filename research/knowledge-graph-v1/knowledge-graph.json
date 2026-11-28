@@ -130,6 +130,24 @@
       "path": "reproduction/ising-3x3-fixed-up-logconcavity-v1/README.md"
     },
     {
+      "id": "case-ising-width4",
+      "kind": "question",
+      "label": "Does the width-four transfer identity match direct enumeration for lengths 3 through 5?",
+      "path": "reproduction/ising-width4-joint-density-v1/README.md"
+    },
+    {
+      "id": "evidence-ising-width4",
+      "kind": "evidence",
+      "label": "Direct enumeration and 16-state transfer check agree, with a damaged rule rejected",
+      "path": "reproduction/ising-width4-joint-density-v1/evidence/runs/final-clean-replay-2026-11-27/receipt.json"
+    },
+    {
+      "id": "limit-ising-width4",
+      "kind": "limit",
+      "label": "Finite width-four lengths 3–5 only; no Lean or thermodynamic-limit claim",
+      "path": "reproduction/ising-width4-joint-density-v1/README.md"
+    },
+    {
       "id": "case-ramsey-666",
       "kind": "question",
       "label": "Can a 102-vertex two-color Ramsey construction be extended?",
@@ -328,6 +346,10 @@
     { "from": "case-c7-persistence-v3", "relation": "extends", "to": "case-c7-368" },
     { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
     { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
+    { "from": "case-ising-width4", "relation": "checked_by", "to": "evidence-ising-width4" },
+    { "from": "case-ising-width4", "relation": "limited_by", "to": "limit-ising-width4" },
+    { "from": "case-ising-width4", "relation": "uses_method", "to": "method-two-path-replay" },
+    { "from": "case-ising-width4", "relation": "compares_to", "to": "case-ising-3x3" },
     { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666" },
     { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666-anonymous-replay" },
     { "from": "case-ramsey-666", "relation": "limited_by", "to": "limit-ramsey-666" },
