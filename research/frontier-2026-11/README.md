@@ -18,15 +18,15 @@ Run `python scripts/run_frontier_case.py list` from the repository root. Then ru
 ## Additional bounded research result
 
 The [C7 five-symbol greedy pilot](shannon-c7-368-whole-graph-greedy-v2/README.md)
-searched the full 16,807-word space from an empty set for 180 seconds. It
-completed 12,549 trials and found a valid best set of 253 words, while the
+searched the full 16,807-word space from an empty set for 180 seconds. The
+latest replay completed 12,690 trials and found a valid best set of 253 words, while the
 published 367-word control passed the independent checker and a planted
 conflict was rejected. The result is `NO_368_FOUND_UNKNOWN`: it is a bounded
 search miss, not an impossibility proof and not a change to the known
 `367 ≤ α(C7^5) ≤ 401` interval.
 
 A distinct [ejection-chain pilot](../frontier/c7-five-symbol-ejection-v1/README.md)
-started from the published 367-word code, completed 447 coordinated moves in
+started from the published 367-word code, completed 451 coordinated moves in
 180 seconds, and again reached 367. Its independent checker passed 67,161
 pairs and rejected a planted duplicate. This second miss is also `UNKNOWN`.
 
