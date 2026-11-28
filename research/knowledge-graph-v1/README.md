@@ -34,6 +34,8 @@ scopes:
 | `python scripts/run_public_case.py geometry-midpoint-general` | Replays the stronger general-coordinate midpoint theorem and its axiom audit. |
 | `python scripts/run_frontier_case.py egyptian-28k-21` | The exact `28k+21` identities check; Erdős–Straus remains open. |
 | `python scripts/run_frontier_case.py ramsey-6-6` | The Paley(101) witness and fixed-base checks pass; other 102-vertex graphs are not ruled out. |
+| `python scripts/run_frontier_case.py ising-width6` | Replays the finite periodic 6×3 histogram with direct, transfer, and Gray-code checks; it is not a thermodynamic-limit result. |
+| `python scripts/run_frontier_case.py ising-width7` | Replays the finite periodic 7×3 histogram with direct and transfer checks; it is not a general Ising theorem. |
 | `python scripts/run_frontier_case.py c7-greedy --dry-run` | The bounded C7 search command is registered; a search miss is `UNKNOWN`, not impossibility. |
 | `python -B research/number-theory/egyptian-fractions/dahan-theorem39-extension-200000-v1/check_theorem39_extended.py --count 200000 --pair-bound 40 --output full-result.json` | Replays Dahan's finite two-parameter criterion on 200,000 eligible primes; it is not an asymptotic or full Erdős–Straus proof. |
 | `python -B research/number-theory/egyptian-fractions/dahan-theorem39-extension-300000-v1/check_theorem39_extended.py --count 300000 --pair-bound 40 --output full-result.json` | Extends the same finite replay to 300,000 eligible primes; it remains finite arithmetic evidence only. |
