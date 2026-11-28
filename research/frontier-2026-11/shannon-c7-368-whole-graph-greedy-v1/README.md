@@ -1,5 +1,7 @@
 # C7^5 five-symbol code: whole-graph greedy redesign
 
+> Historical package. The canonical, fresh-clone-verified package is [v2](../shannon-c7-368-whole-graph-greedy-v2/README.md). This v1 record is retained for provenance.
+
 **Status: bounded search miss; no improvement.** On 2026-11-28, a fresh randomized greedy maximal-independent-set search over all 16,807 vertices of the fivefold C7 strong product found a best set of 253 words. It did not find 368. This is `UNKNOWN` about whether a 368-word code exists and does not change the known 367 lower bound or the published global upper bound.
 
 ## Why this is a different search
