@@ -69,6 +69,7 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Fresh Lean replay for the general coordinate midpoint theorem.")
     parser.add_argument("--output-dir", type=Path, required=True, help="new output directory on a drive with enough space")
     parser.add_argument("--stage-timeout", type=int, default=3600, help="wall-clock cap per stage (default: 3600 seconds)")
+    parser.add_argument("--lean", type=Path, help="explicit Lean executable; otherwise resolve lean from PATH")
     args = parser.parse_args(argv)
     if args.stage_timeout < 1:
         parser.error("--stage-timeout must be positive")
@@ -99,7 +100,9 @@ def main(argv=None) -> int:
         record["lean_inputs"] = {rel: record["package_inputs"][rel] for rel in LEAN_INPUTS}
         record["pinned_lake_manifest_sha256"] = pinned_lock_sha
         record["lean_toolchain_pin"] = (ROOT / "lean-toolchain").read_text(encoding="utf-8").strip()
-        lean = shutil.which("lean")
+        lean = str(args.lean.resolve()) if args.lean else shutil.which("lean")
+        if lean and not Path(lean).is_file():
+            raise RuntimeError("LEAN_EXECUTABLE_NOT_FOUND")
         lake = shutil.which("lake")
         if not lean or not lake:
             raise RuntimeError("LEAN_OR_LAKE_NOT_FOUND_ON_PATH")

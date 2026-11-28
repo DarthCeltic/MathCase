@@ -60,6 +60,7 @@ def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Fresh source replay for the normalized right-triangle midpoint identity.")
     parser.add_argument("--output-dir", type=Path, help="new directory for this run; default is a system temporary directory")
     parser.add_argument("--stage-timeout", type=int, default=3600, help="wall-clock cap per setup/build/audit stage (default: 3600 seconds)")
+    parser.add_argument("--lean", type=Path, help="explicit Lean executable; otherwise resolve lean from PATH")
     args = parser.parse_args(argv)
     if args.stage_timeout < 1:
         parser.error("--stage-timeout must be positive")
@@ -90,7 +91,9 @@ def main(argv=None) -> int:
         receipt["pinned_lake_manifest_sha256"] = pinned_lock_sha
         receipt["lean_toolchain_pin"] = (ROOT / "lean-toolchain").read_text(encoding="utf-8").strip()
 
-        lean_path = shutil.which("lean")
+        lean_path = str(args.lean.resolve()) if args.lean else shutil.which("lean")
+        if lean_path and not Path(lean_path).is_file():
+            raise RuntimeError("LEAN_EXECUTABLE_NOT_FOUND")
         lake_path = shutil.which("lake")
         if not lean_path or not lake_path:
             raise RuntimeError("LEAN_OR_LAKE_NOT_FOUND_ON_PATH")
