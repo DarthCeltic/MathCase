@@ -6,10 +6,10 @@ It is deliberately a catalog, not a claim that the cases solve their open
 problems. Paths are relative to the MathCase repository root so a stranger can
 open the same files from a clean clone.
 
-Validate the file with:
+Validate the file with the standalone command:
 
 ```powershell
-python -c "import json; json.load(open('research/knowledge-graph-v1/knowledge-graph.json', encoding='utf-8')); print('knowledge graph JSON: PASS')"
+python scripts/validate_knowledge_graph.py
 ```
 
 Each edge names its relationship in plain language. A reader can follow a
