@@ -1,4 +1,4 @@
-"""Run one of the ten public frontier checks without overwriting prior output."""
+"""Run one of the public frontier checks without overwriting prior output."""
 from __future__ import annotations
 
 import argparse
@@ -25,6 +25,7 @@ CASES = {
     "c7-ejection": "Run the bounded C7^5 ejection-chain search from the known 367-word seed.",
     "c7-surplus": "Run the bounded C7^5 surplus-neighborhood search; a miss remains UNKNOWN.",
     "c7-equal-seed-persist": "Run the bounded C7^5 equal-size-seed persistence search; a miss remains UNKNOWN.",
+    "ising-width5": "Check periodic 5x3 and 5x4 Ising joint counts by enumeration and a 32-state transfer DP.",
 }
 
 
@@ -94,6 +95,11 @@ def plan(case: str, output: Path) -> list[tuple[str, list[str], Path]]:
         return [
             ("equal-size-seed persistence search", [py, "search_persist.py", "--base", str(c7 / "base_c7.json"), "--seconds", "180", "--seed", "281129", "--out", str(output)], c7),
             ("independent pair checker", [py, "verify.py", "--base", str(c7 / "base_c7.json"), "--result", str(output / "search-result.json"), "--out", str(output / "verification.json")], c7),
+        ]
+    if case == "ising-width5":
+        ising = ROOT / "reproduction" / "ising-width5-joint-density-v1"
+        return [
+            ("width-five direct and transfer check", [py, "check_width5.py", "--max-seconds", "180", "--output", str(output / "receipt.json")], ising),
         ]
     raise ValueError(f"unknown case: {case}")
 
