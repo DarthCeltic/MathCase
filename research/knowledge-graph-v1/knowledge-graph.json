@@ -124,6 +124,12 @@
       "path": "research/frontier-2026-11/paley-101/receipt.json"
     },
     {
+      "id": "evidence-ramsey-666-anonymous-replay",
+      "kind": "evidence",
+      "label": "Anonymous public-clone Lean replay under the current lock",
+      "path": "reproduction/ramsey-r66-lean-v1/verification/anonymous-public-main-replay-2026-11-28.json"
+    },
+    {
       "id": "limit-ramsey-666",
       "kind": "limit",
       "label": "Does not rule out a different 102-vertex graph",
@@ -295,6 +301,7 @@
     { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
     { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
     { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666" },
+    { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666-anonymous-replay" },
     { "from": "case-ramsey-666", "relation": "limited_by", "to": "limit-ramsey-666" },
     { "from": "case-c7-368", "relation": "uses_method", "to": "method-independent-control" },
     { "from": "case-ising-3x3", "relation": "uses_method", "to": "method-two-path-replay" },
