@@ -53,6 +53,17 @@ The [public homepage](https://darthceltic.github.io/mathcase/) offers both **Mak
 
 See the [research roadmap](docs/MATHCASE_RESEARCH_ROADMAP.md) for the current demonstrated scope, open limits, and next measurable milestones.
 
+### What MathCase has demonstrated so far
+
+MathCase can state a precise mathematical question, test its checker against
+bad input, and preserve a bounded result with source hashes and receipts. It
+has reproduced selected Lean, arithmetic, graph, coloring, geometry, and finite
+Ising results, and it has a clean public-clone replay for the large M15–M20
+bundle. The remaining research-lab steps are deliberately visible: an
+independent mathematical review, a held-out transfer comparison, and a new
+general bound or breakthrough have not yet been established. A bounded search
+miss is recorded as `UNKNOWN`, never as an impossibility proof.
+
 ### A bounded Collatz proof you can rerun
 
 For every start `n ≥ 3`, if at most 14 of its first 23 accelerated Collatz steps begin on an odd number, an ordinary iterate is below `n` by step 37. Lean checked the exact count: **7,507,638 of 8,388,608** residue classes modulo `2^23` meet that condition. This is a bounded first-drop theorem and a demonstration of proof checking; it is not a new Collatz discovery and does not prove that every sequence reaches 1.
