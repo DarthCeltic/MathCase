@@ -4555,8 +4555,8 @@
     },
     {
       "path": "research/number-theory/egyptian-fractions/README.md",
-      "sha256": "ba284e9a9d2900d1a18c26b37ae80b81615c6e216bb15b93979dc147d238d83a",
-      "bytes": 3159
+      "sha256": "3a520560af52bd4d7e172562314607c4f184a98a9d8e87032cbe32c7e44a1fbd",
+      "bytes": 4863
     },
     {
       "path": "scripts/audit_egyptian_fraction_campaign_v9.py",
