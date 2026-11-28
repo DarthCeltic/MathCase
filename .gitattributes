@@ -107,3 +107,9 @@ reproduction/snf-method-audit-v1/evidence/runs/**/receipt.json -text
 reproduction/ramsey-r66-lean-v1/verification/axiom-audit.txt -text -eol -diff
 # Preserve the path-free R66 finite-check receipt and captured output bytes.
 reproduction/ramsey-r66-paley101-v1/runs/2026-11-24/** -text -eol -diff
+# Preserve exact bytes pinned by the Weak Schur crossover run receipt.
+research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/pilot.py -text -eol -diff
+research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/result.json -text -eol -diff
+research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/rowley -text -eol -diff
+research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/vicenzi -text -eol -diff
+research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/verify_weak_schur.py -text -eol -diff

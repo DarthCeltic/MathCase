@@ -1,0 +1,743 @@
+{
+  "schema": "ws5-208-block-crossover-repair-v1",
+  "status": "WALL_CAP_NO_WITNESS",
+  "target": "five-color weak Schur coloring of 1..208; only distinct a<b with a+b<=208",
+  "method": "contiguous-block crossover of two pinned 207 witnesses with five append colors, followed by greedy conflict-delta local repair; blocks can change many inherited positions, unlike fixed-radius neighborhoods",
+  "source_sha256": {
+    "verify_weak_schur.py": "8a5383ac1985c95796328009585e7ecc2f474943fe327368ffe094f0a107c538",
+    "rowley": "dadba1c3277c9b360693b23f9309174c92128002785b2752d916b34db4c61e63",
+    "vicenzi": "2393698ef49eba4b100b3e048e2ddc28c7db99d99cfa525ba3ba7450d0f35c0b"
+  },
+  "source_receipt_sha256": {
+    "rowley": "dadba1c3277c9b360693b23f9309174c92128002785b2752d916b34db4c61e63",
+    "vicenzi": "2393698ef49eba4b100b3e048e2ddc28c7db99d99cfa525ba3ba7450d0f35c0b"
+  },
+  "seed": 20261128,
+  "wall_cap_seconds": 30,
+  "elapsed_seconds": 30.0,
+  "evaluated_starts": 39,
+  "local_move_cap_per_start": 1200,
+  "actual_moves": 46766,
+  "best_violations": 1,
+  "best_coloring": [
+    1,
+    2,
+    1,
+    3,
+    1,
+    2,
+    1,
+    3,
+    1,
+    2,
+    1,
+    4,
+    1,
+    2,
+    1,
+    3,
+    3,
+    2,
+    1,
+    4,
+    1,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    4,
+    4,
+    4,
+    2,
+    3,
+    1,
+    5,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    1,
+    5,
+    2,
+    2,
+    1,
+    5,
+    2,
+    2,
+    1,
+    5,
+    2,
+    2,
+    1,
+    5,
+    2,
+    2,
+    1,
+    5,
+    2,
+    2,
+    1,
+    5,
+    2,
+    2,
+    1,
+    3,
+    2,
+    2,
+    1,
+    5,
+    3,
+    3,
+    3,
+    5,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    1,
+    4,
+    4,
+    4,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    3,
+    3,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    3,
+    3,
+    5,
+    1,
+    5,
+    5,
+    5,
+    1,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    5,
+    1,
+    3,
+    3,
+    5,
+    1,
+    2,
+    2,
+    5,
+    1,
+    2,
+    2,
+    5,
+    1,
+    2,
+    2,
+    5,
+    1,
+    2,
+    2,
+    5,
+    1,
+    2,
+    2,
+    5,
+    1,
+    2,
+    2,
+    5,
+    1,
+    2,
+    3,
+    5,
+    1,
+    2,
+    2,
+    3,
+    3,
+    2,
+    2,
+    5,
+    1,
+    3,
+    3,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    1,
+    4
+  ],
+  "best_coloring_sha256": "1885b006a85d68573d58342202c9a35e7dde31425e5cf466ced9db251aa7993c",
+  "best_origin": {
+    "design": {
+      "block": 4,
+      "shift": 0,
+      "pattern": 0,
+      "append_208": 1
+    },
+    "start_conflicts": 13,
+    "local_moves": 2,
+    "global_moves": 2
+  },
+  "violated_triples": [
+    [
+      12,
+      196,
+      208,
+      4
+    ]
+  ],
+  "independent_bitset_violations": 1,
+  "checkers_agree": true,
+  "pinned_verifier": {
+    "n": 208,
+    "admissible_pairs": 10712,
+    "monochromatic": 1,
+    "first_conflict": [
+      12,
+      196,
+      208,
+      4
+    ],
+    "class_sizes": [
+      44,
+      41,
+      27,
+      45,
+      51
+    ]
+  },
+  "damaged_control_all_color_1": {
+    "direct": 10712,
+    "bitset": 10712,
+    "pinned": 10712,
+    "rejects": true
+  },
+  "baseline_controls": {
+    "rowley": {
+      "direct": 0,
+      "pinned": 0
+    },
+    "vicenzi": {
+      "direct": 0,
+      "pinned": 0
+    }
+  },
+  "triple_count": 10712,
+  "designs": [
+    {
+      "design": {
+        "block": 4,
+        "shift": 0,
+        "pattern": 0,
+        "append_208": 1
+      },
+      "initial": 13,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 4,
+        "shift": 0,
+        "pattern": 0,
+        "append_208": 2
+      },
+      "initial": 10,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 4,
+        "shift": 0,
+        "pattern": 0,
+        "append_208": 3
+      },
+      "initial": 7,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 4,
+        "shift": 0,
+        "pattern": 0,
+        "append_208": 4
+      },
+      "initial": 2,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 4,
+        "shift": 0,
+        "pattern": 0,
+        "append_208": 5
+      },
+      "initial": 16,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 7,
+        "shift": 2,
+        "pattern": 0,
+        "append_208": 1
+      },
+      "initial": 10,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 7,
+        "shift": 2,
+        "pattern": 0,
+        "append_208": 2
+      },
+      "initial": 9,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 7,
+        "shift": 2,
+        "pattern": 0,
+        "append_208": 3
+      },
+      "initial": 6,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 7,
+        "shift": 2,
+        "pattern": 0,
+        "append_208": 4
+      },
+      "initial": 1,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 7,
+        "shift": 2,
+        "pattern": 0,
+        "append_208": 5
+      },
+      "initial": 15,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 11,
+        "shift": 1,
+        "pattern": 1,
+        "append_208": 1
+      },
+      "initial": 12,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 11,
+        "shift": 1,
+        "pattern": 1,
+        "append_208": 2
+      },
+      "initial": 13,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 11,
+        "shift": 1,
+        "pattern": 1,
+        "append_208": 3
+      },
+      "initial": 10,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 11,
+        "shift": 1,
+        "pattern": 1,
+        "append_208": 4
+      },
+      "initial": 6,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 11,
+        "shift": 1,
+        "pattern": 1,
+        "append_208": 5
+      },
+      "initial": 15,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 16,
+        "shift": 3,
+        "pattern": 1,
+        "append_208": 1
+      },
+      "initial": 12,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 16,
+        "shift": 3,
+        "pattern": 1,
+        "append_208": 2
+      },
+      "initial": 12,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 16,
+        "shift": 3,
+        "pattern": 1,
+        "append_208": 3
+      },
+      "initial": 9,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 16,
+        "shift": 3,
+        "pattern": 1,
+        "append_208": 4
+      },
+      "initial": 5,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 16,
+        "shift": 3,
+        "pattern": 1,
+        "append_208": 5
+      },
+      "initial": 15,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 23,
+        "shift": 5,
+        "pattern": 0,
+        "append_208": 1
+      },
+      "initial": 10,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 23,
+        "shift": 5,
+        "pattern": 0,
+        "append_208": 2
+      },
+      "initial": 9,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 23,
+        "shift": 5,
+        "pattern": 0,
+        "append_208": 3
+      },
+      "initial": 6,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 23,
+        "shift": 5,
+        "pattern": 0,
+        "append_208": 4
+      },
+      "initial": 1,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 23,
+        "shift": 5,
+        "pattern": 0,
+        "append_208": 5
+      },
+      "initial": 13,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 31,
+        "shift": 7,
+        "pattern": 1,
+        "append_208": 1
+      },
+      "initial": 11,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 31,
+        "shift": 7,
+        "pattern": 1,
+        "append_208": 2
+      },
+      "initial": 11,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 31,
+        "shift": 7,
+        "pattern": 1,
+        "append_208": 3
+      },
+      "initial": 8,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 31,
+        "shift": 7,
+        "pattern": 1,
+        "append_208": 4
+      },
+      "initial": 4,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 31,
+        "shift": 7,
+        "pattern": 1,
+        "append_208": 5
+      },
+      "initial": 17,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 43,
+        "shift": 9,
+        "pattern": 0,
+        "append_208": 1
+      },
+      "initial": 11,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 43,
+        "shift": 9,
+        "pattern": 0,
+        "append_208": 2
+      },
+      "initial": 10,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 43,
+        "shift": 9,
+        "pattern": 0,
+        "append_208": 3
+      },
+      "initial": 7,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 43,
+        "shift": 9,
+        "pattern": 0,
+        "append_208": 4
+      },
+      "initial": 3,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 43,
+        "shift": 9,
+        "pattern": 0,
+        "append_208": 5
+      },
+      "initial": 15,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 64,
+        "shift": 13,
+        "pattern": 1,
+        "append_208": 1
+      },
+      "initial": 10,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 64,
+        "shift": 13,
+        "pattern": 1,
+        "append_208": 2
+      },
+      "initial": 9,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 64,
+        "shift": 13,
+        "pattern": 1,
+        "append_208": 3
+      },
+      "initial": 6,
+      "best": 1,
+      "moves": 1200
+    },
+    {
+      "design": {
+        "block": 64,
+        "shift": 13,
+        "pattern": 1,
+        "append_208": 4
+      },
+      "initial": 1,
+      "best": 1,
+      "moves": 1166
+    }
+  ],
+  "limits": [
+    "No valid 208 coloring found in this bounded crossover/local-repair experiment.",
+    "This is not an impossibility result and does not alter the published 207 lower-bound construction.",
+    "No Lean, external solver, paid compute, or publication."
+  ],
+  "best_equals_known_rowley_append_color4": false,
+  "runtime": {
+    "python": "3.14.7",
+    "paid_compute_usd": 0,
+    "external_calls": 0,
+    "lean": false
+  },
+  "code_sha256": "b45f0ad2a7a080cb17cc5a3d09b4cef076ca93a3ae4261b9062c719b01ecb692",
+  "distance_from_known_appended_seeds": {
+    "rowley_plus_4": 167,
+    "vicenzi_plus_each_color": {
+      "1": 10,
+      "2": 10,
+      "3": 10,
+      "4": 9,
+      "5": 10
+    }
+  }
+}
