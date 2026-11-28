@@ -1,0 +1,31 @@
+{
+  "schema": "mathcase-dahan-theorem39-replay-receipt-v1",
+  "theorem": "Dahan Theorem 3.9",
+  "paper": "arXiv:2608.24035",
+  "status": "PASS_FINITE_REPLAY_AND_AUDIT",
+  "count": 300000,
+  "successes": 300000,
+  "failures": 0,
+  "first_n": 73,
+  "last_n": 39469273,
+  "pair_bound": 40,
+  "max_minimal_depth": 14,
+  "mean_minimal_depth": 1.5102333333333333,
+  "distribution": {
+    "1": 162321,
+    "2": 124383,
+    "3": 11715,
+    "4": 1125,
+    "5": 419,
+    "6": 25,
+    "7": 9,
+    "8": 2,
+    "14": 1
+  },
+  "elapsed_seconds": 81.766,
+  "external_calls": 0,
+  "estimated_spend_usd": 0,
+  "generated_result_sha256": "05d481151dad3ce22b3cc7f065a648a4e54e9d26dd302dcbc8e82e1d0b1e473e",
+  "independent_audit_sha256": "1f679a2ba3692277de84b45073b89151595460cafe84c8fd12583719a77ad18e",
+  "scope_limit": "Finite arithmetic replay only; no asymptotic, full-conjecture, novelty, or priority claim."
+}
