@@ -56,7 +56,14 @@ replay.
    broken edges, so `36^2 < 45*45`. This is a finite 3x3 result only, not a
    thermodynamic-limit theorem or a claim of priority.
 
-## 5. Mathematical wording review
+## 5. Reproduce the finite Dahan criterion replay
+
+1. Run the command in [`dahan-theorem39-extension-300000-v1/README.md`](../research/number-theory/egyptian-fractions/dahan-theorem39-extension-300000-v1/README.md) from a clean checkout.
+2. Confirm that it reports `300000` successes and `0` failures for primes with `n ≡ 1 (mod 24)`, using coprime `u,a <= 40`.
+3. Run the independent row audit and compare the generated result hash with the public receipt. Record Python version, operating system, command, elapsed time, and audit output.
+4. Confirm the wording remains finite arithmetic evidence only. It is not an Erdős–Straus proof, asymptotic theorem, novelty claim, or priority claim.
+
+## 6. Mathematical wording review
 
 For either result, compare the English sentence with the exact Lean statement:
 
@@ -68,7 +75,7 @@ For either result, compare the English sentence with the exact Lean statement:
   rather than percentages of Collatz trajectories?
 - Are prior-work and novelty claims absent or supported by a primary source?
 
-## 6. Report a check
+## 7. Report a check
 
 A useful report names the case and commit, gives the command and tool versions,
 states PASS/FAIL/TIMEOUT, and links a receipt or first diagnostic. For a wording
