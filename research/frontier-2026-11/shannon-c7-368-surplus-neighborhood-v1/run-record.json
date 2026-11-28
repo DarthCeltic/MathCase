@@ -2,7 +2,7 @@
   "schema": "c7-surplus-neighborhood-run-record-v1",
   "started_local": "2026-11-28",
   "completed_local": "2026-11-28 00:15:04 -05:00",
-  "base": "T:\\MathCase-local-scratch\\aixiv-2026-11-28\\c7-368-redesign\\base_c7.json",
+  "base": "base_c7.json",
   "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
   "command": "python -u search.py --base <base_c7.json> --seconds 30 --starts 12 --depth 4 --seed 281128 --out .",
   "result": "NO_SURPLUS_FOUND_UNKNOWN",
