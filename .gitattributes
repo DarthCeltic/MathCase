@@ -119,3 +119,5 @@ research/frontier-2026-11/shannon-c7-368-persistence-v3/** -text -eol -diff
 research/frontier-2026-11/shannon-c7-368-multiseed-ejection-v1/** -text -eol -diff
 # Preserve the captured width-five Ising source, receipt, and manifest bytes.
 reproduction/ising-width5-joint-density-v1/** -text -eol -diff
+# Preserve the captured width-six Ising source, receipts, and manifest bytes.
+reproduction/ising-width6-joint-density-v1/** -text -eol -diff
