@@ -29,9 +29,24 @@ def now():
     return datetime.now(timezone.utc).isoformat()
 
 def atomic_json(path, value):
-    temp = path.with_suffix(".tmp")
-    temp.write_bytes((json.dumps(value,indent=2)+"\n").encode("utf-8"))
-    temp.replace(path)
+    payload = (json.dumps(value,indent=2)+"\n").encode("utf-8")
+    # Windows scanners can briefly hold a fixed sibling such as status.tmp.
+    # Use a unique sibling and retry only the atomic replacement; never fall
+    # back to an in-place write that could leave a partial status file.
+    for attempt in range(8):
+        temp = path.with_name(f".{path.name}.{os.getpid()}.{time.time_ns()}.{attempt}.tmp")
+        try:
+            temp.write_bytes(payload)
+            os.replace(temp, path)
+            return
+        except PermissionError:
+            try:
+                temp.unlink()
+            except OSError:
+                pass
+            if attempt == 7:
+                raise
+            time.sleep(0.25 * (attempt + 1))
 
 def check_inputs(repo):
     package = repo/"reproduction"/"m15-m20-r2"
