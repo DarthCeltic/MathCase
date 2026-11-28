@@ -46,7 +46,7 @@ impossibility proof.
 
 The standard-library Python checks need Python 3.10 or later. The Erdős–Straus route also needs Lean 4.33.1; it recompiles the two small `Init`-level sources in a temporary directory and checks the declared axioms and a deliberately wrong denominator control. It does not build Mathlib. The weak-Schur route downloads only the two immutable, hash-pinned source witnesses on first run; the exact upstream attribution and hashes are in `weak-schur-5/verify_weak_schur.py`.
 
-The existing ten-case public launcher is unchanged. These six entries are a separate, focused research set. A focused regression test checks case registration and dry-run behavior without launching any calculations:
+The public launcher exposes these ten focused research routes. A focused regression test checks case registration and dry-run behavior without launching any calculations:
 
 ```text
 python -m unittest tests.test_run_frontier_case
@@ -60,6 +60,7 @@ python scripts/run_frontier_case.py ramsey-6-6
 python scripts/run_frontier_case.py c7-greedy
 python scripts/run_frontier_case.py c7-ejection
 python scripts/run_frontier_case.py c7-surplus
+python scripts/run_frontier_case.py c7-equal-seed-persist
 ```
 
 Use `--dry-run` to inspect a route without running it. The hard 20-second W(5,3) SAT probe is preserved as `van-der-waerden/w5-3-upper/probe-20s.json`; the public runner checks the witness and positive control but does not repeat that probe automatically.
