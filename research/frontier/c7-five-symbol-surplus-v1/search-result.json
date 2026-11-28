@@ -1,0 +1,34 @@
+{
+  "schema": "c7-surplus-neighborhood-v1",
+  "status": "NO_SURPLUS_FOUND_UNKNOWN",
+  "objective": "find mutually compatible outsider S with |S|>|N(S)| relative to published I0",
+  "inputs": {
+    "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+    "base_size": 367,
+    "outsider_domain_size": 16440,
+    "X_size": 367
+  },
+  "method": "bounded greedy compatible outsider construction, selecting low incremental I0-neighborhood cost; random tie-breaking; no seed vertices removed during search",
+  "seed": 281128,
+  "time_cap_seconds": 30,
+  "starts_cap": 12,
+  "outsider_depth_cap": 4,
+  "starts_completed": 12,
+  "candidate_evaluations": 14400,
+  "elapsed_seconds": 0.310837,
+  "best_surplus": -1,
+  "S": [
+    1279,
+    13158
+  ],
+  "N_S": [
+    3680,
+    10708,
+    15384
+  ],
+  "S_size": 2,
+  "N_S_size": 3,
+  "S_pairwise_compatible": true,
+  "neighborhood_exact": true,
+  "positive_samples": 0
+}

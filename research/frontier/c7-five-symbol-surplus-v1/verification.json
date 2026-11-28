@@ -1,0 +1,21 @@
+{
+  "schema": "c7-surplus-independent-verification-v1",
+  "status": "PASS",
+  "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
+  "result_sha256": "d93ef856e42c7e4b9e0420e54e5a3ad2bf3896499279dc247a6c987cf800be20",
+  "checks": {
+    "base_size_367": true,
+    "base_independent": true,
+    "outsiders_are_outside_I0": true,
+    "S_pairwise_compatible": true,
+    "N_exact": true,
+    "reported_neighborhood_size": true,
+    "surplus_arithmetic": true,
+    "status_matches_surplus": true,
+    "duplicate_control_rejected": true
+  },
+  "S_size": 2,
+  "N_S_size": 3,
+  "surplus": -1,
+  "planted_duplicate_control_rejected": true
+}

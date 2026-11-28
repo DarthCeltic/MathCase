@@ -30,6 +30,12 @@ started from the published 367-word code, completed 447 coordinated moves in
 180 seconds, and again reached 367. Its independent checker passed 67,161
 pairs and rejected a planted duplicate. This second miss is also `UNKNOWN`.
 
+The [surplus-neighborhood pilot](../frontier/c7-five-symbol-surplus-v1/README.md)
+tested the criterion `|S| > |N(S)|` over 12 starts and 14,400 evaluations. Its
+best observed surplus was `-1`; its direct checker passed the seed and rejected
+a planted duplicate. This is a bounded criterion check, not an exhaustive
+obstruction.
+
 ## How to reproduce
 
 The standard-library Python checks need Python 3.10 or later. The Erdős–Straus route also needs Lean 4.33.1; it recompiles the two small `Init`-level sources in a temporary directory and checks the declared axioms and a deliberately wrong denominator control. It does not build Mathlib. The weak-Schur route downloads only the two immutable, hash-pinned source witnesses on first run; the exact upstream attribution and hashes are in `weak-schur-5/verify_weak_schur.py`.
