@@ -190,6 +190,24 @@
       "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-300000-v1/README.md"
     },
     {
+      "id": "case-dahan-theorem39-500k",
+      "kind": "question",
+      "label": "Does the same criterion reproduce on a 500,000-prime finite sample?",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/README.md"
+    },
+    {
+      "id": "evidence-dahan-theorem39-500k",
+      "kind": "evidence",
+      "label": "500,000 finite rows succeeded with zero audit failures",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/receipt.json"
+    },
+    {
+      "id": "limit-dahan-500k-finite",
+      "kind": "limit",
+      "label": "Half-million-row replay remains finite evidence only",
+      "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/README.md"
+    },
+    {
       "id": "case-transfer-pilot",
       "kind": "question",
       "label": "Do saved examples help on held-out mathematical tasks?",
@@ -237,6 +255,10 @@
     { "from": "case-dahan-theorem39-300k", "relation": "limited_by", "to": "limit-dahan-300k-finite" },
     { "from": "case-dahan-theorem39-300k", "relation": "uses_method", "to": "method-dahan-criterion" },
     { "from": "case-dahan-theorem39-300k", "relation": "extends", "to": "case-dahan-theorem39-200k" },
+    { "from": "case-dahan-theorem39-500k", "relation": "checked_by", "to": "evidence-dahan-theorem39-500k" },
+    { "from": "case-dahan-theorem39-500k", "relation": "limited_by", "to": "limit-dahan-500k-finite" },
+    { "from": "case-dahan-theorem39-500k", "relation": "uses_method", "to": "method-dahan-criterion" },
+    { "from": "case-dahan-theorem39-500k", "relation": "extends", "to": "case-dahan-theorem39-300k" },
     { "from": "case-transfer-pilot", "relation": "checked_by", "to": "evidence-transfer-pilot" },
     { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" }
   ]

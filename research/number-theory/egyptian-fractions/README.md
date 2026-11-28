@@ -70,3 +70,10 @@ The [`dahan-theorem39-extension-10000-v1`](dahan-theorem39-extension-10000-v1/RE
 extends the same paired experiment to 10,000 primes: the two-parameter
 criterion succeeds on all 10,000, while the matched `a=1,u≤40` control has
 16 capped misses. This remains finite evidence only.
+
+The compact [`dahan-theorem39-extension-300000-v1`](dahan-theorem39-extension-300000-v1/README.md)
+and [`dahan-theorem39-extension-500000-v1`](dahan-theorem39-extension-500000-v1/README.md)
+receipts extend the exact two-parameter replay to 300,000 and 500,000
+eligible primes. Both report zero failures and a separately run row-by-row
+identity audit. They are larger finite checks of the published criterion, not
+an asymptotic theorem or a solution of Erdős–Straus.
