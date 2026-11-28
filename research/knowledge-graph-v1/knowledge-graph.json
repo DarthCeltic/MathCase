@@ -128,6 +128,24 @@
       "kind": "limit",
       "label": "One infinite family; not a solution of Erdős–Straus for all n",
       "path": "research/frontier-2026-11/egyptian-28k-plus-21/README.md"
+    },
+    {
+      "id": "case-transfer-pilot",
+      "kind": "question",
+      "label": "Do saved examples help on held-out mathematical tasks?",
+      "path": "research/collatz-library-transfer-pilot-v1/README.md"
+    },
+    {
+      "id": "evidence-transfer-pilot",
+      "kind": "evidence",
+      "label": "Matched two-arm pilot with identical observed outcomes",
+      "path": "research/collatz-library-transfer-pilot-v1/pilot-result.json"
+    },
+    {
+      "id": "limit-transfer-open",
+      "kind": "limit",
+      "label": "No held-out learner or model improvement has been established",
+      "path": "research/collatz-library-transfer-pilot-v1/README.md"
     }
   ],
   "edges": [
@@ -148,6 +166,8 @@
     { "from": "case-geometry-midpoint", "relation": "uses_method", "to": "method-kernel-replay" },
     { "from": "case-egyptian-28k21", "relation": "checked_by", "to": "evidence-egyptian-28k21" },
     { "from": "case-egyptian-28k21", "relation": "limited_by", "to": "limit-egyptian-open" },
-    { "from": "case-egyptian-28k21", "relation": "uses_method", "to": "method-kernel-replay" }
+    { "from": "case-egyptian-28k21", "relation": "uses_method", "to": "method-kernel-replay" },
+    { "from": "case-transfer-pilot", "relation": "checked_by", "to": "evidence-transfer-pilot" },
+    { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" }
   ]
 }
