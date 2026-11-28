@@ -149,8 +149,17 @@ def main(argv: list[str] | None = None) -> int:
         "created_utc": datetime.now(timezone.utc).isoformat(),
         "scope": "Only the listed finite checks and Lean identities; see frontier README for limits.",
     }
+    result_file = output / "search-result.json"
+    if result_file.is_file():
+        try:
+            result = json.loads(result_file.read_text(encoding="utf-8"))
+            if isinstance(result, dict) and isinstance(result.get("status"), str):
+                receipt["mathematical_status"] = result["status"]
+        except (OSError, json.JSONDecodeError):
+            receipt["mathematical_status"] = "UNREADABLE_RESULT"
     (output / "run.json").write_text(json.dumps(receipt, indent=2) + "\n", encoding="utf-8")
-    print(f"{status}: new run files are in {output}")
+    suffix = f"; mathematical_status={receipt['mathematical_status']}" if "mathematical_status" in receipt else ""
+    print(f"{status}{suffix}: new run files are in {output}")
     return 0 if status == "ALL_COMMANDS_EXITED_0" else 1
 
 

@@ -2,7 +2,7 @@
 
 These are active research tracks with runnable checks and a plain account of what each check does. The included computation and Lean checks are evidence for the bounded claims below; none settles the named open problem. The visitor page is [MathCase Frontier](https://darthceltic.github.io/mathcase/frontier.html).
 
-Run `python scripts/run_frontier_case.py list` from the repository root. Then run one ID, for example `python scripts/run_frontier_case.py vdw-2-7`. Each run creates a new output folder and preserves its logs and a small hash-bound `run.json`; it never overwrites an earlier run. `ws-5` downloads two pinned public witness files on first use, verifies their hashes, and keeps the downloaded inputs in the run folder. No model or provider is called. A runner exit code of zero means every listed command exited successfully; read the step logs and their domain-specific statuses for the mathematical result. In particular, a bounded search may finish with `UNKNOWN` and is not reported as a mathematical pass.
+Run `python scripts/run_frontier_case.py list` from the repository root. Then run one ID, for example `python scripts/run_frontier_case.py vdw-2-7`. Each run creates a new output folder and preserves its logs and a small hash-bound `run.json`; it never overwrites an earlier run. `ws-5` downloads two pinned public witness files on first use, verifies their hashes, and keeps the downloaded inputs in the run folder. No model or provider is called. A runner exit code of zero means every listed command exited successfully; for the C7 searches, `run.json` also repeats the underlying `mathematical_status`. In particular, a bounded search may finish with `UNKNOWN` and is not reported as a mathematical pass.
 
 ## The six main tracks
 
