@@ -17,6 +17,29 @@ Bootstrap downloads MathCase from public commit 17174a4a6311eb2e32556d9e4fb38255
 
 The compiler reads the public source files in the historical order and writes fresh OLEAN files in a new output directory. Each Lean process has one worker and a default ten-minute wall-clock limit per module. The only MathCase compiled artifacts on its import path are generated in that run. Use a fresh output folder for each replay so that an unsuccessful run remains inspectable. Existing unrelated workloads and Git checkouts are unnecessary.
 
+## Fresh-clone recipe
+
+For a clean public-source check, use a new checkout with no credentials and a
+new output directory. The replay runner itself then pins the source and
+dependency revisions shown above:
+
+```console
+git clone --filter=blob:none https://github.com/DarthCeltic/MathCase.git mathcase-replay
+cd mathcase-replay
+git checkout --detach 17174a4a6311eb2e32556d9e4fb38255290a36be
+cd reproduction/m20-public-source-replay-v1
+python bootstrap_original.py ./m20-workspace
+python replay_original.py ./m20-workspace ./m20-full --timeout 1800
+```
+
+Treat the run as a PASS only when `status.json` says `PASS`, all 363 modules,
+23 audit groups, and 4,262 queries are complete, the axiom output contains no
+`sorryAx` or `native_decide`, and the recorded source and executable hashes
+match the receipt. The path-free [2026-11-28 clean public-clone receipt](runs/2026-11-28-clean-stranger-r1/README.md)
+is a reference result from one host, not independent peer review. Preserve a
+partial output directory and report its failure rather than replacing it with
+a later success.
+
 ## What the run records
 
 `status.json` tracks the last completed stage and total checks. New v2 run receipts bind the replay script, bootstrap script and receipt, Python, Lake, and Lean executables. `stages.jsonl` records each completed command's exit status, duration, and input/output hashes; the two folders under each output named `sources` and `logs` contain the exact staged source and compiler output. The proof builds 229 original inputs, 133 composition modules, and the final theorem. The final theorem's recorded axiom output is compared with the historical result. All 23 axiom groups must reproduce their recorded text after normalizing platform line endings, cover 4,262 queries, and contain zero sorryAx reports.
