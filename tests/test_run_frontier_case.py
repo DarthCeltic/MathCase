@@ -17,6 +17,9 @@ EXPECTED = {
     "vdw-5-3",
     "egyptian-28k-21",
     "ramsey-6-6",
+    "c7-greedy",
+    "c7-ejection",
+    "c7-surplus",
 }
 
 

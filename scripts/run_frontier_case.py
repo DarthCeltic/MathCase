@@ -1,4 +1,4 @@
-"""Run one of the six public frontier checks without overwriting prior output."""
+"""Run one of the nine public frontier checks without overwriting prior output."""
 from __future__ import annotations
 
 import argparse
@@ -21,6 +21,9 @@ CASES = {
     "vdw-5-3": "Check the known 170-position coloring and the small exact SAT control; the 171 probe stays UNKNOWN.",
     "egyptian-28k-21": "Recompile the exact Lean identities for n = 28k + 21 and positive multiples of seven.",
     "ramsey-6-6": "Check the Paley(101) witness and bounded changes to that fixed starting graph.",
+    "c7-greedy": "Run the bounded whole-graph greedy C7^5 search; a miss remains UNKNOWN.",
+    "c7-ejection": "Run the bounded C7^5 ejection-chain search from the known 367-word seed.",
+    "c7-surplus": "Run the bounded C7^5 surplus-neighborhood search; a miss remains UNKNOWN.",
 }
 
 
@@ -66,6 +69,24 @@ def plan(case: str, output: Path) -> list[tuple[str, list[str], Path]]:
             ("saved unrestricted LRAT obstruction", [py, "verify_refutation.py", "unrestricted", "proofs/unrestricted.lrat"], four),
             ("minimum old-edge changes", [py, "paley_recolor.py"], paley),
             ("bounded structured recolorings", [py, "paley_structural.py"], four),
+        ]
+    if case == "c7-greedy":
+        c7 = ROOT / "research" / "frontier" / "c7-five-symbol-greedy-v1"
+        return [
+            ("whole-graph greedy search", [py, "search.py", "--seconds", "180", "--seed", "28112026", "--out", str(output)], c7),
+            ("independent pair checker", [py, "verify.py", "--baseline", str(c7 / "base_c7.json"), "--candidate", str(output / "search-result.json"), "--out", str(output / "verification.json")], c7),
+        ]
+    if case == "c7-ejection":
+        c7 = ROOT / "research" / "frontier" / "c7-five-symbol-ejection-v1"
+        return [
+            ("ejection-chain search", [py, "search.py", "--base", str(c7 / "base_c7.json"), "--seconds", "180", "--seed", "281131", "--out", str(output)], c7),
+            ("independent pair checker", [py, "verify.py", "--base", str(c7 / "base_c7.json"), "--result", str(output / "search-result.json"), "--out", str(output / "verification.json")], c7),
+        ]
+    if case == "c7-surplus":
+        c7 = ROOT / "research" / "frontier" / "c7-five-symbol-surplus-v1"
+        return [
+            ("surplus-neighborhood search", [py, "search.py", "--base", str(c7 / "base_c7.json"), "--seconds", "30", "--starts", "12", "--depth", "4", "--seed", "281128", "--out", str(output)], c7),
+            ("independent surplus checker", [py, "verify.py", "--base", str(c7 / "base_c7.json"), "--result", str(output / "search-result.json"), "--out", str(output / "verification.json")], c7),
         ]
     raise ValueError(f"unknown case: {case}")
 
