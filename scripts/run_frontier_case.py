@@ -121,6 +121,10 @@ def main(argv: list[str] | None = None) -> int:
     status = "ALL_COMMANDS_EXITED_0"
     for index, (label, argv, cwd) in enumerate(commands, start=1):
         log = output / f"{index:02d}-{label.replace(' ', '-')}.log"
+        # Some case plans deliberately group related logs in a subdirectory
+        # (for example, the R(3,3,3,3) one-edge/two-edge probes).  Create that
+        # directory before recording either success or failure.
+        log.parent.mkdir(parents=True, exist_ok=True)
         try:
             run = subprocess.run(argv, cwd=cwd, env=env, stdout=subprocess.PIPE,
                                  stderr=subprocess.STDOUT, timeout=3600)
