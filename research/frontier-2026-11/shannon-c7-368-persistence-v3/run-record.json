@@ -1,0 +1,14 @@
+{
+  "command": "python -B search.py",
+  "python": "3.14.7",
+  "status": "NO_368_FOUND_UNKNOWN",
+  "time_cap_kind": "single-process wall-clock cap; 120 seconds",
+  "elapsed_seconds": 120.008246,
+  "seed": 281128,
+  "starts": 83,
+  "moves": 9941,
+  "best_size": 367,
+  "new_distinct_equal_size_seeds_retained": 0,
+  "search_result_sha256": "computed from search-result.json in SHA256SUMS",
+  "external_calls": 0
+}

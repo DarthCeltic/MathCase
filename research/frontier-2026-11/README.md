@@ -37,10 +37,12 @@ a planted duplicate. This is a bounded criterion check, not an exhaustive
 obstruction.
 
 A fourth [equal-size-seed persistence pilot](shannon-c7-368-equal-seed-persist-v1/README.md)
-ran the changed ejection method for 180 seconds, with six starts and 419 moves.
-It retained zero distinct valid 367-sized seeds beyond the published seed and
-still found no 368 code. This is another `UNKNOWN` search result, not an
-impossibility proof.
+ran the earlier changed ejection method for 180 seconds, with six starts and
+419 moves. The newer [multi-ejection persistence run](shannon-c7-368-persistence-v3/README.md)
+started from the published code plus eight independently checked one-swap
+variants, completed 83 starts and 9,941 moves, and retained no new distinct
+367-sized seed. It still found no 368 code. Both are `UNKNOWN` search results,
+not impossibility proofs.
 
 ## How to reproduce
 
