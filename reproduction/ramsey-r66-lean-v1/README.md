@@ -12,8 +12,8 @@ The exact target is:
 ```
 
 In plain words, there is a simple graph on 101 labeled vertices with no
-clique of size six and no independent set of size six. Ryan's M0 YES binds
-the wording to packet SHA-256
+clique of size six and no independent set of size six. The recorded M0 YES
+binds the wording to packet SHA-256
 `6e1382f9ad7123aad2c25f4d10e4de7cf168a296029db6144c96b64a2044fae2`; M0 is
 statement fidelity only.
 
