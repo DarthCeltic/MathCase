@@ -63,7 +63,35 @@ replay.
 3. Run the independent row audit and compare the generated result hash with the public receipt. Record Python version, operating system, command, elapsed time, and audit output.
 4. Confirm the wording remains finite arithmetic evidence only. It is not an Erdős–Straus proof, asymptotic theorem, novelty claim, or priority claim.
 
-## 6. Mathematical wording review
+## 6. Current R(6,6) Lean replay
+
+1. From [`ramsey-r66-lean-v1/`](ramsey-r66-lean-v1/README.md), run the
+   documented `lake update`, `lake exe cache get`, `lake build -Kjobs=1
+   MathCase`, and `lake env lean Audit.lean` commands from a clean checkout.
+2. Compare the current-lock receipt with
+   [`verification/anonymous-public-main-replay-2026-11-28.json`](ramsey-r66-lean-v1/verification/anonymous-public-main-replay-2026-11-28.json)
+   and its source/output hash manifest. All five commands should exit 0; the
+   audit should report `[propext, Classical.choice, Quot.sound]` and no
+   `sorryAx`.
+3. Confirm that this is a fresh public-clone replay of the known 101-vertex
+   witness and lower bound `R(6,6) ≥ 102`, not a new bound, exact value, or
+   independent human review. Preserve the older historical-lock mismatch.
+
+## 7. Current bounded coloring and 13/22 checks
+
+- **Weak Schur(5):** run
+  `python -B research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/verify_result.py`.
+  It must pass the direct and bitset scans, both valid 207 controls, and the
+  damaged control. The saved pilot is `WALL_CAP_NO_WITNESS` with one conflict;
+  it is not a 208-coloring or an impossibility proof.
+- **Collatz 13/22:** use the command in
+  [`collatz-at-most-thirteen-of-twenty-two-v2/README.md`](collatz-at-most-thirteen-of-twenty-two-v2/README.md).
+  Confirm the exact count `3,593,934 / 4,194,304`, the ordinary step-35
+  first-drop scope, and the explicit no-convergence limit.
+- **C7 368-word search:** keep the existing `NO_368_FOUND_UNKNOWN` boundary;
+  a bounded miss is not an impossibility result.
+
+## 8. Mathematical wording review
 
 For either result, compare the English sentence with the exact Lean statement:
 
@@ -75,7 +103,7 @@ For either result, compare the English sentence with the exact Lean statement:
   rather than percentages of Collatz trajectories?
 - Are prior-work and novelty claims absent or supported by a primary source?
 
-## 7. Report a check
+## 9. Report a check
 
 A useful report names the case and commit, gives the command and tool versions,
 states PASS/FAIL/TIMEOUT, and links a receipt or first diagnostic. For a wording
