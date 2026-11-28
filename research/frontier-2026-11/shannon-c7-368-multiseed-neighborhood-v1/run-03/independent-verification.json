@@ -2,7 +2,7 @@
   "schema": "c7-multiseed-neighborhood-independent-check-v1",
   "status": "PASS",
   "base_sha256": "2395d9ce16e068010a5f2a57f3fbfec5a607fa9272b02afd6c9e4a95fc70016b",
-  "candidate_packet_sha256": "81770aa020ee376624552c540d33569b5b67cafc3c974deaebf69e9ccdee510c",
+  "candidate_packet_sha256": "50e77528936eb99a96986c1f9a72cce92075c51a36792b48fe66225978469429",
   "candidate_size": 367,
   "candidate_pair_tests": 67161,
   "candidate_pairwise_independent": true,
