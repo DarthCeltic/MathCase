@@ -1,0 +1,10 @@
+{
+  "assignments": 262144,
+  "joint_histogram_sha256": "d7de5b273854f6a6975f3a80b036560a8ea73ac38bf2aef88445655826da2fef",
+  "matches_primary_receipt": true,
+  "method": "Gray-code walk through all 2^18 assignments; update cut size from the four neighbors of the single flipped vertex",
+  "nonzero_bins": 112,
+  "one_count_damaged_control_rejected": true,
+  "receipt_sha256": "3833917f66cedc96dae35d66802a2351637ee21cc4e07331e1403a0049a9bcb6",
+  "status": "PASS_INDEPENDENT_GRAY_CROSSCHECK"
+}

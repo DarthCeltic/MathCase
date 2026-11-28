@@ -1,0 +1,1648 @@
+{
+  "controls": {
+    "all_assignments_counted": true,
+    "damaged_histogram_sha256": "8895d0afb3140faa8179a03dde9677053098bf27dc6526a16d808b28f1c74770",
+    "damaged_omitted_vertical_rejected": true,
+    "direct_equals_64_state_transfer": true,
+    "edge_count": 36,
+    "single_spin_flip_bins": true,
+    "spin_inversion_symmetry": true,
+    "uniform_bins": true
+  },
+  "fixed_up_profiles": [
+    {
+      "configurations": 1,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          0,
+          0
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          1
+        ]
+      ],
+      "expected": 1,
+      "up_spins": 0
+    },
+    {
+      "configurations": 18,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          4,
+          4
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          4,
+          18
+        ]
+      ],
+      "expected": 18,
+      "up_spins": 1
+    },
+    {
+      "configurations": 153,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          6,
+          8
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          6,
+          36
+        ],
+        [
+          8,
+          117
+        ]
+      ],
+      "expected": 153,
+      "up_spins": 2
+    },
+    {
+      "configurations": 816,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          6,
+          12
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          90
+        ],
+        [
+          10,
+          378
+        ],
+        [
+          12,
+          342
+        ]
+      ],
+      "expected": 816,
+      "up_spins": 3
+    },
+    {
+      "configurations": 3060,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          8,
+          16
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          8,
+          54
+        ],
+        [
+          10,
+          252
+        ],
+        [
+          12,
+          1062
+        ],
+        [
+          14,
+          1224
+        ],
+        [
+          16,
+          468
+        ]
+      ],
+      "expected": 3060,
+      "up_spins": 4
+    },
+    {
+      "configurations": 8568,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          8,
+          20
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "middle_squared": 26244,
+            "neighbors_product": 34992,
+            "values": [
+              36,
+              162,
+              972
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          162
+        ],
+        [
+          12,
+          972
+        ],
+        [
+          14,
+          2520
+        ],
+        [
+          16,
+          3096
+        ],
+        [
+          18,
+          1494
+        ],
+        [
+          20,
+          288
+        ]
+      ],
+      "expected": 8568,
+      "up_spins": 5
+    },
+    {
+      "configurations": 18564,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          6,
+          24
+        ],
+        "violations": [
+          {
+            "labels": [
+              6,
+              8,
+              10
+            ],
+            "middle_squared": 0,
+            "neighbors_product": 1188,
+            "values": [
+              6,
+              0,
+              198
+            ]
+          },
+          {
+            "labels": [
+              10,
+              12,
+              14
+            ],
+            "middle_squared": 484416,
+            "neighbors_product": 552420,
+            "values": [
+              198,
+              696,
+              2790
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          6,
+          6
+        ],
+        [
+          10,
+          198
+        ],
+        [
+          12,
+          696
+        ],
+        [
+          14,
+          2790
+        ],
+        [
+          16,
+          5760
+        ],
+        [
+          18,
+          5502
+        ],
+        [
+          20,
+          2862
+        ],
+        [
+          22,
+          684
+        ],
+        [
+          24,
+          66
+        ]
+      ],
+      "expected": 18564,
+      "up_spins": 6
+    },
+    {
+      "configurations": 31824,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          8,
+          26
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "middle_squared": 15876,
+            "neighbors_product": 20088,
+            "values": [
+              36,
+              126,
+              558
+            ]
+          },
+          {
+            "labels": [
+              10,
+              12,
+              14
+            ],
+            "middle_squared": 311364,
+            "neighbors_product": 362880,
+            "values": [
+              126,
+              558,
+              2880
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          126
+        ],
+        [
+          12,
+          558
+        ],
+        [
+          14,
+          2880
+        ],
+        [
+          16,
+          6624
+        ],
+        [
+          18,
+          10188
+        ],
+        [
+          20,
+          7164
+        ],
+        [
+          22,
+          3402
+        ],
+        [
+          24,
+          738
+        ],
+        [
+          26,
+          108
+        ]
+      ],
+      "expected": 31824,
+      "up_spins": 7
+    },
+    {
+      "configurations": 43758,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          8,
+          28
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "middle_squared": 11664,
+            "neighbors_product": 23328,
+            "values": [
+              36,
+              108,
+              648
+            ]
+          },
+          {
+            "labels": [
+              24,
+              26,
+              28
+            ],
+            "middle_squared": 116964,
+            "neighbors_product": 127818,
+            "values": [
+              2367,
+              342,
+              54
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          108
+        ],
+        [
+          12,
+          648
+        ],
+        [
+          14,
+          2358
+        ],
+        [
+          16,
+          7515
+        ],
+        [
+          18,
+          12510
+        ],
+        [
+          20,
+          11574
+        ],
+        [
+          22,
+          6246
+        ],
+        [
+          24,
+          2367
+        ],
+        [
+          26,
+          342
+        ],
+        [
+          28,
+          54
+        ]
+      ],
+      "expected": 43758,
+      "up_spins": 8
+    },
+    {
+      "configurations": 48620,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          6,
+          30
+        ],
+        "violations": [
+          {
+            "labels": [
+              6,
+              8,
+              10
+            ],
+            "middle_squared": 0,
+            "neighbors_product": 1080,
+            "values": [
+              6,
+              0,
+              180
+            ]
+          },
+          {
+            "labels": [
+              10,
+              12,
+              14
+            ],
+            "middle_squared": 389376,
+            "neighbors_product": 392040,
+            "values": [
+              180,
+              624,
+              2178
+            ]
+          },
+          {
+            "labels": [
+              12,
+              14,
+              16
+            ],
+            "middle_squared": 4743684,
+            "neighbors_product": 4807296,
+            "values": [
+              624,
+              2178,
+              7704
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          6,
+          6
+        ],
+        [
+          10,
+          180
+        ],
+        [
+          12,
+          624
+        ],
+        [
+          14,
+          2178
+        ],
+        [
+          16,
+          7704
+        ],
+        [
+          18,
+          13436
+        ],
+        [
+          20,
+          13068
+        ],
+        [
+          22,
+          7650
+        ],
+        [
+          24,
+          3120
+        ],
+        [
+          26,
+          576
+        ],
+        [
+          28,
+          72
+        ],
+        [
+          30,
+          6
+        ]
+      ],
+      "expected": 48620,
+      "up_spins": 9
+    },
+    {
+      "configurations": 43758,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          8,
+          28
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "middle_squared": 11664,
+            "neighbors_product": 23328,
+            "values": [
+              36,
+              108,
+              648
+            ]
+          },
+          {
+            "labels": [
+              24,
+              26,
+              28
+            ],
+            "middle_squared": 116964,
+            "neighbors_product": 127818,
+            "values": [
+              2367,
+              342,
+              54
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          108
+        ],
+        [
+          12,
+          648
+        ],
+        [
+          14,
+          2358
+        ],
+        [
+          16,
+          7515
+        ],
+        [
+          18,
+          12510
+        ],
+        [
+          20,
+          11574
+        ],
+        [
+          22,
+          6246
+        ],
+        [
+          24,
+          2367
+        ],
+        [
+          26,
+          342
+        ],
+        [
+          28,
+          54
+        ]
+      ],
+      "expected": 43758,
+      "up_spins": 10
+    },
+    {
+      "configurations": 31824,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          8,
+          26
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "middle_squared": 15876,
+            "neighbors_product": 20088,
+            "values": [
+              36,
+              126,
+              558
+            ]
+          },
+          {
+            "labels": [
+              10,
+              12,
+              14
+            ],
+            "middle_squared": 311364,
+            "neighbors_product": 362880,
+            "values": [
+              126,
+              558,
+              2880
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          126
+        ],
+        [
+          12,
+          558
+        ],
+        [
+          14,
+          2880
+        ],
+        [
+          16,
+          6624
+        ],
+        [
+          18,
+          10188
+        ],
+        [
+          20,
+          7164
+        ],
+        [
+          22,
+          3402
+        ],
+        [
+          24,
+          738
+        ],
+        [
+          26,
+          108
+        ]
+      ],
+      "expected": 31824,
+      "up_spins": 11
+    },
+    {
+      "configurations": 18564,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          6,
+          24
+        ],
+        "violations": [
+          {
+            "labels": [
+              6,
+              8,
+              10
+            ],
+            "middle_squared": 0,
+            "neighbors_product": 1188,
+            "values": [
+              6,
+              0,
+              198
+            ]
+          },
+          {
+            "labels": [
+              10,
+              12,
+              14
+            ],
+            "middle_squared": 484416,
+            "neighbors_product": 552420,
+            "values": [
+              198,
+              696,
+              2790
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          6,
+          6
+        ],
+        [
+          10,
+          198
+        ],
+        [
+          12,
+          696
+        ],
+        [
+          14,
+          2790
+        ],
+        [
+          16,
+          5760
+        ],
+        [
+          18,
+          5502
+        ],
+        [
+          20,
+          2862
+        ],
+        [
+          22,
+          684
+        ],
+        [
+          24,
+          66
+        ]
+      ],
+      "expected": 18564,
+      "up_spins": 12
+    },
+    {
+      "configurations": 8568,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          8,
+          20
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "middle_squared": 26244,
+            "neighbors_product": 34992,
+            "values": [
+              36,
+              162,
+              972
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          162
+        ],
+        [
+          12,
+          972
+        ],
+        [
+          14,
+          2520
+        ],
+        [
+          16,
+          3096
+        ],
+        [
+          18,
+          1494
+        ],
+        [
+          20,
+          288
+        ]
+      ],
+      "expected": 8568,
+      "up_spins": 13
+    },
+    {
+      "configurations": 3060,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          8,
+          16
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          8,
+          54
+        ],
+        [
+          10,
+          252
+        ],
+        [
+          12,
+          1062
+        ],
+        [
+          14,
+          1224
+        ],
+        [
+          16,
+          468
+        ]
+      ],
+      "expected": 3060,
+      "up_spins": 14
+    },
+    {
+      "configurations": 816,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          6,
+          12
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          6,
+          6
+        ],
+        [
+          8,
+          90
+        ],
+        [
+          10,
+          378
+        ],
+        [
+          12,
+          342
+        ]
+      ],
+      "expected": 816,
+      "up_spins": 15
+    },
+    {
+      "configurations": 153,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          6,
+          8
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          6,
+          36
+        ],
+        [
+          8,
+          117
+        ]
+      ],
+      "expected": 153,
+      "up_spins": 16
+    },
+    {
+      "configurations": 18,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          4,
+          4
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          4,
+          18
+        ]
+      ],
+      "expected": 18,
+      "up_spins": 17
+    },
+    {
+      "configurations": 1,
+      "even_bond_log_concavity": {
+        "log_concave": true,
+        "support": [
+          0,
+          0
+        ],
+        "violations": []
+      },
+      "even_bond_profile": [
+        [
+          0,
+          1
+        ]
+      ],
+      "expected": 1,
+      "up_spins": 18
+    }
+  ],
+  "grid": {
+    "assignments": 262144,
+    "edges": 36,
+    "length": 3,
+    "vertices": 18,
+    "width": 6
+  },
+  "joint_histogram": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      18,
+      1
+    ],
+    [
+      4,
+      1,
+      18
+    ],
+    [
+      4,
+      17,
+      18
+    ],
+    [
+      6,
+      2,
+      36
+    ],
+    [
+      6,
+      3,
+      6
+    ],
+    [
+      6,
+      6,
+      6
+    ],
+    [
+      6,
+      9,
+      6
+    ],
+    [
+      6,
+      12,
+      6
+    ],
+    [
+      6,
+      15,
+      6
+    ],
+    [
+      6,
+      16,
+      36
+    ],
+    [
+      8,
+      2,
+      117
+    ],
+    [
+      8,
+      3,
+      90
+    ],
+    [
+      8,
+      4,
+      54
+    ],
+    [
+      8,
+      5,
+      36
+    ],
+    [
+      8,
+      7,
+      36
+    ],
+    [
+      8,
+      8,
+      36
+    ],
+    [
+      8,
+      10,
+      36
+    ],
+    [
+      8,
+      11,
+      36
+    ],
+    [
+      8,
+      13,
+      36
+    ],
+    [
+      8,
+      14,
+      54
+    ],
+    [
+      8,
+      15,
+      90
+    ],
+    [
+      8,
+      16,
+      117
+    ],
+    [
+      10,
+      3,
+      378
+    ],
+    [
+      10,
+      4,
+      252
+    ],
+    [
+      10,
+      5,
+      162
+    ],
+    [
+      10,
+      6,
+      198
+    ],
+    [
+      10,
+      7,
+      126
+    ],
+    [
+      10,
+      8,
+      108
+    ],
+    [
+      10,
+      9,
+      180
+    ],
+    [
+      10,
+      10,
+      108
+    ],
+    [
+      10,
+      11,
+      126
+    ],
+    [
+      10,
+      12,
+      198
+    ],
+    [
+      10,
+      13,
+      162
+    ],
+    [
+      10,
+      14,
+      252
+    ],
+    [
+      10,
+      15,
+      378
+    ],
+    [
+      12,
+      3,
+      342
+    ],
+    [
+      12,
+      4,
+      1062
+    ],
+    [
+      12,
+      5,
+      972
+    ],
+    [
+      12,
+      6,
+      696
+    ],
+    [
+      12,
+      7,
+      558
+    ],
+    [
+      12,
+      8,
+      648
+    ],
+    [
+      12,
+      9,
+      624
+    ],
+    [
+      12,
+      10,
+      648
+    ],
+    [
+      12,
+      11,
+      558
+    ],
+    [
+      12,
+      12,
+      696
+    ],
+    [
+      12,
+      13,
+      972
+    ],
+    [
+      12,
+      14,
+      1062
+    ],
+    [
+      12,
+      15,
+      342
+    ],
+    [
+      14,
+      4,
+      1224
+    ],
+    [
+      14,
+      5,
+      2520
+    ],
+    [
+      14,
+      6,
+      2790
+    ],
+    [
+      14,
+      7,
+      2880
+    ],
+    [
+      14,
+      8,
+      2358
+    ],
+    [
+      14,
+      9,
+      2178
+    ],
+    [
+      14,
+      10,
+      2358
+    ],
+    [
+      14,
+      11,
+      2880
+    ],
+    [
+      14,
+      12,
+      2790
+    ],
+    [
+      14,
+      13,
+      2520
+    ],
+    [
+      14,
+      14,
+      1224
+    ],
+    [
+      16,
+      4,
+      468
+    ],
+    [
+      16,
+      5,
+      3096
+    ],
+    [
+      16,
+      6,
+      5760
+    ],
+    [
+      16,
+      7,
+      6624
+    ],
+    [
+      16,
+      8,
+      7515
+    ],
+    [
+      16,
+      9,
+      7704
+    ],
+    [
+      16,
+      10,
+      7515
+    ],
+    [
+      16,
+      11,
+      6624
+    ],
+    [
+      16,
+      12,
+      5760
+    ],
+    [
+      16,
+      13,
+      3096
+    ],
+    [
+      16,
+      14,
+      468
+    ],
+    [
+      18,
+      5,
+      1494
+    ],
+    [
+      18,
+      6,
+      5502
+    ],
+    [
+      18,
+      7,
+      10188
+    ],
+    [
+      18,
+      8,
+      12510
+    ],
+    [
+      18,
+      9,
+      13436
+    ],
+    [
+      18,
+      10,
+      12510
+    ],
+    [
+      18,
+      11,
+      10188
+    ],
+    [
+      18,
+      12,
+      5502
+    ],
+    [
+      18,
+      13,
+      1494
+    ],
+    [
+      20,
+      5,
+      288
+    ],
+    [
+      20,
+      6,
+      2862
+    ],
+    [
+      20,
+      7,
+      7164
+    ],
+    [
+      20,
+      8,
+      11574
+    ],
+    [
+      20,
+      9,
+      13068
+    ],
+    [
+      20,
+      10,
+      11574
+    ],
+    [
+      20,
+      11,
+      7164
+    ],
+    [
+      20,
+      12,
+      2862
+    ],
+    [
+      20,
+      13,
+      288
+    ],
+    [
+      22,
+      6,
+      684
+    ],
+    [
+      22,
+      7,
+      3402
+    ],
+    [
+      22,
+      8,
+      6246
+    ],
+    [
+      22,
+      9,
+      7650
+    ],
+    [
+      22,
+      10,
+      6246
+    ],
+    [
+      22,
+      11,
+      3402
+    ],
+    [
+      22,
+      12,
+      684
+    ],
+    [
+      24,
+      6,
+      66
+    ],
+    [
+      24,
+      7,
+      738
+    ],
+    [
+      24,
+      8,
+      2367
+    ],
+    [
+      24,
+      9,
+      3120
+    ],
+    [
+      24,
+      10,
+      2367
+    ],
+    [
+      24,
+      11,
+      738
+    ],
+    [
+      24,
+      12,
+      66
+    ],
+    [
+      26,
+      7,
+      108
+    ],
+    [
+      26,
+      8,
+      342
+    ],
+    [
+      26,
+      9,
+      576
+    ],
+    [
+      26,
+      10,
+      342
+    ],
+    [
+      26,
+      11,
+      108
+    ],
+    [
+      28,
+      8,
+      54
+    ],
+    [
+      28,
+      9,
+      72
+    ],
+    [
+      28,
+      10,
+      54
+    ],
+    [
+      30,
+      9,
+      6
+    ]
+  ],
+  "joint_histogram_sha256": "d7de5b273854f6a6975f3a80b036560a8ea73ac38bf2aef88445655826da2fef",
+  "limitations": [
+    "One finite 6x3 periodic torus only.",
+    "No general theorem, thermodynamic-limit conclusion, novelty, or priority claim.",
+    "Log-concavity screen is a separate finite observation; leading/trailing zero bins are trimmed and interior zero bins retained. Odd broken-edge counts are omitted because the torus cut sizes are even."
+  ],
+  "methods": [
+    "direct enumeration of every assignment using an explicit set of periodic vertex-pair edges",
+    "closed-walk transfer DP over 64 six-bit column states; vertical edges counted by cyclic bit rotation, seam counted on closure"
+  ],
+  "network": "not used",
+  "python": "3.14.7",
+  "schema": "mathcase-ising-6x3-joint-density-v1",
+  "source_sha256": "95eca344a1fd93de3a87b99319a11bd1a27f2c5ea579848f923fd70da404e1b7",
+  "statement": "On the periodic 6x3 square-lattice torus, direct enumeration of all labeled spin assignments equals an independent 64-state column transfer for the joint histogram (disagreeing edges, plus spins). Fixed-up-spin even-bond log-concavity is screened separately for every u.",
+  "status": "PASS_EXACT_FINITE_CHECK",
+  "summary": {
+    "first_failure": {
+      "configurations": 8568,
+      "even_bond_log_concavity": {
+        "log_concave": false,
+        "support": [
+          8,
+          20
+        ],
+        "violations": [
+          {
+            "labels": [
+              8,
+              10,
+              12
+            ],
+            "middle_squared": 26244,
+            "neighbors_product": 34992,
+            "values": [
+              36,
+              162,
+              972
+            ]
+          }
+        ]
+      },
+      "even_bond_profile": [
+        [
+          8,
+          36
+        ],
+        [
+          10,
+          162
+        ],
+        [
+          12,
+          972
+        ],
+        [
+          14,
+          2520
+        ],
+        [
+          16,
+          3096
+        ],
+        [
+          18,
+          1494
+        ],
+        [
+          20,
+          288
+        ]
+      ],
+      "expected": 8568,
+      "up_spins": 5
+    },
+    "fixed_up_spin_profiles": 19,
+    "log_concave_profiles": 10,
+    "non_log_concave_profiles": 9
+  },
+  "timing_seconds": {
+    "direct": 1.197064,
+    "total": 1.367806,
+    "transfer": 0.106165
+  },
+  "wall_cap_seconds": 120.0
+}

@@ -22,6 +22,7 @@ EXPECTED = {
     "c7-surplus",
     "c7-equal-seed-persist",
     "ising-width5",
+    "ising-width6",
 }
 
 
