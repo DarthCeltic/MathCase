@@ -1,0 +1,99 @@
+{
+  "checks": {
+    "m20_base_endpoint_and_odd_count": "PASS for all 2,652 rows",
+    "ordinary_32_step_base_endpoint": "PASS for all 2,652 rows",
+    "refined_classes_checked_by_both_methods": 21216,
+    "wrong_endpoint_negative_control": "REJECTED"
+  },
+  "interpretation": "Finite cross-check only. The 23/14 theorem covers seven refined residue classes from each listed M20 family; the remaining class has 15 odd inputs. No proof obligations were deduplicated, and no broader Collatz claim follows.",
+  "pair_rows": 2652,
+  "pairs_sha256": "30f06904507a35d180fab9d0d9195759047d13edfd857c04e2ef483eaf75194a",
+  "python_version": "3.14.7",
+  "refinement": {
+    "covered_by_23_14_filter": 18564,
+    "covered_fraction": "18564/21216 = 87.5%",
+    "odd_count_distribution": {
+      "12": 2652,
+      "13": 7956,
+      "14": 7956,
+      "15": 2652
+    },
+    "outside_filter_h15_lifts": 2652,
+    "qualifying_lifts_per_family": {
+      "7": 2652
+    },
+    "subfamilies_per_m20_family": 8,
+    "total_subfamilies": 21216
+  },
+  "sample": [
+    {
+      "odd_count_distribution": {
+        "12": 1,
+        "13": 3,
+        "14": 3,
+        "15": 1
+      },
+      "q": 122,
+      "qualifying_k_mod_8": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        6,
+        7
+      ],
+      "r": 239
+    },
+    {
+      "odd_count_distribution": {
+        "12": 1,
+        "13": 3,
+        "14": 3,
+        "15": 1
+      },
+      "q": 248,
+      "qualifying_k_mod_8": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "r": 487
+    },
+    {
+      "odd_count_distribution": {
+        "12": 1,
+        "13": 3,
+        "14": 3,
+        "15": 1
+      },
+      "q": 388,
+      "qualifying_k_mod_8": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        6,
+        7
+      ],
+      "r": 763
+    }
+  ],
+  "source_reference_commit": "3631fca127943dcbc6899a3a065e704eaade5de5",
+  "source_sha256": {
+    "reproduction/collatz-affine-family-replay-v1/CollatzAffineTrace.lean": "8a53e1cee2436efc347c6ebb07da0203d9c613670ad52bafdd0d0d19258d408c",
+    "reproduction/collatz-affine-family-replay-v1/M20Table.lean": "bd811cfc8e355280c24fc325e7f2ceffdaa3fe187cdd8d09f0d186b14fa18f5e",
+    "reproduction/collatz-affine-family-replay-v1/PAIRS.tsv": "30f06904507a35d180fab9d0d9195759047d13edfd857c04e2ef483eaf75194a",
+    "reproduction/collatz-affine-family-replay-v1/SymbolicFamilies.lean": "ea4a87af1afec86a1ed74d2ca6caa1182e40250d2b5ebffee7644585828572ff",
+    "reproduction/collatz-parity-envelopes-2026-11-v1/AtMostFourteen23.lean": "cade28fcb7ae5743668bf93688265d7572acaf89bc979701a0187aaa6e1efdc9",
+    "reproduction/collatz-parity-envelopes-2026-11-v1/CountWords.lean": "3466e894caf365eadbad480bd7f9bb75de7ae015ff84e567f1eeb0c363e99e60",
+    "reproduction/collatz-parity-envelopes-2026-11-v1/WordBound.lean": "2208a91a348c41b110c799124b450957a5a7a168e33c49dbab03ec0736c3d48d",
+    "reproduction/collatz-parity-envelopes-2026-11-v1/WordResidue.lean": "812b00cdf2375de9a87d8c87fbd7cebb61924542d251775828dcc845bd0fdc1c",
+    "reproduction/collatz-parity-envelopes-2026-11-v1/replay.py": "8c33228aa3f3a103780972e6aff4e716ef3ec79c11268be1eb9b83bdb1df68b1"
+  }
+}
