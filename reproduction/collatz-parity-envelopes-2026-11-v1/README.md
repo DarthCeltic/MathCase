@@ -7,7 +7,7 @@ Lean checked four different conditions under which the Collatz sequence falls be
 Install Lean 4.33.1 and make its `lean` executable available on your path. From the root of a fresh MathCase checkout, run:
 
 ```sh
-python -B scripts/run_public_case.py collatz-parity-envelope-23-14
+python -B scripts/run_public_case.py collatz-parity-envelope-23-14 --lean PATH_TO_LEAN_4_33_1
 ```
 
 The launcher builds the four required modules from source in a new output directory. Lean Core is sufficient. The command checks the exact target and its axioms, then writes the replay receipt to that directory.

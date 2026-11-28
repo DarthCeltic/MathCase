@@ -60,7 +60,7 @@ For every start `n ≥ 3`, if at most 14 of its first 23 accelerated Collatz ste
 The package now includes a separate 23/14-only source runner and a recorded pass from an anonymous public clone at MathCase commit `343e9e9`. From the repository root, with Lean 4.33.1 available, use the normal case action:
 
 ```sh
-python -B scripts/run_public_case.py collatz-parity-envelope-23-14
+python -B scripts/run_public_case.py collatz-parity-envelope-23-14 --lean PATH_TO_LEAN_4_33_1
 ```
 
 A fresh public checkout passed this command on Windows in 14.251 seconds using the official Lean 4.33.1 distribution. See the [recorded run](reproduction/collatz-parity-envelopes-2026-11-v1/README.md#reproduce-the-reviewed-2314-proof) and the [plain-language worked example](https://darthceltic.github.io/mathcase/work.html#collatz-23-of-14).

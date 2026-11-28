@@ -10,7 +10,7 @@ import tempfile
 
 CATALOG = {
     "counterexample": "Check 4 divides 2 squared and 4 does not divide 2. Exact arithmetic.",
-    "geometry-midpoint": "Fresh-source Lean replay of the known midpoint identity in a normalized, axis-aligned right-triangle coordinate model. Supports --stage-timeout.",
+    "geometry-midpoint": "Fresh-source Lean replay of the known midpoint identity in a normalized, axis-aligned right-triangle coordinate model. Supports --lean and --stage-timeout.",
     "prime-sqrt2": "Recompile the prime theorem and its square-root-of-two child. Lean stages default to a 600-second limit.",
     "collatz": "Prove the 12-of-20 descent rule and its exact residue count in Lean 4.33.1.",
     "collatz-at-most-twelve": "Prove and recount the at-most-12-of-20 descent family, including the 13-odd boundary.",
@@ -93,9 +93,18 @@ def commands(case, args, output):
         if args.stage_timeout is not None:
             command += ["--stage-timeout", str(args.stage_timeout)]
         return [tuple(command)]
-    if case == "geometry-midpoint" and args.stage_timeout is not None:
-        return [commands(case, type("GeometryArgs", (), {"stage_timeout": None})(), output)[0]
-                + ("--stage-timeout", str(args.stage_timeout))]
+    if case == "geometry-midpoint":
+        command = list(routes[case][0])
+        lean_arg = getattr(args, "lean", None)
+        if lean_arg is not None:
+            command[1:1] = ["--lean", str(lean_arg)]
+        if args.stage_timeout is not None:
+            command += ["--stage-timeout", str(args.stage_timeout)]
+        return [tuple(command)]
+    if case == "collatz-parity-envelope-23-14" and getattr(args, "lean", None) is not None:
+        command = list(routes[case][0])
+        command[1:1] = ["--lean", str(args.lean)]
+        return [tuple(command)]
     return routes[case]
 
 
@@ -127,7 +136,7 @@ def main(argv=None, root=ROOT):
     deps = parser.add_mutually_exclusive_group()
     deps.add_argument("--mathlib", type=Path, help="prime-sqrt2: an installed pinned Mathlib checkout")
     deps.add_argument("--bootstrap", type=Path, help="prime-sqrt2: fetch the pinned public dependencies here")
-    parser.add_argument("--lean", type=Path, help="collatz-six-of-ten: official Lean 4.33.1 executable")
+    parser.add_argument("--lean", type=Path, help="Lean 4.33.1 executable for Lean-backed routes")
     parser.add_argument("--stage-timeout", type=int,
                         help="prime-sqrt2 or geometry-midpoint: wall-clock limit for each Lean stage")
     parser.add_argument("--source", type=Path, help="visitor: your own trusted .lean source file")
@@ -144,8 +153,8 @@ def main(argv=None, root=ROOT):
         parser.error("collatz-six-of-ten needs --lean PATH_TO_LEAN_4_33_1")
     if args.case == "collatz-six-of-ten" and not args.lean.is_file():
         parser.error("the Lean executable does not exist")
-    if args.case != "collatz-six-of-ten" and args.lean is not None:
-        parser.error("--lean applies only to collatz-six-of-ten")
+    if args.case not in ("collatz-six-of-ten", "geometry-midpoint", "collatz-parity-envelope-23-14") and args.lean is not None:
+        parser.error("--lean applies only to collatz-six-of-ten, geometry-midpoint, or collatz-parity-envelope-23-14")
     if args.case != "prime-sqrt2" and (args.mathlib or args.bootstrap):
         parser.error("--mathlib and --bootstrap apply to prime-sqrt2")
     if args.stage_timeout is not None and args.stage_timeout < 1:
