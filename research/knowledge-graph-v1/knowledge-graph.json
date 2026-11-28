@@ -1,0 +1,89 @@
+{
+  "schema": "mathcase-knowledge-graph-v1",
+  "generated_for": "human-readable evidence navigation",
+  "scope": "selected public cases; bounded claims only",
+  "nodes": [
+    {
+      "id": "case-collatz-23-14",
+      "kind": "question",
+      "label": "Collatz: at most 14 odd accelerated inputs in 23 steps",
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/README.md"
+    },
+    {
+      "id": "evidence-collatz-23-14",
+      "kind": "evidence",
+      "label": "Lean replay and axiom audit",
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/evidence/23-14-public-main-2026-11-26/replay-result.json"
+    },
+    {
+      "id": "limit-collatz-open",
+      "kind": "limit",
+      "label": "No convergence theorem or general Collatz rule",
+      "path": "reproduction/collatz-parity-envelopes-2026-11-v1/README.md"
+    },
+    {
+      "id": "case-c7-368",
+      "kind": "question",
+      "label": "Can 368 mutually compatible five-symbol words be found?",
+      "path": "research/frontier-2026-11/shannon-c7-368-whole-graph-greedy-v2/README.md"
+    },
+    {
+      "id": "evidence-c7-search",
+      "kind": "evidence",
+      "label": "Bounded search miss with independent pair checker",
+      "path": "research/frontier-2026-11/shannon-c7-368-whole-graph-greedy-v2/verification-rerun.json"
+    },
+    {
+      "id": "limit-c7-unknown",
+      "kind": "limit",
+      "label": "UNKNOWN search result; no impossibility proof",
+      "path": "research/frontier-2026-11/shannon-c7-368-whole-graph-greedy-v2/README.md"
+    },
+    {
+      "id": "case-ising-3x3",
+      "kind": "question",
+      "label": "Does the tested 3x3 periodic Ising profile stay log-concave?",
+      "path": "reproduction/ising-3x3-fixed-up-logconcavity-v1/README.md"
+    },
+    {
+      "id": "evidence-ising-3x3",
+      "kind": "evidence",
+      "label": "Direct enumeration and transfer calculation agree",
+      "path": "reproduction/ising-3x3-fixed-up-logconcavity-v1/precomputed-receipt.json"
+    },
+    {
+      "id": "limit-ising-finite",
+      "kind": "limit",
+      "label": "Finite 3x3 result only; no thermodynamic-limit claim",
+      "path": "reproduction/ising-3x3-fixed-up-logconcavity-v1/README.md"
+    },
+    {
+      "id": "case-ramsey-666",
+      "kind": "question",
+      "label": "Can a 102-vertex two-color Ramsey construction be extended?",
+      "path": "research/frontier-2026-11/paley-101/README.md"
+    },
+    {
+      "id": "evidence-ramsey-666",
+      "kind": "evidence",
+      "label": "Paley-base extension and recoloring checks",
+      "path": "research/frontier-2026-11/paley-101/receipt.json"
+    },
+    {
+      "id": "limit-ramsey-666",
+      "kind": "limit",
+      "label": "Does not rule out a different 102-vertex graph",
+      "path": "research/frontier-2026-11/README.md"
+    }
+  ],
+  "edges": [
+    { "from": "case-collatz-23-14", "relation": "checked_by", "to": "evidence-collatz-23-14" },
+    { "from": "case-collatz-23-14", "relation": "limited_by", "to": "limit-collatz-open" },
+    { "from": "case-c7-368", "relation": "checked_by", "to": "evidence-c7-search" },
+    { "from": "case-c7-368", "relation": "limited_by", "to": "limit-c7-unknown" },
+    { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
+    { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
+    { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666" },
+    { "from": "case-ramsey-666", "relation": "limited_by", "to": "limit-ramsey-666" }
+  ]
+}
