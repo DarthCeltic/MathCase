@@ -2,7 +2,7 @@
 
 Run `python -B scripts/start_public_case_desk.py` from the repository root with Python 3.11+. Open `http://127.0.0.1:55135/ui/prototype/index.html`. The server binds to loopback only; `--port 8000` selects another port. Stop it with Ctrl+C.
 
-This is the ordinary Case Desk frontend and Python evidence reader with an explicit public profile. It exposes three saved cases: an exact arithmetic counterexample, the prime-divisibility model proof and its two actual attempts, and the compiled square-root-of-two child. No API key, package installation, Go build, Lean installation or compilation is required for reading them.
+This is the ordinary Case Desk frontend and Python evidence reader with an explicit public profile. It exposes two saved cases: an exact arithmetic counterexample and the prime-divisibility model proof with its rejected attempt and accepted correction. The compiled square-root-of-two child is a separate source-replay artifact, not a third saved reader case. No API key, package installation, Go build, Lean installation or compilation is required for reading them.
 
 ## A short walkthrough
 

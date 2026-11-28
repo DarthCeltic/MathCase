@@ -26,7 +26,7 @@ The older source-only command remains available: `python scripts/check_visitor_c
 
 MathCase makes a mathematical claim inspectable from first example through formal proof and reuse. In the [public saved-case walkthrough](https://darthceltic.github.io/mathcase/#case-desk), test why `4 ∣ n² → 4 ∣ n` fails at `n = 2` and inspect a recorded NVIDIA Nemotron proposal and Lean rejection for the corrected prime-divisor theorem. The local Case Desk also shows how the saved √2 infinite-descent case uses that checked parent lemma. The separate Tavily card is labeled as a saved source-search result; it did not feed that prime proof.
 
-This repository includes the actual Case Desk frontend and Python backend used to read the saved proof story, plus the forkable Go CLI/provider core, a bounded BYOK Tavily command, a read-only MCP connector, and selected Lean examples. The Case Desk opens without an API key or paid call. Its public profile exposes three saved cases; new provider work is a separate explicit CLI action.
+This repository includes the actual Case Desk frontend and Python backend used to read the saved proof story, plus the forkable Go CLI/provider core, a bounded BYOK Tavily command, a read-only MCP connector, and selected Lean examples. The Case Desk opens without an API key or paid call. Its public reader currently exposes two saved cases; new provider work is a separate explicit CLI action.
 
 ## Open the Case Desk — Python only
 
@@ -134,13 +134,13 @@ This command does not check your plan or remaining balance before dispatch. A ba
 
 ## What the demo shows
 
-The site presents three saved cases: a checked arithmetic counterexample, a known prime-divisibility theorem checked in Lean, and a √2 child compilation reusing the saved parent theorem. Opening the site makes no model, Lean, or Tavily call. The separate Tavily panel shows a saved summary and six title-and-URL source cards, without search excerpts; those results were not used to generate or verify the proof. Nebius supplied historical proof candidates in the saved prime example; Lean's kernel and axiom audit determined the saved check result.
+The site presents two saved cases: a checked arithmetic counterexample and a known prime-divisibility theorem checked in Lean, with the rejected attempt and accepted correction shown together. Opening the site makes no model, Lean, or Tavily call. The separate Tavily panel shows a saved summary and six title-and-URL source cards, without search excerpts; those results were not used to generate or verify the proof. Nebius supplied historical proof candidates in the saved prime example; Lean's kernel and axiom audit determined the saved check result. The √2 child remains a separate source-replay artifact, not a third saved reader case.
 
 The saved examples demonstrate these specific records. They do not establish novel mathematics, broad problem-solving ability, measured model performance, independent exposition review, or corpus clearance. The root `NOTICE` covers the static Case Desk subset; `SOURCE_NOTICE.md` covers the additional source-edition files, including the connector. `saved-demo/site-manifest.json` records the saved demo file hashes.
 
 ## Public-edition scope
 
-This repository includes the real Case Desk frontend and backend with a bounded public read-only profile, MathCase's Go solver and provider orchestration code, Python routing primitives, the standalone BYOK Tavily command, the read-only MCP connector, provider and authorization schemas, and a Lean-core local proof. The public profile selects three saved cases through an explicit file/route manifest. Campaign data and endpoints, private corpora and source catalogs, unrelated machine-local receipts, and uncleared explanation/dossier JSON remain excluded. There is no bundled training or evaluation dataset.
+This repository includes the real Case Desk frontend and backend with a bounded public read-only profile, MathCase's Go solver and provider orchestration code, Python routing primitives, the standalone BYOK Tavily command, the read-only MCP connector, provider and authorization schemas, and a Lean-core local proof. The public profile selects two saved cases through an explicit file/route manifest. Campaign data and endpoints, private corpora and source catalogs, unrelated machine-local receipts, and uncleared explanation/dossier JSON remain excluded. There is no bundled training or evaluation dataset.
 
 The provider integration supports explicit OpenAI Chat Completions, Anthropic Messages, and Google Gemini request protocols. Compatible endpoints may be configured by the user. The public edition has no automatic provider selection or fallback. The Python model router is an injected-adapter foundation; the Tavily command is a separate research route. See `docs/public-edition.md` for the support and evidence boundaries.
 
