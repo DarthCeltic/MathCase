@@ -23,3 +23,12 @@ python -B .\audit_extended.py .\result.json
 This is finite evidence only. It does not prove the Erdős–Straus conjecture,
 an asymptotic statement, or novelty. The original 1,000-row replay remains
 available in the sibling `dahan-theorem39-replay-v1` directory.
+
+## Comparison with the bounded `a=1` control
+
+The checked-in [`comparison-with-a1-control.json`](comparison-with-a1-control.json)
+joins these rows to the matched `a=1, u≤40` control. In the full replay,
+4,064 minimum-depth rows use `a=1` and 936 use `a>1`; all 11 control misses
+are recovered by the two-parameter table. The full replay's largest selected
+`u` is 6, versus 35 in the bounded control. This is a finite comparison of
+the two saved tables, not an asymptotic or novelty claim.
