@@ -78,6 +78,10 @@ A fresh public checkout passed this command on Windows in 14.251 seconds using t
 
 The [case catalog](reproduction/CASE_CATALOG.md) documents local commands. They are runnable routes, not a count of independently established results. Finite parity-class percentages are counts for a stated modulus and horizon; they do not measure the share of Collatz trajectories that converge or imply progress toward convergence. The [public reproduction index](reproduction/README.md) separates recorded Lean checks from arithmetic checks and external source-identity checks.
 
+### A second bounded Collatz filter: 13 of 22
+
+The newer [13/22 package](reproduction/collatz-at-most-thirteen-of-twenty-two-v2/README.md) checks a different finite parity condition: if at most 13 of the first 22 accelerated inputs are odd, Lean proves a first drop by ordinary step 35 for every start `n ≥ 3`. Exactly **3,593,934 of 4,194,304** residue classes modulo `2^22` qualify (85.6861%). This is a bounded descent statement with a fresh four-module replay route; it is not a convergence proof, a claim that 85.6861% of integers converge, or a novelty claim.
+
 The Dahan Theorem 3.9 replay has now been extended to **500,000** eligible primes with zero row failures and an independent identity audit. It remains a finite replay of a published criterion, not an Erdős–Straus proof or an asymptotic claim. See the [500,000-row receipt](research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/README.md) and the earlier [300,000-row receipt](research/number-theory/egyptian-fractions/dahan-theorem39-extension-300000-v1/README.md).
 
 Additional source audits, small worked examples for upstream results, exploratory finite searches, and records whose independent replay remains open are collected in [Diagnostics and lab notes](docs/diagnostics/README.md). Their original source files, records, and URLs remain available. The proof library is an optional reference, not a substitute for replaying a theorem.

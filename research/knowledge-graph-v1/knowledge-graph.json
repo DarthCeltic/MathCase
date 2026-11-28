@@ -22,6 +22,24 @@
       "path": "reproduction/collatz-parity-envelopes-2026-11-v1/README.md"
     },
     {
+      "id": "case-collatz-13-22",
+      "kind": "question",
+      "label": "Collatz: at most 13 odd accelerated inputs in 22 steps",
+      "path": "reproduction/collatz-at-most-thirteen-of-twenty-two-v2/README.md"
+    },
+    {
+      "id": "evidence-collatz-13-22",
+      "kind": "evidence",
+      "label": "Lean replay and exact 3,593,934-of-4,194,304 residue count",
+      "path": "reproduction/collatz-at-most-thirteen-of-twenty-two-v2/verification-summary.json"
+    },
+    {
+      "id": "limit-collatz-13-22",
+      "kind": "limit",
+      "label": "Bounded first descent only; no convergence or novelty claim",
+      "path": "reproduction/collatz-at-most-thirteen-of-twenty-two-v2/README.md"
+    },
+    {
       "id": "case-collatz-m20-23-14-cross",
       "kind": "question",
       "label": "How do the 2,652 M20 families overlap the 23/14 parity filter?",
@@ -263,6 +281,10 @@
     { "from": "case-c7-368", "relation": "uses_method", "to": "method-independent-control" },
     { "from": "case-ising-3x3", "relation": "uses_method", "to": "method-two-path-replay" },
     { "from": "case-collatz-23-14", "relation": "uses_method", "to": "method-kernel-replay" },
+    { "from": "case-collatz-13-22", "relation": "checked_by", "to": "evidence-collatz-13-22" },
+    { "from": "case-collatz-13-22", "relation": "limited_by", "to": "limit-collatz-13-22" },
+    { "from": "case-collatz-13-22", "relation": "uses_method", "to": "method-kernel-replay" },
+    { "from": "case-collatz-13-22", "relation": "extends", "to": "case-collatz-23-14" },
     { "from": "case-c7-368", "relation": "next_question", "to": "case-ramsey-666" },
     { "from": "case-geometry-midpoint", "relation": "checked_by", "to": "evidence-geometry-midpoint" },
     { "from": "case-geometry-midpoint", "relation": "limited_by", "to": "limit-geometry-coordinate" },
