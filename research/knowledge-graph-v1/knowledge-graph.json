@@ -139,7 +139,7 @@
       "id": "evidence-transfer-pilot",
       "kind": "evidence",
       "label": "Matched two-arm pilot with identical observed outcomes",
-      "path": "research/collatz-library-transfer-pilot-v1/pilot-result.json"
+      "path": "research/collatz-library-transfer-pilot-v1/evidence/replay-2026-11-28.json"
     },
     {
       "id": "limit-transfer-open",
