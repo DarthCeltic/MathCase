@@ -1,0 +1,12 @@
+{
+  "checker_sha256": "c08cacb04acc7ee295381f63482a2bc49c0811b93f9167dc76512994f67f342f",
+  "mismatches": [],
+  "qualifying_starts": 548,
+  "range": {
+    "count": 674,
+    "exclusive_end": 677,
+    "first": 3
+  },
+  "schema": "mathcase-collatz-23-14-small-crosscheck-v1",
+  "status": "PASS"
+}

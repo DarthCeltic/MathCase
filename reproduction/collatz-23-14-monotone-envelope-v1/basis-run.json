@@ -1,0 +1,54 @@
+{
+  "checker_sha256": "313fe50224aabab1b8226840b7a3c66fd6885ec39aa0607c8730a0972829309e",
+  "constants": {
+    "gap_at_677": 526083,
+    "intercept": -2440491520,
+    "slope": 3605639
+  },
+  "controls": {
+    "all_sample_rows_pass": true,
+    "endpoint_gap_constants": true,
+    "positive_increment_formula": true
+  },
+  "function": "F_h(n) = 3^h * (n + 2^(23-h))",
+  "h_range": [
+    0,
+    14
+  ],
+  "python": "3.14.7 (tags/v3.14.7:823f032, Aug  5 2026, 10:51:32) [MSC v.1944 64 bit (AMD64)]",
+  "samples": [
+    {
+      "all_h_le_14_bounded": true,
+      "endpoint_gap_h14": 526083,
+      "monotone_h_0_to_14": true,
+      "n": 677
+    },
+    {
+      "all_h_le_14_bounded": true,
+      "endpoint_gap_h14": 4131722,
+      "monotone_h_0_to_14": true,
+      "n": 678
+    },
+    {
+      "all_h_le_14_bounded": true,
+      "endpoint_gap_h14": 1165147480,
+      "monotone_h_0_to_14": true,
+      "n": 1000
+    },
+    {
+      "all_h_le_14_bounded": true,
+      "endpoint_gap_h14": 33615898480,
+      "monotone_h_0_to_14": true,
+      "n": 10000
+    },
+    {
+      "all_h_le_14_bounded": true,
+      "endpoint_gap_h14": 3603198508480,
+      "monotone_h_0_to_14": true,
+      "n": 1000000
+    }
+  ],
+  "schema": "mathcase-collatz-23-14-basis-arithmetic-v1",
+  "statement_scope": "Large-start numeric inequality only; finite n < 677 branch and Lean formalization are outside this checker.",
+  "status": "PASS_ARITHMETIC_COMPRESSION_CHECK"
+}

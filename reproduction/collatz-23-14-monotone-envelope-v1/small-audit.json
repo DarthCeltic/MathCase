@@ -1,0 +1,13 @@
+{
+  "checker_sha256": "0b0f1261a17959b12ab3a2c5413f0141de8166e56e8eb0a455f67072c14d80b5",
+  "failures": [],
+  "filter": "odd_count among first 23 accelerated inputs <= 14",
+  "qualifying_starts": 548,
+  "range": {
+    "count": 674,
+    "exclusive_end": 677,
+    "first": 3
+  },
+  "schema": "mathcase-collatz-23-14-small-audit-v1",
+  "status": "PASS"
+}
