@@ -34,7 +34,29 @@ replay.
 5. Preserve any failure, timeout, or mismatch. Do not replace a failed receipt
    with a later successful run in the same evidence folder.
 
-## 3. Mathematical wording review
+## 3. Reproduce the bounded C7 search package
+
+1. Check out the public MathCase commit named by the C7 package README and
+   verify every entry in its `SHA256SUMS` against committed Git blobs.
+2. Run the package verifier on the published 367-word control and the saved
+   bounded candidate. Run the planted-conflict control and confirm that it is
+   rejected.
+3. Record the search seed, whole-graph scope, time cap, best size, command,
+   and output digest. The published result is `NO_368_FOUND_UNKNOWN`: it is
+   neither a 368-word construction nor an impossibility proof.
+
+## 4. Reproduce the finite 3x3 Ising check
+
+1. Run `python -B reproduction/ising-3x3-fixed-up-logconcavity-v1/verify_width3_fixed_up.py`
+   into a new output directory.
+2. Confirm that direct enumeration and the independent transfer calculation
+   agree for every fixed-up-spin profile, and that the interior-zero damaged
+   control is rejected.
+3. Confirm the four-up/five-up profile is `45, 36, 45` at 8, 10, and 12
+   broken edges, so `36^2 < 45*45`. This is a finite 3x3 result only, not a
+   thermodynamic-limit theorem or a claim of priority.
+
+## 5. Mathematical wording review
 
 For either result, compare the English sentence with the exact Lean statement:
 
@@ -46,7 +68,7 @@ For either result, compare the English sentence with the exact Lean statement:
   rather than percentages of Collatz trajectories?
 - Are prior-work and novelty claims absent or supported by a primary source?
 
-## 4. Report a check
+## 6. Report a check
 
 A useful report names the case and commit, gives the command and tool versions,
 states PASS/FAIL/TIMEOUT, and links a receipt or first diagnostic. For a wording
