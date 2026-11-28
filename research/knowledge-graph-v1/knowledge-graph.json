@@ -94,6 +94,24 @@
       "path": "research/frontier-2026-11/shannon-c7-368-equal-seed-persist-v1/README.md"
     },
     {
+      "id": "case-c7-persistence-v3",
+      "kind": "question",
+      "label": "Can multi-ejection search diversify nine validated 367-word seeds into a 368-word code?",
+      "path": "research/frontier-2026-11/shannon-c7-368-persistence-v3/README.md"
+    },
+    {
+      "id": "evidence-c7-persistence-v3",
+      "kind": "evidence",
+      "label": "120-second multi-ejection search with independent 67,161-pair checks",
+      "path": "research/frontier-2026-11/shannon-c7-368-persistence-v3/search-result.json"
+    },
+    {
+      "id": "limit-c7-persistence-v3",
+      "kind": "limit",
+      "label": "NO_368_FOUND_UNKNOWN for this nine-seed bounded neighborhood",
+      "path": "research/frontier-2026-11/shannon-c7-368-persistence-v3/README.md"
+    },
+    {
       "id": "case-ising-3x3",
       "kind": "question",
       "label": "Does the tested 3x3 periodic Ising profile stay log-concave?",
@@ -250,6 +268,12 @@
       "path": "research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/README.md"
     },
     {
+      "id": "evidence-dahan-500k-launcher",
+      "kind": "evidence",
+      "label": "Public case launcher dispatched generation and independent audit",
+      "path": "reproduction/dahan-theorem39-launcher-verification-2026-11-28-v1/receipt.json"
+    },
+    {
       "id": "case-transfer-pilot",
       "kind": "question",
       "label": "Do saved examples help on held-out mathematical tasks?",
@@ -298,6 +322,10 @@
     { "from": "case-c7-equal-seed-persist", "relation": "checked_by", "to": "evidence-c7-equal-seed-persist" },
     { "from": "case-c7-equal-seed-persist", "relation": "limited_by", "to": "limit-c7-equal-seed-unknown" },
     { "from": "case-c7-equal-seed-persist", "relation": "extends", "to": "case-c7-368" },
+    { "from": "case-c7-persistence-v3", "relation": "checked_by", "to": "evidence-c7-persistence-v3" },
+    { "from": "case-c7-persistence-v3", "relation": "limited_by", "to": "limit-c7-persistence-v3" },
+    { "from": "case-c7-persistence-v3", "relation": "extends", "to": "case-c7-equal-seed-persist" },
+    { "from": "case-c7-persistence-v3", "relation": "extends", "to": "case-c7-368" },
     { "from": "case-ising-3x3", "relation": "checked_by", "to": "evidence-ising-3x3" },
     { "from": "case-ising-3x3", "relation": "limited_by", "to": "limit-ising-finite" },
     { "from": "case-ramsey-666", "relation": "checked_by", "to": "evidence-ramsey-666" },
@@ -328,6 +356,7 @@
     { "from": "case-dahan-theorem39-500k", "relation": "limited_by", "to": "limit-dahan-500k-finite" },
     { "from": "case-dahan-theorem39-500k", "relation": "uses_method", "to": "method-dahan-criterion" },
     { "from": "case-dahan-theorem39-500k", "relation": "extends", "to": "case-dahan-theorem39-300k" },
+    { "from": "case-dahan-theorem39-500k", "relation": "launcher_verified_by", "to": "evidence-dahan-500k-launcher" },
     { "from": "case-transfer-pilot", "relation": "checked_by", "to": "evidence-transfer-pilot" },
     { "from": "case-transfer-pilot", "relation": "limited_by", "to": "limit-transfer-open" },
     { "from": "case-ws5-block-crossover", "relation": "checked_by", "to": "evidence-ws5-block-crossover" },
