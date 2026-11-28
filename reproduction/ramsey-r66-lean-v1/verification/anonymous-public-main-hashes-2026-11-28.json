@@ -1,0 +1,43 @@
+{
+  "schema": "r66-anonymous-public-main-output-hashes-v1",
+  "public_main_commit": "04aef0ad140ce764cd50b0222fafc2405be0e2fc",
+  "lock_sha256": "958b34400c85f0e6e9e1a3ec9c2c67e3df25fcfed9195c53d50302af588f3c0f",
+  "source_manifest_sha256": "b8c9eefb0813b3da44618add183088b53b0cb889e55cbf38a364f9f2c8c58a1e",
+  "source_files": [
+    {
+      "path": "MathCase/R66/Foundation.lean",
+      "sha256": "aa71e1234b703296552bae55e642b58773165fa4c1b883ff0d752682a834299a",
+      "bytes": 11672
+    },
+    {
+      "path": "MathCase/R66/Rows/Representative.lean",
+      "sha256": "f760d30f68c5f81fdf19bc59f19e75b5ccff0560f2f56a8e8f245bd7b1f1b733",
+      "bytes": 226
+    },
+    {
+      "path": "MathCase/R66/Composition.lean",
+      "sha256": "f635c55b5a616a797961a504558cdcf27ee78c2deff408ef986baa651112a12b",
+      "bytes": 5056
+    }
+  ],
+  "output_files": [
+    {
+      "path": ".lake/build/lib/lean/MathCase/R66/Composition.olean",
+      "sha256": "a757736a6a998404d9401a19d20a07bf13588dfad2b92986a1ab401b8ce58936",
+      "bytes": 155560
+    },
+    {
+      "path": ".lake/build/lib/lean/MathCase/R66/Foundation.olean",
+      "sha256": "6aafc4740555bc37f1593798afb3a4852669ce4a21cbc5a4ef5c81d7bbb42ecb",
+      "bytes": 371800
+    },
+    {
+      "path": ".lake/build/lib/lean/MathCase/R66/Rows/Representative.olean",
+      "sha256": "4be20cf30984aea655ea25bfa3a4332b724ae1c2f141db17e39024d4bbfd5c1a",
+      "bytes": 11528
+    }
+  ],
+  "audit_output_sha256": "5dc2619cfc1323829e85eaab6fce425c194a29bfdb4a81a4fb514b8491d11ffc",
+  "receipt_path": "anonymous-public-main-replay.json",
+  "receipt_sha256": "fbe95f719281196e8f5fa25416fa715d399b38e7a29b105b715f5d6d1a225103"
+}

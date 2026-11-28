@@ -40,6 +40,21 @@ The wrapper checks source hashes, the current Lake lock, and a clean MathCase
 output tree before building. `--verify-recorded` checks the saved current-lock
 receipt; `--verify-historical` checks the older receipt separately.
 
+An independent fresh public-clone replay also passed on Nov. 28, 2026. It
+started with no MathCase build outputs, fetched the pinned dependencies, built
+the three source modules with one Lake job, and ran the audit. The path-free
+receipt is [`verification/anonymous-public-main-replay-2026-11-28.json`](verification/anonymous-public-main-replay-2026-11-28.json),
+SHA-256
+`fbe95f719281196e8f5fa25416fa715d399b38e7a29b105b715f5d6d1a225103`.
+The matching source and fresh-output hashes are in
+[`verification/anonymous-public-main-hashes-2026-11-28.json`](verification/anonymous-public-main-hashes-2026-11-28.json),
+SHA-256
+`fac90ad3a6407b0ba73250bc16b46943bc3831966f0974901f6f159114984612`.
+It took 1,319.372 seconds including dependency setup; the fresh MathCase build
+and audit both exited 0, with the same three allowed axioms and no `sorryAx`.
+This is a reproducible public-source replay on one host, not independent
+mathematical review and not a new Ramsey bound.
+
 ## Preserved historical evidence
 
 The original `lake-replay-receipt.json` remains unchanged. It binds an older
