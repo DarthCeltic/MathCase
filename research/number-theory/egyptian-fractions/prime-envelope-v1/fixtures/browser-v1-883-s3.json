@@ -1,0 +1,43 @@
+{
+  "schema_version": "mathcase-prime-envelope-receipt-v1",
+  "checker_version": "mathcase-prime-envelope-case-v1",
+  "theorem": {
+    "package": "prime-envelope-v1",
+    "declarations": [
+      "MathCase.PrimeBand.classification",
+      "MathCase.PrimeBand.unique_under_cap"
+    ],
+    "source_url": "https://github.com/DarthCeltic/MathCase/blob/main/research/number-theory/egyptian-fractions/prime-envelope-v1/lean/PrimeBand.lean",
+    "source_sha256": "2143c9c2e25d2657489284036a7c7b677088131bdeddb66478ed1b3752cfedbb",
+    "toolchain": "Lean 4.33.1 (819816b2e0a3bf405af45ae5c7af2491d8f5bee6)"
+  },
+  "input": {
+    "p": 883,
+    "s": 3
+  },
+  "computed": {
+    "B": 16,
+    "D_B": 929,
+    "D_previous": 811,
+    "difference": 46,
+    "cap": 16777,
+    "allowed_offsets": [
+      0,
+      8,
+      24,
+      48
+    ],
+    "size_condition": "(s + 1)^2 ≤ B",
+    "size_condition_value": 16,
+    "size_condition_ok": true
+  },
+  "scope": [
+    "p = 883 is prime and B = 16 is the first index with D(B) ≥ p.",
+    "The cap is z ≤ (B + s)p = 16777.",
+    "The theorem-side size conditions are B ≥ 16 and (s + 1)² ≤ B (16 ≤ 16)."
+  ],
+  "status": "PROVED_EXCLUSION_UNDER_CAP",
+  "message": "The pinned criterion has no allowed offset through s, so it proves that no triple fits under this cap. A larger denominator may still work.",
+  "claim": "For p = 883, no triple fits under z ≤ 16777 under the pinned theorem hypotheses.",
+  "receipt_sha256": "f872dbd4b09ac568a154a55f41ddd16a8990419b9b9f5f7eb765cffda17ed2c6"
+}

@@ -12,6 +12,12 @@ from pathlib import Path
 HERE = Path(__file__).resolve().parent
 THEOREM = HERE / "lean" / "PrimeBand.lean"
 VERSION = "prime-envelope-v1"
+BROWSER_SCHEMA = "mathcase-prime-envelope-receipt-v1"
+BROWSER_CHECKER_VERSION = "mathcase-prime-envelope-case-v1"
+BROWSER_SOURCE_URLS = {
+    "https://github.com/DarthCeltic/MathCase/blob/main/research/number-theory/egyptian-fractions/prime-envelope-v1/lean/PrimeBand.lean",
+    "https://github.com/DarthCeltic/MathCase/blob/be1d3eec2bf82e677d7692f14828206a88e5cc06/research/number-theory/egyptian-fractions/prime-envelope-v1/lean/PrimeBand.lean",
+}
 
 
 def sha256(path):
@@ -20,6 +26,13 @@ def sha256(path):
 
 def canonical(value):
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=False).encode()
+
+
+def browser_canonical(value):
+    """Match the insertion-order JSON fingerprint used by the first browser export."""
+    body = dict(value)
+    body.pop("receipt_sha256", None)
+    return json.dumps(body, separators=(",", ":"), ensure_ascii=False).encode()
 
 
 def is_prime(n):
@@ -74,7 +87,102 @@ def evaluate(p, s):
     return payload
 
 
+def evaluate_browser(p, s, source_url):
+    """Recompute the legacy Pages v1 receipt, independently of its stored result."""
+    base = {
+        "schema_version": BROWSER_SCHEMA,
+        "checker_version": BROWSER_CHECKER_VERSION,
+        "theorem": {
+            "package": VERSION,
+            "declarations": ["MathCase.PrimeBand.classification", "MathCase.PrimeBand.unique_under_cap"],
+            "source_url": source_url,
+            "source_sha256": sha256(THEOREM),
+            "toolchain": "Lean 4.33.1 (819816b2e0a3bf405af45ae5c7af2491d8f5bee6)",
+        },
+        "input": {"p": p, "s": s},
+    }
+    if not isinstance(p, int) or p < 43 or p > 1_000_000:
+        return {**base, "status": "UNSUPPORTED_INPUT", "message": "Enter a whole number from 43 through 1,000,000."}
+    if not is_prime(p):
+        return {**base, "status": "OUT_OF_SCOPE_COMPOSITE", "message": f"{p} is composite. This class starts with prime denominators."}
+    if not isinstance(s, int) or s < 0 or s > 1_000:
+        return {**base, "status": "UNSUPPORTED_INPUT", "message": "The offset s must be a whole number from 0 through 1,000."}
+    b = 2
+    while 4 * b * b - 6 * b + 1 < p:
+        b += 1
+    d_b = 4 * b * b - 6 * b + 1
+    difference = d_b - p
+    cap = (b + s) * p
+    size_ok = b >= 16 and (s + 1) ** 2 <= b
+    common = {
+        **base,
+        "computed": {
+            "B": b,
+            "D_B": d_b,
+            "D_previous": 4 * (b - 1) * (b - 1) - 6 * (b - 1) + 1,
+            "difference": difference,
+            "cap": cap,
+            "allowed_offsets": [4 * t * (t + 1) for t in range(s + 1)],
+            "size_condition": "(s + 1)^2 ≤ B",
+            "size_condition_value": (s + 1) ** 2,
+            "size_condition_ok": size_ok,
+        },
+        "scope": [
+            f"p = {p} is prime and B = {b} is the first index with D(B) ≥ p.",
+            f"The cap is z ≤ (B + s)p = {cap}.",
+            f"The theorem-side size conditions are B ≥ 16 and (s + 1)² ≤ B ({(s + 1) ** 2} ≤ {b}).",
+        ],
+    }
+    if not size_ok:
+        return {
+            **common,
+            "status": "INCONCLUSIVE_SCOPE",
+            "message": "The prime is valid, but the pinned near-minimum theorem does not cover this cap. MathCase will not call this a proof of absence.",
+        }
+    for t in range(s + 1):
+        if difference == 4 * t * (t + 1):
+            a = b - t - 1
+            c = b + t
+            triple = [a * c, a * p, c * p]
+            if a >= 1 and a < c:
+                return {
+                    **common,
+                    "status": "CHECKED_WITNESS_UNDER_CAP",
+                    "message": "The pinned criterion gives one triple under this cap, and the integer identity was checked again in the browser.",
+                    "hit": {"t": t, "a": a, "b": c, "triple": triple},
+                    "claim": f"For p = {p}, the pinned criterion gives the unique triple under z ≤ {cap}.",
+                }
+    return {
+        **common,
+        "status": "PROVED_EXCLUSION_UNDER_CAP",
+        "message": "The pinned criterion has no allowed offset through s, so it proves that no triple fits under this cap. A larger denominator may still work.",
+        "claim": f"For p = {p}, no triple fits under z ≤ {cap} under the pinned theorem hypotheses.",
+    }
+
+
+def verify_browser(receipt):
+    theorem = receipt.get("theorem") if isinstance(receipt, dict) else None
+    if not isinstance(receipt, dict) or receipt.get("schema_version") != BROWSER_SCHEMA:
+        return False, "BROWSER_SCHEMA_MISMATCH"
+    if receipt.get("checker_version") != BROWSER_CHECKER_VERSION or not isinstance(theorem, dict):
+        return False, "BROWSER_CHECKER_MISMATCH"
+    if theorem.get("source_sha256") != sha256(THEOREM) or theorem.get("source_url") not in BROWSER_SOURCE_URLS:
+        return False, "PACKAGE_SOURCE_MISMATCH"
+    claimed = receipt.get("receipt_sha256")
+    if not isinstance(claimed, str) or hashlib.sha256(browser_canonical(receipt)).hexdigest() != claimed:
+        return False, "RECEIPT_DIGEST_MISMATCH"
+    inp = receipt.get("input")
+    if not isinstance(inp, dict) or type(inp.get("p")) is not int or type(inp.get("s")) is not int:
+        return False, "BROWSER_INPUT_MISMATCH"
+    expected = evaluate_browser(inp["p"], inp["s"], theorem["source_url"])
+    if expected != {k: v for k, v in receipt.items() if k != "receipt_sha256"}:
+        return False, "RESULT_MISMATCH"
+    return True, "REPLAY_MATCH"
+
+
 def verify(receipt):
+    if isinstance(receipt, dict) and receipt.get("schema_version") == BROWSER_SCHEMA:
+        return verify_browser(receipt)
     claimed = receipt.get("receipt_sha256")
     body = dict(receipt)
     body.pop("receipt_sha256", None)
@@ -114,4 +222,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())
