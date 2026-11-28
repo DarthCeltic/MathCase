@@ -37,6 +37,7 @@ scopes:
 | `python scripts/run_frontier_case.py c7-greedy --dry-run` | The bounded C7 search command is registered; a search miss is `UNKNOWN`, not impossibility. |
 | `python -B research/number-theory/egyptian-fractions/dahan-theorem39-extension-200000-v1/check_theorem39_extended.py --count 200000 --pair-bound 40 --output full-result.json` | Replays Dahan's finite two-parameter criterion on 200,000 eligible primes; it is not an asymptotic or full Erdős–Straus proof. |
 | `python -B research/number-theory/egyptian-fractions/dahan-theorem39-extension-300000-v1/check_theorem39_extended.py --count 300000 --pair-bound 40 --output full-result.json` | Extends the same finite replay to 300,000 eligible primes; it remains finite arithmetic evidence only. |
+| `python -B research/number-theory/egyptian-fractions/dahan-theorem39-extension-500000-v1/check_theorem39_extended.py --count 500000 --pair-bound 40 --output full-result.json` | Extends the same finite replay to 500,000 eligible primes; it remains finite arithmetic evidence only. |
 
 Every route writes its own receipt/output directory. The graph and this table
 are navigation aids; the linked case README and receipt remain authoritative.
