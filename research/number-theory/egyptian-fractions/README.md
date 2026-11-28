@@ -46,3 +46,12 @@ The independent [`centered-window-v1`](centered-window-v1/README.md) package
 studies distinct triples for prime `p` near the least possible largest
 denominator. Its exact centered classification and strict uniqueness bound
 are separate from the bounded residual witness campaign summarized above.
+
+## Separate Dahan Theorem 3.9 replay
+
+The [`dahan-theorem39-replay-v1`](dahan-theorem39-replay-v1/README.md)
+package replays the first 1,000 primes in the `n ≡ 1 (mod 24)` class. The
+independent [`dahan-theorem39-extension-5000-v1`](dahan-theorem39-extension-5000-v1/README.md)
+package extends that same finite test to 5,000 consecutive primes, with its
+full rows and independent audit. Both are finite evidence only; neither is an
+asymptotic result or a proof of Erdős–Straus.
