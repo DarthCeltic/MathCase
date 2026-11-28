@@ -436,6 +436,30 @@
       "path": "research/frontier-2026-11/weak-schur-5/block-crossover-2026-11-28/README.md"
     },
     {
+      "id": "case-ws5-candidate-checker",
+      "kind": "question",
+      "label": "Does a proposed five-coloring of 1 through 208 avoid every distinct-addend sum?",
+      "path": "reproduction/weak-schur-5-candidate-checker-v1/README.md"
+    },
+    {
+      "id": "evidence-ws5-candidate-checker",
+      "kind": "evidence",
+      "label": "10,712-triple offline checker with valid, conflict, and malformed controls",
+      "path": "reproduction/weak-schur-5-candidate-checker-v1/verify_candidate.py"
+    },
+    {
+      "id": "limit-ws5-candidate-checker",
+      "kind": "limit",
+      "label": "No conflict-free 208 assignment is currently recorded; a checker pass would be a witness",
+      "path": "reproduction/weak-schur-5-candidate-checker-v1/README.md"
+    },
+    {
+      "id": "method-ws5-candidate-checker",
+      "kind": "method",
+      "label": "Independent exhaustive check of every distinct-addend triple",
+      "path": "reproduction/weak-schur-5-candidate-checker-v1/README.md"
+    },
+    {
       "id": "case-prime-envelope-input",
       "kind": "question",
       "label": "For one prime p and offset s, what does the bounded denominator rule say?",
@@ -563,6 +587,10 @@
     { "from": "case-ws5-block-crossover", "relation": "checked_by", "to": "evidence-ws5-block-crossover" },
     { "from": "case-ws5-block-crossover", "relation": "limited_by", "to": "limit-ws5-block-crossover" },
     { "from": "case-ws5-block-crossover", "relation": "uses_method", "to": "method-independent-control" },
+    { "from": "case-ws5-candidate-checker", "relation": "checked_by", "to": "evidence-ws5-candidate-checker" },
+    { "from": "case-ws5-candidate-checker", "relation": "limited_by", "to": "limit-ws5-candidate-checker" },
+    { "from": "case-ws5-candidate-checker", "relation": "uses_method", "to": "method-ws5-candidate-checker" },
+    { "from": "case-ws5-block-crossover", "relation": "uses_method", "to": "method-ws5-candidate-checker" },
     { "from": "case-prime-envelope-input", "relation": "checked_by", "to": "evidence-prime-envelope-input" },
     { "from": "case-prime-envelope-input", "relation": "limited_by", "to": "limit-prime-envelope-input" },
     { "from": "case-prime-envelope-input", "relation": "uses_method", "to": "method-prime-envelope-receipt" },
