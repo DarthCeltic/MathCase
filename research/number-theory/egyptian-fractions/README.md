@@ -60,3 +60,8 @@ The sibling [`dahan-theorem34-control-5000-v1`](dahan-theorem34-control-5000-v1/
 is a bounded control on the same rows: fixing `a=1` and `u≤40` succeeds on
 4,989/5,000, with 11 explicit capped misses. It is a control result, not the
 unrestricted Theorem 3.4 claim.
+
+The [`dahan-theorem34-miss-resolution-v1`](dahan-theorem34-miss-resolution-v1/README.md)
+package then searches those 11 capped misses over the explicit finite range
+`1≤u≤n`: three reappear at larger `u`, while eight remain unresolved within
+that range. It preserves both the positive and negative rows.

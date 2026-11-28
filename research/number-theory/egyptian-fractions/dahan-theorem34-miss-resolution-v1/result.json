@@ -1,0 +1,78 @@
+{
+  "elapsed_s": 8.971,
+  "failures": 8,
+  "paper": "arXiv:2608.24035",
+  "records": [
+    {
+      "n": 409,
+      "no_witness": true
+    },
+    {
+      "n": 577,
+      "no_witness": true
+    },
+    {
+      "n": 5569,
+      "no_witness": true
+    },
+    {
+      "n": 9601,
+      "no_witness": true
+    },
+    {
+      "n": 23929,
+      "no_witness": true
+    },
+    {
+      "alpha": 1,
+      "n": 57457,
+      "s": 311,
+      "u": 78,
+      "v": 185
+    },
+    {
+      "n": 83449,
+      "no_witness": true
+    },
+    {
+      "n": 102001,
+      "no_witness": true
+    },
+    {
+      "n": 329617,
+      "no_witness": true
+    },
+    {
+      "alpha": 8,
+      "n": 353329,
+      "s": 1599,
+      "u": 50,
+      "v": 221
+    },
+    {
+      "alpha": 4,
+      "n": 427249,
+      "s": 2095,
+      "u": 131,
+      "v": 204
+    }
+  ],
+  "result_sha256": "0e6cfc447c1ab7d81f9a8922ff2132c51d8838704b645921399d60543bd312f5",
+  "search": "u from 1 through n for each capped miss",
+  "slice": "a=1",
+  "successes": 3,
+  "targets": [
+    409,
+    577,
+    5569,
+    9601,
+    23929,
+    57457,
+    83449,
+    102001,
+    329617,
+    353329,
+    427249
+  ],
+  "theorem": "3.4"
+}
