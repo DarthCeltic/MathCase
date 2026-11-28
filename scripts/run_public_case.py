@@ -31,6 +31,7 @@ CATALOG = {
     "riemann": "Compare four pinned upstream source files. Requires internet. Checks source identity.",
     "vp-vnp-example": "Work through the all-ones 2x2 permanent and determinant; a deliberately wrong count is rejected.",
     "vp-vnp-source-audit": "Fetch and hash seven upstream VP/VNP source files at a pinned commit. Does not replay the proof.",
+    "matrix-example": "Compare ordinary and Strassen 2x2 multiplication; a deliberately damaged result is rejected.",
     "visitor": "Check a trusted Lean file, or bind an exported case to its exact target and report axioms.",
 }
 
@@ -79,6 +80,7 @@ def commands(case, args, output):
         "riemann": [("reproduction/riemann-source-audit-v1/check_sources.py",)],
         "vp-vnp-example": [("reproduction/vp-vnp-source-audit-v1/example_check.py",)],
         "vp-vnp-source-audit": [("reproduction/vp-vnp-source-audit-v1/audit_sources.py", "--receipt", output / "vp-vnp-source-audit.json")],
+        "matrix-example": [("reproduction/matrix-exponent-2x2-v1/check_matrix_example.py",)],
         "visitor": [("scripts/check_visitor_case.py",
                      *( ["--case-packet", args.case_packet] if getattr(args, "case_packet", None) else [getattr(args, "source", None)] ),
                      "--receipt", output / ("target-check.json" if getattr(args, "case_packet", None) else "compiler.json"),
