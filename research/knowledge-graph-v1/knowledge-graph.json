@@ -22,6 +22,24 @@
       "path": "reproduction/collatz-parity-envelopes-2026-11-v1/README.md"
     },
     {
+      "id": "case-collatz-m20-23-14-cross",
+      "kind": "question",
+      "label": "How do the 2,652 M20 families overlap the 23/14 parity filter?",
+      "path": "reproduction/collatz-m20-23-14-cross-analysis-v1/README.md"
+    },
+    {
+      "id": "evidence-collatz-m20-23-14-cross",
+      "kind": "evidence",
+      "label": "21,216 residue lifts checked by two arithmetic methods",
+      "path": "reproduction/collatz-m20-23-14-cross-analysis-v1/result-independent.json"
+    },
+    {
+      "id": "limit-collatz-m20-23-14-cross",
+      "kind": "limit",
+      "label": "Finite overlap only; no proof-obligation reduction or wider theorem",
+      "path": "reproduction/collatz-m20-23-14-cross-analysis-v1/README.md"
+    },
+    {
       "id": "case-c7-368",
       "kind": "question",
       "label": "Can 368 mutually compatible five-symbol words be found?",
@@ -229,6 +247,10 @@
   "edges": [
     { "from": "case-collatz-23-14", "relation": "checked_by", "to": "evidence-collatz-23-14" },
     { "from": "case-collatz-23-14", "relation": "limited_by", "to": "limit-collatz-open" },
+    { "from": "case-collatz-m20-23-14-cross", "relation": "checked_by", "to": "evidence-collatz-m20-23-14-cross" },
+    { "from": "case-collatz-m20-23-14-cross", "relation": "limited_by", "to": "limit-collatz-m20-23-14-cross" },
+    { "from": "case-collatz-m20-23-14-cross", "relation": "uses_method", "to": "method-two-path-replay" },
+    { "from": "case-collatz-m20-23-14-cross", "relation": "extends", "to": "case-collatz-23-14" },
     { "from": "case-c7-368", "relation": "checked_by", "to": "evidence-c7-search" },
     { "from": "case-c7-368", "relation": "limited_by", "to": "limit-c7-unknown" },
     { "from": "case-c7-equal-seed-persist", "relation": "checked_by", "to": "evidence-c7-equal-seed-persist" },
