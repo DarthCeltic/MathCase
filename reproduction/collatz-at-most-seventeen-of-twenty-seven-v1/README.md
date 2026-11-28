@@ -2,6 +2,8 @@
 
 For every natural number `n >= 26,018`, if at most 17 of its first 27 accelerated Collatz inputs are odd, then an ordinary Collatz iterate is strictly smaller than `n` by step 44.
 
+**Review status:** the Lean replay and arithmetic audit are recorded, but no separate M0 statement review is recorded for this case. Treat this as bounded evidence, not a general Collatz result.
+
 A shortcut move halves an even number. For an odd number, it computes `3n+1` and halves. If `h` of the first 27 shortcut inputs are odd, the corresponding ordinary Collatz path reaches the same value after `27+h` ordinary steps. Since `h <= 17`, this is at most 44 steps.
 
 The descent proof is parameterized: a shared Lean lemma turns the parity count and a coefficient inequality into strict descent. The new theorem checks all 18 possible odd-input counts from 0 through 17 against the exact bound `n >= 26,018`.
