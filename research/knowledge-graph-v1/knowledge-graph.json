@@ -92,6 +92,24 @@
       "kind": "method",
       "label": "Pinned source rebuilt by Lean with an axiom audit",
       "path": "reproduction/collatz-parity-envelopes-2026-11-v1/README.md"
+    },
+    {
+      "id": "case-geometry-midpoint",
+      "kind": "question",
+      "label": "Why is the midpoint of a right triangle's hypotenuse equally far from its three corners?",
+      "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/README.md"
+    },
+    {
+      "id": "evidence-geometry-midpoint",
+      "kind": "evidence",
+      "label": "Coordinate proof rebuilt by Lean with source and audit receipts",
+      "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/evidence/public-replay.json"
+    },
+    {
+      "id": "limit-geometry-coordinate",
+      "kind": "limit",
+      "label": "The formal statement is coordinate geometry; a Euclidean reduction is separate",
+      "path": "reproduction/coordinate-right-triangle-midpoint-general-v1/README.md"
     }
   ],
   "edges": [
@@ -106,6 +124,9 @@
     { "from": "case-c7-368", "relation": "uses_method", "to": "method-independent-control" },
     { "from": "case-ising-3x3", "relation": "uses_method", "to": "method-two-path-replay" },
     { "from": "case-collatz-23-14", "relation": "uses_method", "to": "method-kernel-replay" },
-    { "from": "case-c7-368", "relation": "next_question", "to": "case-ramsey-666" }
+    { "from": "case-c7-368", "relation": "next_question", "to": "case-ramsey-666" },
+    { "from": "case-geometry-midpoint", "relation": "checked_by", "to": "evidence-geometry-midpoint" },
+    { "from": "case-geometry-midpoint", "relation": "limited_by", "to": "limit-geometry-coordinate" },
+    { "from": "case-geometry-midpoint", "relation": "uses_method", "to": "method-kernel-replay" }
   ]
 }
